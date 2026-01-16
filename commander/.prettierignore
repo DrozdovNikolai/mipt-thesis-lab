@@ -1,0 +1,14 @@
+node_modules
+dist*
+public
+*.md
+package-lock.json
+playwright-report
+test-results
+tests/fixtures
+# Retain original regression assertions; source CRLF was normalized to LF.
+tests/e2e/analytics-layout.spec.ts
+tests/e2e/pilot-profile-route.spec.ts
+tests/e2e/pilots-avatar-route.spec.ts
+tests/e2e/pilots-route.spec.ts
+tests/e2e/training-sessions-route.spec.ts
