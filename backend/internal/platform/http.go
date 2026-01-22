@@ -281,3 +281,50 @@ func Detail(kind, message string, loc []any, input any, ctx map[string]any) map[
 	}
 	return d
 }
+
+func ReadObject(r *http.Request, fields ...Field) (Object, error) {
+	return ReadSchema(r, Schema{Fields: fields})
+}
+
+func ReadSchema(r *http.Request, schema Schema) (Object, error) {
+	decoded, err := ReadJSON(r)
+	if err != nil {
+		return nil, err
+	}
+	return ValidateBody(decoded, schema)
+}
+
+func ValidateBody(decoded any, schema Schema) (Object, error) {
+	if decoded == nil {
+		return nil, validationError([]any{Detail("missing", "Field required", []any{"body"}, nil, nil)})
+	}
+	return ValidateObject(decoded, []any{"body"}, schema)
+}
+
+func ReadJSON(r *http.Request) (any, error) {
+	raw, err := io.ReadAll(io.LimitReader(r.Body, 16*1024*1024+1))
+	if err != nil {
+		return nil, Error(400, "There was an error parsing the body")
+	}
+	if len(raw) > 16*1024*1024 {
+		return nil, Error(413, "Request body too large")
+	}
+	var decoded any
+	decoder := json.NewDecoder(strings.NewReader(string(raw)))
+	decoder.UseNumber()
+	if len(raw) == 0 {
+		return nil, validationError([]any{Detail("missing", "Field required", []any{"body"}, nil, nil)})
+	}
+	if err := decoder.Decode(&decoded); err != nil {
+		return nil, jsonDecodeError(raw, err)
+	}
+	end := int(decoder.InputOffset())
+	var extra any
+	if decoder.Decode(&extra) != io.EOF {
+		for end < len(raw) && strings.ContainsRune(" \t\r\n", rune(raw[end])) {
+			end++
+		}
+		return nil, jsonErrorAt(raw, end, "Extra data")
+	}
+	return decoded, nil
+}
