@@ -328,3 +328,286 @@ func ReadJSON(r *http.Request) (any, error) {
 	}
 	return decoded, nil
 }
+
+func ValidateObject(decoded any, location []any, schema Schema) (Object, error) {
+	body, ok := decoded.(map[string]any)
+	if !ok {
+		return nil, validationError([]any{Detail("model_attributes_type", "Input should be a valid dictionary or object to extract fields from", location, decoded, nil)})
+	}
+	output := Object{}
+	details := []any{}
+	consumed := map[string]bool{}
+	for _, f := range schema.Fields {
+		alias := f.Alias
+		if alias == "" {
+			alias = f.Name
+		}
+		v, present := body[alias]
+		locName := alias
+		if !present {
+			v, present = body[f.Name]
+			if present {
+				locName = f.Name
+			}
+		}
+		loc := append(append([]any{}, location...), locName)
+		if present {
+			consumed[locName] = true
+		}
+		if !present {
+			if f.Required {
+				details = append(details, Detail("missing", "Field required", loc, body, nil))
+			} else if f.Default != nil {
+				output[f.Name] = f.Default
+			}
+			continue
+		}
+		if f.Before != nil {
+			var more []any
+			v, more = f.Before(v, loc)
+			if len(more) > 0 {
+				details = append(details, more...)
+				continue
+			}
+		}
+		if v == nil && f.Nullable {
+			output[f.Name] = nil
+			continue
+		}
+		switch f.Kind {
+		case "string":
+			value, ok := v.(string)
+			if !ok {
+				details = append(details, Detail("string_type", "Input should be a valid string", loc, v, nil))
+				continue
+			}
+			length := utf8.RuneCountInString(value)
+			if f.Min > 0 && length < f.Min {
+				details = append(details, Detail("string_too_short", stringLengthMessage("at least", f.Min), loc, v, map[string]any{"minLength": f.Min}))
+				continue
+			}
+			if f.Max > 0 && length > f.Max {
+				details = append(details, Detail("string_too_long", stringLengthMessage("at most", f.Max), loc, v, map[string]any{"maxLength": f.Max}))
+				continue
+			}
+			if f.Pattern != "" && !regexp.MustCompile(f.Pattern).MatchString(value) {
+				details = append(details, Detail("string_pattern_mismatch", fmt.Sprintf("String should match pattern '%s'", f.Pattern), loc, v, map[string]any{"pattern": f.Pattern}))
+				continue
+			}
+			output[f.Name] = value
+		case "integer":
+			var value int64
+			var wide *big.Int
+			var err error
+			kind, message := "int_parsing", "Input should be a valid integer, unable to parse string as an integer"
+			switch n := v.(type) {
+			case json.Number:
+				value, err = integralNumber(string(n))
+				if err != nil && f.AllowBigInteger {
+					wide, err = bigInteger(string(n))
+				}
+				kind, message = "int_from_float", "Input should be a valid integer, got a number with a fractional part"
+			case string:
+				if regexp.MustCompile(`^[+-]?[0-9]+(?:_[0-9]+)*(?:\.0+)?$`).MatchString(n) {
+					value, err = integralNumber(strings.ReplaceAll(n, "_", ""))
+					if err != nil && f.AllowBigInteger {
+						wide, err = bigInteger(strings.ReplaceAll(n, "_", ""))
+					}
+				} else {
+					err = fmt.Errorf("invalid integer string")
+				}
+			case bool:
+				if n {
+					value = 1
+				}
+			default:
+				err = fmt.Errorf("type")
+				kind, message = "int_type", "Input should be a valid integer"
+			}
+			if err != nil {
+				details = append(details, Detail(kind, message, loc, v, nil))
+				continue
+			}
+			compare := func(other int64) int {
+				if wide != nil {
+					return wide.Cmp(big.NewInt(other))
+				}
+				if value < other {
+					return -1
+				}
+				if value > other {
+					return 1
+				}
+				return 0
+			}
+			if f.GreaterThanZero && compare(0) <= 0 {
+				details = append(details, Detail("greater_than", "Input should be greater than 0", loc, v, map[string]any{"gt": 0}))
+				continue
+			}
+			if (f.Min > 0 || f.NonNegative) && compare(int64(f.Min)) < 0 {
+				details = append(details, Detail("greater_than_equal", fmt.Sprintf("Input should be greater than or equal to %d", f.Min), loc, v, map[string]any{"ge": f.Min}))
+				continue
+			}
+			if f.Max > 0 && compare(int64(f.Max)) > 0 {
+				details = append(details, Detail("less_than_equal", fmt.Sprintf("Input should be less than or equal to %d", f.Max), loc, v, map[string]any{"le": f.Max}))
+				continue
+			}
+			output[f.Name] = value
+			if wide != nil {
+				output[f.Name] = wide
+			}
+		case "boolean":
+			var value bool
+			valid := true
+			kind, message := "bool_parsing", "Input should be a valid boolean, unable to interpret input"
+			switch n := v.(type) {
+			case bool:
+				value = n
+			case string:
+				switch strings.ToLower(n) {
+				case "true", "1", "on", "yes", "y", "t":
+					value = true
+				case "false", "0", "off", "no", "n", "f":
+					value = false
+				default:
+					valid = false
+				}
+			case json.Number:
+				number, err := integralNumber(string(n))
+				if err == nil && number == 1 {
+					value = true
+				} else if err != nil || number != 0 {
+					valid = false
+				}
+			default:
+				valid = false
+				kind, message = "bool_type", "Input should be a valid boolean"
+			}
+			if !valid {
+				details = append(details, Detail(kind, message, loc, v, nil))
+				continue
+			}
+			output[f.Name] = value
+		default:
+			value, more := validateExtended(v, loc, f)
+			if len(more) > 0 {
+				details = append(details, more...)
+				continue
+			}
+			output[f.Name] = value
+		}
+		if f.Check != nil {
+			if message := f.Check(output[f.Name]); message != "" {
+				details = append(details, ValueDetail(message, loc, v))
+			}
+		}
+	}
+	if schema.ForbidExtra {
+		keys := []string{}
+		for key := range body {
+			if !consumed[key] {
+				keys = append(keys, key)
+			}
+		}
+		sort.Strings(keys)
+		for _, key := range keys {
+			loc := append(append([]any{}, location...), key)
+			details = append(details, Detail("extra_forbidden", "Extra inputs are not permitted", loc, body[key], nil))
+		}
+	}
+	if len(details) > 0 {
+		return nil, validationError(details)
+	}
+	if schema.Check != nil {
+		if message := schema.Check(output); message != "" {
+			return nil, validationError([]any{ValueDetail(message, location, decoded)})
+		}
+	}
+	return output, nil
+}
+
+func stringLengthMessage(bound string, count int) string {
+	unit := "characters"
+	if count == 1 {
+		unit = "character"
+	}
+	return fmt.Sprintf("String should have %s %d %s", bound, count, unit)
+}
+
+func integralNumber(text string) (int64, error) {
+	n, ok := new(big.Rat).SetString(text)
+	if !ok || !n.IsInt() || !n.Num().IsInt64() {
+		return 0, fmt.Errorf("not a representable integer")
+	}
+	return n.Num().Int64(), nil
+}
+
+func bigInteger(text string) (*big.Int, error) {
+	n, ok := new(big.Rat).SetString(text)
+	if !ok || !n.IsInt() {
+		return nil, fmt.Errorf("not an integer")
+	}
+	return new(big.Int).Set(n.Num()), nil
+}
+
+func jsonErrorAt(raw []byte, offset int, message string) *APIError {
+	if offset < 0 {
+		offset = 0
+	}
+	if offset > len(raw) {
+		offset = len(raw)
+	}
+	detail := Detail("json_invalid", "JSON decode error", []any{"body", utf8.RuneCount(raw[:offset])}, map[string]any{}, map[string]any{"error": message})
+	delete(detail, "url")
+	return validationError([]any{detail})
+}
+func jsonDecodeError(raw []byte, err error) *APIError {
+	offset := len(raw)
+	message := "Expecting value"
+	var syntax *json.SyntaxError
+	if errors.As(err, &syntax) {
+		offset = int(syntax.Offset) - 1
+		text := syntax.Error()
+		switch {
+		case strings.Contains(text, "object key string"):
+			message = "Expecting property name enclosed in double quotes"
+		case strings.Contains(text, "after object key:value pair"), strings.Contains(text, "after array element"):
+			message = "Expecting ',' delimiter"
+		case strings.Contains(text, "after object key"):
+			message = "Expecting ':' delimiter"
+		case strings.Contains(text, "string escape code"):
+			message = `Invalid \escape`
+			offset--
+		case strings.Contains(text, "in string literal"):
+			message = "Invalid control character at"
+		}
+	} else {
+		trimmed := strings.TrimRight(string(raw), " \t\r\n")
+		if strings.HasSuffix(trimmed, "{") {
+			message = "Expecting property name enclosed in double quotes"
+		} else if strings.HasSuffix(trimmed, "\"") || strings.HasSuffix(trimmed, "}") || strings.HasSuffix(trimmed, "]") {
+			message = "Expecting ',' delimiter"
+		}
+	}
+	// An unterminated JSON string reports its opening quote, including after a key.
+	quoted, escaped, start := false, false, 0
+	for i, b := range raw {
+		if quoted {
+			if escaped {
+				escaped = false
+			} else if b == '\\' {
+				escaped = true
+			} else if b == '"' {
+				quoted = false
+			}
+		} else if b == '"' {
+			quoted = true
+			start = i
+		}
+	}
+	if quoted && (err == io.ErrUnexpectedEOF || err == io.EOF) {
+		offset = start
+		message = "Unterminated string starting at"
+	}
+	return jsonErrorAt(raw, offset, message)
+}
