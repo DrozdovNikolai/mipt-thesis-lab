@@ -611,3 +611,41 @@ func jsonDecodeError(raw []byte, err error) *APIError {
 	}
 	return jsonErrorAt(raw, offset, message)
 }
+
+func PathInt(r *http.Request, name string) (int64, error) {
+	raw := r.PathValue(name)
+	v, err := strconv.ParseInt(raw, 10, 64)
+	if err != nil {
+		return 0, validationError([]any{Detail("int_parsing", "Input should be a valid integer, unable to parse string as an integer", []any{"path", name}, raw, nil)})
+	}
+	return v, nil
+}
+
+// ReadPathAndBody preserves FastAPI's combined validation details, while a JSON
+// parsing failure takes precedence over both path and model validation.
+func ReadPathAndBody(r *http.Request, pathSchema, bodySchema Schema) (Object, Object, error) {
+	return ReadPathAndBodyUsing(r, pathSchema, func() (Object, error) { return ReadSchema(r, bodySchema) })
+}
+
+// ReadPathAndBodyUsing preserves combined FastAPI validation errors for bodies
+// that need additional decoding information, such as JSON object insertion order.
+func ReadPathAndBodyUsing(r *http.Request, pathSchema Schema, readBody func() (Object, error)) (Object, Object, error) {
+	raw := map[string]any{}
+	for _, field := range pathSchema.Fields {
+		raw[field.Name] = r.PathValue(field.Name)
+	}
+	path, pathErr := ValidateObject(raw, []any{"path"}, pathSchema)
+	body, bodyErr := readBody()
+	if bodyErr != nil {
+		var p, b *APIError
+		if errors.As(pathErr, &p) && errors.As(bodyErr, &b) && p.Code == "VALIDATION_ERROR" && b.Code == "VALIDATION_ERROR" {
+			details := b.Extra["details"].([]any)
+			if len(details) > 0 && details[0].(map[string]any)["type"] != "json_invalid" {
+				p.Extra["details"] = append(p.Extra["details"].([]any), details...)
+				return path, body, p
+			}
+		}
+		return path, body, bodyErr
+	}
+	return path, body, pathErr
+}
