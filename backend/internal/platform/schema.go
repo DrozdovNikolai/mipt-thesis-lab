@@ -266,3 +266,30 @@ func uuidParseMessage(value string) string {
 	}
 	return "invalid UUID format"
 }
+
+// QueryObject shares the body's scalar coercion and accumulates ordered errors.
+func QueryObject(values map[string][]string, fields ...Field) (Object, error) {
+	raw := map[string]any{}
+	for key, items := range values {
+		if len(items) > 0 {
+			raw[key] = items[len(items)-1]
+		}
+	}
+	// FastAPI Query aliases apply to query parameters independently of the JSON
+	// model's populate_by_name setting. The snake_case name is not an alias here.
+	for _, f := range fields {
+		if f.Alias != "" && f.Alias != f.Name {
+			delete(raw, f.Name)
+		}
+	}
+	out, err := ValidateObject(raw, []any{"query"}, Schema{Fields: fields})
+	if e, ok := err.(*APIError); ok {
+		for _, item := range e.Extra["details"].([]any) {
+			detail := item.(map[string]any)
+			if detail["type"] == "missing" {
+				detail["input"] = nil
+			}
+		}
+	}
+	return out, err
+}
