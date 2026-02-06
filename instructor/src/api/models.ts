@@ -12,3 +12,12 @@ export interface Scenario {
   status: string;
 }
 
+export interface Pilot {
+  id: number;
+  firstName: string;
+  lastName: string;
+  position?: string;
+  aircraftCode?: string;
+  license?: string;
+}
+
