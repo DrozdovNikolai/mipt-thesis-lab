@@ -252,3 +252,57 @@ func TestRateLimitDisabledAndWildcardCORS(t *testing.T) {
 		})
 	}
 }
+
+func TestRateLimitRedisIntegration(t *testing.T) {
+	endpoint := os.Getenv("NORTH55_TEST_RATE_REDIS_URL")
+	if endpoint == "" {
+		t.Skip("set NORTH55_TEST_RATE_REDIS_URL for isolated Redis")
+	}
+	options, err := redis.ParseURL(endpoint)
+	if err != nil {
+		t.Fatal(err)
+	}
+	client := redis.NewClient(options)
+	defer client.Close()
+	ctx := context.Background()
+	id := "integration-" + uuid.NewString()
+	keys := []string{"rate_limit:min:" + id, "rate_limit:sec:" + id}
+	defer client.Del(ctx, keys...)
+	first, second := NewRedisRateLimiter(client, 17, 17), NewRedisRateLimiter(client, 17, 17)
+	clock := func() time.Time { return time.Unix(1000, 0) }
+	first.now, second.now = clock, clock
+	var allowed atomic.Int64
+	var group sync.WaitGroup
+	for i := 0; i < 200; i++ {
+		group.Add(1)
+		go func(i int) {
+			defer group.Done()
+			limiter := first
+			if i%2 != 0 {
+				limiter = second
+			}
+			if limiter.Allow(ctx, id).Allowed {
+				allowed.Add(1)
+			}
+		}(i)
+	}
+	group.Wait()
+	if allowed.Load() != 17 {
+		t.Fatalf("concurrent admission=%d want=17", allowed.Load())
+	}
+	for _, key := range keys {
+		if size, err := client.ZCard(ctx, key).Result(); err != nil || size != 17 {
+			t.Fatalf("cardinality=%d error=%v", size, err)
+		}
+	}
+	if ttl := client.TTL(ctx, keys[0]).Val(); ttl <= 0 || ttl > 61*time.Second {
+		t.Fatal("minute TTL", ttl)
+	}
+	if ttl := client.TTL(ctx, keys[1]).Val(); ttl <= 0 || ttl > 2*time.Second {
+		t.Fatal("second TTL", ttl)
+	}
+	first.now = func() time.Time { return time.Unix(1060, 0) }
+	if got := first.Allow(ctx, id); !got.Allowed || got.Remaining != 16 {
+		t.Fatalf("exact minute boundary: %+v", got)
+	}
+}
