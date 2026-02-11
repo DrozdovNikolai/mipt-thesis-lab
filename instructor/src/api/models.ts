@@ -21,3 +21,15 @@ export interface Pilot {
   license?: string;
 }
 
+export interface Exercise {
+  id: number;
+  name: string;
+  setup?: string;
+  displayLabel?: string;
+  stepLabel?: string;
+  guidancePlainText?: string;
+  guidance?: string;
+  duration?: number;
+  pf?: string;
+}
+
