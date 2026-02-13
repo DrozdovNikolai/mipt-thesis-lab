@@ -121,3 +121,59 @@ func TestErrorTrackingSourceEventAndTransactionSemantics(t *testing.T) {
 		}
 	}
 }
+
+func TestErrorTrackingThroughApplicationMiddleware(t *testing.T) {
+	transport := &trackingTransport{}
+	tracker, err := newErrorTracker("http://public@unused.invalid/1", "test", transport, 1)
+	if err != nil {
+		t.Fatal(err)
+	}
+	defer tracker.Close()
+	original := slog.Default()
+	defer slog.SetDefault(original)
+	logger, err := NewApplicationLogger(io.Discard, "INFO", false, tracker)
+	if err != nil {
+		t.Fatal(err)
+	}
+	slog.SetDefault(logger)
+	router := NewRouter()
+	router.HandleFunc("GET /full/{item}", Wrap(func(w http.ResponseWriter, r *http.Request) error {
+		LogModule("app.audit", r.Context()).Info("Probe breadcrumb", "action", "probe.info", "writer_instance_id", "source-extra")
+		switch r.PathValue("item") {
+		case "error-log":
+			LogModule("app.audit", r.Context()).Error("Probe error log", "action", "probe.error", "writer_instance_id", "source-extra")
+		case "handled":
+			return Error(409, "Synthetic handled source failure")
+		case "unhandled":
+			return errors.New("Synthetic unhandled source failure")
+		}
+		WriteJSON(w, 200, map[string]bool{"ok": true})
+		return nil
+	}))
+	handler := Middleware(Config{ErrorTracker: tracker}, router)
+	for i, item := range []string{"ok", "error-log", "handled", "unhandled"} {
+		prior := len(transport.snapshot())
+		request := httptest.NewRequest("GET", "/full/"+item, nil)
+		request.Header.Set("X-Request-ID", item)
+		handler.ServeHTTP(httptest.NewRecorder(), request)
+		errorsCount := 0
+		for _, e := range transport.snapshot()[prior:] {
+			if e.Type == "transaction" {
+				continue
+			}
+			errorsCount++
+			if e.Request == nil || e.Request.Headers["X-Request-Id"] != item || e.Transaction != "/full/{item}" {
+				t.Fatal("request scope missing", e)
+			}
+			if len(e.Breadcrumbs) == 0 || e.Breadcrumbs[0].Data["writer_instance_id"] != "source-extra" {
+				t.Fatal("lost source logging extra", e)
+			}
+			if item == "error-log" && e.Contexts["log"]["writer_instance_id"] != "source-extra" {
+				t.Fatal("lost error log extra", e)
+			}
+		}
+		if errorsCount != []int{0, 1, 0, 2}[i] {
+			t.Fatal(item, errorsCount)
+		}
+	}
+}
