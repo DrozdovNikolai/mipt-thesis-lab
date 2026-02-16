@@ -177,3 +177,107 @@ func TestErrorTrackingThroughApplicationMiddleware(t *testing.T) {
 		}
 	}
 }
+
+func TestErrorTrackingConcurrentRequestIsolation(t *testing.T) {
+	transport := &trackingTransport{}
+	tracker, err := newErrorTracker("http://public@unused.invalid/1", "test", transport, 1)
+	if err != nil {
+		t.Fatal(err)
+	}
+	defer tracker.Close()
+	original := slog.Default()
+	defer slog.SetDefault(original)
+	logger, err := NewApplicationLogger(io.Discard, "INFO", false, tracker)
+	if err != nil {
+		t.Fatal(err)
+	}
+	slog.SetDefault(logger)
+	router := NewRouter()
+	router.HandleFunc("GET /parallel/{id}", Wrap(func(w http.ResponseWriter, r *http.Request) error {
+		LogModule("app.audit", r.Context()).Info("Request breadcrumb", "isolated_request", r.PathValue("id"))
+		return errors.New("parallel synthetic failure")
+	}))
+	handler := Middleware(Config{ErrorTracker: tracker}, router)
+	var requests sync.WaitGroup
+	for i := 0; i < 24; i++ {
+		requests.Add(1)
+		go func(i int) {
+			defer requests.Done()
+			id := fmt.Sprint(i)
+			request := httptest.NewRequest("GET", "/parallel/"+id, nil)
+			request.Header.Set("X-Request-ID", id)
+			handler.ServeHTTP(httptest.NewRecorder(), request)
+		}(i)
+	}
+	requests.Wait()
+	counts := map[string]int{}
+	for _, e := range transport.snapshot() {
+		if e.Type == "transaction" {
+			continue
+		}
+		if e.Request == nil {
+			t.Fatal("request missing")
+		}
+		id := e.Request.Headers["X-Request-Id"]
+		counts[id]++
+		for _, breadcrumb := range e.Breadcrumbs {
+			if value, present := breadcrumb.Data["isolated_request"]; present && value != id {
+				t.Fatal("cross-request breadcrumb", id, value)
+			}
+		}
+	}
+	if len(counts) != 24 {
+		t.Fatal("missing isolated requests", counts)
+	}
+	for id, count := range counts {
+		if count != 2 {
+			t.Fatal("missing event", id, count)
+		}
+	}
+}
+
+func TestErrorTrackingRespectsApplicationLogThreshold(t *testing.T) {
+	for _, level := range []string{"NOTSET", "DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"} {
+		t.Run(level, func(t *testing.T) {
+			transport := &trackingTransport{}
+			tracker, err := newErrorTracker("http://public@unused.invalid/1", "test", transport, 0)
+			if err != nil {
+				t.Fatal(err)
+			}
+			defer tracker.Close()
+			original := slog.Default()
+			defer slog.SetDefault(original)
+			logger, err := NewApplicationLogger(io.Discard, level, false, tracker)
+			if err != nil {
+				t.Fatal(err)
+			}
+			slog.SetDefault(logger)
+			router := NewRouter()
+			router.HandleFunc("GET /levels", func(w http.ResponseWriter, r *http.Request) {
+				log := LogModule("app.audit", r.Context())
+				log.Debug("Debug probe")
+				log.Info("Info probe")
+				log.Warn("Warning probe")
+				log.Error("Error probe")
+				log.Log(r.Context(), 12, "Critical probe")
+				WriteJSON(w, 200, map[string]bool{"ok": true})
+			})
+			Middleware(Config{ErrorTracker: tracker}, router).ServeHTTP(httptest.NewRecorder(), httptest.NewRequest("GET", "/levels", nil))
+			events := transport.snapshot()
+			want := 2
+			if level == "CRITICAL" {
+				want = 1
+			}
+			if len(events) != want || events[len(events)-1].Level != sentry.LevelFatal {
+				t.Fatal("logging events", level, events)
+			}
+			for _, event := range events {
+				for _, crumb := range event.Breadcrumbs {
+					if crumb.Message == "Debug probe" || ((level == "ERROR" || level == "CRITICAL") && (crumb.Message == "Info probe" || crumb.Message == "Warning probe")) {
+						t.Fatal("disabled record became a breadcrumb", level, crumb)
+					}
+				}
+			}
+		})
+	}
+}
