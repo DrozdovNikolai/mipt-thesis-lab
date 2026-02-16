@@ -33,3 +33,15 @@ export interface Exercise {
   pf?: string;
 }
 
+export interface Competency {
+  id: number;
+  code: string;
+  name: string;
+  indicators?: { id: number; code: string; name: string }[];
+}
+
+export interface Catalog {
+  items: Competency[];
+  gradingScale?: { values: { code: string; label?: string }[] } | null;
+}
+
