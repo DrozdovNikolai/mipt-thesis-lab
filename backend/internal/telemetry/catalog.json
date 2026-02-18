@@ -1,0 +1,306 @@
+{
+  "domain": [
+    {
+      "name": "training_report_pdf_requests_total",
+      "help": "Total number of training report PDF render requests",
+      "kind": "counter",
+      "labels": [
+        "source",
+        "consumer",
+        "status"
+      ],
+      "buckets": null
+    },
+    {
+      "name": "training_report_pdf_render_duration_seconds",
+      "help": "Duration of training report PDF rendering",
+      "kind": "histogram",
+      "labels": [
+        "source",
+        "consumer"
+      ],
+      "buckets": [
+        0.05,
+        0.1,
+        0.25,
+        0.5,
+        1,
+        2,
+        5,
+        10
+      ]
+    },
+    {
+      "name": "training_report_pdf_bytes",
+      "help": "Generated training report PDF size in bytes",
+      "kind": "histogram",
+      "labels": [
+        "source",
+        "consumer"
+      ],
+      "buckets": [
+        25000,
+        50000,
+        100000,
+        250000,
+        500000,
+        1000000,
+        2500000,
+        5000000
+      ]
+    },
+    {
+      "name": "north55_training_runtime_sync_requests_total",
+      "help": "Training runtime sync requests by outcome and reason",
+      "kind": "counter",
+      "labels": [
+        "status",
+        "reason"
+      ],
+      "buckets": null
+    },
+    {
+      "name": "north55_training_runtime_sync_batch_size",
+      "help": "Number of runtime items delivered in one sync request",
+      "kind": "histogram",
+      "labels": [
+        "item_type"
+      ],
+      "buckets": [
+        0,
+        1,
+        2,
+        5,
+        10,
+        20,
+        50,
+        100,
+        200
+      ]
+    },
+    {
+      "name": "north55_training_runtime_sync_latency_seconds",
+      "help": "Training runtime sync request latency",
+      "kind": "histogram",
+      "labels": [
+        "status"
+      ],
+      "buckets": [
+        0.01,
+        0.025,
+        0.05,
+        0.1,
+        0.25,
+        0.5,
+        0.75,
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "name": "north55_training_runtime_conflicts_total",
+      "help": "Training runtime conflicts by domain error code",
+      "kind": "counter",
+      "labels": [
+        "type"
+      ],
+      "buckets": null
+    },
+    {
+      "name": "north55_training_runtime_seal_total",
+      "help": "Training runtime seal attempts by outcome",
+      "kind": "counter",
+      "labels": [
+        "outcome"
+      ],
+      "buckets": null
+    },
+    {
+      "name": "north55_training_runtime_projection_seconds",
+      "help": "Crew segment projection duration during runtime seal",
+      "kind": "histogram",
+      "labels": [],
+      "buckets": [
+        0.001,
+        0.005,
+        0.01,
+        0.025,
+        0.05,
+        0.1,
+        0.25,
+        0.5,
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "name": "north55_training_runtime_projection_failures_total",
+      "help": "Crew segment projection failures by reason",
+      "kind": "counter",
+      "labels": [
+        "reason"
+      ],
+      "buckets": null
+    },
+    {
+      "name": "training_unresolved_quick_rejections_total",
+      "help": "Requests rejected because unresolved Quick Comments remain",
+      "kind": "counter",
+      "labels": [
+        "endpoint"
+      ],
+      "buckets": null
+    },
+    {
+      "name": "training_comment_ob_required_rejections_total",
+      "help": "Contract-v1 comments rejected because a behavioural indicator is missing",
+      "kind": "counter",
+      "labels": [
+        "endpoint"
+      ],
+      "buckets": null
+    },
+    {
+      "name": "training_comment_contract_mismatch_total",
+      "help": "Requests rejected because the comment contract is missing or mismatched",
+      "kind": "counter",
+      "labels": [
+        "endpoint"
+      ],
+      "buckets": null
+    },
+    {
+      "name": "training_draft_revision_conflicts_total",
+      "help": "Revisioned training draft conflicts by stable domain reason",
+      "kind": "counter",
+      "labels": [
+        "reason"
+      ],
+      "buckets": null
+    },
+    {
+      "name": "training_draft_v3_save_total",
+      "help": "Revisioned training draft saves by result",
+      "kind": "counter",
+      "labels": [
+        "result"
+      ],
+      "buckets": null
+    },
+    {
+      "name": "training_draft_v3_save_seconds",
+      "help": "Revisioned training draft save duration",
+      "kind": "histogram",
+      "labels": [
+        "result"
+      ],
+      "buckets": [
+        0.005,
+        0.01,
+        0.025,
+        0.05,
+        0.1,
+        0.25,
+        0.5,
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "name": "training_quick_capability_granted_total",
+      "help": "New training sessions granted Quick Comment contract v1",
+      "kind": "counter",
+      "labels": [
+        "airline"
+      ],
+      "buckets": null
+    },
+    {
+      "name": "file_storage_s3_fallback_total",
+      "help": "Total number of S3-primary reads that fell back to local storage",
+      "kind": "counter",
+      "labels": [
+        "kind",
+        "operation"
+      ],
+      "buckets": null
+    }
+  ],
+  "http": [
+    {
+      "name": "http_requests_total",
+      "help": "Total number of requests by method, status and handler.",
+      "kind": "counter",
+      "labels": [
+        "method",
+        "status",
+        "handler"
+      ],
+      "buckets": null
+    },
+    {
+      "name": "http_request_size_bytes",
+      "help": "Content length of incoming requests by handler. Only value of header is respected. Otherwise ignored. No percentile calculated. ",
+      "kind": "summary",
+      "labels": [
+        "handler"
+      ],
+      "buckets": null
+    },
+    {
+      "name": "http_response_size_bytes",
+      "help": "Content length of outgoing responses by handler. Only value of header is respected. Otherwise ignored. No percentile calculated. ",
+      "kind": "summary",
+      "labels": [
+        "handler"
+      ],
+      "buckets": null
+    },
+    {
+      "name": "http_request_duration_highr_seconds",
+      "help": "Latency with many buckets but no API specific labels. Made for more accurate percentile calculations. ",
+      "kind": "histogram",
+      "labels": [],
+      "buckets": [
+        0.01,
+        0.025,
+        0.05,
+        0.075,
+        0.1,
+        0.25,
+        0.5,
+        0.75,
+        1,
+        1.5,
+        2,
+        2.5,
+        3,
+        3.5,
+        4,
+        4.5,
+        5,
+        7.5,
+        10,
+        30,
+        60
+      ]
+    },
+    {
+      "name": "http_request_duration_seconds",
+      "help": "Latency with only few buckets by handler. Made to be only used if aggregation by handler is important. ",
+      "kind": "histogram",
+      "labels": [
+        "method",
+        "handler"
+      ],
+      "buckets": [
+        0.1,
+        0.5,
+        1
+      ]
+    }
+  ]
+}
