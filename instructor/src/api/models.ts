@@ -45,3 +45,10 @@ export interface Catalog {
   gradingScale?: { values: { code: string; label?: string }[] } | null;
 }
 
+export interface Training {
+  trainingId: number;
+  cm1AssessmentId: number;
+  cm2AssessmentId: number;
+  exercises: Exercise[];
+}
+
