@@ -1,0 +1,1796 @@
+{
+  "operations": [
+    {
+      "name": "training_report_pdf_requests_total",
+      "kind": "counter",
+      "help": "Total number of training report PDF render requests",
+      "labels": [
+        "Север \"рейс\"\n\\",
+        "value-1",
+        "value-2"
+      ],
+      "label_names": [
+        "source",
+        "consumer",
+        "status"
+      ],
+      "values": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "training_report_pdf_render_duration_seconds",
+      "kind": "histogram",
+      "help": "Duration of training report PDF rendering",
+      "labels": [
+        "Север \"рейс\"\n\\",
+        "value-1"
+      ],
+      "label_names": [
+        "source",
+        "consumer"
+      ],
+      "values": [
+        0,
+        1,
+        7.25,
+        100000
+      ]
+    },
+    {
+      "name": "training_report_pdf_bytes",
+      "kind": "histogram",
+      "help": "Generated training report PDF size in bytes",
+      "labels": [
+        "Север \"рейс\"\n\\",
+        "value-1"
+      ],
+      "label_names": [
+        "source",
+        "consumer"
+      ],
+      "values": [
+        0,
+        1,
+        7.25,
+        100000
+      ]
+    },
+    {
+      "name": "north55_training_runtime_sync_requests_total",
+      "kind": "counter",
+      "help": "Training runtime sync requests by outcome and reason",
+      "labels": [
+        "Север \"рейс\"\n\\",
+        "value-1"
+      ],
+      "label_names": [
+        "status",
+        "reason"
+      ],
+      "values": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "north55_training_runtime_sync_batch_size",
+      "kind": "histogram",
+      "help": "Number of runtime items delivered in one sync request",
+      "labels": [
+        "Север \"рейс\"\n\\"
+      ],
+      "label_names": [
+        "item_type"
+      ],
+      "values": [
+        0,
+        1,
+        7.25,
+        100000
+      ]
+    },
+    {
+      "name": "north55_training_runtime_sync_latency_seconds",
+      "kind": "histogram",
+      "help": "Training runtime sync request latency",
+      "labels": [
+        "Север \"рейс\"\n\\"
+      ],
+      "label_names": [
+        "status"
+      ],
+      "values": [
+        0,
+        1,
+        7.25,
+        100000
+      ]
+    },
+    {
+      "name": "north55_training_runtime_conflicts_total",
+      "kind": "counter",
+      "help": "Training runtime conflicts by domain error code",
+      "labels": [
+        "Север \"рейс\"\n\\"
+      ],
+      "label_names": [
+        "type"
+      ],
+      "values": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "north55_training_runtime_seal_total",
+      "kind": "counter",
+      "help": "Training runtime seal attempts by outcome",
+      "labels": [
+        "Север \"рейс\"\n\\"
+      ],
+      "label_names": [
+        "outcome"
+      ],
+      "values": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "north55_training_runtime_projection_seconds",
+      "kind": "histogram",
+      "help": "Crew segment projection duration during runtime seal",
+      "labels": [],
+      "label_names": [],
+      "values": [
+        0,
+        1,
+        7.25,
+        100000
+      ]
+    },
+    {
+      "name": "north55_training_runtime_projection_failures_total",
+      "kind": "counter",
+      "help": "Crew segment projection failures by reason",
+      "labels": [
+        "Север \"рейс\"\n\\"
+      ],
+      "label_names": [
+        "reason"
+      ],
+      "values": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "training_unresolved_quick_rejections_total",
+      "kind": "counter",
+      "help": "Requests rejected because unresolved Quick Comments remain",
+      "labels": [
+        "Север \"рейс\"\n\\"
+      ],
+      "label_names": [
+        "endpoint"
+      ],
+      "values": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "training_comment_ob_required_rejections_total",
+      "kind": "counter",
+      "help": "Contract-v1 comments rejected because a behavioural indicator is missing",
+      "labels": [
+        "Север \"рейс\"\n\\"
+      ],
+      "label_names": [
+        "endpoint"
+      ],
+      "values": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "training_comment_contract_mismatch_total",
+      "kind": "counter",
+      "help": "Requests rejected because the comment contract is missing or mismatched",
+      "labels": [
+        "Север \"рейс\"\n\\"
+      ],
+      "label_names": [
+        "endpoint"
+      ],
+      "values": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "training_draft_revision_conflicts_total",
+      "kind": "counter",
+      "help": "Revisioned training draft conflicts by stable domain reason",
+      "labels": [
+        "Север \"рейс\"\n\\"
+      ],
+      "label_names": [
+        "reason"
+      ],
+      "values": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "training_draft_v3_save_total",
+      "kind": "counter",
+      "help": "Revisioned training draft saves by result",
+      "labels": [
+        "Север \"рейс\"\n\\"
+      ],
+      "label_names": [
+        "result"
+      ],
+      "values": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "training_draft_v3_save_seconds",
+      "kind": "histogram",
+      "help": "Revisioned training draft save duration",
+      "labels": [
+        "Север \"рейс\"\n\\"
+      ],
+      "label_names": [
+        "result"
+      ],
+      "values": [
+        0,
+        1,
+        7.25,
+        100000
+      ]
+    },
+    {
+      "name": "training_quick_capability_granted_total",
+      "kind": "counter",
+      "help": "New training sessions granted Quick Comment contract v1",
+      "labels": [
+        "Север \"рейс\"\n\\"
+      ],
+      "label_names": [
+        "airline"
+      ],
+      "values": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "file_storage_s3_fallback_total",
+      "kind": "counter",
+      "help": "Total number of S3-primary reads that fell back to local storage",
+      "labels": [
+        "Север \"рейс\"\n\\",
+        "value-1"
+      ],
+      "label_names": [
+        "kind",
+        "operation"
+      ],
+      "values": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "http_requests_total",
+      "kind": "counter",
+      "help": "Total number of requests by method, status and handler.",
+      "labels": [
+        "Север \"рейс\"\n\\",
+        "value-1",
+        "value-2"
+      ],
+      "label_names": [
+        "method",
+        "status",
+        "handler"
+      ],
+      "values": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "http_request_size_bytes",
+      "kind": "summary",
+      "help": "Content length of incoming requests by handler. Only value of header is respected. Otherwise ignored. No percentile calculated. ",
+      "labels": [
+        "Север \"рейс\"\n\\"
+      ],
+      "label_names": [
+        "handler"
+      ],
+      "values": [
+        0,
+        1,
+        7.25,
+        100000
+      ]
+    },
+    {
+      "name": "http_response_size_bytes",
+      "kind": "summary",
+      "help": "Content length of outgoing responses by handler. Only value of header is respected. Otherwise ignored. No percentile calculated. ",
+      "labels": [
+        "Север \"рейс\"\n\\"
+      ],
+      "label_names": [
+        "handler"
+      ],
+      "values": [
+        0,
+        1,
+        7.25,
+        100000
+      ]
+    },
+    {
+      "name": "http_request_duration_highr_seconds",
+      "kind": "histogram",
+      "help": "Latency with many buckets but no API specific labels. Made for more accurate percentile calculations. ",
+      "labels": [],
+      "label_names": [],
+      "values": [
+        0,
+        1,
+        7.25,
+        100000
+      ]
+    },
+    {
+      "name": "http_request_duration_seconds",
+      "kind": "histogram",
+      "help": "Latency with only few buckets by handler. Made to be only used if aggregation by handler is important. ",
+      "labels": [
+        "Север \"рейс\"\n\\",
+        "value-1"
+      ],
+      "label_names": [
+        "method",
+        "handler"
+      ],
+      "values": [
+        0,
+        1,
+        7.25,
+        100000
+      ]
+    }
+  ],
+  "families": [
+    {
+      "name": "training_report_pdf_requests",
+      "type": "counter",
+      "help": "Total number of training report PDF render requests",
+      "samples": [
+        {
+          "name": "training_report_pdf_requests_total",
+          "labels": {
+            "consumer": "value-1",
+            "source": "Север \"рейс\"\n\\",
+            "status": "value-2"
+          },
+          "value": 2.0
+        }
+      ]
+    },
+    {
+      "name": "training_report_pdf_requests_created",
+      "type": "gauge",
+      "help": "Total number of training report PDF render requests",
+      "samples": [
+        {
+          "name": "training_report_pdf_requests_created",
+          "labels": {
+            "consumer": "value-1",
+            "source": "Север \"рейс\"\n\\",
+            "status": "value-2"
+          },
+          "value": null
+        }
+      ]
+    },
+    {
+      "name": "training_report_pdf_render_duration_seconds",
+      "type": "histogram",
+      "help": "Duration of training report PDF rendering",
+      "samples": [
+        {
+          "name": "training_report_pdf_render_duration_seconds_bucket",
+          "labels": {
+            "consumer": "value-1",
+            "le": "0.05",
+            "source": "Север \"рейс\"\n\\"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "training_report_pdf_render_duration_seconds_bucket",
+          "labels": {
+            "consumer": "value-1",
+            "le": "0.1",
+            "source": "Север \"рейс\"\n\\"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "training_report_pdf_render_duration_seconds_bucket",
+          "labels": {
+            "consumer": "value-1",
+            "le": "0.25",
+            "source": "Север \"рейс\"\n\\"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "training_report_pdf_render_duration_seconds_bucket",
+          "labels": {
+            "consumer": "value-1",
+            "le": "0.5",
+            "source": "Север \"рейс\"\n\\"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "training_report_pdf_render_duration_seconds_bucket",
+          "labels": {
+            "consumer": "value-1",
+            "le": "1.0",
+            "source": "Север \"рейс\"\n\\"
+          },
+          "value": 2.0
+        },
+        {
+          "name": "training_report_pdf_render_duration_seconds_bucket",
+          "labels": {
+            "consumer": "value-1",
+            "le": "2.0",
+            "source": "Север \"рейс\"\n\\"
+          },
+          "value": 2.0
+        },
+        {
+          "name": "training_report_pdf_render_duration_seconds_bucket",
+          "labels": {
+            "consumer": "value-1",
+            "le": "5.0",
+            "source": "Север \"рейс\"\n\\"
+          },
+          "value": 2.0
+        },
+        {
+          "name": "training_report_pdf_render_duration_seconds_bucket",
+          "labels": {
+            "consumer": "value-1",
+            "le": "10.0",
+            "source": "Север \"рейс\"\n\\"
+          },
+          "value": 3.0
+        },
+        {
+          "name": "training_report_pdf_render_duration_seconds_bucket",
+          "labels": {
+            "consumer": "value-1",
+            "le": "+Inf",
+            "source": "Север \"рейс\"\n\\"
+          },
+          "value": 4.0
+        },
+        {
+          "name": "training_report_pdf_render_duration_seconds_count",
+          "labels": {
+            "consumer": "value-1",
+            "source": "Север \"рейс\"\n\\"
+          },
+          "value": 4.0
+        },
+        {
+          "name": "training_report_pdf_render_duration_seconds_sum",
+          "labels": {
+            "consumer": "value-1",
+            "source": "Север \"рейс\"\n\\"
+          },
+          "value": 100008.25
+        }
+      ]
+    },
+    {
+      "name": "training_report_pdf_render_duration_seconds_created",
+      "type": "gauge",
+      "help": "Duration of training report PDF rendering",
+      "samples": [
+        {
+          "name": "training_report_pdf_render_duration_seconds_created",
+          "labels": {
+            "consumer": "value-1",
+            "source": "Север \"рейс\"\n\\"
+          },
+          "value": null
+        }
+      ]
+    },
+    {
+      "name": "training_report_pdf_bytes",
+      "type": "histogram",
+      "help": "Generated training report PDF size in bytes",
+      "samples": [
+        {
+          "name": "training_report_pdf_bytes_bucket",
+          "labels": {
+            "consumer": "value-1",
+            "le": "25000.0",
+            "source": "Север \"рейс\"\n\\"
+          },
+          "value": 3.0
+        },
+        {
+          "name": "training_report_pdf_bytes_bucket",
+          "labels": {
+            "consumer": "value-1",
+            "le": "50000.0",
+            "source": "Север \"рейс\"\n\\"
+          },
+          "value": 3.0
+        },
+        {
+          "name": "training_report_pdf_bytes_bucket",
+          "labels": {
+            "consumer": "value-1",
+            "le": "100000.0",
+            "source": "Север \"рейс\"\n\\"
+          },
+          "value": 4.0
+        },
+        {
+          "name": "training_report_pdf_bytes_bucket",
+          "labels": {
+            "consumer": "value-1",
+            "le": "250000.0",
+            "source": "Север \"рейс\"\n\\"
+          },
+          "value": 4.0
+        },
+        {
+          "name": "training_report_pdf_bytes_bucket",
+          "labels": {
+            "consumer": "value-1",
+            "le": "500000.0",
+            "source": "Север \"рейс\"\n\\"
+          },
+          "value": 4.0
+        },
+        {
+          "name": "training_report_pdf_bytes_bucket",
+          "labels": {
+            "consumer": "value-1",
+            "le": "1e+06",
+            "source": "Север \"рейс\"\n\\"
+          },
+          "value": 4.0
+        },
+        {
+          "name": "training_report_pdf_bytes_bucket",
+          "labels": {
+            "consumer": "value-1",
+            "le": "2.5e+06",
+            "source": "Север \"рейс\"\n\\"
+          },
+          "value": 4.0
+        },
+        {
+          "name": "training_report_pdf_bytes_bucket",
+          "labels": {
+            "consumer": "value-1",
+            "le": "5e+06",
+            "source": "Север \"рейс\"\n\\"
+          },
+          "value": 4.0
+        },
+        {
+          "name": "training_report_pdf_bytes_bucket",
+          "labels": {
+            "consumer": "value-1",
+            "le": "+Inf",
+            "source": "Север \"рейс\"\n\\"
+          },
+          "value": 4.0
+        },
+        {
+          "name": "training_report_pdf_bytes_count",
+          "labels": {
+            "consumer": "value-1",
+            "source": "Север \"рейс\"\n\\"
+          },
+          "value": 4.0
+        },
+        {
+          "name": "training_report_pdf_bytes_sum",
+          "labels": {
+            "consumer": "value-1",
+            "source": "Север \"рейс\"\n\\"
+          },
+          "value": 100008.25
+        }
+      ]
+    },
+    {
+      "name": "training_report_pdf_bytes_created",
+      "type": "gauge",
+      "help": "Generated training report PDF size in bytes",
+      "samples": [
+        {
+          "name": "training_report_pdf_bytes_created",
+          "labels": {
+            "consumer": "value-1",
+            "source": "Север \"рейс\"\n\\"
+          },
+          "value": null
+        }
+      ]
+    },
+    {
+      "name": "north55_training_runtime_sync_requests",
+      "type": "counter",
+      "help": "Training runtime sync requests by outcome and reason",
+      "samples": [
+        {
+          "name": "north55_training_runtime_sync_requests_total",
+          "labels": {
+            "reason": "value-1",
+            "status": "Север \"рейс\"\n\\"
+          },
+          "value": 2.0
+        }
+      ]
+    },
+    {
+      "name": "north55_training_runtime_sync_requests_created",
+      "type": "gauge",
+      "help": "Training runtime sync requests by outcome and reason",
+      "samples": [
+        {
+          "name": "north55_training_runtime_sync_requests_created",
+          "labels": {
+            "reason": "value-1",
+            "status": "Север \"рейс\"\n\\"
+          },
+          "value": null
+        }
+      ]
+    },
+    {
+      "name": "north55_training_runtime_sync_batch_size",
+      "type": "histogram",
+      "help": "Number of runtime items delivered in one sync request",
+      "samples": [
+        {
+          "name": "north55_training_runtime_sync_batch_size_bucket",
+          "labels": {
+            "item_type": "Север \"рейс\"\n\\",
+            "le": "0.0"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "north55_training_runtime_sync_batch_size_bucket",
+          "labels": {
+            "item_type": "Север \"рейс\"\n\\",
+            "le": "1.0"
+          },
+          "value": 2.0
+        },
+        {
+          "name": "north55_training_runtime_sync_batch_size_bucket",
+          "labels": {
+            "item_type": "Север \"рейс\"\n\\",
+            "le": "2.0"
+          },
+          "value": 2.0
+        },
+        {
+          "name": "north55_training_runtime_sync_batch_size_bucket",
+          "labels": {
+            "item_type": "Север \"рейс\"\n\\",
+            "le": "5.0"
+          },
+          "value": 2.0
+        },
+        {
+          "name": "north55_training_runtime_sync_batch_size_bucket",
+          "labels": {
+            "item_type": "Север \"рейс\"\n\\",
+            "le": "10.0"
+          },
+          "value": 3.0
+        },
+        {
+          "name": "north55_training_runtime_sync_batch_size_bucket",
+          "labels": {
+            "item_type": "Север \"рейс\"\n\\",
+            "le": "20.0"
+          },
+          "value": 3.0
+        },
+        {
+          "name": "north55_training_runtime_sync_batch_size_bucket",
+          "labels": {
+            "item_type": "Север \"рейс\"\n\\",
+            "le": "50.0"
+          },
+          "value": 3.0
+        },
+        {
+          "name": "north55_training_runtime_sync_batch_size_bucket",
+          "labels": {
+            "item_type": "Север \"рейс\"\n\\",
+            "le": "100.0"
+          },
+          "value": 3.0
+        },
+        {
+          "name": "north55_training_runtime_sync_batch_size_bucket",
+          "labels": {
+            "item_type": "Север \"рейс\"\n\\",
+            "le": "200.0"
+          },
+          "value": 3.0
+        },
+        {
+          "name": "north55_training_runtime_sync_batch_size_bucket",
+          "labels": {
+            "item_type": "Север \"рейс\"\n\\",
+            "le": "+Inf"
+          },
+          "value": 4.0
+        },
+        {
+          "name": "north55_training_runtime_sync_batch_size_count",
+          "labels": {
+            "item_type": "Север \"рейс\"\n\\"
+          },
+          "value": 4.0
+        },
+        {
+          "name": "north55_training_runtime_sync_batch_size_sum",
+          "labels": {
+            "item_type": "Север \"рейс\"\n\\"
+          },
+          "value": 100008.25
+        }
+      ]
+    },
+    {
+      "name": "north55_training_runtime_sync_batch_size_created",
+      "type": "gauge",
+      "help": "Number of runtime items delivered in one sync request",
+      "samples": [
+        {
+          "name": "north55_training_runtime_sync_batch_size_created",
+          "labels": {
+            "item_type": "Север \"рейс\"\n\\"
+          },
+          "value": null
+        }
+      ]
+    },
+    {
+      "name": "north55_training_runtime_sync_latency_seconds",
+      "type": "histogram",
+      "help": "Training runtime sync request latency",
+      "samples": [
+        {
+          "name": "north55_training_runtime_sync_latency_seconds_bucket",
+          "labels": {
+            "le": "0.01",
+            "status": "Север \"рейс\"\n\\"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "north55_training_runtime_sync_latency_seconds_bucket",
+          "labels": {
+            "le": "0.025",
+            "status": "Север \"рейс\"\n\\"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "north55_training_runtime_sync_latency_seconds_bucket",
+          "labels": {
+            "le": "0.05",
+            "status": "Север \"рейс\"\n\\"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "north55_training_runtime_sync_latency_seconds_bucket",
+          "labels": {
+            "le": "0.1",
+            "status": "Север \"рейс\"\n\\"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "north55_training_runtime_sync_latency_seconds_bucket",
+          "labels": {
+            "le": "0.25",
+            "status": "Север \"рейс\"\n\\"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "north55_training_runtime_sync_latency_seconds_bucket",
+          "labels": {
+            "le": "0.5",
+            "status": "Север \"рейс\"\n\\"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "north55_training_runtime_sync_latency_seconds_bucket",
+          "labels": {
+            "le": "0.75",
+            "status": "Север \"рейс\"\n\\"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "north55_training_runtime_sync_latency_seconds_bucket",
+          "labels": {
+            "le": "1.0",
+            "status": "Север \"рейс\"\n\\"
+          },
+          "value": 2.0
+        },
+        {
+          "name": "north55_training_runtime_sync_latency_seconds_bucket",
+          "labels": {
+            "le": "2.0",
+            "status": "Север \"рейс\"\n\\"
+          },
+          "value": 2.0
+        },
+        {
+          "name": "north55_training_runtime_sync_latency_seconds_bucket",
+          "labels": {
+            "le": "5.0",
+            "status": "Север \"рейс\"\n\\"
+          },
+          "value": 2.0
+        },
+        {
+          "name": "north55_training_runtime_sync_latency_seconds_bucket",
+          "labels": {
+            "le": "+Inf",
+            "status": "Север \"рейс\"\n\\"
+          },
+          "value": 4.0
+        },
+        {
+          "name": "north55_training_runtime_sync_latency_seconds_count",
+          "labels": {
+            "status": "Север \"рейс\"\n\\"
+          },
+          "value": 4.0
+        },
+        {
+          "name": "north55_training_runtime_sync_latency_seconds_sum",
+          "labels": {
+            "status": "Север \"рейс\"\n\\"
+          },
+          "value": 100008.25
+        }
+      ]
+    },
+    {
+      "name": "north55_training_runtime_sync_latency_seconds_created",
+      "type": "gauge",
+      "help": "Training runtime sync request latency",
+      "samples": [
+        {
+          "name": "north55_training_runtime_sync_latency_seconds_created",
+          "labels": {
+            "status": "Север \"рейс\"\n\\"
+          },
+          "value": null
+        }
+      ]
+    },
+    {
+      "name": "north55_training_runtime_conflicts",
+      "type": "counter",
+      "help": "Training runtime conflicts by domain error code",
+      "samples": [
+        {
+          "name": "north55_training_runtime_conflicts_total",
+          "labels": {
+            "type": "Север \"рейс\"\n\\"
+          },
+          "value": 2.0
+        }
+      ]
+    },
+    {
+      "name": "north55_training_runtime_conflicts_created",
+      "type": "gauge",
+      "help": "Training runtime conflicts by domain error code",
+      "samples": [
+        {
+          "name": "north55_training_runtime_conflicts_created",
+          "labels": {
+            "type": "Север \"рейс\"\n\\"
+          },
+          "value": null
+        }
+      ]
+    },
+    {
+      "name": "north55_training_runtime_seal",
+      "type": "counter",
+      "help": "Training runtime seal attempts by outcome",
+      "samples": [
+        {
+          "name": "north55_training_runtime_seal_total",
+          "labels": {
+            "outcome": "Север \"рейс\"\n\\"
+          },
+          "value": 2.0
+        }
+      ]
+    },
+    {
+      "name": "north55_training_runtime_seal_created",
+      "type": "gauge",
+      "help": "Training runtime seal attempts by outcome",
+      "samples": [
+        {
+          "name": "north55_training_runtime_seal_created",
+          "labels": {
+            "outcome": "Север \"рейс\"\n\\"
+          },
+          "value": null
+        }
+      ]
+    },
+    {
+      "name": "north55_training_runtime_projection_seconds",
+      "type": "histogram",
+      "help": "Crew segment projection duration during runtime seal",
+      "samples": [
+        {
+          "name": "north55_training_runtime_projection_seconds_bucket",
+          "labels": {
+            "le": "0.001"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "north55_training_runtime_projection_seconds_bucket",
+          "labels": {
+            "le": "0.005"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "north55_training_runtime_projection_seconds_bucket",
+          "labels": {
+            "le": "0.01"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "north55_training_runtime_projection_seconds_bucket",
+          "labels": {
+            "le": "0.025"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "north55_training_runtime_projection_seconds_bucket",
+          "labels": {
+            "le": "0.05"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "north55_training_runtime_projection_seconds_bucket",
+          "labels": {
+            "le": "0.1"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "north55_training_runtime_projection_seconds_bucket",
+          "labels": {
+            "le": "0.25"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "north55_training_runtime_projection_seconds_bucket",
+          "labels": {
+            "le": "0.5"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "north55_training_runtime_projection_seconds_bucket",
+          "labels": {
+            "le": "1.0"
+          },
+          "value": 2.0
+        },
+        {
+          "name": "north55_training_runtime_projection_seconds_bucket",
+          "labels": {
+            "le": "2.0"
+          },
+          "value": 2.0
+        },
+        {
+          "name": "north55_training_runtime_projection_seconds_bucket",
+          "labels": {
+            "le": "5.0"
+          },
+          "value": 2.0
+        },
+        {
+          "name": "north55_training_runtime_projection_seconds_bucket",
+          "labels": {
+            "le": "+Inf"
+          },
+          "value": 4.0
+        },
+        {
+          "name": "north55_training_runtime_projection_seconds_count",
+          "labels": {},
+          "value": 4.0
+        },
+        {
+          "name": "north55_training_runtime_projection_seconds_sum",
+          "labels": {},
+          "value": 100008.25
+        }
+      ]
+    },
+    {
+      "name": "north55_training_runtime_projection_seconds_created",
+      "type": "gauge",
+      "help": "Crew segment projection duration during runtime seal",
+      "samples": [
+        {
+          "name": "north55_training_runtime_projection_seconds_created",
+          "labels": {},
+          "value": null
+        }
+      ]
+    },
+    {
+      "name": "north55_training_runtime_projection_failures",
+      "type": "counter",
+      "help": "Crew segment projection failures by reason",
+      "samples": [
+        {
+          "name": "north55_training_runtime_projection_failures_total",
+          "labels": {
+            "reason": "Север \"рейс\"\n\\"
+          },
+          "value": 2.0
+        }
+      ]
+    },
+    {
+      "name": "north55_training_runtime_projection_failures_created",
+      "type": "gauge",
+      "help": "Crew segment projection failures by reason",
+      "samples": [
+        {
+          "name": "north55_training_runtime_projection_failures_created",
+          "labels": {
+            "reason": "Север \"рейс\"\n\\"
+          },
+          "value": null
+        }
+      ]
+    },
+    {
+      "name": "training_unresolved_quick_rejections",
+      "type": "counter",
+      "help": "Requests rejected because unresolved Quick Comments remain",
+      "samples": [
+        {
+          "name": "training_unresolved_quick_rejections_total",
+          "labels": {
+            "endpoint": "Север \"рейс\"\n\\"
+          },
+          "value": 2.0
+        }
+      ]
+    },
+    {
+      "name": "training_unresolved_quick_rejections_created",
+      "type": "gauge",
+      "help": "Requests rejected because unresolved Quick Comments remain",
+      "samples": [
+        {
+          "name": "training_unresolved_quick_rejections_created",
+          "labels": {
+            "endpoint": "Север \"рейс\"\n\\"
+          },
+          "value": null
+        }
+      ]
+    },
+    {
+      "name": "training_comment_ob_required_rejections",
+      "type": "counter",
+      "help": "Contract-v1 comments rejected because a behavioural indicator is missing",
+      "samples": [
+        {
+          "name": "training_comment_ob_required_rejections_total",
+          "labels": {
+            "endpoint": "Север \"рейс\"\n\\"
+          },
+          "value": 2.0
+        }
+      ]
+    },
+    {
+      "name": "training_comment_ob_required_rejections_created",
+      "type": "gauge",
+      "help": "Contract-v1 comments rejected because a behavioural indicator is missing",
+      "samples": [
+        {
+          "name": "training_comment_ob_required_rejections_created",
+          "labels": {
+            "endpoint": "Север \"рейс\"\n\\"
+          },
+          "value": null
+        }
+      ]
+    },
+    {
+      "name": "training_comment_contract_mismatch",
+      "type": "counter",
+      "help": "Requests rejected because the comment contract is missing or mismatched",
+      "samples": [
+        {
+          "name": "training_comment_contract_mismatch_total",
+          "labels": {
+            "endpoint": "Север \"рейс\"\n\\"
+          },
+          "value": 2.0
+        }
+      ]
+    },
+    {
+      "name": "training_comment_contract_mismatch_created",
+      "type": "gauge",
+      "help": "Requests rejected because the comment contract is missing or mismatched",
+      "samples": [
+        {
+          "name": "training_comment_contract_mismatch_created",
+          "labels": {
+            "endpoint": "Север \"рейс\"\n\\"
+          },
+          "value": null
+        }
+      ]
+    },
+    {
+      "name": "training_draft_revision_conflicts",
+      "type": "counter",
+      "help": "Revisioned training draft conflicts by stable domain reason",
+      "samples": [
+        {
+          "name": "training_draft_revision_conflicts_total",
+          "labels": {
+            "reason": "Север \"рейс\"\n\\"
+          },
+          "value": 2.0
+        }
+      ]
+    },
+    {
+      "name": "training_draft_revision_conflicts_created",
+      "type": "gauge",
+      "help": "Revisioned training draft conflicts by stable domain reason",
+      "samples": [
+        {
+          "name": "training_draft_revision_conflicts_created",
+          "labels": {
+            "reason": "Север \"рейс\"\n\\"
+          },
+          "value": null
+        }
+      ]
+    },
+    {
+      "name": "training_draft_v3_save",
+      "type": "counter",
+      "help": "Revisioned training draft saves by result",
+      "samples": [
+        {
+          "name": "training_draft_v3_save_total",
+          "labels": {
+            "result": "Север \"рейс\"\n\\"
+          },
+          "value": 2.0
+        }
+      ]
+    },
+    {
+      "name": "training_draft_v3_save_created",
+      "type": "gauge",
+      "help": "Revisioned training draft saves by result",
+      "samples": [
+        {
+          "name": "training_draft_v3_save_created",
+          "labels": {
+            "result": "Север \"рейс\"\n\\"
+          },
+          "value": null
+        }
+      ]
+    },
+    {
+      "name": "training_draft_v3_save_seconds",
+      "type": "histogram",
+      "help": "Revisioned training draft save duration",
+      "samples": [
+        {
+          "name": "training_draft_v3_save_seconds_bucket",
+          "labels": {
+            "le": "0.005",
+            "result": "Север \"рейс\"\n\\"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "training_draft_v3_save_seconds_bucket",
+          "labels": {
+            "le": "0.01",
+            "result": "Север \"рейс\"\n\\"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "training_draft_v3_save_seconds_bucket",
+          "labels": {
+            "le": "0.025",
+            "result": "Север \"рейс\"\n\\"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "training_draft_v3_save_seconds_bucket",
+          "labels": {
+            "le": "0.05",
+            "result": "Север \"рейс\"\n\\"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "training_draft_v3_save_seconds_bucket",
+          "labels": {
+            "le": "0.1",
+            "result": "Север \"рейс\"\n\\"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "training_draft_v3_save_seconds_bucket",
+          "labels": {
+            "le": "0.25",
+            "result": "Север \"рейс\"\n\\"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "training_draft_v3_save_seconds_bucket",
+          "labels": {
+            "le": "0.5",
+            "result": "Север \"рейс\"\n\\"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "training_draft_v3_save_seconds_bucket",
+          "labels": {
+            "le": "1.0",
+            "result": "Север \"рейс\"\n\\"
+          },
+          "value": 2.0
+        },
+        {
+          "name": "training_draft_v3_save_seconds_bucket",
+          "labels": {
+            "le": "2.0",
+            "result": "Север \"рейс\"\n\\"
+          },
+          "value": 2.0
+        },
+        {
+          "name": "training_draft_v3_save_seconds_bucket",
+          "labels": {
+            "le": "5.0",
+            "result": "Север \"рейс\"\n\\"
+          },
+          "value": 2.0
+        },
+        {
+          "name": "training_draft_v3_save_seconds_bucket",
+          "labels": {
+            "le": "+Inf",
+            "result": "Север \"рейс\"\n\\"
+          },
+          "value": 4.0
+        },
+        {
+          "name": "training_draft_v3_save_seconds_count",
+          "labels": {
+            "result": "Север \"рейс\"\n\\"
+          },
+          "value": 4.0
+        },
+        {
+          "name": "training_draft_v3_save_seconds_sum",
+          "labels": {
+            "result": "Север \"рейс\"\n\\"
+          },
+          "value": 100008.25
+        }
+      ]
+    },
+    {
+      "name": "training_draft_v3_save_seconds_created",
+      "type": "gauge",
+      "help": "Revisioned training draft save duration",
+      "samples": [
+        {
+          "name": "training_draft_v3_save_seconds_created",
+          "labels": {
+            "result": "Север \"рейс\"\n\\"
+          },
+          "value": null
+        }
+      ]
+    },
+    {
+      "name": "training_quick_capability_granted",
+      "type": "counter",
+      "help": "New training sessions granted Quick Comment contract v1",
+      "samples": [
+        {
+          "name": "training_quick_capability_granted_total",
+          "labels": {
+            "airline": "Север \"рейс\"\n\\"
+          },
+          "value": 2.0
+        }
+      ]
+    },
+    {
+      "name": "training_quick_capability_granted_created",
+      "type": "gauge",
+      "help": "New training sessions granted Quick Comment contract v1",
+      "samples": [
+        {
+          "name": "training_quick_capability_granted_created",
+          "labels": {
+            "airline": "Север \"рейс\"\n\\"
+          },
+          "value": null
+        }
+      ]
+    },
+    {
+      "name": "file_storage_s3_fallback",
+      "type": "counter",
+      "help": "Total number of S3-primary reads that fell back to local storage",
+      "samples": [
+        {
+          "name": "file_storage_s3_fallback_total",
+          "labels": {
+            "kind": "Север \"рейс\"\n\\",
+            "operation": "value-1"
+          },
+          "value": 2.0
+        }
+      ]
+    },
+    {
+      "name": "file_storage_s3_fallback_created",
+      "type": "gauge",
+      "help": "Total number of S3-primary reads that fell back to local storage",
+      "samples": [
+        {
+          "name": "file_storage_s3_fallback_created",
+          "labels": {
+            "kind": "Север \"рейс\"\n\\",
+            "operation": "value-1"
+          },
+          "value": null
+        }
+      ]
+    },
+    {
+      "name": "http_requests",
+      "type": "counter",
+      "help": "Total number of requests by method, status and handler.",
+      "samples": [
+        {
+          "name": "http_requests_total",
+          "labels": {
+            "handler": "value-2",
+            "method": "Север \"рейс\"\n\\",
+            "status": "value-1"
+          },
+          "value": 2.0
+        }
+      ]
+    },
+    {
+      "name": "http_requests_created",
+      "type": "gauge",
+      "help": "Total number of requests by method, status and handler.",
+      "samples": [
+        {
+          "name": "http_requests_created",
+          "labels": {
+            "handler": "value-2",
+            "method": "Север \"рейс\"\n\\",
+            "status": "value-1"
+          },
+          "value": null
+        }
+      ]
+    },
+    {
+      "name": "http_request_size_bytes",
+      "type": "summary",
+      "help": "Content length of incoming requests by handler. Only value of header is respected. Otherwise ignored. No percentile calculated. ",
+      "samples": [
+        {
+          "name": "http_request_size_bytes_count",
+          "labels": {
+            "handler": "Север \"рейс\"\n\\"
+          },
+          "value": 4.0
+        },
+        {
+          "name": "http_request_size_bytes_sum",
+          "labels": {
+            "handler": "Север \"рейс\"\n\\"
+          },
+          "value": 100008.25
+        }
+      ]
+    },
+    {
+      "name": "http_request_size_bytes_created",
+      "type": "gauge",
+      "help": "Content length of incoming requests by handler. Only value of header is respected. Otherwise ignored. No percentile calculated. ",
+      "samples": [
+        {
+          "name": "http_request_size_bytes_created",
+          "labels": {
+            "handler": "Север \"рейс\"\n\\"
+          },
+          "value": null
+        }
+      ]
+    },
+    {
+      "name": "http_response_size_bytes",
+      "type": "summary",
+      "help": "Content length of outgoing responses by handler. Only value of header is respected. Otherwise ignored. No percentile calculated. ",
+      "samples": [
+        {
+          "name": "http_response_size_bytes_count",
+          "labels": {
+            "handler": "Север \"рейс\"\n\\"
+          },
+          "value": 4.0
+        },
+        {
+          "name": "http_response_size_bytes_sum",
+          "labels": {
+            "handler": "Север \"рейс\"\n\\"
+          },
+          "value": 100008.25
+        }
+      ]
+    },
+    {
+      "name": "http_response_size_bytes_created",
+      "type": "gauge",
+      "help": "Content length of outgoing responses by handler. Only value of header is respected. Otherwise ignored. No percentile calculated. ",
+      "samples": [
+        {
+          "name": "http_response_size_bytes_created",
+          "labels": {
+            "handler": "Север \"рейс\"\n\\"
+          },
+          "value": null
+        }
+      ]
+    },
+    {
+      "name": "http_request_duration_highr_seconds",
+      "type": "histogram",
+      "help": "Latency with many buckets but no API specific labels. Made for more accurate percentile calculations. ",
+      "samples": [
+        {
+          "name": "http_request_duration_highr_seconds_bucket",
+          "labels": {
+            "le": "0.01"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "http_request_duration_highr_seconds_bucket",
+          "labels": {
+            "le": "0.025"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "http_request_duration_highr_seconds_bucket",
+          "labels": {
+            "le": "0.05"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "http_request_duration_highr_seconds_bucket",
+          "labels": {
+            "le": "0.075"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "http_request_duration_highr_seconds_bucket",
+          "labels": {
+            "le": "0.1"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "http_request_duration_highr_seconds_bucket",
+          "labels": {
+            "le": "0.25"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "http_request_duration_highr_seconds_bucket",
+          "labels": {
+            "le": "0.5"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "http_request_duration_highr_seconds_bucket",
+          "labels": {
+            "le": "0.75"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "http_request_duration_highr_seconds_bucket",
+          "labels": {
+            "le": "1.0"
+          },
+          "value": 2.0
+        },
+        {
+          "name": "http_request_duration_highr_seconds_bucket",
+          "labels": {
+            "le": "1.5"
+          },
+          "value": 2.0
+        },
+        {
+          "name": "http_request_duration_highr_seconds_bucket",
+          "labels": {
+            "le": "2.0"
+          },
+          "value": 2.0
+        },
+        {
+          "name": "http_request_duration_highr_seconds_bucket",
+          "labels": {
+            "le": "2.5"
+          },
+          "value": 2.0
+        },
+        {
+          "name": "http_request_duration_highr_seconds_bucket",
+          "labels": {
+            "le": "3.0"
+          },
+          "value": 2.0
+        },
+        {
+          "name": "http_request_duration_highr_seconds_bucket",
+          "labels": {
+            "le": "3.5"
+          },
+          "value": 2.0
+        },
+        {
+          "name": "http_request_duration_highr_seconds_bucket",
+          "labels": {
+            "le": "4.0"
+          },
+          "value": 2.0
+        },
+        {
+          "name": "http_request_duration_highr_seconds_bucket",
+          "labels": {
+            "le": "4.5"
+          },
+          "value": 2.0
+        },
+        {
+          "name": "http_request_duration_highr_seconds_bucket",
+          "labels": {
+            "le": "5.0"
+          },
+          "value": 2.0
+        },
+        {
+          "name": "http_request_duration_highr_seconds_bucket",
+          "labels": {
+            "le": "7.5"
+          },
+          "value": 3.0
+        },
+        {
+          "name": "http_request_duration_highr_seconds_bucket",
+          "labels": {
+            "le": "10.0"
+          },
+          "value": 3.0
+        },
+        {
+          "name": "http_request_duration_highr_seconds_bucket",
+          "labels": {
+            "le": "30.0"
+          },
+          "value": 3.0
+        },
+        {
+          "name": "http_request_duration_highr_seconds_bucket",
+          "labels": {
+            "le": "60.0"
+          },
+          "value": 3.0
+        },
+        {
+          "name": "http_request_duration_highr_seconds_bucket",
+          "labels": {
+            "le": "+Inf"
+          },
+          "value": 4.0
+        },
+        {
+          "name": "http_request_duration_highr_seconds_count",
+          "labels": {},
+          "value": 4.0
+        },
+        {
+          "name": "http_request_duration_highr_seconds_sum",
+          "labels": {},
+          "value": 100008.25
+        }
+      ]
+    },
+    {
+      "name": "http_request_duration_highr_seconds_created",
+      "type": "gauge",
+      "help": "Latency with many buckets but no API specific labels. Made for more accurate percentile calculations. ",
+      "samples": [
+        {
+          "name": "http_request_duration_highr_seconds_created",
+          "labels": {},
+          "value": null
+        }
+      ]
+    },
+    {
+      "name": "http_request_duration_seconds",
+      "type": "histogram",
+      "help": "Latency with only few buckets by handler. Made to be only used if aggregation by handler is important. ",
+      "samples": [
+        {
+          "name": "http_request_duration_seconds_bucket",
+          "labels": {
+            "handler": "value-1",
+            "le": "0.1",
+            "method": "Север \"рейс\"\n\\"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "http_request_duration_seconds_bucket",
+          "labels": {
+            "handler": "value-1",
+            "le": "0.5",
+            "method": "Север \"рейс\"\n\\"
+          },
+          "value": 1.0
+        },
+        {
+          "name": "http_request_duration_seconds_bucket",
+          "labels": {
+            "handler": "value-1",
+            "le": "1.0",
+            "method": "Север \"рейс\"\n\\"
+          },
+          "value": 2.0
+        },
+        {
+          "name": "http_request_duration_seconds_bucket",
+          "labels": {
+            "handler": "value-1",
+            "le": "+Inf",
+            "method": "Север \"рейс\"\n\\"
+          },
+          "value": 4.0
+        },
+        {
+          "name": "http_request_duration_seconds_count",
+          "labels": {
+            "handler": "value-1",
+            "method": "Север \"рейс\"\n\\"
+          },
+          "value": 4.0
+        },
+        {
+          "name": "http_request_duration_seconds_sum",
+          "labels": {
+            "handler": "value-1",
+            "method": "Север \"рейс\"\n\\"
+          },
+          "value": 100008.25
+        }
+      ]
+    },
+    {
+      "name": "http_request_duration_seconds_created",
+      "type": "gauge",
+      "help": "Latency with only few buckets by handler. Made to be only used if aggregation by handler is important. ",
+      "samples": [
+        {
+          "name": "http_request_duration_seconds_created",
+          "labels": {
+            "handler": "value-1",
+            "method": "Север \"рейс\"\n\\"
+          },
+          "value": null
+        }
+      ]
+    }
+  ]
+}
