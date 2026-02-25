@@ -52,3 +52,18 @@ export interface Training {
   exercises: Exercise[];
 }
 
+export type Seat = 'cm1' | 'cm2';
+export interface Assessment {
+  grades: Record<string, string>;
+  summary: string;
+  result: boolean | null;
+}
+export type Scorecard = Record<Seat, Assessment>;
+
+export interface Receipt {
+  trainingId: number;
+  submissionStatus: string;
+  submissionError?: string | null;
+  assessmentsCompleted: boolean;
+}
+
