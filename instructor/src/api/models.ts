@@ -67,3 +67,7 @@ export interface Receipt {
   assessmentsCompleted: boolean;
 }
 
+export function pilotName(pilot: Pilot) {
+  return [pilot.lastName, pilot.firstName].filter(Boolean).join(' ') || `Участник №${pilot.id}`;
+}
+
