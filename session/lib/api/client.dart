@@ -25,4 +25,26 @@ class SessionApi {
     tokens=Tokens.from(await send('POST','/auth/login',body:{'login':login,'password':password}));
   }
   void logout(){tokens=null;}
+  Future<void>? _renewal;
+  Future<void> _refresh(Tokens previous) async {
+    try {
+      final result=await send('POST','/auth/refresh',body:{'refreshToken':previous.refresh});
+      if(identical(tokens,previous)) tokens=Tokens.from(result);
+    } on ApiFailure catch(e) {
+      if((e.status==401 || e.status==403) && identical(tokens,previous)) logout();
+      rethrow;
+    }
+  }
+  Future<dynamic> request(String method,String path,{Object? body,Map<String,String>? query,Map<String,String>? headers}) async {
+    final previous=tokens;
+    if(previous==null) throw ApiFailure(401,'Войдите в систему.');
+    Future<dynamic> attempt(Tokens token)=>send(method,path,body:body,query:query,headers:headers,bearer:token.access);
+    try {return await attempt(previous);} on ApiFailure catch(e){
+      if(e.status!=401) rethrow;
+      if(identical(tokens,previous)) await (_renewal??=_refresh(previous).whenComplete(()=>_renewal=null));
+      final renewed=tokens;
+      if(renewed==null) rethrow;
+      return attempt(renewed);
+    }
+  }
 }
