@@ -71,3 +71,7 @@ export function pilotName(pilot: Pilot) {
   return [pilot.lastName, pilot.firstName].filter(Boolean).join(' ') || `Участник №${pilot.id}`;
 }
 
+export function exerciseName(exercise: Exercise) {
+  return exercise.displayLabel || exercise.name || exercise.setup || `Упражнение №${exercise.id}`;
+}
+
