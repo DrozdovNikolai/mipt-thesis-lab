@@ -75,3 +75,8 @@ export function exerciseName(exercise: Exercise) {
   return exercise.displayLabel || exercise.name || exercise.setup || `Упражнение №${exercise.id}`;
 }
 
+export function newScorecard(): Scorecard {
+  const blank = (): Assessment => ({ grades: {}, summary: '', result: null });
+  return { cm1: blank(), cm2: blank() };
+}
+
