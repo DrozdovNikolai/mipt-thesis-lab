@@ -15,3 +15,23 @@ function errorMessage(body: string, status: number) {
   return `Сервер вернул HTTP ${status}`;
 }
 
+async function request<T>(path: string, body?: unknown, accessToken?: string): Promise<T> {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 20000);
+  try {
+    const response = await fetch(baseUrl + path, {
+      method: body === undefined ? 'GET' : 'POST',
+      signal: controller.signal,
+      headers: {
+        Accept: 'application/json',
+        ...(body === undefined ? {} : { 'Content-Type': 'application/json' }),
+        ...(accessToken ? { Authorization: 'Bearer ' + accessToken } : {}),
+      },
+      body: body === undefined ? undefined : JSON.stringify(body),
+    });
+    const text = await response.text();
+    if (!response.ok) throw new ApiError(response.status, errorMessage(text, response.status));
+    return text ? JSON.parse(text) : undefined;
+  } finally { clearTimeout(timeout); }
+}
+
