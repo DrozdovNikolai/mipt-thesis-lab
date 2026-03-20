@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+
+  --color-app: #ebebeb;
+  --color-surface: #ffffff;
+  --color-surface-chart: #ebebeb;
+  --color-surface-pilot-badge: #e5e3e3;
+  --color-surface-muted: #f9fafc;
+  --color-surface-subtle: #171616;
+  --color-surface-strong: #0f172a;
+  --color-surface-strong-hover: #1e293b;
+  --color-surface-inverse: rgb(255 255 255 / 0.1);
+
+  --color-chrome: #212121;
+  --color-chrome-elevated: #2b2b2b;
+  --color-chrome-hover: #343434;
+  --color-chrome-fg: #ffffff;
+  --color-chrome-fg-muted: rgb(255 255 255 / 0.72);
+  --color-chrome-line: rgb(255 255 255 / 0.12);
+  --color-chrome-line-strong: rgb(255 255 255 / 0.2);
+  --color-chrome-accent: #ffce00;
+
+  --color-hero-start: #020617;
+  --color-hero-mid: #0f172a;
+  --color-hero-end: #0c4a6e;
+
+  --color-foreground: #000000;
+  --color-foreground-pilot-badge: #0b0b0b;
+  --color-foreground-secondary: #334155;
+  --color-foreground-muted: var(--color-foreground);
+  --color-foreground-inverse: #ffffff;
+  --color-foreground-inverse-muted: rgb(255 255 255 / 0.82);
+  --color-foreground-inverse-subtle: rgb(255 255 255 / 0.68);
+
+  --color-line: #e2e8f0;
+  --color-line-strong: #cbd5e1;
+  --color-line-emphasis: #94a3b8;
+  --color-line-inverse: rgb(255 255 255 / 0.18);
+  --color-line-inverse-strong: rgb(255 255 255 / 0.42);
+
+  --color-focus: rgb(148 163 184 / 0.28);
+  --color-focus-inverse: rgb(255 255 255 / 0.22);
+
+  --color-success-soft: #ecfdf5;
+  --color-success-muted: #d1fae5;
+  --color-line-success: #a7f3d0;
+  --color-success: #047857;
+  --color-success-emphasis: rgb(52 211 153 / 0.16);
+  --color-success-contrast: #d1fae5;
+
+  --color-warning-soft: #fffbeb;
+  --color-warning-muted: #fef3c7;
+  --color-line-warning: #fde68a;
+  --color-warning: #92400e;
+  --color-warning-strong: #78350f;
+  --color-warning-emphasis: rgb(251 191 36 / 0.16);
+  --color-warning-contrast: #fde68a;
+
+  --color-danger-soft: #fff1f2;
+  --color-danger-muted: #ffe4e6;
+  --color-line-danger: #fecdd3;
+  --color-danger: #be123c;
+  --color-danger-emphasis: rgb(244 63 94 / 0.12);
+  --color-line-danger-emphasis: rgb(253 164 175 / 0.45);
+  --color-danger-contrast: #ffe4e6;
+}
+
+:root {
+  color-scheme: light;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body,
+  #app {
+    margin: 0;
+    min-height: 100%;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background: var(--color-app);
+    color: var(--color-foreground);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .brand-logo {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    line-height: 1.2;
+    white-space: nowrap;
+    font-family:
+      -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'SF Pro', system-ui,
+      sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .brand-logo__digit,
+  .brand-logo__text {
+    display: inline-block;
+  }
+
+  .brand-logo__digit--first {
+    color: #f7d046;
+  }
+
+  .brand-logo__digit--second {
+    color: #dfa539;
+  }
+
+  .brand-logo__text {
+    color: #ffffff;
+  }
+
+  .sidebar-brand-logo {
+    display: inline-flex;
+    align-items: center;
+    min-height: 17px;
+  }
+
+  .app-shell-scroll-area {
+    scrollbar-gutter: stable both-edges;
+    overscroll-behavior: contain;
+  }
+
+  .chart-scroll-area {
+    background: var(--color-surface-chart);
+    scrollbar-color: var(--color-line-emphasis) var(--color-surface-chart);
+    scrollbar-width: thin;
+  }
+
+  .chart-scroll-area::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+
+  .chart-scroll-area::-webkit-scrollbar-track {
+    background: var(--color-surface-chart);
+    border-radius: 999px;
+  }
+
+  .chart-scroll-area::-webkit-scrollbar-thumb {
+    background: var(--color-line-emphasis);
+    border: 3px solid var(--color-surface-chart);
+    border-radius: 999px;
+  }
+
+  .chart-scroll-area::-webkit-scrollbar-corner {
+    background: var(--color-surface-chart);
+  }
+
+  .training-sessions-scrollbar,
+  .sticky-horizontal-scrollbar {
+    scrollbar-color: var(--color-line-emphasis) var(--color-surface-subtle);
+    scrollbar-width: thin;
+  }
+
+  .training-sessions-scrollbar::-webkit-scrollbar,
+  .sticky-horizontal-scrollbar::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+
+  .training-sessions-scrollbar::-webkit-scrollbar-track,
+  .sticky-horizontal-scrollbar::-webkit-scrollbar-track {
+    background: var(--color-surface-subtle);
+    border-radius: 999px;
+  }
+
+  .training-sessions-scrollbar::-webkit-scrollbar-thumb,
+  .sticky-horizontal-scrollbar::-webkit-scrollbar-thumb {
+    background: var(--color-line-emphasis);
+    border: 3px solid var(--color-surface-subtle);
+    border-radius: 999px;
+  }
+
+  .training-sessions-scrollbar::-webkit-scrollbar-corner,
+  .sticky-horizontal-scrollbar::-webkit-scrollbar-corner {
+    background: var(--color-surface-subtle);
+  }
+
+  .training-sessions-content-scroll-area,
+  .sticky-horizontal-scroll-area {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .training-sessions-content-scroll-area::-webkit-scrollbar,
+  .sticky-horizontal-scroll-area::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}
