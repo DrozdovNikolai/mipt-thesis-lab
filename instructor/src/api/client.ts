@@ -35,3 +35,17 @@ async function request<T>(path: string, body?: unknown, accessToken?: string): P
   } finally { clearTimeout(timeout); }
 }
 
+function tokenPair(value: Tokens) {
+  if (!value?.accessToken || !value.refreshToken) throw new Error('Сервер не выдал пару токенов');
+  return value;
+}
+
+export class Client {
+  private refreshing?: Promise<void>;
+  private constructor(private tokens: Tokens) {}
+
+  static async login(login: string, password: string) {
+    const tokens = await request<Tokens>('/auth/login', { login: login.trim(), password });
+    return new Client(tokenPair(tokens));
+  }
+
