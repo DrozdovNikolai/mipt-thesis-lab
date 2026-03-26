@@ -145,3 +145,68 @@ func (s *Service) refresh(w http.ResponseWriter, r *http.Request) error {
 	platform.WriteJSON(w, 200, pair)
 	return nil
 }
+func (s *Service) me(w http.ResponseWriter, r *http.Request) error {
+	user, err := s.Authenticate(r)
+	if err != nil {
+		return err
+	}
+	platform.WriteJSON(w, 200, user)
+	return nil
+}
+func (s *Service) logout(w http.ResponseWriter, r *http.Request) error {
+	u, err := s.Authenticate(r)
+	if err != nil {
+		return err
+	}
+	_, err = s.DB.Exec(r.Context(), `UPDATE auth_sessions SET revoked_at=now(),revoked_reason='logout' WHERE id=$1 AND user_id=$2 AND revoked_at IS NULL`, u.SessionID, u.InternalID)
+	if err != nil {
+		return err
+	}
+	platform.LogModule("app.audit", r.Context()).Info("Logout", "action", "auth.logout", "user_id", u.ID)
+	platform.WriteJSON(w, 200, map[string]bool{"success": true})
+	return nil
+}
+func (s *Service) logoutRefresh(w http.ResponseWriter, r *http.Request) error {
+	body, err := platform.ReadObject(r, refreshField)
+	if err != nil {
+		return err
+	}
+	data, tokenErr := DecodeToken(s.Config, body.String("refresh_token"), "refresh")
+	if tokenErr == nil {
+		_, err = s.DB.Exec(r.Context(), `UPDATE auth_sessions a SET revoked_at=now(),revoked_reason='logout' FROM users u WHERE a.user_id=u.id AND u.public_id=$1 AND a.id=$2 AND a.revoked_at IS NULL`, data.Subject, data.SessionID)
+		if err != nil {
+			return err
+		}
+		platform.LogModule("app.audit", r.Context()).Info("Logout (refresh)", "action", "auth.logout_refresh", "user_id", data.Subject, "session_id", data.SessionID)
+	}
+	platform.WriteJSON(w, 200, map[string]bool{"success": true})
+	return nil
+}
+func (s *Service) logoutAll(w http.ResponseWriter, r *http.Request) error {
+	u, err := s.Authenticate(r)
+	if err != nil {
+		return err
+	}
+	_, err = s.DB.Exec(r.Context(), `UPDATE auth_sessions SET revoked_at=now(),revoked_reason='logout_all' WHERE user_id=$1 AND revoked_at IS NULL`, u.InternalID)
+	if err != nil {
+		return err
+	}
+	platform.LogModule("app.audit", r.Context()).Info("Logout all", "action", "auth.logout_all", "user_id", u.ID)
+	platform.WriteJSON(w, 200, map[string]bool{"success": true})
+	return nil
+}
+
+type Session struct {
+	ID               uuid.UUID  `json:"id"`
+	CreatedAt        time.Time  `json:"createdAt"`
+	LastUsedAt       *time.Time `json:"lastUsedAt"`
+	RefreshExpiresAt time.Time  `json:"refreshExpiresAt"`
+	RevokedAt        *time.Time `json:"revokedAt"`
+	RevokedReason    *string    `json:"revokedReason"`
+	IPAddress        *string    `json:"ipAddress"`
+	UserAgent        *string    `json:"userAgent"`
+	DeviceID         *string    `json:"deviceId"`
+	DeviceName       *string    `json:"deviceName"`
+	Platform         *string    `json:"platform"`
+	AppVersion       *string    `json:"appVersion"`
+}
