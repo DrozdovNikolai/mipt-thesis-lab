@@ -11,4 +11,5 @@ class Scenarios {
   Future<CatalogPage> list(String search,int offset) async=>CatalogPage.from(await api.request('GET','$path/summary',query:{
     'offset':'$offset','limit':'$pageSize',if(search.trim().isNotEmpty)'q':search.trim()
   }));
+  Future<Json> open(int id) async => await api.request('GET','$path/$id') as Json;
 }
