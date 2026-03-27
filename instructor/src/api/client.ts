@@ -49,3 +49,20 @@ export class Client {
     return new Client(tokenPair(tokens));
   }
 
+private refresh() {
+    this.refreshing ??= request<Tokens>('/auth/refresh', { refreshToken: this.tokens.refreshToken })
+      .then(tokens => { this.tokens = tokenPair(tokens); })
+      .finally(() => { this.refreshing = undefined; });
+    return this.refreshing;
+  }
+
+async send<T>(path: string, body?: unknown): Promise<T> {
+    const token = this.tokens.accessToken;
+    try { return await request<T>(path, body, token); }
+    catch (error) {
+      if (!(error instanceof ApiError) || error.status !== 401) throw error;
+      if (this.tokens.accessToken === token) await this.refresh();
+      return request<T>(path, body, this.tokens.accessToken);
+    }
+  }
+
