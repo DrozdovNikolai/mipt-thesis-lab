@@ -210,3 +210,83 @@ type Session struct {
 	Platform         *string    `json:"platform"`
 	AppVersion       *string    `json:"appVersion"`
 }
+
+func (s *Service) sessions(w http.ResponseWriter, r *http.Request) error {
+	u, err := s.Authenticate(r)
+	if err != nil {
+		return err
+	}
+	rows, err := s.DB.Query(r.Context(), `SELECT id,created_at,last_used_at,refresh_expires_at,revoked_at,revoked_reason,ip_address,user_agent,device_id,device_name,platform,app_version FROM auth_sessions WHERE user_id=$1 ORDER BY created_at DESC`, u.InternalID)
+	if err != nil {
+		return err
+	}
+	defer rows.Close()
+	out := []Session{}
+	for rows.Next() {
+		var item Session
+		if err = rows.Scan(&item.ID, &item.CreatedAt, &item.LastUsedAt, &item.RefreshExpiresAt, &item.RevokedAt, &item.RevokedReason, &item.IPAddress, &item.UserAgent, &item.DeviceID, &item.DeviceName, &item.Platform, &item.AppVersion); err != nil {
+			return err
+		}
+		out = append(out, item)
+	}
+	if err = rows.Err(); err != nil {
+		return err
+	}
+	platform.WriteJSON(w, 200, out)
+	return nil
+}
+func (s *Service) revoke(w http.ResponseWriter, r *http.Request) error {
+	u, err := s.Authenticate(r)
+	if err != nil {
+		return err
+	}
+	sid, err := uuid.Parse(r.PathValue("session_id"))
+	if err != nil {
+		return &platform.APIError{Status: 422, Code: "VALIDATION_ERROR", Message: "Validation failed", Extra: map[string]any{"details": []any{platform.Detail("uuid_parsing", "Input should be a valid UUID", []any{"path", "session_id"}, r.PathValue("session_id"), nil)}}}
+	}
+	_, err = s.DB.Exec(r.Context(), `UPDATE auth_sessions SET revoked_at=now(),revoked_reason='revoke' WHERE id=$1 AND user_id=$2 AND revoked_at IS NULL`, sid, u.InternalID)
+	if err != nil {
+		return err
+	}
+	platform.LogModule("app.audit", r.Context()).Info("Session revoked", "action", "auth.session_revoke", "user_id", u.ID)
+	platform.WriteJSON(w, 200, map[string]bool{"success": true})
+	return nil
+}
+func (s *Service) changePassword(w http.ResponseWriter, r *http.Request) error {
+	u, err := s.Authenticate(r)
+	if err != nil {
+		return err
+	}
+	body, err := platform.ReadObject(r, platform.Field{Name: "current_password", Alias: "currentPassword", Kind: "string", Required: true, Min: 8, Max: 128}, platform.Field{Name: "new_password", Alias: "newPassword", Kind: "string", Required: true, Min: 8, Max: 128})
+	if err != nil {
+		return err
+	}
+	if !VerifyPassword(body.String("current_password"), u.HashedPassword) {
+		return platform.Error(400, "Invalid current password")
+	}
+	hash, err := HashPassword(body.String("new_password"))
+	if err != nil {
+		return err
+	}
+	tx, err := s.DB.Begin(r.Context())
+	if err != nil {
+		return err
+	}
+	defer tx.Rollback(r.Context())
+	if _, err = tx.Exec(r.Context(), `UPDATE users SET hashed_password=$1,must_change_password=false,updated_at=now() WHERE id=$2`, hash, u.InternalID); err != nil {
+		return err
+	}
+	if _, err = tx.Exec(r.Context(), `UPDATE auth_sessions SET revoked_at=now(),revoked_reason='password_changed' WHERE user_id=$1 AND id<>$2 AND revoked_at IS NULL`, u.InternalID, u.SessionID); err != nil {
+		return err
+	}
+	if err = tx.Commit(r.Context()); err != nil {
+		return err
+	}
+	updated, err := s.LoadUser(r.Context(), u.ID)
+	if err != nil {
+		return err
+	}
+	platform.LogModule("app.audit", r.Context()).Info("Password changed", "action", "auth.change_password", "user_id", u.ID)
+	platform.WriteJSON(w, 200, updated)
+	return nil
+}
