@@ -66,3 +66,8 @@ async send<T>(path: string, body?: unknown): Promise<T> {
     }
   }
 
+async logout() {
+    await request('/auth/logout-refresh', { refreshToken: this.tokens.refreshToken });
+  }
+}
+
