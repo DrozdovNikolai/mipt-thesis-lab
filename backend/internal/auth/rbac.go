@@ -180,3 +180,104 @@ func rbacListPrivileges(ctx context.Context, tx pgx.Tx, entries []*rbacEntry) er
 	}
 	return nil
 }
+
+func (s *Service) rbacBody(r *http.Request, table string, schema platform.Schema) (platform.Object, error) {
+	body, bodyErr := platform.ReadSchema(r, schema)
+	var validation *platform.APIError
+	if errors.As(bodyErr, &validation) && validation.Code == "VALIDATION_ERROR" {
+		if details, ok := validation.Extra["details"].([]any); ok && len(details) > 0 {
+			if first, ok := details[0].(map[string]any); ok && first["type"] == "json_invalid" {
+				return nil, bodyErr
+			}
+		}
+	}
+	if _, err := s.Authenticate(r, table+":write"); err != nil {
+		return nil, err
+	}
+	return body, bodyErr
+}
+
+func resolveRBACPrivileges(ctx context.Context, tx pgx.Tx, names []any) ([]int64, error) {
+	strings := []string{}
+	for _, raw := range names {
+		strings = append(strings, raw.(string))
+	}
+	rows, err := tx.Query(ctx, `SELECT id,name FROM privileges WHERE name=ANY($1::text[])`, strings)
+	if err != nil {
+		return nil, err
+	}
+	ids := []int64{}
+	found := map[string]bool{}
+	for rows.Next() {
+		var id int64
+		var name string
+		if err := rows.Scan(&id, &name); err != nil {
+			rows.Close()
+			return nil, err
+		}
+		ids = append(ids, id)
+		found[name] = true
+	}
+	err = rows.Err()
+	rows.Close()
+	if err != nil {
+		return nil, err
+	}
+	for _, name := range strings {
+		if found[name] {
+			continue
+		}
+		var id int64
+		if err := tx.QueryRow(ctx, `INSERT INTO privileges(public_id,name) VALUES($1,$2) RETURNING id`, uuid.New(), name).Scan(&id); err != nil {
+			return nil, err
+		}
+		ids = append(ids, id)
+		// Deliberately retain the original set of existing names. Duplicate
+		// missing names create two source ORM objects and fail uniqueness.
+	}
+	return ids, nil
+}
+
+func replaceRBACPrivileges(ctx context.Context, tx pgx.Tx, id int64, ids []int64) error {
+	rows, err := tx.Query(ctx, `SELECT privilege_id FROM role_privileges WHERE role_id=$1`, id)
+	if err != nil {
+		return err
+	}
+	existing, wanted := map[int64]bool{}, map[int64]bool{}
+	for _, privilege := range ids {
+		wanted[privilege] = true
+	}
+	removed, added := []int64{}, []int64{}
+	for rows.Next() {
+		var privilege int64
+		if err := rows.Scan(&privilege); err != nil {
+			rows.Close()
+			return err
+		}
+		existing[privilege] = true
+		if !wanted[privilege] {
+			removed = append(removed, privilege)
+		}
+	}
+	err = rows.Err()
+	rows.Close()
+	if err != nil {
+		return err
+	}
+	for _, privilege := range ids {
+		if !existing[privilege] {
+			added = append(added, privilege)
+		}
+	}
+	if len(removed) > 0 {
+		if _, err := tx.Exec(ctx, `DELETE FROM role_privileges WHERE role_id=$1 AND privilege_id=ANY($2::bigint[])`, id, removed); err != nil {
+			return err
+		}
+	}
+	if len(added) > 0 {
+		if _, err := tx.Exec(ctx, `INSERT INTO role_privileges(role_id,privilege_id) SELECT $1,unnest($2::bigint[])`, id, added); err != nil {
+			return err
+		}
+	}
+	return nil
+}
