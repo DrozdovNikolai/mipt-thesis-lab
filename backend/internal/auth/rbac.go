@@ -100,3 +100,83 @@ func rbacDTO(entry *rbacEntry, role bool) (any, error) {
 	}
 	return entry.Role, nil
 }
+
+func (s *Service) listRBAC(role bool) platform.Handler {
+	return func(w http.ResponseWriter, r *http.Request) error {
+		table, _, _ := rbacNames(role)
+		if _, err := s.Authenticate(r, table+":read"); err != nil {
+			return err
+		}
+		ctx := r.Context()
+		tx, err := s.DB.Begin(ctx)
+		if err != nil {
+			return err
+		}
+		defer tx.Rollback(ctx)
+		rows, err := tx.Query(ctx, `SELECT id,public_id,name,description,created_at FROM `+table)
+		if err != nil {
+			return err
+		}
+		entries := []*rbacEntry{}
+		for rows.Next() {
+			entry, err := scanRBAC(rows)
+			if err != nil {
+				rows.Close()
+				return err
+			}
+			entries = append(entries, entry)
+		}
+		err = rows.Err()
+		rows.Close()
+		if err != nil {
+			return err
+		}
+		out := []any{}
+		if role {
+			if err := rbacListPrivileges(ctx, tx, entries); err != nil {
+				return err
+			}
+		}
+		for _, entry := range entries {
+			value, err := rbacDTO(entry, role)
+			if err != nil {
+				return err
+			}
+			out = append(out, value)
+		}
+		platform.WriteJSON(w, 200, out)
+		return nil
+	}
+}
+
+// Match the source selectin loader's batches without issuing a query per role.
+func rbacListPrivileges(ctx context.Context, tx pgx.Tx, entries []*rbacEntry) error {
+	for start := 0; start < len(entries); start += 500 {
+		end := min(start+500, len(entries))
+		ids := []int64{}
+		owners := map[int64]*rbacEntry{}
+		for _, entry := range entries[start:end] {
+			ids = append(ids, entry.internalID)
+			owners[entry.internalID] = entry
+		}
+		rows, err := tx.Query(ctx, `SELECT r.id,p.public_id,p.name,p.description,p.created_at FROM roles r JOIN role_privileges rp ON r.id=rp.role_id JOIN privileges p ON p.id=rp.privilege_id WHERE r.id=ANY($1::bigint[])`, ids)
+		if err != nil {
+			return err
+		}
+		for rows.Next() {
+			var id int64
+			var privilege Privilege
+			if err := rows.Scan(&id, &privilege.ID, &privilege.Name, &privilege.Description, &privilege.CreatedAt); err != nil {
+				rows.Close()
+				return err
+			}
+			owners[id].Privileges = append(owners[id].Privileges, privilege)
+		}
+		err = rows.Err()
+		rows.Close()
+		if err != nil {
+			return err
+		}
+	}
+	return nil
+}
