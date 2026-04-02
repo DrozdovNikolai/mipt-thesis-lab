@@ -281,3 +281,143 @@ func replaceRBACPrivileges(ctx context.Context, tx pgx.Tx, id int64, ids []int64
 	}
 	return nil
 }
+
+func (s *Service) writeRBAC(role, create bool) platform.Handler {
+	return func(w http.ResponseWriter, r *http.Request) error {
+		table, parameter, label := rbacNames(role)
+		body, err := s.rbacBody(r, table, rbacSchema(role, create))
+		if err != nil {
+			return err
+		}
+		ctx := r.Context()
+		tx, err := s.DB.Begin(ctx)
+		if err != nil {
+			return err
+		}
+		defer tx.Rollback(ctx)
+		column, value := "public_id", any(r.PathValue(parameter))
+		if create {
+			column, value = "name", body.String("name")
+		}
+		entry, err := findRBAC(ctx, tx, table, column, value)
+		if err != nil {
+			return err
+		}
+		if create && entry != nil {
+			if role {
+				return platform.Error(400, "Role already exists")
+			}
+			out, err := rbacDTO(entry, false)
+			if err != nil {
+				return err
+			}
+			platform.WriteJSON(w, 201, out)
+			return nil
+		}
+		if !create && entry == nil {
+			return platform.Error(404, label+" not found")
+		}
+		if !create {
+			name, description := entry.Name, entry.Description
+			if body.String("name") != "" {
+				duplicate, err := findRBAC(ctx, tx, table, "name", body.String("name"))
+				if err != nil {
+					return err
+				}
+				if duplicate != nil && duplicate.internalID != entry.internalID {
+					return platform.Error(400, label+" name already exists")
+				}
+				name = body.String("name")
+			}
+			if body["description"] != nil {
+				description = body.StringPtr("description")
+			}
+			sameDescription := description == nil && entry.Description == nil || description != nil && entry.Description != nil && *description == *entry.Description
+			if name != entry.Name || !sameDescription {
+				if _, err := tx.Exec(ctx, `UPDATE `+table+` SET name=$1,description=$2 WHERE id=$3`, name, description, entry.internalID); err != nil {
+					return err
+				}
+			}
+		}
+		var privileges []int64
+		if role && body["privileges"] != nil {
+			privileges, err = resolveRBACPrivileges(ctx, tx, body["privileges"].([]any))
+			if err != nil {
+				return err
+			}
+		}
+		if create {
+			entry, err = scanRBAC(tx.QueryRow(ctx, `INSERT INTO `+table+`(public_id,name,description) VALUES($1,$2,$3) RETURNING id,public_id,name,description,created_at`, uuid.New(), body.String("name"), body.StringPtr("description")))
+			if err != nil {
+				return err
+			}
+		}
+		if role && body["privileges"] != nil {
+			if err := replaceRBACPrivileges(ctx, tx, entry.internalID, privileges); err != nil {
+				return err
+			}
+		}
+		if err := tx.Commit(ctx); err != nil {
+			return err
+		}
+		// Refresh after commit, including response validation failures that must
+		// leave the successfully written source data in place.
+		read, err := s.DB.Begin(ctx)
+		if err != nil {
+			return err
+		}
+		defer read.Rollback(ctx)
+		entry, err = findRBAC(ctx, read, table, "id", entry.internalID)
+		if err != nil {
+			return err
+		}
+		if entry == nil {
+			return fmt.Errorf("RBAC row disappeared after commit")
+		}
+		if role {
+			if err := rbacReadPrivileges(ctx, read, entry); err != nil {
+				return err
+			}
+		}
+		out, err := rbacDTO(entry, role)
+		if err != nil {
+			return err
+		}
+		status := 200
+		if create {
+			status = 201
+		}
+		platform.WriteJSON(w, status, out)
+		return nil
+	}
+}
+
+func (s *Service) deleteRBAC(role bool) platform.Handler {
+	return func(w http.ResponseWriter, r *http.Request) error {
+		table, parameter, label := rbacNames(role)
+		if _, err := s.Authenticate(r, table+":write"); err != nil {
+			return err
+		}
+		ctx := r.Context()
+		tx, err := s.DB.Begin(ctx)
+		if err != nil {
+			return err
+		}
+		defer tx.Rollback(ctx)
+		entry, err := findRBAC(ctx, tx, table, "public_id", r.PathValue(parameter))
+		if err != nil {
+			return err
+		}
+		if entry == nil {
+			return platform.Error(404, label+" not found")
+		}
+		if _, err := tx.Exec(ctx, `DELETE FROM `+table+` WHERE id=$1`, entry.internalID); err != nil {
+			return err
+		}
+		if err := tx.Commit(ctx); err != nil {
+			return err
+		}
+		w.WriteHeader(204)
+		return nil
+	}
+}
