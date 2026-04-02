@@ -12,4 +12,11 @@ class Scenarios {
     'offset':'$offset','limit':'$pageSize',if(search.trim().isNotEmpty)'q':search.trim()
   }));
   Future<Json> open(int id) async => await api.request('GET','$path/$id') as Json;
+  Future<int> save(int id,int version,Json snapshot) async {
+    final result=await api.request('PUT','$path/$id/snapshot',body:{'snapshot':snapshot},query:{'expectedVersion':'$version'},headers:{'X-Client-Session-Id':editorId});
+    return result['contentVersion'] as int;
+  }
+  Future<void> release(int id) async {
+    await api.request('DELETE','$path/$id/lock',headers:{'X-Client-Session-Id':editorId});
+  }
 }
