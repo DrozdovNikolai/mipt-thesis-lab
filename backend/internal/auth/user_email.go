@@ -168,3 +168,191 @@ func userEmailDots(value string, domain bool) string {
 	}
 	return ""
 }
+
+func normalizeUserEmail(raw string) (string, string) {
+	if utf8.RuneCountInString(raw) > 2048 {
+		return "", "Length must not exceed 2048 characters"
+	}
+	value := userEmailPretty(raw)
+	local, domain, quoted := "", "", false
+	if strings.HasPrefix(value, "\"") {
+		var decoded strings.Builder
+		escaped := false
+		for index, r := range value[1:] {
+			if escaped {
+				decoded.WriteRune(r)
+				escaped = false
+				continue
+			}
+			if r == '\\' {
+				escaped = true
+				continue
+			}
+			if r == '"' {
+				end := 1 + index + 1
+				if end < len(value) && value[end] == '@' {
+					local, domain, quoted = decoded.String(), value[end+1:], true
+				}
+				break
+			}
+			decoded.WriteRune(r)
+		}
+	}
+	if !quoted {
+		if strings.Count(value, "@") != 1 {
+			return "", "The email address is not valid. It must have exactly one @-sign."
+		}
+		local, domain, _ = strings.Cut(value, "@")
+	}
+	if local == "" {
+		return "", "There must be something before the @-sign."
+	}
+	if length := utf8.RuneCountInString(local); length > 64 {
+		return "", "The email address is too long before the @-sign " + userEmailLength(length-64, false) + "."
+	}
+	invalid := func(r rune) bool {
+		return r < 128 && !(r >= 'a' && r <= 'z' || r >= 'A' && r <= 'Z' || r >= '0' && r <= '9' || strings.ContainsRune("._!#$%&'*+-/=?^`{|}~", r))
+	}
+	dotAtom := userEmailBadChars(local, invalid) == "" && userEmailDots(local, false) == ""
+	if quoted {
+		invalid = func(r rune) bool { return r < 32 || r == 127 }
+	}
+	if chars := userEmailBadChars(local, invalid); chars != "" {
+		part := "before"
+		if quoted {
+			part = "in quotes before"
+		}
+		return "", "The email address contains invalid characters " + part + " the @-sign: " + chars + "."
+	}
+	if !quoted {
+		if reason := userEmailDots(local, false); reason != "" {
+			return "", reason
+		}
+	}
+	asciiLocal := true
+	for _, r := range local {
+		if r >= 128 {
+			asciiLocal = false
+		}
+	}
+	local = norm.NFC.String(local)
+	if reason := userEmailUnsafe(local, quoted && !dotAtom); reason != "" {
+		return "", reason
+	}
+	if quoted {
+		return "", "Quoting the part before the @-sign is not allowed here."
+	}
+	if asciiLocal && strings.Contains("|info|marketing|sales|support|abuse|noc|security|postmaster|hostmaster|usenet|news|webmaster|www|uucp|ftp|", "|"+strings.ToLower(local)+"|") {
+		local = strings.ToLower(local)
+	}
+	if domain == "" {
+		return "", "There must be something after the @-sign."
+	}
+	if strings.HasPrefix(domain, "[") && strings.HasSuffix(domain, "]") {
+		return "", userEmailLiteral(domain[1 : len(domain)-1])
+	}
+	if chars := userEmailBadChars(domain, func(r rune) bool {
+		return r < 128 && !(r >= 'a' && r <= 'z' || r >= 'A' && r <= 'Z' || r >= '0' && r <= '9' || r == '-' || r == '.')
+	}); chars != "" {
+		return "", "The part after the @-sign contains invalid characters: " + chars + "."
+	}
+	if reason := userEmailUnsafe(domain, false); reason != "" {
+		return "", reason
+	}
+	asciiDomain := true
+	for _, r := range domain {
+		if r >= 128 {
+			asciiDomain = false
+		}
+	}
+	if asciiDomain {
+		domain = strings.ToLower(domain)
+	} else {
+		for index, r := range []rune(domain) {
+			if userEmailRange(r, userEmailUnicode.MappingDisallowed) {
+				return "", fmt.Sprintf("The part after the @-sign contains invalid characters (Codepoint U+%04X not allowed at position %d in %s).", r, index+1, userEmailQuote(domain))
+			}
+		}
+		mapped, err := userEmailMapping.ToUnicode(domain)
+		if err != nil {
+			return "", "The part after the @-sign contains invalid characters (" + userEmailMappingError(domain, err) + ")."
+		}
+		domain = mapped
+	}
+	if reason := userEmailDots(domain, true); reason != "" {
+		return "", reason
+	}
+	for _, label := range strings.Split(domain, ".") {
+		if len(label) >= 4 && label[2:4] == "--" && label[:2] != "xn" {
+			return "", "An email address cannot have two letters followed by two dashes immediately after the @-sign or after a period, except Punycode."
+		}
+	}
+	encoded := domain
+	encodeRequired := false
+	for _, r := range domain {
+		if !(r >= 'a' && r <= 'z' || r >= '0' && r <= '9' || r == '-' || r == '.') {
+			encodeRequired = true
+		}
+	}
+	if encodeRequired {
+		for _, label := range strings.Split(domain, ".") {
+			if reason := userEmailLabel(label); reason != "" {
+				return "", "The part after the @-sign contains invalid characters (" + reason + ")."
+			}
+		}
+		var err error
+		encoded, err = userEmailIDNA.ToASCII(domain)
+		if err != nil {
+			return "", "The part after the @-sign contains invalid characters (" + err.Error() + ")."
+		}
+		for _, label := range strings.Split(encoded, ".") {
+			if len(label) > 63 {
+				return "", "The part after the @-sign contains invalid characters (Label too long)."
+			}
+		}
+		if len(encoded) > 253 {
+			return "", "The email address is too long after the @-sign."
+		}
+	}
+	if len(encoded) > 255 {
+		return "", "The email address is too long after the @-sign " + userEmailLength(len(encoded)-255, false) + "."
+	}
+	for _, label := range strings.Split(encoded, ".") {
+		if len(label) > 63 {
+			return "", "After the @-sign, periods cannot be separated by so many characters " + userEmailLength(len(label)-63, false) + "."
+		}
+	}
+	if !strings.Contains(encoded, ".") {
+		return "", "The part after the @-sign is not valid. It should have a period."
+	}
+	if last := encoded[len(encoded)-1]; !(last >= 'a' && last <= 'z' || last >= 'A' && last <= 'Z') {
+		return "", "The part after the @-sign is not valid. It is not within a valid top-level domain."
+	}
+	for _, reserved := range []string{"arpa", "invalid", "local", "localhost", "onion", "test"} {
+		if encoded == reserved || strings.HasSuffix(encoded, "."+reserved) {
+			return "", "The part after the @-sign is a special-use or reserved name that cannot be used with email."
+		}
+	}
+	normalDomain, reason := userEmailDecodeDomain(encoded)
+	if reason != "" {
+		return "", "The part after the @-sign is not valid IDNA (" + reason + ")."
+	}
+	normalized := local + "@" + normalDomain
+	if asciiLocal && len(local+"@"+encoded) > 254 {
+		reason := "(when converted to IDNA ASCII)"
+		if normalized == local+"@"+encoded {
+			reason = userEmailLength(len(normalized)-254, false)
+		} else if n := utf8.RuneCountInString(normalized); n > 254 {
+			reason = userEmailLength(n-254, true)
+		}
+		return "", "The email address is too long " + reason + "."
+	}
+	if len(normalized) > 254 {
+		reason := "(when encoded in bytes)"
+		if n := utf8.RuneCountInString(normalized); n > 254 {
+			reason = userEmailLength(n-254, true)
+		}
+		return "", "The email address is too long " + reason + "."
+	}
+	return normalized, ""
+}
