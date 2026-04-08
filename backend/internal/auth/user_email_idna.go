@@ -235,3 +235,130 @@ func userEmailBidi(label string) string {
 	}
 	return ""
 }
+
+func userEmailIPv4Error(value string) string {
+	parts := strings.Split(value, ".")
+	if len(parts) != 4 {
+		return "Expected 4 octets in " + userEmailQuote(value)
+	}
+	for _, part := range parts {
+		if part == "" {
+			return "Empty octet not permitted in " + userEmailQuote(value)
+		}
+		if strings.Trim(part, "0123456789") != "" {
+			return "Only decimal digits permitted in " + userEmailQuote(part) + " in " + userEmailQuote(value)
+		}
+		if len(part) > 3 {
+			return "At most 3 characters permitted in " + userEmailQuote(part) + " in " + userEmailQuote(value)
+		}
+		if len(part) > 1 && part[0] == '0' {
+			return "Leading zeros are not permitted in " + userEmailQuote(part) + " in " + userEmailQuote(value)
+		}
+		n, _ := strconv.Atoi(part)
+		if n > 255 {
+			return fmt.Sprintf("Octet %d (> 255) not permitted in %s", n, userEmailQuote(value))
+		}
+	}
+	return ""
+}
+
+func userEmailIPv6Error(value string) string {
+	if strings.Contains(value, "/") {
+		return "Unexpected '/' in " + userEmailQuote(value)
+	}
+	if address, zone, scoped := strings.Cut(value, "%"); scoped {
+		if zone == "" || strings.Contains(zone, "%") {
+			return "Invalid IPv6 address: \"" + userEmailQuote(value) + "\""
+		}
+		value = address
+	}
+	if value == "" {
+		return "Address cannot be empty"
+	}
+	suffix := " in " + userEmailQuote(value)
+	parts := strings.Split(value, ":")
+	if len(parts) < 3 {
+		return "At least 3 parts expected" + suffix
+	}
+	if last := parts[len(parts)-1]; strings.Contains(last, ".") {
+		if reason := userEmailIPv4Error(last); reason != "" {
+			return reason + suffix
+		}
+		ip, _ := netip.ParseAddr(last)
+		v := ip.As4()
+		parts = append(parts[:len(parts)-1], fmt.Sprintf("%x", int(v[0])<<8|int(v[1])), fmt.Sprintf("%x", int(v[2])<<8|int(v[3])))
+	}
+	if len(parts) > 9 {
+		return "At most 8 colons permitted" + suffix
+	}
+	gap := -1
+	for i := 1; i < len(parts)-1; i++ {
+		if parts[i] == "" {
+			if gap >= 0 {
+				return "At most one '::' permitted" + suffix
+			}
+			gap = i
+		}
+	}
+	if gap >= 0 {
+		hi, lo := gap, len(parts)-gap-1
+		if parts[0] == "" {
+			hi--
+			if hi != 0 {
+				return "Leading ':' only permitted as part of '::'" + suffix
+			}
+		}
+		if parts[len(parts)-1] == "" {
+			lo--
+			if lo != 0 {
+				return "Trailing ':' only permitted as part of '::'" + suffix
+			}
+		}
+		if hi+lo >= 8 {
+			return "Expected at most 7 other parts with '::'" + suffix
+		}
+	} else {
+		if len(parts) != 8 {
+			return "Exactly 8 parts expected without '::'" + suffix
+		}
+		if parts[0] == "" {
+			return "Leading ':' only permitted as part of '::'" + suffix
+		}
+		if parts[len(parts)-1] == "" {
+			return "Trailing ':' only permitted as part of '::'" + suffix
+		}
+	}
+	for _, part := range parts {
+		if strings.Trim(part, "0123456789abcdefABCDEF") != "" {
+			return "Only hex digits permitted in " + userEmailQuote(part) + suffix
+		}
+		if len(part) > 4 {
+			return "At most 4 characters permitted in " + userEmailQuote(part) + suffix
+		}
+	}
+	return ""
+}
+
+func userEmailLiteral(value string) string {
+	if strings.HasPrefix(value, "IPv6:") {
+		reason := userEmailIPv6Error(value[5:])
+		if reason == "" {
+			return "A bracketed IP address after the @-sign is not allowed here."
+		}
+		return "The IPv6 address in brackets after the @-sign is not valid (" + reason + ")."
+	}
+	if strings.Trim(value, "0123456789.") == "" && value != "" {
+		reason := userEmailIPv4Error(value)
+		if reason != "" {
+			return "The address in brackets after the @-sign is not valid: It is not an IPv4 address (" + reason + ") or is missing an address literal tag."
+		}
+		return "A bracketed IP address after the @-sign is not allowed here."
+	}
+	if !strings.Contains(value, ":") {
+		return "The part after the @-sign in brackets is not an IPv4 address and has no address literal tag."
+	}
+	if chars := userEmailBadChars(value, func(r rune) bool { return !(r >= 0x21 && r <= 0xfa) }); chars != "" {
+		return "The part after the @-sign contains invalid characters in brackets: " + chars + "."
+	}
+	return "The part after the @-sign contains an invalid address literal tag in brackets."
+}
