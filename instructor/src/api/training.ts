@@ -12,3 +12,9 @@ export async function plan(client: Client, day: number) {
   return response.exercises;
 }
 
+export async function pilots(client: Client, query: string) {
+  if (query.trim().length < 2) return [];
+  const response = await client.send<{items: Pilot[]}>(`/training/users/search?q=${encodeURIComponent(query.trim())}&limit=8`);
+  return response.items;
+}
+
