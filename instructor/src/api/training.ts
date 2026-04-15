@@ -18,3 +18,7 @@ export async function pilots(client: Client, query: string) {
   return response.items;
 }
 
+export function catalog(client: Client) {
+  return client.send<Catalog>('/training/competencies');
+}
+
