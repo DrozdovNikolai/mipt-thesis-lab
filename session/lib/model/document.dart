@@ -9,3 +9,12 @@ List<Json> ordered(dynamic value) {
   });
 }
 Json pick(Json data,List<String> fields)=>{for(final name in fields) if(data.containsKey(name))name:data[name]};
+Json elementSnapshot(Json data)=>pick(data,['elementId','orderIndex','details','startingHeight','endingHeight','profileType']);
+Json? paramSnapshot(Json? value){
+  if(value==null)return null;
+  final payload=pick(value,['intensity','zfwT','guidanceDoc','guidancePlainText','originalTl','destinationTl']);
+  for(final key in ['originalTl','destinationTl']){
+    if(payload[key] is Map) payload[key]=Map<String,dynamic>.from(payload[key])..remove('id');
+  }
+  return payload;
+}
