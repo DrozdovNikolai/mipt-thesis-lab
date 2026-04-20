@@ -22,3 +22,17 @@ export function catalog(client: Client) {
   return client.send<Catalog>('/training/competencies');
 }
 
+export function creationId() {
+  const time = Date.now().toString(16).padStart(12, '0');
+  const random = Crypto.randomUUID();
+  return `${time.slice(0, 8)}-${time.slice(8)}-7${random.slice(15, 18)}${random.slice(18)}`;
+}
+
+export function createTraining(client: Client, scenario: Scenario, first: Pilot, second: Pilot, clientCreationId: string) {
+  return client.send<Training>('/training/trainings', {
+    scenarioId: scenario.scenarioId,
+    scenarioDayModuleId: scenario.scenarioDayModuleId,
+    cm1Id: first.id, cm2Id: second.id, clientCreationId,
+  });
+}
+
