@@ -18,3 +18,9 @@ Json? paramSnapshot(Json? value){
   }
   return payload;
 }
+Json exerciseSnapshot(Json data,int position)=>{
+  ...pick(data,['id','clientUid','moduleId','kind','durationMinutes','crewMemberNumber']),
+  'orderIndex':position,'competenceIds':[for(final c in data['competences'] as List)c['id']],
+  'elements':[for(final e in data['elements'] as List)elementSnapshot(e)],
+  'params':paramSnapshot(data['params'])
+};
