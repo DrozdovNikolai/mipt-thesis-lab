@@ -284,3 +284,67 @@ func (s *Service) updateUserAdmin(w http.ResponseWriter, r *http.Request) error 
 	}
 	return s.writeUserAdmin(w, ctx, user["public_id"].(string), 200)
 }
+
+func (s *Service) rolesUserAdmin(w http.ResponseWriter, r *http.Request) error {
+	body, err := s.rbacBody(r, "users", platform.Schema{Fields: []platform.Field{{Name: "role_ids", Alias: "roleIds", Kind: "list", Required: true, Item: &platform.Field{Kind: "uuid"}}}})
+	if err != nil {
+		return err
+	}
+	ctx := r.Context()
+	tx, err := s.DB.Begin(ctx)
+	if err != nil {
+		return err
+	}
+	defer tx.Rollback(ctx)
+	user, err := userAdminFind(ctx, tx, r.PathValue("user_id"))
+	if err != nil {
+		return err
+	}
+	roles, err := userAdminResolveRoles(ctx, tx, body["role_ids"].([]any))
+	if err != nil {
+		return err
+	}
+	if err := userAdminReplaceRoles(ctx, tx, user["id"].(int64), roles); err != nil {
+		return err
+	}
+	if err := tx.Commit(ctx); err != nil {
+		return err
+	}
+	return s.writeUserAdmin(w, ctx, user["public_id"].(string), 200)
+}
+
+func (s *Service) deleteUserAdmin(w http.ResponseWriter, r *http.Request) error {
+	if _, err := s.Authenticate(r, "users:write"); err != nil {
+		return err
+	}
+	ctx := r.Context()
+	tx, err := s.DB.Begin(ctx)
+	if err != nil {
+		return err
+	}
+	defer tx.Rollback(ctx)
+	user, err := userAdminFind(ctx, tx, r.PathValue("user_id"))
+	if err != nil {
+		return err
+	}
+	info, err := readUserAdminRow(tx.QueryRow(ctx, `SELECT to_jsonb(i) FROM user_info i WHERE id=$1`, user["id"]))
+	if err != nil {
+		return err
+	}
+	if _, err := tx.Exec(ctx, `DELETE FROM users WHERE id=$1`, user["id"]); err != nil {
+		return err
+	}
+	if err := tx.Commit(ctx); err != nil {
+		return err
+	}
+	storage := filestorage.New(s.Config.Storage)
+	for _, field := range []string{"photo_storage_path", "signature_storage_path"} {
+		if path, ok := info[field].(string); ok {
+			if err := storage.Delete(ctx, filestorage.Media, path); err != nil {
+				return err
+			}
+		}
+	}
+	w.WriteHeader(204)
+	return nil
+}
