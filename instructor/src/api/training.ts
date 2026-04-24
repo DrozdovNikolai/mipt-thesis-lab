@@ -36,3 +36,19 @@ export function createTraining(client: Client, scenario: Scenario, first: Pilot,
   });
 }
 
+function assessmentBlock(assessmentId: number, card: Assessment) {
+  if (card.result === null) throw new Error('Выберите итог для каждого пилота');
+  return { assessmentId, grades: card.grades, mistakeReports: [], summary: card.summary.trim(), result: card.result };
+}
+
+export async function submit(client: Client, training: Training, card: Scorecard) {
+  const body = {
+    cm1: assessmentBlock(training.cm1AssessmentId, card.cm1),
+    cm2: assessmentBlock(training.cm2AssessmentId, card.cm2),
+  };
+  const idempotencyKey = await Crypto.digestStringAsync(
+    Crypto.CryptoDigestAlgorithm.SHA256, `submit:${training.trainingId}:${JSON.stringify(body)}`,
+  );
+  return client.send<Receipt>(`/training/trainings/${training.trainingId}/submit`, { ...body, idempotencyKey });
+}
+
