@@ -167,3 +167,121 @@ func (s *Service) dto(ctx context.Context, ticket map[string]any, admin bool) (m
 	}
 	return result, nil
 }
+
+func (s *Service) list(w http.ResponseWriter, r *http.Request, owner *int64) error {
+	limit, offset, err := listQuery(r)
+	if err != nil {
+		return err
+	}
+	ctx := r.Context()
+	var total int64
+	query := `SELECT count(*) FROM feedback_ticket`
+	args := []any{}
+	if owner != nil {
+		query += ` WHERE user_id=$1`
+		args = append(args, *owner)
+	}
+	if err = s.Auth.DB.QueryRow(ctx, query, args...).Scan(&total); err != nil {
+		return err
+	}
+	query = `SELECT to_jsonb(t) FROM feedback_ticket t`
+	if owner != nil {
+		query += ` WHERE t.user_id=$1`
+	}
+	query += ` ORDER BY t.created_at DESC,t.id DESC`
+	if owner != nil {
+		query += ` LIMIT $2 OFFSET $3`
+	} else {
+		query += ` LIMIT $1 OFFSET $2`
+	}
+	args = append(args, limit, offset)
+	rows, err := s.Auth.DB.Query(ctx, query, args...)
+	if err != nil {
+		return err
+	}
+	tickets := []map[string]any{}
+	for rows.Next() {
+		var raw []byte
+		if err = rows.Scan(&raw); err != nil {
+			rows.Close()
+			return err
+		}
+		ticket, e := decode(raw)
+		if e != nil {
+			rows.Close()
+			return e
+		}
+		tickets = append(tickets, ticket)
+	}
+	err = rows.Err()
+	rows.Close()
+	if err != nil {
+		return err
+	}
+	items := []any{}
+	for _, ticket := range tickets {
+		item, e := s.dto(ctx, ticket, owner == nil)
+		if e != nil {
+			return e
+		}
+		items = append(items, item)
+	}
+	platform.WriteJSON(w, 200, map[string]any{"items": items, "total": total})
+	return nil
+}
+
+func (s *Service) myList(w http.ResponseWriter, r *http.Request) error {
+	user, err := s.Auth.Authenticate(r)
+	if err != nil {
+		return err
+	}
+	return s.list(w, r, &user.InternalID)
+}
+
+func (s *Service) adminList(w http.ResponseWriter, r *http.Request) error {
+	if _, err := s.Auth.Authenticate(r, "users:read"); err != nil {
+		return err
+	}
+	return s.list(w, r, nil)
+}
+
+func (s *Service) detail(w http.ResponseWriter, r *http.Request, owner *int64) error {
+	id, _, err := ticketPath(r, false)
+	if err != nil {
+		return err
+	}
+	query := `SELECT to_jsonb(t) FROM feedback_ticket t WHERE id=$1`
+	args := []any{id}
+	if owner != nil {
+		query += ` AND user_id=$2`
+		args = append(args, *owner)
+	}
+	ticket, err := readRow(s.Auth.DB.QueryRow(r.Context(), query, args...))
+	if errors.Is(err, pgx.ErrNoRows) {
+		return platform.Error(404, "Ticket not found")
+	}
+	if err != nil {
+		return err
+	}
+	result, err := s.dto(r.Context(), ticket, owner == nil)
+	if err != nil {
+		return err
+	}
+	platform.WriteJSON(w, 200, result)
+	return nil
+}
+
+func (s *Service) myDetail(w http.ResponseWriter, r *http.Request) error {
+	user, err := s.Auth.Authenticate(r)
+	if err != nil {
+		return err
+	}
+	return s.detail(w, r, &user.InternalID)
+}
+
+func (s *Service) adminDetail(w http.ResponseWriter, r *http.Request) error {
+	if _, err := s.Auth.Authenticate(r, "users:read"); err != nil {
+		return err
+	}
+	return s.detail(w, r, nil)
+}
