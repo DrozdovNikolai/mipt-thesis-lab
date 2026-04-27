@@ -285,3 +285,37 @@ func (s *Service) adminDetail(w http.ResponseWriter, r *http.Request) error {
 	}
 	return s.detail(w, r, nil)
 }
+
+func (s *Service) downloadAttachment(w http.ResponseWriter, r *http.Request) error {
+	user, err := s.Auth.Authenticate(r)
+	if err != nil {
+		return err
+	}
+	ticketID, attachmentID, err := ticketPath(r, true)
+	if err != nil {
+		return err
+	}
+	var path, filename, contentType *string
+	var owner *int64
+	err = s.Auth.DB.QueryRow(r.Context(), `SELECT a.storage_path,a.original_filename,a.content_type,t.user_id FROM feedback_attachment a JOIN feedback_ticket t ON t.id=a.ticket_id WHERE a.id=$1 AND a.ticket_id=$2`, attachmentID, ticketID).Scan(&path, &filename, &contentType, &owner)
+	if errors.Is(err, pgx.ErrNoRows) {
+		return platform.Error(404, "Attachment not found")
+	}
+	if err != nil {
+		return err
+	}
+	if owner == nil || *owner != user.InternalID {
+		if _, err = s.Auth.Authenticate(r, "users:read"); err != nil {
+			return err
+		}
+	}
+	mime := "application/octet-stream"
+	if contentType != nil && *contentType != "" {
+		mime = *contentType
+	}
+	err = s.Store.ServeMediaResponse(w, r, filestorage.Feedback, *path, *filename, mime)
+	if errors.Is(err, filestorage.ErrInvalidPath) || errors.Is(err, filestorage.ErrNotFound) {
+		return platform.Error(404, "File not found")
+	}
+	return err
+}
