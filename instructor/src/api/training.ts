@@ -52,3 +52,7 @@ export async function submit(client: Client, training: Training, card: Scorecard
   return client.send<Receipt>(`/training/trainings/${training.trainingId}/submit`, { ...body, idempotencyKey });
 }
 
+export function submissionStatus(client: Client, trainingId: number) {
+  return client.send<Receipt>(`/training/trainings/${trainingId}/submit-status`);
+}
+
