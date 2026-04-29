@@ -24,3 +24,13 @@ Json exerciseSnapshot(Json data,int position)=>{
   'elements':[for(final e in data['elements'] as List)elementSnapshot(e)],
   'params':paramSnapshot(data['params'])
 };
+class Document {
+  final Json data;
+  late final List<Json> modules;
+  late int version;
+  Document(this.data){
+    version=data['contentVersion'] as int;
+    modules=[for(final m in ordered(data['modules'])) {...m,'exercises':ordered(m['exercises'])}];
+  }
+  List<Json> exercises(int module)=>modules[module]['exercises'] as List<Json>;
+}
