@@ -56,3 +56,7 @@ export function submissionStatus(client: Client, trainingId: number) {
   return client.send<Receipt>(`/training/trainings/${trainingId}/submit-status`);
 }
 
+export function gradeOptions(data: Catalog) {
+  return data.gradingScale?.values?.length ? data.gradingScale.values : ['5','4','3','2','1'].map(code => ({ code, label: code }));
+}
+
