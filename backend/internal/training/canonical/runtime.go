@@ -194,3 +194,93 @@ type AssessmentBlock struct {
 	Summary                 *string
 	Result                  *bool
 }
+
+func BlockPayload(block AssessmentBlock, includeQuickProof bool) (map[string]any, error) {
+	type hashedReport struct {
+		payload  map[string]any
+		id, hash string
+	}
+	reports := make([]hashedReport, 0, len(block.MistakeReports))
+	for _, report := range block.MistakeReports {
+		payload := ReportPayload(report)
+		hash, err := SHA256(payload)
+		if err != nil {
+			return nil, err
+		}
+		id := ""
+		if report.ClientReportID != nil {
+			id = report.ClientReportID.String()
+		}
+		reports = append(reports, hashedReport{payload, id, hash})
+	}
+	sort.SliceStable(reports, func(i, j int) bool {
+		if reports[i].id != reports[j].id {
+			return reports[i].id < reports[j].id
+		}
+		return reports[i].hash < reports[j].hash
+	})
+	reportPayloads := make([]map[string]any, 0, len(reports))
+	for _, report := range reports {
+		reportPayloads = append(reportPayloads, report.payload)
+	}
+	grades := map[string]string{}
+	for _, grade := range block.Grades {
+		grades[upper(grade.Code)] = upper(grade.Value)
+	}
+	payload := map[string]any{"assessmentId": decimal(block.AssessmentID), "grades": grades, "mistakeReports": reportPayloads, "result": block.Result, "summary": block.Summary}
+	if includeQuickProof {
+		ids := []string{}
+		for _, id := range block.UnresolvedQuickComments {
+			ids = append(ids, id.String())
+		}
+		sort.Strings(ids)
+		refs := make([]map[string]string, 0, len(ids))
+		for _, id := range ids {
+			refs = append(refs, map[string]string{"clientReportId": id})
+		}
+		payload["unresolvedQuickComments"] = refs
+	}
+	return payload, nil
+}
+
+type TerminalRunHash struct {
+	ExerciseSessionKey uuid.UUID
+	PayloadHash        string
+}
+type SubmissionManifest struct {
+	TrainingID, WriterEpoch, ExpectedClientSequence int64
+	WriterInstanceID, ExpectedCurrentEventID        uuid.UUID
+	CrewEventPayloadHashes                          []string
+	TerminalRunHashes                               []TerminalRunHash
+	AssessmentBlocks                                []AssessmentBlock
+	SpeechSessionID                                 *uuid.UUID
+	SpeechLastChunkIndex, CommentContractVersion    *int64
+}
+
+func ManifestPayload(input SubmissionManifest) (map[string]any, error) {
+	blocks := append([]AssessmentBlock{}, input.AssessmentBlocks...)
+	sort.SliceStable(blocks, func(i, j int) bool { return blocks[i].AssessmentID < blocks[j].AssessmentID })
+	blockPayloads := make([]map[string]any, 0, len(blocks))
+	for _, block := range blocks {
+		payload, err := BlockPayload(block, input.CommentContractVersion != nil && *input.CommentContractVersion == 1)
+		if err != nil {
+			return nil, err
+		}
+		blockPayloads = append(blockPayloads, payload)
+	}
+	runs := append([]TerminalRunHash{}, input.TerminalRunHashes...)
+	sort.SliceStable(runs, func(i, j int) bool { return runs[i].ExerciseSessionKey.String() < runs[j].ExerciseSessionKey.String() })
+	runPayloads := make([]map[string]string, 0, len(runs))
+	for _, run := range runs {
+		runPayloads = append(runPayloads, map[string]string{"exerciseSessionKey": run.ExerciseSessionKey.String(), "payloadHash": strings.ToLower(run.PayloadHash)})
+	}
+	eventHashes := make([]string, 0, len(input.CrewEventPayloadHashes))
+	for _, hash := range input.CrewEventPayloadHashes {
+		eventHashes = append(eventHashes, strings.ToLower(hash))
+	}
+	payload := map[string]any{"assessmentBlocks": blockPayloads, "crewEventPayloadHashes": eventHashes, "expectedClientSequence": decimal(input.ExpectedClientSequence), "expectedCurrentEventId": input.ExpectedCurrentEventID.String(), "latestTerminalRuns": runPayloads, "schemaVersion": "2", "speechLastChunkIndex": optionalDecimal(input.SpeechLastChunkIndex), "speechSessionId": optionalUUID(input.SpeechSessionID), "trainingId": decimal(input.TrainingID), "writerEpoch": decimal(input.WriterEpoch), "writerInstanceId": input.WriterInstanceID.String()}
+	if input.CommentContractVersion != nil {
+		payload["commentContractVersion"] = decimal(*input.CommentContractVersion)
+	}
+	return payload, nil
+}
