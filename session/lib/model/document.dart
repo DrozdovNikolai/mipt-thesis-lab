@@ -33,4 +33,9 @@ class Document {
     modules=[for(final m in ordered(data['modules'])) {...m,'exercises':ordered(m['exercises'])}];
   }
   List<Json> exercises(int module)=>modules[module]['exercises'] as List<Json>;
+  void move(int module,int from,int to){
+    final rows=exercises(module);
+    if(from<0||from>=rows.length||to<0||to>=rows.length||from==to)return;
+    rows.insert(to,rows.removeAt(from));
+  }
 }
