@@ -128,3 +128,67 @@ type sourceScenario struct {
 	Modules    []sourceModule
 	Days, Pdfs []record
 }
+
+func loadSourceScenario(ctx context.Context, db runtimeDB, id int64) (sourceScenario, error) {
+	return loadSourceScenarioMode(ctx, db, id, false)
+}
+
+// The editor reads live ORM relationships; frozen snapshots retain their
+// existing deterministic ordering. Keep each projection's ordering explicit.
+func loadSourceScenarioMode(ctx context.Context, db runtimeDB, id int64, editor bool) (sourceScenario, error) {
+	var s sourceScenario
+	var err error
+	s.Row, err = queryRecord(ctx, db, `SELECT to_jsonb(s)||jsonb_build_object('aircraft_code',a.code) FROM scenario s LEFT JOIN aircraft_airline a ON a.id=s.aircraft_id WHERE s.id=$1`, id)
+	if err != nil {
+		return s, err
+	}
+	dayQuery := `SELECT to_jsonb(d) FROM scenario_day_module d WHERE d.scenario_id=$1 ORDER BY d.day_index,d.order_index,d.module_id,d.id`
+	if editor {
+		dayQuery = `SELECT to_jsonb(d) FROM scenario_day_module d JOIN module m ON m.id=d.module_id WHERE m.scenario_id=$1 ORDER BY m.id`
+	}
+	s.Days, err = queryRecords(ctx, db, dayQuery, id)
+	if err != nil {
+		return s, err
+	}
+	s.Pdfs, err = queryRecords(ctx, db, `SELECT to_jsonb(p) FROM scenario_pdf p WHERE p.scenario_id=$1 ORDER BY p.order_index,p.id`, id)
+	if err != nil {
+		return s, err
+	}
+	modules, err := queryRecords(ctx, db, `SELECT to_jsonb(m)||jsonb_build_object('content_subcolumn_name',c.name,'content_subcolumn',to_jsonb(c)) FROM module m LEFT JOIN scenario_content_subcolumn c ON c.id=m.content_subcolumn_id WHERE m.scenario_id=$1 ORDER BY m.order_index,m.id`, id)
+	if err != nil {
+		return s, err
+	}
+	moduleIDs := []int64{}
+	moduleIndex := map[int64]int{}
+	for i, row := range modules {
+		moduleIDs = append(moduleIDs, row.number("id"))
+		moduleIndex[row.number("id")] = i
+		s.Modules = append(s.Modules, sourceModule{Row: row, Exercises: []*sourceExercise{}})
+	}
+	exerciseQuery := `SELECT to_jsonb(e) FROM exercise e WHERE e.module_id=ANY($1)`
+	if !editor {
+		exerciseQuery += ` ORDER BY e.order_index,e.id`
+	}
+	rows, err := queryRecords(ctx, db, exerciseQuery, moduleIDs)
+	if err != nil {
+		return s, err
+	}
+	exercises := []*sourceExercise{}
+	for _, row := range rows {
+		e := &sourceExercise{Row: row}
+		exercises = append(exercises, e)
+		index := moduleIndex[row.number("module_id")]
+		s.Modules[index].Exercises = append(s.Modules[index].Exercises, e)
+	}
+	if editor {
+		for i := range s.Modules {
+			sort.SliceStable(s.Modules[i].Exercises, func(a, b int) bool {
+				return s.Modules[i].Exercises[a].Row.number("order_index") < s.Modules[i].Exercises[b].Row.number("order_index")
+			})
+		}
+	}
+	if err = loadExerciseAssetsMode(ctx, db, exercises, false, editor); err != nil {
+		return s, err
+	}
+	return s, nil
+}
