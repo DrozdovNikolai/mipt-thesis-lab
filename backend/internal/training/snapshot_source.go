@@ -192,3 +192,159 @@ func loadSourceScenarioMode(ctx context.Context, db runtimeDB, id int64, editor 
 	}
 	return s, nil
 }
+func loadExerciseAssets(ctx context.Context, db runtimeDB, exercises []*sourceExercise, blocks bool) error {
+	return loadExerciseAssetsMode(ctx, db, exercises, blocks, false)
+}
+
+func loadExerciseAssetsMode(ctx context.Context, db runtimeDB, exercises []*sourceExercise, blocks, editor bool) error {
+	if len(exercises) == 0 {
+		return nil
+	}
+	ids, paramIDs := []int64{}, []int64{}
+	byID := map[int64]*sourceExercise{}
+	paramKey, paramTable, linkKey, elementTable, competenceTable := "exercise_param_id", "exercise_param", "exercise_id", "exercise_element", "exercise_competence"
+	if blocks {
+		paramKey, paramTable, linkKey, elementTable, competenceTable = "element_block_param_id", "element_block_param", "block_id", "element_block_element", "element_block_competence"
+	}
+	for _, e := range exercises {
+		ids = append(ids, e.Row.number("id"))
+		byID[e.Row.number("id")] = e
+		if e.Row[paramKey] != nil {
+			paramIDs = append(paramIDs, e.Row.number(paramKey))
+		}
+		e.Elements = []record{}
+		e.Competences = []record{}
+		e.Images = []record{}
+	}
+	params, err := queryRecords(ctx, db, "SELECT to_jsonb(p) FROM "+paramTable+" p WHERE p.id=ANY($1)", paramIDs)
+	if err != nil {
+		return err
+	}
+	tlIDs := []int64{}
+	for _, p := range params {
+		for _, key := range []string{"original_tl_id", "destination_tl_id"} {
+			if p[key] != nil {
+				tlIDs = append(tlIDs, p.number(key))
+			}
+		}
+	}
+	tlRows, err := queryRecords(ctx, db, `SELECT to_jsonb(t)||jsonb_build_object('takeoff_details',to_jsonb(d)) FROM take_off_landing_param t LEFT JOIN takeoff_param_details d ON d.take_off_landing_param_id=t.id WHERE t.id=ANY($1)`, tlIDs)
+	if err != nil {
+		return err
+	}
+	tlByID, paramByID := map[int64]record{}, map[int64]record{}
+	for _, tl := range tlRows {
+		tlByID[tl.number("id")] = tl
+	}
+	for _, p := range params {
+		p["original_tl"] = tlByID[p.number("original_tl_id")]
+		p["destination_tl"] = tlByID[p.number("destination_tl_id")]
+		paramByID[p.number("id")] = p
+	}
+	for _, e := range exercises {
+		e.Param = paramByID[e.Row.number(paramKey)]
+	}
+	elementQuery := "SELECT to_jsonb(l)||jsonb_build_object('element',to_jsonb(e)) FROM " + elementTable + " l LEFT JOIN element e ON e.id=l.element_id WHERE l." + linkKey + "=ANY($1)"
+	if !editor {
+		elementQuery += " ORDER BY l.order_index,l.id"
+	}
+	var elements []record
+	if editor {
+		elements, err = loadEditorElementLinks(ctx, db, elementTable, linkKey, ids)
+	} else {
+		elements, err = queryRecords(ctx, db, elementQuery, ids)
+	}
+	if err != nil {
+		return err
+	}
+	for _, element := range elements {
+		e := byID[element.number(linkKey)]
+		e.Elements = append(e.Elements, element)
+	}
+	if editor {
+		for _, e := range exercises {
+			sort.SliceStable(e.Elements, func(a, b int) bool { return e.Elements[a].number("order_index") < e.Elements[b].number("order_index") })
+		}
+	}
+	competences, err := queryRecords(ctx, db, "SELECT to_jsonb(c)||jsonb_build_object('owner_id',l."+linkKey+") FROM "+competenceTable+" l JOIN competence c ON c.id=l.competence_id WHERE l."+linkKey+"=ANY($1) ORDER BY c.order_index,c.id", ids)
+	if err != nil {
+		return err
+	}
+	for _, c := range competences {
+		e := byID[c.number("owner_id")]
+		e.Competences = append(e.Competences, c)
+	}
+	if !blocks {
+		images, err := queryRecords(ctx, db, `SELECT to_jsonb(i) FROM exercise_image i WHERE i.exercise_id=ANY($1) ORDER BY i.order_index,i.id`, ids)
+		if err != nil {
+			return err
+		}
+		for _, image := range images {
+			e := byID[image.number("exercise_id")]
+			e.Images = append(e.Images, image)
+		}
+	}
+	return nil
+}
+
+// SQLAlchemy loads association rows before their elements, in batches of 500.
+// A join may reverse that scan and reorder equal-order links when an element
+// changes. Preserve association order before the caller's stable sort, since
+// Instructor derives content IDs from that order.
+func loadEditorElementLinks(ctx context.Context, db runtimeDB, table, owner string, ids []int64) ([]record, error) {
+	out := []record{}
+	elementIDs := []int64{}
+	for start := 0; start < len(ids); start += 500 {
+		rows, err := queryRecords(ctx, db, "SELECT to_jsonb(l) FROM "+table+" l WHERE l."+owner+"=ANY($1::bigint[])", ids[start:min(start+500, len(ids))])
+		if err != nil {
+			return nil, err
+		}
+		out = append(out, rows...)
+		for _, row := range rows {
+			elementIDs = append(elementIDs, row.number("element_id"))
+		}
+	}
+	elements := map[int64]record{}
+	for start := 0; start < len(elementIDs); start += 500 {
+		rows, err := queryRecords(ctx, db, "SELECT to_jsonb(e) FROM element e WHERE e.id=ANY($1::bigint[])", elementIDs[start:min(start+500, len(elementIDs))])
+		if err != nil {
+			return nil, err
+		}
+		for _, row := range rows {
+			elements[row.number("id")] = row
+		}
+	}
+	for _, row := range out {
+		row["element"] = elements[row.number("element_id")]
+	}
+	return out, nil
+}
+func (s sourceScenario) dayModules(day int64) []sourceModule {
+	meta := map[int64][2]int64{}
+	for _, d := range s.Days {
+		meta[d.number("module_id")] = [2]int64{d.number("day_index"), d.number("order_index")}
+	}
+	modules := []sourceModule{}
+	for _, m := range s.Modules {
+		md, ok := meta[m.Row.number("id")]
+		if !ok {
+			md = [2]int64{1, m.Row.number("order_index")}
+			meta[m.Row.number("id")] = md
+		}
+		if md[0] == day {
+			modules = append(modules, m)
+		}
+	}
+	sort.SliceStable(modules, func(i, j int) bool {
+		a, b := modules[i].Row, modules[j].Row
+		ma, mb := meta[a.number("id")], meta[b.number("id")]
+		if ma[1] != mb[1] {
+			return ma[1] < mb[1]
+		}
+		if a.number("order_index") != b.number("order_index") {
+			return a.number("order_index") < b.number("order_index")
+		}
+		return a.number("id") < b.number("id")
+	})
+	return modules
+}
