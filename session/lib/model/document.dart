@@ -38,4 +38,8 @@ class Document {
     if(from<0||from>=rows.length||to<0||to>=rows.length||from==to)return;
     rows.insert(to,rows.removeAt(from));
   }
+  Json snapshot()=>{'modules':[for(final m in modules){
+    ...pick(m,['id','clientUid','scenarioId','orderIndex','dayIndex','dayStart','durationMinutes','contentSubcolumnId']),
+    'exercises':[for(final (index,e) in (m['exercises'] as List<Json>).indexed)exerciseSnapshot(e,index)]
+  }]};
 }
