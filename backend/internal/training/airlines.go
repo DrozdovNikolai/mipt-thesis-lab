@@ -107,3 +107,99 @@ func defaultAirlineGrading(ctx context.Context, tx pgx.Tx, airline int64) error 
 	}
 	return nil
 }
+func (s *Service) createAirline(w http.ResponseWriter, r *http.Request) error {
+	author, err := s.Auth.Authenticate(r, "users:write")
+	if err != nil {
+		return err
+	}
+	body, err := platform.ReadSchema(r, airlineSchema(true))
+	if err != nil {
+		return err
+	}
+	ctx := r.Context()
+	tx, err := s.Auth.DB.Begin(ctx)
+	if err != nil {
+		return err
+	}
+	defer tx.Rollback(ctx)
+	code, err := airlineCode(ctx, tx, body["code"], nil)
+	if err != nil {
+		return err
+	}
+	if body["copy_from"] != nil {
+		if _, err = findAirline(ctx, tx, body.Int("copy_from"), "Source airline not found"); err != nil {
+			return err
+		}
+	}
+	airline, err := insertTrainingRow(ctx, tx, "airline", record{"code": code, "name": body["name"], "active": body["active"], "users_stored_in_local_db": body["users_stored_in_local_db"]})
+	if err != nil {
+		return err
+	}
+	if err = defaultAirlineGrading(ctx, tx, airline.number("id")); err != nil {
+		return err
+	}
+	if body["copy_from"] != nil {
+		if _, err = cloneAirlineStructure(ctx, tx, body.Int("copy_from"), airline.number("id"), author.InternalID); err != nil {
+			return err
+		}
+	}
+	if err = tx.Commit(ctx); err != nil {
+		return err
+	}
+	airline, err = findAirline(ctx, s.Auth.DB, airline.number("id"), "Airline not found")
+	if err != nil {
+		return err
+	}
+	platform.WriteJSON(w, 201, airlineDTO(airline))
+	return nil
+}
+func (s *Service) updateAirline(w http.ResponseWriter, r *http.Request) error {
+	if _, err := s.Auth.Authenticate(r, "users:write"); err != nil {
+		return err
+	}
+	schema := airlineSchema(false)
+	path, body, err := catalogInput(r, &schema, "airline_id")
+	if err != nil {
+		return err
+	}
+	ctx := r.Context()
+	tx, err := s.Auth.DB.Begin(ctx)
+	if err != nil {
+		return err
+	}
+	defer tx.Rollback(ctx)
+	id := path.Int("airline_id")
+	row, err := findAirline(ctx, tx, id, "Airline not found")
+	if err != nil {
+		return err
+	}
+	if body.Has("code") {
+		body["code"], err = airlineCode(ctx, tx, body["code"], id)
+		if err != nil {
+			return err
+		}
+	}
+	sets, args := []string{}, []any{}
+	for _, key := range []string{"code", "name", "active", "users_stored_in_local_db"} {
+		if body.Has(key) && body[key] != row[key] {
+			args = append(args, body[key])
+			sets = append(sets, fmt.Sprintf("%s=$%d", key, len(args)))
+		}
+	}
+	if len(sets) > 0 {
+		sets = append(sets, "updated_at=now()")
+		args = append(args, id)
+		if _, err = tx.Exec(ctx, "UPDATE airline SET "+strings.Join(sets, ",")+fmt.Sprintf(" WHERE id=$%d", len(args)), args...); err != nil {
+			return err
+		}
+	}
+	if err = tx.Commit(ctx); err != nil {
+		return err
+	}
+	row, err = findAirline(ctx, s.Auth.DB, id, "Airline not found")
+	if err != nil {
+		return err
+	}
+	platform.WriteJSON(w, 200, airlineDTO(row))
+	return nil
+}
