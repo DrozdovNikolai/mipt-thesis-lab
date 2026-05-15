@@ -203,3 +203,87 @@ func (s *Service) updateAirline(w http.ResponseWriter, r *http.Request) error {
 	platform.WriteJSON(w, 200, airlineDTO(row))
 	return nil
 }
+func (s *Service) cloneAirline(w http.ResponseWriter, r *http.Request) error {
+	author, err := s.Auth.Authenticate(r, "users:write")
+	if err != nil {
+		return err
+	}
+	schema := platform.Schema{Fields: []platform.Field{{Name: "source_airline_id", Alias: "sourceAirlineId", Kind: "integer", Min: 1, Required: true}}}
+	path, body, err := catalogInput(r, &schema, "target_airline_id")
+	if err != nil {
+		return err
+	}
+	source, target := body.Int("source_airline_id"), path.Int("target_airline_id")
+	if source == target {
+		return commanderError(400, "SAME_AIRLINE", "source_airline_id and target_airline_id must be different")
+	}
+	ctx := r.Context()
+	tx, err := s.Auth.DB.Begin(ctx)
+	if err != nil {
+		return err
+	}
+	defer tx.Rollback(ctx)
+	if _, err = findAirline(ctx, tx, source, "Source airline not found"); err != nil {
+		return err
+	}
+	if _, err = findAirline(ctx, tx, target, "Target airline not found"); err != nil {
+		return err
+	}
+	counts, err := cloneAirlineStructure(ctx, tx, source, target, author.InternalID)
+	if err != nil {
+		return err
+	}
+	if err = tx.Commit(ctx); err != nil {
+		return err
+	}
+	platform.WriteJSON(w, 201, commanderWire(record{"source_airline_id": source, "target_airline_id": target, "counts": counts}))
+	return nil
+}
+
+func (s *Service) deleteAirline(w http.ResponseWriter, r *http.Request) error {
+	if _, err := s.Auth.Authenticate(r, "users:write"); err != nil {
+		return err
+	}
+	path, _, err := catalogInput(r, nil, "airline_id")
+	if err != nil {
+		return err
+	}
+	id := path.Int("airline_id")
+	ctx := r.Context()
+	tx, err := s.Auth.DB.Begin(ctx)
+	if err != nil {
+		return err
+	}
+	defer tx.Rollback(ctx)
+	if _, err = findAirline(ctx, tx, id, "Airline not found"); err != nil {
+		return err
+	}
+	// SQLAlchemy clears these non-cascading relationships before deleting the
+	// parent. NOT NULL failures are intentional: a raw cascading DELETE would
+	// silently remove libraries with dependent records.
+	for _, table := range []string{"element", "element_block", "scenario", "scenario_content_set", "element_folder", "block_folder"} {
+		if _, err = tx.Exec(ctx, "UPDATE "+table+" SET airline_id=NULL,updated_at=now() WHERE airline_id=$1", id); err != nil {
+			return err
+		}
+	}
+	for _, table := range []string{"element", "scenario", "scenario_content_set", "element_folder", "block_folder", "user_aircraft"} {
+		stamp := ",updated_at=now()"
+		if table == "user_aircraft" {
+			stamp = ""
+		}
+		if _, err = tx.Exec(ctx, "UPDATE "+table+" SET aircraft_id=NULL"+stamp+" WHERE aircraft_id IN (SELECT id FROM aircraft_airline WHERE airline_id=$1)", id); err != nil {
+			return err
+		}
+	}
+	if _, err = tx.Exec(ctx, "UPDATE users SET airline_id=NULL,updated_at=now() WHERE airline_id=$1", id); err != nil {
+		return err
+	}
+	if _, err = tx.Exec(ctx, "DELETE FROM airline WHERE id=$1", id); err != nil {
+		return err
+	}
+	if err = tx.Commit(ctx); err != nil {
+		return err
+	}
+	w.WriteHeader(204)
+	return nil
+}
