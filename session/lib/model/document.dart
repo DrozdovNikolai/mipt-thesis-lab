@@ -42,4 +42,8 @@ class Document {
     ...pick(m,['id','clientUid','scenarioId','orderIndex','dayIndex','dayStart','durationMinutes','contentSubcolumnId']),
     'exercises':[for(final (index,e) in (m['exercises'] as List<Json>).indexed)exerciseSnapshot(e,index)]
   }]};
+  late String _baseline=orderSignature();
+  String orderSignature()=>jsonEncode([for(final m in modules)[for(final e in m['exercises'])e['id']]]);
+  void markClean(){_baseline=orderSignature();}
+  bool get dirty=>_baseline!=orderSignature();
 }
