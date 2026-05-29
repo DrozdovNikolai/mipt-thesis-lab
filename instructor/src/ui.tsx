@@ -33,3 +33,11 @@ export function Choice({ label, selected, onPress }: { label: string; selected: 
   </Pressable>;
 }
 
+export function Field({ label, ...props }: TextInputProps & { label: string }) {
+  return <View style={{ gap: 6 }}><Copy muted>{label}</Copy>
+    <TextInput accessibilityLabel={label} placeholderTextColor={colors.muted} selectionColor={colors.accent} {...props}
+      style={{ color: colors.text, backgroundColor: colors.background, borderColor: colors.border, borderWidth: 1,
+        borderRadius: 7, minHeight: props.multiline ? 90 : 48, padding: 12, fontSize: 16, textAlignVertical: props.multiline ? 'top' : 'center' }}/>
+  </View>;
+}
+
