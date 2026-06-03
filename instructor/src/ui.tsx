@@ -41,3 +41,11 @@ export function Field({ label, ...props }: TextInputProps & { label: string }) {
   </View>;
 }
 
+export function Panel({ children }: { children: ReactNode }) {
+  return <View style={{ padding: 18, borderWidth: 1, borderColor: colors.border, borderRadius: 12, backgroundColor: colors.surface, gap: 14 }}>{children}</View>;
+}
+
+export function Row({ children }: { children: ReactNode }) {
+  return <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>{children}</View>;
+}
+
