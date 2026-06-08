@@ -260,3 +260,94 @@ func (s *Service) updateLibraryFolder(w http.ResponseWriter, r *http.Request, c 
 	platform.WriteJSON(w, 200, dto)
 	return nil
 }
+
+func libraryFolderSubtree(ctx context.Context, tx pgx.Tx, c libraryCollection, root record) ([]record, error) {
+	result := []record{root}
+	pending := []int64{root.number("id")}
+	seen := map[int64]bool{root.number("id"): true}
+	for len(pending) > 0 {
+		rows, err := queryRecords(ctx, tx, "SELECT to_jsonb(f) FROM "+c.folderTable()+" f WHERE parent_id=ANY($1::bigint[])", pending)
+		if err != nil {
+			return nil, err
+		}
+		pending = nil
+		for _, row := range rows {
+			id := row.number("id")
+			if !seen[id] {
+				seen[id] = true
+				pending = append(pending, id)
+				result = append(result, row)
+			}
+		}
+	}
+	return result, nil
+}
+
+func (s *Service) archiveLibraryFolder(w http.ResponseWriter, r *http.Request, c libraryCollection, restore bool) error {
+	user, err := s.Auth.Authenticate(r, "training:write")
+	if err != nil {
+		return err
+	}
+	path, _, err := libraryInput(r, nil, "folder_id")
+	if err != nil {
+		return err
+	}
+	airline, err := commanderAirline(user)
+	if err != nil {
+		return err
+	}
+	allowed, err := libraryAllowedAircraft(user)
+	if err != nil {
+		return err
+	}
+	ctx := r.Context()
+	tx, err := s.Auth.DB.Begin(ctx)
+	if err != nil {
+		return err
+	}
+	defer tx.Rollback(ctx)
+	row, err := libraryFind(ctx, tx, c.folderTable(), path["folder_id"])
+	if err != nil {
+		return err
+	}
+	if err = libraryRequired(airline, allowed, row, false, "Folder not found"); err != nil {
+		return err
+	}
+	if restore || row["archived_at"] == nil {
+		subtree, e := libraryFolderSubtree(ctx, tx, c, row)
+		if e != nil {
+			return e
+		}
+		changes := map[int64]record{}
+		for _, item := range subtree {
+			change := record{"archived_at": nil, "archived_by": nil}
+			if !restore {
+				change["archived_at"], change["archived_by"] = time.Now().UTC(), user.InternalID
+			}
+			changes[item.number("id")] = change
+		}
+		sort.Slice(subtree, func(i, j int) bool { return subtree[i].number("id") < subtree[j].number("id") })
+		for _, item := range subtree {
+			if err = libraryUpdate(ctx, tx, c.folderTable(), item, changes[item.number("id")]); err != nil {
+				return err
+			}
+		}
+	}
+	if err = tx.Commit(ctx); err != nil {
+		return err
+	}
+	if !restore {
+		w.WriteHeader(204)
+		return nil
+	}
+	row, err = libraryFind(ctx, s.Auth.DB, c.folderTable(), row["id"])
+	if err != nil {
+		return err
+	}
+	dto, err := libraryFolderDTO(ctx, s.Auth.DB, row, row["library_kind"])
+	if err != nil {
+		return err
+	}
+	platform.WriteJSON(w, 200, dto)
+	return nil
+}
