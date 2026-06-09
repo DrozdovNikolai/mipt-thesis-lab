@@ -49,3 +49,11 @@ export function Row({ children }: { children: ReactNode }) {
   return <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>{children}</View>;
 }
 
+export function Failure({ message }: { message: string }) {
+  return message ? <Text accessibilityRole="alert" style={{ color: colors.error, lineHeight: 22 }}>{message}</Text> : null;
+}
+
+export function Loading({ label }: { label: string }) {
+  return <Row><ActivityIndicator color={colors.accent}/><Copy muted>{label}</Copy></Row>;
+}
+
