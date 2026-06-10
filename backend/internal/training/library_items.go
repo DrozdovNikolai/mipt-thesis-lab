@@ -195,3 +195,161 @@ func (s *Service) queryLibraryItems(w http.ResponseWriter, r *http.Request, c li
 	platform.WriteJSON(w, 200, items)
 	return nil
 }
+
+func (s *Service) updateLibraryItem(w http.ResponseWriter, r *http.Request, c libraryCollection) error {
+	user, err := s.Auth.Authenticate(r, "training:write")
+	if err != nil {
+		return err
+	}
+	schema := libraryItemSchema(false, c)
+	path, body, err := libraryInput(r, &schema, "item_id")
+	if err != nil {
+		return err
+	}
+	airline, err := commanderAirline(user)
+	if err != nil {
+		return err
+	}
+	allowed, err := libraryAllowedAircraft(user)
+	if err != nil {
+		return err
+	}
+	ctx := r.Context()
+	tx, err := s.Auth.DB.Begin(ctx)
+	if err != nil {
+		return err
+	}
+	defer tx.Rollback(ctx)
+	row, err := libraryFind(ctx, tx, c.itemTable(), path["item_id"])
+	if err != nil {
+		return err
+	}
+	folder, err := libraryFind(ctx, tx, c.folderTable(), row["folder_id"])
+	if err != nil {
+		return err
+	}
+	if !libraryScoped(folder, airline, allowed, true) {
+		return platform.Error(404, "Folder item not found")
+	}
+	if body.Has("folder_id") {
+		folder, err = libraryFind(ctx, tx, c.folderTable(), body["folder_id"])
+		if err != nil {
+			return err
+		}
+		if !libraryScoped(folder, airline, allowed, true) {
+			return platform.Error(400, "Invalid folder")
+		}
+	}
+	if c == blockLibrary {
+		blockID := row["block_id"]
+		if body.Has("block_id") {
+			if body["block_id"] == nil || body.CompareInteger("block_id", 0) == 0 {
+				return platform.Error(400, "block_id required")
+			}
+			block, e := libraryFind(ctx, tx, "element_block", body["block_id"])
+			if e != nil {
+				return e
+			}
+			if block == nil || block.number("airline_id") != airline || block["archived_at"] != nil {
+				return platform.Error(400, "Invalid block")
+			}
+			blockID = body["block_id"]
+		}
+		// Even an order-only/no-op update validates the existing block's kind.
+		// Assignments happen after validation; there is no element-item autoflush.
+		if err = libraryMatchBlockFolder(ctx, tx, folder, blockID); err != nil {
+			return err
+		}
+	} else {
+		if body.Has("element_id") && (body["element_id"] == nil || body.CompareInteger("element_id", 0) == 0) {
+			return platform.Error(400, "element_id required")
+		}
+		if body.Has("element_id") || body.Has("folder_id") {
+			// Apply the folder assignment before loading the element so triggers run in order.
+			if body.Has("folder_id") {
+				if err = libraryUpdate(ctx, tx, c.itemTable(), row, record{"folder_id": body["folder_id"]}); err != nil {
+					return err
+				}
+				row["folder_id"] = body["folder_id"]
+			}
+			elementID := row["element_id"]
+			if body.Has("element_id") {
+				elementID = body["element_id"]
+			}
+			element, e := libraryFind(ctx, tx, "element", elementID)
+			if e != nil {
+				return e
+			}
+			if !libraryValidElement(element, airline, folder.number("aircraft_id")) {
+				message := "Invalid element for folder aircraft"
+				if body.Has("element_id") {
+					message = "Invalid element"
+				}
+				return platform.Error(400, message)
+			}
+		}
+	}
+
+	if body["order_index"] == nil {
+		delete(body, "order_index")
+	}
+	if err = libraryUpdate(ctx, tx, c.itemTable(), row, record(body)); err != nil {
+		return err
+	}
+	if err = tx.Commit(ctx); err != nil {
+		return err
+	}
+	row, err = libraryFind(ctx, s.Auth.DB, c.itemTable(), row["id"])
+	if err != nil {
+		return err
+	}
+	if row == nil {
+		return fmt.Errorf("folder item disappeared after commit")
+	}
+	platform.WriteJSON(w, 200, libraryItemDTO(row))
+	return nil
+}
+
+func (s *Service) deleteLibraryItem(w http.ResponseWriter, r *http.Request, c libraryCollection) error {
+	user, err := s.Auth.Authenticate(r, "training:write")
+	if err != nil {
+		return err
+	}
+	path, _, err := libraryInput(r, nil, "item_id")
+	if err != nil {
+		return err
+	}
+	airline, err := commanderAirline(user)
+	if err != nil {
+		return err
+	}
+	allowed, err := libraryAllowedAircraft(user)
+	if err != nil {
+		return err
+	}
+	ctx := r.Context()
+	tx, err := s.Auth.DB.Begin(ctx)
+	if err != nil {
+		return err
+	}
+	defer tx.Rollback(ctx)
+	row, err := libraryFind(ctx, tx, c.itemTable(), path["item_id"])
+	if err != nil {
+		return err
+	}
+	folder, err := libraryFind(ctx, tx, c.folderTable(), row["folder_id"])
+	if err != nil {
+		return err
+	}
+	if !libraryScoped(folder, airline, allowed, true) {
+		return platform.Error(404, "Folder item not found")
+	}
+	if _, err = tx.Exec(ctx, "DELETE FROM "+c.itemTable()+" WHERE id=$1", row["id"]); err != nil {
+		return err
+	}
+	if err = tx.Commit(ctx); err != nil {
+		return err
+	}
+	w.WriteHeader(204)
+	return nil
+}
