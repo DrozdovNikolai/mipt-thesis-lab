@@ -57,3 +57,15 @@ export function Loading({ label }: { label: string }) {
   return <Row><ActivityIndicator color={colors.accent}/><Copy muted>{label}</Copy></Row>;
 }
 
+export function Brand() {
+  return <Row><Image source={require('../assets/mark.png')} style={{ width: 36, height: 36, borderRadius: 7 }}/>
+    <Text style={{ color: colors.text, fontWeight: '800', fontSize: 16, letterSpacing: 1 }}>55NORD</Text>
+    <Copy muted>Instructor</Copy></Row>;
+}
+
+export function Page({ children }: { children: ReactNode }) {
+  return <ScrollView keyboardShouldPersistTaps="handled" contentContainerStyle={{ alignItems: 'center', padding: 18, paddingBottom: 48 }}>
+    <View style={{ width: '100%', maxWidth: 1160, gap: 16 }}>{children}</View>
+  </ScrollView>;
+}
+
