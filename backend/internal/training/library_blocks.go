@@ -87,3 +87,88 @@ func (s *Service) libraryWriteBlockResponse(ctx context.Context, w http.Response
 	platform.WriteJSON(w, status, value)
 	return nil
 }
+func libraryValidateBlockElementIDs(ctx context.Context, db runtimeDB, airline int64, allowed []int64, ids []any) error {
+	unique := map[int64]bool{}
+	ordered := []int64{}
+	for _, raw := range ids {
+		if wide, ok := raw.(*big.Int); ok {
+			if wide.Sign() > 0 {
+				return fmt.Errorf("element id exceeds PostgreSQL bigint range")
+			}
+			continue
+		}
+		id, _ := raw.(int64)
+		if id > 0 && !unique[id] {
+			unique[id] = true
+			ordered = append(ordered, id)
+		}
+	}
+	if len(ordered) == 0 {
+		return nil
+	}
+	sort.Slice(ordered, func(i, j int) bool { return ordered[i] < ordered[j] })
+	rows, err := queryRecords(ctx, db, `SELECT to_jsonb(e) FROM element e WHERE airline_id=$1 AND id=ANY($2::bigint[]) AND aircraft_id=ANY($3::bigint[]) AND archived_at IS NULL`, airline, ordered, allowed)
+	if err != nil {
+		return err
+	}
+	for _, row := range rows {
+		delete(unique, row.number("id"))
+	}
+	invalid := []int64{}
+	for _, id := range ordered {
+		if unique[id] {
+			invalid = append(invalid, id)
+		}
+	}
+	if len(invalid) > 0 {
+		return &platform.APIError{Status: 400, Code: "INVALID_ELEMENT_IDS", Message: "Invalid element_id(s)", Extra: map[string]any{"element_ids": invalid}}
+	}
+	return nil
+}
+func libraryReplaceBlockCompetences(ctx context.Context, db runtimeDB, blockID any, airline int64, raw any, checkFolders bool) error {
+	values, _ := raw.([]any)
+	if checkFolders {
+		kind := "exercise"
+		if len(values) > 0 {
+			kind = "competence"
+		}
+		var conflict bool
+		if err := db.QueryRow(ctx, `SELECT EXISTS(SELECT 1 FROM block_folder f JOIN block_folder_item i ON i.folder_id=f.id WHERE i.block_id=$1 AND f.library_kind<>$2)`, blockID, kind).Scan(&conflict); err != nil {
+			return err
+		}
+		if conflict {
+			return platform.Error(400, "Block library kind does not match its saved folders")
+		}
+	}
+	if _, err := db.Exec(ctx, "DELETE FROM element_block_competence WHERE block_id=$1", blockID); err != nil {
+		return err
+	}
+	ids := []int64{}
+	seen := map[int64]bool{}
+	for _, raw := range values {
+		id, ok := raw.(int64)
+		if !ok {
+			return fmt.Errorf("competence id exceeds PostgreSQL bigint range")
+		}
+		if !seen[id] {
+			seen[id] = true
+			ids = append(ids, id)
+		}
+	}
+	if len(ids) == 0 {
+		return nil
+	}
+	var count int
+	if err := db.QueryRow(ctx, `SELECT count(*) FROM competence WHERE airline_id=$1 AND id=ANY($2::bigint[])`, airline, ids).Scan(&count); err != nil {
+		return err
+	}
+	if count != len(ids) {
+		return platform.Error(400, "Invalid competence_ids")
+	}
+	for _, id := range ids {
+		if _, err := insertTrainingRow(ctx, db, "element_block_competence", record{"block_id": blockID, "competence_id": id}); err != nil {
+			return err
+		}
+	}
+	return nil
+}
