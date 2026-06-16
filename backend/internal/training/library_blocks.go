@@ -172,3 +172,187 @@ func libraryReplaceBlockCompetences(ctx context.Context, db runtimeDB, blockID a
 	}
 	return nil
 }
+func (s *Service) listLibraryBlocks(w http.ResponseWriter, r *http.Request) error {
+	user, err := s.Auth.Authenticate(r, "training:read")
+	if err != nil {
+		return err
+	}
+	q, err := platform.QueryObject(r.URL.Query(), platform.Field{Name: "include_archived", Alias: "includeArchived", Kind: "boolean", Default: false})
+	if err != nil {
+		return err
+	}
+	airline, err := commanderAirline(user)
+	if err != nil {
+		return err
+	}
+	rows, err := queryRecords(r.Context(), s.Auth.DB, `SELECT to_jsonb(b) FROM element_block b WHERE airline_id=$1 AND ($2 OR archived_at IS NULL)`, airline, q.Bool("include_archived"))
+	if err != nil {
+		return err
+	}
+	items := []any{}
+	for _, row := range rows {
+		value, e := libraryBlockDTO(r.Context(), s.Auth.DB, row, nil)
+		if e != nil {
+			return e
+		}
+		items = append(items, value)
+	}
+	platform.WriteJSON(w, 200, items)
+	return nil
+}
+func (s *Service) createLibraryBlock(w http.ResponseWriter, r *http.Request) error {
+	user, err := s.Auth.Authenticate(r, "training:write")
+	if err != nil {
+		return err
+	}
+	_, body, err := libraryBlockInput(r, true)
+	if err != nil {
+		return err
+	}
+	airline, err := commanderAirline(user)
+	if err != nil {
+		return err
+	}
+	allowed, err := libraryAllowedAircraft(user)
+	if err != nil {
+		return err
+	}
+	ctx := r.Context()
+	tx, err := s.Auth.DB.Begin(ctx)
+	if err != nil {
+		return err
+	}
+	defer tx.Rollback(ctx)
+	ids := []any{}
+	for _, item := range body["elements"].([]any) {
+		ids = append(ids, libraryRecord(item)["element_id"])
+	}
+	if err = libraryValidateBlockElementIDs(ctx, tx, airline, allowed, ids); err != nil {
+		return err
+	}
+	params, err := libraryNewBlockParams(ctx, tx, libraryRecord(body["params"]))
+	if err != nil {
+		return err
+	}
+	params, err = insertTrainingRow(ctx, tx, "element_block_param", params)
+	if err != nil {
+		return err
+	}
+	block, err := insertTrainingRow(ctx, tx, "element_block", record{"airline_id": airline, "element_block_param_id": params["id"]})
+	if err != nil {
+		return err
+	}
+	for _, item := range body["elements"].([]any) {
+		if _, err = libraryInsertBlockElement(ctx, tx, block["id"], libraryRecord(item), false); err != nil {
+			return err
+		}
+	}
+	if err = libraryReplaceBlockCompetences(ctx, tx, block["id"], airline, body["competence_ids"], false); err != nil {
+		return err
+	}
+	if err = tx.Commit(ctx); err != nil {
+		return err
+	}
+	return s.libraryWriteBlockResponse(ctx, w, block["id"], 201, nil)
+}
+func (s *Service) updateLibraryBlock(w http.ResponseWriter, r *http.Request) error {
+	user, err := s.Auth.Authenticate(r, "training:write")
+	if err != nil {
+		return err
+	}
+	path, body, err := libraryBlockInput(r, false)
+	if err != nil {
+		return err
+	}
+	airline, err := commanderAirline(user)
+	if err != nil {
+		return err
+	}
+	allowed, err := libraryAllowedAircraft(user)
+	if err != nil {
+		return err
+	}
+	ctx := r.Context()
+	tx, err := s.Auth.DB.Begin(ctx)
+	if err != nil {
+		return err
+	}
+	defer tx.Rollback(ctx)
+	block, err := libraryFind(ctx, tx, "element_block", path["block_id"])
+	if err != nil {
+		return err
+	}
+	if !libraryOwnBlock(block, airline, true) {
+		return platform.Error(404, "Block not found")
+	}
+	// Keep the relationships loaded before bulk writes in the PUT
+	// response. Existing mapped rows reflect assignments, removed rows remain,
+	// new rows and replaced competence links appear only on a subsequent GET.
+	relations, err := libraryReadBlockRelations(ctx, tx, block["id"])
+	if err != nil {
+		return err
+	}
+	if body.Has("elements") {
+		if err = libraryReplaceBlockElements(ctx, tx, block["id"], airline, allowed, body["elements"], relations.elements); err != nil {
+			return err
+		}
+	}
+	if body.Has("competence_ids") {
+		if err = libraryReplaceBlockCompetences(ctx, tx, block["id"], airline, body["competence_ids"], true); err != nil {
+			return err
+		}
+	}
+	if body.Has("params") {
+		if err = libraryReplaceBlockParams(ctx, tx, block, libraryRecord(body["params"])); err != nil {
+			return err
+		}
+	}
+	if err = tx.Commit(ctx); err != nil {
+		return err
+	}
+	return s.libraryWriteBlockResponse(ctx, w, block["id"], 200, relations)
+}
+func (s *Service) archiveLibraryBlock(w http.ResponseWriter, r *http.Request, restore bool) error {
+	user, err := s.Auth.Authenticate(r, "training:write")
+	if err != nil {
+		return err
+	}
+	path, _, err := libraryInput(r, nil, "block_id")
+	if err != nil {
+		return err
+	}
+	airline, err := commanderAirline(user)
+	if err != nil {
+		return err
+	}
+	ctx := r.Context()
+	tx, err := s.Auth.DB.Begin(ctx)
+	if err != nil {
+		return err
+	}
+	defer tx.Rollback(ctx)
+	block, err := libraryFind(ctx, tx, "element_block", path["block_id"])
+	if err != nil {
+		return err
+	}
+	// Restore is allowed for archived rows; the source accidentally rejects
+	// them. This bounded correction has its own expected-difference scenario.
+	if !libraryOwnBlock(block, airline, !restore) {
+		return platform.Error(404, "Block not found")
+	}
+	data := record{"archived_at": nil, "archived_by": nil}
+	if !restore {
+		data["archived_at"], data["archived_by"] = time.Now().UTC(), user.InternalID
+	}
+	if err = libraryUpdate(ctx, tx, "element_block", block, data); err != nil {
+		return err
+	}
+	if err = tx.Commit(ctx); err != nil {
+		return err
+	}
+	if !restore {
+		w.WriteHeader(204)
+		return nil
+	}
+	return s.libraryWriteBlockResponse(ctx, w, block["id"], 200, nil)
+}
