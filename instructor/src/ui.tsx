@@ -69,3 +69,11 @@ export function Page({ children }: { children: ReactNode }) {
   </ScrollView>;
 }
 
+export function ListItem({ title, detail, onPress }: { title: string; detail?: string; onPress: () => void }) {
+  return <Pressable accessibilityRole="button" onPress={onPress} style={({ pressed }) => ({
+    flexDirection: 'row', alignItems: 'center', gap: 12, padding: 16, borderRadius: 9,
+    borderWidth: 1, borderColor: colors.border, backgroundColor: pressed ? colors.background : colors.surface,
+  })}><View style={{ flex: 1 }}><Copy strong>{title}</Copy>{!!detail && <Copy muted>{detail}</Copy>}</View>
+    <Text style={{ color: colors.accent, fontSize: 22 }}>›</Text></Pressable>;
+}
+
