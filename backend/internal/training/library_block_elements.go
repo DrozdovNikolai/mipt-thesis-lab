@@ -135,3 +135,85 @@ func libraryReplaceBlockElements(ctx context.Context, db runtimeDB, blockID any,
 	}
 	return nil
 }
+func (s *Service) listLibraryBlockElements(w http.ResponseWriter, r *http.Request) error {
+	user, err := s.Auth.Authenticate(r, "training:read")
+	if err != nil {
+		return err
+	}
+	path, _, err := libraryInput(r, nil, "block_id")
+	if err != nil {
+		return err
+	}
+	airline, err := commanderAirline(user)
+	if err != nil {
+		return err
+	}
+	block, err := libraryFind(r.Context(), s.Auth.DB, "element_block", path["block_id"])
+	if err != nil {
+		return err
+	}
+	if !libraryOwnBlock(block, airline, false) {
+		return platform.Error(404, "Block not found")
+	}
+	items, err := libraryBlockElementsDTO(r.Context(), s.Auth.DB, block["id"])
+	if err != nil {
+		return err
+	}
+	platform.WriteJSON(w, 200, items)
+	return nil
+}
+func (s *Service) createLibraryBlockElement(w http.ResponseWriter, r *http.Request) error {
+	user, err := s.Auth.Authenticate(r, "training:write")
+	if err != nil {
+		return err
+	}
+	schema := libraryBlockElementModel(true, true)
+	path, body, err := libraryInput(r, &schema, "block_id")
+	if err != nil {
+		return err
+	}
+	airline, err := commanderAirline(user)
+	if err != nil {
+		return err
+	}
+	allowed, err := libraryAllowedAircraft(user)
+	if err != nil {
+		return err
+	}
+	ctx := r.Context()
+	tx, err := s.Auth.DB.Begin(ctx)
+	if err != nil {
+		return err
+	}
+	defer tx.Rollback(ctx)
+	block, err := libraryFind(ctx, tx, "element_block", path["block_id"])
+	if err != nil {
+		return err
+	}
+	if !libraryOwnBlock(block, airline, false) {
+		return platform.Error(404, "Block not found")
+	}
+	if err = libraryValidateBlockElementIDs(ctx, tx, airline, allowed, []any{body["element_id"]}); err != nil {
+		return err
+	}
+	row, err := libraryInsertBlockElement(ctx, tx, block["id"], record(body), false)
+	if err != nil {
+		return err
+	}
+	if err = tx.Commit(ctx); err != nil {
+		return err
+	}
+	return s.libraryWriteBlockElementResponse(ctx, w, row["id"], 201)
+}
+func (s *Service) libraryWriteBlockElementResponse(ctx context.Context, w http.ResponseWriter, id any, status int) error {
+	row, err := libraryFind(ctx, s.Auth.DB, "element_block_element", id)
+	if err != nil {
+		return err
+	}
+	value, err := libraryBlockElementDTO(row)
+	if err != nil {
+		return err
+	}
+	platform.WriteJSON(w, status, value)
+	return nil
+}
