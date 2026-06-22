@@ -217,3 +217,96 @@ func (s *Service) libraryWriteBlockElementResponse(ctx context.Context, w http.R
 	platform.WriteJSON(w, status, value)
 	return nil
 }
+func (s *Service) updateLibraryBlockElement(w http.ResponseWriter, r *http.Request) error {
+	user, err := s.Auth.Authenticate(r, "training:write")
+	if err != nil {
+		return err
+	}
+	schema := libraryBlockElementModel(false, false)
+	path, body, err := libraryInput(r, &schema, "block_id", "ebe_id")
+	if err != nil {
+		return err
+	}
+	airline, err := commanderAirline(user)
+	if err != nil {
+		return err
+	}
+	allowed, err := libraryAllowedAircraft(user)
+	if err != nil {
+		return err
+	}
+	ctx := r.Context()
+	tx, err := s.Auth.DB.Begin(ctx)
+	if err != nil {
+		return err
+	}
+	defer tx.Rollback(ctx)
+	row, err := libraryFind(ctx, tx, "element_block_element", path["ebe_id"])
+	if err != nil {
+		return err
+	}
+	if row == nil || !librarySame(row["block_id"], path["block_id"]) {
+		return platform.Error(404, "Block element not found")
+	}
+	block, err := libraryFind(ctx, tx, "element_block", path["block_id"])
+	if err != nil {
+		return err
+	}
+	if !libraryOwnBlock(block, airline, true) {
+		return platform.Error(404, "Block element not found")
+	}
+	if body["element_id"] != nil {
+		if err = libraryValidateBlockElementIDs(ctx, tx, airline, allowed, []any{body["element_id"]}); err != nil {
+			return err
+		}
+	}
+	if err = libraryUpdate(ctx, tx, "element_block_element", row, record(body)); err != nil {
+		return err
+	}
+	if err = tx.Commit(ctx); err != nil {
+		return err
+	}
+	return s.libraryWriteBlockElementResponse(ctx, w, row["id"], 200)
+}
+func (s *Service) deleteLibraryBlockElement(w http.ResponseWriter, r *http.Request) error {
+	user, err := s.Auth.Authenticate(r, "training:write")
+	if err != nil {
+		return err
+	}
+	path, _, err := libraryInput(r, nil, "block_id", "ebe_id")
+	if err != nil {
+		return err
+	}
+	airline, err := commanderAirline(user)
+	if err != nil {
+		return err
+	}
+	ctx := r.Context()
+	tx, err := s.Auth.DB.Begin(ctx)
+	if err != nil {
+		return err
+	}
+	defer tx.Rollback(ctx)
+	row, err := libraryFind(ctx, tx, "element_block_element", path["ebe_id"])
+	if err != nil {
+		return err
+	}
+	if row == nil || !librarySame(row["block_id"], path["block_id"]) {
+		return platform.Error(404, "Block element not found")
+	}
+	block, err := libraryFind(ctx, tx, "element_block", path["block_id"])
+	if err != nil {
+		return err
+	}
+	if !libraryOwnBlock(block, airline, true) {
+		return platform.Error(404, "Block element not found")
+	}
+	if _, err = tx.Exec(ctx, "DELETE FROM element_block_element WHERE id=$1", row["id"]); err != nil {
+		return err
+	}
+	if err = tx.Commit(ctx); err != nil {
+		return err
+	}
+	w.WriteHeader(204)
+	return nil
+}
