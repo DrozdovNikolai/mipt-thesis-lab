@@ -248,3 +248,100 @@ func (s *Service) deleteContentSet(w http.ResponseWriter, r *http.Request) error
 	w.WriteHeader(204)
 	return nil
 }
+
+func (s *Service) readContentSetMatrix(w http.ResponseWriter, r *http.Request) error {
+	user, err := s.Auth.Authenticate(r, "training:read")
+	if err != nil {
+		return err
+	}
+	path, _, err := libraryInput(r, nil, "content_set_id")
+	if err != nil {
+		return err
+	}
+	airline, err := commanderAirline(user)
+	if err != nil {
+		return err
+	}
+	allowed, err := libraryAllowedAircraft(user)
+	if err != nil {
+		return err
+	}
+	row, err := scopedContentSet(r.Context(), s.Auth.DB, path["content_set_id"], airline, allowed)
+	if err != nil {
+		return err
+	}
+	value, err := contentSetMatrix(r.Context(), s.Auth.DB, row)
+	if err != nil {
+		return err
+	}
+	platform.WriteJSON(w, 200, commanderWire(value))
+	return nil
+}
+
+func contentSetMatrix(ctx context.Context, db runtimeDB, set record) (record, error) {
+	value, err := contentSetDTO(ctx, db, set)
+	if err != nil {
+		return nil, err
+	}
+	out := record{"content_set": value}
+	for _, relation := range []struct{ name, table, order, fields string }{
+		{"labels", "scenario_content_set_label", "order_index,id", "order_index label"},
+		{"folders", "scenario_content_folder", "coalesce(parent_id,0),order_index,id", "parent_id name order_index"},
+		{"requirements", "scenario_content_requirement", "folder_id,order_index,id", "folder_id topic_name order_index"},
+		{"subcolumns", "scenario_content_subcolumn", "order_index,id", "name order_index"},
+		{"cells", "scenario_content_cell", "", "requirement_id set_label_id subcolumn_id value"},
+	} {
+		query := "SELECT to_jsonb(t) FROM " + relation.table + " t WHERE content_set_id=$1"
+		if relation.order != "" {
+			query += " ORDER BY " + relation.order
+		}
+		rows, err := queryRecords(ctx, db, query, set["id"])
+		if err != nil {
+			return nil, err
+		}
+		for i, source := range rows {
+			if relation.name != "cells" && source["order_index"] == nil {
+				return nil, fmt.Errorf("invalid stored content order")
+			}
+			row := source.project("id content_set_id created_at updated_at " + relation.fields)
+			rows[i] = row
+			if relation.name == "labels" {
+				links, err := queryRecords(ctx, db, `SELECT to_jsonb(x)||jsonb_build_object('scenario',to_jsonb(s)||jsonb_build_object('aircraft_code',a.code))
+FROM scenario_content_set_label_scenario x LEFT JOIN scenario s ON s.id=x.scenario_id
+LEFT JOIN aircraft_airline a ON a.id=s.aircraft_id WHERE x.label_id=$1 AND s.deleted_at IS NULL ORDER BY x.id`, row["id"])
+				if err != nil {
+					return nil, err
+				}
+				for j, sourceLink := range links {
+					link := sourceLink.project("id label_id scenario_id created_at scenario")
+					links[j] = link
+					if scenario := link.object("scenario"); scenario != nil {
+						link["scenario"] = scenarioWire(scenario.project("id aircraft_id aircraft_code code title status archived_by archived_at deleted_by deleted_at"))
+					}
+				}
+				row["scenarios"] = links
+			}
+			if relation.name == "requirements" {
+				links, err := queryRecords(ctx, db, `SELECT to_jsonb(x)||jsonb_build_object('element',to_jsonb(e)) FROM scenario_content_requirement_element x
+LEFT JOIN element e ON e.id=x.element_id WHERE x.requirement_id=$1 ORDER BY x.order_index,x.id`, row["id"])
+				if err != nil {
+					return nil, err
+				}
+				for j, sourceLink := range links {
+					link := sourceLink.project("id requirement_id element_id order_index element created_at updated_at")
+					if link["order_index"] == nil {
+						return nil, fmt.Errorf("invalid stored requirement element order")
+					}
+					links[j] = link
+					link["element"], err = libraryElementDTO(link.object("element"))
+					if err != nil {
+						return nil, err
+					}
+				}
+				row["elements"] = links
+			}
+		}
+		out[relation.name] = rows
+	}
+	return out, nil
+}
