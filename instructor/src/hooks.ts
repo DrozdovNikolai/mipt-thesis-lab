@@ -31,3 +31,17 @@ export function useAction() {
   return { busy, error, run };
 }
 
+export function useLoad<T>(load: () => Promise<T>) {
+  const [revision, setRevision] = useState(0);
+  const [state, setState] = useState<{ data?: T; error?: string }>({});
+  useEffect(() => {
+    let current = true;
+    setState({});
+    load().then(data => { if (current) setState({ data }); })
+      .catch(e => { if (current) setState({ error: message(e) }); });
+    return () => { current = false; };
+  }, [load, revision]);
+  const retry = useCallback(() => setRevision(n => n + 1), []);
+  return { ...state, retry };
+}
+
