@@ -19,3 +19,28 @@ function Credentials({ login, password, setLogin, setPassword, submit }: {
       returnKeyType="go" onSubmitEditing={submit}/></>;
 }
 
+async function signIn(login: string, password: string) {
+  const client = await Client.login(login, password);
+  const profile = await client.send<{login: string; isActive: boolean; mustChangePassword?: boolean}>('/auth/me');
+  if (!profile.isActive || profile.mustChangePassword) {
+    await client.logout();
+    throw new Error(profile.mustChangePassword ? 'Смените пароль в основном приложении.' : 'Учётная запись отключена');
+  }
+  return { client, name: profile.login };
+}
+
+export function Login({ onLogin }: { onLogin: (client: Client, name: string) => void }) {
+  const [login, setLogin] = useState('');
+  const [password, setPassword] = useState('');
+  const action = useAction();
+  const valid = !!login.trim() && !!password;
+  const submit = () => valid && action.run(async () => {
+    const session = await signIn(login, password);
+    onLogin(session.client, session.name);
+  });
+  return <LoginFrame><Panel><Title>Вход инструктора</Title>
+    <Credentials {...{ login, password, setLogin, setPassword, submit }}/>
+    <Failure message={action.error}/><Action label={action.busy ? 'Входим…' : 'Войти'} disabled={!valid || action.busy} onPress={submit}/>
+  </Panel></LoginFrame>;
+}
+
