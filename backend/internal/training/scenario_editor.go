@@ -275,3 +275,74 @@ func (s *Service) updateEditorScenario(w http.ResponseWriter, r *http.Request) e
 	}
 	return s.writeEditorScenario(ctx, w, row.number("id"), 200)
 }
+
+func (s *Service) changeEditorScenarioState(w http.ResponseWriter, r *http.Request, action string) error {
+	u, err := s.Auth.Authenticate(r, "training:write")
+	if err != nil {
+		return err
+	}
+	path, _, err := libraryInput(r, nil, "scenario_id")
+	if err != nil {
+		return err
+	}
+	airline, err := commanderAirline(u)
+	if err != nil {
+		return err
+	}
+	aircraft, err := libraryAllowedAircraft(u)
+	if err != nil {
+		return err
+	}
+	ctx := r.Context()
+	tx, err := s.Auth.DB.Begin(ctx)
+	if err != nil {
+		return err
+	}
+	defer tx.Rollback(ctx)
+	row, err := scenarioGet(ctx, tx, path["scenario_id"], airline, aircraft, true, action != "archive")
+	if err != nil {
+		return err
+	}
+	archived := strings.ToUpper(pythonTrim(row.text("status"))) == "ARCHIVED"
+	data := record{}
+	switch action {
+	case "archive":
+		if !archived {
+			data = record{"status": "ARCHIVED", "updated_by": u.InternalID, "archived_by": u.InternalID, "archived_at": time.Now().UTC()}
+		}
+	case "delete":
+		if row["deleted_at"] == nil {
+			if !archived {
+				return commanderError(409, "SCENARIO_NOT_ARCHIVED", "Only archived scenarios can be deleted")
+			}
+			data = record{"updated_by": u.InternalID, "deleted_by": u.InternalID, "deleted_at": time.Now().UTC()}
+		}
+	case "restore":
+		if row["deleted_at"] != nil {
+			return commanderError(409, "SCENARIO_DELETED", "Deleted scenario cannot be restored")
+		}
+		data = record{"updated_by": u.InternalID, "archived_by": nil, "archived_at": nil}
+		if archived {
+			data["status"] = "DRAFT"
+			if row["published_at"] != nil {
+				data["status"] = "PUBLISHED"
+			}
+		}
+	}
+	if err = libraryUpdate(ctx, tx, "scenario", row, data); err != nil {
+		return err
+	}
+	if action == "delete" && row["deleted_at"] == nil {
+		if _, err = tx.Exec(ctx, "DELETE FROM scenario_edit_lock WHERE scenario_id=$1", row["id"]); err != nil {
+			return err
+		}
+	}
+	if err = tx.Commit(ctx); err != nil {
+		return err
+	}
+	if action == "restore" {
+		return s.writeEditorScenario(ctx, w, row.number("id"), 200)
+	}
+	w.WriteHeader(204)
+	return nil
+}
