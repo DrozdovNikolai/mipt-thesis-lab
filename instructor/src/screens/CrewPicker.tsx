@@ -20,3 +20,17 @@ function Results({ client, query, excluded, select }: {
   return <>{eligible.map(pilot => <ListItem key={pilot.id} title={pilotName(pilot)} detail={details(pilot)} onPress={() => select(pilot)}/>)}</>;
 }
 
+function Selected({ pilot, clear }: { pilot: Pilot; clear: () => void }) {
+  return <><Copy strong>{pilotName(pilot)}</Copy><Copy muted>{details(pilot)}</Copy>
+    <Action secondary label="Изменить участника" onPress={clear}/></>;
+}
+
+export function CrewPicker({ client, seat, pilot, excluded, select }: {
+  client: Client; seat: string; pilot?: Pilot; excluded?: number; select: (p?: Pilot) => void;
+}) {
+  const [term, setTerm] = useState('');
+  return <Panel><Copy strong>{seat}</Copy>{pilot ? <Selected pilot={pilot} clear={() => { setTerm(''); select(); }}/>
+    : <><Field label="Фамилия или номер свидетельства" value={term} onChangeText={setTerm}/>
+      {term.trim().length >= 2 && <Results key={term} client={client} query={term} excluded={excluded} select={select}/>}</>}</Panel>;
+}
+
