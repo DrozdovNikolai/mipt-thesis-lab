@@ -174,3 +174,69 @@ func scenarioReplaceCompetences(ctx context.Context, db runtimeDB, exerciseID an
 	}
 	return nil
 }
+
+func scenarioReplaceExerciseContent(ctx context.Context, db runtimeDB, exercise, payload record, airline, aircraft int64) error {
+	standard := payload.text("kind") == "standard"
+	if standard {
+		if err := scenarioReplaceElements(ctx, db, exercise["id"], airline, aircraft, payload["elements"].([]any)); err != nil {
+			return err
+		}
+	} else {
+		for _, table := range []string{"exercise_element", "exercise_competence"} {
+			if _, err := db.Exec(ctx, `DELETE FROM `+table+` WHERE exercise_id=$1`, exercise["id"]); err != nil {
+				return err
+			}
+		}
+	}
+	params := libraryRecord(payload["params"])
+	if !standard {
+		params = nil
+	}
+	if err := scenarioReplaceParams(ctx, db, exercise, params); err != nil {
+		return err
+	}
+	if standard {
+		return scenarioReplaceCompetences(ctx, db, exercise["id"], airline, payload["competence_ids"].([]any))
+	}
+	return nil
+}
+
+func scenarioSyncDays(ctx context.Context, db runtimeDB, scenarioID any, starts map[int64]bool, kept []int64) error {
+	rows, err := queryRecords(ctx, db, `SELECT to_jsonb(d) FROM scenario_day_module d WHERE scenario_id=$1`, scenarioID)
+	if err != nil {
+		return err
+	}
+	byModule := map[int64]record{}
+	for _, row := range rows {
+		byModule[row.number("module_id")] = row
+	}
+	modules, err := queryRecords(ctx, db, `SELECT to_jsonb(m) FROM module m WHERE scenario_id=$1 AND id=ANY($2::bigint[]) ORDER BY order_index,id`, scenarioID, kept)
+	if err != nil {
+		return err
+	}
+	day := 1
+	for i, module := range modules {
+		id := module.number("id")
+		if i > 0 && starts[id] {
+			day++
+		}
+		data := record{"day_index": day, "order_index": module["order_index"]}
+		if old := byModule[id]; old != nil {
+			if err = libraryUpdate(ctx, db, "scenario_day_module", old, data); err != nil {
+				return err
+			}
+		} else {
+			data["module_id"], data["scenario_id"] = id, scenarioID
+			if _, err = insertTrainingRow(ctx, db, "scenario_day_module", data); err != nil {
+				return err
+			}
+		}
+		delete(byModule, id)
+	}
+	for _, row := range byModule {
+		if _, err = db.Exec(ctx, `DELETE FROM scenario_day_module WHERE id=$1`, row["id"]); err != nil {
+			return err
+		}
+	}
+	return nil
+}
