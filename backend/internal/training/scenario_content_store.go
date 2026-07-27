@@ -240,3 +240,67 @@ func scenarioSyncDays(ctx context.Context, db runtimeDB, scenarioID any, starts 
 	}
 	return nil
 }
+
+func scenarioCollectDeletedMedia(ctx context.Context, db runtimeDB, exerciseIDs []int64) ([]record, []int64, error) {
+	media, err := queryRecords(ctx, db, `SELECT jsonb_build_object('storage_key',storage_key,'storage_path',storage_path) FROM exercise_image WHERE exercise_id=ANY($1::bigint[])`, exerciseIDs)
+	if err != nil {
+		return nil, nil, err
+	}
+	params, err := queryRecords(ctx, db, `SELECT to_jsonb(p) FROM exercise_param p JOIN exercise e ON e.exercise_param_id=p.id WHERE e.id=ANY($1::bigint[])`, exerciseIDs)
+	if err != nil {
+		return nil, nil, err
+	}
+	paramIDs, tlIDs := []int64{}, []int64{}
+	for _, p := range params {
+		if !libraryContains(paramIDs, p.number("id")) {
+			paramIDs = append(paramIDs, p.number("id"))
+		}
+		for _, key := range []string{"original_tl_id", "destination_tl_id"} {
+			if id := p.number(key); id != 0 && !libraryContains(tlIDs, id) {
+				tlIDs = append(tlIDs, id)
+			}
+		}
+	}
+	if len(tlIDs) > 0 {
+		if _, err = db.Exec(ctx, `DELETE FROM take_off_landing_param WHERE id=ANY($1::bigint[])`, tlIDs); err != nil {
+			return nil, nil, err
+		}
+	}
+	sort.Slice(paramIDs, func(i, j int) bool { return paramIDs[i] < paramIDs[j] })
+	return media, paramIDs, nil
+}
+
+// Called after commit. Frozen training images retain ownership of storage keys.
+// As in the source, an I/O error here cannot undo the committed content version.
+func (s *Service) scenarioDeleteUnreferencedMedia(ctx context.Context, refs []record) error {
+	paths := map[string]string{}
+	keys := []string{}
+	for _, ref := range refs {
+		key := ref.text("storage_key")
+		if key == "" {
+			continue
+		}
+		if _, exists := paths[key]; !exists {
+			keys = append(keys, key)
+		}
+		paths[key] = ref.text("storage_path")
+	}
+	if len(keys) == 0 {
+		return nil
+	}
+	rows, err := queryRecords(ctx, s.Auth.DB, `SELECT jsonb_build_object('storage_key',storage_key) FROM training_session_exercise_image WHERE storage_key=ANY($1::text[]) GROUP BY storage_key`, keys)
+	if err != nil {
+		return err
+	}
+	for _, row := range rows {
+		delete(paths, row.text("storage_key"))
+	}
+	for _, key := range keys {
+		if path, exists := paths[key]; exists {
+			if err = s.Storage.Delete(ctx, filestorage.Media, path); err != nil {
+				return err
+			}
+		}
+	}
+	return nil
+}
