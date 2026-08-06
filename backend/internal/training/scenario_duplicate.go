@@ -218,3 +218,135 @@ func (s *Service) duplicateEditorScenario(w http.ResponseWriter, r *http.Request
 	}
 	return s.writeEditorScenario(ctx, w, target.number("id"), 201)
 }
+
+func loadDuplicateScenarioCompetences(ctx context.Context, db runtimeDB, source *sourceScenario) error {
+	ids, byID := []int64{}, map[int64]*sourceExercise{}
+	for _, module := range source.Modules {
+		for _, exercise := range module.Exercises {
+			id := exercise.Row.number("id")
+			ids = append(ids, id)
+			byID[id] = exercise
+			exercise.Competences = nil
+		}
+	}
+	// Whole-scenario selectinload reads this relationship in batches. A query
+	// for a single exercise can use a different join order, which changes new
+	// association IDs even though the editor's sorted response stays identical.
+	for start := 0; start < len(ids); start += 500 {
+		rows, err := queryRecords(ctx, db, `SELECT to_jsonb(c)||jsonb_build_object('owner_id',e.id)
+FROM exercise e JOIN exercise_competence l ON l.exercise_id=e.id JOIN competence c ON c.id=l.competence_id
+WHERE e.id=ANY($1::bigint[])`, ids[start:min(start+500, len(ids))])
+		if err != nil {
+			return err
+		}
+		for _, row := range rows {
+			exercise := byID[row.number("owner_id")]
+			exercise.Competences = append(exercise.Competences, row)
+		}
+	}
+	return nil
+}
+
+// Each media stage has its own commit. A failed PDF stage retains copied images
+// and scenario content, while failed-stage files and rows are removed together.
+func (s *Service) copyScenarioDuplicateMedia(ctx context.Context, source sourceScenario, targetID int64, mapping map[int64]int64, pdf bool) (err error) {
+	if pdf && len(source.Pdfs) == 0 {
+		return nil
+	}
+	tx, err := s.Auth.DB.Begin(ctx)
+	if err != nil {
+		return err
+	}
+	defer tx.Rollback(ctx)
+	copied, committed := []string{}, false
+	defer func() {
+		if committed {
+			return
+		}
+		_ = tx.Rollback(ctx)
+		cleanup, cancel := context.WithTimeout(context.WithoutCancel(ctx), 30*time.Second)
+		defer cancel()
+		for _, path := range copied {
+			if e := s.Storage.Delete(cleanup, filestorage.Media, path); e != nil {
+				err = e
+				break
+			}
+		}
+	}()
+	table, ownerField, maximum, spelling := "exercise_image", "exercise_id", s.Auth.Config.MediaExerciseImageMaxFileBytes, s.Auth.Config.MediaExerciseImageMaxFileBytesText
+	type item struct {
+		row       record
+		owner     int64
+		namespace string
+	}
+	items := []item{}
+	count := int64(0)
+	if pdf {
+		if err = tx.QueryRow(ctx, `SELECT count(*) FROM scenario_pdf WHERE scenario_id=$1`, targetID).Scan(&count); err != nil {
+			return err
+		}
+		if count+int64(len(source.Pdfs)) > s.Auth.Config.MediaScenarioPDFMaxFiles {
+			label := s.Auth.Config.MediaScenarioPDFMaxFilesText
+			if label == "" {
+				label = fmt.Sprint(s.Auth.Config.MediaScenarioPDFMaxFiles)
+			}
+			return scenarioSnapshotError("TOO_MANY_SCENARIO_PDFS", fmt.Sprintf("Too many scenario PDFs (max %s)", label), nil)
+		}
+		table, ownerField, maximum, spelling = "scenario_pdf", "scenario_id", s.Auth.Config.MediaScenarioPDFMaxFileBytes, s.Auth.Config.MediaScenarioPDFMaxFileBytesText
+		for _, row := range source.Pdfs {
+			items = append(items, item{row, targetID, fmt.Sprintf("scenario_pdfs/%d", targetID)})
+		}
+	} else {
+		for _, module := range source.Modules {
+			for _, exercise := range module.Exercises {
+				id := mapping[exercise.Row.number("id")]
+				if id == 0 {
+					continue
+				}
+				for _, row := range exercise.Images {
+					items = append(items, item{row, id, fmt.Sprintf("exercise_images/%d/%d", targetID, id)})
+				}
+			}
+		}
+	}
+	rows := []record{}
+	for _, item := range items {
+		clone := s.Storage.CloneImage
+		if pdf {
+			clone = s.Storage.ClonePDF
+		}
+		stored, e := clone(ctx, item.row.text("storage_path"), item.namespace, maximum)
+		if e != nil {
+			var media *filestorage.MediaError
+			if errors.As(e, &media) {
+				if media.Status == 404 {
+					continue
+				}
+				if media.Status == 413 && spelling != "" {
+					return platform.Error(413, fmt.Sprintf("File too large (max %s bytes)", spelling))
+				}
+				return platform.Error(media.Status, media.Message)
+			}
+			return e
+		}
+		copied = append(copied, stored.StoragePath)
+		row := item.row.project("original_filename display_name order_index")
+		row[ownerField], row["storage_key"], row["storage_path"] = item.owner, stored.StorageKey, stored.StoragePath
+		row["content_type"], row["size_bytes"], row["sha256"] = stored.ContentType, stored.SizeBytes, stored.SHA256
+		if pdf {
+			row["order_index"] = count
+			count++
+		}
+		rows = append(rows, row)
+	}
+	for _, row := range rows {
+		if _, err = insertTrainingRow(ctx, tx, table, row); err != nil {
+			return err
+		}
+	}
+	if err = tx.Commit(ctx); err != nil {
+		return err
+	}
+	committed = true
+	return nil
+}
