@@ -24,3 +24,28 @@ async function preparation(client: Client, scenario: Scenario) {
   return { exercises, competencies };
 }
 
+function useCreationIntent() {
+  const previous = useRef({ selection: '', id: '' });
+  return (day: number, a: number, b: number) => {
+    const selection = [day, a, b].join('/');
+    if (previous.current.selection !== selection) previous.current = { selection, id: creationId() };
+    return previous.current.id;
+  };
+}
+
+export function Setup({ client, scenario, back, start }: {
+  client: Client; scenario: Scenario; back: () => void; start: (workspace: Workspace) => void;
+}) {
+  const [first, setFirst] = useState<Pilot>();
+  const [second, setSecond] = useState<Pilot>();
+  const intent = useCreationIntent();
+  const action = useAction();
+  const wide = useWindowDimensions().width >= 720;
+  const resource = useLoad(useCallback(() => preparation(client, scenario), [client, scenario]));
+  const ready = !!first && !!second && first.id !== second.id && !!resource.data?.exercises.length && !!resource.data.competencies.items.length;
+  const begin = () => action.run(async () => {
+    if (!ready || !first || !second || !resource.data) return;
+    const training = await createTraining(client, scenario, first, second, intent(scenario.scenarioDayModuleId, first.id, second.id));
+    start({ scenario, pilots: [first, second], training, catalog: resource.data.competencies });
+  });
+
