@@ -94,3 +94,127 @@ func duplicateScenarioSnapshot(source sourceScenario, targetID int64, clearColum
 	}
 	return record(scenarioModelDefaults(value, model)), originalIDs, nil
 }
+
+func (s *Service) duplicateEditorScenario(w http.ResponseWriter, r *http.Request) error {
+	user, err := s.Auth.Authenticate(r, "training:write")
+	if err != nil {
+		return err
+	}
+	model := platform.Schema{Fields: []platform.Field{
+		{Name: "title", Kind: "string", Nullable: true, Max: 255},
+		{Name: "content_set_id", Alias: "contentSetId", Kind: "integer", Min: 1, Nullable: true, AllowBigInteger: true},
+		{Name: "set_label_id", Alias: "setLabelId", Kind: "integer", Min: 1, Nullable: true, AllowBigInteger: true},
+	}}
+	path, body, err := libraryInput(r, &model, "scenario_id")
+	if err != nil {
+		return err
+	}
+	client := r.Header.Get("X-Client-Session-Id")
+	if client == "" {
+		return scenarioSnapshotError("CLIENT_SESSION_REQUIRED", "X-Client-Session-Id header is required for scenario duplication", nil)
+	}
+	airline, err := commanderAirline(user)
+	if err != nil {
+		return err
+	}
+	aircraft, err := libraryAllowedAircraft(user)
+	if err != nil {
+		return err
+	}
+	ctx := r.Context()
+	sourceRow, err := scenarioGet(ctx, s.Auth.DB, path["scenario_id"], airline, aircraft, false, false)
+	if err != nil {
+		return err
+	}
+	source, err := loadSourceScenarioMode(ctx, s.Auth.DB, sourceRow.number("id"), true)
+	if err != nil {
+		return err
+	}
+	if err = loadDuplicateScenarioCompetences(ctx, s.Auth.DB, &source); err != nil {
+		return err
+	}
+	var targetSet, targetLabel record
+	if body["content_set_id"] != nil || body["set_label_id"] != nil {
+		if body["content_set_id"] == nil || body["set_label_id"] == nil {
+			return scenarioSnapshotError("INVALID_DUPLICATE_TARGET", "content_set_id and set_label_id must be provided together", nil)
+		}
+		targetSet, err = libraryFind(ctx, s.Auth.DB, "scenario_content_set", body["content_set_id"])
+		if err != nil {
+			return err
+		}
+		if targetSet == nil || targetSet.number("airline_id") != airline || !libraryContains(aircraft, targetSet.number("aircraft_id")) {
+			return platform.Error(404, "Content set not found")
+		}
+		targetLabel, err = libraryFind(ctx, s.Auth.DB, "scenario_content_set_label", body["set_label_id"])
+		if err != nil {
+			return err
+		}
+		if targetLabel == nil || targetLabel.number("content_set_id") != targetSet.number("id") {
+			return platform.Error(404, "Content set label not found")
+		}
+		if sourceRow.number("aircraft_id") != targetSet.number("aircraft_id") {
+			return scenarioSnapshotError("INVALID_CONTENT_SET", "Scenario aircraft_id does not match the selected content set", nil)
+		}
+	}
+	links, err := queryRecords(ctx, s.Auth.DB, `SELECT jsonb_build_object('content_set_id',l.content_set_id) FROM scenario_content_set_label l JOIN scenario_content_set_label_scenario x ON x.label_id=l.id WHERE x.scenario_id=$1 ORDER BY x.id LIMIT 1`, sourceRow["id"])
+	if err != nil {
+		return err
+	}
+	clearColumns := targetSet != nil && len(links) > 0 && links[0].number("content_set_id") != targetSet.number("id")
+	data := sourceRow.project("airline_id aircraft_id code engines comments valid_until")
+	data["title"], data["status"], data["published_at"] = duplicateScenarioTitle(sourceRow.text("title"), body.String("title")), "DRAFT", nil
+	data["created_by"], data["updated_by"] = user.InternalID, user.InternalID
+	tx, err := s.Auth.DB.Begin(ctx)
+	if err != nil {
+		return err
+	}
+	defer tx.Rollback(ctx)
+	target, err := insertTrainingRow(ctx, tx, "scenario", data)
+	if err != nil {
+		return err
+	}
+	if err = tx.Commit(ctx); err != nil {
+		return err
+	}
+	contentTx, err := s.Auth.DB.Begin(ctx)
+	if err != nil {
+		return err
+	}
+	defer contentTx.Rollback(ctx)
+	if targetLabel != nil {
+		if _, err = insertTrainingRow(ctx, contentTx, "scenario_content_set_label_scenario", record{"label_id": targetLabel["id"], "scenario_id": target["id"]}); err != nil {
+			return err
+		}
+	}
+	snapshot, originalIDs, err := duplicateScenarioSnapshot(source, target.number("id"), clearColumns)
+	if err != nil {
+		return err
+	}
+	result, err := s.saveScenarioSnapshot(ctx, contentTx, user, scenarioSnapshotCommand{ScenarioID: target["id"], Snapshot: snapshot, ExpectedVersion: target["content_version"], ClientSessionID: client})
+	if err != nil {
+		return err
+	}
+	mapping := map[int64]int64{}
+	for original, temporary := range originalIDs {
+		if id, ok := result["exercise_id_map"].(map[string]int64)[temporary]; ok {
+			mapping[original] = id
+		}
+	}
+	if _, err = scenarioGet(ctx, s.Auth.DB, sourceRow["id"], airline, aircraft, false, false); err != nil {
+		return err
+	}
+	mediaSource, err := loadSourceScenarioMode(ctx, s.Auth.DB, sourceRow.number("id"), true)
+	if err != nil {
+		return err
+	}
+	if err = s.copyScenarioDuplicateMedia(ctx, mediaSource, target.number("id"), mapping, false); err != nil {
+		return err
+	}
+	if err = s.copyScenarioDuplicateMedia(ctx, mediaSource, target.number("id"), mapping, true); err != nil {
+		return err
+	}
+	if _, err = scenarioGet(ctx, s.Auth.DB, target["id"], airline, aircraft, false, false); err != nil {
+		return err
+	}
+	return s.writeEditorScenario(ctx, w, target.number("id"), 201)
+}
