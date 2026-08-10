@@ -138,3 +138,184 @@ func (s *Service) readAssessmentScenario(w http.ResponseWriter, r *http.Request,
 	platform.WriteJSON(w, 200, commanderWire(response))
 	return nil
 }
+
+func assessmentScenarioModules(graph sourceScenario, day *int64) ([]sourceModule, map[int64][2]int64) {
+	meta := map[int64][2]int64{}
+	for _, link := range graph.Days {
+		meta[link.number("module_id")] = [2]int64{link.number("day_index"), link.number("order_index")}
+	}
+	modules := []sourceModule{}
+	for _, module := range graph.Modules {
+		id := module.Row.number("id")
+		if _, ok := meta[id]; !ok {
+			meta[id] = [2]int64{1, module.Row.number("order_index")}
+		}
+		if day == nil || meta[id][0] == *day {
+			modules = append(modules, module)
+		}
+	}
+	sort.SliceStable(modules, func(i, j int) bool {
+		a, b := modules[i].Row, modules[j].Row
+		am, bm := meta[a.number("id")], meta[b.number("id")]
+		for k := range 2 {
+			if am[k] != bm[k] {
+				return am[k] < bm[k]
+			}
+		}
+		if a.number("order_index") != b.number("order_index") {
+			return a.number("order_index") < b.number("order_index")
+		}
+		return a.number("id") < b.number("id")
+	})
+	return modules, meta
+}
+
+func assessmentElementContent(elements []record, colors map[int64]string) ([]record, error) {
+	ids := make([]int64, len(elements))
+	offset := int64(0)
+	if len(elements) > 0 && elements[0].number("order_index") == 0 {
+		offset = 1
+	}
+	seen, valid := map[int64]bool{}, true
+	for i, e := range elements {
+		id := e.number("order_index") + offset
+		ids[i] = id
+		if id <= 0 || seen[id] {
+			valid = false
+		}
+		seen[id] = true
+	}
+	if !valid {
+		for i := range ids {
+			ids[i] = int64(i + 1)
+		}
+	}
+	out := []record{}
+	for i, link := range elements {
+		element := link.object("element")
+		if element == nil {
+			continue
+		}
+		severity := ""
+		if element["severity"] != nil {
+			severity = map[int64]string{8: "HIGH", 5: "MEDIUM", 2: "LOW"}[element.number("severity")]
+			if severity == "" {
+				severity = fmt.Sprint(element["severity"])
+			}
+		}
+		item := record{"id": ids[i], "element_id": element["id"], "type": severity, "elements": element["name"], "details": link.text("details"), "color_hex": nil}
+		if color, ok := colors[element.number("id")]; ok {
+			item["color_hex"] = color
+		}
+		profile := strings.ToUpper(pythonTrim(link.text("profile_type")))
+		if !libraryContainsString([]string{"FLAT", "UP", "DOWN", "LINKED"}, profile) {
+			profile = "FLAT"
+		}
+		for _, field := range []string{"starting_height", "ending_height"} {
+			if link[field] != nil {
+				if link.number(field) < 0 {
+					return nil, fmt.Errorf("invalid stored element height")
+				}
+				item[field] = link[field]
+			}
+		}
+		if profile != "FLAT" || item["starting_height"] != nil || item["ending_height"] != nil {
+			item["profile_type"] = profile
+		}
+		out = append(out, item)
+	}
+	return out, nil
+}
+
+func (s *Service) assessmentScenarioResponse(ctx context.Context, graph sourceScenario, day *int64) (record, error) {
+	modules, meta := assessmentScenarioModules(graph, day)
+	ids := []int64{}
+	for _, module := range modules {
+		for _, e := range module.Exercises {
+			for _, element := range e.Elements {
+				ids = append(ids, element.number("element_id"))
+			}
+		}
+	}
+	colors, err := loadElementColors(ctx, s.Auth.DB, ids)
+	if err != nil {
+		return nil, err
+	}
+	setup, counts := int64(1), map[int64]int64{}
+	exercises := []record{}
+	for _, module := range modules {
+		moduleDay := meta[module.Row.number("id")][0]
+		counts[moduleDay]++
+		label := fmt.Sprintf("Module %d", counts[moduleDay])
+		sort.SliceStable(module.Exercises, func(i, j int) bool {
+			a, b := module.Exercises[i].Row, module.Exercises[j].Row
+			if a.number("order_index") != b.number("order_index") {
+				return a.number("order_index") < b.number("order_index")
+			}
+			return a.number("id") < b.number("id")
+		})
+		for _, source := range module.Exercises {
+			e, param := source.Row, source.Param
+			kind := e.text("kind")
+			if kind == "" {
+				kind = "standard"
+			}
+			service := kind == "preparation" || kind == "coffee_break"
+			name, display, step, setupLabel := label, "", "", ""
+			if service {
+				display = map[string]string{"preparation": "Preparation", "coffee_break": "Coffee break"}[kind]
+				name = display
+				step = display
+			} else {
+				setupLabel = fmt.Sprint(setup)
+				display = "Exercise " + setupLabel
+				step = setupLabel
+				setup++
+			}
+			guidance := param["guidance_doc"]
+			if guidance != nil {
+				if _, ok := guidance.(map[string]any); !ok {
+					return nil, fmt.Errorf("invalid stored guidance document")
+				}
+			}
+			content, err := assessmentElementContent(source.Elements, colors)
+			if err != nil {
+				return nil, err
+			}
+			images := []record{}
+			for _, image := range source.Images {
+				images = append(images, record(snapshotMedia(image, s.Auth.Config.APIPrefix+"/training/exercise-images/", "id")))
+			}
+			pf := ""
+			if e.number("crew_member_number") != 0 {
+				pf = fmt.Sprintf("CM%d", e.number("crew_member_number"))
+			}
+			aircraft := graph.Row["aircraft_code"]
+			if aircraft == nil {
+				aircraft = fmt.Sprint(graph.Row["aircraft_id"])
+			}
+			performance, err := performanceColumns(param)
+			if err != nil {
+				return nil, err
+			}
+			exercises = append(exercises, record{"id": e["id"], "resolved_for_assessment_id": nil, "setup": setupLabel, "kind": kind, "source_kind": kind, "name": name, "display_label": display, "step_label": step, "is_service": service, "duration": e.number("duration_minutes"), "pf": pf, "aircraft": record{"ac_type": aircraft, "engines": graph.Row.text("engines")}, "performance": record{"departure": snapshotPhase(performance, "departure"), "arrival": snapshotPhase(performance, "arrival")}, "guidance_doc": guidance, "guidance_plain_text": param.text("guidance_plain_text"), "guidance": param.text("guidance_plain_text"), "content": content, "images": images})
+		}
+	}
+	pdfs := []record{}
+	var first any
+	for _, pdf := range graph.Pdfs {
+		pdfs = append(pdfs, record(snapshotMedia(pdf, s.Auth.Config.APIPrefix+"/training/scenario-pdfs/", "id")))
+	}
+	if len(pdfs) > 0 {
+		first = pdfs[0]
+	}
+	label := graph.Row.text("title")
+	if day != nil {
+		days := map[int64]bool{}
+		for _, link := range graph.Days {
+			days[link.number("day_index")] = true
+		}
+		label = scenarioDayLabel(label, *day, int64(max(1, len(days))))
+	}
+	return record{"scenario": label, "exercises": exercises, "pdfs": pdfs, "pdf": first}, nil
+}
