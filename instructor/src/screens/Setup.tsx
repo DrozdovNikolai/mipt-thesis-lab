@@ -49,3 +49,17 @@ export function Setup({ client, scenario, back, start }: {
     start({ scenario, pilots: [first, second], training, catalog: resource.data.competencies });
   });
 
+return <Page><Title>{scenario.title}</Title>
+    <View pointerEvents={action.busy ? 'none' : 'auto'} style={{ gap: 12, flexDirection: wide ? 'row' : 'column' }}>
+      <View style={{ flex: 1 }}><CrewPicker client={client} seat="Первый пилот · CM1" pilot={first} excluded={second?.id} select={setFirst}/></View>
+      <View style={{ flex: 1 }}><CrewPicker client={client} seat="Второй пилот · CM2" pilot={second} excluded={first?.id} select={setSecond}/></View>
+    </View>
+
+{resource.data ? <><Plan exercises={resource.data.exercises}/>
+      {!resource.data.competencies.items.length && <Failure message="Для вашей организации не настроены компетенции"/>}</>
+      : resource.error ? <><Failure message={resource.error}/><Action secondary label="Повторить загрузку" onPress={resource.retry}/></> : <Loading label="Загрузка плана…"/>}
+    <Failure message={action.error}/><Action label={action.busy ? 'Создаём тренировку…' : 'Начать тренировку'} disabled={!ready || action.busy} onPress={begin}/>
+    <Action secondary label="К сценариям" disabled={action.busy} onPress={back}/>
+  </Page>;
+}
+
