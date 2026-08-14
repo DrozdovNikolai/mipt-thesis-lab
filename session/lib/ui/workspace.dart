@@ -37,4 +37,17 @@ class _WorkspaceState extends State<Workspace>{
  }catch(e){if(mounted)notify(context,errorText(e));}
  finally{if(mounted)setState(()=>busy=false);}
  }
+ Future<void> save()async{
+ final current=doc;
+ if(current==null||!editable||busy||saving||!current.dirty)return;
+ setState(()=>saving=true);
+ try{
+ final version=await widget.api.save(current.data['id'],current.version,current.snapshot());
+ current.version=version;
+ current.markClean();
+ try{await widget.api.release(current.data['id']);}catch(_){/* An unreleased lease expires on the server. */}
+ if(mounted)notify(context,'Порядок упражнений сохранён.');
+ }catch(e){if(mounted)notify(context,errorText(e));}
+ finally{if(mounted)setState(()=>saving=false);}
+ }
 }
