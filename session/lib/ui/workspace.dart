@@ -50,4 +50,17 @@ class _WorkspaceState extends State<Workspace>{
  }catch(e){if(mounted)notify(context,errorText(e));}
  finally{if(mounted)setState(()=>saving=false);}
  }
+ void inspect(Json exercise,bool wide){
+ setState(()=>selected=exercise);
+ if(!wide)showModalBottomSheet<void>(context:context,showDragHandle:true,builder:(_)=>Details(exercise));
+ }
+ Widget editor(bool wide){
+ if(busy)return const Center(child:CircularProgressIndicator());
+ final current=doc;
+ if(current==null)return const Center(child:Text('Выберите сценарий в каталоге'));
+ return Column(children:[SizedBox(width:double.infinity,child:EditorHeader(current,saving,editable&&current.dirty&&!saving?save:null,()=>open(current.data['id']))),
+ Expanded(child:Row(children:[Expanded(child:Modules(current,selected,(e)=>inspect(e,wide),editable&&!saving?(m,a,b)=>setState(()=>current.move(m,a,b)):null)),
+ if(wide)...[const VerticalDivider(width:1),SizedBox(width:245,child:ColoredBox(color:panel,child:selected==null?const Center(child:Text('Выберите упражнение')):Details(selected!)))]
+ ]))]);
+ }
 }
