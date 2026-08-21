@@ -173,3 +173,190 @@ func loadElementColors(ctx context.Context, db runtimeDB, ids []int64) (map[int6
 	}
 	return colors, nil
 }
+func buildTrainingSnapshot(ctx context.Context, db runtimeDB, trainingID int64, s sourceScenario, day int64, resolutions map[int64]*sourceExercise, assessments map[int64]int64) error {
+	modules := s.dayModules(day)
+	elementIDs := []int64{}
+	for _, m := range modules {
+		for _, e := range m.Exercises {
+			for _, v := range e.Elements {
+				elementIDs = append(elementIDs, v.number("element_id"))
+			}
+			if resolved := resolutions[e.Row.number("id")]; resolved != nil {
+				for _, v := range resolved.Elements {
+					elementIDs = append(elementIDs, v.number("element_id"))
+				}
+			}
+		}
+	}
+	colors, err := loadElementColors(ctx, db, elementIDs)
+	if err != nil {
+		return err
+	}
+	meta := map[int64][3]int64{}
+	counts := map[int64]int64{}
+	days := append([]record{}, s.Days...)
+	sort.SliceStable(days, func(i, j int) bool {
+		for _, key := range []string{"day_index", "order_index", "id"} {
+			a, b := days[i].number(key), days[j].number(key)
+			if a != b {
+				return a < b
+			}
+		}
+		return false
+	})
+	for _, d := range days {
+		index := d.number("day_index")
+		counts[index]++
+		meta[d.number("module_id")] = [3]int64{index, counts[index], d.number("id")}
+	}
+	for index, pdf := range s.Pdfs {
+		row := pdf.project(mediaFields)
+		row["order_index"] = index
+		row["training_session_id"] = trainingID
+		row["source_scenario_pdf_id"] = pdf.number("id")
+		if _, err = insertSnapshotRecord(ctx, db, "training_session_scenario_pdf", row); err != nil {
+			return err
+		}
+	}
+	setup := int64(1)
+	for position, module := range modules {
+		m := module.Row
+		dayMeta, ok := meta[m.number("id")]
+		if !ok {
+			dayMeta = [3]int64{day, int64(position + 1), 0}
+		}
+		var sourceDay any
+		if dayMeta[2] != 0 {
+			sourceDay = dayMeta[2]
+		}
+		moduleID, err := insertSnapshotRecord(ctx, db, "training_session_module", record{"training_session_id": trainingID, "runtime_module_id": m.number("id"), "source_module_id": m.number("id"), "source_scenario_day_module_id": sourceDay, "client_uid": m["client_uid"], "order_index": position, "day_index": dayMeta[0], "duration_minutes": m["duration_minutes"], "content_subcolumn_id_snapshot": m["content_subcolumn_id"], "content_subcolumn_name_snapshot": m["content_subcolumn_name"]})
+		if err != nil {
+			return err
+		}
+		label := fmt.Sprintf("Module %d", dayMeta[1])
+		for _, source := range module.Exercises {
+			e := source.Row
+			effective := source
+			resolved := resolutions[e.number("id")]
+			kind := e.text("kind")
+			if kind == "" {
+				kind = "standard"
+			}
+			sourceKind := kind
+			var blockID, assessmentID any
+			duration, crew := e["duration_minutes"], e["crew_member_number"]
+			if resolved != nil {
+				effective = resolved
+				kind = "standard"
+				blockID = resolved.Row.number("id")
+				if effective.Param["duration_minutes"] != nil {
+					duration = effective.Param["duration_minutes"]
+				}
+				if e.number("crew_member_number") == 1 || e.number("crew_member_number") == 2 {
+					assessmentID = assessments[e.number("crew_member_number")]
+				}
+			}
+			service := kind == "preparation" || kind == "coffee_break"
+			display := map[string]string{"standard": "Exercise", "preparation": "Preparation", "coffee_break": "Coffee break", "individual": "Individual"}[kind]
+			setupLabel, step, name := "", display, label
+			if service {
+				name = display
+			} else {
+				setupLabel = strconv.FormatInt(setup, 10)
+				display = "Exercise " + setupLabel
+				step = setupLabel
+				setup++
+			}
+			row := record{"training_session_id": trainingID, "training_session_module_id": moduleID, "runtime_exercise_id": e.number("id"), "source_exercise_id": e.number("id"), "source_block_id": blockID, "client_uid": e["client_uid"], "source_kind_snapshot": sourceKind, "kind": kind, "order_index": e["order_index"], "duration_minutes": duration, "crew_member_number": crew, "resolved_for_assessment_id": assessmentID, "setup_label": emptyToNil(setupLabel), "name": name, "display_label": display, "step_label": step, "is_service": service, "aircraft_ac_type": s.Row.text("aircraft_code"), "aircraft_engines": s.Row.text("engines"), "guidance_doc": effective.Param["guidance_doc"], "guidance_plain_text": effective.Param["guidance_plain_text"]}
+			if row["aircraft_ac_type"] == "" {
+				row["aircraft_ac_type"] = strconv.FormatInt(s.Row.number("aircraft_id"), 10)
+			}
+			performance, err := performanceColumns(effective.Param)
+			if err != nil {
+				return err
+			}
+			for key, value := range performance {
+				row[key] = value
+			}
+			exerciseID, err := insertSnapshotRecord(ctx, db, "training_session_exercise", row)
+			if err != nil {
+				return err
+			}
+			for _, image := range source.Images {
+				item := image.project(mediaFields)
+				item["training_session_exercise_id"] = exerciseID
+				item["source_exercise_image_id"] = image.number("id")
+				if _, err = insertSnapshotRecord(ctx, db, "training_session_exercise_image", item); err != nil {
+					return err
+				}
+			}
+			offset := int64(0)
+			for _, element := range effective.Elements {
+				if element.number("order_index") == 0 {
+					offset = 1
+					break
+				}
+			}
+			contentIDs := []int64{}
+			seen := map[int64]bool{}
+			valid := true
+			for _, element := range effective.Elements {
+				id := element.number("order_index") + offset
+				if id <= 0 || seen[id] {
+					valid = false
+				}
+				seen[id] = true
+				contentIDs = append(contentIDs, id)
+			}
+			if !valid {
+				for i := range contentIDs {
+					contentIDs[i] = int64(i + 1)
+				}
+			}
+			for i, element := range effective.Elements {
+				item := element.project("order_index details starting_height ending_height profile_type")
+				item["training_session_exercise_id"] = exerciseID
+				item["content_id"] = contentIDs[i]
+				item["source_exercise_element_id"] = nil
+				if resolved == nil {
+					item["source_exercise_element_id"] = element.number("id")
+				}
+				item["source_element_id"] = nil
+				name := fmt.Sprintf("Element %d", contentIDs[i])
+				typeLabel := ""
+				var color any
+				if library := element.object("element"); library != nil {
+					item["source_element_id"] = library.number("id")
+					if strings.TrimSpace(library.text("name")) != "" {
+						name = library.text("name")
+					}
+					if library["severity"] != nil {
+						severity := library.number("severity")
+						typeLabel = map[int64]string{8: "HIGH", 5: "MEDIUM", 2: "LOW"}[severity]
+						if typeLabel == "" {
+							typeLabel = strconv.FormatInt(severity, 10)
+						}
+					}
+					if value, ok := colors[library.number("id")]; ok {
+						color = value
+					}
+				}
+				if item["profile_type"] == nil || item["profile_type"] == "" {
+					item["profile_type"] = "FLAT"
+				}
+				item["type_label_snapshot"] = emptyToNil(typeLabel)
+				item["color_hex_snapshot"] = color
+				item["element_name_snapshot"] = name
+				if _, err = insertSnapshotRecord(ctx, db, "training_session_exercise_element", item); err != nil {
+					return err
+				}
+			}
+			for _, c := range effective.Competences {
+				if _, err = insertSnapshotRecord(ctx, db, "training_session_exercise_competence", record{"training_session_exercise_id": exerciseID, "source_competence_id": c.number("id"), "code_snapshot": c["code"], "name_snapshot": c["name"], "order_index_snapshot": c["order_index"]}); err != nil {
+					return err
+				}
+			}
+		}
+	}
+	return nil
+}
