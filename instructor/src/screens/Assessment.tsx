@@ -24,3 +24,25 @@ function GradeRow({ item, catalog, card, change }: {
   </Panel>;
 }
 
+function Outcome({ value, choose }: { value: boolean | null; choose: (v: boolean) => void }) {
+  return <><Copy strong>Итог тренировки</Copy><Row>
+    <Choice label="Зачёт" selected={value === true} onPress={() => choose(true)}/>
+    <Choice label="Незачёт" selected={value === false} onPress={() => choose(false)}/>
+  </Row></>;
+}
+
+function Conclusion({ card, change }: { card: Assessment; change: (v: Assessment) => void }) {
+  return <Panel><Field label="Заключение инструктора" multiline value={card.summary}
+    onChangeText={summary => change({ ...card, summary })}/>
+    <Outcome value={card.result} choose={result => change({ ...card, result })}/></Panel>;
+}
+
+export function AssessmentForm({ catalog, card, change }: {
+  catalog: Catalog; card: Assessment; change: (v: Assessment) => void;
+}) {
+  return <View style={{ gap: 12 }}><Title small>Компетенции</Title>
+    {catalog.items.map(item => <GradeRow key={item.id} {...{ item, catalog, card, change }}/>)}
+    <Conclusion card={card} change={change}/>
+  </View>;
+}
+
