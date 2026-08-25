@@ -191,3 +191,164 @@ func evaluationCatalog(ctx context.Context, db runtimeDB, airline int64) (map[st
 	hash, err := canonical.SHA256(payload)
 	return payload, hash, err
 }
+func (s *Service) createTraining(w http.ResponseWriter, r *http.Request) error {
+	user, err := s.Auth.Authenticate(r, "training:write")
+	if err != nil {
+		return err
+	}
+	o, err := platform.ReadSchema(r, trainingCreateSchema)
+	if err != nil {
+		return err
+	}
+	if user.AirlineID == nil {
+		return platform.Error(400, "User is not assigned to an airline")
+	}
+	input := trainingInput(o)
+	hash := ""
+	if input.ClientCreationID != nil {
+		hash, err = canonical.SHA256(canonical.CreatePayload(input))
+		if err != nil {
+			return err
+		}
+	}
+	ctx := r.Context()
+	tx, err := s.Auth.DB.Begin(ctx)
+	if err != nil {
+		return err
+	}
+	defer tx.Rollback(ctx)
+	if input.ClientCreationID != nil {
+		response, err := s.idempotentTraining(ctx, tx, user.InternalID, *input.ClientCreationID, hash)
+		if err != nil {
+			return err
+		}
+		if response != nil {
+			platform.WriteJSON(w, 201, response)
+			return nil
+		}
+	}
+	quickGranted := false
+	id, err := s.createTrainingInTransaction(ctx, tx, user, o, input, hash, &quickGranted)
+	if err != nil {
+		var pgError *pgconn.PgError
+		if input.ClientCreationID != nil && errors.As(err, &pgError) && pgError.Code == "23505" && pgError.ConstraintName == "uq_training_session_instructor_client_creation" {
+			if rollbackErr := tx.Rollback(ctx); rollbackErr != nil {
+				return rollbackErr
+			}
+			response, retryErr := s.idempotentTraining(ctx, s.Auth.DB, user.InternalID, *input.ClientCreationID, hash)
+			if retryErr != nil {
+				return retryErr
+			}
+			if response != nil {
+				platform.WriteJSON(w, 201, response)
+				return nil
+			}
+		}
+		return err
+	}
+	if err = tx.Commit(ctx); err != nil {
+		return err
+	}
+	if quickGranted {
+		s.Auth.Config.Metrics.Inc("training_quick_capability_granted_total", strconv.FormatInt(*user.AirlineID, 10))
+	}
+	platform.LogModule("app.audit", r.Context()).Info("Training created", "action", "assessment.create_training", "training_id", id, "user_id", user.ID.String())
+	response, err := s.loadCreateTrainingResponse(ctx, s.Auth.DB, id, user.InternalID)
+	if err != nil {
+		return err
+	}
+	platform.WriteJSON(w, 201, response)
+	return nil
+}
+func (s *Service) createTrainingInTransaction(ctx context.Context, tx pgx.Tx, user *auth.User, o platform.Object, input canonical.TrainingCreate, creationHash string, quickGranted *bool) (int64, error) {
+	airline := *user.AirlineID
+	var gradingID int64
+	err := tx.QueryRow(ctx, `SELECT id FROM grading_scheme WHERE airline_id=$1 AND is_active=true ORDER BY version DESC,id DESC LIMIT 1`, airline).Scan(&gradingID)
+	if errors.Is(err, pgx.ErrNoRows) {
+		return 0, platform.Error(400, "Active grading scheme is not configured for airline")
+	}
+	if err != nil {
+		return 0, err
+	}
+	day, err := resolveTrainingDay(ctx, tx, o, airline)
+	if err != nil {
+		return 0, err
+	}
+	if err = lockScenarioSnapshotSource(ctx, tx, day["scenario_id"], false); err != nil {
+		return 0, err
+	}
+	// A content writer can remove the selected day while this request waits.
+	// Resolve it again after taking the snapshot lock before loading the graph.
+	day, err = resolveTrainingDay(ctx, tx, o, airline)
+	if err != nil {
+		return 0, err
+	}
+	scenario, err := loadSourceScenario(ctx, tx, day.number("scenario_id"))
+	if err != nil {
+		return 0, err
+	}
+	if scenario.Row.text("status") == "ARCHIVED" || scenario.Row["deleted_at"] != nil {
+		return 0, platform.Error(404, "Scenario not found")
+	}
+	days := map[int64]bool{}
+	for _, d := range scenario.Days {
+		days[d.number("day_index")] = true
+	}
+	daysCount := max(1, len(days))
+	label := scenario.Row.text("title")
+	if daysCount > 1 {
+		label += "-DAY " + strconv.FormatInt(day.number("day_index"), 10)
+	}
+	revision, version, err := ensureScenarioRevision(ctx, tx, scenario, user.InternalID)
+	if err != nil {
+		return 0, err
+	}
+	commentVersion := int64(0)
+	var catalog, catalogHash any
+	if s.commentEntitled(airline, input.Capabilities, ctx) {
+		*quickGranted = true
+		commentVersion = 1
+		catalog, catalogHash, err = evaluationCatalog(ctx, tx, airline)
+		if err != nil {
+			return 0, err
+		}
+	}
+	var creationKey, storedHash any
+	if input.ClientCreationID != nil {
+		creationKey = *input.ClientCreationID
+		storedHash = creationHash
+	}
+	id, err := insertSnapshotRecord(ctx, tx, "training_session", record{"instructor_id": user.InternalID, "scenario_id_snapshot": scenario.Row.number("id"), "scenario_title_snapshot": scenario.Row["title"], "scenario_label_snapshot": label, "scenario_revision_id": revision, "scenario_revision_number": version, "scenario_day_module_id": day.number("id"), "day_index_snapshot": day.number("day_index"), "days_count_snapshot": daysCount, "aircraft_id_snapshot": scenario.Row.number("aircraft_id"), "aircraft_code_snapshot": scenario.Row["aircraft_code"], "grading_scheme_id": gradingID, "status": "IN_PROGRESS", "client_creation_id": creationKey, "client_creation_payload_hash": storedHash, "comment_contract_version": commentVersion, "evaluation_catalog_snapshot": catalog, "evaluation_catalog_sha256": catalogHash})
+	if err != nil {
+		return 0, err
+	}
+	assessments := map[int64]int64{}
+	for index, userID := range []int64{input.CM1ID, input.CM2ID} {
+		aid, err := insertSnapshotRecord(ctx, tx, "crew_member_assessment", record{"training_session_id": id, "user_id": userID, "training_role": "cm" + strconv.Itoa(index+1)})
+		if err != nil {
+			return 0, err
+		}
+		assessments[int64(index+1)] = aid
+	}
+	resolutions, err := resolveIndividualExercises(ctx, tx, scenario, day.number("day_index"), input.CM1ID, input.CM2ID)
+	if err != nil {
+		return 0, err
+	}
+	if err = buildTrainingSnapshot(ctx, tx, id, scenario, day.number("day_index"), resolutions, assessments); err != nil {
+		return 0, err
+	}
+	writer := uuid.Nil
+	if input.WriterInstanceID != nil {
+		writer = *input.WriterInstanceID
+	} else {
+		writer, err = uuid.NewV7()
+		if err != nil {
+			return 0, err
+		}
+	}
+	entitled := input.Capabilities != nil && s.runtimeEntitled(airline, *input.Capabilities, ctx)
+	if _, err = createInitialRuntime(ctx, tx, id, assessments[1], assessments[2], user.InternalID, writer, entitled); err != nil {
+		return 0, err
+	}
+	return id, nil
+}
