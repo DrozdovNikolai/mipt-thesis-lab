@@ -25,7 +25,17 @@ class _WorkspaceState extends State<Workspace>{
  bool busy=false;
  bool saving=false;
  bool get editable=>widget.profile.canEdit && doc?.data['status']?.toString().toUpperCase()=='DRAFT';
- @override Widget build(BuildContext context)=>const Scaffold();
+ @override Widget build(BuildContext context)=>LayoutBuilder(builder:(context,box){
+ final compact=box.maxWidth<820,wide=box.maxWidth>=1200;
+ Widget library(bool drawer)=>Library(widget.api,doc?.data['id'],(item){
+ if(drawer)Navigator.pop(context);
+ open(item.id);
+ });
+ return Scaffold(appBar:AppBar(title:const Brand(),backgroundColor:panel,actions:[
+ if(!compact)Text(widget.profile.name),IconButton(tooltip:'Выйти',onPressed:busy||saving?null:()async{if(await canLeave()&&mounted)widget.logout();},icon:const Icon(Icons.logout))]),
+ drawer:compact?Drawer(child:SafeArea(child:library(true))):null,
+ body:Row(children:[if(!compact)...[SizedBox(width:285,child:library(false)),const VerticalDivider(width:1)],Expanded(child:editor(wide))]));
+ });
  Future<bool> canLeave() async=>doc?.dirty!=true || await confirmDiscard(context);
  Future<void> open(int id)async{
  if(busy||saving)return;
