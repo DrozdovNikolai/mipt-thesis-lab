@@ -19,3 +19,19 @@ function complete(workspace: Workspace, card: Scorecard) {
     entry.result !== null && workspace.catalog.items.every(item => !!entry.grades[item.code]));
 }
 
+function ParticipantSummary({ name, card }: { name: string; card: Assessment }) {
+  return <Panel><Title small>{name}</Title><Copy>{Object.entries(card.grades).map(([code, value]) => code + ' ' + value).join('   ·   ')}</Copy>
+    {!!card.summary && <Copy>{card.summary}</Copy>}<Copy strong>{card.result ? 'Зачёт' : 'Незачёт'}</Copy></Panel>;
+}
+
+function Review({ workspace, card, send, back, busy, error }: {
+  workspace: Workspace; card: Scorecard; send: () => void; back: () => void; busy: boolean; error: string;
+}) {
+  return <Page><Title>Проверка оценок</Title><Copy muted>{workspace.scenario.title} · № {workspace.training.trainingId}</Copy>
+    <ParticipantSummary name={pilotName(workspace.pilots[0])} card={card.cm1}/>
+    <ParticipantSummary name={pilotName(workspace.pilots[1])} card={card.cm2}/>
+    <Failure message={error}/><Action label={busy ? 'Отправляем…' : 'Отправить оценки'} onPress={send} disabled={busy}/>
+    <Action secondary label="Вернуться к оцениванию" onPress={back} disabled={busy}/>
+  </Page>;
+}
+
