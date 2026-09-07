@@ -35,3 +35,16 @@ function Review({ workspace, card, send, back, busy, error }: {
   </Page>;
 }
 
+export function Evaluation({ client, workspace, finish }: {
+  client: Client; workspace: Workspace; finish: (receipt: Receipt) => void;
+}) {
+  const [seat, select] = useState<Seat>('cm1');
+  const [card, setCard] = useState(newScorecard);
+  const [review, setReview] = useState(false);
+  const action = useAction();
+  const wide = useWindowDimensions().width >= 850;
+  const change = (updated: Assessment) => setCard(old => ({ ...old, [seat]: updated }));
+
+if (review) return <Review {...{ workspace, card, busy: action.busy, error: action.error }}
+    send={() => action.run(async () => finish(await submit(client, workspace.training, card)))} back={() => setReview(false)}/>;
+
