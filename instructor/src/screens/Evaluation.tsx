@@ -48,3 +48,15 @@ export function Evaluation({ client, workspace, finish }: {
 if (review) return <Review {...{ workspace, card, busy: action.busy, error: action.error }}
     send={() => action.run(async () => finish(await submit(client, workspace.training, card)))} back={() => setReview(false)}/>;
 
+return <Page><Title>{workspace.scenario.title}</Title><Copy muted>Тренировка № {workspace.training.trainingId}</Copy>
+    <Participants workspace={workspace} seat={seat} select={select}/>
+    <View style={{ flexDirection: wide ? 'row' : 'column', gap: 16 }}>
+      <View style={{ flex: 1 }}><Exercises items={workspace.training.exercises}/></View>
+      <View style={{ flex: 2 }}><AssessmentForm key={seat} catalog={workspace.catalog} card={card[seat]} change={change}/></View>
+    </View>
+
+{!complete(workspace, card) && <Copy muted>Для отправки оцените компетенции и выберите итог для обоих пилотов.</Copy>}
+    <Action label="Проверить оценки" disabled={!complete(workspace, card)} onPress={() => setReview(true)}/>
+  </Page>;
+}
+
