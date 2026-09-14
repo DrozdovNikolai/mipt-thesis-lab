@@ -216,3 +216,53 @@ func (s *Service) saveDraft(w http.ResponseWriter, r *http.Request) (resultErr e
 	platform.WriteJSON(w, 200, response)
 	return nil
 }
+func (s *Service) readDraft(w http.ResponseWriter, r *http.Request) error {
+	user, err := s.Auth.Authenticate(r, "training:read")
+	if err != nil {
+		return err
+	}
+	id, err := platform.PathInt(r, "training_id")
+	if err != nil {
+		return err
+	}
+	if _, err = getRuntimeTraining(r.Context(), s.Auth.DB, id, user); err != nil {
+		return err
+	}
+	draft, err := loadDraft(r.Context(), s.Auth.DB, id, user.InternalID, false)
+	if errors.Is(err, pgx.ErrNoRows) {
+		return platform.Error(404, "Draft not found")
+	}
+	if err != nil {
+		return err
+	}
+	response, err := s.draftRecoveryResponse(r.Context(), s.Auth.DB, draft)
+	if err != nil {
+		return err
+	}
+	platform.WriteJSON(w, 200, response)
+	return nil
+}
+func (s *Service) activeDrafts(w http.ResponseWriter, r *http.Request) error {
+	user, err := s.Auth.Authenticate(r, "training:read")
+	if err != nil {
+		return err
+	}
+	q, err := platform.QueryObject(r.URL.Query(), platform.Field{Name: "limit", Kind: "integer", Min: 1, Max: 100, Default: int64(10)})
+	if err != nil {
+		return err
+	}
+	drafts, err := queryRecords(r.Context(), s.Auth.DB, `SELECT to_jsonb(d) FROM training_session_draft d JOIN training_session t ON t.id=d.training_session_id WHERE d.user_id=$1 AND NOT d.submitted AND t.status<>'DELETED' AND t.submission_status<>'COMPLETED' ORDER BY d.updated_at DESC,d.id DESC LIMIT $2`, user.InternalID, q.Int("limit"))
+	if err != nil {
+		return err
+	}
+	items := []any{}
+	for _, d := range drafts {
+		response, err := s.draftRecoveryResponse(r.Context(), s.Auth.DB, d)
+		if err != nil {
+			return err
+		}
+		items = append(items, response)
+	}
+	platform.WriteJSON(w, 200, map[string]any{"items": items})
+	return nil
+}
