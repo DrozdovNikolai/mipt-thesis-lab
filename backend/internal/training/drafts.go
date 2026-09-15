@@ -266,3 +266,136 @@ func (s *Service) activeDrafts(w http.ResponseWriter, r *http.Request) error {
 	platform.WriteJSON(w, 200, map[string]any{"items": items})
 	return nil
 }
+
+func (s *Service) patchDraft(w http.ResponseWriter, r *http.Request) error {
+	user, err := s.Auth.Authenticate(r, "training:write")
+	if err != nil {
+		return err
+	}
+	id, err := platform.PathInt(r, "training_id")
+	if err != nil {
+		return err
+	}
+	o, err := platform.ReadSchema(r, draftPatchSchema)
+	if err != nil {
+		return err
+	}
+	ctx := r.Context()
+	tx, err := s.Auth.DB.Begin(ctx)
+	if err != nil {
+		return err
+	}
+	defer tx.Rollback(ctx)
+	training, err := getRuntimeTraining(ctx, tx, id, user)
+	if err != nil {
+		return err
+	}
+	if training.CommentContractVersion == 1 {
+		return draftError("DRAFT_CONTRACT_REQUIRED", nil)
+	}
+	draft, err := loadDraft(ctx, tx, id, user.InternalID, false)
+	if errors.Is(err, pgx.ErrNoRows) {
+		return platform.Error(404, "Draft not found")
+	}
+	if err != nil {
+		return err
+	}
+	if draft.number("contract_version") == 3 {
+		return draftError("DRAFT_CONTRACT_REQUIRED", nil)
+	}
+	reportID := pythonTrim(r.PathValue("report_id"))
+	if reportID == "" {
+		return platform.Error(400, "report_id must not be empty")
+	}
+	key := strings.ToLower(o.String("crew")) + "MistakeReport"
+	payload := jsonMap(draft["payload"])
+	if payload == nil {
+		payload = map[string]any{}
+	}
+	reports, ok := jsonDefault(payload, key, []any{}).([]any)
+	if !ok {
+		return platform.Error(400, "Draft payload field '"+key+"' must be a list")
+	}
+	var patched map[string]any
+	for _, raw := range reports {
+		report := jsonMap(raw)
+		if report == nil {
+			continue
+		}
+		if pythonTrim(pythonString(jsonDefault(report, "id", ""))) != reportID {
+			continue
+		}
+		for field, dest := range map[string]string{"comment": "comment", "hashtag": "hashtag", "exercise_id": "exerciseId", "is_positive": "isPositive"} {
+			if o[field] != nil {
+				report[dest] = o[field]
+			}
+		}
+		if o["is_positive"] != nil {
+			report["color"] = "#FF453A"
+			if o.Bool("is_positive") {
+				report["color"] = "#6EA1F2"
+			}
+		}
+		if pythonTrim(pythonString(jsonDefault(report, "crew", ""))) == "" {
+			report["crew"] = o.String("crew")
+		}
+		patched = report
+	}
+	if patched == nil {
+		return platform.Error(404, "Mistake report not found in draft")
+	}
+	payload[key] = reports
+	draft, err = queryRecord(ctx, tx, `UPDATE training_session_draft d SET payload=$2,submitted=false,submitted_at=NULL,updated_at=CASE WHEN payload IS DISTINCT FROM $2::jsonb OR submitted OR submitted_at IS NOT NULL THEN now() ELSE updated_at END WHERE id=$1 RETURNING to_jsonb(d)`, draft.number("id"), payload)
+	if err != nil {
+		return err
+	}
+	if err = tx.Commit(ctx); err != nil {
+		return err
+	}
+	response, err := draftResponse(draft)
+	if err != nil {
+		return err
+	}
+	platform.WriteJSON(w, 200, map[string]any{"trainingId": id, "report": patched, "updatedAt": response["updatedAt"]})
+	return nil
+}
+
+func (s *Service) draftRecoveryResponse(ctx context.Context, db runtimeDB, draft record) (map[string]any, error) {
+	response, err := draftResponse(draft)
+	if err != nil {
+		return nil, err
+	}
+	payload := jsonMap(draft["payload"])
+	if !jsonEqual(payload["syncStateVersion"], 1) && !jsonEqual(payload["syncStateVersion"], 2) {
+		return response, nil
+	}
+	t, err := queryRecord(ctx, db, `SELECT to_jsonb(t) FROM training_session t WHERE id=$1`, draft.number("training_session_id"))
+	if err != nil {
+		return nil, err
+	}
+	scheme, err := queryRecord(ctx, db, `SELECT to_jsonb(s) FROM grading_scheme s WHERE id=$1`, t.number("grading_scheme_id"))
+	if errors.Is(err, pgx.ErrNoRows) {
+		return nil, platform.Error(400, "Training grading scheme not found")
+	}
+	if err != nil {
+		return nil, err
+	}
+	values, err := queryRecords(ctx, db, `SELECT jsonb_build_object('id',id,'code',code,'label',label,'scoreNumeric',score_numeric::text,'gradeWeight',grade_weight::text,'orderIndex',order_index,'colorHex',color_hex,'isPass',is_pass) FROM grading_scale_value WHERE grading_scheme_id=$1 ORDER BY order_index,id`, scheme.number("id"))
+	if err != nil {
+		return nil, err
+	}
+	exercises, err := queryRecords(ctx, db, `SELECT jsonb_build_object('runtimeId',runtime_exercise_id,'label',COALESCE(NULLIF(display_label,''),name,'')) FROM training_session_exercise WHERE training_session_id=$1`, t.number("id"))
+	if err != nil {
+		return nil, err
+	}
+	labels := map[string]any{}
+	for _, e := range exercises {
+		labels[pythonString(e["runtimeId"])] = e["label"]
+	}
+	version := scheme.number("version")
+	if version == 0 {
+		version = 1
+	}
+	response["recoveryContext"] = map[string]any{"scenarioName": t.text("scenario_title_snapshot"), "evaluationCatalog": t["evaluation_catalog_snapshot"], "evaluationCatalogSha256": t["evaluation_catalog_sha256"], "gradingScale": map[string]any{"schemeId": scheme.number("id"), "schemeName": scheme["name"], "schemeVersion": version, "values": values}, "exerciseLabels": labels}
+	return response, nil
+}
