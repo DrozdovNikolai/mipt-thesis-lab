@@ -1,0 +1,19 @@
+import { useState } from 'react';
+import { StatusBar, View } from 'react-native';
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+import type { Client } from './src/api/client';
+import type { Receipt, Scenario } from './src/api/models';
+import { Login } from './src/screens/Login';
+import { Scenarios } from './src/screens/Scenarios';
+import { Setup, type Workspace } from './src/screens/Setup';
+import { Evaluation } from './src/screens/Evaluation';
+import { Result } from './src/screens/Result';
+import { Action, Brand, colors, Copy, Failure, Row } from './src/ui';
+import { useAction } from './src/hooks';
+
+type Screen =
+  | { page: 'scenarios' }
+  | { page: 'setup'; scenario: Scenario }
+  | { page: 'evaluation'; workspace: Workspace }
+  | { page: 'result'; receipt: Receipt };
+
