@@ -173,3 +173,111 @@ func finalizeOneBlock(ctx context.Context, db runtimeDB, trainingID int64, b pla
 	}
 	return result, nil
 }
+
+func maybeCompleteTraining(ctx context.Context, db runtimeDB, id int64) error {
+	rows, err := queryRecords(ctx, db, `SELECT to_jsonb(a) FROM crew_member_assessment a WHERE training_session_id=$1`, id)
+	if err != nil {
+		return err
+	}
+	completed := len(rows) > 0
+	for _, r := range rows {
+		completed = completed && pythonTrim(r.text("summary")) != "" && r["result"] != nil
+	}
+	status := "IN_PROGRESS"
+	if completed {
+		status = "COMPLETED"
+	}
+	now := time.Now().UTC()
+	_, err = db.Exec(ctx, `UPDATE training_session SET status=$2::text,completed_at=CASE WHEN $3 THEN COALESCE(completed_at,$4) ELSE NULL END,updated_at=CASE WHEN status IS DISTINCT FROM $2::text OR ($3 AND completed_at IS NULL) OR (NOT $3 AND completed_at IS NOT NULL) THEN now() ELSE updated_at END WHERE id=$1`, id, status, completed, now)
+	return err
+}
+
+func (s *Service) finalizeInTransaction(ctx context.Context, db runtimeDB, training record, o platform.Object, user *auth.User, emitAudit bool) (map[string]any, error) {
+	if err := validateCommentCompletion(o, training.number("comment_contract_version")); err != nil {
+		return nil, err
+	}
+	if training.number("comment_contract_version") == 1 {
+		for _, b := range finalizeBlocks(o) {
+			for _, raw := range b["mistake_reports"].([]any) {
+				r := raw.(platform.Object)
+				r["comment"] = normalizeComment(r.String("comment"))
+			}
+		}
+	}
+	c, err := s.finalizeCatalog(ctx, db, training, user)
+	if err != nil {
+		return nil, err
+	}
+	exercises := map[int64]record{}
+	needed := false
+	for _, b := range finalizeBlocks(o) {
+		needed = needed || len(b["mistake_reports"].([]any)) > 0
+	}
+	if needed {
+		rows, err := queryRecords(ctx, db, `SELECT to_jsonb(e) FROM training_session_exercise e WHERE training_session_id=$1`, training.number("id"))
+		if err != nil {
+			return nil, err
+		}
+		for _, r := range rows {
+			exercises[r.number("runtime_exercise_id")] = r
+		}
+	}
+	result := map[string]any{}
+	for _, slot := range []string{"cm1", "cm2"} {
+		if b, ok := o[slot].(platform.Object); ok {
+			result[slot], err = finalizeOneBlock(ctx, db, training.number("id"), b, c, exercises)
+			if err != nil {
+				return nil, err
+			}
+			// Preserve the source record before the next block and before commit.
+			// A later failure may roll back the data while retaining this audit.
+			if emitAudit {
+				platform.LogModule("app.audit", ctx).Info("Assessment finalized", "action", "assessment.finalize", "user_id", user.ID.String(), "assessment_id", b.Int("assessment_id"))
+			}
+		}
+	}
+	if err = maybeCompleteTraining(ctx, db, training.number("id")); err != nil {
+		return nil, err
+	}
+	return result, nil
+}
+
+func (s *Service) finalizeAssessments(w http.ResponseWriter, r *http.Request) error {
+	user, err := s.Auth.Authenticate(r, "training:write")
+	if err != nil {
+		return err
+	}
+	o, err := readAssessmentSchema(r, finalizeSchema)
+	if err != nil {
+		return err
+	}
+	ctx := r.Context()
+	tx, err := s.Auth.DB.Begin(ctx)
+	if err != nil {
+		return err
+	}
+	defer tx.Rollback(ctx)
+	id, err := resolveFinalizeTraining(ctx, tx, o)
+	if err != nil {
+		return err
+	}
+	training, err := queryRecord(ctx, tx, `SELECT to_jsonb(t) FROM training_session t WHERE id=$1`, id)
+	if errors.Is(err, pgx.ErrNoRows) || err == nil && training.text("status") == "DELETED" {
+		return platform.Error(404, "Training not found")
+	}
+	if err != nil {
+		return err
+	}
+	response, err := s.finalizeInTransaction(ctx, tx, training, o, user, true)
+	if err != nil {
+		return err
+	}
+	if err = persistSubmissionWithoutSpeech(ctx, tx, id, false); err != nil {
+		return err
+	}
+	if err = tx.Commit(ctx); err != nil {
+		return err
+	}
+	platform.WriteJSON(w, 200, response)
+	return nil
+}
