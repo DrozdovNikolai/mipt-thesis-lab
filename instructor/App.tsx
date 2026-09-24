@@ -17,3 +17,14 @@ type Screen =
   | { page: 'evaluation'; workspace: Workspace }
   | { page: 'result'; receipt: Receipt };
 
+function Route({ client, screen, navigate }: { client: Client; screen: Screen; navigate: (s: Screen) => void }) {
+  const home = () => navigate({ page: 'scenarios' });
+  switch (screen.page) {
+    case 'scenarios': return <Scenarios client={client} select={scenario => navigate({ page: 'setup', scenario })}/>;
+    case 'setup': return <Setup client={client} scenario={screen.scenario} back={home} start={workspace => navigate({ page: 'evaluation', workspace })}/>;
+
+case 'evaluation': return <Evaluation client={client} workspace={screen.workspace} finish={receipt => navigate({ page: 'result', receipt })}/>;
+    case 'result': return <Result client={client} initial={screen.receipt} home={home}/>;
+  }
+}
+
