@@ -4,19 +4,42 @@ import 'client.dart';
 
 class Scenarios {
   final SessionApi api;
-  final editorId=List.generate(16,(_)=>Random.secure().nextInt(256).toRadixString(16).padLeft(2,'0')).join();
+  final editorId = List.generate(
+    16,
+    (_) => Random.secure().nextInt(256).toRadixString(16).padLeft(2, '0'),
+  ).join();
   Scenarios(this.api);
-  static const path='/training/scenarios';
-  static const pageSize=24;
-  Future<CatalogPage> list(String search,int offset) async=>CatalogPage.from(await api.request('GET','$path/summary',query:{
-    'offset':'$offset','limit':'$pageSize',if(search.trim().isNotEmpty)'q':search.trim()
-  }));
-  Future<Json> open(int id) async => await api.request('GET','$path/$id') as Json;
-  Future<int> save(int id,int version,Json snapshot) async {
-    final result=await api.request('PUT','$path/$id/snapshot',body:{'snapshot':snapshot},query:{'expectedVersion':'$version'},headers:{'X-Client-Session-Id':editorId});
+  static const path = '/training/scenarios';
+  static const pageSize = 24;
+  Future<CatalogPage> list(String search, int offset) async => CatalogPage.from(
+    await api.request(
+      'GET',
+      '$path/summary',
+      query: {
+        'offset': '$offset',
+        'limit': '$pageSize',
+        if (search.trim().isNotEmpty) 'q': search.trim(),
+      },
+    ),
+  );
+  Future<Json> open(int id) async =>
+      await api.request('GET', '$path/$id') as Json;
+  Future<int> save(int id, int version, Json snapshot) async {
+    final result = await api.request(
+      'PUT',
+      '$path/$id/snapshot',
+      body: {'snapshot': snapshot},
+      query: {'expectedVersion': '$version'},
+      headers: {'X-Client-Session-Id': editorId},
+    );
     return result['contentVersion'] as int;
   }
+
   Future<void> release(int id) async {
-    await api.request('DELETE','$path/$id/lock',headers:{'X-Client-Session-Id':editorId});
+    await api.request(
+      'DELETE',
+      '$path/$id/lock',
+      headers: {'X-Client-Session-Id': editorId},
+    );
   }
 }
