@@ -28,3 +28,27 @@ case 'evaluation': return <Evaluation client={client} workspace={screen.workspac
   }
 }
 
+function Header({ name, signOut, busy }: { name: string; signOut?: () => void; busy: boolean }) {
+  return <View style={{ paddingHorizontal: 18, paddingVertical: 10, backgroundColor: colors.surface, borderBottomWidth: 1, borderColor: colors.border,
+    flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: 8 }}>
+    <Brand/><Row><Copy muted>{name}</Copy>{signOut && <Action secondary label="Выйти" disabled={busy} onPress={signOut}/>}</Row>
+  </View>;
+}
+
+function Instructor({ client, name, exit }: { client: Client; name: string; exit: () => void }) {
+  const [screen, navigate] = useState<Screen>({ page: 'scenarios' });
+  const action = useAction();
+  return <><Header name={name} busy={action.busy} signOut={screen.page === 'scenarios' || screen.page === 'result'
+    ? () => action.run(async () => { await client.logout(); exit(); }) : undefined}/>
+    <Failure message={action.error}/><Route {...{ client, screen, navigate }}/></>;
+}
+
+export default function App() {
+  const [session, setSession] = useState<{ client: Client; name: string }>();
+  return <SafeAreaProvider><SafeAreaView style={{ flex: 1, backgroundColor: colors.background }}>
+    <StatusBar barStyle="light-content"/>
+    {session ? <Instructor {...session} exit={() => setSession(undefined)}/>
+      : <Login onLogin={(client, name) => setSession({ client, name })}/>}
+  </SafeAreaView></SafeAreaProvider>;
+}
+
