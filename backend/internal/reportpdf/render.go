@@ -218,3 +218,70 @@ func (c cellContent) height() float64 {
 	}
 	return math.Max(h, c.minimum)
 }
+func (r *renderer) drawParagraph(p paragraph, x, y, width float64) {
+	for _, line := range p.lines {
+		r.text(line, x, y+p.style.size, width, p.style)
+		y += p.style.leading
+	}
+}
+func (r *renderer) newPage() {
+	r.pdf.AddPage()
+	r.page++
+	r.y = pageTop
+	r.text(fmt.Sprintf("Page %d", r.page), left, pageHeight-6*mm, contentWidth, textStyle{size: 7, align: gopdf.Right, color: [3]uint8{85, 85, 85}})
+	if r.page > 1 {
+		r.text("55NORD", left, 8*mm, 210, textStyle{size: 9, bold: true, color: [3]uint8{64, 64, 64}})
+		r.text(clean(r.title)+" - continued", left, 8*mm, contentWidth, textStyle{size: 8, align: gopdf.Right, color: [3]uint8{64, 64, 64}})
+	}
+}
+func (r *renderer) ensure(height float64) {
+	if height > bottom-pageTop {
+		r.err = fmt.Errorf("PDF table row exceeds printable page height")
+		return
+	}
+	if r.y+height > bottom {
+		r.newPage()
+	}
+}
+
+func (r *renderer) spacer(height float64) {
+	r.ensure(height)
+	r.y += height
+}
+func (r *renderer) border(x, y, w, h float64, background *[3]uint8) {
+	r.pdf.SetStrokeColor(64, 64, 64)
+	r.pdf.SetLineWidth(.4)
+	style := "D"
+	if background != nil {
+		r.pdf.SetFillColor(background[0], background[1], background[2])
+		style = "DF"
+	}
+	r.pdf.RectFromUpperLeftWithStyle(x, y, w, h, style)
+}
+func rowHeight(cells []cellContent) float64 {
+	h := 0.0
+	for _, c := range cells {
+		h = math.Max(h, c.height())
+	}
+	return h + 8
+}
+func (r *renderer) row(x float64, widths []float64, cells []cellContent, background *[3]uint8) {
+	h := rowHeight(cells)
+	r.ensure(h)
+	for i, c := range cells {
+		r.border(x, r.y, widths[i], h, background)
+		y := r.y + 4
+		if c.middle {
+			y += (h - 8 - c.height()) / 2
+		}
+		for _, p := range c.paragraphs {
+			r.drawParagraph(p, x+4, y, widths[i]-8)
+			y += p.height()
+		}
+		x += widths[i]
+	}
+	r.y += h
+}
+func (r *renderer) content(value string, width float64, style textStyle) cellContent {
+	return cellContent{paragraphs: []paragraph{r.para(value, width-8, style)}}
+}
