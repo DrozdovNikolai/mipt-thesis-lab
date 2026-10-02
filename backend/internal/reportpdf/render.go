@@ -285,3 +285,130 @@ func (r *renderer) row(x float64, widths []float64, cells []cellContent, backgro
 func (r *renderer) content(value string, width float64, style textStyle) cellContent {
 	return cellContent{paragraphs: []paragraph{r.para(value, width-8, style)}}
 }
+func (r *renderer) header(report Report) {
+	titleWidth := 135*mm - 12
+	title := r.para(report.Title, titleWidth, textStyle{size: 12, leading: 14, bold: true, align: gopdf.Right})
+	const logoHeight = 26
+	innerHeight := math.Max(logoHeight, title.height())
+	height := innerHeight + 7
+	r.ensure(height)
+	x := left + 6
+	y := r.y + 3 + (innerHeight-logoHeight)/2 + 24
+	for i, value := range []string{"5", "5", "NORD"} {
+		color := [3]uint8{64, 64, 64}
+		if i == 0 {
+			color = [3]uint8{247, 208, 70}
+		} else if i == 1 {
+			color = [3]uint8{223, 165, 57}
+		}
+		r.text(value, x, y, 55*mm, textStyle{size: 24, bold: true, color: color})
+		w, err := r.pdf.MeasureTextWidth(value)
+		if err != nil {
+			r.err = err
+		}
+		x += w
+	}
+	r.drawParagraph(title, left+55*mm+6, r.y+3+(innerHeight-title.height())/2, titleWidth)
+	r.pdf.SetStrokeColor(64, 64, 64)
+	r.pdf.SetLineWidth(1)
+	r.pdf.Line(left, r.y+height, right, r.y+height)
+	r.y += height
+}
+func (r *renderer) field(label, value string, width float64) cellContent {
+	return cellContent{paragraphs: []paragraph{
+		r.para(label, width-8, textStyle{size: 7, leading: 8.5, bold: true, align: gopdf.Left}),
+		r.para(value, width-8, bodyStyle),
+	}}
+}
+func (r *renderer) personTable(report Report) {
+	w := 38 * mm
+	r.row(left, []float64{3 * w, 2 * w}, []cellContent{r.field("Trainee", report.Trainee.Name, 3*w), r.field("Instructor", report.Instructor.Name, 2*w)}, nil)
+	date := "-"
+	if report.CompletedAt != nil {
+		date = report.CompletedAt.Format("02.01.2006")
+	}
+	fields := [2][5][2]string{
+		{{"Date", date}, {"License", report.Trainee.License}, {"PF duration", duration(report.Durations.PFMs)}, {"Location", "-"}, {"Role source", strings.ReplaceAll(report.Durations.Source, "_", " ")}},
+		{{"Rank", report.Trainee.Position}, {"Type rating", first(report.Trainee.AircraftType, report.AircraftCode)}, {"PM duration", duration(report.Durations.PMMs)}, {"FSTD ID", "-"}, {"Reserved", "-"}},
+	}
+	for _, fields := range fields {
+		var cells []cellContent
+		for _, field := range fields {
+			cells = append(cells, r.field(field[0], field[1], w))
+		}
+		r.row(left, []float64{w, w, w, w, w}, cells, nil)
+	}
+}
+func (r *renderer) section(value string, center bool) {
+	align := gopdf.Left
+	if center {
+		align = gopdf.Center
+	}
+	p := r.para(value, contentWidth-12, textStyle{size: 10, leading: 12, bold: true, align: align})
+	r.ensure(p.height())
+	r.drawParagraph(p, left+6, r.y, contentWidth-12)
+	r.y += p.height()
+}
+func (r *renderer) gradeTable(grades []Grade) {
+	items := append([]Grade(nil), grades...)
+	sort.SliceStable(items, func(i, j int) bool {
+		if items[i].OrderIndex != items[j].OrderIndex {
+			return items[i].OrderIndex < items[j].OrderIndex
+		}
+		return items[i].ID < items[j].ID
+	})
+	firstWidth := 24 * mm
+	if len(items) == 0 {
+		h := 17.0
+		r.ensure(h)
+		x := left + (contentWidth-firstWidth)/2
+		r.border(x, r.y, firstWidth, h, nil)
+		p := r.para("Grading", firstWidth-8, headerStyle)
+		r.drawParagraph(p, x+4, r.y+(h-p.height())/2, firstWidth-8)
+		r.y += h
+		return
+	}
+	w := (contentWidth - firstWidth) / float64(len(items))
+	var headers, values []cellContent
+	for _, item := range items {
+		headers = append(headers, r.content(item.Code, w, headerStyle))
+		style := textStyle{size: 8, leading: 10, bold: true, align: gopdf.Center}
+		if red, green, blue, ok := parseHex(item.ColorHex); ok {
+			style.color = [3]uint8{red, green, blue}
+		}
+		values = append(values, r.content(first(item.Label, "-"), w, style))
+	}
+	h1, h2 := rowHeight(headers), rowHeight(values)
+	r.ensure(h1 + h2)
+	r.border(left, r.y, firstWidth, h1+h2, nil)
+	p := r.para("Grading", firstWidth-8, headerStyle)
+	r.drawParagraph(p, left+4, r.y+(h1+h2-p.height())/2, firstWidth-8)
+	widths := make([]float64, len(items))
+	for i := range widths {
+		widths[i] = w
+	}
+	r.row(left+firstWidth, widths, headers, nil)
+	r.row(left+firstWidth, widths, values, nil)
+}
+func (r *renderer) swapTable(swap RoleChange) {
+	r.section("Latest accepted crew swap", false)
+	r.spacer(2 * mm)
+	context := swap.ExerciseLabel
+	if swap.Attempt != nil {
+		context += fmt.Sprintf(" · Attempt %d", *swap.Attempt)
+	}
+	if swap.OffsetMs != nil {
+		context += " · " + duration(*swap.OffsetMs)
+	}
+	widths := []float64{42 * mm, 40 * mm, 54 * mm, 54 * mm}
+	var headers, values []cellContent
+	for i, value := range []string{"Context", "Accepted", "Before latest swap", "Current assignment"} {
+		headers = append(headers, r.content(value, widths[i], headerStyle))
+	}
+	for i, value := range []string{context, fmt.Sprintf("%s · revision %d", swap.AcceptedAt.Format("02.01.2006 15:04"), swap.Revision), swap.Before, swap.After} {
+		values = append(values, r.content(value, widths[i], bodyStyle))
+	}
+	r.ensure(rowHeight(headers) + rowHeight(values))
+	r.row(left, widths, headers, &[3]uint8{244, 244, 244})
+	r.row(left, widths, values, nil)
+}
