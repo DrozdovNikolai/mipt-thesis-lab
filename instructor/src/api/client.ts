@@ -31,7 +31,7 @@ async function request<T>(path: string, body?: unknown, accessToken?: string): P
     });
     const text = await response.text();
     if (!response.ok) throw new ApiError(response.status, errorMessage(text, response.status));
-    return text ? JSON.parse(text) : undefined;
+    return JSON.parse(text || 'null') as T;
   } finally { clearTimeout(timeout); }
 }
 
