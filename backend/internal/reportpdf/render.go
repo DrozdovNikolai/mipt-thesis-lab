@@ -412,3 +412,108 @@ func (r *renderer) swapTable(swap RoleChange) {
 	r.row(left, widths, headers, &[3]uint8{244, 244, 244})
 	r.row(left, widths, values, nil)
 }
+func (r *renderer) comment(comment Comment) {
+	widths := []float64{22 * mm, 24 * mm, 35 * mm, 109 * mm}
+	style := headerStyle
+	style.color = [3]uint8{227, 62, 53}
+	sentiment := "Negative"
+	if comment.Positive {
+		style.color = [3]uint8{40, 70, 146}
+		sentiment = "Positive"
+	}
+	code := r.content(first(comment.CompetenceCode, "-"), widths[0], style)
+	code.middle = true
+	sent := r.content(sentiment, widths[1], headerStyle)
+	sent.middle = true
+	indicatorStyle := bodyStyle
+	indicatorStyle.align = gopdf.Center
+	indicator := r.content(first(comment.IndicatorCode, "-"), widths[2], indicatorStyle)
+	indicator.middle = true
+	name := r.content(first(comment.IndicatorName, "-"), widths[3], bodyStyle)
+	r.row(left, widths, []cellContent{code, sent, indicator, name}, nil)
+	body := r.content(first(comment.Text, "-"), contentWidth, commentStyle)
+	// The source's spanned row includes empty table cells with default leading 12.
+	body.minimum = 12
+	r.row(left, []float64{contentWidth}, []cellContent{body}, nil)
+}
+func (r *renderer) summary(value string) {
+	r.row(left, []float64{contentWidth}, []cellContent{r.content("Summary", contentWidth, headerStyle)}, nil)
+	r.row(left, []float64{contentWidth}, []cellContent{r.content(value, contentWidth, commentStyle)}, nil)
+}
+
+type signatureImage struct {
+	holder        gopdf.ImageHolder
+	width, height float64
+}
+
+func signature(data []byte) signatureImage {
+	if len(data) == 0 {
+		return signatureImage{height: 11}
+	}
+	info, _, err := image.DecodeConfig(bytes.NewReader(data))
+	if err != nil || info.Width <= 0 || info.Height <= 0 {
+		return signatureImage{height: 11}
+	}
+	holder, err := gopdf.ImageHolderByBytes(data)
+	if err != nil {
+		return signatureImage{height: 11}
+	}
+	scale := math.Min(45*mm/float64(info.Width), 16*mm/float64(info.Height))
+	return signatureImage{holder: holder, width: float64(info.Width) * scale, height: float64(info.Height) * scale}
+}
+func (r *renderer) overall(report Report) {
+	images := []signatureImage{signature(report.Trainee.Signature), signature(report.Instructor.Signature)}
+	imageHeight := math.Max(images[0].height, images[1].height)
+	headerHeight := 17.0
+	bodyHeight := imageHeight + 8
+	r.ensure(headerHeight + bodyHeight)
+	top := r.y
+	result := "-"
+	if report.Result != nil {
+		result = "Fail"
+		if *report.Result {
+			result = "Pass"
+		}
+	}
+	r.row(left, []float64{35 * mm, 28 * mm}, []cellContent{r.content("Overall Assessment", 35*mm, headerStyle), r.content(result, 28*mm, bodyStyle)}, nil)
+	r.y = top
+	x := right - 110*mm
+	r.row(x, []float64{55 * mm, 55 * mm}, []cellContent{r.content("Trainee signature", 55*mm, headerStyle), r.content("Instructor signature", 55*mm, headerStyle)}, nil)
+	for i, image := range images {
+		x := x + float64(i)*55*mm
+		r.border(x, r.y, 55*mm, bodyHeight, nil)
+		if image.holder != nil {
+			if err := r.pdf.ImageByHolder(image.holder, x+(55*mm-image.width)/2, r.y+4+(imageHeight-image.height)/2, &gopdf.Rect{W: image.width, H: image.height}); err != nil {
+				r.err = err
+			}
+		} else {
+			p := r.para("____________________", 55*mm-8, textStyle{size: 9, leading: 11, align: gopdf.Center})
+			r.drawParagraph(p, x+4, r.y+4+(imageHeight-p.height())/2, 55*mm-8)
+		}
+	}
+	r.y += bodyHeight
+}
+func first(value, fallback string) string {
+	if strings.TrimSpace(value) == "" {
+		return fallback
+	}
+	return value
+}
+func clean(value string) string { return first(strings.TrimSpace(value), "-") }
+func duration(ms int64) string {
+	if ms < 0 {
+		ms = 0
+	}
+	seconds := ms / 1000
+	return fmt.Sprintf("%02d:%02d:%02d", seconds/3600, seconds/60%60, seconds%60)
+}
+func parseHex(value string) (uint8, uint8, uint8, bool) {
+	value = strings.TrimSpace(value)
+	if len(value) != 7 || value[0] != '#' {
+		return 0, 0, 0, false
+	}
+	r, er := strconv.ParseUint(value[1:3], 16, 8)
+	g, eg := strconv.ParseUint(value[3:5], 16, 8)
+	b, eb := strconv.ParseUint(value[5:7], 16, 8)
+	return uint8(r), uint8(g), uint8(b), er == nil && eg == nil && eb == nil
+}
