@@ -5,6 +5,7 @@ import { Choice, Copy, Panel, Row, Title } from '../ui';
 function Briefing({ exercise }: { exercise: Exercise }) {
   return <><Title small>{exerciseName(exercise)}</Title>
     {!!exercise.setup && exercise.setup !== exerciseName(exercise) && <Copy>{exercise.setup}</Copy>}
+    {!!exercise.aircraft?.acType && <Copy muted>{[exercise.aircraft.acType, exercise.aircraft.engines].filter(Boolean).join(' · ')}</Copy>}
     {!!exercise.pf && <Copy muted>Пилотирующий · {exercise.pf}</Copy>}
     <Copy>{exercise.guidancePlainText || exercise.guidance || 'Указания к упражнению отсутствуют'}</Copy></>;
 }

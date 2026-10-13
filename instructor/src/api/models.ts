@@ -31,6 +31,7 @@ export interface Exercise {
   guidance?: string;
   duration?: number;
   pf?: string;
+  aircraft?: { acType?: string; engines?: string };
 }
 
 export interface Competency {
