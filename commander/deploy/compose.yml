@@ -1,0 +1,20 @@
+name: north55-commander
+services:
+  web:
+    image: ${COMMANDER_IMAGE:-55north-commander:local}
+    build:
+      context: ..
+      args:
+        VITE_APP_VERSION: ${VITE_APP_VERSION:-local}
+        VITE_APP_ENV: ${VITE_APP_ENV:-production}
+        VITE_SENTRY_DSN: ${VITE_SENTRY_DSN:-}
+        VITE_SENTRY_TRACES_SAMPLE_RATE: ${VITE_SENTRY_TRACES_SAMPLE_RATE:-0}
+        VITE_SENTRY_REPLAYS_ON_ERROR_SAMPLE_RATE: ${VITE_SENTRY_REPLAYS_ON_ERROR_SAMPLE_RATE:-0}
+    environment:
+      COMMANDER_API_ORIGIN: ${COMMANDER_API_ORIGIN:-http://host.docker.internal:8812}
+      NGINX_ENVSUBST_FILTER: COMMANDER_API_ORIGIN
+    ports:
+      - '127.0.0.1:${COMMANDER_PORT:-8088}:8080'
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    restart: unless-stopped
