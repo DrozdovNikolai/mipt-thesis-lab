@@ -29,6 +29,7 @@ export interface Exercise {
   stepLabel?: string;
   guidancePlainText?: string;
   guidance?: string;
+  content?: { id: number; elements: string; details?: string }[];
   duration?: number;
   pf?: string;
   aircraft?: { acType?: string; engines?: string };

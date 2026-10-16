@@ -7,6 +7,8 @@ function Briefing({ exercise }: { exercise: Exercise }) {
     {!!exercise.setup && exercise.setup !== exerciseName(exercise) && <Copy>{exercise.setup}</Copy>}
     {!!exercise.aircraft?.acType && <Copy muted>{[exercise.aircraft.acType, exercise.aircraft.engines].filter(Boolean).join(' · ')}</Copy>}
     {!!exercise.pf && <Copy muted>Пилотирующий · {exercise.pf}</Copy>}
+    {exercise.content?.filter(item => item.elements || item.details).map(item =>
+      <Copy key={item.id}>{[item.elements, item.details].filter(Boolean).join(' · ')}</Copy>)}
     <Copy>{exercise.guidancePlainText || exercise.guidance || 'Указания к упражнению отсутствуют'}</Copy></>;
 }
 
