@@ -2,7 +2,7 @@ import { useState, type ReactNode } from 'react';
 import { KeyboardAvoidingView, Platform, ScrollView, View } from 'react-native';
 import { Client } from '../api/client';
 import { useAction } from '../hooks';
-import { Action, Brand, Copy, Failure, Field, Panel, Title } from '../ui';
+import { Action, Brand, Failure, Field, Panel, Title } from '../ui';
 
 function LoginFrame({ children }: { children: ReactNode }) {
   return <KeyboardAvoidingView style={{ flex: 1 }} behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
