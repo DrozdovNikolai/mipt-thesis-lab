@@ -178,3 +178,129 @@ func (s *Service) commanderPilots(w http.ResponseWriter, r *http.Request) error 
 	platform.WriteJSON(w, 200, record{"total": total, "limit": q["limit"], "offset": q["offset"], "items": items})
 	return nil
 }
+
+func commanderProfile(user *auth.User, rating any) record {
+	value := func(p *string) any {
+		if p == nil || *p == "" {
+			return nil
+		}
+		return *p
+	}
+	parts := []string{}
+	for _, part := range []*string{user.LastName, user.FirstName} {
+		if part != nil && pythonTrim(*part) != "" {
+			parts = append(parts, pythonTrim(*part))
+		}
+	}
+	var name any
+	if len(parts) > 0 {
+		name = strings.Join(parts, " ")
+	}
+	return record{"id": user.ID, "full_name": name, "first_name": value(user.FirstName), "last_name": value(user.LastName), "photo_url": value(user.PhotoURL), "position_id": user.PositionID, "position": user.Position, "aircraft_ids": user.AircraftIDs, "aircraft_codes": user.AircraftCodes, "phone": value(user.Phone), "email": user.Email, "rating": rating}
+}
+
+func (s *Service) commanderReadPilot(r *http.Request) (int64, *auth.User, error) {
+	user, err := s.Auth.Authenticate(r, "pilots:read")
+	if err != nil {
+		return 0, nil, err
+	}
+	path, err := platform.ValidateObject(map[string]any{"pilot_id": r.PathValue("pilot_id")}, []any{"path"}, platform.Schema{Fields: []platform.Field{{Name: "pilot_id", Kind: "uuid", Required: true}}})
+	if err != nil {
+		return 0, nil, err
+	}
+	airline, err := commanderAirline(user)
+	if err != nil {
+		return 0, nil, err
+	}
+	pilot, err := s.Auth.LoadUser(r.Context(), path["pilot_id"].(uuid.UUID))
+	if errors.Is(err, pgx.ErrNoRows) || err == nil && (pilot.AirlineID == nil || *pilot.AirlineID != airline) {
+		return 0, nil, commanderError(404, "PILOT_NOT_FOUND", "Pilot not found")
+	}
+	return airline, pilot, err
+}
+
+func (s *Service) commanderPilotProfile(w http.ResponseWriter, r *http.Request) error {
+	airline, pilot, err := s.commanderReadPilot(r)
+	if err != nil {
+		return err
+	}
+	ratings, err := commanderPilotRatings(r.Context(), s.Auth.DB, airline, []int64{pilot.InternalID})
+	if err != nil {
+		return err
+	}
+	platform.WriteJSON(w, 200, commanderWire(commanderProfile(pilot, ratings[pilot.InternalID])))
+	return nil
+}
+
+func (s *Service) commanderCompatibility(w http.ResponseWriter, r *http.Request) error {
+	user, err := s.Auth.Authenticate(r, "pilots:read")
+	if err != nil {
+		return err
+	}
+	q, err := platform.QueryObject(r.URL.Query(),
+		platform.Field{Name: "first_pilot_id", Alias: "firstPilotId", Kind: "uuid", Required: true},
+		platform.Field{Name: "second_pilot_id", Alias: "secondPilotId", Kind: "uuid", Required: true},
+		platform.Field{Name: "flight_type_id", Alias: "flightTypeId", Kind: "integer", Min: 1, Required: true},
+		platform.Field{Name: "as_of_date", Alias: "asOfDate", Kind: "date", Nullable: true})
+	if err != nil {
+		return err
+	}
+	first, second := q["first_pilot_id"].(uuid.UUID), q["second_pilot_id"].(uuid.UUID)
+	if first == second {
+		return commanderError(400, "SAME_PILOT_IDS", "firstPilotId and secondPilotId must be different")
+	}
+	airline, err := commanderAirline(user)
+	if err != nil {
+		return err
+	}
+	users, err := s.Auth.LoadUsers(r.Context(), []uuid.UUID{first, second})
+	if err != nil {
+		return err
+	}
+	for i, id := range []uuid.UUID{first, second} {
+		pilot := users[id]
+		if pilot == nil || pilot.AirlineID == nil || *pilot.AirlineID != airline {
+			return &platform.APIError{Status: 404, Code: "PILOT_NOT_FOUND", Message: "Pilot not found", Extra: map[string]any{"parameter": []string{"firstPilotId", "secondPilotId"}[i]}}
+		}
+	}
+	flight, err := queryRecord(r.Context(), s.Auth.DB, `SELECT jsonb_build_object('id',id,'name',name) FROM flight_type WHERE airline_id=$1 AND id=$2`, airline, q.Int("flight_type_id"))
+	if errors.Is(err, pgx.ErrNoRows) {
+		return commanderError(404, "FLIGHT_TYPE_NOT_FOUND", "Flight type not found")
+	}
+	if err != nil {
+		return err
+	}
+	a, b := users[first], users[second]
+	var bound, date any
+	if q["as_of_date"] != nil {
+		day := q["as_of_date"].(time.Time)
+		bound = day.AddDate(0, 0, 1)
+		date = day.Format("2006-01-02")
+	}
+	args := []any{airline, []int64{a.InternalID, b.InternalID}, bound, a.InternalID, b.InternalID, q.Int("flight_type_id")}
+	items, err := queryRecords(r.Context(), s.Auth.DB, commanderLatestPilotCTE(false)+`SELECT to_jsonb(r) FROM (
+ SELECT c.id AS competence_id,c.code AS competence_code,c.name AS competence_name,c.order_index,
+ (t.value IS NULL OR (x.score IS NOT NULL AND y.score IS NOT NULL AND x.score+y.score>=t.value)) AS compatible,
+ t.value IS NOT NULL AS threshold_configured,t.value::text AS required_sum,(x.score+y.score)::text AS actual_sum,
+ x.score::text AS first_pilot_value,y.score::text AS second_pilot_value
+ FROM competence c LEFT JOIN latest_reports x ON x.pilot_id=$4 AND x.competence_id=c.id
+ LEFT JOIN latest_reports y ON y.pilot_id=$5 AND y.competence_id=c.id
+ LEFT JOIN flight_type_competence_threshold t ON t.flight_type_id=$6 AND t.competence_id=c.id
+ WHERE c.airline_id=$1 ORDER BY c.order_index,c.id) r`, args...)
+	if err != nil {
+		return err
+	}
+	completed, err := queryRecords(r.Context(), s.Auth.DB, commanderLatestPilotCTE(false)+`SELECT jsonb_build_object('pilot_id',pilot_id) FROM latest_assessments`, args[:3]...)
+	if err != nil {
+		return err
+	}
+	known := map[int64]bool{}
+	for _, row := range completed {
+		known[row.number("pilot_id")] = true
+	}
+	pilotWire := func(u *auth.User) record {
+		return record{"id": u.ID, "first_name": u.FirstName, "last_name": u.LastName, "has_completed_training": known[u.InternalID]}
+	}
+	platform.WriteJSON(w, 200, commanderWire(record{"first_pilot": pilotWire(a), "second_pilot": pilotWire(b), "flight_type": flight, "as_of_date": date, "items": items}))
+	return nil
+}
