@@ -28,12 +28,21 @@ export function creationId() {
   return `${time.slice(0, 8)}-${time.slice(8)}-7${random.slice(15, 18)}${random.slice(18)}`;
 }
 
-export function createTraining(client: Client, scenario: Scenario, first: Pilot, second: Pilot, clientCreationId: string) {
-  return client.send<Training>('/training/trainings', {
+export async function createTraining(client: Client, scenario: Scenario, first: Pilot, second: Pilot, clientCreationId: string) {
+  const data = await client.send<Training & {
+    commentContract?: { version: number }; clientCreationId?: string;
+  }>('/training/trainings', {
     scenarioId: scenario.scenarioId,
     scenarioDayModuleId: scenario.scenarioDayModuleId,
     cm1Id: first.id, cm2Id: second.id, clientCreationId,
   });
+  if ((data.commentContract?.version ?? 0) !== 0 || (data.clientCreationId && data.clientCreationId !== clientCreationId)) {
+    throw new Error('Сервер вернул несовместимый контракт тренировки');
+  }
+  if (!data.trainingId || !data.cm1AssessmentId || !data.cm2AssessmentId || !Array.isArray(data.exercises)) {
+    throw new Error('В ответе сервера отсутствуют данные тренировки');
+  }
+  return data;
 }
 
 function assessmentBlock(assessmentId: number, card: Assessment) {
