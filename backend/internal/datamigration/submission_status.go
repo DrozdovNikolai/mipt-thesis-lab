@@ -270,3 +270,46 @@ func begin(ctx context.Context, db *pgxpool.Pool) (pgx.Tx, error) {
 	}
 	return tx, nil
 }
+
+func Plan(ctx context.Context, db *pgxpool.Pool) (Report, error) {
+	return PlanForTrainings(ctx, db, nil)
+}
+
+func PlanForTrainings(ctx context.Context, db *pgxpool.Pool, ids []int64) (Report, error) {
+	scope, err := normalizeScope(ids)
+	if err != nil {
+		return Report{}, err
+	}
+	tx, err := begin(ctx, db)
+	if err != nil {
+		return Report{}, err
+	}
+	defer tx.Rollback(ctx)
+	return collect(ctx, tx, scope)
+}
+
+func lockContext(ctx context.Context, tx pgx.Tx, id int64) error {
+	for _, query := range []string{
+		`SELECT training_session_id FROM training_session_crew_state WHERE training_session_id=$1 FOR UPDATE`,
+		`SELECT id FROM crew_member_assessment WHERE training_session_id=$1 ORDER BY id FOR UPDATE`,
+		`SELECT id FROM speech_session WHERE training_session_id=$1 ORDER BY id FOR UPDATE`,
+		`SELECT id FROM training_session_crew_assignment_event WHERE training_session_id=$1 ORDER BY id FOR UPDATE`,
+		`SELECT exercise_session_key FROM training_session_exercise_run WHERE training_session_id=$1 ORDER BY exercise_session_key FOR UPDATE`,
+		`SELECT id FROM training_session_exercise_crew_segment WHERE training_session_id=$1 ORDER BY id FOR UPDATE`,
+	} {
+		if _, err := tx.Exec(ctx, query, id); err != nil {
+			return err
+		}
+	}
+	return nil
+}
+
+const ledgerDDL = `CREATE TABLE IF NOT EXISTS north55_submission_status_runs (
+ run_id uuid PRIMARY KEY,version text NOT NULL,plan_sha256 text NOT NULL,
+ applied_at timestamptz NOT NULL DEFAULT now(),rolled_back_at timestamptz,
+ training_ids bigint[] NOT NULL DEFAULT '{}'::bigint[]);
+ ALTER TABLE north55_submission_status_runs ADD COLUMN IF NOT EXISTS training_ids bigint[] NOT NULL DEFAULT '{}'::bigint[];
+ CREATE TABLE IF NOT EXISTS north55_submission_status_changes (
+ run_id uuid NOT NULL REFERENCES north55_submission_status_runs(run_id),
+ training_id bigint NOT NULL,before_row jsonb NOT NULL,after_row jsonb NOT NULL,
+ source_context jsonb NOT NULL,PRIMARY KEY(run_id,training_id))`
