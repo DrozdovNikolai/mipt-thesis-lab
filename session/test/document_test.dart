@@ -16,4 +16,9 @@ void main(){
  expect(first['params']['guidanceDoc'],example(14,30)['params']['guidanceDoc']);
  expect(first['params']['originalTl'],{'airportName':'UUWW'});
  });
+ test('Moving back or acknowledging the save clears pending changes',(){
+ final doc=fixture(); expect(doc.dirty,isFalse);
+ doc.move(0,1,0);expect(doc.dirty,isTrue);doc.move(0,0,1);expect(doc.dirty,isFalse);
+ doc.move(0,0,1);doc.markClean();expect(doc.dirty,isFalse);
+ });
 }
