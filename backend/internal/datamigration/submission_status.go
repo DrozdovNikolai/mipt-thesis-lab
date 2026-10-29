@@ -313,3 +313,102 @@ const ledgerDDL = `CREATE TABLE IF NOT EXISTS north55_submission_status_runs (
  run_id uuid NOT NULL REFERENCES north55_submission_status_runs(run_id),
  training_id bigint NOT NULL,before_row jsonb NOT NULL,after_row jsonb NOT NULL,
  source_context jsonb NOT NULL,PRIMARY KEY(run_id,training_id))`
+
+func Apply(ctx context.Context, db *pgxpool.Pool, runID uuid.UUID, expected string) (Result, error) {
+	return ApplyForTrainings(ctx, db, runID, expected, nil)
+}
+
+func ApplyForTrainings(ctx context.Context, db *pgxpool.Pool, runID uuid.UUID, expected string, ids []int64) (Result, error) {
+	result := Result{Version: Version, RunID: runID, Action: "apply", IDs: []int64{}}
+	if runID == uuid.Nil || len(expected) != 64 {
+		return result, errors.New("apply requires a nonzero run UUID and reviewed plan SHA-256")
+	}
+	scope, err := normalizeScope(ids)
+	if err != nil {
+		return result, err
+	}
+	tx, err := begin(ctx, db)
+	if err != nil {
+		return result, err
+	}
+	defer tx.Rollback(ctx)
+	if _, err = tx.Exec(ctx, ledgerDDL); err != nil {
+		return result, err
+	}
+	var prior, version string
+	var priorScope []int64
+	var rolledBack bool
+	err = tx.QueryRow(ctx, `SELECT version,plan_sha256,rolled_back_at IS NOT NULL,training_ids FROM north55_submission_status_runs WHERE run_id=$1`, runID).Scan(&version, &prior, &rolledBack, &priorScope)
+	if err == nil {
+		if version != Version || prior != expected || rolledBack || !slices.Equal(priorScope, scope) {
+			return result, errors.New("run ID already belongs to a different or rolled-back migration")
+		}
+		result.IDs, err = verifyStored(ctx, tx, runID, false)
+		if err != nil {
+			return result, err
+		}
+		result.Repeated = true
+		return result, tx.Commit(ctx)
+	}
+	if !errors.Is(err, pgx.ErrNoRows) {
+		return result, err
+	}
+	report, err := collect(ctx, tx, scope)
+	if err != nil {
+		return result, err
+	}
+	if report.PlanSHA256 != expected {
+		return result, errors.New("plan changed; review a fresh plan before applying")
+	}
+	if report.Blocked > 0 {
+		return result, fmt.Errorf("plan contains %d inconsistent or unverified rows; no rows changed", report.Blocked)
+	}
+	if _, err = tx.Exec(ctx, `INSERT INTO north55_submission_status_runs(run_id,version,plan_sha256,training_ids) VALUES($1,$2,$3,$4)`, runID, Version, expected, scope); err != nil {
+		return result, err
+	}
+	for _, c := range report.Changes {
+		if err = lockContext(ctx, tx, c.ID); err != nil {
+			return result, err
+		}
+		var after []byte
+		err = tx.QueryRow(ctx, `UPDATE training_session t SET submission_status=$2,submission_error=NULL,updated_at=now() WHERE id=$1 AND to_jsonb(t)=$3::jsonb RETURNING to_jsonb(t)`, c.ID, c.Target, []byte(c.Before)).Scan(&after)
+		if err != nil {
+			return result, err
+		}
+		_, err = tx.Exec(ctx, `INSERT INTO north55_submission_status_changes(run_id,training_id,before_row,after_row,source_context) VALUES($1,$2,$3::jsonb,$4::jsonb,$5::jsonb)`, runID, c.ID, []byte(c.Before), after, []byte(c.Context))
+		if err != nil {
+			return result, err
+		}
+		result.IDs = append(result.IDs, c.ID)
+	}
+	return result, tx.Commit(ctx)
+}
+
+// Compare the whole row and its assessment/runtime/speech context. Rollback may
+// never overwrite a legitimate edit made after the migration.
+func verifyStored(ctx context.Context, tx pgx.Tx, runID uuid.UUID, before bool) ([]int64, error) {
+	field := "after_row"
+	if before {
+		field = "before_row"
+	}
+	rows, err := tx.Query(ctx, `SELECT c.training_id,c.`+field+`,c.source_context,to_jsonb(t),CASE WHEN t.id IS NOT NULL THEN `+contextSQL+` END FROM north55_submission_status_changes c LEFT JOIN training_session t ON t.id=c.training_id WHERE c.run_id=$1 ORDER BY c.training_id`, runID)
+	if err != nil {
+		return nil, err
+	}
+	ids := []int64{}
+	for rows.Next() {
+		var id int64
+		var wanted, contextBefore, actual, contextAfter []byte
+		if err = rows.Scan(&id, &wanted, &contextBefore, &actual, &contextAfter); err != nil {
+			rows.Close()
+			return nil, err
+		}
+		if !bytes.Equal(wanted, actual) || !bytes.Equal(contextBefore, contextAfter) {
+			rows.Close()
+			return nil, fmt.Errorf("training %d or its assessment/runtime/speech context changed; no rows changed", id)
+		}
+		ids = append(ids, id)
+	}
+	rows.Close()
+	return ids, rows.Err()
+}
