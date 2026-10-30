@@ -412,3 +412,61 @@ func verifyStored(ctx context.Context, tx pgx.Tx, runID uuid.UUID, before bool) 
 	rows.Close()
 	return ids, rows.Err()
 }
+
+func Rollback(ctx context.Context, db *pgxpool.Pool, runID uuid.UUID) (Result, error) {
+	result := Result{Version: Version, RunID: runID, Action: "rollback", IDs: []int64{}}
+	tx, err := begin(ctx, db)
+	if err != nil {
+		return result, err
+	}
+	defer tx.Rollback(ctx)
+	var version string
+	var rolledBack bool
+	err = tx.QueryRow(ctx, `SELECT version,rolled_back_at IS NOT NULL FROM north55_submission_status_runs WHERE run_id=$1`, runID).Scan(&version, &rolledBack)
+	if err != nil {
+		return result, err
+	}
+	if version != Version {
+		return result, errors.New("unsupported migration version")
+	}
+	// Lock all affected rows before verifying any, maintaining training ID order.
+	locked, err := tx.Query(ctx, `SELECT t.id FROM training_session t JOIN north55_submission_status_changes c ON c.training_id=t.id WHERE c.run_id=$1 ORDER BY t.id FOR UPDATE OF t`, runID)
+	if err != nil {
+		return result, err
+	}
+	ids := []int64{}
+	for locked.Next() {
+		var id int64
+		if err = locked.Scan(&id); err != nil {
+			locked.Close()
+			return result, err
+		}
+		ids = append(ids, id)
+	}
+	locked.Close()
+	if err = locked.Err(); err != nil {
+		return result, err
+	}
+	for _, id := range ids {
+		if err = lockContext(ctx, tx, id); err != nil {
+			return result, err
+		}
+	}
+	result.IDs, err = verifyStored(ctx, tx, runID, rolledBack)
+	if err != nil {
+		return result, err
+	}
+	if rolledBack {
+		result.Repeated = true
+		return result, tx.Commit(ctx)
+	}
+	_, err = tx.Exec(ctx, `UPDATE training_session t SET submission_status=c.before_row->>'submission_status',submission_error=c.before_row->>'submission_error',updated_at=(c.before_row->>'updated_at')::timestamptz FROM north55_submission_status_changes c WHERE c.run_id=$1 AND t.id=c.training_id AND to_jsonb(t)=c.after_row`, runID)
+	if err != nil {
+		return result, err
+	}
+	_, err = tx.Exec(ctx, `UPDATE north55_submission_status_runs SET rolled_back_at=now() WHERE run_id=$1`, runID)
+	if err != nil {
+		return result, err
+	}
+	return result, tx.Commit(ctx)
+}
