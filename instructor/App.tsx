@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { StatusBar, View } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import type { Client } from './src/api/client';
@@ -36,6 +36,7 @@ function Header({ name, signOut, busy }: { name: string; signOut?: () => void; b
 }
 
 function Instructor({ client, name, exit }: { client: Client; name: string; exit: () => void }) {
+  React.useEffect(() => { client.onExpired = exit; return () => { client.onExpired = undefined; }; }, [client, exit]);
   const [screen, navigate] = useState<Screen>({ page: 'scenarios' });
   const action = useAction();
   return <><Header name={name} busy={action.busy} signOut={screen.page === 'scenarios' || screen.page === 'result'

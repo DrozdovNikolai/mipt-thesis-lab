@@ -41,6 +41,7 @@ function tokenPair(value: Tokens) {
 }
 
 export class Client {
+  onExpired?: () => void;
   private refreshing?: Promise<void>;
   private constructor(private tokens: Tokens) {}
 
@@ -61,8 +62,13 @@ async send<T>(path: string, body?: unknown): Promise<T> {
     try { return await request<T>(path, body, token); }
     catch (error) {
       if (!(error instanceof ApiError) || error.status !== 401) throw error;
-      if (this.tokens.accessToken === token) await this.refresh();
-      return request<T>(path, body, this.tokens.accessToken);
+      try {
+        if (this.tokens.accessToken === token) await this.refresh();
+        return await request<T>(path, body, this.tokens.accessToken);
+      } catch (retryError) {
+        if (retryError instanceof ApiError && retryError.status === 401) this.onExpired?.();
+        throw retryError;
+      }
     }
   }
 
