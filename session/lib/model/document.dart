@@ -58,7 +58,7 @@ class Document {
   final Json data;
   late final List<Json> modules;
   late int version;
-  late final Map<int,List<int>> _positions;
+  late final Map<int, List<int>> _positions;
   Document(this.data) {
     version = data['contentVersion'] as int;
     modules = [
@@ -66,7 +66,12 @@ class Document {
         {...m, 'exercises': ordered(m['exercises'])},
     ];
     // Capture slots before any move, including non-contiguous legacy indices.
-    _positions = {for(final m in modules) m['id'] as int: [for(final e in m['exercises']) e['orderIndex'] as int]};
+    _positions = {
+      for (final m in modules)
+        m['id'] as int: [
+          for (final e in m['exercises']) e['orderIndex'] as int,
+        ],
+    };
     markClean();
   }
   List<Json> exercises(int module) =>
