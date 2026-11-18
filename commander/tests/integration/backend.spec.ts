@@ -2,10 +2,7 @@ import { readFileSync } from 'node:fs'
 import { expect, test, type Page } from '@playwright/test'
 
 const fixture = JSON.parse(
-  readFileSync(
-    new URL('../../migration/evidence/m9/backend-fixture.json', import.meta.url),
-    'utf8',
-  ),
+  readFileSync(new URL('../fixtures/backend-fixture.json', import.meta.url), 'utf8'),
 ) as {
   firstPilotId: string
   secondPilotId: string

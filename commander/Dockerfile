@@ -3,14 +3,13 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm ci --no-audit --no-fund
 COPY . .
-ARG COMMANDER_BRAND=55nord
 ARG VITE_APP_VERSION
 ARG VITE_APP_ENV=production
 ARG VITE_SENTRY_DSN
 ARG VITE_SENTRY_TRACES_SAMPLE_RATE=0
 ARG VITE_SENTRY_REPLAYS_ON_ERROR_SAMPLE_RATE=0
 ENV VITE_API_URL=/api
-RUN npm run build -- --mode ${COMMANDER_BRAND}
+RUN npm run build:55nord
 
 FROM nginx:1.28-alpine AS runtime
 COPY deploy/nginx.conf /etc/nginx/nginx.conf

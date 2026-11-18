@@ -5,7 +5,6 @@ services:
     build:
       context: ..
       args:
-        COMMANDER_BRAND: ${COMMANDER_BRAND:-55nord}
         VITE_APP_VERSION: ${VITE_APP_VERSION:-local}
         VITE_APP_ENV: ${VITE_APP_ENV:-production}
         VITE_SENTRY_DSN: ${VITE_SENTRY_DSN:-}

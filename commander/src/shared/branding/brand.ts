@@ -1,42 +1,10 @@
-export type AppBrandId = 'firefly' | '55nord'
-
-type BrandConfig = {
-  id: AppBrandId
-  displayName: string
-  logoLabel: string
-  documentTitle: string
-  faviconHref: string
-  faviconType: string
-  logoSrc?: string
-}
-
-const BRAND_CONFIGS: Record<AppBrandId, BrandConfig> = {
-  firefly: {
-    id: 'firefly',
-    displayName: 'Firefly',
-    logoLabel: 'Firefly Commander',
-    documentTitle: 'Firefly Commander',
-    faviconHref: '/favicon.png',
-    faviconType: 'image/png',
-    logoSrc: '/logo.svg',
-  },
-  '55nord': {
-    id: '55nord',
-    displayName: '55NORD',
-    logoLabel: '55NORD Commander',
-    documentTitle: '55NORD Commander',
-    faviconHref: '/favicon55nord.ico',
-    faviconType: 'image/x-icon',
-  },
-}
-
-const resolveBrandId = (rawValue: string | undefined): AppBrandId => {
-  const normalizedValue = rawValue?.trim().toLowerCase()
-  if (normalizedValue === '55nord' || normalizedValue === 'ru') {
-    return '55nord'
-  }
-  return 'firefly'
-}
+export const APP_BRAND = {
+  id: '55nord',
+  logoLabel: '55NORD Commander',
+  documentTitle: '55NORD Commander',
+  faviconHref: '/favicon55nord.ico',
+  faviconType: 'image/x-icon',
+} as const
 
 const upsertHeadLink = (rel: string, href: string, type: string) => {
   let link = document.head.querySelector<HTMLLinkElement>(`link[rel="${rel}"]`)
@@ -48,9 +16,6 @@ const upsertHeadLink = (rel: string, href: string, type: string) => {
   link.href = href
   link.type = type
 }
-
-export const APP_BRAND =
-  BRAND_CONFIGS[resolveBrandId((import.meta.env.VITE_APP_BRAND as string | undefined) ?? '55nord')]
 
 export const applyBranding = () => {
   if (typeof document === 'undefined') {

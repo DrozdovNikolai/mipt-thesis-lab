@@ -22,7 +22,7 @@ export function initializeMonitoring(app: App) {
     beforeSend(event) {
       event.tags = {
         ...event.tags,
-        app: 'firefly-commander',
+        app: '55north-commander',
         brand: APP_BRAND.id,
         framework: 'vue',
       }

@@ -1,4 +1,3 @@
-// Fixtures extracted from the verified React baseline: training-sessions-route.spec.ts
 // Source SHA-256: 89c5423dc1235bc4a099e1753ea3ae5ae29327220454768dcc1d716454f61524
 import type { Page } from '@playwright/test'
 

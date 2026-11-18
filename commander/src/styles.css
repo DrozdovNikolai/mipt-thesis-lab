@@ -131,13 +131,6 @@
     min-height: 17px;
   }
 
-  .sidebar-brand-logo-image {
-    display: block;
-    height: 17px;
-    width: auto;
-    max-width: 100%;
-  }
-
   .app-shell-scroll-area {
     scrollbar-gutter: stable both-edges;
     overscroll-behavior: contain;

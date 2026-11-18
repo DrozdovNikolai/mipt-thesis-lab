@@ -1,4 +1,3 @@
-// Fixtures extracted from the verified React baseline: pilot-profile-route.spec.ts
 // Source SHA-256: be70bfa1a3a2cad843292dd9a6848cf02e77195328e4c2b46e4529b4b7c60845
 import type { Page } from '@playwright/test'
 

@@ -1,7 +1,6 @@
 node_modules
 dist*
 public
-migration
 *.md
 package-lock.json
 playwright-report

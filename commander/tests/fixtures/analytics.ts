@@ -1,4 +1,3 @@
-// Fixtures extracted from the verified React baseline: analytics-layout.spec.ts
 // Source SHA-256: 420e75c4a95951b9f8f5e7fc137ad3ffca4291707ccf10dfe276d3058d160b33
 import type { Page } from '@playwright/test'
 

@@ -9,8 +9,8 @@ import { chromium } from '@playwright/test'
 
 // Direct CDP avoids Playwright's unconditional focus emulation. No visibility mock.
 const origin = 'http://127.0.0.1:8088'
-const fixture = JSON.parse(await readFile('migration/evidence/m9/backend-fixture.json', 'utf8'))
-const directory = 'migration/evidence/m9/native-print'
+const fixture = JSON.parse(await readFile('tests/fixtures/backend-fixture.json', 'utf8'))
+const directory = 'test-results/native-print'
 await mkdir(directory, { recursive: true })
 const profile = await mkdtemp(join(tmpdir(), 'commander-native-print-'))
 const browser = spawn(

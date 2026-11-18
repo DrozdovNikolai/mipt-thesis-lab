@@ -31,7 +31,7 @@ describe('release monitoring', () => {
     })
     expect(options.beforeSend({ tags: { existing: 'preserved' } }).tags).toMatchObject({
       existing: 'preserved',
-      app: 'firefly-commander',
+      app: '55north-commander',
       brand: '55nord',
       framework: 'vue',
     })

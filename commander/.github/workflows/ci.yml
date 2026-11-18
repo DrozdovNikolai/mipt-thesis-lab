@@ -6,9 +6,6 @@ jobs:
   check:
     runs-on: ubuntu-latest
     timeout-minutes: 20
-    strategy:
-      matrix:
-        brand: [55nord, firefly]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -19,7 +16,7 @@ jobs:
       - run: npm run format:check
       - run: npm run lint
       - run: npm run test:unit
-      - run: npm run build:${{ matrix.brand }}
+      - run: npm run build:55nord
         env:
           VITE_APP_VERSION: ${{ github.sha }}
           VITE_APP_ENV: production
@@ -28,18 +25,16 @@ jobs:
         env:
           COMMANDER_TEST_PREVIEW: '1'
       - run: npx playwright install --with-deps firefox webkit
-        if: matrix.brand == '55nord'
       - run: npm run test:browsers
-        if: matrix.brand == '55nord'
       - uses: actions/upload-artifact@v4
         with:
-          name: commander-${{ matrix.brand }}-${{ github.sha }}
+          name: commander-${{ github.sha }}
           path: dist/
           retention-days: 30
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: commander-checks-${{ matrix.brand }}
+          name: commander-checks
           path: |
             playwright-report/
             test-results/

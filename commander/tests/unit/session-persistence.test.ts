@@ -5,7 +5,7 @@ import {
   writePersistedSession,
 } from '@/entities/session/persistence'
 
-describe('React-compatible session persistence', () => {
+describe('Session persistence', () => {
   it('writes the Zustand v0 envelope and reads the same tokens', () => {
     const state = { tokens: { accessToken: 'a', refreshToken: 'r' }, user: null, privileges: [] }
     expect(writePersistedSession(localStorage, state)).toBe(true)

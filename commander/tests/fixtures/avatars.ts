@@ -1,4 +1,3 @@
-// Fixtures extracted from the verified React baseline: pilots-avatar-route.spec.ts
 // Source SHA-256: 5feceab7b735b3707ca70460ba0f39d99b8c2278c9f7aa7cc12fd5a6db49ec15
 import type { Page } from '@playwright/test'
 

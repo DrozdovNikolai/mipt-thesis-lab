@@ -12,7 +12,6 @@ export default tseslint.config(
       'coverage/**',
       'test-results/**',
       'playwright-report/**',
-      'migration/evidence/**',
       'src/**/*.generated.ts',
     ],
   },

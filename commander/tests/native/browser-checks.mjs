@@ -11,8 +11,8 @@ import { chromium } from '@playwright/test'
 
 // Direct CDP avoids Playwright's unconditional focus emulation. No visibility mock.
 const origin = 'http://127.0.0.1:8088'
-const fixture = JSON.parse(await readFile('migration/evidence/m9/backend-fixture.json', 'utf8'))
-const directory = 'migration/evidence/m9/native-tabs'
+const fixture = JSON.parse(await readFile('tests/fixtures/backend-fixture.json', 'utf8'))
+const directory = 'test-results/native-tabs'
 await mkdir(directory, { recursive: true })
 const profile = await mkdtemp(join(tmpdir(), 'commander-native-tabs-'))
 const browser = spawn(
@@ -318,7 +318,7 @@ try {
       1,
       'This must be browser zoom, not pinch emulation',
     )
-    await mkdir('migration/evidence/m9/native-zoom', { recursive: true })
+    await mkdir('test-results/native-zoom', { recursive: true })
     const zoomResults = []
     for (const [name, path] of [
       ['pilots', '/pilots'],
@@ -382,7 +382,7 @@ try {
       assert.deepEqual(await evaluate('window.nativeErrors'), [])
       const screenshot = await send('Page.captureScreenshot', { format: 'png' }, sessionId)
       await writeFile(
-        `migration/evidence/m9/native-zoom/${name}-controls.png`,
+        `test-results/native-zoom/${name}-controls.png`,
         Buffer.from(screenshot.data, 'base64'),
       )
       await evaluate(
@@ -390,7 +390,7 @@ try {
       )
       const topScreenshot = await send('Page.captureScreenshot', { format: 'png' }, sessionId)
       await writeFile(
-        `migration/evidence/m9/native-zoom/${name}.png`,
+        `test-results/native-zoom/${name}.png`,
         Buffer.from(topScreenshot.data, 'base64'),
       )
       zoomResults.push({ name, path, ...controls })
@@ -399,7 +399,7 @@ try {
       )
     }
     await writeFile(
-      'migration/evidence/m9/native-zoom/results.json',
+      'test-results/native-zoom/results.json',
       JSON.stringify(
         {
           checkedAt: new Date().toISOString(),
@@ -500,9 +500,9 @@ try {
         remaining.some((item) => item.id === created.id),
         'Escape must not delete the training type',
       )
-      await mkdir('migration/evidence/m9/native-confirm', { recursive: true })
+      await mkdir('test-results/native-confirm', { recursive: true })
       await writeFile(
-        'migration/evidence/m9/native-confirm/results.json',
+        'test-results/native-confirm/results.json',
         JSON.stringify(
           {
             checkedAt: new Date().toISOString(),

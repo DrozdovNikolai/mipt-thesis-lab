@@ -13,7 +13,7 @@ const active = (item: { to: string; end?: boolean }) =>
     class="flex w-full shrink-0 flex-col border-b border-chrome-line bg-chrome p-4 md:h-full md:w-64 md:self-stretch md:overflow-y-auto md:border-b-0 md:border-r"
   >
     <div class="mb-6 flex min-h-11 items-center px-1">
-      <BrandLogo class="sidebar-brand-logo" image-class-name="sidebar-brand-logo-image" />
+      <BrandLogo class="sidebar-brand-logo" />
     </div>
     <nav class="flex flex-col gap-1">
       <RouterLink
