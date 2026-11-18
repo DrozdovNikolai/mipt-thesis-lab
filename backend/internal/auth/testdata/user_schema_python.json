@@ -1,0 +1,2918 @@
+{
+  "cases": [
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123"
+      },
+      "value": {
+        "login": "new-user",
+        "email": "User@example.com",
+        "password": "password123",
+        "roles": [],
+        "aircraft_ids": []
+      }
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": null,
+        "email": "User@EXAMPLE.COM",
+        "password": "password123"
+      },
+      "errors": [
+        {
+          "type": "string_type",
+          "loc": [
+            "login"
+          ],
+          "msg": "Input should be a valid string",
+          "input": null,
+          "url": "https://errors.pydantic.dev/2.6/v/string_type"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": true,
+        "email": "User@EXAMPLE.COM",
+        "password": "password123"
+      },
+      "errors": [
+        {
+          "type": "string_type",
+          "loc": [
+            "login"
+          ],
+          "msg": "Input should be a valid string",
+          "input": true,
+          "url": "https://errors.pydantic.dev/2.6/v/string_type"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": 3,
+        "email": "User@EXAMPLE.COM",
+        "password": "password123"
+      },
+      "errors": [
+        {
+          "type": "string_type",
+          "loc": [
+            "login"
+          ],
+          "msg": "Input should be a valid string",
+          "input": 3,
+          "url": "https://errors.pydantic.dev/2.6/v/string_type"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123"
+      },
+      "errors": [
+        {
+          "type": "string_too_short",
+          "loc": [
+            "login"
+          ],
+          "msg": "String should have at least 3 characters",
+          "input": "",
+          "ctx": {
+            "minLength": 3
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/string_too_short"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "ab",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123"
+      },
+      "errors": [
+        {
+          "type": "string_too_short",
+          "loc": [
+            "login"
+          ],
+          "msg": "String should have at least 3 characters",
+          "input": "ab",
+          "ctx": {
+            "minLength": 3
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/string_too_short"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123"
+      },
+      "errors": [
+        {
+          "type": "string_too_long",
+          "loc": [
+            "login"
+          ],
+          "msg": "String should have at most 50 characters",
+          "input": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "ctx": {
+            "maxLength": 50
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/string_too_long"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": null,
+        "password": "password123"
+      },
+      "errors": [
+        {
+          "type": "string_type",
+          "loc": [
+            "email"
+          ],
+          "msg": "Input should be a valid string",
+          "input": null,
+          "url": "https://errors.pydantic.dev/2.6/v/string_type"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": false,
+        "password": "password123"
+      },
+      "errors": [
+        {
+          "type": "string_type",
+          "loc": [
+            "email"
+          ],
+          "msg": "Input should be a valid string",
+          "input": false,
+          "url": "https://errors.pydantic.dev/2.6/v/string_type"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "Name <User@example.com>",
+        "password": "password123"
+      },
+      "value": {
+        "login": "new-user",
+        "email": "User@example.com",
+        "password": "password123",
+        "roles": [],
+        "aircraft_ids": []
+      }
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "missing",
+        "password": "password123"
+      },
+      "errors": [
+        {
+          "type": "value_error",
+          "loc": [
+            "email"
+          ],
+          "msg": "value is not a valid email address: The email address is not valid. It must have exactly one @-sign.",
+          "input": "missing",
+          "ctx": {
+            "reason": "The email address is not valid. It must have exactly one @-sign."
+          }
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "a@⒈.com",
+        "password": "password123"
+      },
+      "errors": [
+        {
+          "type": "value_error",
+          "loc": [
+            "email"
+          ],
+          "msg": "value is not a valid email address: The part after the @-sign contains invalid characters (Codepoint U+2488 not allowed at position 1 in '⒈.com').",
+          "input": "a@⒈.com",
+          "ctx": {
+            "reason": "The part after the @-sign contains invalid characters (Codepoint U+2488 not allowed at position 1 in '⒈.com')."
+          }
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": null
+      },
+      "errors": [
+        {
+          "type": "string_type",
+          "loc": [
+            "password"
+          ],
+          "msg": "Input should be a valid string",
+          "input": null,
+          "url": "https://errors.pydantic.dev/2.6/v/string_type"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": false
+      },
+      "errors": [
+        {
+          "type": "string_type",
+          "loc": [
+            "password"
+          ],
+          "msg": "Input should be a valid string",
+          "input": false,
+          "url": "https://errors.pydantic.dev/2.6/v/string_type"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": ""
+      },
+      "errors": [
+        {
+          "type": "string_too_short",
+          "loc": [
+            "password"
+          ],
+          "msg": "String should have at least 8 characters",
+          "input": "",
+          "ctx": {
+            "minLength": 8
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/string_too_short"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "xxxxxxx"
+      },
+      "errors": [
+        {
+          "type": "string_too_short",
+          "loc": [
+            "password"
+          ],
+          "msg": "String should have at least 8 characters",
+          "input": "xxxxxxx",
+          "ctx": {
+            "minLength": 8
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/string_too_short"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      },
+      "errors": [
+        {
+          "type": "string_too_long",
+          "loc": [
+            "password"
+          ],
+          "msg": "String should have at most 128 characters",
+          "input": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "ctx": {
+            "maxLength": 128
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/string_too_long"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "roles": null
+      },
+      "errors": [
+        {
+          "type": "list_type",
+          "loc": [
+            "roles"
+          ],
+          "msg": "Input should be a valid list",
+          "input": null,
+          "url": "https://errors.pydantic.dev/2.6/v/list_type"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "roles": []
+      },
+      "value": {
+        "login": "new-user",
+        "email": "User@example.com",
+        "password": "password123",
+        "roles": [],
+        "aircraft_ids": []
+      }
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "roles": [
+          "00000000-0000-0000-0000-000000000000"
+        ]
+      },
+      "value": {
+        "login": "new-user",
+        "email": "User@example.com",
+        "password": "password123",
+        "roles": [
+          "00000000-0000-0000-0000-000000000000"
+        ],
+        "aircraft_ids": []
+      }
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "roles": [
+          "bad"
+        ]
+      },
+      "errors": [
+        {
+          "type": "uuid_parsing",
+          "loc": [
+            "roles",
+            0
+          ],
+          "msg": "Input should be a valid UUID, invalid length: expected length 32 for simple format, found 3",
+          "input": "bad",
+          "ctx": {
+            "error": "invalid length: expected length 32 for simple format, found 3"
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/uuid_parsing"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "roles": [
+          3
+        ]
+      },
+      "errors": [
+        {
+          "type": "uuid_type",
+          "loc": [
+            "roles",
+            0
+          ],
+          "msg": "UUID input should be a string, bytes or UUID object",
+          "input": 3,
+          "url": "https://errors.pydantic.dev/2.6/v/uuid_type"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "airlineId": null
+      },
+      "value": {
+        "login": "new-user",
+        "email": "User@example.com",
+        "password": "password123",
+        "airline_id": null,
+        "roles": [],
+        "aircraft_ids": []
+      }
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "airlineId": true
+      },
+      "value": {
+        "login": "new-user",
+        "email": "User@example.com",
+        "password": "password123",
+        "airline_id": 1,
+        "roles": [],
+        "aircraft_ids": []
+      }
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "airlineId": -1
+      },
+      "value": {
+        "login": "new-user",
+        "email": "User@example.com",
+        "password": "password123",
+        "airline_id": -1,
+        "roles": [],
+        "aircraft_ids": []
+      }
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "airlineId": 0
+      },
+      "value": {
+        "login": "new-user",
+        "email": "User@example.com",
+        "password": "password123",
+        "airline_id": 0,
+        "roles": [],
+        "aircraft_ids": []
+      }
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "airlineId": 1
+      },
+      "value": {
+        "login": "new-user",
+        "email": "User@example.com",
+        "password": "password123",
+        "airline_id": 1,
+        "roles": [],
+        "aircraft_ids": []
+      }
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "airlineId": 1208925819614629174706176
+      },
+      "value": {
+        "login": "new-user",
+        "email": "User@example.com",
+        "password": "password123",
+        "airline_id": 1208925819614629174706176,
+        "roles": [],
+        "aircraft_ids": []
+      }
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "airlineId": " 1"
+      },
+      "errors": [
+        {
+          "type": "int_parsing",
+          "loc": [
+            "airlineId"
+          ],
+          "msg": "Input should be a valid integer, unable to parse string as an integer",
+          "input": " 1",
+          "url": "https://errors.pydantic.dev/2.6/v/int_parsing"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "airlineId": "1.0"
+      },
+      "value": {
+        "login": "new-user",
+        "email": "User@example.com",
+        "password": "password123",
+        "airline_id": 1,
+        "roles": [],
+        "aircraft_ids": []
+      }
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "airlineId": 1.5
+      },
+      "errors": [
+        {
+          "type": "int_from_float",
+          "loc": [
+            "airlineId"
+          ],
+          "msg": "Input should be a valid integer, got a number with a fractional part",
+          "input": 1.5,
+          "url": "https://errors.pydantic.dev/2.6/v/int_from_float"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "aircraftIds": null
+      },
+      "errors": [
+        {
+          "type": "list_type",
+          "loc": [
+            "aircraftIds"
+          ],
+          "msg": "Input should be a valid list",
+          "input": null,
+          "url": "https://errors.pydantic.dev/2.6/v/list_type"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "aircraftIds": []
+      },
+      "value": {
+        "login": "new-user",
+        "email": "User@example.com",
+        "password": "password123",
+        "aircraft_ids": [],
+        "roles": []
+      }
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "aircraftIds": [
+          true,
+          false,
+          1,
+          1.0,
+          0,
+          -2,
+          " a320 ",
+          "١",
+          "²"
+        ]
+      },
+      "value": {
+        "login": "new-user",
+        "email": "User@example.com",
+        "password": "password123",
+        "aircraft_ids": [
+          1,
+          0,
+          1,
+          1,
+          0,
+          -2,
+          " a320 ",
+          "١",
+          "²"
+        ],
+        "roles": []
+      }
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "aircraftIds": [
+          null
+        ]
+      },
+      "errors": [
+        {
+          "type": "int_type",
+          "loc": [
+            "aircraftIds",
+            0,
+            "int"
+          ],
+          "msg": "Input should be a valid integer",
+          "input": null,
+          "url": "https://errors.pydantic.dev/2.6/v/int_type"
+        },
+        {
+          "type": "string_type",
+          "loc": [
+            "aircraftIds",
+            0,
+            "str"
+          ],
+          "msg": "Input should be a valid string",
+          "input": null,
+          "url": "https://errors.pydantic.dev/2.6/v/string_type"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "aircraftIds": [
+          {}
+        ]
+      },
+      "errors": [
+        {
+          "type": "int_type",
+          "loc": [
+            "aircraftIds",
+            0,
+            "int"
+          ],
+          "msg": "Input should be a valid integer",
+          "input": {},
+          "url": "https://errors.pydantic.dev/2.6/v/int_type"
+        },
+        {
+          "type": "string_type",
+          "loc": [
+            "aircraftIds",
+            0,
+            "str"
+          ],
+          "msg": "Input should be a valid string",
+          "input": {},
+          "url": "https://errors.pydantic.dev/2.6/v/string_type"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "aircraftIds": [
+          1.25
+        ]
+      },
+      "errors": [
+        {
+          "type": "int_from_float",
+          "loc": [
+            "aircraftIds",
+            0,
+            "int"
+          ],
+          "msg": "Input should be a valid integer, got a number with a fractional part",
+          "input": 1.25,
+          "url": "https://errors.pydantic.dev/2.6/v/int_from_float"
+        },
+        {
+          "type": "string_type",
+          "loc": [
+            "aircraftIds",
+            0,
+            "str"
+          ],
+          "msg": "Input should be a valid string",
+          "input": 1.25,
+          "url": "https://errors.pydantic.dev/2.6/v/string_type"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "firstName": null
+      },
+      "value": {
+        "login": "new-user",
+        "email": "User@example.com",
+        "password": "password123",
+        "first_name": null,
+        "roles": [],
+        "aircraft_ids": []
+      }
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "firstName": 42
+      },
+      "errors": [
+        {
+          "type": "string_type",
+          "loc": [
+            "firstName"
+          ],
+          "msg": "Input should be a valid string",
+          "input": 42,
+          "url": "https://errors.pydantic.dev/2.6/v/string_type"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "firstName": ""
+      },
+      "value": {
+        "login": "new-user",
+        "email": "User@example.com",
+        "password": "password123",
+        "first_name": "",
+        "roles": [],
+        "aircraft_ids": []
+      }
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "firstName": "ééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééé"
+      },
+      "errors": [
+        {
+          "type": "string_too_long",
+          "loc": [
+            "firstName"
+          ],
+          "msg": "String should have at most 100 characters",
+          "input": "ééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééé",
+          "ctx": {
+            "maxLength": 100
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/string_too_long"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "lastName": null
+      },
+      "value": {
+        "login": "new-user",
+        "email": "User@example.com",
+        "password": "password123",
+        "last_name": null,
+        "roles": [],
+        "aircraft_ids": []
+      }
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "lastName": false
+      },
+      "errors": [
+        {
+          "type": "string_type",
+          "loc": [
+            "lastName"
+          ],
+          "msg": "Input should be a valid string",
+          "input": false,
+          "url": "https://errors.pydantic.dev/2.6/v/string_type"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "lastName": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      },
+      "errors": [
+        {
+          "type": "string_too_long",
+          "loc": [
+            "lastName"
+          ],
+          "msg": "String should have at most 100 characters",
+          "input": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "ctx": {
+            "maxLength": 100
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/string_too_long"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "dateOfBirth": null
+      },
+      "value": {
+        "login": "new-user",
+        "email": "User@example.com",
+        "password": "password123",
+        "date_of_birth": null,
+        "roles": [],
+        "aircraft_ids": []
+      }
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "dateOfBirth": false
+      },
+      "errors": [
+        {
+          "type": "date_type",
+          "loc": [
+            "dateOfBirth"
+          ],
+          "msg": "Input should be a valid date",
+          "input": false,
+          "url": "https://errors.pydantic.dev/2.6/v/date_type"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "dateOfBirth": {}
+      },
+      "errors": [
+        {
+          "type": "date_type",
+          "loc": [
+            "dateOfBirth"
+          ],
+          "msg": "Input should be a valid date",
+          "input": {},
+          "url": "https://errors.pydantic.dev/2.6/v/date_type"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "dateOfBirth": []
+      },
+      "errors": [
+        {
+          "type": "date_type",
+          "loc": [
+            "dateOfBirth"
+          ],
+          "msg": "Input should be a valid date",
+          "input": [],
+          "url": "https://errors.pydantic.dev/2.6/v/date_type"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "dateOfBirth": 0
+      },
+      "value": {
+        "login": "new-user",
+        "email": "User@example.com",
+        "password": "password123",
+        "date_of_birth": "1970-01-01",
+        "roles": [],
+        "aircraft_ids": []
+      }
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "dateOfBirth": 1
+      },
+      "errors": [
+        {
+          "type": "date_from_datetime_inexact",
+          "loc": [
+            "dateOfBirth"
+          ],
+          "msg": "Datetimes provided to dates should have zero time - e.g. be exact dates",
+          "input": 1,
+          "url": "https://errors.pydantic.dev/2.6/v/date_from_datetime_inexact"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "dateOfBirth": -86400
+      },
+      "value": {
+        "login": "new-user",
+        "email": "User@example.com",
+        "password": "password123",
+        "date_of_birth": "1969-12-31",
+        "roles": [],
+        "aircraft_ids": []
+      }
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "dateOfBirth": "2000-02-29"
+      },
+      "value": {
+        "login": "new-user",
+        "email": "User@example.com",
+        "password": "password123",
+        "date_of_birth": "2000-02-29",
+        "roles": [],
+        "aircraft_ids": []
+      }
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "dateOfBirth": "2099-01-01"
+      },
+      "errors": [
+        {
+          "type": "value_error",
+          "loc": [
+            "dateOfBirth"
+          ],
+          "msg": "Value error, date_of_birth cannot be in the future",
+          "input": "2099-01-01",
+          "ctx": {
+            "error": {}
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/value_error"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "dateOfBirth": "2025-02-29"
+      },
+      "errors": [
+        {
+          "type": "date_from_datetime_parsing",
+          "loc": [
+            "dateOfBirth"
+          ],
+          "msg": "Input should be a valid date or datetime, day value is outside expected range",
+          "input": "2025-02-29",
+          "ctx": {
+            "error": "day value is outside expected range"
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/date_from_datetime_parsing"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "dateOfBirth": "2000-02-29T00:00:00+03:00"
+      },
+      "value": {
+        "login": "new-user",
+        "email": "User@example.com",
+        "password": "password123",
+        "date_of_birth": "2000-02-29",
+        "roles": [],
+        "aircraft_ids": []
+      }
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "dateOfBirth": "2000-02-29T00:00:01Z"
+      },
+      "errors": [
+        {
+          "type": "date_from_datetime_inexact",
+          "loc": [
+            "dateOfBirth"
+          ],
+          "msg": "Datetimes provided to dates should have zero time - e.g. be exact dates",
+          "input": "2000-02-29T00:00:01Z",
+          "url": "https://errors.pydantic.dev/2.6/v/date_from_datetime_inexact"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "dateOfBirth": "not date"
+      },
+      "errors": [
+        {
+          "type": "date_from_datetime_parsing",
+          "loc": [
+            "dateOfBirth"
+          ],
+          "msg": "Input should be a valid date or datetime, input is too short",
+          "input": "not date",
+          "ctx": {
+            "error": "input is too short"
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/date_from_datetime_parsing"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "dateOfBirth": ""
+      },
+      "errors": [
+        {
+          "type": "date_from_datetime_parsing",
+          "loc": [
+            "dateOfBirth"
+          ],
+          "msg": "Input should be a valid date or datetime, input is too short",
+          "input": "",
+          "ctx": {
+            "error": "input is too short"
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/date_from_datetime_parsing"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "positionId": null
+      },
+      "value": {
+        "login": "new-user",
+        "email": "User@example.com",
+        "password": "password123",
+        "position_id": null,
+        "roles": [],
+        "aircraft_ids": []
+      }
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "positionId": 0
+      },
+      "errors": [
+        {
+          "type": "greater_than_equal",
+          "loc": [
+            "positionId"
+          ],
+          "msg": "Input should be greater than or equal to 1",
+          "input": 0,
+          "ctx": {
+            "ge": 1
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/greater_than_equal"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "positionId": -1
+      },
+      "errors": [
+        {
+          "type": "greater_than_equal",
+          "loc": [
+            "positionId"
+          ],
+          "msg": "Input should be greater than or equal to 1",
+          "input": -1,
+          "ctx": {
+            "ge": 1
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/greater_than_equal"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "positionId": 1
+      },
+      "value": {
+        "login": "new-user",
+        "email": "User@example.com",
+        "password": "password123",
+        "position_id": 1,
+        "roles": [],
+        "aircraft_ids": []
+      }
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "positionId": "1"
+      },
+      "value": {
+        "login": "new-user",
+        "email": "User@example.com",
+        "password": "password123",
+        "position_id": 1,
+        "roles": [],
+        "aircraft_ids": []
+      }
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "positionId": 1208925819614629174706176
+      },
+      "value": {
+        "login": "new-user",
+        "email": "User@example.com",
+        "password": "password123",
+        "position_id": 1208925819614629174706176,
+        "roles": [],
+        "aircraft_ids": []
+      }
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "positionId": 1.5
+      },
+      "errors": [
+        {
+          "type": "int_from_float",
+          "loc": [
+            "positionId"
+          ],
+          "msg": "Input should be a valid integer, got a number with a fractional part",
+          "input": 1.5,
+          "url": "https://errors.pydantic.dev/2.6/v/int_from_float"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "licenseNumber": null
+      },
+      "value": {
+        "login": "new-user",
+        "email": "User@example.com",
+        "password": "password123",
+        "license_number": null,
+        "roles": [],
+        "aircraft_ids": []
+      }
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "licenseNumber": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      },
+      "errors": [
+        {
+          "type": "string_too_long",
+          "loc": [
+            "licenseNumber"
+          ],
+          "msg": "String should have at most 50 characters",
+          "input": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "ctx": {
+            "maxLength": 50
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/string_too_long"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "phone": null
+      },
+      "value": {
+        "login": "new-user",
+        "email": "User@example.com",
+        "password": "password123",
+        "phone": null,
+        "roles": [],
+        "aircraft_ids": []
+      }
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "phone": false
+      },
+      "errors": [
+        {
+          "type": "string_type",
+          "loc": [
+            "phone"
+          ],
+          "msg": "Input should be a valid string",
+          "input": false,
+          "url": "https://errors.pydantic.dev/2.6/v/string_type"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "phone": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      },
+      "errors": [
+        {
+          "type": "string_too_long",
+          "loc": [
+            "phone"
+          ],
+          "msg": "String should have at most 30 characters",
+          "input": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "ctx": {
+            "maxLength": 30
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/string_too_long"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "isActive": false
+      },
+      "errors": [
+        {
+          "type": "extra_forbidden",
+          "loc": [
+            "isActive"
+          ],
+          "msg": "Extra inputs are not permitted",
+          "input": false,
+          "url": "https://errors.pydantic.dev/2.6/v/extra_forbidden"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "mustChangePassword": true
+      },
+      "errors": [
+        {
+          "type": "extra_forbidden",
+          "loc": [
+            "mustChangePassword"
+          ],
+          "msg": "Extra inputs are not permitted",
+          "input": true,
+          "url": "https://errors.pydantic.dev/2.6/v/extra_forbidden"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": [],
+      "errors": [
+        {
+          "type": "model_attributes_type",
+          "loc": [],
+          "msg": "Input should be a valid dictionary or object to extract fields from",
+          "input": [],
+          "url": "https://errors.pydantic.dev/2.6/v/model_attributes_type"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": null,
+      "errors": [
+        {
+          "type": "model_attributes_type",
+          "loc": [],
+          "msg": "Input should be a valid dictionary or object to extract fields from",
+          "input": null,
+          "url": "https://errors.pydantic.dev/2.6/v/model_attributes_type"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "unknown": 1,
+        "airlineId": "bad",
+        "firstName": 3
+      },
+      "errors": [
+        {
+          "type": "int_parsing",
+          "loc": [
+            "airlineId"
+          ],
+          "msg": "Input should be a valid integer, unable to parse string as an integer",
+          "input": "bad",
+          "url": "https://errors.pydantic.dev/2.6/v/int_parsing"
+        },
+        {
+          "type": "string_type",
+          "loc": [
+            "firstName"
+          ],
+          "msg": "Input should be a valid string",
+          "input": 3,
+          "url": "https://errors.pydantic.dev/2.6/v/string_type"
+        },
+        {
+          "type": "extra_forbidden",
+          "loc": [
+            "unknown"
+          ],
+          "msg": "Extra inputs are not permitted",
+          "input": 1,
+          "url": "https://errors.pydantic.dev/2.6/v/extra_forbidden"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "airline_id": 1,
+        "airlineId": 2
+      },
+      "errors": [
+        {
+          "type": "extra_forbidden",
+          "loc": [
+            "airline_id"
+          ],
+          "msg": "Extra inputs are not permitted",
+          "input": 1,
+          "url": "https://errors.pydantic.dev/2.6/v/extra_forbidden"
+        }
+      ]
+    },
+    {
+      "model": "UserCreate",
+      "input": {
+        "login": "new-user",
+        "email": "User@EXAMPLE.COM",
+        "password": "password123",
+        "first_name": "snake",
+        "firstName": "camel"
+      },
+      "errors": [
+        {
+          "type": "extra_forbidden",
+          "loc": [
+            "first_name"
+          ],
+          "msg": "Extra inputs are not permitted",
+          "input": "snake",
+          "url": "https://errors.pydantic.dev/2.6/v/extra_forbidden"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {},
+      "value": {}
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "login": null
+      },
+      "value": {
+        "login": null
+      }
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "login": true
+      },
+      "errors": [
+        {
+          "type": "string_type",
+          "loc": [
+            "login"
+          ],
+          "msg": "Input should be a valid string",
+          "input": true,
+          "url": "https://errors.pydantic.dev/2.6/v/string_type"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "login": 3
+      },
+      "errors": [
+        {
+          "type": "string_type",
+          "loc": [
+            "login"
+          ],
+          "msg": "Input should be a valid string",
+          "input": 3,
+          "url": "https://errors.pydantic.dev/2.6/v/string_type"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "login": ""
+      },
+      "errors": [
+        {
+          "type": "string_too_short",
+          "loc": [
+            "login"
+          ],
+          "msg": "String should have at least 3 characters",
+          "input": "",
+          "ctx": {
+            "minLength": 3
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/string_too_short"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "login": "ab"
+      },
+      "errors": [
+        {
+          "type": "string_too_short",
+          "loc": [
+            "login"
+          ],
+          "msg": "String should have at least 3 characters",
+          "input": "ab",
+          "ctx": {
+            "minLength": 3
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/string_too_short"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "login": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      },
+      "errors": [
+        {
+          "type": "string_too_long",
+          "loc": [
+            "login"
+          ],
+          "msg": "String should have at most 50 characters",
+          "input": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "ctx": {
+            "maxLength": 50
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/string_too_long"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "email": null
+      },
+      "value": {
+        "email": null
+      }
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "email": false
+      },
+      "errors": [
+        {
+          "type": "string_type",
+          "loc": [
+            "email"
+          ],
+          "msg": "Input should be a valid string",
+          "input": false,
+          "url": "https://errors.pydantic.dev/2.6/v/string_type"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "email": "Name <User@example.com>"
+      },
+      "value": {
+        "email": "User@example.com"
+      }
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "email": "missing"
+      },
+      "errors": [
+        {
+          "type": "value_error",
+          "loc": [
+            "email"
+          ],
+          "msg": "value is not a valid email address: The email address is not valid. It must have exactly one @-sign.",
+          "input": "missing",
+          "ctx": {
+            "reason": "The email address is not valid. It must have exactly one @-sign."
+          }
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "email": "a@⒈.com"
+      },
+      "errors": [
+        {
+          "type": "value_error",
+          "loc": [
+            "email"
+          ],
+          "msg": "value is not a valid email address: The part after the @-sign contains invalid characters (Codepoint U+2488 not allowed at position 1 in '⒈.com').",
+          "input": "a@⒈.com",
+          "ctx": {
+            "reason": "The part after the @-sign contains invalid characters (Codepoint U+2488 not allowed at position 1 in '⒈.com')."
+          }
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "password": null
+      },
+      "value": {
+        "password": null
+      }
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "password": false
+      },
+      "errors": [
+        {
+          "type": "string_type",
+          "loc": [
+            "password"
+          ],
+          "msg": "Input should be a valid string",
+          "input": false,
+          "url": "https://errors.pydantic.dev/2.6/v/string_type"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "password": ""
+      },
+      "errors": [
+        {
+          "type": "string_too_short",
+          "loc": [
+            "password"
+          ],
+          "msg": "String should have at least 8 characters",
+          "input": "",
+          "ctx": {
+            "minLength": 8
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/string_too_short"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "password": "xxxxxxx"
+      },
+      "errors": [
+        {
+          "type": "string_too_short",
+          "loc": [
+            "password"
+          ],
+          "msg": "String should have at least 8 characters",
+          "input": "xxxxxxx",
+          "ctx": {
+            "minLength": 8
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/string_too_short"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "password": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      },
+      "errors": [
+        {
+          "type": "string_too_long",
+          "loc": [
+            "password"
+          ],
+          "msg": "String should have at most 128 characters",
+          "input": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "ctx": {
+            "maxLength": 128
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/string_too_long"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "roles": null
+      },
+      "errors": [
+        {
+          "type": "extra_forbidden",
+          "loc": [
+            "roles"
+          ],
+          "msg": "Extra inputs are not permitted",
+          "input": null,
+          "url": "https://errors.pydantic.dev/2.6/v/extra_forbidden"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "roles": []
+      },
+      "errors": [
+        {
+          "type": "extra_forbidden",
+          "loc": [
+            "roles"
+          ],
+          "msg": "Extra inputs are not permitted",
+          "input": [],
+          "url": "https://errors.pydantic.dev/2.6/v/extra_forbidden"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "roles": [
+          "00000000-0000-0000-0000-000000000000"
+        ]
+      },
+      "errors": [
+        {
+          "type": "extra_forbidden",
+          "loc": [
+            "roles"
+          ],
+          "msg": "Extra inputs are not permitted",
+          "input": [
+            "00000000-0000-0000-0000-000000000000"
+          ],
+          "url": "https://errors.pydantic.dev/2.6/v/extra_forbidden"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "roles": [
+          "bad"
+        ]
+      },
+      "errors": [
+        {
+          "type": "extra_forbidden",
+          "loc": [
+            "roles"
+          ],
+          "msg": "Extra inputs are not permitted",
+          "input": [
+            "bad"
+          ],
+          "url": "https://errors.pydantic.dev/2.6/v/extra_forbidden"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "roles": [
+          3
+        ]
+      },
+      "errors": [
+        {
+          "type": "extra_forbidden",
+          "loc": [
+            "roles"
+          ],
+          "msg": "Extra inputs are not permitted",
+          "input": [
+            3
+          ],
+          "url": "https://errors.pydantic.dev/2.6/v/extra_forbidden"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "airlineId": null
+      },
+      "value": {
+        "airline_id": null
+      }
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "airlineId": true
+      },
+      "value": {
+        "airline_id": 1
+      }
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "airlineId": -1
+      },
+      "value": {
+        "airline_id": -1
+      }
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "airlineId": 0
+      },
+      "value": {
+        "airline_id": 0
+      }
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "airlineId": 1
+      },
+      "value": {
+        "airline_id": 1
+      }
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "airlineId": 1208925819614629174706176
+      },
+      "value": {
+        "airline_id": 1208925819614629174706176
+      }
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "airlineId": " 1"
+      },
+      "errors": [
+        {
+          "type": "int_parsing",
+          "loc": [
+            "airlineId"
+          ],
+          "msg": "Input should be a valid integer, unable to parse string as an integer",
+          "input": " 1",
+          "url": "https://errors.pydantic.dev/2.6/v/int_parsing"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "airlineId": "1.0"
+      },
+      "value": {
+        "airline_id": 1
+      }
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "airlineId": 1.5
+      },
+      "errors": [
+        {
+          "type": "int_from_float",
+          "loc": [
+            "airlineId"
+          ],
+          "msg": "Input should be a valid integer, got a number with a fractional part",
+          "input": 1.5,
+          "url": "https://errors.pydantic.dev/2.6/v/int_from_float"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "aircraftIds": null
+      },
+      "value": {
+        "aircraft_ids": null
+      }
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "aircraftIds": []
+      },
+      "value": {
+        "aircraft_ids": []
+      }
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "aircraftIds": [
+          true,
+          false,
+          1,
+          1.0,
+          0,
+          -2,
+          " a320 ",
+          "١",
+          "²"
+        ]
+      },
+      "value": {
+        "aircraft_ids": [
+          1,
+          0,
+          1,
+          1,
+          0,
+          -2,
+          " a320 ",
+          "١",
+          "²"
+        ]
+      }
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "aircraftIds": [
+          null
+        ]
+      },
+      "errors": [
+        {
+          "type": "int_type",
+          "loc": [
+            "aircraftIds",
+            0,
+            "int"
+          ],
+          "msg": "Input should be a valid integer",
+          "input": null,
+          "url": "https://errors.pydantic.dev/2.6/v/int_type"
+        },
+        {
+          "type": "string_type",
+          "loc": [
+            "aircraftIds",
+            0,
+            "str"
+          ],
+          "msg": "Input should be a valid string",
+          "input": null,
+          "url": "https://errors.pydantic.dev/2.6/v/string_type"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "aircraftIds": [
+          {}
+        ]
+      },
+      "errors": [
+        {
+          "type": "int_type",
+          "loc": [
+            "aircraftIds",
+            0,
+            "int"
+          ],
+          "msg": "Input should be a valid integer",
+          "input": {},
+          "url": "https://errors.pydantic.dev/2.6/v/int_type"
+        },
+        {
+          "type": "string_type",
+          "loc": [
+            "aircraftIds",
+            0,
+            "str"
+          ],
+          "msg": "Input should be a valid string",
+          "input": {},
+          "url": "https://errors.pydantic.dev/2.6/v/string_type"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "aircraftIds": [
+          1.25
+        ]
+      },
+      "errors": [
+        {
+          "type": "int_from_float",
+          "loc": [
+            "aircraftIds",
+            0,
+            "int"
+          ],
+          "msg": "Input should be a valid integer, got a number with a fractional part",
+          "input": 1.25,
+          "url": "https://errors.pydantic.dev/2.6/v/int_from_float"
+        },
+        {
+          "type": "string_type",
+          "loc": [
+            "aircraftIds",
+            0,
+            "str"
+          ],
+          "msg": "Input should be a valid string",
+          "input": 1.25,
+          "url": "https://errors.pydantic.dev/2.6/v/string_type"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "firstName": null
+      },
+      "value": {
+        "first_name": null
+      }
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "firstName": 42
+      },
+      "errors": [
+        {
+          "type": "string_type",
+          "loc": [
+            "firstName"
+          ],
+          "msg": "Input should be a valid string",
+          "input": 42,
+          "url": "https://errors.pydantic.dev/2.6/v/string_type"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "firstName": ""
+      },
+      "value": {
+        "first_name": ""
+      }
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "firstName": "ééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééé"
+      },
+      "errors": [
+        {
+          "type": "string_too_long",
+          "loc": [
+            "firstName"
+          ],
+          "msg": "String should have at most 100 characters",
+          "input": "ééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééé",
+          "ctx": {
+            "maxLength": 100
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/string_too_long"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "lastName": null
+      },
+      "value": {
+        "last_name": null
+      }
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "lastName": false
+      },
+      "errors": [
+        {
+          "type": "string_type",
+          "loc": [
+            "lastName"
+          ],
+          "msg": "Input should be a valid string",
+          "input": false,
+          "url": "https://errors.pydantic.dev/2.6/v/string_type"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "lastName": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      },
+      "errors": [
+        {
+          "type": "string_too_long",
+          "loc": [
+            "lastName"
+          ],
+          "msg": "String should have at most 100 characters",
+          "input": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "ctx": {
+            "maxLength": 100
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/string_too_long"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "dateOfBirth": null
+      },
+      "value": {
+        "date_of_birth": null
+      }
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "dateOfBirth": false
+      },
+      "errors": [
+        {
+          "type": "date_type",
+          "loc": [
+            "dateOfBirth"
+          ],
+          "msg": "Input should be a valid date",
+          "input": false,
+          "url": "https://errors.pydantic.dev/2.6/v/date_type"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "dateOfBirth": {}
+      },
+      "errors": [
+        {
+          "type": "date_type",
+          "loc": [
+            "dateOfBirth"
+          ],
+          "msg": "Input should be a valid date",
+          "input": {},
+          "url": "https://errors.pydantic.dev/2.6/v/date_type"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "dateOfBirth": []
+      },
+      "errors": [
+        {
+          "type": "date_type",
+          "loc": [
+            "dateOfBirth"
+          ],
+          "msg": "Input should be a valid date",
+          "input": [],
+          "url": "https://errors.pydantic.dev/2.6/v/date_type"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "dateOfBirth": 0
+      },
+      "value": {
+        "date_of_birth": "1970-01-01"
+      }
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "dateOfBirth": 1
+      },
+      "errors": [
+        {
+          "type": "date_from_datetime_inexact",
+          "loc": [
+            "dateOfBirth"
+          ],
+          "msg": "Datetimes provided to dates should have zero time - e.g. be exact dates",
+          "input": 1,
+          "url": "https://errors.pydantic.dev/2.6/v/date_from_datetime_inexact"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "dateOfBirth": -86400
+      },
+      "value": {
+        "date_of_birth": "1969-12-31"
+      }
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "dateOfBirth": "2000-02-29"
+      },
+      "value": {
+        "date_of_birth": "2000-02-29"
+      }
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "dateOfBirth": "2099-01-01"
+      },
+      "errors": [
+        {
+          "type": "value_error",
+          "loc": [
+            "dateOfBirth"
+          ],
+          "msg": "Value error, date_of_birth cannot be in the future",
+          "input": "2099-01-01",
+          "ctx": {
+            "error": {}
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/value_error"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "dateOfBirth": "2025-02-29"
+      },
+      "errors": [
+        {
+          "type": "date_from_datetime_parsing",
+          "loc": [
+            "dateOfBirth"
+          ],
+          "msg": "Input should be a valid date or datetime, day value is outside expected range",
+          "input": "2025-02-29",
+          "ctx": {
+            "error": "day value is outside expected range"
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/date_from_datetime_parsing"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "dateOfBirth": "2000-02-29T00:00:00+03:00"
+      },
+      "value": {
+        "date_of_birth": "2000-02-29"
+      }
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "dateOfBirth": "2000-02-29T00:00:01Z"
+      },
+      "errors": [
+        {
+          "type": "date_from_datetime_inexact",
+          "loc": [
+            "dateOfBirth"
+          ],
+          "msg": "Datetimes provided to dates should have zero time - e.g. be exact dates",
+          "input": "2000-02-29T00:00:01Z",
+          "url": "https://errors.pydantic.dev/2.6/v/date_from_datetime_inexact"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "dateOfBirth": "not date"
+      },
+      "errors": [
+        {
+          "type": "date_from_datetime_parsing",
+          "loc": [
+            "dateOfBirth"
+          ],
+          "msg": "Input should be a valid date or datetime, input is too short",
+          "input": "not date",
+          "ctx": {
+            "error": "input is too short"
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/date_from_datetime_parsing"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "dateOfBirth": ""
+      },
+      "errors": [
+        {
+          "type": "date_from_datetime_parsing",
+          "loc": [
+            "dateOfBirth"
+          ],
+          "msg": "Input should be a valid date or datetime, input is too short",
+          "input": "",
+          "ctx": {
+            "error": "input is too short"
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/date_from_datetime_parsing"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "positionId": null
+      },
+      "value": {
+        "position_id": null
+      }
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "positionId": 0
+      },
+      "errors": [
+        {
+          "type": "greater_than_equal",
+          "loc": [
+            "positionId"
+          ],
+          "msg": "Input should be greater than or equal to 1",
+          "input": 0,
+          "ctx": {
+            "ge": 1
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/greater_than_equal"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "positionId": -1
+      },
+      "errors": [
+        {
+          "type": "greater_than_equal",
+          "loc": [
+            "positionId"
+          ],
+          "msg": "Input should be greater than or equal to 1",
+          "input": -1,
+          "ctx": {
+            "ge": 1
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/greater_than_equal"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "positionId": 1
+      },
+      "value": {
+        "position_id": 1
+      }
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "positionId": "1"
+      },
+      "value": {
+        "position_id": 1
+      }
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "positionId": 1208925819614629174706176
+      },
+      "value": {
+        "position_id": 1208925819614629174706176
+      }
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "positionId": 1.5
+      },
+      "errors": [
+        {
+          "type": "int_from_float",
+          "loc": [
+            "positionId"
+          ],
+          "msg": "Input should be a valid integer, got a number with a fractional part",
+          "input": 1.5,
+          "url": "https://errors.pydantic.dev/2.6/v/int_from_float"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "licenseNumber": null
+      },
+      "value": {
+        "license_number": null
+      }
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "licenseNumber": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      },
+      "errors": [
+        {
+          "type": "string_too_long",
+          "loc": [
+            "licenseNumber"
+          ],
+          "msg": "String should have at most 50 characters",
+          "input": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "ctx": {
+            "maxLength": 50
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/string_too_long"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "phone": null
+      },
+      "value": {
+        "phone": null
+      }
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "phone": false
+      },
+      "errors": [
+        {
+          "type": "string_type",
+          "loc": [
+            "phone"
+          ],
+          "msg": "Input should be a valid string",
+          "input": false,
+          "url": "https://errors.pydantic.dev/2.6/v/string_type"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "phone": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      },
+      "errors": [
+        {
+          "type": "string_too_long",
+          "loc": [
+            "phone"
+          ],
+          "msg": "String should have at most 30 characters",
+          "input": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "ctx": {
+            "maxLength": 30
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/string_too_long"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "isActive": false
+      },
+      "errors": [
+        {
+          "type": "extra_forbidden",
+          "loc": [
+            "isActive"
+          ],
+          "msg": "Extra inputs are not permitted",
+          "input": false,
+          "url": "https://errors.pydantic.dev/2.6/v/extra_forbidden"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "mustChangePassword": true
+      },
+      "errors": [
+        {
+          "type": "extra_forbidden",
+          "loc": [
+            "mustChangePassword"
+          ],
+          "msg": "Extra inputs are not permitted",
+          "input": true,
+          "url": "https://errors.pydantic.dev/2.6/v/extra_forbidden"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": [],
+      "errors": [
+        {
+          "type": "model_attributes_type",
+          "loc": [],
+          "msg": "Input should be a valid dictionary or object to extract fields from",
+          "input": [],
+          "url": "https://errors.pydantic.dev/2.6/v/model_attributes_type"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": null,
+      "errors": [
+        {
+          "type": "model_attributes_type",
+          "loc": [],
+          "msg": "Input should be a valid dictionary or object to extract fields from",
+          "input": null,
+          "url": "https://errors.pydantic.dev/2.6/v/model_attributes_type"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "unknown": 1,
+        "airlineId": "bad",
+        "firstName": 3
+      },
+      "errors": [
+        {
+          "type": "int_parsing",
+          "loc": [
+            "airlineId"
+          ],
+          "msg": "Input should be a valid integer, unable to parse string as an integer",
+          "input": "bad",
+          "url": "https://errors.pydantic.dev/2.6/v/int_parsing"
+        },
+        {
+          "type": "string_type",
+          "loc": [
+            "firstName"
+          ],
+          "msg": "Input should be a valid string",
+          "input": 3,
+          "url": "https://errors.pydantic.dev/2.6/v/string_type"
+        },
+        {
+          "type": "extra_forbidden",
+          "loc": [
+            "unknown"
+          ],
+          "msg": "Extra inputs are not permitted",
+          "input": 1,
+          "url": "https://errors.pydantic.dev/2.6/v/extra_forbidden"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "airline_id": 1,
+        "airlineId": 2
+      },
+      "errors": [
+        {
+          "type": "extra_forbidden",
+          "loc": [
+            "airline_id"
+          ],
+          "msg": "Extra inputs are not permitted",
+          "input": 1,
+          "url": "https://errors.pydantic.dev/2.6/v/extra_forbidden"
+        }
+      ]
+    },
+    {
+      "model": "UserUpdate",
+      "input": {
+        "first_name": "snake",
+        "firstName": "camel"
+      },
+      "errors": [
+        {
+          "type": "extra_forbidden",
+          "loc": [
+            "first_name"
+          ],
+          "msg": "Extra inputs are not permitted",
+          "input": "snake",
+          "url": "https://errors.pydantic.dev/2.6/v/extra_forbidden"
+        }
+      ]
+    },
+    {
+      "model": "UserRolesUpdate",
+      "input": null,
+      "errors": [
+        {
+          "type": "model_attributes_type",
+          "loc": [],
+          "msg": "Input should be a valid dictionary or object to extract fields from",
+          "input": null,
+          "url": "https://errors.pydantic.dev/2.6/v/model_attributes_type"
+        }
+      ]
+    },
+    {
+      "model": "UserRolesUpdate",
+      "input": [],
+      "errors": [
+        {
+          "type": "model_attributes_type",
+          "loc": [],
+          "msg": "Input should be a valid dictionary or object to extract fields from",
+          "input": [],
+          "url": "https://errors.pydantic.dev/2.6/v/model_attributes_type"
+        }
+      ]
+    },
+    {
+      "model": "UserRolesUpdate",
+      "input": {},
+      "errors": [
+        {
+          "type": "missing",
+          "loc": [
+            "roleIds"
+          ],
+          "msg": "Field required",
+          "input": {},
+          "url": "https://errors.pydantic.dev/2.6/v/missing"
+        }
+      ]
+    },
+    {
+      "model": "UserRolesUpdate",
+      "input": {
+        "roleIds": []
+      },
+      "value": {
+        "role_ids": []
+      }
+    },
+    {
+      "model": "UserRolesUpdate",
+      "input": {
+        "role_ids": []
+      },
+      "value": {
+        "role_ids": []
+      }
+    },
+    {
+      "model": "UserRolesUpdate",
+      "input": {
+        "roleIds": null
+      },
+      "errors": [
+        {
+          "type": "list_type",
+          "loc": [
+            "roleIds"
+          ],
+          "msg": "Input should be a valid list",
+          "input": null,
+          "url": "https://errors.pydantic.dev/2.6/v/list_type"
+        }
+      ]
+    },
+    {
+      "model": "UserRolesUpdate",
+      "input": {
+        "roleIds": [
+          "bad",
+          3
+        ]
+      },
+      "errors": [
+        {
+          "type": "uuid_parsing",
+          "loc": [
+            "roleIds",
+            0
+          ],
+          "msg": "Input should be a valid UUID, invalid length: expected length 32 for simple format, found 3",
+          "input": "bad",
+          "ctx": {
+            "error": "invalid length: expected length 32 for simple format, found 3"
+          },
+          "url": "https://errors.pydantic.dev/2.6/v/uuid_parsing"
+        },
+        {
+          "type": "uuid_type",
+          "loc": [
+            "roleIds",
+            1
+          ],
+          "msg": "UUID input should be a string, bytes or UUID object",
+          "input": 3,
+          "url": "https://errors.pydantic.dev/2.6/v/uuid_type"
+        }
+      ]
+    },
+    {
+      "model": "UserRolesUpdate",
+      "input": {
+        "roleIds": [
+          "00000000-0000-0000-0000-000000000001"
+        ],
+        "extra": "ignored"
+      },
+      "value": {
+        "role_ids": [
+          "00000000-0000-0000-0000-000000000001"
+        ]
+      }
+    }
+  ]
+}

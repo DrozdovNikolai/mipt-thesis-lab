@@ -1,0 +1,50 @@
+name: north55-backend
+
+services:
+  api:
+    image: ${NORTH55_IMAGE:?Set the verified Go image tag or digest}
+    env_file: ${NORTH55_ENV_FILE:-../.env}
+    environment:
+      ENVIRONMENT: prod
+      HOST: 0.0.0.0
+      PORT: "8000"
+      DATABASE_URL: ${DATABASE_URL:?Set DATABASE_URL}
+      REDIS_URL: ${REDIS_URL:?Set REDIS_URL}
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY:?Set the existing access token key}
+      JWT_REFRESH_SECRET_KEY: ${JWT_REFRESH_SECRET_KEY:?Set the existing refresh token key}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:?Set ADMIN_PASSWORD}
+      MEDIA_UPLOAD_DIR: /var/lib/55north/media
+      FEEDBACK_UPLOAD_DIR: /var/lib/55north/feedback
+      BACKUP_DIR: /var/lib/55north/backups
+    ports:
+      - "${NORTH55_BIND_HOST:-127.0.0.1}:${NORTH55_HTTP_PORT:-8000}:8000"
+    user: "65532:65532"
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=268435456,mode=1777
+    volumes:
+      - media:/var/lib/55north/media
+      - feedback:/var/lib/55north/feedback
+      - backups:/var/lib/55north/backups:ro
+    networks:
+      - application
+    restart: unless-stopped
+    stop_grace_period: 25s
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+
+volumes:
+  media:
+    external: true
+    name: ${NORTH55_MEDIA_VOLUME:?Set the prepared media volume name}
+  feedback:
+    external: true
+    name: ${NORTH55_FEEDBACK_VOLUME:?Set the prepared feedback volume name}
+  backups:
+    external: true
+    name: ${NORTH55_BACKUPS_VOLUME:?Set the backup volume name}
+
+networks:
+  application:
+    external: true
+    name: ${NORTH55_NETWORK:?Set the network containing PostgreSQL and Redis}
