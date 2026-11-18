@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "55NORD Instructor",
+    "icon": "./assets/mark.png",
+    "slug": "55nord-instructor",
+    "version": "1.0.0",
+    "orientation": "default",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}
