@@ -1,0 +1,27 @@
+{
+  "small": {
+    "S": 157,
+    "D": 21,
+    "I": 19,
+    "N": 1894,
+    "H": 1716,
+    "character_errors": 453,
+    "reference_characters": 13337,
+    "wer_lexical_corpus": 0.10401267159450897,
+    "cer": 0.033965659443653
+  },
+  "large": {
+    "S": 83,
+    "D": 11,
+    "I": 5,
+    "N": 1894,
+    "H": 1800,
+    "character_errors": 259,
+    "reference_characters": 13337,
+    "wer_lexical_corpus": 0.05227032734952482,
+    "cer": 0.019419659593611756
+  },
+  "clips": 100,
+  "relative_gain": 0.4974619289340101,
+  "scope": "new FLEURS RU sentences; general read speech; speaker independence unverified"
+}

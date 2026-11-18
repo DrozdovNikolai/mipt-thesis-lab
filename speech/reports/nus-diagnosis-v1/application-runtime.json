@@ -1,0 +1,8 @@
+{
+  "model": "small",
+  "device": "cpu",
+  "compute_type": "int8",
+  "deployment_candidate": "baseline",
+  "quality_gate_status": "NOT_RUN",
+  "validated_scope": []
+}

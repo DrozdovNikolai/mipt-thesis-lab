@@ -1,0 +1,72 @@
+name: north55-cockpit-hard-v4
+x-common: &common
+  image: north55-speech-train:publisher-v2
+  network_mode: none
+  entrypoint: [python, -u, /code/scripts/cockpit_hard_v4.py]
+  environment:
+    PYTHONPATH: /code/src:/code
+    HF_HUB_OFFLINE: '1'
+    TRANSFORMERS_OFFLINE: '1'
+    CUDA_VISIBLE_DEVICES: '0'
+    LD_LIBRARY_PATH: /opt/venv/lib/python3.11/site-packages/nvidia/cublas/lib:/opt/venv/lib/python3.11/site-packages/nvidia/cudnn/lib
+services:
+  prepare:
+    <<: *common
+    command: [prepare]
+    volumes:
+      - .:/workspace:ro
+      - ./src:/code/src:ro
+      - ./scripts:/code/scripts:ro
+      - ./reports/cockpit-hard-v4:/output
+      - models:/models:ro
+  infer:
+    <<: *common
+    command: [infer]
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['0']
+              capabilities: [gpu]
+    volumes:
+      - ./src:/code/src:ro
+      - ./scripts:/code/scripts:ro
+      - ./reports/cockpit-hard-v4/inference:/study:ro
+      - ./reports/cockpit-hard-v4/predictions:/predictions
+      - audio:/audio:ro
+      - models:/models:ro
+  assemble:
+    <<: *common
+    command: [assemble]
+    volumes:
+      - .:/workspace:ro
+      - ./src:/code/src:ro
+      - ./scripts:/code/scripts:ro
+      - ./reports/cockpit-hard-v4:/output
+      - ./data/curated/cockpit-hard-v4:/dataset
+      - ./data/curated/annotation-hard-v4:/packet
+      - audio:/audio
+  review:
+    image: north55-annotation-tools:0.1.0
+    init: true
+    command: [uvicorn, scripts.review_dataset:factory, --factory, --host, '0.0.0.0', --port, '8010', --workers, '1', --no-access-log]
+    environment:
+      NORTH55_API_KEY: ${NORTH55_API_KEY:?Run bootstrap}
+      NORTH55_SESSION_SECRET: ${NORTH55_SESSION_SECRET:?Run bootstrap}
+      NORTH55_ANNOTATION_ROOT: /packet
+    ports: ['127.0.0.1:8011:8010']
+    volumes:
+      - ./scripts:/app/scripts:ro
+      - ./data/curated/annotation-hard-v4:/packet
+      - audio:/audio:ro
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+    restart: unless-stopped
+volumes:
+  audio:
+    external: true
+    name: north55-speech_audio_data
+  models:
+    external: true
+    name: north55-speech_model_cache

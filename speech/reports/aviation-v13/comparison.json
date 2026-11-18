@@ -1,0 +1,492 @@
+{
+  "plan_sha256": "d557c4ccfedefc59fb39bae46f03c30f0879f59370667e761022a28694fa2a74",
+  "coverage": {
+    "clips": 1901,
+    "minutes": 122.73774583333334,
+    "speakers": 4,
+    "omitted_clips": 0
+  },
+  "scope": "simulated controller speech, four speakers; separate from cockpit evaluation",
+  "metrics": {
+    "lexical": {
+      "small": {
+        "overall": {
+          "S": 8048,
+          "D": 6893,
+          "I": 832,
+          "N": 22642,
+          "H": 7701,
+          "errors": 15773,
+          "wer_percent": 69.66257397756382,
+          "clips": 1901
+        },
+        "speakers": {
+          "sm2": {
+            "S": 645,
+            "D": 507,
+            "I": 49,
+            "N": 1882,
+            "H": 730,
+            "errors": 1201,
+            "wer_percent": 63.81509032943677,
+            "clips": 202
+          },
+          "zf1": {
+            "S": 2490,
+            "D": 2570,
+            "I": 197,
+            "N": 7404,
+            "H": 2344,
+            "errors": 5257,
+            "wer_percent": 71.00216099405726,
+            "clips": 641
+          },
+          "zf2": {
+            "S": 3147,
+            "D": 2448,
+            "I": 336,
+            "N": 8281,
+            "H": 2686,
+            "errors": 5931,
+            "wer_percent": 71.621784808598,
+            "clips": 675
+          },
+          "zf3": {
+            "S": 1766,
+            "D": 1368,
+            "I": 250,
+            "N": 5075,
+            "H": 1941,
+            "errors": 3384,
+            "wer_percent": 66.67980295566502,
+            "clips": 383
+          }
+        }
+      },
+      "atc": {
+        "overall": {
+          "S": 1816,
+          "D": 378,
+          "I": 547,
+          "N": 22642,
+          "H": 20448,
+          "errors": 2741,
+          "wer_percent": 12.105821040544122,
+          "clips": 1901
+        },
+        "speakers": {
+          "sm2": {
+            "S": 110,
+            "D": 25,
+            "I": 57,
+            "N": 1882,
+            "H": 1747,
+            "errors": 192,
+            "wer_percent": 10.201912858660998,
+            "clips": 202
+          },
+          "zf1": {
+            "S": 547,
+            "D": 181,
+            "I": 108,
+            "N": 7404,
+            "H": 6676,
+            "errors": 836,
+            "wer_percent": 11.29119394921664,
+            "clips": 641
+          },
+          "zf2": {
+            "S": 781,
+            "D": 120,
+            "I": 229,
+            "N": 8281,
+            "H": 7380,
+            "errors": 1130,
+            "wer_percent": 13.645694964376283,
+            "clips": 675
+          },
+          "zf3": {
+            "S": 378,
+            "D": 52,
+            "I": 153,
+            "N": 5075,
+            "H": 4645,
+            "errors": 583,
+            "wer_percent": 11.48768472906404,
+            "clips": 383
+          }
+        }
+      },
+      "hybrid": {
+        "overall": {
+          "S": 7970,
+          "D": 6628,
+          "I": 614,
+          "N": 22642,
+          "H": 8044,
+          "errors": 15212,
+          "wer_percent": 67.18487766098401,
+          "clips": 1901
+        },
+        "speakers": {
+          "sm2": {
+            "S": 664,
+            "D": 459,
+            "I": 44,
+            "N": 1882,
+            "H": 759,
+            "errors": 1167,
+            "wer_percent": 62.00850159404889,
+            "clips": 202
+          },
+          "zf1": {
+            "S": 2512,
+            "D": 2493,
+            "I": 65,
+            "N": 7404,
+            "H": 2399,
+            "errors": 5070,
+            "wer_percent": 68.47649918962723,
+            "clips": 641
+          },
+          "zf2": {
+            "S": 3092,
+            "D": 2357,
+            "I": 289,
+            "N": 8281,
+            "H": 2832,
+            "errors": 5738,
+            "wer_percent": 69.29114841202754,
+            "clips": 675
+          },
+          "zf3": {
+            "S": 1702,
+            "D": 1319,
+            "I": 216,
+            "N": 5075,
+            "H": 2054,
+            "errors": 3237,
+            "wer_percent": 63.783251231527096,
+            "clips": 383
+          }
+        }
+      },
+      "consensus": {
+        "overall": {
+          "S": 6717,
+          "D": 5639,
+          "I": 627,
+          "N": 22642,
+          "H": 10286,
+          "errors": 12983,
+          "wer_percent": 57.34034095927922,
+          "clips": 1901
+        },
+        "speakers": {
+          "sm2": {
+            "S": 525,
+            "D": 385,
+            "I": 45,
+            "N": 1882,
+            "H": 972,
+            "errors": 955,
+            "wer_percent": 50.743889479277364,
+            "clips": 202
+          },
+          "zf1": {
+            "S": 2005,
+            "D": 1964,
+            "I": 86,
+            "N": 7404,
+            "H": 3435,
+            "errors": 4055,
+            "wer_percent": 54.76769313884387,
+            "clips": 641
+          },
+          "zf2": {
+            "S": 2812,
+            "D": 2243,
+            "I": 274,
+            "N": 8281,
+            "H": 3226,
+            "errors": 5329,
+            "wer_percent": 64.35213138509842,
+            "clips": 675
+          },
+          "zf3": {
+            "S": 1375,
+            "D": 1047,
+            "I": 222,
+            "N": 5075,
+            "H": 2653,
+            "errors": 2644,
+            "wer_percent": 52.09852216748769,
+            "clips": 383
+          }
+        }
+      }
+    },
+    "canonical_numbers": {
+      "small": {
+        "overall": {
+          "S": 4556,
+          "D": 1045,
+          "I": 2147,
+          "N": 15245,
+          "H": 9644,
+          "errors": 7748,
+          "wer_percent": 50.82322072810758,
+          "clips": 1901
+        },
+        "speakers": {
+          "sm2": {
+            "S": 338,
+            "D": 60,
+            "I": 212,
+            "N": 1256,
+            "H": 858,
+            "errors": 610,
+            "wer_percent": 48.56687898089172,
+            "clips": 202
+          },
+          "zf1": {
+            "S": 1356,
+            "D": 423,
+            "I": 580,
+            "N": 4824,
+            "H": 3045,
+            "errors": 2359,
+            "wer_percent": 48.901326699834165,
+            "clips": 641
+          },
+          "zf2": {
+            "S": 1858,
+            "D": 353,
+            "I": 880,
+            "N": 5614,
+            "H": 3403,
+            "errors": 3091,
+            "wer_percent": 55.05878161738511,
+            "clips": 675
+          },
+          "zf3": {
+            "S": 1004,
+            "D": 209,
+            "I": 475,
+            "N": 3551,
+            "H": 2338,
+            "errors": 1688,
+            "wer_percent": 47.53590537876654,
+            "clips": 383
+          }
+        }
+      },
+      "atc": {
+        "overall": {
+          "S": 1849,
+          "D": 408,
+          "I": 483,
+          "N": 15245,
+          "H": 12988,
+          "errors": 2740,
+          "wer_percent": 17.97310593637258,
+          "clips": 1901
+        },
+        "speakers": {
+          "sm2": {
+            "S": 113,
+            "D": 24,
+            "I": 46,
+            "N": 1256,
+            "H": 1119,
+            "errors": 183,
+            "wer_percent": 14.570063694267516,
+            "clips": 202
+          },
+          "zf1": {
+            "S": 553,
+            "D": 186,
+            "I": 95,
+            "N": 4824,
+            "H": 4085,
+            "errors": 834,
+            "wer_percent": 17.28855721393035,
+            "clips": 641
+          },
+          "zf2": {
+            "S": 799,
+            "D": 138,
+            "I": 209,
+            "N": 5614,
+            "H": 4677,
+            "errors": 1146,
+            "wer_percent": 20.413252582828644,
+            "clips": 675
+          },
+          "zf3": {
+            "S": 384,
+            "D": 60,
+            "I": 133,
+            "N": 3551,
+            "H": 3107,
+            "errors": 577,
+            "wer_percent": 16.24894395944804,
+            "clips": 383
+          }
+        }
+      },
+      "hybrid": {
+        "overall": {
+          "S": 4479,
+          "D": 851,
+          "I": 1983,
+          "N": 15245,
+          "H": 9915,
+          "errors": 7313,
+          "wer_percent": 47.96982617251558,
+          "clips": 1901
+        },
+        "speakers": {
+          "sm2": {
+            "S": 342,
+            "D": 51,
+            "I": 238,
+            "N": 1256,
+            "H": 863,
+            "errors": 631,
+            "wer_percent": 50.238853503184714,
+            "clips": 202
+          },
+          "zf1": {
+            "S": 1405,
+            "D": 360,
+            "I": 459,
+            "N": 4824,
+            "H": 3059,
+            "errors": 2224,
+            "wer_percent": 46.10281923714759,
+            "clips": 641
+          },
+          "zf2": {
+            "S": 1772,
+            "D": 277,
+            "I": 868,
+            "N": 5614,
+            "H": 3565,
+            "errors": 2917,
+            "wer_percent": 51.95938724617029,
+            "clips": 675
+          },
+          "zf3": {
+            "S": 960,
+            "D": 163,
+            "I": 418,
+            "N": 3551,
+            "H": 2428,
+            "errors": 1541,
+            "wer_percent": 43.39622641509434,
+            "clips": 383
+          }
+        }
+      },
+      "consensus": {
+        "overall": {
+          "S": 4232,
+          "D": 1007,
+          "I": 1726,
+          "N": 15245,
+          "H": 10006,
+          "errors": 6965,
+          "wer_percent": 45.687110528041984,
+          "clips": 1901
+        },
+        "speakers": {
+          "sm2": {
+            "S": 308,
+            "D": 68,
+            "I": 199,
+            "N": 1256,
+            "H": 880,
+            "errors": 575,
+            "wer_percent": 45.78025477707006,
+            "clips": 202
+          },
+          "zf1": {
+            "S": 1328,
+            "D": 430,
+            "I": 396,
+            "N": 4824,
+            "H": 3066,
+            "errors": 2154,
+            "wer_percent": 44.65174129353234,
+            "clips": 641
+          },
+          "zf2": {
+            "S": 1695,
+            "D": 312,
+            "I": 779,
+            "N": 5614,
+            "H": 3607,
+            "errors": 2786,
+            "wer_percent": 49.62593516209476,
+            "clips": 675
+          },
+          "zf3": {
+            "S": 901,
+            "D": 197,
+            "I": 352,
+            "N": 3551,
+            "H": 2453,
+            "errors": 1450,
+            "wer_percent": 40.83356800901154,
+            "clips": 383
+          }
+        }
+      }
+    }
+  },
+  "v11_guarded_vs_v9_per_clip": {
+    "lexical": {
+      "same_error_count": 1152,
+      "improved": 687,
+      "worsened": 62
+    },
+    "canonical_numbers": {
+      "same_error_count": 1329,
+      "worsened": 257,
+      "improved": 315
+    }
+  },
+  "routes_v9": {
+    "keep_whisper": 1881,
+    "speech_after_empty_decoder": 20
+  },
+  "v11_guarded_changed_clips": 865,
+  "canary_token_limit_clips": 5,
+  "unmodified_v11": {
+    "status": "FAILED_ON_GENERATION_LIMIT",
+    "completed_before_abort": 6,
+    "failed_id": "atcosim_zf1_05_152_000000_000303",
+    "full_corpus_WER": null
+  },
+  "consensus_variant": "v11 with generation-failure fallback to v9",
+  "additional_discarded_ASR_calls": 1,
+  "fresh_full_ASR_calls": {
+    "whisper": 1901,
+    "parakeet": 1901,
+    "dfn_parakeet": 0,
+    "canary": 1881
+  },
+  "cached_predictions_reused": {
+    "small": {
+      "execution_sha256": "6724a54e409b533f7107277c493cf77b0cd5aad0d042e78a241edb945cd8179d",
+      "model": "whisper-small-publisher-base-ct2",
+      "reused_predictions": 1901
+    },
+    "atc": {
+      "execution_sha256": "11aa6d322359264367add67a3ddc5a4bcd90fa06ae2ceb4fddba5ed06e426267",
+      "model": "whisper-medium-en-atc-jacktol-ct2",
+      "reused_predictions": 1901
+    }
+  }
+}

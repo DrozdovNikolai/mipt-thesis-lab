@@ -1,0 +1,65 @@
+{
+  "image": "sha256:b5d7218f10baaa6b4bda2ac5da03462d4029f6249f2a93168e4352c47ebb2285",
+  "network": "none",
+  "gpu": [
+    {
+      "Driver": "nvidia",
+      "Count": 0,
+      "DeviceIDs": [
+        "0"
+      ],
+      "Capabilities": [
+        [
+          "gpu"
+        ]
+      ],
+      "Options": null
+    }
+  ],
+  "mounts": [
+    {
+      "destination": "/models",
+      "read_write": false,
+      "type": "volume"
+    },
+    {
+      "destination": "/code/src",
+      "read_write": false,
+      "type": "bind"
+    },
+    {
+      "destination": "/code/scripts",
+      "read_write": false,
+      "type": "bind"
+    },
+    {
+      "destination": "/study",
+      "read_write": false,
+      "type": "bind"
+    },
+    {
+      "destination": "/predictions",
+      "read_write": true,
+      "type": "bind"
+    },
+    {
+      "destination": "/audio",
+      "read_write": false,
+      "type": "volume"
+    }
+  ],
+  "state": {
+    "Status": "exited",
+    "Running": false,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 0,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-09-14T21:09:25.063321127Z",
+    "FinishedAt": "2026-09-14T21:14:57.676153656Z"
+  },
+  "plan_sha256": "3b9bf43029154a239b86b8dc7c1a1c0e5a699a30ac03508257e84d88a95246f7"
+}

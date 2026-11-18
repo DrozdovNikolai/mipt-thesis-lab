@@ -1,0 +1,18 @@
+{
+  "checked_at": "2026-09-13T16:35:11.2160842Z",
+  "previous_goal_turn": "no_progress",
+  "consecutive_goal_turns_with_same_data_blocker": 3,
+  "current_code_hash": "3ebe06c6b5e3d924e96623be9a6829076844c701b9692cb02eed154824ea749f",
+  "live_checks": {
+    "code_hash": "3ebe06c6b5e3d924e96623be9a6829076844c701b9692cb02eed154824ea749f",
+    "train_manifest_exists": false,
+    "dev_manifest_exists": false,
+    "partition_proof_exists": false,
+    "test_inference_manifest_exists": false,
+    "release_exists": false
+  },
+  "blocker": "No admitted independent human cockpit train/dev/test data with verified transcripts, entities, event/salience and temporal annotations",
+  "available_next_action": "Supply lawful recordings/annotations, then use the implemented local importer and protocol",
+  "research_goal_achieved": false,
+  "goal_status": "BLOCKED"
+}

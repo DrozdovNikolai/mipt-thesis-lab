@@ -1,0 +1,363 @@
+{
+  "created_at": "2026-09-15 13:43:20.076488+00:00",
+  "purpose": "fixed_model_diagnostic_on_user_reviewed_dev",
+  "all_count": 16,
+  "strict_ids": [
+    "0193ef559a1d007c98c708be9ec060cb",
+    "2bfec39502ca469c1f1c18d0a408ba45",
+    "3868827f982828ab2d37b1e405894ca1",
+    "455c47ed8f2e3568db981b8a35a07a8d",
+    "809afd7909b97310c9a68a832daaa70a",
+    "86862d0a0f2c38424c749538ad898b97",
+    "abecc5e274cf54252c289305a111513a",
+    "c0d20c6d6cd4148dd97691452603a4d7",
+    "c1acffbf5c2957b10e31fcbe49335ebe",
+    "fd53a0010c36d64598d50b5dc2d03144"
+  ],
+  "strict_count": 10,
+  "pending": [
+    {
+      "id": "586227d2c5b6825e087cd7966e9113de",
+      "reason": "no_saved_human_transcript"
+    },
+    {
+      "id": "0c7648bf084d39faa0c3a3d67ec07a9c",
+      "reason": "no_saved_human_transcript"
+    },
+    {
+      "id": "c8a9a88866785655635c29b7415e88ee",
+      "reason": "no_saved_human_transcript"
+    },
+    {
+      "id": "76b3f8e6a1252bf2162a144341930967",
+      "reason": "no_saved_human_transcript"
+    },
+    {
+      "id": "93bb3df821f6b05ac399c4725a5995f1",
+      "reason": "no_saved_human_transcript"
+    },
+    {
+      "id": "fec4cdf400a8be902804e0919dde61d0",
+      "reason": "no_saved_human_transcript"
+    },
+    {
+      "id": "fafa433fcd848cd8f412a1ca414d8cc0",
+      "reason": "no_saved_human_transcript"
+    },
+    {
+      "id": "4ad8915c3d54ea9a0b90b9ef8aad1f49",
+      "reason": "no_saved_human_transcript"
+    },
+    {
+      "id": "fa74fa285e6eb2e32ccd9125cbf906d6",
+      "reason": "no_saved_human_transcript"
+    },
+    {
+      "id": "3739987dab67ef4f2d2c2248ce3d09a8",
+      "reason": "no_saved_human_transcript"
+    },
+    {
+      "id": "652cce33b7428ac8610508adfe338ff7",
+      "reason": "no_saved_human_transcript"
+    },
+    {
+      "id": "2f5ca5e1879d16328b1d45f6606c9335",
+      "reason": "no_saved_human_transcript"
+    },
+    {
+      "id": "c604379f8e9b5f22d36bca1a3b68c7d6",
+      "reason": "no_saved_human_transcript"
+    },
+    {
+      "id": "0ab2e0562423b7d4fe137f216991138a",
+      "reason": "no_saved_human_transcript"
+    },
+    {
+      "id": "9e201fce375bccf1aed4fd3494a79f0f",
+      "reason": "no_saved_human_transcript"
+    },
+    {
+      "id": "04a44084a2a9e0ddd96819b3144d8d03",
+      "reason": "no_saved_human_transcript"
+    },
+    {
+      "id": "d33d7f842ef3ea7b52ca27da414a526a",
+      "reason": "no_saved_human_transcript"
+    },
+    {
+      "id": "044f160ea5dd5b49c7a38ff2307d60a1",
+      "reason": "no_saved_human_transcript"
+    },
+    {
+      "id": "d5be8302f8ad5c4bf5bf4da9d5f8ccd2",
+      "reason": "no_saved_human_transcript"
+    },
+    {
+      "id": "83b267816d068b33afca8e12e79db9cf",
+      "reason": "no_saved_human_transcript"
+    },
+    {
+      "id": "5851b1e31d70ccca8c12a601bbd1c2d7",
+      "reason": "no_saved_human_transcript"
+    },
+    {
+      "id": "d1ad8ae87e0d8b4a461aa5faea1b5b2b",
+      "reason": "no_saved_human_transcript"
+    },
+    {
+      "id": "c20a068d1e310f067b3963ecd3b37b41",
+      "reason": "no_saved_human_transcript"
+    },
+    {
+      "id": "bed0810c76f01729af2a26d002606761",
+      "reason": "no_saved_human_transcript"
+    },
+    {
+      "id": "ae496ac78abb5bb70c9983fb421ab059",
+      "reason": "no_saved_human_transcript"
+    },
+    {
+      "id": "0e9c27b9bf19c1f65e4db02689c85826",
+      "reason": "no_saved_human_transcript"
+    }
+  ],
+  "seconds": 160.0,
+  "source_revisions": [
+    {
+      "id": "1adcaf07144ecec26885317491eaaf89",
+      "revision_path": "revisions/1adcaf07144ecec26885317491eaaf89/revision-00000002.json",
+      "revision_sha256": "81a3a6fe96f1fd47bc27e958ac1cb7e49fd2ae679c4e50dc3eeb1ba8f3535ef5",
+      "strict": false
+    },
+    {
+      "id": "a451a40719957efeda4921760e503b0e",
+      "revision_path": "revisions/a451a40719957efeda4921760e503b0e/revision-00000001.json",
+      "revision_sha256": "173baf5d86c0de07c540e64bbefed0167eea183971d5a555e529fbe213867fce",
+      "strict": false
+    },
+    {
+      "id": "730375ae3bced1cca710c5d411207a62",
+      "revision_path": "revisions/730375ae3bced1cca710c5d411207a62/revision-00000001.json",
+      "revision_sha256": "6bdea3f9667e87b56333a61b4d34c68fcf1ea7429cca48fa0ec5eb3dbc8c4404",
+      "strict": false
+    },
+    {
+      "id": "b62884d2c8624983768c9d9376ac7299",
+      "revision_path": "revisions/b62884d2c8624983768c9d9376ac7299/revision-00000001.json",
+      "revision_sha256": "b74136365bb15bc8578646e9b4077cc025f58b89a516a501bae2046a52379d1f",
+      "strict": false
+    },
+    {
+      "id": "0193ef559a1d007c98c708be9ec060cb",
+      "revision_path": "revisions/0193ef559a1d007c98c708be9ec060cb/revision-00000001.json",
+      "revision_sha256": "194d01289cb4fc4b831cf7aaa9fcbe4522117b7056804feeaeeba29eb4030171",
+      "strict": true
+    },
+    {
+      "id": "455c47ed8f2e3568db981b8a35a07a8d",
+      "revision_path": "revisions/455c47ed8f2e3568db981b8a35a07a8d/revision-00000001.json",
+      "revision_sha256": "3eec90f44c79ba24937a4332b80dd144f9d8927401af07fbb08fc679020206e4",
+      "strict": true
+    },
+    {
+      "id": "809afd7909b97310c9a68a832daaa70a",
+      "revision_path": "revisions/809afd7909b97310c9a68a832daaa70a/revision-00000001.json",
+      "revision_sha256": "9a00dd927f85b21920e656d97a88d6a912152d5ff9bb2fe8d6e3e34106db41e1",
+      "strict": true
+    },
+    {
+      "id": "fd53a0010c36d64598d50b5dc2d03144",
+      "revision_path": "revisions/fd53a0010c36d64598d50b5dc2d03144/revision-00000001.json",
+      "revision_sha256": "47640caf585eb3006404031a2eac97c4351661b1cb8429eb753df1566d6f16f8",
+      "strict": true
+    },
+    {
+      "id": "86862d0a0f2c38424c749538ad898b97",
+      "revision_path": "revisions/86862d0a0f2c38424c749538ad898b97/revision-00000001.json",
+      "revision_sha256": "32df32096c885d7e50e66c57451ea391a28a81f23407e55a684c4b42d489b546",
+      "strict": true
+    },
+    {
+      "id": "c0d20c6d6cd4148dd97691452603a4d7",
+      "revision_path": "revisions/c0d20c6d6cd4148dd97691452603a4d7/revision-00000001.json",
+      "revision_sha256": "199d5488e55e9a3128674c8879030d27cb09721bcaec5d50e15999506a662f7f",
+      "strict": true
+    },
+    {
+      "id": "3868827f982828ab2d37b1e405894ca1",
+      "revision_path": "revisions/3868827f982828ab2d37b1e405894ca1/revision-00000001.json",
+      "revision_sha256": "5f9d90f13299ced9d61e98b70ced62860db4b73ba818193cda57e800ae940b1d",
+      "strict": true
+    },
+    {
+      "id": "2bfec39502ca469c1f1c18d0a408ba45",
+      "revision_path": "revisions/2bfec39502ca469c1f1c18d0a408ba45/revision-00000001.json",
+      "revision_sha256": "859bbc69cc6073b03c8dfc2c90fa0fcf5215f702c6aeeee335b719031e566c20",
+      "strict": true
+    },
+    {
+      "id": "c1acffbf5c2957b10e31fcbe49335ebe",
+      "revision_path": "revisions/c1acffbf5c2957b10e31fcbe49335ebe/revision-00000001.json",
+      "revision_sha256": "aa9e671ccdeaf39fbcd67cb678325b53e855dd24aba2f9944ce60310182fd682",
+      "strict": true
+    },
+    {
+      "id": "abecc5e274cf54252c289305a111513a",
+      "revision_path": "revisions/abecc5e274cf54252c289305a111513a/revision-00000001.json",
+      "revision_sha256": "a86ba70f34376375a49de1c3a50578a48183bbebdb3e7ebf7336acde83ac105f",
+      "strict": true
+    },
+    {
+      "id": "af438f5fce37f5644b554eb9c3ef3e42",
+      "revision_path": "revisions/af438f5fce37f5644b554eb9c3ef3e42/revision-00000001.json",
+      "revision_sha256": "b22d7b257587eec5623e5eb5c2aab9ec1a3b0bfbcca0e465474dc8c28a8f6a19",
+      "strict": false
+    },
+    {
+      "id": "7dcbef2bb6ef1150d862ab1e596d7c89",
+      "revision_path": "revisions/7dcbef2bb6ef1150d862ab1e596d7c89/revision-00000001.json",
+      "revision_sha256": "ab1e358cc4dc82a1f446477e41a64a41c7a3c41a97f5ab0a6b8fb5100e0f5441",
+      "strict": false
+    }
+  ],
+  "manifest_sha256": "b7cc27617895794e60bf98e42844254da0317441344444bd9833451195563bd1",
+  "inputs_sha256": "7b0b3f524b3565b8f70300d961e18341f761da88d084b89bcffba310cf56f747",
+  "references_sha256": "9e5b2e5538f8434b2f0b99d98925c5f4137f3487a6f8547f27e3b665c537cdaa",
+  "code_sha256": {
+    "src/north55_speech/acoustic_noise_router.py": "b0d518b6fd32b2dc22d8535191a1daf057ffc3368114ce316cfdf17bda90891c",
+    "src/north55_speech/api.py": "a319f23b78063e6d93b469902bc64a63267e1b78c9ab87ae9402a2d79b753a72",
+    "src/north55_speech/asr.py": "028dcdab204ea383d4dd423e4f3707e02f6c5788dcb27dc51689d7d50a585f3b",
+    "src/north55_speech/assets.py": "3a06517744d3fd320730986592f7894cfc22a37e1d5050c4d1d66c3afcec57fc",
+    "src/north55_speech/audio.py": "d26f2cba52864677bc217d3238cb562a40aec0cc191fde65de9bf3de2a58af2f",
+    "src/north55_speech/augmentation.py": "9a6d3f6db05b9827d85a4f31a02425daf1555bf0fc85f600bd026af89c7527d9",
+    "src/north55_speech/benchmark.py": "ff30df29ccb1f4412a1d2a55fc2400080a9d4434e76964bc1f8e8c436bf0a2db",
+    "src/north55_speech/cli.py": "82aa77d10880b6003a2bef1aa791e6aea18b7e48735482e7521b5c686e3563c3",
+    "src/north55_speech/cockpit_candidates_v10.py": "57441048818c1cb594b09c58c751ec738edf0b5a1e29d12ed9e2c8d4718f656e",
+    "src/north55_speech/cockpit_consensus_v11.py": "8a253e20326cbe85a3374e7c9997fa743862fc9e56ef38c7d0940d6821b5d0f4",
+    "src/north55_speech/continuation.py": "a3850f974c555d5303cb76f4a69aac5be60b977f0d101ef13ce1e41a60877bf5",
+    "src/north55_speech/convergence.py": "c9def67c3e158c40dca7850e35dd8d031e1463fcdae93b14d6f2f9a9a6bec108",
+    "src/north55_speech/core.py": "111df2551edaa60b744e60c2e482b6a4fd99850d88047bf64cbffebb882c9656",
+    "src/north55_speech/cross_asr_selection.py": "6642f8a72b6001d6a02801da23977b606da49707e12034503987b25aca754861",
+    "src/north55_speech/cross_data_adaptation.py": "197efd07b3e4de692247fd2421034239ce727e80618c43ae40d6f8dbbb05943f",
+    "src/north55_speech/datasets.py": "52b0049324fb55d5c632b6ec70698295a6490aa1bb7a6cce4547f231fe019f18",
+    "src/north55_speech/db.py": "8a1dce17699713d19c37b4acdf7d1ec4ea71b0e85c9db7257941b695f38c552b",
+    "src/north55_speech/decoder_adaptation.py": "d9ae3345a7b6099e0b1282b9da14b1d4a9ef09f4340c37bcdaf4e2a6b2f96444",
+    "src/north55_speech/diarization.py": "ebde8a8e87af0099a6ee78971f74c802991a65d196a12c9f3db30c64ebf1decc",
+    "src/north55_speech/gates.py": "7eb1ce63366048e15cbead23cc438826380ce899cd90414b9a91093e67c28b33",
+    "src/north55_speech/hard_adaptation.py": "3f1e427bc25bf8bc9dfda8678040731f67a2ced2715865a2732eef8a84167653",
+    "src/north55_speech/jobs.py": "a677f63b031d1dfd361988a4b3144c407272e77eb8ab1fbcf79bd431b6f4e3de",
+    "src/north55_speech/journal.py": "b8ffa787b69444133800bfc5e4288bb7fee5a24014d7cbca05222c0060b5079f",
+    "src/north55_speech/local_transcription.py": "f06d2202194302581e4aadcaae756c67b1588569c2b82eb9bc27702b920ce528",
+    "src/north55_speech/lora.py": "7a64eed7740f50d707d820f60c182b5055a95ff48ca69afd0fad2a213f5ad23f",
+    "src/north55_speech/lora_ablation.py": "cec9f25e099bed79fedab40f32729fea14097c076bd89ef1162f59672443d080",
+    "src/north55_speech/metrics.py": "03876483b34afa31243136a5a3f9b52b17d2a2c15e8435fccfbf23986344792a",
+    "src/north55_speech/nlp.py": "e3dcc378ea66f6be96c81d7a4c884acaad4a930036abda5f0077e916d1dcbbf5",
+    "src/north55_speech/nus_training.py": "c593bb116093427922e8a7b7090e5522810e6e5a0cd7a5dcd534dd010b57183a",
+    "src/north55_speech/pipeline.py": "ca339e5c106aa25a103d3f9034d9ffd50eba7d4220718fe45189e1ac16d22b70",
+    "src/north55_speech/publisher_pairs.py": "0f26fd6cb5278d02de60e1969ab3da73d76da37496f54f040d42a5417de02f58",
+    "src/north55_speech/release.py": "317216d47a924ad29ed4069d7ebd10c3dea36661706a6ae75a5af7580110c8ed",
+    "src/north55_speech/reporting.py": "6dbb8df7111b017a91cf9e2bdc5b25bea9b43b535819b9347a1980691af8575e",
+    "src/north55_speech/retention.py": "ea02456b98e5005a6bc26e727da0c605761b071f205c60e163d7ce27c0bb1b8b",
+    "src/north55_speech/retraining.py": "cf93e2366ef873f189ca200f7f36ae370be0cd3c2a8d0dd007d1ac94965d5045",
+    "src/north55_speech/robust_adaptation.py": "dff60a7dd6de8b9d8abae8400b30b044927b4bf9fe113fdf66f54930593ccab0",
+    "src/north55_speech/sampling.py": "34eaa07aa3b3edb66968581cf4b16470180ed06e329005fe73e16c6ff6bc73a3",
+    "src/north55_speech/schemas.py": "0745770b96bfbc34e2bff6395d2d390ffd3440eb899188743681eca0367f3fa0",
+    "src/north55_speech/selftest.py": "2f5dd462295bd1134b8db6823bc07257a749227505515733a7805e6bf2413aa3",
+    "src/north55_speech/text_windows.py": "ee7e13796f885ff1c47f4d94e95cff4d0760d4f89c92d0ae348bbbbb88d64305",
+    "src/north55_speech/training.py": "2cb7b518d953f96501771a0b50af494d8498968468478b7b71d3b73eb11e369e",
+    "src/north55_speech/__init__.py": "f1cd82ffbdc2435df77df6fda53e5d3eaee8c29d3cb60b0ae2a610112ff8fda0",
+    "src/north55_speech/vendor/faster_whisper_loop.py": "ababbefc5575b11d234b8f77b8d424840e80cdf6ef089a5075a53b4f987566b2",
+    "src/north55_speech/vendor/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scripts/evaluate_reviewed_cockpit_v12.py": "1c715f5383d3695b00d6c327f7cc4b67fe91cd5943bd84c3821d6f12b0e01454",
+    "scripts/materialize_reviewed_training.py": "f6be61694be4325e48e3f6479d3a23edaef4911c8553ed5d2e3637b75c51558a"
+  },
+  "baseline_config": {
+    "schema_version": "1.0",
+    "name": "baseline",
+    "model": "small",
+    "compute_type": "float16",
+    "device": "cuda",
+    "task": "transcribe",
+    "beam_size": 5,
+    "temperature": 0.0,
+    "best_of": 5,
+    "patience": 1.0,
+    "length_penalty": 1.0,
+    "repetition_penalty": 1.0,
+    "no_repeat_ngram_size": 0,
+    "condition_on_previous_text": true,
+    "compression_ratio_threshold": 2.4,
+    "log_prob_threshold": -1.0,
+    "no_speech_threshold": 0.6,
+    "suppress_blank": true,
+    "suppress_tokens": [
+      -1
+    ],
+    "max_initial_timestamp": 1.0,
+    "word_timestamps": true,
+    "language_detection_threshold": 0.5,
+    "language_detection_segments": 1,
+    "vad": {
+      "enabled": false,
+      "mode": "segments",
+      "threshold": 0.5,
+      "min_speech_duration_ms": 100,
+      "min_silence_duration_ms": 400,
+      "speech_pad_ms": 200,
+      "max_speech_duration_s": 30.0
+    },
+    "denoise": {
+      "enabled": false,
+      "strength": 0.5,
+      "floor": 0.3,
+      "noise_percentile": 10.0
+    },
+    "hotwords": null,
+    "glossary_version": null,
+    "redecode": false,
+    "max_redecode_passes": 1,
+    "redecode_logprob_threshold": -0.8,
+    "episode_gap_sec": 2.0,
+    "episode_max_sec": 30.0,
+    "episode_max_tokens": 100,
+    "classifier": "rules_v1",
+    "classifier_artifact": null
+  },
+  "baseline_model_manifest": {
+    "model": "small",
+    "repo": "Systran/faster-whisper-small",
+    "revision": "536b0662742c02347bc0e980a01041f333bce120",
+    "files": {
+      "model.bin": "3e305921506d8872816023e4c273e75d2419fb89b24da97b4fe7bce14170d671",
+      "tokenizer.json": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab",
+      "README.md": "329373481008c7c38654aff8ecdcf0163c211557cc7ba8e2ef6f2f84b4f75ec8",
+      "config.json": "b55496ac7940a7ae47d2c01eab40edfd8701feec1229d9cce3b40014383fb828",
+      "vocabulary.txt": "34ce3fe1c5041027b3f8d42912270993f986dbc4bb34cf27f951e34a1e453913"
+    },
+    "license": "MIT",
+    "acquired_at": "2026-09-13T14:51:11Z",
+    "faster_whisper_version": "1.2.1",
+    "silero": {
+      "path": "/opt/venv/lib/python3.11/site-packages/faster_whisper/assets/silero_vad_v6.onnx",
+      "sha256": "4cbf549b8326f60f80f2536d9eefeb450a9abe83365a098031c89719f1be17d2",
+      "distribution": "bundled_with_faster_whisper"
+    }
+  },
+  "hybrid_runtime_sha256": "9fe80d43f203f0d7a11adaec6fab8b6574b31acc6de18c4319b797368558d692",
+  "consensus_runtime_sha256": "776b3cf5bda17f43de7c5254e5ccc3413808689d4ea9f1b580e38bae20d82431",
+  "language_profile": "en",
+  "normalizer": "lexical_normalizer_v1",
+  "comparisons": [
+    "whisper_small",
+    "guarded_v9",
+    "consensus_v11"
+  ],
+  "no_training_or_threshold_changes": true,
+  "test_accessed": false,
+  "limitations": [
+    "Machine-assisted human references, not blind independent transcription",
+    "User-selected intelligible English subset; cannot generalize to skipped clips",
+    "6 missing scope confirmations remain unchanged; report strict subset separately",
+    "Read cockpit scripts and few shared dev speakers; not operational cockpit acceptance"
+  ]
+}

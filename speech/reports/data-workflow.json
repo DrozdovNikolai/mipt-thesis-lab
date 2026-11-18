@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "executed": true,
+  "samples": 2,
+  "human_labels_created": false,
+  "scope": "general_control",
+  "quality_evidence": false,
+  "split_report": {
+    "independent_groups": 1,
+    "split_groups": {
+      "train": 1,
+      "dev": 0,
+      "test": 0
+    },
+    "unknown_speakers": 0,
+    "script_overlap": {},
+    "claim_limitation": null
+  },
+  "artifact_directory": "/artifacts/data-workflow/24281421f98c43ae8c32856bf0e6554c"
+}

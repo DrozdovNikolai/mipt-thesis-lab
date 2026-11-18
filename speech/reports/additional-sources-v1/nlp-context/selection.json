@@ -1,0 +1,90 @@
+{
+  "status": "TRAINED_DEV_ONLY",
+  "chosen": {
+    "C": 0.25,
+    "threshold": 0.5,
+    "metrics": {
+      "negative": {
+        "precision": 0.9452449567723343,
+        "recall": 0.9010989010989011,
+        "f1": 0.9226441631504922,
+        "support": 364
+      },
+      "safety_voice": {
+        "precision": 0.23404255319148937,
+        "recall": 0.36666666666666664,
+        "f1": 0.2857142857142857,
+        "support": 30
+      },
+      "macro_f1": 0.6041792244323889,
+      "accuracy": 0.8604060913705583
+    }
+  },
+  "trials": [
+    {
+      "C": 0.25,
+      "threshold": 0.5,
+      "metrics": {
+        "negative": {
+          "precision": 0.9452449567723343,
+          "recall": 0.9010989010989011,
+          "f1": 0.9226441631504922,
+          "support": 364
+        },
+        "safety_voice": {
+          "precision": 0.23404255319148937,
+          "recall": 0.36666666666666664,
+          "f1": 0.2857142857142857,
+          "support": 30
+        },
+        "macro_f1": 0.6041792244323889,
+        "accuracy": 0.8604060913705583
+      }
+    },
+    {
+      "C": 1.0,
+      "threshold": 0.5,
+      "metrics": {
+        "negative": {
+          "precision": 0.940677966101695,
+          "recall": 0.9148351648351648,
+          "f1": 0.9275766016713092,
+          "support": 364
+        },
+        "safety_voice": {
+          "precision": 0.225,
+          "recall": 0.3,
+          "f1": 0.2571428571428571,
+          "support": 30
+        },
+        "macro_f1": 0.5923597294070831,
+        "accuracy": 0.868020304568528
+      }
+    },
+    {
+      "C": 4.0,
+      "threshold": 0.5,
+      "metrics": {
+        "negative": {
+          "precision": 0.9337016574585635,
+          "recall": 0.9285714285714286,
+          "f1": 0.931129476584022,
+          "support": 364
+        },
+        "safety_voice": {
+          "precision": 0.1875,
+          "recall": 0.2,
+          "f1": 0.1935483870967742,
+          "support": 30
+        },
+        "macro_f1": 0.5623389318403981,
+        "accuracy": 0.8730964467005076
+      }
+    }
+  ],
+  "model_sha256": "3fff35c424cbc324642090c6e733a51c79a55de3b2162291b23efc5cd959f526",
+  "frozen_at": "2026-09-14T06:43:31.587581+00:00",
+  "protocol_sha256": "e182c132d1db95eb9ef9f1b4aa1da99c3c64bbd6f1dabceff0c9b8765aac3dc2",
+  "test_accessed": false,
+  "release_promoted": false
+}

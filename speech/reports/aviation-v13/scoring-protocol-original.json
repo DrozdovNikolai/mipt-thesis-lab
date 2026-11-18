@@ -1,0 +1,8 @@
+{
+  "script_sha256": "b95bee3bf298550b4dadf8bbf9259151dbf480bc3a33ef5b2d275c973f90d425",
+  "tuning": false,
+  "primary": "All 1901 clips, corpus lexical WER",
+  "secondary": "Existing symmetric numeric normalizer",
+  "omissions_allowed": 0,
+  "created_utc": "2026-09-15T14:24:17.7356695Z"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "population_and_totals_checked": true,
+  "script_sha256_matches_plan": true,
+  "previous_train_dev_and_decisions_unchanged": true,
+  "cached_prediction_hashes_checked_by_audit": 1350,
+  "ruff": "PASS",
+  "new_training_pairs": 0,
+  "new_asr_calls": 0,
+  "new_training_steps": 0
+}

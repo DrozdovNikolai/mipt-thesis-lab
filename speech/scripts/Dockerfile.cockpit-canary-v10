@@ -1,0 +1,7 @@
+FROM north55-speech-parakeet:v6
+USER root
+RUN --mount=type=cache,target=/root/.cache/uv uv pip install --no-deps 'nemo_toolkit==2.5.0'
+RUN --mount=type=cache,target=/root/.cache/uv uv pip install 'sacrebleu==2.5.1'
+RUN python -c "from nemo.collections.speechlm2.models import SALM; print('SALM import OK')"
+USER 10001:10001
+ENTRYPOINT ["python", "-u"]

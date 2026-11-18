@@ -1,0 +1,137 @@
+{
+  "plan_sha256": "6e65f246a77bc7618062bcca53c4d0e7e661895aefa210bd3eb72768c7b3e924",
+  "models": {
+    "0": {
+      "model": "whisper-small-nus-convergence-v1-step240",
+      "repo": "local_train_only_convergence_diagnostic",
+      "revision": "cefbcf284666f48966a11a45629cf4b97427b78905fb677129f28cc959e2ee0c",
+      "step": 240,
+      "subset_sha256": "a36e708de54ad34e7beb60e48afc671bea453eb590a5ed85795363cff5e6d2c6",
+      "base_manifest": {
+        "repo": "openai/whisper-small",
+        "revision": "973afd24965f72e36ca33b3055d56a652f456b4d",
+        "license": "apache-2.0",
+        "files": {
+          "README.md": "967fa44eefe5d3436e040b0f171fc54da67aad96923bae10af37dac9be5bb6b0",
+          "added_tokens.json": "9715fd2243b6f06a5858b5e32950d2853f73dd5bc201aafcf76f5082a2d8acd1",
+          "config.json": "e6a2b489da1b5aed65a8eb8d1e7466fa867ad5643a8bc138ba708bd56b2875c4",
+          "generation_config.json": "71565b8ef50d0bf7a1193ed4bbed195b94e70c18894d81bba2f1233dcec3ab53",
+          "merges.txt": "2df2990a395e35e8dfbc7511e08c12d56018d8d04691e0133e5d63b21e154dc6",
+          "model.safetensors": "1d7734884874f1a1513ed9aa760a4f8e97aaa02fd6d93a3a85d27b2ae9ca596b",
+          "normalizer.json": "bf1c507dc8724ca9cf9903640dacfb69dae2f00edee4f21ceba106a7392f26dd",
+          "preprocessor_config.json": "9b5cd03a36fbb8a627c64d98a5b5b126ead95a77720723944487311f0110b666",
+          "special_tokens_map.json": "e67ae3a0aaa99abcd9f187138e12db1f65c16a14761c50ef10eef2c174a7a691",
+          "tokenizer.json": "27fc476bfe7f17299480be2273fc0608e4d5a99aba2ab5dec5374b4482d1a566",
+          "tokenizer_config.json": "2a4c4281cf9f51ac6ccc406fdc711a087afe6530f671fa7b80953edc498275ce",
+          "vocab.json": "8f680bba319e01a653d2e8a5dbc17a9157179e0576e6ce74ce0c06356c6e24f9"
+        },
+        "purpose": "optional supervised ASR LoRA after verified training annotations",
+        "excluded_formats": [
+          "pytorch_model.bin",
+          "flax_model.msgpack",
+          "tf_model.h5"
+        ],
+        "training_executed": false
+      },
+      "quality_evidence": false,
+      "selection_allowed": false,
+      "release_allowed": false,
+      "license": "inherited_base_and_existing_project_research_source_restrictions",
+      "files": {
+        "model.bin": "f05ba402d34abb73cc51fb3521628dacfc20d7803a2b7fa32eb1bb94c724abeb",
+        "tokenizer.json": "7b469ff15eb7816315aa45eec391f5943d639b9d73d110f5c003df5192fd54e3",
+        "vocabulary.json": "5ad28279db5e546349708b9a74736e2c018737ac5a600f1048f1f26c99b85b47",
+        "preprocessor_config.json": "994838f1fa6462c8b9b3c90edada831f11f3dd8b4664634e18f4694d005c9dbf",
+        "config.json": "707bcfea9f540464f702957e4c974a262cd378df563f25c96da0778e3b9f7b84"
+      }
+    },
+    "160": {
+      "model": "whisper-small-nus-continuation-v1-add160",
+      "repo": "local_train_only_convergence_diagnostic",
+      "revision": "00bde4b1e58ac816957b1a0f42c7fbf21ace4f2afcdbc778dec0fa454e3350a2",
+      "step": 160,
+      "subset_sha256": "a36e708de54ad34e7beb60e48afc671bea453eb590a5ed85795363cff5e6d2c6",
+      "base_manifest": {
+        "repo": "openai/whisper-small",
+        "revision": "973afd24965f72e36ca33b3055d56a652f456b4d",
+        "license": "apache-2.0",
+        "files": {
+          "README.md": "967fa44eefe5d3436e040b0f171fc54da67aad96923bae10af37dac9be5bb6b0",
+          "added_tokens.json": "9715fd2243b6f06a5858b5e32950d2853f73dd5bc201aafcf76f5082a2d8acd1",
+          "config.json": "e6a2b489da1b5aed65a8eb8d1e7466fa867ad5643a8bc138ba708bd56b2875c4",
+          "generation_config.json": "71565b8ef50d0bf7a1193ed4bbed195b94e70c18894d81bba2f1233dcec3ab53",
+          "merges.txt": "2df2990a395e35e8dfbc7511e08c12d56018d8d04691e0133e5d63b21e154dc6",
+          "model.safetensors": "1d7734884874f1a1513ed9aa760a4f8e97aaa02fd6d93a3a85d27b2ae9ca596b",
+          "normalizer.json": "bf1c507dc8724ca9cf9903640dacfb69dae2f00edee4f21ceba106a7392f26dd",
+          "preprocessor_config.json": "9b5cd03a36fbb8a627c64d98a5b5b126ead95a77720723944487311f0110b666",
+          "special_tokens_map.json": "e67ae3a0aaa99abcd9f187138e12db1f65c16a14761c50ef10eef2c174a7a691",
+          "tokenizer.json": "27fc476bfe7f17299480be2273fc0608e4d5a99aba2ab5dec5374b4482d1a566",
+          "tokenizer_config.json": "2a4c4281cf9f51ac6ccc406fdc711a087afe6530f671fa7b80953edc498275ce",
+          "vocab.json": "8f680bba319e01a653d2e8a5dbc17a9157179e0576e6ce74ce0c06356c6e24f9"
+        },
+        "purpose": "optional supervised ASR LoRA after verified training annotations",
+        "excluded_formats": [
+          "pytorch_model.bin",
+          "flax_model.msgpack",
+          "tf_model.h5"
+        ],
+        "training_executed": false
+      },
+      "quality_evidence": false,
+      "selection_allowed": false,
+      "release_allowed": false,
+      "license": "inherited_base_and_existing_project_research_source_restrictions",
+      "files": {
+        "model.bin": "8d81d57a199e48ba3d1be32be9447d8bbe8e681434e7466f1e944b58d162195a",
+        "tokenizer.json": "7b469ff15eb7816315aa45eec391f5943d639b9d73d110f5c003df5192fd54e3",
+        "vocabulary.json": "5ad28279db5e546349708b9a74736e2c018737ac5a600f1048f1f26c99b85b47",
+        "preprocessor_config.json": "994838f1fa6462c8b9b3c90edada831f11f3dd8b4664634e18f4694d005c9dbf",
+        "config.json": "707bcfea9f540464f702957e4c974a262cd378df563f25c96da0778e3b9f7b84"
+      }
+    },
+    "400": {
+      "model": "whisper-small-nus-continuation-v1-add400",
+      "repo": "local_train_only_convergence_diagnostic",
+      "revision": "96a494db636c97c57f83b4c6495b462ae8f48fcb9ddf730076743c1af7581d98",
+      "step": 400,
+      "subset_sha256": "a36e708de54ad34e7beb60e48afc671bea453eb590a5ed85795363cff5e6d2c6",
+      "base_manifest": {
+        "repo": "openai/whisper-small",
+        "revision": "973afd24965f72e36ca33b3055d56a652f456b4d",
+        "license": "apache-2.0",
+        "files": {
+          "README.md": "967fa44eefe5d3436e040b0f171fc54da67aad96923bae10af37dac9be5bb6b0",
+          "added_tokens.json": "9715fd2243b6f06a5858b5e32950d2853f73dd5bc201aafcf76f5082a2d8acd1",
+          "config.json": "e6a2b489da1b5aed65a8eb8d1e7466fa867ad5643a8bc138ba708bd56b2875c4",
+          "generation_config.json": "71565b8ef50d0bf7a1193ed4bbed195b94e70c18894d81bba2f1233dcec3ab53",
+          "merges.txt": "2df2990a395e35e8dfbc7511e08c12d56018d8d04691e0133e5d63b21e154dc6",
+          "model.safetensors": "1d7734884874f1a1513ed9aa760a4f8e97aaa02fd6d93a3a85d27b2ae9ca596b",
+          "normalizer.json": "bf1c507dc8724ca9cf9903640dacfb69dae2f00edee4f21ceba106a7392f26dd",
+          "preprocessor_config.json": "9b5cd03a36fbb8a627c64d98a5b5b126ead95a77720723944487311f0110b666",
+          "special_tokens_map.json": "e67ae3a0aaa99abcd9f187138e12db1f65c16a14761c50ef10eef2c174a7a691",
+          "tokenizer.json": "27fc476bfe7f17299480be2273fc0608e4d5a99aba2ab5dec5374b4482d1a566",
+          "tokenizer_config.json": "2a4c4281cf9f51ac6ccc406fdc711a087afe6530f671fa7b80953edc498275ce",
+          "vocab.json": "8f680bba319e01a653d2e8a5dbc17a9157179e0576e6ce74ce0c06356c6e24f9"
+        },
+        "purpose": "optional supervised ASR LoRA after verified training annotations",
+        "excluded_formats": [
+          "pytorch_model.bin",
+          "flax_model.msgpack",
+          "tf_model.h5"
+        ],
+        "training_executed": false
+      },
+      "quality_evidence": false,
+      "selection_allowed": false,
+      "release_allowed": false,
+      "license": "inherited_base_and_existing_project_research_source_restrictions",
+      "files": {
+        "model.bin": "3669b314849ba8b8e8e736d866568d08b7aff56de42be6ede86241fcdd2e9326",
+        "tokenizer.json": "7b469ff15eb7816315aa45eec391f5943d639b9d73d110f5c003df5192fd54e3",
+        "vocabulary.json": "5ad28279db5e546349708b9a74736e2c018737ac5a600f1048f1f26c99b85b47",
+        "preprocessor_config.json": "994838f1fa6462c8b9b3c90edada831f11f3dd8b4664634e18f4694d005c9dbf",
+        "config.json": "707bcfea9f540464f702957e4c974a262cd378df563f25c96da0778e3b9f7b84"
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+train_manifest: /data/train-dev/train.jsonl
+dev_manifest: /data/train-dev/dev.jsonl
+base_model: whisper-small-transformers
+output: whisper-small-lora-v1
+rank: 8
+max_steps: 500
+eval_steps: 25
+learning_rate: 0.0001
+

@@ -1,0 +1,74 @@
+{
+  "models": [
+    {
+      "repo": "nvidia/canary-qwen-2.5b",
+      "revision": "b1469e1bba1cfe140205529c79c434ca47180960",
+      "snapshot": "/models/hf/models--nvidia--canary-qwen-2.5b/snapshots/b1469e1bba1cfe140205529c79c434ca47180960",
+      "files": {
+        "README.md": {
+          "sha256": "0f5d9e5066ecc9a5a8b110f4c225b835f72d931630f2c38cac06d6837767ba8d",
+          "bytes": 18967
+        },
+        "LICENSES": {
+          "sha256": "64036e6306bdad699fda41984bfead9a648b0d2e7c0987cf29f301fb85a97ef4",
+          "bytes": 13649
+        },
+        "config.json": {
+          "sha256": "37d15b0445fade873944c9b0cda7221953ec2207169cb6488a3a57d90e629d52",
+          "bytes": 2382
+        },
+        "model.safetensors": {
+          "sha256": "800cb0d099cf655a8887d8b741c3a4afa9891e2b2949870251c4d58c72b59175",
+          "bytes": 5119120624
+        }
+      }
+    },
+    {
+      "repo": "Qwen/Qwen3-1.7B",
+      "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "snapshot": "/models/hf/models--Qwen--Qwen3-1.7B/snapshots/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "files": {
+        "tokenizer.json": {
+          "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+          "bytes": 11422654
+        },
+        "README.md": {
+          "sha256": "257e52c419dac2258852643f18af6c974f21f8c6c1b6f371b6cca6201cf29091",
+          "bytes": 13963
+        },
+        "generation_config.json": {
+          "sha256": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2",
+          "bytes": 239
+        },
+        "LICENSE": {
+          "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+          "bytes": 11343
+        },
+        "merges.txt": {
+          "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+          "bytes": 1671853
+        },
+        "config.json": {
+          "sha256": "1ddb5b89ebc90dcb417a45c213d818577e65976454d29385c8f6140771d95197",
+          "bytes": 726
+        },
+        "tokenizer_config.json": {
+          "sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+          "bytes": 9732
+        },
+        "vocab.json": {
+          "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+          "bytes": 2776833
+        }
+      }
+    }
+  ],
+  "deep_filter_binary": {
+    "url": "https://github.com/Rikorose/DeepFilterNet/releases/download/v0.5.6/deep-filter-0.5.6-x86_64-unknown-linux-musl",
+    "version": "0.5.6",
+    "sha256": "70775e251eee44c0f2451a1e833326cf8bcbbe304d3e7cd12851e6fce72ef7da",
+    "bytes": 36417296
+  },
+  "audio_uploaded": false,
+  "source_audio_mounted": false
+}

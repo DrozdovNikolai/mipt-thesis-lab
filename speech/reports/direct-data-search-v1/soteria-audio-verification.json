@@ -1,0 +1,102 @@
+{
+  "status": "PASS",
+  "scope": "file integrity and offline audio decoding only",
+  "probe": {
+    "programs": [],
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "bin_data",
+        "codec_type": "data",
+        "duration": "87.000000"
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2,
+        "duration": "86.954000"
+      },
+      {
+        "index": 2,
+        "codec_name": "h264",
+        "codec_type": "video",
+        "duration": "87.000000"
+      }
+    ],
+    "format": {
+      "duration": "87.000000",
+      "size": "90608135"
+    }
+  },
+  "commands": [
+    [
+      "docker",
+      "run",
+      "--rm",
+      "--network",
+      "none",
+      "--mount",
+      "type=bind,source=/mnt/c/DEV/MIPT/Diploma/Speech/data/input/nasa-soteria-v1,target=/input,readonly",
+      "--mount",
+      "type=bind,source=/mnt/c/DEV/MIPT/Diploma/Speech/data/input/nasa-soteria-v1/inspection,target=/output",
+      "--entrypoint",
+      "ffprobe",
+      "north55-speech-gpu:0.1.0",
+      "-v",
+      "error",
+      "-show_entries",
+      "stream=index,codec_type,codec_name,sample_rate,channels,duration:format=duration,size",
+      "-of",
+      "json",
+      "/input/DVR10_Case_1_SOTERIA_20220504-170006Z_S1R1.mp4"
+    ],
+    [
+      "docker",
+      "run",
+      "--rm",
+      "--network",
+      "none",
+      "--mount",
+      "type=bind,source=/mnt/c/DEV/MIPT/Diploma/Speech/data/input/nasa-soteria-v1,target=/input,readonly",
+      "--mount",
+      "type=bind,source=/mnt/c/DEV/MIPT/Diploma/Speech/data/input/nasa-soteria-v1/inspection,target=/output",
+      "--entrypoint",
+      "ffmpeg",
+      "north55-speech-gpu:0.1.0",
+      "-v",
+      "error",
+      "-n",
+      "-i",
+      "/input/DVR10_Case_1_SOTERIA_20220504-170006Z_S1R1.mp4",
+      "-map",
+      "0:a:0",
+      "-vn",
+      "-c:a",
+      "pcm_s16le",
+      "/output/source-audio-48k-stereo.wav"
+    ]
+  ],
+  "decoded_this_run": false,
+  "wav_path": "data/input/nasa-soteria-v1/inspection/source-audio-48k-stereo.wav",
+  "wav_sha256": "497ee7a926f3fdf0dd442d3ecec86c97e777ccc3f92e9a66c3ec59e363d64197",
+  "frames": 4173824,
+  "duration_sec": 86.95466666666667,
+  "sample_rate": 48000,
+  "channels": 2,
+  "channel_rms": [
+    0.06156121425249364,
+    0.06106963320252865
+  ],
+  "channel_peak_pcm16": [
+    32715,
+    32698
+  ],
+  "human_listening_verified": false,
+  "transcript_verified": false,
+  "asr_executed": false,
+  "benchmark_admitted": false,
+  "original_time_origin_sec": 0.0,
+  "transformation": "AAC decoded to PCM16, same rate/channels"
+}

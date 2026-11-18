@@ -1,0 +1,10 @@
+{
+  "decision_at_utc": "2026-09-14T09:35:35Z",
+  "purpose": "Run independent fixed inference systems concurrently to reduce wall time",
+  "maximum_concurrent_inference_systems": 3,
+  "same_frozen_models_parameters_inputs_and_precision": true,
+  "new_model_or_hyperparameter_trials": 0,
+  "quality_results_used_for_this_decision": false,
+  "isolated_latency_comparison_claimed": false,
+  "limitation": "Elapsed time and device-wide memory can overlap other study processes; they are operational observations, not isolated comparative performance benchmarks."
+}

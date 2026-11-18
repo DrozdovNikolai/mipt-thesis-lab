@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "code_hash": "4c6456fd47e6d271fa2dc7af5806aec9bf70a9aabaaf2fae81228f69533e7281",
+  "scorer_hash": "12d299fc3407caf6f82a2e4c3c3e0d1443b5d065a95ffbf0b5fcc01731421084",
+  "test_cases": 228,
+  "integration_cases": 9,
+  "reasons": [],
+  "evidence_directory": "reporting-v1",
+  "prior_recovery_evidence": "gate-hardening/verification.json"
+}

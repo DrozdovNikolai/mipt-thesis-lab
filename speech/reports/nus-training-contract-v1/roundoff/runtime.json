@@ -1,0 +1,53 @@
+{
+  "image": "sha256:34ed3eca5f649c8d1b3fc1b021bae236a3030829d9c9347368a32ba4fa6b347c",
+  "state": {
+    "Status": "exited",
+    "Running": false,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 0,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-09-14T16:21:35.335405608Z",
+    "FinishedAt": "2026-09-14T16:21:40.687744107Z"
+  },
+  "network": "none",
+  "mounts": [
+    {
+      "Type": "bind",
+      "Source": "C:\\DEV\\MIPT\\Diploma\\Speech/src",
+      "Destination": "/app/src",
+      "Mode": "ro",
+      "RW": false,
+      "Propagation": "rprivate"
+    },
+    {
+      "Type": "bind",
+      "Source": "C:\\DEV\\MIPT\\Diploma\\Speech/scripts",
+      "Destination": "/app/scripts",
+      "Mode": "ro",
+      "RW": false,
+      "Propagation": "rprivate"
+    },
+    {
+      "Type": "volume",
+      "Name": "north55-speech_model_cache",
+      "Source": "/var/lib/docker/volumes/north55-speech_model_cache/_data",
+      "Destination": "/models",
+      "Driver": "local",
+      "Mode": "ro",
+      "RW": false,
+      "Propagation": ""
+    },
+    {
+      "Type": "bind",
+      "Source": "/run/desktop/mnt/host/c/DEV/MIPT/Diploma/Speech/reports/nus-training-contract-v1/roundoff",
+      "Destination": "/output",
+      "Mode": "",
+      "RW": true,
+      "Propagation": "rprivate"
+    }
+  ]
+}

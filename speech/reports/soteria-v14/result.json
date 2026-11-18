@@ -1,0 +1,212 @@
+{
+  "status": "READY_FOR_HUMAN_REVIEW",
+  "sources": [
+    {
+      "crew": "Crew_01",
+      "split": "train",
+      "case": 6,
+      "source_minutes": 18.673421875,
+      "clip_minutes": 10.863666666666665,
+      "vad_minutes": 10.471933333333334,
+      "clips": 66,
+      "channels": 2,
+      "channel_rms": [
+        0.08455412911937954,
+        0.08301353494406147
+      ],
+      "mixed_rms": 0.08352928122964098,
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "bin_data",
+            "codec_type": "data",
+            "duration": "1120.466000"
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2,
+            "duration": "1120.405000"
+          },
+          {
+            "index": 2,
+            "codec_name": "h264",
+            "codec_type": "video",
+            "duration": "1120.466000"
+          }
+        ],
+        "format": {
+          "duration": "1120.466000",
+          "size": "1167281759"
+        }
+      }
+    },
+    {
+      "crew": "Crew_02",
+      "split": "dev",
+      "case": 5,
+      "source_minutes": 24.835555208333336,
+      "clip_minutes": 18.872733333333333,
+      "vad_minutes": 18.18593333333333,
+      "clips": 123,
+      "channels": 2,
+      "channel_rms": [
+        0.16312318882736826,
+        0.16177524784006433
+      ],
+      "mixed_rms": 0.16163030242526807,
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "bin_data",
+            "codec_type": "data",
+            "duration": "1490.166000"
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2,
+            "duration": "1490.133000"
+          },
+          {
+            "index": 2,
+            "codec_name": "h264",
+            "codec_type": "video",
+            "duration": "1490.166000"
+          }
+        ],
+        "format": {
+          "duration": "1490.166000",
+          "size": "1552291031"
+        }
+      }
+    },
+    {
+      "crew": "Crew_03",
+      "split": "train",
+      "case": 6,
+      "source_minutes": 18.81066666666667,
+      "clip_minutes": 13.028733333333332,
+      "vad_minutes": 12.440733333333332,
+      "clips": 89,
+      "channels": 2,
+      "channel_rms": [
+        0.10549086703091651,
+        0.10587759511179642
+      ],
+      "mixed_rms": 0.10568367166371778,
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "bin_data",
+            "codec_type": "data",
+            "duration": "1128.700000"
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2,
+            "duration": "1128.640000"
+          },
+          {
+            "index": 2,
+            "codec_name": "h264",
+            "codec_type": "video",
+            "duration": "1128.700000"
+          }
+        ],
+        "format": {
+          "duration": "1128.700000",
+          "size": "1175817964"
+        }
+      }
+    },
+    {
+      "crew": "Crew_04",
+      "split": "dev",
+      "case": 6,
+      "source_minutes": 16.328888541666668,
+      "clip_minutes": 10.606333333333334,
+      "vad_minutes": 9.970333333333334,
+      "clips": 80,
+      "channels": 2,
+      "channel_rms": [
+        0.10426657075867399,
+        0.10473221041625243
+      ],
+      "mixed_rms": 0.1044987745187078,
+      "probe": {
+        "programs": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "bin_data",
+            "codec_type": "data",
+            "duration": "979.866000"
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2,
+            "duration": "979.733000"
+          },
+          {
+            "index": 2,
+            "codec_name": "h264",
+            "codec_type": "video",
+            "duration": "979.866000"
+          }
+        ],
+        "format": {
+          "duration": "979.866000",
+          "size": "1020728069"
+        }
+      }
+    }
+  ],
+  "clips": 358,
+  "splits": {
+    "train": {
+      "clips": 155,
+      "minutes": 23.89240000000001
+    },
+    "dev": {
+      "clips": 203,
+      "minutes": 29.479066666666675
+    }
+  },
+  "source_minutes": 78.64853229166667,
+  "clip_minutes": 53.37146666666669,
+  "language_hints": {
+    "en": 355,
+    "zh": 1,
+    "it": 2
+  },
+  "identical_drafts": 34,
+  "empty_large_drafts": 0,
+  "failures": {
+    "small": 0,
+    "large": 0
+  },
+  "human_references_created": 0,
+  "WER": null,
+  "quality_improvement_proven": false,
+  "scope_note": "Simulator recording includes crew, ATC and researchers; segment scope remains unverified",
+  "split_note": "Crew split is provisional; shared ATC/research actors unresolved",
+  "test_accessed": false,
+  "queue_url": "http://localhost:8013/?split=dev"
+}

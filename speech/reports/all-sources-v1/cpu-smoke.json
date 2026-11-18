@@ -1,0 +1,225 @@
+{
+  "status": "PASS",
+  "purpose": "engineering_CPU_checkpoint_execution_only",
+  "config": {
+    "schema_version": "1.0",
+    "name": "baseline",
+    "model": "whisper-small-publisher-expanded-v1-ct2",
+    "compute_type": "int8",
+    "device": "cpu",
+    "task": "transcribe",
+    "beam_size": 5,
+    "temperature": 0.0,
+    "best_of": 5,
+    "patience": 1.0,
+    "length_penalty": 1.0,
+    "repetition_penalty": 1.0,
+    "no_repeat_ngram_size": 0,
+    "condition_on_previous_text": true,
+    "compression_ratio_threshold": 2.4,
+    "log_prob_threshold": -1.0,
+    "no_speech_threshold": 0.6,
+    "suppress_blank": true,
+    "suppress_tokens": [
+      -1
+    ],
+    "max_initial_timestamp": 1.0,
+    "word_timestamps": true,
+    "language_detection_threshold": 0.5,
+    "language_detection_segments": 1,
+    "vad": {
+      "enabled": false,
+      "threshold": 0.5,
+      "min_speech_duration_ms": 100,
+      "min_silence_duration_ms": 400,
+      "speech_pad_ms": 200,
+      "max_speech_duration_s": 30.0
+    },
+    "denoise": {
+      "enabled": false,
+      "strength": 0.5,
+      "floor": 0.3,
+      "noise_percentile": 10.0
+    },
+    "hotwords": null,
+    "glossary_version": null,
+    "redecode": false,
+    "max_redecode_passes": 1,
+    "redecode_logprob_threshold": -0.8,
+    "episode_gap_sec": 2.0,
+    "episode_max_sec": 30.0,
+    "episode_max_tokens": 100,
+    "classifier": "rules_v1",
+    "classifier_artifact": null
+  },
+  "actual_device": "cpu",
+  "actual_compute_type": "int8_float32",
+  "sample_id": "1272-128104-0007",
+  "audio_sha256": "84998a43cb534e09801f5522b9ed0aa58e88035c9727bc8e4d362a7bc158d0b6",
+  "model_manifest_sha256": "75c86504c1818b8cb0bbd687a634937b8388141832ac6b82a44440c946f105ad",
+  "script_sha256": "c39ead7cfff03bc478c5f2c9b02e3ebeb1663e2496a1fbe03875a74adc82a681",
+  "segments": [
+    {
+      "segment_id": "cpu-smoke-0",
+      "start_sec": 0.0,
+      "end_sec": 7.76,
+      "raw_asr_text": " Painting, he tells us, is of a different quality to mathematics, and finish in art is adding",
+      "display_text": "",
+      "reviewed_text": null,
+      "channel": null,
+      "speaker_id": null,
+      "role": "unknown",
+      "role_provenance": null,
+      "language": "en",
+      "words": [
+        {
+          "word": " Painting,",
+          "start_sec": 0.0,
+          "end_sec": 0.96,
+          "probability": 0.7817284166812897
+        },
+        {
+          "word": " he",
+          "start_sec": 0.98,
+          "end_sec": 1.16,
+          "probability": 0.991078794002533
+        },
+        {
+          "word": " tells",
+          "start_sec": 1.16,
+          "end_sec": 1.38,
+          "probability": 0.994125247001648
+        },
+        {
+          "word": " us,",
+          "start_sec": 1.38,
+          "end_sec": 1.68,
+          "probability": 0.9814965724945068
+        },
+        {
+          "word": " is",
+          "start_sec": 1.78,
+          "end_sec": 2.02,
+          "probability": 0.9905132055282593
+        },
+        {
+          "word": " of",
+          "start_sec": 2.02,
+          "end_sec": 2.72,
+          "probability": 0.9675303101539612
+        },
+        {
+          "word": " a",
+          "start_sec": 2.72,
+          "end_sec": 2.84,
+          "probability": 0.9689379930496216
+        },
+        {
+          "word": " different",
+          "start_sec": 2.84,
+          "end_sec": 3.04,
+          "probability": 0.9951682090759277
+        },
+        {
+          "word": " quality",
+          "start_sec": 3.04,
+          "end_sec": 3.62,
+          "probability": 0.9953811168670654
+        },
+        {
+          "word": " to",
+          "start_sec": 3.62,
+          "end_sec": 3.86,
+          "probability": 0.9934718608856201
+        },
+        {
+          "word": " mathematics,",
+          "start_sec": 3.86,
+          "end_sec": 4.36,
+          "probability": 0.964393138885498
+        },
+        {
+          "word": " and",
+          "start_sec": 4.86,
+          "end_sec": 5.42,
+          "probability": 0.992764413356781
+        },
+        {
+          "word": " finish",
+          "start_sec": 5.42,
+          "end_sec": 5.74,
+          "probability": 0.7817322015762329
+        },
+        {
+          "word": " in",
+          "start_sec": 5.74,
+          "end_sec": 6.2,
+          "probability": 0.945859968662262
+        },
+        {
+          "word": " art",
+          "start_sec": 6.2,
+          "end_sec": 6.56,
+          "probability": 0.976207971572876
+        },
+        {
+          "word": " is",
+          "start_sec": 6.56,
+          "end_sec": 6.96,
+          "probability": 0.9719952940940857
+        },
+        {
+          "word": " adding",
+          "start_sec": 6.96,
+          "end_sec": 7.76,
+          "probability": 0.9505517482757568
+        }
+      ],
+      "avg_logprob": -0.21051653500260978,
+      "no_speech_prob": 0.005749409087002277,
+      "alternatives": [],
+      "normalization_changes": [],
+      "risk_level": "unknown",
+      "risk_reasons": [
+        "uncalibrated_asr_confidence"
+      ]
+    },
+    {
+      "segment_id": "cpu-smoke-1",
+      "start_sec": 7.76,
+      "end_sec": 8.72,
+      "raw_asr_text": " more factor.",
+      "display_text": "",
+      "reviewed_text": null,
+      "channel": null,
+      "speaker_id": null,
+      "role": "unknown",
+      "role_provenance": null,
+      "language": "en",
+      "words": [
+        {
+          "word": " more",
+          "start_sec": 7.76,
+          "end_sec": 8.22,
+          "probability": 0.9956316947937012
+        },
+        {
+          "word": " factor.",
+          "start_sec": 8.22,
+          "end_sec": 8.72,
+          "probability": 0.8956459164619446
+        }
+      ],
+      "avg_logprob": -0.21051653500260978,
+      "no_speech_prob": 0.005749409087002277,
+      "alternatives": [],
+      "normalization_changes": [],
+      "risk_level": "unknown",
+      "risk_reasons": [
+        "uncalibrated_asr_confidence"
+      ]
+    }
+  ],
+  "elapsed_including_model_load_sec": 4.50100146800105,
+  "quality_evidence": false
+}

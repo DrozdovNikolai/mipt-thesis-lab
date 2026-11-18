@@ -1,0 +1,23 @@
+SHUTDOWN CHECKS
+1. PCL ieee IDLE
+Allow ITT to stabilize below 660°C for 1 minute before
+shutdown:
+
+2. PARK BRAKE...............:..-Set
+3. LANDING LIGHTG............. OFF
+4, COOL / FAN... cece OFF
+5. RADIO/ INSTR
+
+MASTER .......:cecsceesseeeeeees OFF
+6. GYRO COMP.............:0:.: OFF
+7. GEN. eeeseeseseeereeeeseeeeteee OFF
+8. RPM level............0s00+- FEATHER
+9. PCL. eeceeeeeeeeeeeeeseeee OFF
+10. External lights....................OFF
+11. Cockpit lights ...................OFF
+12. Canopy oo. eeeeeeeeeeeereee Open
+13, BATT. .ecceeeesteresee reteset OFF
+14, OXYGEN oo. eee eeteseseees OFF / 100% / OFF
+15. Flight controls....................L0ck
+16. Harness .........0....- Secure on hooks
+17. PARK BRAKE....................-AS required

@@ -1,0 +1,7 @@
+{
+  "reason": "NeMo decoding configuration includes Enum values; serialize enum names without changing model or decoding. First attempt stopped before any ASR predictions.",
+  "runner_sha256": "3584b0a1c3cd7fb9f15c491c47d35194e8ed2515bed3ec3874c1393a18b5e0ba",
+  "plan_sha256": "9de4a69dc93f01285d77e6494ddc3eed10b40de20d3557fc8f26f27e466c7282",
+  "decoding_changed": false,
+  "preflight_prediction_count": 0
+}

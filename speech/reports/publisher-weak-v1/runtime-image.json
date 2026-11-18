@@ -1,0 +1,6 @@
+{
+  "image": "north55-speech-train:publisher-v1",
+  "id": "sha256:46d6e4e0852e2b2897b356cc69a272433041285852315f87187a84ee3a0a443f",
+  "training_executed_with": "north55-speech-train:0.1.0 plus read-only src/configs mounts; see experiment-code.json",
+  "verification_uses": "packaged publisher-v1 image and read-only current verification scripts"
+}

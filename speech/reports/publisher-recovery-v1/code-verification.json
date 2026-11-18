@@ -1,0 +1,19 @@
+{
+  "checks": {
+    "targeted_tests": 6,
+    "ruff": "PASS",
+    "git_diff_check": "PASS",
+    "seconds": 2.55
+  },
+  "code_sha256": {
+    "src/north55_speech/schemas.py": "0745770b96bfbc34e2bff6395d2d390ffd3440eb899188743681eca0367f3fa0",
+    "src/north55_speech/core.py": "111df2551edaa60b744e60c2e482b6a4fd99850d88047bf64cbffebb882c9656",
+    "scripts/publisher_alignment.py": "f866ff85fe9e7634594370d90243509de1100b7a219a8469a945e21eb89fa614",
+    "src/north55_speech/metrics.py": "03876483b34afa31243136a5a3f9b52b17d2a2c15e8435fccfbf23986344792a",
+    "src/north55_speech/datasets.py": "52b0049324fb55d5c632b6ec70698295a6490aa1bb7a6cce4547f231fe019f18",
+    "src/north55_speech/asr.py": "028dcdab204ea383d4dd423e4f3707e02f6c5788dcb27dc51689d7d50a585f3b",
+    "src/north55_speech/lora.py": "76f267b6a1d90a316dedb5a264c72792d1f9ac3a9bf88819ae9e422160a89a28",
+    "scripts/recover_publisher_language.py": "adf541f0402752910a2ffdfba76c8fd5ac6249679cb3f09641e7dc348aded035"
+  },
+  "recorded_at": "2026-09-14T23:46:17.1884720+03:00"
+}

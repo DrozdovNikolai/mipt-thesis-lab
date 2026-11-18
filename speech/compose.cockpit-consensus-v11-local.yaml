@@ -1,0 +1,29 @@
+name: north55-cockpit-consensus-v11-local
+services:
+  refine:
+    image: north55-speech-canary:v10
+    network_mode: none
+    entrypoint: [python, -u, /app/scripts/transcribe_cockpit_consensus_v11.py]
+    working_dir: /app
+    environment:
+      PYTHONPATH: /app:/app/src
+      HF_HUB_OFFLINE: '1'
+      TRANSFORMERS_OFFLINE: '1'
+      CUDA_VISIBLE_DEVICES: '0'
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['0']
+              capabilities: [gpu]
+    volumes:
+      - ./reports/cockpit-consensus-v11/local-runtime/frozen:/app:ro
+      - ./reports/cockpit-consensus-v11/local-runtime/runtime.json:/profile/runtime.json:ro
+      - ./reports/cockpit-consensus-v11/local-runtime/output:/output
+      - ${HYBRID_AUDIO_DIR:-./reports/cockpit-consensus-v11/local-runtime/smoke-audio}:/input:ro
+      - candidates:/models:ro
+volumes:
+  candidates:
+    external: true
+    name: north55-speech_cockpit_models_v10

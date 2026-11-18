@@ -1,0 +1,22 @@
+services:
+  annotation:
+    image: north55-annotation-tools:0.1.0
+    build:
+      context: .
+      dockerfile: scripts/Dockerfile.annotation-tools
+    profiles: [annotation]
+    init: true
+    command: [uvicorn, scripts.review_dataset:factory, --factory, --host, "0.0.0.0", --port, "8010", --workers, "1", --no-access-log]
+    environment:
+      NORTH55_API_KEY: ${NORTH55_API_KEY:?Run bootstrap}
+      NORTH55_SESSION_SECRET: ${NORTH55_SESSION_SECRET:?Run bootstrap}
+      NORTH55_ANNOTATION_ROOT: /packet
+    ports: ["127.0.0.1:8010:8010"]
+    volumes:
+      - ./scripts:/app/scripts:ro
+      - ./data/curated/annotation-packet-v1:/packet
+      - audio_data:/audio:ro
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+    networks: [backend, ingress]
+    restart: unless-stopped

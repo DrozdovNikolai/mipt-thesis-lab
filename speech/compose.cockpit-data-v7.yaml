@@ -1,0 +1,107 @@
+name: north55-cockpit-data-v7
+x-common: &common
+  image: north55-speech-train:publisher-v2
+  network_mode: none
+  entrypoint: [python, -u, -m, scripts.cockpit_data_v7]
+  working_dir: /app
+  environment:
+    PYTHONPATH: /app:/app/src
+    HF_HUB_OFFLINE: '1'
+    TRANSFORMERS_OFFLINE: '1'
+    CUDA_VISIBLE_DEVICES: '0'
+    LD_LIBRARY_PATH: /opt/venv/lib/python3.11/site-packages/nvidia/cublas/lib:/opt/venv/lib/python3.11/site-packages/nvidia/cudnn/lib
+x-gpu: &gpu
+  resources:
+    reservations:
+      devices:
+        - driver: nvidia
+          device_ids: ['0']
+          capabilities: [gpu]
+services:
+  prepare:
+    <<: *common
+    entrypoint: [python, -u, -c]
+    command:
+      - |
+        import os
+        from pathlib import Path
+        from scripts.cockpit_data_v7 import prepare
+        prepare()
+        root = Path('/study')
+        for path in [root, *root.rglob('*')]:
+            os.chown(path, 10001, 10001)
+    user: '0:0'
+    volumes:
+      - .:/app:ro
+      - ./reports/cockpit-data-v7:/study
+      - experiment:/experiment
+      - audio:/audio:ro
+      - robust:/robust:ro
+  train:
+    <<: *common
+    command: [train]
+    deploy: *gpu
+    volumes:
+      - ./reports/cockpit-data-v7/frozen:/app:ro
+      - ./reports/cockpit-data-v7/plan.json:/study/plan.json:ro
+      - ./reports/cockpit-data-v7/inputs.json:/study/inputs.json:ro
+      - ./reports/cockpit-data-v7/schedule.json:/study/schedule.json:ro
+      - ./reports/cockpit-data-v7/datasets:/train:ro
+      - ./reports/cockpit-data-v7/io-train:/output
+      - experiment:/experiment
+      - audio:/audio:ro
+      - models:/models:ro
+  convert:
+    <<: *common
+    command: [convert]
+    deploy: *gpu
+    volumes:
+      - ./reports/cockpit-data-v7/frozen:/app:ro
+      - ./reports/cockpit-data-v7/plan.json:/study/plan.json:ro
+      - ./reports/cockpit-data-v7/inputs.json:/study/inputs.json:ro
+      - ./reports/cockpit-data-v7/training.json:/study/training.json:ro
+      - ./reports/cockpit-data-v7/io-convert:/output
+      - experiment:/experiment
+      - models:/models:ro
+  infer:
+    <<: *common
+    command: [infer, expanded]
+    deploy: *gpu
+    volumes:
+      - ./reports/cockpit-data-v7/frozen:/app:ro
+      - ./reports/cockpit-data-v7/plan.json:/study/plan.json:ro
+      - ./reports/cockpit-data-v7/inputs.json:/study/inputs.json:ro
+      - ./reports/cockpit-data-v7/conversion.json:/study/conversion.json:ro
+      - ./reports/cockpit-data-v7/io-${V7_SYSTEM:-expanded}:/output
+      - experiment:/experiment:ro
+      - audio:/audio:ro
+      - models:/models:ro
+  score:
+    <<: *common
+    command: [score]
+    volumes:
+      - ./reports/cockpit-data-v7/frozen:/app:ro
+      - ./reports/cockpit-data-v7:/study
+      - experiment:/experiment:ro
+      - models:/models:ro
+  checks:
+    <<: *common
+    command: [verify]
+    volumes:
+      - .:/app:ro
+      - ./reports/cockpit-data-v7:/study
+      - experiment:/experiment:ro
+      - audio:/audio:ro
+      - models:/models:ro
+volumes:
+  experiment:
+    name: north55-speech_cockpit_data_v7
+  audio:
+    external: true
+    name: north55-speech_audio_data
+  models:
+    external: true
+    name: north55-speech_model_cache
+  robust:
+    external: true
+    name: north55-speech_cockpit_robust_v5

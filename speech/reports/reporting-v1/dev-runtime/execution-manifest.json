@@ -1,0 +1,86 @@
+{
+  "kind": "historical_unscored_dev_runtime",
+  "runtime_trials": [
+    {
+      "trial": "A0",
+      "runs": 8,
+      "audio_sec": 160.0,
+      "elapsed_sec": 34.20094493399665,
+      "rtf": 0.21375590583747908,
+      "failures": 0
+    },
+    {
+      "trial": "A1",
+      "runs": 8,
+      "audio_sec": 160.0,
+      "elapsed_sec": 100.88302871500491,
+      "rtf": 0.6305189294687807,
+      "failures": 0
+    },
+    {
+      "trial": "A2",
+      "runs": 8,
+      "audio_sec": 160.0,
+      "elapsed_sec": 99.79869363499893,
+      "rtf": 0.6237418352187433,
+      "failures": 0
+    },
+    {
+      "trial": "A3",
+      "runs": 8,
+      "audio_sec": 160.0,
+      "elapsed_sec": 117.01031577999674,
+      "rtf": 0.7313144736249797,
+      "failures": 0
+    },
+    {
+      "trial": "A4",
+      "runs": 8,
+      "audio_sec": 160.0,
+      "elapsed_sec": 139.50076751300003,
+      "rtf": 0.8718797969562502,
+      "failures": 0
+    },
+    {
+      "trial": "VAD_SHORT",
+      "runs": 8,
+      "audio_sec": 160.0,
+      "elapsed_sec": 133.99357673800114,
+      "rtf": 0.8374598546125072,
+      "failures": 0
+    },
+    {
+      "trial": "HINTS_ONLY",
+      "runs": 8,
+      "audio_sec": 160.0,
+      "elapsed_sec": 31.02797271399686,
+      "rtf": 0.19392482946248038,
+      "failures": 0
+    },
+    {
+      "trial": "DENOISE_ONLY",
+      "runs": 8,
+      "audio_sec": 160.0,
+      "elapsed_sec": 32.93253840399848,
+      "rtf": 0.2058283650249905,
+      "failures": 0
+    }
+  ],
+  "baseline_wer": null,
+  "candidate_wer": null,
+  "nlp_f1": null,
+  "source_report_sha256": "1ecbeb83bc22ebfa7c128ee717df16ca82d6236cb4ac76c7f5be3179fef43a40",
+  "source_plan_sha256": "a5578a68240118b8b44cabf35b4b6ed52de28634a06e5bc70a5e5ff9bdf8874a",
+  "inference_code_hash": "3ebe06c6b5e3d924e96623be9a6829076844c701b9692cb02eed154824ea749f",
+  "renderer_code_hash": "4c6456fd47e6d271fa2dc7af5806aec9bf70a9aabaaf2fae81228f69533e7281",
+  "model_device_precision": [
+    "small",
+    "cpu",
+    "int8"
+  ],
+  "runs": 64,
+  "quality_evidence": false,
+  "test_accessed": false,
+  "candidate_selected": false,
+  "source_note": "Historical timing retained under its original inference code; no new ASR or final test execution."
+}

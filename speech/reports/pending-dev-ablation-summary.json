@@ -1,0 +1,21 @@
+{
+  "source_report": "reports/pending-dev-ablation.json",
+  "source_sha256": "1ecbeb83bc22ebfa7c128ee717df16ca82d6236cb4ac76c7f5be3179fef43a40",
+  "omitted_payload_key": "runs",
+  "omitted_record_count": 64,
+  "note": "Aggregate values copied unchanged; no evaluation or gate rerun.",
+  "metrics": {
+    "status": "EXECUTED_UNSCORED",
+    "plan_sha256": "a5578a68240118b8b44cabf35b4b6ed52de28634a06e5bc70a5e5ff9bdf8874a",
+    "network_mode": "none",
+    "expected_runs": 64,
+    "completed_runs": 64,
+    "runtime_failures": 0,
+    "wer": null,
+    "critical_entity_delta": null,
+    "quality_gate": "NEEDS_MORE_DATA",
+    "selection_status": "NOT_RUN",
+    "candidate_selected": false,
+    "release_promoted": false
+  }
+}

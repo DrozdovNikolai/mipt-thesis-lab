@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "saved_tensors_checked": 479,
+  "mismatches": [],
+  "exact_FP32_equality": true
+}

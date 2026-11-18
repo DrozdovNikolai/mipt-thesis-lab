@@ -1,0 +1,7 @@
+{
+  "selection": "Lexicographically first ID within new_ru_primary and partial_human_dev, independent of ASR outputs",
+  "ru_id": "fleurs-expanded-04f0f965a9d41027219b",
+  "ru_path": "/new-audio/fleurs-expanded-04f0f965a9d41027219b.wav",
+  "en_id": "reviewed-291ebb141aa4e7a7ba94ccf8d18002fb",
+  "en_path": "expanded-evaluation-v1/reviewed-291ebb141aa4e7a7ba94ccf8d18002fb.wav"
+}

@@ -1,0 +1,161 @@
+{
+  "created_at": "2026-09-13 21:58:50.554655+00:00",
+  "experiment_verification": "PASS",
+  "checks": {
+    "weak_admission_and_disjoint_partitions": true,
+    "prepared_counts": true,
+    "no_human_or_event_labels_created": true,
+    "preparation_plan_and_code": true,
+    "original_train_dev_hashes": true,
+    "training_data_hashes": true,
+    "executed_lora_source_snapshot": true,
+    "post_run_only_dynamic_type_annotations": true,
+    "training_finished_40_steps": true,
+    "training_artifact_checksums": true,
+    "converted_artifact_checksums": true,
+    "same_base_checkpoint": true,
+    "comparison_plan_and_code": true,
+    "same_decoding_no_hints": true,
+    "control_provenance": true,
+    "all_52_predictions_retained": true,
+    "edit_counts_recomputed": true,
+    "adapted_real_cpu_offline": true,
+    "243_tests_9_integration": true,
+    "static_and_compose": true,
+    "annotation_manifests_preserved": true,
+    "requirements_unchanged": true,
+    "no_selection_test_or_quality_claim": true
+  },
+  "implemented": [
+    "publisher document columns and local alignment",
+    "explicit weak-reference LoRA policy",
+    "annotation proposals",
+    "offline adapted inference and measured comparison"
+  ],
+  "executed": {
+    "training_optimizer_steps": 40,
+    "train_clips": 17,
+    "dev_clips": 7,
+    "comparison_inferences": 52,
+    "tests": 243
+  },
+  "independent_groups": {
+    "train_eligible": 5,
+    "dev_eligible": 3
+  },
+  "code_hash": "a2b84f2c32c885b077dd085bd19124b8be549abf7cbe829b48c3a222783023a9",
+  "scorer_hash": "12d299fc3407caf6f82a2e4c3c3e0d1443b5d065a95ffbf0b5fcc01731421084",
+  "executed_lora_sha256": "03f03f003b528bdefdf4c2a0d8f9ee1053588b9e71235bd5c189f12237f0fe8c",
+  "packaged_lora_sha256": "896f1098f6b9e0e8397b7ce679ad2ff1e47b5bd8ee3166c344099fbc5f6339f8",
+  "post_run_amendment": "Only Any annotations for dynamic Transformers/PEFT objects; exact source transformation checked. Training not rerun.",
+  "ASR_QUALITY_GATE": "NEEDS_MORE_DATA",
+  "statistical_confirmation": "INCONCLUSIVE",
+  "critical_entity_quality": "NOT_MEASURED",
+  "NLP_QUALITY_GATE": "NEEDS_MORE_DATA",
+  "TEMPORAL_EVENT_GATE": "NEEDS_MORE_DATA",
+  "release_promoted": false,
+  "validated_language_scope": [],
+  "human_labels_created": false,
+  "comparison": {
+    "dev": {
+      "parent": {
+        "S": 59,
+        "D": 4,
+        "I": 7,
+        "N": 178,
+        "H": 115,
+        "character_errors": 236,
+        "reference_characters": 1040,
+        "wer_lexical_corpus": 0.39325842696629215,
+        "cer": 0.22692307692307692
+      },
+      "adapted": {
+        "S": 34,
+        "D": 16,
+        "I": 7,
+        "N": 178,
+        "H": 128,
+        "character_errors": 199,
+        "reference_characters": 1040,
+        "wer_lexical_corpus": 0.3202247191011236,
+        "cer": 0.19134615384615383
+      }
+    },
+    "general_control": {
+      "parent": {
+        "S": 0,
+        "D": 0,
+        "I": 0,
+        "N": 30,
+        "H": 30,
+        "character_errors": 0,
+        "reference_characters": 180,
+        "wer_lexical_corpus": 0.0,
+        "cer": 0.0
+      },
+      "adapted": {
+        "S": 0,
+        "D": 0,
+        "I": 0,
+        "N": 30,
+        "H": 30,
+        "character_errors": 0,
+        "reference_characters": 180,
+        "wer_lexical_corpus": 0.0,
+        "cer": 0.0
+      }
+    }
+  },
+  "limitations": [
+    "Dev transcripts are automatically aligned publisher scripts, not independent audio gold.",
+    "Three dev groups and repeated scripts cannot establish the required effect.",
+    "Two general controls from one reader are below the clean-control acceptance minimum.",
+    "No independent critical entity, event, salience or temporal labels.",
+    "A5 adapted checkpoint is distinct from same-checkpoint A0-A4 pipeline experiments."
+  ],
+  "prior_engineering_evidence": {
+    "report": "reports/reporting-v1/verification.json",
+    "sha256": "2dde017788ae7e64711688333f51df5d3c7de0828c6ee5902cdf5f4c4735be7e",
+    "recovery_rerun_in_this_experiment": false
+  },
+  "artifact_sha256": {
+    "ablation-proxy.csv": "0b218197305aff66097776dd96711156116a7e17d4ad54cc048be7c2ef327984",
+    "ablation-proxy.json": "39edfcd8936f301e7886704de126790ba8d6c0e90743b4a824205e8fb57e4f06",
+    "adapted-cpu-smoke.json": "67e6b4ef0ab9513907a17e2d41cc69853d9e5fecf5dcd41ffbfeb4bf138d420e",
+    "alignment.log": "3750b84a55e2dd0796d861e2a0ac74b305008e5dae34cb29fe65b3b7c1f2e042",
+    "all-tests.log": "c7831395f5760bbcd61802d27a5618f1d9ea65e6c4edcf3f20e84386de552650",
+    "all-tests.xml": "960167ea9cfaa8c6548ee160e7434a4f9e77fccde937ec73c5dcc49c30d22dc8",
+    "annotation-and-policy-tests.xml": "0d6cbc2d9fe0de8bfe4d026fb7b2f35bd5b559601f736c921bcddf78438e30a8",
+    "annotation-proposals.json": "a9522f954f5d8321bdf71faee1cd3a1c58a363a773bd321b9a9aa49dcec73db5",
+    "annotation-service.json": "c65cf8eebb6be68181fed1f03f11077cc416a4e2157132d80155843157fbc80f",
+    "annotation_javascript.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "build-training-final.log": "2c0c8dca5f263a8b7866b23474965082565b94fc75be87955780b0aa4eb34032",
+    "build-training-v2.log": "373367856d15b733347a785af11de5d72b15e29d9abb690cbde94effafa49068",
+    "build-training.log": "e109b263563e33ba654fff1957e61e53c5f2db18666b1e0b32a53278089b19ca",
+    "command-checks-before-type-annotations.json": "cb27c560acd8989498a3cd73bb51b57b3a40e134842f61c93f15f7c817e46ef4",
+    "command-checks.json": "19269cc7159f4a44427b589846553827c9b287797ba33b36ebc4e3ce63f3a410",
+    "comparison-plan.json": "7bd4a4525251dd1aabe2eb30c69b537248efd275c906ba12a6312c02777a8a2b",
+    "comparison.csv": "bbe88a5aa2e742d687453c197cf4546ffa1d4cc71fb010b7ff45ef3f5cfc18ae",
+    "comparison.json": "b16289e445c7f6e8d5229cb713863c9f13e4aaf46837425649fe314c0cc6013e",
+    "comparison.log": "b84ae718aa81e88ea6a47a490b1e4cc13732aa8c01d4035ed31b54aea2985349",
+    "compose.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "dev-condition-proxy.csv": "5dbaa9dba744d237fe3c921781570cb21ac64bd4e31b2468c7c7afe6cfe0b055",
+    "experiment-code.json": "3ddff5c242ffc00ee1995330c46ea9a0b08ece3e1fdf703c5d94eaa913a539c4",
+    "lora-before.py": "005c320ec3dcdd9a2c890eccec7d4ae70b50d41c7ff4d34b07203025f599bd51",
+    "lora-executed.py": "03f03f003b528bdefdf4c2a0d8f9ee1053588b9e71235bd5c189f12237f0fe8c",
+    "packaged-cli-v2.log": "eafb6df4e00e55db0783d6b296321d016f831009746d837bcc6f094a8c189680",
+    "packaged_cli.log": "17d7f4f753da5d45bd66cfe0eaf9f3d332afd6074f2d072795ec9258ee02a02b",
+    "policy-tests.xml": "1f07c1ea9ee27c64b4ad4173043bcd21b0dbb5d98ca7904b12344bc0c80044e4",
+    "post-typing-policy-tests.xml": "0cd0f1cabe26c7157434ea46bab9f370362c438adb33df7a017ee5b412b21583",
+    "ruff-mypy-with-train-extras.log": "6b030b28397de335f27143dc38545bd780591ebe9355ce7b4bb7b50eb57d9da2",
+    "ruff_mypy.log": "5be6372a461e7d591ee3e9de9fb5bdc12294341f2aa709e71ede8e471a3e8f61",
+    "runtime-image-v2.json": "65238ff189992b4344aa381ddb94839767bd62905522728cdc4e55cdcfc0f71b",
+    "runtime-image.json": "9accef1d76929033325e1b3abd68cb21d8b44fb126f3277d1b298efb828bdfce",
+    "training-attempt2.log": "3bad3081cd6bc636d42f04b06ab43a504457e4f1c1c20cd317bd94dbe421d132",
+    "training-history.json": "8126a6a9f23f3da75a5bf745c1fd2bb86ddf3cc34a7ca048608f7458461e49e7",
+    "training-loss.png": "2362fc3ff78b7e0a338c04bb09c1e6b59fe9bb773238017391d50017e3f4a325",
+    "training-loss.svg": "dcb3f71c775d58558429e75080fd79671e1f6e574f3d621ab97f63fbae90bb56",
+    "training-manifest.json": "de7b4343359989758532a6277818ce328ca645ab645f496c3e4ed8fc9f003c7c",
+    "training.log": "8a488eb5cb3113b6540baa0597039d114c1ee5190ac2bf8fc0d11d70f812769e"
+  }
+}

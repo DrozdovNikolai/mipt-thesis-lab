@@ -1,0 +1,107 @@
+{
+  "created_at": "2026-09-13 20:38:48.322743+00:00",
+  "amendment": "gate_numeric_and_claim_scope_v1",
+  "verification": "PASS",
+  "checks": {
+    "current_packaged_code_and_scorer": true,
+    "only_gate_and_evaluation_cohort_code_changed": true,
+    "all_tests_pass_no_skips": true,
+    "integration_executed": true,
+    "static_checks": true,
+    "compose_variants": true,
+    "running_api_worker_use_current_image": true,
+    "cpu_gpu_real_offline_uncached": true,
+    "broker_outage_and_worker_sigkill_recovered": true,
+    "baseline_parameters_and_checkpoint_unchanged": true,
+    "annotation_service_and_audio_preserved": true,
+    "no_final_test_opened": true
+  },
+  "changed_core_files": [
+    "benchmark.py",
+    "gates.py"
+  ],
+  "previous_code_hash": "3ebe06c6b5e3d924e96623be9a6829076844c701b9692cb02eed154824ea749f",
+  "code_hash": "86ab6fabd13cea229a2bdb2e526534f5c18f69f3c698191a0cccd53f6e6cf3aa",
+  "previous_scorer_hash": "987cf5b3f4f9c189b5ea31b43fb2125185918646e1b1633f1b6aee824e6ad79b",
+  "scorer_hash": "39c2bbc5b4166f0a73aed377f7d8afbed02c03fda8e78a3b840e21123484b1b3",
+  "acceptance_sha256": "32d35b1e80b64f38e6adcc9895515b37f224a9e51dcf5ff95389e1f9ecc45071",
+  "engineering_gate": {
+    "status": "PASS",
+    "reasons": [],
+    "code_hash": "86ab6fabd13cea229a2bdb2e526534f5c18f69f3c698191a0cccd53f6e6cf3aa",
+    "scorer_hash": "39c2bbc5b4166f0a73aed377f7d8afbed02c03fda8e78a3b840e21123484b1b3",
+    "test_cases": 220,
+    "integration_cases": 9,
+    "evidence_directory": "gate-hardening"
+  },
+  "asr_quality_gate": {
+    "status": "NEEDS_MORE_DATA",
+    "reasons": [
+      "independent_groups: 0 < 20",
+      "distinct_original_human_utterances: 0 < 300",
+      "reference_words: 0 < 3000",
+      "human_verified_critical_entity_occurrences: 0 < 100",
+      "clean_control_utterances: 0 < 50",
+      "non_speech_control_minutes: 0 < 5"
+    ]
+  },
+  "nlp_quality_gate": {
+    "status": "NEEDS_MORE_DATA",
+    "reasons": [
+      "insufficient_evidence:independent_groups",
+      "insufficient_evidence:human_verified_episodes_or_utterances",
+      "insufficient_positive_support:CHECKLIST",
+      "insufficient_positive_support:CONFIGURATION_MENTION",
+      "insufficient_positive_support:CREW_COORDINATION",
+      "insufficient_evidence:salience_positives",
+      "insufficient_evidence:salience_negatives",
+      "missing_human_event_labels"
+    ]
+  },
+  "temporal_event_gate": {
+    "status": "NEEDS_MORE_DATA",
+    "reasons": [
+      "missing_human_temporal_annotations_on_continuous_recordings"
+    ]
+  },
+  "research_objective_achieved": false,
+  "candidate_selected": false,
+  "release_promoted": false,
+  "validated_scope": [],
+  "amendment_reason": [
+    "Nonfinite/invalid metrics and malformed evidence could bypass ordinary comparisons",
+    "The old ASR gate did not verify the bootstrap protocol beyond the upper bound",
+    "NLP/temporal evidence must belong to the frozen language/domain and have human review provenance"
+  ],
+  "previous_dev_inference": {
+    "report": "pending-dev-ablation.json",
+    "runs": 64,
+    "retained": true,
+    "original_image_tag": "north55-speech:asr-plan-a5578a68",
+    "quality_evidence": false,
+    "reuse_for_current_selection": "Requires a new scored dev run and current freeze; old reports are not relabelled"
+  },
+  "baseline_lock": "gate-hardening/baseline.lock.json",
+  "tests_passed": 220,
+  "source_preparation": "research-readiness-v2.json remains the historical preparation/execution snapshot",
+  "limitations": [
+    "No human-verified cockpit benchmark cohort; no measured lexical WER improvement or NLP comparison",
+    "Only 3 source test groups reserved against the unchanged minimum of 20",
+    "Embedded browser login remains INCONCLUSIVE because it supplies Origin:null; ordinary HTTP service checks pass"
+  ],
+  "evidence_sha256": {
+    "gate-hardening/all-tests.xml": "89ab9ac77a814203001b6a05aacdd4e152cd29de17659c0fa2791ec81f5aa3cb",
+    "gate-hardening/static-checks.json": "63b6b89de059e1da2ad57fa2233d43addc78b9393a2b4bba4fbee840bb7c1019",
+    "gate-hardening/runtime.json": "a771259a5cb8ea0a216c8bfd3f715d6068ae965724bcd50b19f3cc6321ee6a4f",
+    "gate-hardening/baseline.lock.json": "474599b11e2887862e2372370db63021f0799b68f0ac8f450d44dc852bad95b2",
+    "gate-hardening/cpu/offline-asr-smoke.json": "5dbb1b1a6f952d2a47ac2b7081a0c9a2714632c64d22a3da69425a4842e9a398",
+    "gate-hardening/gpu/offline-asr-smoke.json": "179cdd19c6814448a0d31ea27834ad3cf6e0be0bb33519bbf9864927017bcd5a",
+    "gate-hardening/selftest-short-result.json": "e25d9556812b1ac2109ac15df20ba8c069ca0de6bbdc818678838afac18b1dc0",
+    "gate-hardening/selftest-long-result.json": "4187c70f0a69873f427aeeb8717293c75d9b24c7b5b248c1749ba59677dbb497",
+    "gate-hardening/annotation-service.json": "951fea74cc01ac3c81780e295e666eecf343bd54980af9eb5a153936f877efa4",
+    "gate-numeric-before.xml": "4ce13ff8ca321a30eea298d0b816e41ef4f6114e35d586dfc33dbc6f82745f15",
+    "gate-hardening-code-before.json": "79beb31777c0980936fda8097cc4aa5b0a01dac85be333907bbf58e07f85f910",
+    "gate-hardening-code-after.json": "8ba9034dad91bd450d2a4bb8e45007486368da0dfa8001484bcf5823517046dd",
+    "migration-tests.json": "757b85379c2acc603aa11d70a9afffa8d6bbc96fa31fd767b1c93dee7f7c390f"
+  }
+}

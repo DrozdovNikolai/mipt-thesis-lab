@@ -1,0 +1,11 @@
+train_manifest: /expanded/training/train.jsonl
+dev_manifest: /expanded/training/dev.jsonl
+base_model: whisper-small-transformers
+output: whisper-small-publisher-expanded-v1
+reference_policy: publisher_weak_exploratory_v1
+quality_evidence: false
+selection_allowed: false
+rank: 8
+max_steps: 40
+eval_steps: 10
+learning_rate: 0.0001

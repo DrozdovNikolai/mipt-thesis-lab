@@ -1,0 +1,23 @@
+{
+  "rejected_rechecked": 352,
+  "accepted_weak": 18,
+  "summed_supplemental_seconds": 168.98400000000004,
+  "supplemental_union_seconds": 168.98400000000015,
+  "prior_clean_union_seconds": 1656.1119374999998,
+  "combined_clean_union_seconds": 1797.9259374999997,
+  "net_new_source_seconds": 141.81399999999985,
+  "sources": {
+    "bleriot-a:BEA_checklists_sp001": 4,
+    "bleriot-a:BEA_checklists_sp008": 2,
+    "bleriot-a:BEA_checklists_sp009": 5,
+    "bleriot-a:BEA_checklists_sp010": 5,
+    "bleriot-a:BEA_checklists_sp011": 2
+  },
+  "reasons": {
+    "no_reliable_cross_family_support": 288,
+    "publisher_support": 328,
+    "length": 2
+  },
+  "human_verified": false,
+  "training_executed": false
+}

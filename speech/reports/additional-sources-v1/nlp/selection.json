@@ -1,0 +1,255 @@
+{
+  "frozen_at": "2026-09-14T06:38:00.822203+00:00",
+  "protocol_sha256": "96aececa8c889252e03a0bbbe322ad54aa1fc7d810a3e91ef03627775b1d314e",
+  "model_sha256": "d1e8b8516e4e38e711ae5c5d8c589dcd61ae5b0a5e466a097bf95c85b1ea04ab",
+  "chosen": {
+    "C": 0.25,
+    "threshold": 0.5,
+    "metrics": {
+      "negative": {
+        "precision": 0.9484848484848485,
+        "recall": 0.8598901098901099,
+        "f1": 0.9020172910662824,
+        "support": 364
+      },
+      "safety_voice": {
+        "precision": 0.203125,
+        "recall": 0.43333333333333335,
+        "f1": 0.2765957446808511,
+        "support": 30
+      },
+      "macro_f1": 0.5893065178735667,
+      "accuracy": 0.8274111675126904
+    }
+  },
+  "trials": [
+    {
+      "C": 0.25,
+      "threshold": 0.35,
+      "metrics": {
+        "negative": {
+          "precision": 0.9678714859437751,
+          "recall": 0.6620879120879121,
+          "f1": 0.7862969004893964,
+          "support": 364
+        },
+        "safety_voice": {
+          "precision": 0.15172413793103448,
+          "recall": 0.7333333333333333,
+          "f1": 0.25142857142857145,
+          "support": 30
+        },
+        "macro_f1": 0.5188627359589839,
+        "accuracy": 0.6675126903553299
+      }
+    },
+    {
+      "C": 0.25,
+      "threshold": 0.5,
+      "metrics": {
+        "negative": {
+          "precision": 0.9484848484848485,
+          "recall": 0.8598901098901099,
+          "f1": 0.9020172910662824,
+          "support": 364
+        },
+        "safety_voice": {
+          "precision": 0.203125,
+          "recall": 0.43333333333333335,
+          "f1": 0.2765957446808511,
+          "support": 30
+        },
+        "macro_f1": 0.5893065178735667,
+        "accuracy": 0.8274111675126904
+      }
+    },
+    {
+      "C": 0.25,
+      "threshold": 0.65,
+      "metrics": {
+        "negative": {
+          "precision": 0.9283819628647215,
+          "recall": 0.9615384615384616,
+          "f1": 0.9446693657219973,
+          "support": 364
+        },
+        "safety_voice": {
+          "precision": 0.17647058823529413,
+          "recall": 0.1,
+          "f1": 0.1276595744680851,
+          "support": 30
+        },
+        "macro_f1": 0.5361644700950412,
+        "accuracy": 0.8959390862944162
+      }
+    },
+    {
+      "C": 1.0,
+      "threshold": 0.35,
+      "metrics": {
+        "negative": {
+          "precision": 0.9587628865979382,
+          "recall": 0.7664835164835165,
+          "f1": 0.8519083969465648,
+          "support": 364
+        },
+        "safety_voice": {
+          "precision": 0.17475728155339806,
+          "recall": 0.6,
+          "f1": 0.2706766917293233,
+          "support": 30
+        },
+        "macro_f1": 0.5612925443379441,
+        "accuracy": 0.7538071065989848
+      }
+    },
+    {
+      "C": 1.0,
+      "threshold": 0.5,
+      "metrics": {
+        "negative": {
+          "precision": 0.9396551724137931,
+          "recall": 0.8983516483516484,
+          "f1": 0.9185393258426966,
+          "support": 364
+        },
+        "safety_voice": {
+          "precision": 0.1956521739130435,
+          "recall": 0.3,
+          "f1": 0.23684210526315788,
+          "support": 30
+        },
+        "macro_f1": 0.5776907155529273,
+        "accuracy": 0.8527918781725888
+      }
+    },
+    {
+      "C": 1.0,
+      "threshold": 0.65,
+      "metrics": {
+        "negative": {
+          "precision": 0.9331550802139037,
+          "recall": 0.9587912087912088,
+          "f1": 0.94579945799458,
+          "support": 364
+        },
+        "safety_voice": {
+          "precision": 0.25,
+          "recall": 0.16666666666666666,
+          "f1": 0.2,
+          "support": 30
+        },
+        "macro_f1": 0.57289972899729,
+        "accuracy": 0.8984771573604061
+      }
+    },
+    {
+      "C": 4.0,
+      "threshold": 0.35,
+      "metrics": {
+        "negative": {
+          "precision": 0.9369369369369369,
+          "recall": 0.8571428571428571,
+          "f1": 0.8952654232424677,
+          "support": 364
+        },
+        "safety_voice": {
+          "precision": 0.14754098360655737,
+          "recall": 0.3,
+          "f1": 0.1978021978021978,
+          "support": 30
+        },
+        "macro_f1": 0.5465338105223327,
+        "accuracy": 0.8147208121827412
+      }
+    },
+    {
+      "C": 4.0,
+      "threshold": 0.5,
+      "metrics": {
+        "negative": {
+          "precision": 0.938375350140056,
+          "recall": 0.9203296703296703,
+          "f1": 0.9292649098474342,
+          "support": 364
+        },
+        "safety_voice": {
+          "precision": 0.21621621621621623,
+          "recall": 0.26666666666666666,
+          "f1": 0.23880597014925373,
+          "support": 30
+        },
+        "macro_f1": 0.584035439998344,
+        "accuracy": 0.8705583756345178
+      }
+    },
+    {
+      "C": 4.0,
+      "threshold": 0.65,
+      "metrics": {
+        "negative": {
+          "precision": 0.9308510638297872,
+          "recall": 0.9615384615384616,
+          "f1": 0.9459459459459459,
+          "support": 364
+        },
+        "safety_voice": {
+          "precision": 0.2222222222222222,
+          "recall": 0.13333333333333333,
+          "f1": 0.16666666666666666,
+          "support": 30
+        },
+        "macro_f1": 0.5563063063063063,
+        "accuracy": 0.8984771573604061
+      }
+    }
+  ],
+  "dev_rule_baselines": {
+    "project_hazard_rules": {
+      "negative": {
+        "precision": 0.9300518134715026,
+        "recall": 0.9862637362637363,
+        "f1": 0.9573333333333334,
+        "support": 364
+      },
+      "safety_voice": {
+        "precision": 0.375,
+        "recall": 0.1,
+        "f1": 0.15789473684210525,
+        "support": 30
+      },
+      "macro_f1": 0.5576140350877193,
+      "accuracy": 0.9187817258883249
+    },
+    "broad_hazard_rules": {
+      "negative": {
+        "precision": 0.9353099730458221,
+        "recall": 0.9532967032967034,
+        "f1": 0.9442176870748299,
+        "support": 364
+      },
+      "safety_voice": {
+        "precision": 0.2608695652173913,
+        "recall": 0.2,
+        "f1": 0.22641509433962265,
+        "support": 30
+      },
+      "macro_f1": 0.5853163907072263,
+      "accuracy": 0.8959390862944162
+    }
+  },
+  "train_rows": 2838,
+  "dev_rows": 394,
+  "train_cases": 24,
+  "dev_cases": 7,
+  "test_accessed": false,
+  "label": "source_native_safety_voice",
+  "project_event_gate": "NEEDS_MORE_DATA",
+  "release_promoted": false,
+  "packages": {
+    "scikit-learn": "1.7.2",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "skops": "0.13.0"
+  }
+}

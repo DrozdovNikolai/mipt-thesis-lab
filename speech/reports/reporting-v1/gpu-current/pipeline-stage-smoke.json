@@ -1,0 +1,1552 @@
+{
+  "kind": "engineering_stage_execution_only",
+  "quality_evidence": false,
+  "language_caveat": "RU mode here processes EN control audio; it does not validate RU recognition",
+  "variants": {
+    "baseline": {
+      "status": "EXECUTED",
+      "language_mode": "en",
+      "result": {
+        "schema_version": "1.0",
+        "sample_id": "human-engineering-control",
+        "pipeline_version": "0.1.0",
+        "config_hash": "b2548adb154faaa09aeacec3c8446141d7a08d77c452f2e780273a48a70de355",
+        "quality_gate_status": "NOT_RUN",
+        "deployment_candidate": "baseline",
+        "validated_scope": [],
+        "revision": 0,
+        "component_statuses": {
+          "asr": {
+            "status": "completed"
+          },
+          "diarization": {
+            "status": "not_requested",
+            "der": null,
+            "jer": null
+          },
+          "nlp": {
+            "status": "baseline",
+            "version": "rules_v1",
+            "trained": false,
+            "reason": "missing_event_labels_or_trained_artifact"
+          }
+        },
+        "segments": [
+          {
+            "segment_id": "ch0-chunk0-0",
+            "start_sec": 0.0,
+            "end_sec": 4.38,
+            "raw_asr_text": " The long drizzle had begun. Pedestrians had turned up collars and trousers at the bottom.",
+            "display_text": "The long drizzle had begun. Pedestrians had turned up collars and trousers at the bottom.",
+            "reviewed_text": null,
+            "channel": null,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "language": "en",
+            "words": [
+              {
+                "word": " The",
+                "start_sec": 0.0,
+                "end_sec": 0.28,
+                "probability": 0.8779296875
+              },
+              {
+                "word": " long",
+                "start_sec": 0.28,
+                "end_sec": 0.52,
+                "probability": 0.99072265625
+              },
+              {
+                "word": " drizzle",
+                "start_sec": 0.52,
+                "end_sec": 0.8,
+                "probability": 0.94287109375
+              },
+              {
+                "word": " had",
+                "start_sec": 0.8,
+                "end_sec": 1.06,
+                "probability": 0.99267578125
+              },
+              {
+                "word": " begun.",
+                "start_sec": 1.06,
+                "end_sec": 1.42,
+                "probability": 0.99609375
+              },
+              {
+                "word": " Pedestrians",
+                "start_sec": 1.7,
+                "end_sec": 2.2,
+                "probability": 0.9772135416666666
+              },
+              {
+                "word": " had",
+                "start_sec": 2.2,
+                "end_sec": 2.4,
+                "probability": 0.98583984375
+              },
+              {
+                "word": " turned",
+                "start_sec": 2.4,
+                "end_sec": 2.64,
+                "probability": 0.99609375
+              },
+              {
+                "word": " up",
+                "start_sec": 2.64,
+                "end_sec": 2.8,
+                "probability": 0.93603515625
+              },
+              {
+                "word": " collars",
+                "start_sec": 2.8,
+                "end_sec": 3.32,
+                "probability": 0.985595703125
+              },
+              {
+                "word": " and",
+                "start_sec": 3.32,
+                "end_sec": 3.46,
+                "probability": 0.990234375
+              },
+              {
+                "word": " trousers",
+                "start_sec": 3.46,
+                "end_sec": 3.78,
+                "probability": 0.97119140625
+              },
+              {
+                "word": " at",
+                "start_sec": 3.78,
+                "end_sec": 4.04,
+                "probability": 0.99267578125
+              },
+              {
+                "word": " the",
+                "start_sec": 4.04,
+                "end_sec": 4.12,
+                "probability": 0.9990234375
+              },
+              {
+                "word": " bottom.",
+                "start_sec": 4.12,
+                "end_sec": 4.38,
+                "probability": 0.9990234375
+              }
+            ],
+            "avg_logprob": -0.20227581651314444,
+            "no_speech_prob": 0.00460052490234375,
+            "alternatives": [],
+            "normalization_changes": [
+              {
+                "old": " The long drizzle had begun. Pedestrians had turned up collars and trousers at the bottom.",
+                "new": "The long drizzle had begun. Pedestrians had turned up collars and trousers at the bottom.",
+                "rule_id": "nfc_whitespace",
+                "source_span": [
+                  0,
+                  90
+                ],
+                "justification": "Unicode NFC and whitespace formatting only",
+                "version": "display_normalizer_v1"
+              }
+            ],
+            "risk_level": "medium",
+            "risk_reasons": [
+              "uncalibrated_asr_confidence",
+              "unknown_speaker"
+            ]
+          }
+        ],
+        "events": [
+          {
+            "event_id": "event-0",
+            "start_sec": 0.0,
+            "end_sec": 4.38,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "classifier_version": "rules_v1",
+            "ontology_version": "1.0",
+            "labels": [
+              "OTHER"
+            ],
+            "label_scores": {},
+            "score_kind": "heuristic_uncalibrated",
+            "speech_act": "unknown",
+            "salient_for_review": "unknown",
+            "evidence_segment_ids": [
+              "ch0-chunk0-0"
+            ],
+            "evidence_quote": "The long drizzle had begun. Pedestrians had turned up collars and trousers at the bottom.",
+            "reviewed_evidence_quote": null,
+            "assertion_kind": "spoken_mention",
+            "aircraft_state_verified": false,
+            "flight_phase": "unknown",
+            "phase_source": "unknown",
+            "entities": [],
+            "needs_review": true,
+            "review_status": "draft",
+            "risk_reasons": [
+              "uncalibrated_asr_confidence",
+              "unknown_speaker"
+            ]
+          }
+        ],
+        "audio": {
+          "sample_rate": 16000,
+          "channels": 1,
+          "duration_sec": 4.92,
+          "container": "flac",
+          "sha256": "3909a6c5ae93112518681fcbf0a74df43615a4f88bd6d5cd788775255296e3f6",
+          "channel_diagnostics": [
+            {
+              "channel": 0,
+              "peak": 0.4310302734375,
+              "rms": 0.059145579591874366,
+              "clipping_fraction": 0.0,
+              "prepared_rate": 16000,
+              "prepared_samples": 78720,
+              "original_offset_sec": 0,
+              "timeline_mapping": "original_sample = prepared_sample * original_rate / 16000"
+            }
+          ]
+        },
+        "timeline": [
+          {
+            "channel": 0,
+            "start_sample_16k": 0,
+            "end_sample_16k": 78720,
+            "original_start_sec": 0.0,
+            "original_end_sec": 4.92,
+            "original_sample_rate": 16000
+          }
+        ],
+        "crosstalk": [],
+        "effective_config": {
+          "schema_version": "1.0",
+          "name": "baseline",
+          "model": "small",
+          "compute_type": "float16",
+          "device": "cuda",
+          "task": "transcribe",
+          "beam_size": 5,
+          "temperature": 0.0,
+          "best_of": 5,
+          "patience": 1.0,
+          "length_penalty": 1.0,
+          "repetition_penalty": 1.0,
+          "no_repeat_ngram_size": 0,
+          "condition_on_previous_text": true,
+          "compression_ratio_threshold": 2.4,
+          "log_prob_threshold": -1.0,
+          "no_speech_threshold": 0.6,
+          "suppress_blank": true,
+          "suppress_tokens": [
+            -1
+          ],
+          "max_initial_timestamp": 1.0,
+          "word_timestamps": true,
+          "language_detection_threshold": 0.5,
+          "language_detection_segments": 1,
+          "vad": {
+            "enabled": false,
+            "threshold": 0.5,
+            "min_speech_duration_ms": 100,
+            "min_silence_duration_ms": 400,
+            "speech_pad_ms": 200,
+            "max_speech_duration_s": 30.0
+          },
+          "denoise": {
+            "enabled": false,
+            "strength": 0.5,
+            "floor": 0.3,
+            "noise_percentile": 10.0
+          },
+          "hotwords": null,
+          "glossary_version": null,
+          "redecode": false,
+          "max_redecode_passes": 1,
+          "redecode_logprob_threshold": -0.8,
+          "episode_gap_sec": 2.0,
+          "episode_max_sec": 30.0,
+          "episode_max_tokens": 100,
+          "classifier": "rules_v1",
+          "classifier_artifact": null
+        },
+        "effective_asr_options": {
+          "task": "transcribe",
+          "beam_size": 5,
+          "temperature": 0.0,
+          "best_of": 5,
+          "patience": 1.0,
+          "length_penalty": 1.0,
+          "repetition_penalty": 1.0,
+          "no_repeat_ngram_size": 0,
+          "condition_on_previous_text": true,
+          "compression_ratio_threshold": 2.4,
+          "log_prob_threshold": -1.0,
+          "no_speech_threshold": 0.6,
+          "suppress_blank": true,
+          "suppress_tokens": [
+            -1
+          ],
+          "max_initial_timestamp": 1.0,
+          "word_timestamps": true,
+          "language_detection_threshold": 0.5,
+          "language_detection_segments": 1,
+          "language": "en",
+          "vad_filter": false,
+          "initial_prompt": null,
+          "hotwords": null,
+          "prompt_reset_on_temperature": 0.5,
+          "prefix": null,
+          "without_timestamps": false,
+          "prepend_punctuations": "\"'“¿([{-",
+          "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+          "max_new_tokens": null,
+          "chunk_length": null,
+          "clip_timestamps": "0",
+          "hallucination_silence_threshold": null,
+          "multilingual": false
+        },
+        "model_manifest": {
+          "model": "small",
+          "repo": "Systran/faster-whisper-small",
+          "revision": "536b0662742c02347bc0e980a01041f333bce120",
+          "files": {
+            "model.bin": "3e305921506d8872816023e4c273e75d2419fb89b24da97b4fe7bce14170d671",
+            "tokenizer.json": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab",
+            "README.md": "329373481008c7c38654aff8ecdcf0163c211557cc7ba8e2ef6f2f84b4f75ec8",
+            "config.json": "b55496ac7940a7ae47d2c01eab40edfd8701feec1229d9cce3b40014383fb828",
+            "vocabulary.txt": "34ce3fe1c5041027b3f8d42912270993f986dbc4bb34cf27f951e34a1e453913"
+          },
+          "license": "MIT",
+          "acquired_at": "2026-09-13T14:51:11Z",
+          "faster_whisper_version": "1.2.1",
+          "silero": {
+            "path": "/opt/venv/lib/python3.11/site-packages/faster_whisper/assets/silero_vad_v6.onnx",
+            "sha256": "4cbf549b8326f60f80f2536d9eefeb450a9abe83365a098031c89719f1be17d2",
+            "distribution": "bundled_with_faster_whisper"
+          }
+        },
+        "component_hashes": {
+          "audio.py": "ecc3906671382cc66d5ba7a46774d23f70de2a68b95ebf2791157b8d301217ce",
+          "asr.py": "4fa5c621e4d506ba41b531f7cbec46a59a0e26871c7a423c3bc398a5818c0da1",
+          "nlp.py": "e3dcc378ea66f6be96c81d7a4c884acaad4a930036abda5f0077e916d1dcbbf5",
+          "diarization.py": "ebde8a8e87af0099a6ee78971f74c802991a65d196a12c9f3db30c64ebf1decc",
+          "pipeline.py": "ca339e5c106aa25a103d3f9034d9ffd50eba7d4220718fe45189e1ac16d22b70",
+          "training.py": "2cb7b518d953f96501771a0b50af494d8498968468478b7b71d3b73eb11e369e",
+          "schemas.py": "3af2ad6dde74662b938f1c9eb7b20e0f6bf7af37535db5d4633da24811a7c343"
+        },
+        "cache_key": "15dd8d3973d755a3f179563ba0290ac3c2c7a57d7ab8c00545ce43b45fa71f3b",
+        "cache_hit": false,
+        "timing": {
+          "end_to_end_sec": 15.322667170999921,
+          "asr_sec": 9.139706226000271,
+          "model_initialization_sec": 5.752579134998086,
+          "initialization_mode": "cold",
+          "end_to_end_rtf": 3.114363246138195,
+          "asr_rtf": 1.857663867073226
+        },
+        "environment": {
+          "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+          "processor": "",
+          "device": "cuda",
+          "precision": "float16",
+          "rss_bytes": 1204625408,
+          "peak_rss_bytes": 1204625408,
+          "hardware": {
+            "cpu_count": 20,
+            "memory_total_bytes": 33526280192,
+            "cpu_model": "Intel(R) Core(TM) i5-14600K",
+            "gpu_inventory_and_observed_memory": "NVIDIA GeForce RTX 5070 Ti, GPU-e4bad14d-6efc-76a8-d3ad-033cc1d01c89, 581.80, 5890 MiB\nNVIDIA GeForce GTX 1080 Ti, GPU-ec349029-ec09-1c5a-5845-6974be0a326a, 581.80, 1216 MiB"
+          }
+        },
+        "summary": "1 draft speech episodes; human review required."
+      }
+    },
+    "vad_hints_denoise_redecode": {
+      "status": "EXECUTED",
+      "language_mode": "en",
+      "result": {
+        "schema_version": "1.0",
+        "sample_id": "human-engineering-control",
+        "pipeline_version": "0.1.0",
+        "config_hash": "97fa35806773dbf848cc708f5506ff5075e2cf5a59fbe177ff0a95213eff3eeb",
+        "quality_gate_status": "NOT_RUN",
+        "deployment_candidate": "research_preview",
+        "validated_scope": [],
+        "revision": 0,
+        "component_statuses": {
+          "asr": {
+            "status": "completed"
+          },
+          "diarization": {
+            "status": "not_requested",
+            "der": null,
+            "jer": null
+          },
+          "nlp": {
+            "status": "baseline",
+            "version": "rules_v1",
+            "trained": false,
+            "reason": "missing_event_labels_or_trained_artifact"
+          }
+        },
+        "segments": [
+          {
+            "segment_id": "ch0-chunk0-0",
+            "start_sec": 0.024,
+            "end_sec": 4.384,
+            "raw_asr_text": " The long drizzle had begun. Pedestrians had turned up collars and trousers at the bottom.",
+            "display_text": "The long drizzle had begun. Pedestrians had turned up collars and trousers at the bottom.",
+            "reviewed_text": null,
+            "channel": null,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "language": "en",
+            "words": [
+              {
+                "word": " The",
+                "start_sec": 0.024,
+                "end_sec": 0.28400000000000003,
+                "probability": 0.8828125
+              },
+              {
+                "word": " long",
+                "start_sec": 0.28400000000000003,
+                "end_sec": 0.524,
+                "probability": 0.9912109375
+              },
+              {
+                "word": " drizzle",
+                "start_sec": 0.524,
+                "end_sec": 0.804,
+                "probability": 0.935546875
+              },
+              {
+                "word": " had",
+                "start_sec": 0.804,
+                "end_sec": 1.064,
+                "probability": 0.9921875
+              },
+              {
+                "word": " begun.",
+                "start_sec": 1.064,
+                "end_sec": 1.424,
+                "probability": 0.99658203125
+              },
+              {
+                "word": " Pedestrians",
+                "start_sec": 1.744,
+                "end_sec": 2.204,
+                "probability": 0.9734700520833334
+              },
+              {
+                "word": " had",
+                "start_sec": 2.204,
+                "end_sec": 2.404,
+                "probability": 0.98583984375
+              },
+              {
+                "word": " turned",
+                "start_sec": 2.404,
+                "end_sec": 2.644,
+                "probability": 0.99560546875
+              },
+              {
+                "word": " up",
+                "start_sec": 2.644,
+                "end_sec": 2.804,
+                "probability": 0.9306640625
+              },
+              {
+                "word": " collars",
+                "start_sec": 2.804,
+                "end_sec": 3.324,
+                "probability": 0.98291015625
+              },
+              {
+                "word": " and",
+                "start_sec": 3.324,
+                "end_sec": 3.464,
+                "probability": 0.990234375
+              },
+              {
+                "word": " trousers",
+                "start_sec": 3.464,
+                "end_sec": 3.7640000000000002,
+                "probability": 0.97119140625
+              },
+              {
+                "word": " at",
+                "start_sec": 3.7640000000000002,
+                "end_sec": 4.044,
+                "probability": 0.99267578125
+              },
+              {
+                "word": " the",
+                "start_sec": 4.044,
+                "end_sec": 4.124,
+                "probability": 0.9990234375
+              },
+              {
+                "word": " bottom.",
+                "start_sec": 4.124,
+                "end_sec": 4.384,
+                "probability": 0.9990234375
+              }
+            ],
+            "avg_logprob": -0.19718070911324542,
+            "no_speech_prob": 0.0083770751953125,
+            "alternatives": [
+              {
+                "text": " The long drizzle had begun. Pedestrians had turned up collars and trousers at the bottom.",
+                "segments": [
+                  {
+                    "segment_id": "ch0-chunk0-0-retry-0",
+                    "start_sec": 0.0,
+                    "end_sec": 4.38,
+                    "raw_asr_text": " The long drizzle had begun. Pedestrians had turned up collars and trousers at the bottom.",
+                    "display_text": "",
+                    "reviewed_text": null,
+                    "channel": null,
+                    "speaker_id": null,
+                    "role": "unknown",
+                    "role_provenance": null,
+                    "language": "en",
+                    "words": [
+                      {
+                        "word": " The",
+                        "start_sec": 0.0,
+                        "end_sec": 0.28,
+                        "probability": 0.8759765625
+                      },
+                      {
+                        "word": " long",
+                        "start_sec": 0.28,
+                        "end_sec": 0.52,
+                        "probability": 0.98583984375
+                      },
+                      {
+                        "word": " drizzle",
+                        "start_sec": 0.52,
+                        "end_sec": 0.82,
+                        "probability": 0.94970703125
+                      },
+                      {
+                        "word": " had",
+                        "start_sec": 0.82,
+                        "end_sec": 1.06,
+                        "probability": 0.9931640625
+                      },
+                      {
+                        "word": " begun.",
+                        "start_sec": 1.06,
+                        "end_sec": 1.42,
+                        "probability": 0.99609375
+                      },
+                      {
+                        "word": " Pedestrians",
+                        "start_sec": 1.7,
+                        "end_sec": 2.2,
+                        "probability": 0.9762369791666666
+                      },
+                      {
+                        "word": " had",
+                        "start_sec": 2.2,
+                        "end_sec": 2.4,
+                        "probability": 0.98583984375
+                      },
+                      {
+                        "word": " turned",
+                        "start_sec": 2.4,
+                        "end_sec": 2.64,
+                        "probability": 0.99609375
+                      },
+                      {
+                        "word": " up",
+                        "start_sec": 2.64,
+                        "end_sec": 2.8,
+                        "probability": 0.93017578125
+                      },
+                      {
+                        "word": " collars",
+                        "start_sec": 2.8,
+                        "end_sec": 3.32,
+                        "probability": 0.986572265625
+                      },
+                      {
+                        "word": " and",
+                        "start_sec": 3.32,
+                        "end_sec": 3.46,
+                        "probability": 0.9912109375
+                      },
+                      {
+                        "word": " trousers",
+                        "start_sec": 3.46,
+                        "end_sec": 3.78,
+                        "probability": 0.97314453125
+                      },
+                      {
+                        "word": " at",
+                        "start_sec": 3.78,
+                        "end_sec": 4.04,
+                        "probability": 0.9931640625
+                      },
+                      {
+                        "word": " the",
+                        "start_sec": 4.04,
+                        "end_sec": 4.12,
+                        "probability": 0.9990234375
+                      },
+                      {
+                        "word": " bottom.",
+                        "start_sec": 4.12,
+                        "end_sec": 4.38,
+                        "probability": 0.9990234375
+                      }
+                    ],
+                    "avg_logprob": -0.2189198330692623,
+                    "no_speech_prob": 0.004261016845703125,
+                    "alternatives": [],
+                    "normalization_changes": [],
+                    "risk_level": "unknown",
+                    "risk_reasons": [
+                      "uncalibrated_asr_confidence"
+                    ]
+                  }
+                ],
+                "selected": false,
+                "policy": "conservative_logprob_v1"
+              }
+            ],
+            "normalization_changes": [
+              {
+                "old": " The long drizzle had begun. Pedestrians had turned up collars and trousers at the bottom.",
+                "new": "The long drizzle had begun. Pedestrians had turned up collars and trousers at the bottom.",
+                "rule_id": "nfc_whitespace",
+                "source_span": [
+                  0,
+                  90
+                ],
+                "justification": "Unicode NFC and whitespace formatting only",
+                "version": "display_normalizer_v1"
+              }
+            ],
+            "risk_level": "medium",
+            "risk_reasons": [
+              "uncalibrated_asr_confidence",
+              "unknown_speaker"
+            ]
+          }
+        ],
+        "events": [
+          {
+            "event_id": "event-0",
+            "start_sec": 0.024,
+            "end_sec": 4.384,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "classifier_version": "rules_v1",
+            "ontology_version": "1.0",
+            "labels": [
+              "OTHER"
+            ],
+            "label_scores": {},
+            "score_kind": "heuristic_uncalibrated",
+            "speech_act": "unknown",
+            "salient_for_review": "unknown",
+            "evidence_segment_ids": [
+              "ch0-chunk0-0"
+            ],
+            "evidence_quote": "The long drizzle had begun. Pedestrians had turned up collars and trousers at the bottom.",
+            "reviewed_evidence_quote": null,
+            "assertion_kind": "spoken_mention",
+            "aircraft_state_verified": false,
+            "flight_phase": "unknown",
+            "phase_source": "unknown",
+            "entities": [],
+            "needs_review": true,
+            "review_status": "draft",
+            "risk_reasons": [
+              "uncalibrated_asr_confidence",
+              "unknown_speaker"
+            ]
+          }
+        ],
+        "audio": {
+          "sample_rate": 16000,
+          "channels": 1,
+          "duration_sec": 4.92,
+          "container": "flac",
+          "sha256": "3909a6c5ae93112518681fcbf0a74df43615a4f88bd6d5cd788775255296e3f6",
+          "channel_diagnostics": [
+            {
+              "channel": 0,
+              "peak": 0.4310302734375,
+              "rms": 0.059145579591874366,
+              "clipping_fraction": 0.0,
+              "prepared_rate": 16000,
+              "prepared_samples": 78720,
+              "original_offset_sec": 0,
+              "timeline_mapping": "original_sample = prepared_sample * original_rate / 16000"
+            }
+          ]
+        },
+        "timeline": [
+          {
+            "channel": 0,
+            "start_sample_16k": 384,
+            "end_sample_16k": 78720,
+            "original_start_sec": 0.024,
+            "original_end_sec": 4.92,
+            "original_sample_rate": 16000
+          }
+        ],
+        "crosstalk": [],
+        "effective_config": {
+          "schema_version": "1.0",
+          "name": "engineering_stages",
+          "model": "small",
+          "compute_type": "float16",
+          "device": "cuda",
+          "task": "transcribe",
+          "beam_size": 5,
+          "temperature": 0.0,
+          "best_of": 5,
+          "patience": 1.0,
+          "length_penalty": 1.0,
+          "repetition_penalty": 1.0,
+          "no_repeat_ngram_size": 0,
+          "condition_on_previous_text": true,
+          "compression_ratio_threshold": 2.4,
+          "log_prob_threshold": -1.0,
+          "no_speech_threshold": 0.6,
+          "suppress_blank": true,
+          "suppress_tokens": [
+            -1
+          ],
+          "max_initial_timestamp": 1.0,
+          "word_timestamps": true,
+          "language_detection_threshold": 0.5,
+          "language_detection_segments": 1,
+          "vad": {
+            "enabled": true,
+            "threshold": 0.5,
+            "min_speech_duration_ms": 100,
+            "min_silence_duration_ms": 400,
+            "speech_pad_ms": 200,
+            "max_speech_duration_s": 30
+          },
+          "denoise": {
+            "enabled": true,
+            "strength": 0.5,
+            "floor": 0.3,
+            "noise_percentile": 10
+          },
+          "hotwords": "checklist, flaps, landing gear",
+          "glossary_version": "glossary_en_v1",
+          "redecode": true,
+          "max_redecode_passes": 1,
+          "redecode_logprob_threshold": 0.0,
+          "episode_gap_sec": 2.0,
+          "episode_max_sec": 30.0,
+          "episode_max_tokens": 100,
+          "classifier": "rules_v1",
+          "classifier_artifact": null
+        },
+        "effective_asr_options": {
+          "task": "transcribe",
+          "beam_size": 5,
+          "temperature": 0.0,
+          "best_of": 5,
+          "patience": 1.0,
+          "length_penalty": 1.0,
+          "repetition_penalty": 1.0,
+          "no_repeat_ngram_size": 0,
+          "condition_on_previous_text": true,
+          "compression_ratio_threshold": 2.4,
+          "log_prob_threshold": -1.0,
+          "no_speech_threshold": 0.6,
+          "suppress_blank": true,
+          "suppress_tokens": [
+            -1
+          ],
+          "max_initial_timestamp": 1.0,
+          "word_timestamps": true,
+          "language_detection_threshold": 0.5,
+          "language_detection_segments": 1,
+          "language": "en",
+          "vad_filter": false,
+          "initial_prompt": null,
+          "hotwords": "checklist, flaps, landing gear",
+          "prompt_reset_on_temperature": 0.5,
+          "prefix": null,
+          "without_timestamps": false,
+          "prepend_punctuations": "\"'“¿([{-",
+          "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+          "max_new_tokens": null,
+          "chunk_length": null,
+          "clip_timestamps": "0",
+          "hallucination_silence_threshold": null,
+          "multilingual": false
+        },
+        "model_manifest": {
+          "model": "small",
+          "repo": "Systran/faster-whisper-small",
+          "revision": "536b0662742c02347bc0e980a01041f333bce120",
+          "files": {
+            "model.bin": "3e305921506d8872816023e4c273e75d2419fb89b24da97b4fe7bce14170d671",
+            "tokenizer.json": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab",
+            "README.md": "329373481008c7c38654aff8ecdcf0163c211557cc7ba8e2ef6f2f84b4f75ec8",
+            "config.json": "b55496ac7940a7ae47d2c01eab40edfd8701feec1229d9cce3b40014383fb828",
+            "vocabulary.txt": "34ce3fe1c5041027b3f8d42912270993f986dbc4bb34cf27f951e34a1e453913"
+          },
+          "license": "MIT",
+          "acquired_at": "2026-09-13T14:51:11Z",
+          "faster_whisper_version": "1.2.1",
+          "silero": {
+            "path": "/opt/venv/lib/python3.11/site-packages/faster_whisper/assets/silero_vad_v6.onnx",
+            "sha256": "4cbf549b8326f60f80f2536d9eefeb450a9abe83365a098031c89719f1be17d2",
+            "distribution": "bundled_with_faster_whisper"
+          }
+        },
+        "component_hashes": {
+          "audio.py": "ecc3906671382cc66d5ba7a46774d23f70de2a68b95ebf2791157b8d301217ce",
+          "asr.py": "4fa5c621e4d506ba41b531f7cbec46a59a0e26871c7a423c3bc398a5818c0da1",
+          "nlp.py": "e3dcc378ea66f6be96c81d7a4c884acaad4a930036abda5f0077e916d1dcbbf5",
+          "diarization.py": "ebde8a8e87af0099a6ee78971f74c802991a65d196a12c9f3db30c64ebf1decc",
+          "pipeline.py": "ca339e5c106aa25a103d3f9034d9ffd50eba7d4220718fe45189e1ac16d22b70",
+          "training.py": "2cb7b518d953f96501771a0b50af494d8498968468478b7b71d3b73eb11e369e",
+          "schemas.py": "3af2ad6dde74662b938f1c9eb7b20e0f6bf7af37535db5d4633da24811a7c343"
+        },
+        "cache_key": "288f6876ed2dafd976e434605f06190d8a1dd6bafeeb9b14fe9520a7fd811536",
+        "cache_hit": false,
+        "timing": {
+          "end_to_end_sec": 0.661216319000232,
+          "asr_sec": 0.3754272900041542,
+          "model_initialization_sec": 9.65489998634439e-05,
+          "initialization_mode": "warm",
+          "end_to_end_rtf": 0.13439356077240489,
+          "asr_rtf": 0.07630635975694192
+        },
+        "environment": {
+          "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+          "processor": "",
+          "device": "cuda",
+          "precision": "float16",
+          "rss_bytes": 1230487552,
+          "peak_rss_bytes": 1230487552,
+          "hardware": {
+            "cpu_count": 20,
+            "memory_total_bytes": 33526280192,
+            "cpu_model": "Intel(R) Core(TM) i5-14600K",
+            "gpu_inventory_and_observed_memory": "NVIDIA GeForce RTX 5070 Ti, GPU-e4bad14d-6efc-76a8-d3ad-033cc1d01c89, 581.80, 5890 MiB\nNVIDIA GeForce GTX 1080 Ti, GPU-ec349029-ec09-1c5a-5845-6974be0a326a, 581.80, 1216 MiB"
+          }
+        },
+        "summary": "1 draft speech episodes; human review required."
+      }
+    },
+    "mixed": {
+      "status": "EXECUTED",
+      "language_mode": "mixed",
+      "result": {
+        "schema_version": "1.0",
+        "sample_id": "human-engineering-control",
+        "pipeline_version": "0.1.0",
+        "config_hash": "b2548adb154faaa09aeacec3c8446141d7a08d77c452f2e780273a48a70de355",
+        "quality_gate_status": "NOT_RUN",
+        "deployment_candidate": "baseline",
+        "validated_scope": [],
+        "revision": 0,
+        "component_statuses": {
+          "asr": {
+            "status": "completed"
+          },
+          "diarization": {
+            "status": "not_requested",
+            "der": null,
+            "jer": null
+          },
+          "nlp": {
+            "status": "baseline",
+            "version": "rules_v1",
+            "trained": false,
+            "reason": "missing_event_labels_or_trained_artifact"
+          }
+        },
+        "segments": [
+          {
+            "segment_id": "ch0-chunk0-0",
+            "start_sec": 0.0,
+            "end_sec": 4.38,
+            "raw_asr_text": " The long drizzle had begun. Pedestrians had turned up collars and trousers at the bottom.",
+            "display_text": "The long drizzle had begun. Pedestrians had turned up collars and trousers at the bottom.",
+            "reviewed_text": null,
+            "channel": null,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "language": "unknown",
+            "words": [
+              {
+                "word": " The",
+                "start_sec": 0.0,
+                "end_sec": 0.28,
+                "probability": 0.8779296875
+              },
+              {
+                "word": " long",
+                "start_sec": 0.28,
+                "end_sec": 0.52,
+                "probability": 0.99072265625
+              },
+              {
+                "word": " drizzle",
+                "start_sec": 0.52,
+                "end_sec": 0.8,
+                "probability": 0.94287109375
+              },
+              {
+                "word": " had",
+                "start_sec": 0.8,
+                "end_sec": 1.06,
+                "probability": 0.99267578125
+              },
+              {
+                "word": " begun.",
+                "start_sec": 1.06,
+                "end_sec": 1.42,
+                "probability": 0.99609375
+              },
+              {
+                "word": " Pedestrians",
+                "start_sec": 1.7,
+                "end_sec": 2.2,
+                "probability": 0.9772135416666666
+              },
+              {
+                "word": " had",
+                "start_sec": 2.2,
+                "end_sec": 2.4,
+                "probability": 0.98583984375
+              },
+              {
+                "word": " turned",
+                "start_sec": 2.4,
+                "end_sec": 2.64,
+                "probability": 0.99609375
+              },
+              {
+                "word": " up",
+                "start_sec": 2.64,
+                "end_sec": 2.8,
+                "probability": 0.93603515625
+              },
+              {
+                "word": " collars",
+                "start_sec": 2.8,
+                "end_sec": 3.32,
+                "probability": 0.985595703125
+              },
+              {
+                "word": " and",
+                "start_sec": 3.32,
+                "end_sec": 3.46,
+                "probability": 0.990234375
+              },
+              {
+                "word": " trousers",
+                "start_sec": 3.46,
+                "end_sec": 3.78,
+                "probability": 0.97119140625
+              },
+              {
+                "word": " at",
+                "start_sec": 3.78,
+                "end_sec": 4.04,
+                "probability": 0.99267578125
+              },
+              {
+                "word": " the",
+                "start_sec": 4.04,
+                "end_sec": 4.12,
+                "probability": 0.9990234375
+              },
+              {
+                "word": " bottom.",
+                "start_sec": 4.12,
+                "end_sec": 4.38,
+                "probability": 0.9990234375
+              }
+            ],
+            "avg_logprob": -0.20227581651314444,
+            "no_speech_prob": 0.00460052490234375,
+            "alternatives": [],
+            "normalization_changes": [
+              {
+                "old": " The long drizzle had begun. Pedestrians had turned up collars and trousers at the bottom.",
+                "new": "The long drizzle had begun. Pedestrians had turned up collars and trousers at the bottom.",
+                "rule_id": "nfc_whitespace",
+                "source_span": [
+                  0,
+                  90
+                ],
+                "justification": "Unicode NFC and whitespace formatting only",
+                "version": "display_normalizer_v1"
+              }
+            ],
+            "risk_level": "medium",
+            "risk_reasons": [
+              "uncalibrated_asr_confidence",
+              "unknown_speaker",
+              "unvalidated_language"
+            ]
+          }
+        ],
+        "events": [
+          {
+            "event_id": "event-0",
+            "start_sec": 0.0,
+            "end_sec": 4.38,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "classifier_version": "rules_v1",
+            "ontology_version": "1.0",
+            "labels": [
+              "OTHER"
+            ],
+            "label_scores": {},
+            "score_kind": "heuristic_uncalibrated",
+            "speech_act": "unknown",
+            "salient_for_review": "unknown",
+            "evidence_segment_ids": [
+              "ch0-chunk0-0"
+            ],
+            "evidence_quote": "The long drizzle had begun. Pedestrians had turned up collars and trousers at the bottom.",
+            "reviewed_evidence_quote": null,
+            "assertion_kind": "spoken_mention",
+            "aircraft_state_verified": false,
+            "flight_phase": "unknown",
+            "phase_source": "unknown",
+            "entities": [],
+            "needs_review": true,
+            "review_status": "draft",
+            "risk_reasons": [
+              "uncalibrated_asr_confidence",
+              "unknown_speaker",
+              "unvalidated_language"
+            ]
+          }
+        ],
+        "audio": {
+          "sample_rate": 16000,
+          "channels": 1,
+          "duration_sec": 4.92,
+          "container": "flac",
+          "sha256": "3909a6c5ae93112518681fcbf0a74df43615a4f88bd6d5cd788775255296e3f6",
+          "channel_diagnostics": [
+            {
+              "channel": 0,
+              "peak": 0.4310302734375,
+              "rms": 0.059145579591874366,
+              "clipping_fraction": 0.0,
+              "prepared_rate": 16000,
+              "prepared_samples": 78720,
+              "original_offset_sec": 0,
+              "timeline_mapping": "original_sample = prepared_sample * original_rate / 16000"
+            }
+          ]
+        },
+        "timeline": [
+          {
+            "channel": 0,
+            "start_sample_16k": 0,
+            "end_sample_16k": 78720,
+            "original_start_sec": 0.0,
+            "original_end_sec": 4.92,
+            "original_sample_rate": 16000
+          }
+        ],
+        "crosstalk": [],
+        "effective_config": {
+          "schema_version": "1.0",
+          "name": "baseline",
+          "model": "small",
+          "compute_type": "float16",
+          "device": "cuda",
+          "task": "transcribe",
+          "beam_size": 5,
+          "temperature": 0.0,
+          "best_of": 5,
+          "patience": 1.0,
+          "length_penalty": 1.0,
+          "repetition_penalty": 1.0,
+          "no_repeat_ngram_size": 0,
+          "condition_on_previous_text": true,
+          "compression_ratio_threshold": 2.4,
+          "log_prob_threshold": -1.0,
+          "no_speech_threshold": 0.6,
+          "suppress_blank": true,
+          "suppress_tokens": [
+            -1
+          ],
+          "max_initial_timestamp": 1.0,
+          "word_timestamps": true,
+          "language_detection_threshold": 0.5,
+          "language_detection_segments": 1,
+          "vad": {
+            "enabled": false,
+            "threshold": 0.5,
+            "min_speech_duration_ms": 100,
+            "min_silence_duration_ms": 400,
+            "speech_pad_ms": 200,
+            "max_speech_duration_s": 30.0
+          },
+          "denoise": {
+            "enabled": false,
+            "strength": 0.5,
+            "floor": 0.3,
+            "noise_percentile": 10.0
+          },
+          "hotwords": null,
+          "glossary_version": null,
+          "redecode": false,
+          "max_redecode_passes": 1,
+          "redecode_logprob_threshold": -0.8,
+          "episode_gap_sec": 2.0,
+          "episode_max_sec": 30.0,
+          "episode_max_tokens": 100,
+          "classifier": "rules_v1",
+          "classifier_artifact": null
+        },
+        "effective_asr_options": {
+          "task": "transcribe",
+          "beam_size": 5,
+          "temperature": 0.0,
+          "best_of": 5,
+          "patience": 1.0,
+          "length_penalty": 1.0,
+          "repetition_penalty": 1.0,
+          "no_repeat_ngram_size": 0,
+          "condition_on_previous_text": true,
+          "compression_ratio_threshold": 2.4,
+          "log_prob_threshold": -1.0,
+          "no_speech_threshold": 0.6,
+          "suppress_blank": true,
+          "suppress_tokens": [
+            -1
+          ],
+          "max_initial_timestamp": 1.0,
+          "word_timestamps": true,
+          "language_detection_threshold": 0.5,
+          "language_detection_segments": 1,
+          "language": null,
+          "vad_filter": false,
+          "initial_prompt": null,
+          "hotwords": null,
+          "prompt_reset_on_temperature": 0.5,
+          "prefix": null,
+          "without_timestamps": false,
+          "prepend_punctuations": "\"'“¿([{-",
+          "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+          "max_new_tokens": null,
+          "chunk_length": null,
+          "clip_timestamps": "0",
+          "hallucination_silence_threshold": null,
+          "multilingual": true
+        },
+        "model_manifest": {
+          "model": "small",
+          "repo": "Systran/faster-whisper-small",
+          "revision": "536b0662742c02347bc0e980a01041f333bce120",
+          "files": {
+            "model.bin": "3e305921506d8872816023e4c273e75d2419fb89b24da97b4fe7bce14170d671",
+            "tokenizer.json": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab",
+            "README.md": "329373481008c7c38654aff8ecdcf0163c211557cc7ba8e2ef6f2f84b4f75ec8",
+            "config.json": "b55496ac7940a7ae47d2c01eab40edfd8701feec1229d9cce3b40014383fb828",
+            "vocabulary.txt": "34ce3fe1c5041027b3f8d42912270993f986dbc4bb34cf27f951e34a1e453913"
+          },
+          "license": "MIT",
+          "acquired_at": "2026-09-13T14:51:11Z",
+          "faster_whisper_version": "1.2.1",
+          "silero": {
+            "path": "/opt/venv/lib/python3.11/site-packages/faster_whisper/assets/silero_vad_v6.onnx",
+            "sha256": "4cbf549b8326f60f80f2536d9eefeb450a9abe83365a098031c89719f1be17d2",
+            "distribution": "bundled_with_faster_whisper"
+          }
+        },
+        "component_hashes": {
+          "audio.py": "ecc3906671382cc66d5ba7a46774d23f70de2a68b95ebf2791157b8d301217ce",
+          "asr.py": "4fa5c621e4d506ba41b531f7cbec46a59a0e26871c7a423c3bc398a5818c0da1",
+          "nlp.py": "e3dcc378ea66f6be96c81d7a4c884acaad4a930036abda5f0077e916d1dcbbf5",
+          "diarization.py": "ebde8a8e87af0099a6ee78971f74c802991a65d196a12c9f3db30c64ebf1decc",
+          "pipeline.py": "ca339e5c106aa25a103d3f9034d9ffd50eba7d4220718fe45189e1ac16d22b70",
+          "training.py": "2cb7b518d953f96501771a0b50af494d8498968468478b7b71d3b73eb11e369e",
+          "schemas.py": "3af2ad6dde74662b938f1c9eb7b20e0f6bf7af37535db5d4633da24811a7c343"
+        },
+        "cache_key": "3883a19179738a82815db5989fa5318ca90e53550ebd912fb8d0109da27dc2f9",
+        "cache_hit": false,
+        "timing": {
+          "end_to_end_sec": 0.32958672199674766,
+          "asr_sec": 0.23315871299928403,
+          "model_initialization_sec": 9.587100066710263e-05,
+          "initialization_mode": "warm",
+          "end_to_end_rtf": 0.06698917113755033,
+          "asr_rtf": 0.04738998231692765
+        },
+        "environment": {
+          "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+          "processor": "",
+          "device": "cuda",
+          "precision": "float16",
+          "rss_bytes": 1231470592,
+          "peak_rss_bytes": 1231470592,
+          "hardware": {
+            "cpu_count": 20,
+            "memory_total_bytes": 33526280192,
+            "cpu_model": "Intel(R) Core(TM) i5-14600K",
+            "gpu_inventory_and_observed_memory": "NVIDIA GeForce RTX 5070 Ti, GPU-e4bad14d-6efc-76a8-d3ad-033cc1d01c89, 581.80, 5890 MiB\nNVIDIA GeForce GTX 1080 Ti, GPU-ec349029-ec09-1c5a-5845-6974be0a326a, 581.80, 1216 MiB"
+          }
+        },
+        "summary": "1 draft speech episodes; human review required."
+      }
+    },
+    "ru_input_contract": {
+      "status": "EXECUTED",
+      "language_mode": "ru",
+      "result": {
+        "schema_version": "1.0",
+        "sample_id": "human-engineering-control",
+        "pipeline_version": "0.1.0",
+        "config_hash": "b2548adb154faaa09aeacec3c8446141d7a08d77c452f2e780273a48a70de355",
+        "quality_gate_status": "NOT_RUN",
+        "deployment_candidate": "baseline",
+        "validated_scope": [],
+        "revision": 0,
+        "component_statuses": {
+          "asr": {
+            "status": "completed"
+          },
+          "diarization": {
+            "status": "not_requested",
+            "der": null,
+            "jer": null
+          },
+          "nlp": {
+            "status": "baseline",
+            "version": "rules_v1",
+            "trained": false,
+            "reason": "missing_event_labels_or_trained_artifact"
+          }
+        },
+        "segments": [
+          {
+            "segment_id": "ch0-chunk0-0",
+            "start_sec": 0.0,
+            "end_sec": 4.62,
+            "raw_asr_text": " Движение началось. Педестрия выживали колосы и троузеры в бутылке.",
+            "display_text": "Движение началось. Педестрия выживали колосы и троузеры в бутылке.",
+            "reviewed_text": null,
+            "channel": null,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "language": "ru",
+            "words": [
+              {
+                "word": " Движение",
+                "start_sec": 0.0,
+                "end_sec": 0.92,
+                "probability": 0.27776336669921875
+              },
+              {
+                "word": " началось.",
+                "start_sec": 0.92,
+                "end_sec": 1.52,
+                "probability": 0.401611328125
+              },
+              {
+                "word": " Педестрия",
+                "start_sec": 1.62,
+                "end_sec": 2.24,
+                "probability": 0.4352294921875
+              },
+              {
+                "word": " выживали",
+                "start_sec": 2.24,
+                "end_sec": 2.72,
+                "probability": 0.3680458068847656
+              },
+              {
+                "word": " колосы",
+                "start_sec": 2.72,
+                "end_sec": 3.4,
+                "probability": 0.4669596354166667
+              },
+              {
+                "word": " и",
+                "start_sec": 3.4,
+                "end_sec": 3.44,
+                "probability": 0.8583984375
+              },
+              {
+                "word": " троузеры",
+                "start_sec": 3.44,
+                "end_sec": 3.92,
+                "probability": 0.455352783203125
+              },
+              {
+                "word": " в",
+                "start_sec": 3.92,
+                "end_sec": 4.04,
+                "probability": 0.2349853515625
+              },
+              {
+                "word": " бутылке.",
+                "start_sec": 4.04,
+                "end_sec": 4.62,
+                "probability": 0.46783447265625
+              }
+            ],
+            "avg_logprob": -1.1818181818181819,
+            "no_speech_prob": 0.00460052490234375,
+            "alternatives": [],
+            "normalization_changes": [
+              {
+                "old": " Движение началось. Педестрия выживали колосы и троузеры в бутылке.",
+                "new": "Движение началось. Педестрия выживали колосы и троузеры в бутылке.",
+                "rule_id": "nfc_whitespace",
+                "source_span": [
+                  0,
+                  67
+                ],
+                "justification": "Unicode NFC and whitespace formatting only",
+                "version": "display_normalizer_v1"
+              }
+            ],
+            "risk_level": "medium",
+            "risk_reasons": [
+              "low_asr_logprob",
+              "uncalibrated_asr_confidence",
+              "unknown_speaker"
+            ]
+          }
+        ],
+        "events": [
+          {
+            "event_id": "event-0",
+            "start_sec": 0.0,
+            "end_sec": 4.62,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "classifier_version": "rules_v1",
+            "ontology_version": "1.0",
+            "labels": [
+              "OTHER"
+            ],
+            "label_scores": {},
+            "score_kind": "heuristic_uncalibrated",
+            "speech_act": "unknown",
+            "salient_for_review": "unknown",
+            "evidence_segment_ids": [
+              "ch0-chunk0-0"
+            ],
+            "evidence_quote": "Движение началось. Педестрия выживали колосы и троузеры в бутылке.",
+            "reviewed_evidence_quote": null,
+            "assertion_kind": "spoken_mention",
+            "aircraft_state_verified": false,
+            "flight_phase": "unknown",
+            "phase_source": "unknown",
+            "entities": [],
+            "needs_review": true,
+            "review_status": "draft",
+            "risk_reasons": [
+              "low_asr_logprob",
+              "uncalibrated_asr_confidence",
+              "unknown_speaker"
+            ]
+          }
+        ],
+        "audio": {
+          "sample_rate": 16000,
+          "channels": 1,
+          "duration_sec": 4.92,
+          "container": "flac",
+          "sha256": "3909a6c5ae93112518681fcbf0a74df43615a4f88bd6d5cd788775255296e3f6",
+          "channel_diagnostics": [
+            {
+              "channel": 0,
+              "peak": 0.4310302734375,
+              "rms": 0.059145579591874366,
+              "clipping_fraction": 0.0,
+              "prepared_rate": 16000,
+              "prepared_samples": 78720,
+              "original_offset_sec": 0,
+              "timeline_mapping": "original_sample = prepared_sample * original_rate / 16000"
+            }
+          ]
+        },
+        "timeline": [
+          {
+            "channel": 0,
+            "start_sample_16k": 0,
+            "end_sample_16k": 78720,
+            "original_start_sec": 0.0,
+            "original_end_sec": 4.92,
+            "original_sample_rate": 16000
+          }
+        ],
+        "crosstalk": [],
+        "effective_config": {
+          "schema_version": "1.0",
+          "name": "baseline",
+          "model": "small",
+          "compute_type": "float16",
+          "device": "cuda",
+          "task": "transcribe",
+          "beam_size": 5,
+          "temperature": 0.0,
+          "best_of": 5,
+          "patience": 1.0,
+          "length_penalty": 1.0,
+          "repetition_penalty": 1.0,
+          "no_repeat_ngram_size": 0,
+          "condition_on_previous_text": true,
+          "compression_ratio_threshold": 2.4,
+          "log_prob_threshold": -1.0,
+          "no_speech_threshold": 0.6,
+          "suppress_blank": true,
+          "suppress_tokens": [
+            -1
+          ],
+          "max_initial_timestamp": 1.0,
+          "word_timestamps": true,
+          "language_detection_threshold": 0.5,
+          "language_detection_segments": 1,
+          "vad": {
+            "enabled": false,
+            "threshold": 0.5,
+            "min_speech_duration_ms": 100,
+            "min_silence_duration_ms": 400,
+            "speech_pad_ms": 200,
+            "max_speech_duration_s": 30.0
+          },
+          "denoise": {
+            "enabled": false,
+            "strength": 0.5,
+            "floor": 0.3,
+            "noise_percentile": 10.0
+          },
+          "hotwords": null,
+          "glossary_version": null,
+          "redecode": false,
+          "max_redecode_passes": 1,
+          "redecode_logprob_threshold": -0.8,
+          "episode_gap_sec": 2.0,
+          "episode_max_sec": 30.0,
+          "episode_max_tokens": 100,
+          "classifier": "rules_v1",
+          "classifier_artifact": null
+        },
+        "effective_asr_options": {
+          "task": "transcribe",
+          "beam_size": 5,
+          "temperature": 0.0,
+          "best_of": 5,
+          "patience": 1.0,
+          "length_penalty": 1.0,
+          "repetition_penalty": 1.0,
+          "no_repeat_ngram_size": 0,
+          "condition_on_previous_text": true,
+          "compression_ratio_threshold": 2.4,
+          "log_prob_threshold": -1.0,
+          "no_speech_threshold": 0.6,
+          "suppress_blank": true,
+          "suppress_tokens": [
+            -1
+          ],
+          "max_initial_timestamp": 1.0,
+          "word_timestamps": true,
+          "language_detection_threshold": 0.5,
+          "language_detection_segments": 1,
+          "language": "ru",
+          "vad_filter": false,
+          "initial_prompt": null,
+          "hotwords": null,
+          "prompt_reset_on_temperature": 0.5,
+          "prefix": null,
+          "without_timestamps": false,
+          "prepend_punctuations": "\"'“¿([{-",
+          "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+          "max_new_tokens": null,
+          "chunk_length": null,
+          "clip_timestamps": "0",
+          "hallucination_silence_threshold": null,
+          "multilingual": false
+        },
+        "model_manifest": {
+          "model": "small",
+          "repo": "Systran/faster-whisper-small",
+          "revision": "536b0662742c02347bc0e980a01041f333bce120",
+          "files": {
+            "model.bin": "3e305921506d8872816023e4c273e75d2419fb89b24da97b4fe7bce14170d671",
+            "tokenizer.json": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab",
+            "README.md": "329373481008c7c38654aff8ecdcf0163c211557cc7ba8e2ef6f2f84b4f75ec8",
+            "config.json": "b55496ac7940a7ae47d2c01eab40edfd8701feec1229d9cce3b40014383fb828",
+            "vocabulary.txt": "34ce3fe1c5041027b3f8d42912270993f986dbc4bb34cf27f951e34a1e453913"
+          },
+          "license": "MIT",
+          "acquired_at": "2026-09-13T14:51:11Z",
+          "faster_whisper_version": "1.2.1",
+          "silero": {
+            "path": "/opt/venv/lib/python3.11/site-packages/faster_whisper/assets/silero_vad_v6.onnx",
+            "sha256": "4cbf549b8326f60f80f2536d9eefeb450a9abe83365a098031c89719f1be17d2",
+            "distribution": "bundled_with_faster_whisper"
+          }
+        },
+        "component_hashes": {
+          "audio.py": "ecc3906671382cc66d5ba7a46774d23f70de2a68b95ebf2791157b8d301217ce",
+          "asr.py": "4fa5c621e4d506ba41b531f7cbec46a59a0e26871c7a423c3bc398a5818c0da1",
+          "nlp.py": "e3dcc378ea66f6be96c81d7a4c884acaad4a930036abda5f0077e916d1dcbbf5",
+          "diarization.py": "ebde8a8e87af0099a6ee78971f74c802991a65d196a12c9f3db30c64ebf1decc",
+          "pipeline.py": "ca339e5c106aa25a103d3f9034d9ffd50eba7d4220718fe45189e1ac16d22b70",
+          "training.py": "2cb7b518d953f96501771a0b50af494d8498968468478b7b71d3b73eb11e369e",
+          "schemas.py": "3af2ad6dde74662b938f1c9eb7b20e0f6bf7af37535db5d4633da24811a7c343"
+        },
+        "cache_key": "d8fd1dafef0e4613ad17f91c7ea51eacedeecd127763cb4cc042e613083da29f",
+        "cache_hit": false,
+        "timing": {
+          "end_to_end_sec": 0.32996123699922464,
+          "asr_sec": 0.23247604000061983,
+          "model_initialization_sec": 4.073500167578459e-05,
+          "initialization_mode": "warm",
+          "end_to_end_rtf": 0.06706529207301314,
+          "asr_rtf": 0.04725122764240241
+        },
+        "environment": {
+          "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+          "processor": "",
+          "device": "cuda",
+          "precision": "float16",
+          "rss_bytes": 1231634432,
+          "peak_rss_bytes": 1231634432,
+          "hardware": {
+            "cpu_count": 20,
+            "memory_total_bytes": 33526280192,
+            "cpu_model": "Intel(R) Core(TM) i5-14600K",
+            "gpu_inventory_and_observed_memory": "NVIDIA GeForce RTX 5070 Ti, GPU-e4bad14d-6efc-76a8-d3ad-033cc1d01c89, 581.80, 5890 MiB\nNVIDIA GeForce GTX 1080 Ti, GPU-ec349029-ec09-1c5a-5845-6974be0a326a, 581.80, 1216 MiB"
+          }
+        },
+        "summary": "1 draft speech episodes; human review required."
+      }
+    }
+  }
+}

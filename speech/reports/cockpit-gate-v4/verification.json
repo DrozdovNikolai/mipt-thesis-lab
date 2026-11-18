@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "checked_saved_model_predictions": 776,
+  "checked_saved_vad_predictions": 194,
+  "waveforms_matched_by_sha256": true,
+  "raw_scores_reproduced_exactly": true,
+  "gate_threshold_tuned_in_this_analysis": false,
+  "ruff": "PASS",
+  "new_asr_calls": 0,
+  "production_modified": false
+}

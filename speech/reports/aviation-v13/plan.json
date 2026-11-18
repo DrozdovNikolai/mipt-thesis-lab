@@ -1,0 +1,48 @@
+{
+  "count": 1901,
+  "seconds": 7364.26475,
+  "speakers": [
+    "sm2",
+    "zf1",
+    "zf2",
+    "zf3"
+  ],
+  "input_hashes": {
+    "inputs.json": "d400e83fe97d8c170ae31dd87e7c8f4acfe4f88a71064fff5f196fd410806872",
+    "smoke-inputs.json": "9947803746c4535d7ff9a4debc0bf5df4f16209ab450afbf8dfcfd00625a8e6d"
+  },
+  "reference_sha256": "6862cd65b97913e85fd75d6c5f4aa4902dcd6b81a9a002cf630c4b13d36144a7",
+  "cached_sha256": "09d87ffb3c77cf6410451b6ede01f59ee53f81ce4dbf49d5251839f10d4149f2",
+  "historical_predictions": {
+    "small": {
+      "execution_sha256": "6724a54e409b533f7107277c493cf77b0cd5aad0d042e78a241edb945cd8179d",
+      "model": "whisper-small-publisher-base-ct2",
+      "reused_predictions": 1901
+    },
+    "atc": {
+      "execution_sha256": "11aa6d322359264367add67a3ddc5a4bcd90fa06ae2ceb4fddba5ed06e426267",
+      "model": "whisper-medium-en-atc-jacktol-ct2",
+      "reused_predictions": 1901
+    }
+  },
+  "parity_sha256": "a4012e727f6047958a2a6a1742edd86b76429fd58343cba7223237bdad96bc62",
+  "driver_sha256": "bfd3e9a364e20bce785975f8e8a78d37a1a375a7a16160cdcf21a6409b06f1bd",
+  "metric_sha256": "03876483b34afa31243136a5a3f9b52b17d2a2c15e8435fccfbf23986344792a",
+  "runtime_sha256": {
+    "hybrid": "9fe80d43f203f0d7a11adaec6fab8b6574b31acc6de18c4319b797368558d692",
+    "consensus": "776b3cf5bda17f43de7c5254e5ccc3413808689d4ea9f1b580e38bae20d82431"
+  },
+  "entrypoint_sha256": {
+    "hybrid": "ef8a8945d9f7a3e7edbf2c8c2722ea11cb8d4a6ecbc53cfbc24123f478dc77e6",
+    "consensus": "28fb0697d13c5aea25164a3c8db79f3fdff215afe0a900f8e82312b07467b208"
+  },
+  "old_plan_sha256": "8de86e53847fd47a2e64e51c610792adbc0f4dc70fc2317827ff47b933170af6",
+  "primary_metric": "lexical_normalizer_v1 corpus WER",
+  "secondary_metric": "canonical_normalizer_v1 symmetric number normalization",
+  "all_inputs_included": true,
+  "local_training": false,
+  "threshold_tuning": false,
+  "source_partition": "published ATCOSIM test, already used locally as development corpus",
+  "sealed_cockpit_test_accessed": false,
+  "claim": "simulated controller speech, four speakers; separate from cockpit evaluation"
+}

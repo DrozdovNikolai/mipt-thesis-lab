@@ -1,0 +1,10 @@
+# Apply only after materialize_reviewed_training has produced this version.
+services:
+  trainer:
+    volumes:
+      - type: bind
+        source: ./data/curated/${NORTH55_REVIEWED_DATA_VERSION:-reviewed-asr-v1}
+        target: /data/train-dev
+        read_only: true
+        bind:
+          create_host_path: false

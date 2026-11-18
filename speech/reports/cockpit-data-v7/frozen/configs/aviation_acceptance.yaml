@@ -1,0 +1,199 @@
+# Нормативный исходный контракт для реализации quality gate.
+# Это проектные targets, а НЕ результаты выполненного benchmark.
+# Codex должен реализовать parser/schema и сохранить смысл при переносе в configs/.
+schema_version: "1.0"
+project: north55_speech
+created_at: "2026-09-14"
+protocol_id: aviation_quality_v1
+freeze_before_final_test: true
+allow_post_test_threshold_relaxation: false
+
+statuses:
+  - PASS
+  - FAIL
+  - INCONCLUSIVE
+  - NEEDS_MORE_DATA
+  - BLOCKED
+  - NOT_RUN
+
+scope:
+  task: aviation_speech
+  primary_language_scope: [en]
+  supported_input_modes: [en, ru, mixed, auto]
+  report_unvalidated_languages: true
+  # Расширять scope разрешается до freeze и просмотра final-test results.
+  permitted_primary_scopes: [cockpit, simulator, read_cockpit, atc]
+  forbidden_primary_scopes: [unknown]
+  permitted_primary_speech_origin: [recorded_human]
+  report_original_and_augmented_conditions_separately: true
+  no_generalization_claim_from_read_to_spontaneous_speech: true
+  no_generalization_claim_from_synthetic_noise_to_real_flight: true
+
+integrity:
+  require_audio_checksums: true
+  require_license_and_provenance: true
+  require_human_verified_test_transcripts: true
+  require_human_verified_critical_entities: true
+  require_human_verified_event_labels_for_nlp_gate: true
+  require_frozen_baseline: true
+  require_frozen_selection: true
+  require_frozen_scorer: true
+  require_acceptance_hash_in_run: true
+  require_same_checkpoint_and_precision_for_pipeline_comparison: true
+  forbid_test_reference_access_by_inference: true
+  forbid_test_access_by_training_or_dev_search: true
+  forbid_sample_specific_gold_prompts: true
+  forbid_runtime_failure_exclusion: true
+  forbid_needs_review_exclusion: true
+  forbid_silent_value_correction: true
+  forbid_role_inference_from_voice_only: true
+  forbid_telemetry_claims_from_speech_only: true
+  required_group_constraints:
+    - session
+    - source_recording
+    - original_utterance_and_all_variants
+    - speaker_when_known
+  check_decoded_audio_duplicates: true
+  report_script_overlap: true
+  unknown_speaker_ids_limit_claim: true
+
+baseline:
+  backend: faster_whisper
+  task: transcribe
+  beam_size: 5
+  temperature: 0.0
+  domain_hints: false
+  denoise: false
+  external_vad: false
+  # Модель/revision/precision выбираются по железу и freeze до сравнения.
+  checkpoint_must_match_candidate: true
+  precision_must_match_candidate: true
+  require_explicit_effective_parameters: true
+  common_audio_preparation_must_match: true
+  input_language_information_must_match: true
+
+search:
+  dataset_partition: dev
+  max_configurations: 16
+  max_additional_asr_passes_per_segment: 1
+  keep_all_trials: true
+  test_based_candidate_selection: false
+  tie_break_order:
+    - satisfy_guardrails
+    - lower_wer_lexical
+    - lower_end_to_end_rtf
+    - fewer_active_stages
+  stop_on_budget_exhaustion_with_honest_status: true
+
+asr_quality_gate:
+  minimum_evidence:
+    independent_groups: 20
+    distinct_original_human_utterances: 300
+    reference_words: 3000
+    human_verified_critical_entity_occurrences: 100
+    clean_control_utterances: 50
+    non_speech_control_minutes: 5
+  primary_metric: wer_lexical_corpus
+  normalizer: lexical_normalizer_v1
+  # WER и F1 хранятся в шкале 0..1, не в процентах.
+  minimum_relative_wer_reduction: 0.10
+  relative_wer_reduction_formula: "(baseline - candidate) / baseline"
+  baseline_zero_wer_status: INCONCLUSIVE
+  uncertainty:
+    method: paired_cluster_bootstrap
+    cluster: frozen_group_id
+    resamples: 2000
+    seed: 55
+    confidence_level: 0.95
+    interval: percentile
+    delta_definition: "candidate - baseline"
+    required_delta_ci_upper_strictly_less_than: 0.0
+  guardrails:
+    minimum_critical_entity_f1_delta: 0.0
+    maximum_critical_entity_error_rate_delta: 0.0
+    maximum_clean_wer_absolute_increase: 0.01
+    maximum_validated_language_wer_absolute_increase: 0.01
+    maximum_non_speech_inserted_words_per_minute_delta: 0.0
+    maximum_unhandled_runtime_failures: 0
+  evaluation_includes_all_frozen_samples: true
+  failures_count_as_empty_hypotheses_and_operational_failures: true
+  missing_required_evidence_status: NEEDS_MORE_DATA
+  point_target_not_met_status: FAIL
+  target_met_but_ci_not_confirmed_status: INCONCLUSIVE
+
+nlp_quality_gate:
+  claimed_labels:
+    - CHECKLIST
+    - CONFIGURATION_MENTION
+    - CREW_COORDINATION
+  additional_schema_labels:
+    - REPORTED_DEVIATION
+    - WARNING_MENTION
+    - INSTRUCTOR_FEEDBACK
+    - OTHER
+  minimum_evidence:
+    independent_groups: 20
+    human_verified_episodes_or_utterances: 300
+    positives_per_claimed_label: 30
+    salience_positives: 50
+    salience_negatives: 50
+  text_level_comparison:
+    input: same_human_verified_transcripts
+    baseline: rules_v1
+    candidate: trained_event_classifier
+    minimum_macro_f1: 0.80
+    minimum_macro_f1_absolute_gain: 0.03
+  end_to_end_salience:
+    input: candidate_asr_predictions
+    minimum_precision: 0.80
+    minimum_recall: 0.85
+    unknown_predictions_are_not_true_negatives: true
+  require_separate_nlp_only_and_end_to_end_reports: true
+  weak_or_synthetic_test_labels_allowed: false
+  absent_class_support_status: NEEDS_MORE_DATA
+  missing_event_annotation_status: NEEDS_MORE_DATA
+
+temporal_event_gate:
+  require_human_verified_time_intervals: true
+  require_continuous_recordings_not_only_pregrouped_utterances: true
+  matching: one_to_one_class_compatible_maximum_matching
+  minimum_temporal_iou: 0.50
+  duplicate_predictions_are_false_positives: true
+  minimum_salient_event_precision: 0.80
+  minimum_salient_event_recall: 0.85
+  report_false_positives_per_audio_hour: true
+  missing_temporal_annotation_status: NEEDS_MORE_DATA
+
+engineering_gate:
+  require_valid_cpu_compose: true
+  require_gpu_override_config_validation: true
+  require_cpu_integration_execution: true
+  require_real_asr_smoke_execution: true
+  require_migrations_and_queue_recovery_tests: true
+  require_review_audit_and_original_audio_preservation: true
+  require_privacy_and_unsafe_correction_tests: true
+  require_offline_inference_after_prefetch: true
+  optional_gpu_and_pyannote_execution_must_report_actual_status: true
+  skipped_is_not_passed: true
+
+promotion:
+  automatic_promotion_without_explicit_command: false
+  require_matching_code_data_config_model_and_scorer_hashes: true
+  release_scope_requires:
+    - engineering_gate
+    - asr_quality_gate
+    - nlp_quality_gate
+  temporal_detection_claim_requires:
+    - temporal_event_gate
+  until_pass: baseline_or_explicitly_marked_research_preview
+  partial_scope_claims_must_be_explicit: true
+
+reporting:
+  include_raw_per_sample_predictions: true
+  include_raw_edit_counts: true
+  include_all_dev_trials: true
+  include_negative_and_inconclusive_results: true
+  include_per_language_condition_and_label_support: true
+  include_real_hardware_and_effective_config: true
+  include_implementation_execution_and_verification_separately: true
+  fabricated_or_demo_metrics_in_benchmark_report: forbidden

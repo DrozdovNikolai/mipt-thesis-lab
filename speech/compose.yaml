@@ -1,0 +1,146 @@
+name: north55-speech
+x-runtime: &runtime
+  image: north55-speech:0.1.0
+  init: true
+  security_opt: [no-new-privileges:true]
+  cap_drop: [ALL]
+  environment: &environment
+    NORTH55_DATABASE_URL: postgresql+psycopg://north55:${POSTGRES_PASSWORD:?Run bootstrap}@postgres/north55
+    NORTH55_BROKER_URL: amqp://north55:${RABBITMQ_PASSWORD:?Run bootstrap}@rabbitmq:5672//
+    NORTH55_API_KEY: ${NORTH55_API_KEY:?Run bootstrap}
+    NORTH55_SESSION_SECRET: ${NORTH55_SESSION_SECRET:?Run bootstrap}
+    NORTH55_DEVICE: cpu
+    NORTH55_COMPUTE_TYPE: int8
+    HF_HUB_OFFLINE: "1"
+    TRANSFORMERS_OFFLINE: "1"
+  volumes: &runtime-volumes
+    - audio_data:/audio
+    - artifact_data:/artifacts
+    - model_cache:/models:ro
+  networks: [backend]
+
+services:
+  postgres:
+    image: postgres:17.6-bookworm
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: north55
+      POSTGRES_USER: north55
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Run bootstrap}
+    volumes: [postgres_data:/var/lib/postgresql/data]
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U north55 -d north55"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    networks: [backend]
+    security_opt: [no-new-privileges:true]
+  rabbitmq:
+    image: rabbitmq:4.1.4-management
+    restart: unless-stopped
+    environment:
+      RABBITMQ_DEFAULT_USER: north55
+      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_PASSWORD:?Run bootstrap}
+    volumes: [rabbitmq_data:/var/lib/rabbitmq]
+    healthcheck:
+      test: [CMD, rabbitmq-diagnostics, -q, ping]
+      interval: 5s
+      timeout: 10s
+      retries: 30
+    networks: [backend]
+    security_opt: [no-new-privileges:true]
+  migrate:
+    <<: *runtime
+    command: [alembic, upgrade, head]
+    depends_on:
+      postgres: {condition: service_healthy}
+  api:
+    <<: *runtime
+    build:
+      context: .
+      target: base
+    ports: ["127.0.0.1:8000:8000"]
+    networks: [backend, ingress]
+    restart: unless-stopped
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+      rabbitmq: {condition: service_healthy}
+    healthcheck:
+      test: [CMD, curl, -fsS, http://localhost:8000/health/ready]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+  worker:
+    <<: *runtime
+    command: [celery, -A, north55_speech.jobs.celery_app, worker, --loglevel=WARNING, --concurrency=1, --pool=prefork]
+    restart: unless-stopped
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+      rabbitmq: {condition: service_healthy}
+  tools:
+    <<: *runtime
+    profiles: [tools]
+    entrypoint: [north55]
+    environment:
+      <<: *environment
+      NORTH55_API_URL: http://api:8000
+    volumes:
+      - audio_data:/audio
+      - artifact_data:/artifacts
+      - model_cache:/models
+      - ./data/manifests/train-dev:/data/train-dev:ro
+      - ./data/manifests/test-inference:/data/test-inference:ro
+      - ./data/manifests/protocol:/data/protocol:ro
+      - ./reports:/reports
+    networks: [backend, acquisition]
+  curator:
+    <<: *runtime
+    profiles: [data]
+    entrypoint: [north55]
+    volumes:
+      - audio_data:/audio
+      - artifact_data:/artifacts
+      - model_cache:/models:ro
+      - ./data/input:/data/input:ro
+      - ./data/curated:/data/curated
+      - ./data/manifests:/data/manifests
+      - ./data/sealed:/data/sealed
+      - ./reports:/reports
+  evaluator:
+    <<: *runtime
+    profiles: [eval]
+    entrypoint: [north55]
+    environment:
+      <<: *environment
+      NORTH55_API_URL: http://api:8000
+      NORTH55_EVALUATOR: "true"
+    volumes:
+      - audio_data:/audio:ro
+      - artifact_data:/artifacts
+      - model_cache:/models:ro
+      - ./data/manifests/test-inference:/data/test-inference:ro
+      - ./data/sealed:/sealed:ro
+      - ./data/manifests/protocol:/data/protocol:ro
+      - ./reports:/reports
+  trainer:
+    <<: *runtime
+    profiles: [training]
+    entrypoint: [north55]
+    volumes:
+      - audio_data:/audio:ro
+      - artifact_data:/artifacts
+      - model_cache:/models
+      - ./data/manifests/train-dev:/data/train-dev:ro
+      - ./reports:/reports
+
+volumes:
+  postgres_data:
+  rabbitmq_data:
+  audio_data:
+  artifact_data:
+  model_cache:
+networks:
+  backend:
+    internal: true
+  acquisition:
+  ingress:

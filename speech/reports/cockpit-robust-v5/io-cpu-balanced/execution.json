@@ -1,0 +1,13 @@
+{
+  "plan_sha256": "dc229a8fd3cc0de1786c33df02b1e2c0c80f61cb9afb0f88e266ea7eabcbdebd",
+  "records": 2,
+  "runtime_failures": [],
+  "prediction_sha256": {
+    "reviewed-dc84f2b77565d804f16ea31f42380abb.json": "e396fa5cb6395140467f44eb3a82c94a6b7bffe90106463309879823f52f524e",
+    "fleurs-ru-1651.json": "9c4a1bb143c93278b21e93c338ea6d229abd5681f7ce1599e2227879ecfb8b2d"
+  },
+  "actual_device": "cpu",
+  "actual_precision": "int8_float32",
+  "new_ASR_calls": 2,
+  "resumed": 0
+}

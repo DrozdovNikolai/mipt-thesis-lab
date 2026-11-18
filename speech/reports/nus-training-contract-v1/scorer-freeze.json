@@ -1,0 +1,6 @@
+{
+  "frozen_at": "2026-09-14T16:20:42.505688+00:00",
+  "script_sha256": "749e085aae090a7a913346452b61680480fef503f8ad3f21f405e378be2d6152",
+  "metrics_sha256": "03876483b34afa31243136a5a3f9b52b17d2a2c15e8435fccfbf23986344792a",
+  "reference_policy": "train only; unchanged lexical_normalizer_v1"
+}

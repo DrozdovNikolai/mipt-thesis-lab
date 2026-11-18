@@ -1,0 +1,10 @@
+task,input,system,label,status,precision,recall,f1,support,macro_f1,micro_f1,tn,fp,fn,tp,unknown,coverage
+utterance_classification,human_text,rules,__aggregate__,NOT_RUN,,,,,,,,,,,,
+utterance_classification,human_text,candidate,__aggregate__,NOT_RUN,,,,,,,,,,,,
+salience,human_text,salience,salient_for_review,NOT_RUN,,,,,,,,,,,,
+utterance_classification,candidate_asr,rules,__aggregate__,NOT_RUN,,,,,,,,,,,,
+utterance_classification,candidate_asr,candidate,__aggregate__,NOT_RUN,,,,,,,,,,,,
+salience,candidate_asr,salience,salient_for_review,NOT_RUN,,,,,,,,,,,,
+utterance_classification,baseline_asr,rules,__aggregate__,NOT_RUN,,,,,,,,,,,,
+utterance_classification,baseline_asr,candidate,__aggregate__,NOT_RUN,,,,,,,,,,,,
+salience,baseline_asr,salience,salient_for_review,NOT_RUN,,,,,,,,,,,,

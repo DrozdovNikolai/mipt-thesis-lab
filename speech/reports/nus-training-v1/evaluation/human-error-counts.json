@@ -1,0 +1,257 @@
+[
+  {
+    "id": "reviewed-dc84f2b77565d804f16ea31f42380abb",
+    "system": "parent",
+    "counts": {
+      "S": 2,
+      "D": 0,
+      "I": 1,
+      "N": 21,
+      "H": 19,
+      "wer": 0.14285714285714285,
+      "character_errors": 6,
+      "reference_characters": 135,
+      "cer": 0.044444444444444446
+    },
+    "excess_repeated_trigrams": 0,
+    "scope": "Repeated text may be real speech; no deduplication or event claim"
+  },
+  {
+    "id": "reviewed-dc84f2b77565d804f16ea31f42380abb",
+    "system": "balanced",
+    "counts": {
+      "S": 2,
+      "D": 0,
+      "I": 1,
+      "N": 21,
+      "H": 19,
+      "wer": 0.14285714285714285,
+      "character_errors": 6,
+      "reference_characters": 135,
+      "cer": 0.044444444444444446
+    },
+    "excess_repeated_trigrams": 0,
+    "scope": "Repeated text may be real speech; no deduplication or event claim"
+  },
+  {
+    "id": "reviewed-dc84f2b77565d804f16ea31f42380abb",
+    "system": "nus",
+    "counts": {
+      "S": 0,
+      "D": 21,
+      "I": 0,
+      "N": 21,
+      "H": 0,
+      "wer": 1.0,
+      "character_errors": 135,
+      "reference_characters": 135,
+      "cer": 1.0
+    },
+    "excess_repeated_trigrams": 0,
+    "scope": "Repeated text may be real speech; no deduplication or event claim"
+  },
+  {
+    "id": "reviewed-767df23c7c14166f8579da284d5a4219",
+    "system": "parent",
+    "counts": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 25,
+      "H": 24,
+      "wer": 0.04,
+      "character_errors": 3,
+      "reference_characters": 139,
+      "cer": 0.02158273381294964
+    },
+    "excess_repeated_trigrams": 0,
+    "scope": "Repeated text may be real speech; no deduplication or event claim"
+  },
+  {
+    "id": "reviewed-767df23c7c14166f8579da284d5a4219",
+    "system": "balanced",
+    "counts": {
+      "S": 2,
+      "D": 0,
+      "I": 2,
+      "N": 25,
+      "H": 23,
+      "wer": 0.16,
+      "character_errors": 8,
+      "reference_characters": 139,
+      "cer": 0.05755395683453238
+    },
+    "excess_repeated_trigrams": 0,
+    "scope": "Repeated text may be real speech; no deduplication or event claim"
+  },
+  {
+    "id": "reviewed-767df23c7c14166f8579da284d5a4219",
+    "system": "nus",
+    "counts": {
+      "S": 0,
+      "D": 25,
+      "I": 0,
+      "N": 25,
+      "H": 0,
+      "wer": 1.0,
+      "character_errors": 139,
+      "reference_characters": 139,
+      "cer": 1.0
+    },
+    "excess_repeated_trigrams": 0,
+    "scope": "Repeated text may be real speech; no deduplication or event claim"
+  },
+  {
+    "id": "reviewed-c55f9c7708704c548f503aa642c2288d",
+    "system": "parent",
+    "counts": {
+      "S": 4,
+      "D": 0,
+      "I": 4,
+      "N": 23,
+      "H": 19,
+      "wer": 0.34782608695652173,
+      "character_errors": 33,
+      "reference_characters": 124,
+      "cer": 0.2661290322580645
+    },
+    "excess_repeated_trigrams": 0,
+    "scope": "Repeated text may be real speech; no deduplication or event claim"
+  },
+  {
+    "id": "reviewed-c55f9c7708704c548f503aa642c2288d",
+    "system": "balanced",
+    "counts": {
+      "S": 4,
+      "D": 0,
+      "I": 4,
+      "N": 23,
+      "H": 19,
+      "wer": 0.34782608695652173,
+      "character_errors": 33,
+      "reference_characters": 124,
+      "cer": 0.2661290322580645
+    },
+    "excess_repeated_trigrams": 0,
+    "scope": "Repeated text may be real speech; no deduplication or event claim"
+  },
+  {
+    "id": "reviewed-c55f9c7708704c548f503aa642c2288d",
+    "system": "nus",
+    "counts": {
+      "S": 0,
+      "D": 23,
+      "I": 0,
+      "N": 23,
+      "H": 0,
+      "wer": 1.0,
+      "character_errors": 124,
+      "reference_characters": 124,
+      "cer": 1.0
+    },
+    "excess_repeated_trigrams": 0,
+    "scope": "Repeated text may be real speech; no deduplication or event claim"
+  },
+  {
+    "id": "reviewed-291ebb141aa4e7a7ba94ccf8d18002fb",
+    "system": "parent",
+    "counts": {
+      "S": 2,
+      "D": 1,
+      "I": 0,
+      "N": 23,
+      "H": 20,
+      "wer": 0.13043478260869565,
+      "character_errors": 4,
+      "reference_characters": 133,
+      "cer": 0.03007518796992481
+    },
+    "excess_repeated_trigrams": 0,
+    "scope": "Repeated text may be real speech; no deduplication or event claim"
+  },
+  {
+    "id": "reviewed-291ebb141aa4e7a7ba94ccf8d18002fb",
+    "system": "balanced",
+    "counts": {
+      "S": 1,
+      "D": 0,
+      "I": 10,
+      "N": 23,
+      "H": 22,
+      "wer": 0.4782608695652174,
+      "character_errors": 50,
+      "reference_characters": 133,
+      "cer": 0.37593984962406013
+    },
+    "excess_repeated_trigrams": 4,
+    "scope": "Repeated text may be real speech; no deduplication or event claim"
+  },
+  {
+    "id": "reviewed-291ebb141aa4e7a7ba94ccf8d18002fb",
+    "system": "nus",
+    "counts": {
+      "S": 0,
+      "D": 23,
+      "I": 0,
+      "N": 23,
+      "H": 0,
+      "wer": 1.0,
+      "character_errors": 133,
+      "reference_characters": 133,
+      "cer": 1.0
+    },
+    "excess_repeated_trigrams": 0,
+    "scope": "Repeated text may be real speech; no deduplication or event claim"
+  },
+  {
+    "id": "reviewed-b8d2fc3fc1893f19ae7fb8d7c2722a4d",
+    "system": "parent",
+    "counts": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 23,
+      "H": 22,
+      "wer": 0.043478260869565216,
+      "character_errors": 4,
+      "reference_characters": 143,
+      "cer": 0.027972027972027972
+    },
+    "excess_repeated_trigrams": 0,
+    "scope": "Repeated text may be real speech; no deduplication or event claim"
+  },
+  {
+    "id": "reviewed-b8d2fc3fc1893f19ae7fb8d7c2722a4d",
+    "system": "balanced",
+    "counts": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 23,
+      "H": 22,
+      "wer": 0.043478260869565216,
+      "character_errors": 4,
+      "reference_characters": 143,
+      "cer": 0.027972027972027972
+    },
+    "excess_repeated_trigrams": 0,
+    "scope": "Repeated text may be real speech; no deduplication or event claim"
+  },
+  {
+    "id": "reviewed-b8d2fc3fc1893f19ae7fb8d7c2722a4d",
+    "system": "nus",
+    "counts": {
+      "S": 0,
+      "D": 23,
+      "I": 0,
+      "N": 23,
+      "H": 0,
+      "wer": 1.0,
+      "character_errors": 143,
+      "reference_characters": 143,
+      "cer": 1.0
+    },
+    "excess_repeated_trigrams": 0,
+    "scope": "Repeated text may be real speech; no deduplication or event claim"
+  }
+]

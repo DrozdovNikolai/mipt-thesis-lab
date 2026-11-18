@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "identical_records": 32,
+  "new_ASR_calls": 48,
+  "checks": [
+    "all raw texts",
+    "word timestamps",
+    "PCM and file hashes",
+    "routing",
+    "consensus edits",
+    "Canary tokens"
+  ]
+}

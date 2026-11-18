@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "plan_sha256": "95baf3d19575aacabe03a83486b87419b6282ee05b8051619fec0eb4057519ad",
+  "training_waveforms_and_features_replayed": 3927,
+  "OOF_reader_folds_checked": 9,
+  "training_threshold_replayed": 0.8,
+  "routed_waveforms_replayed": 491,
+  "decisions_replayed": 541,
+  "independent_edit_totals": 2114,
+  "verifier_sha256": "7594b5b06a7b1a757cc6424274c13eb79b92ea180a6d102ec64cfea72421803f"
+}

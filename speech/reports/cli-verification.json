@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "executed": true,
+  "cases": [
+    {
+      "arguments": [
+        "--help"
+      ],
+      "exit_code": 0,
+      "expected": 0,
+      "stdout": "                                                                                \n Usage: -c [OPTIONS] COMMAND [ARGS]...                                          \n                                                                                \n╭─ Options ────────────────────────────────────────────────────────────────────╮\n│ --install-completion          Install completion for the current shell.      │\n│ --show-completion             Show completion for the current shell, to copy │\n│                               it or customize the installation.              │\n│ --help                        Show this message and exit.                    │\n╰──────────────────────────────────────────────────────────────────────────────╯\n╭─ Commands ───────────────────────────────────────────────────────────────────╮\n│ doctor                                                                       │\n│ demo                                                                         │\n│ acceptance-schema                                                            │\n│ promote                                                                      │\n│ assets                                                                       │\n│ datasets                                                                     │\n│ benchmark                                                                    │\n│ train                                                                        │\n│ evaluate                                                                     │\n│ selftest                                                                     │\n╰──────────────────────────────────────────────────────────────────────────────╯\n\n",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "doctor"
+      ],
+      "exit_code": 0,
+      "expected": 0,
+      "stdout": "{\n  \"platform\": \"Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.36\",\n  \"python\": \"3.11.14\",\n  \"checks\": {\n    \"migration\": \"0001\",\n    \"broker\": \"available\",\n    \"ffmpeg\": \"ffmpeg version 5.1.9-0+deb12u1 Copyright (c) 2000-2026 the FFmpeg developers\",\n    \"volumes\": {\n      \"/audio\": {\n        \"exists\": true,\n        \"free_bytes\": 943774912512\n      },\n      \"/models\": {\n        \"exists\": true,\n        \"free_bytes\": 943774912512\n      },\n      \"/artifacts\": {\n        \"exists\": true,\n        \"free_bytes\": 943774912512\n      }\n    },\n    \"model\": {\n      \"status\": \"available\",\n      \"revision\": \"536b0662742c02347bc0e980a01041f333bce120\",\n      \"files_verified\": true\n    }\n  },\n  \"gpu_inference_verified\": false,\n  \"versions\": {\n    \"fastapi\": \"0.141.1\",\n    \"celery\": \"5.6.3\",\n    \"sqlalchemy\": \"2.0.52\",\n    \"faster-whisper\": \"1.2.1\",\n    \"ctranslate2\": \"4.8.2\",\n    \"jiwer\": \"4.0.0\"\n  },\n  \"gpu_visible_count\": 0,\n  \"offline_ready\": true\n}\n",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "acceptance-schema"
+      ],
+      "exit_code": 0,
+      "expected": 0,
+      "stdout": "{\n  \"written\": \"/reports/acceptance.schema.json\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "benchmark",
+        "freeze-baseline",
+        "--output",
+        "/reports/baseline.lock.json"
+      ],
+      "exit_code": 0,
+      "expected": 0,
+      "stdout": "{\n  \"config\": {\n    \"schema_version\": \"1.0\",\n    \"name\": \"baseline\",\n    \"model\": \"small\",\n    \"compute_type\": \"int8\",\n    \"device\": \"cpu\",\n    \"task\": \"transcribe\",\n    \"beam_size\": 5,\n    \"temperature\": 0.0,\n    \"best_of\": 5,\n    \"patience\": 1.0,\n    \"length_penalty\": 1.0,\n    \"repetition_penalty\": 1.0,\n    \"no_repeat_ngram_size\": 0,\n    \"condition_on_previous_text\": true,\n    \"compression_ratio_threshold\": 2.4,\n    \"log_prob_threshold\": -1.0,\n    \"no_speech_threshold\": 0.6,\n    \"suppress_blank\": true,\n    \"suppress_tokens\": [\n      -1\n    ],\n    \"max_initial_timestamp\": 1.0,\n    \"word_timestamps\": true,\n    \"language_detection_threshold\": 0.5,\n    \"language_detection_segments\": 1,\n    \"vad\": {\n      \"enabled\": false,\n      \"threshold\": 0.5,\n      \"min_speech_duration_ms\": 100,\n      \"min_silence_duration_ms\": 400,\n      \"speech_pad_ms\": 200,\n      \"max_speech_duration_s\": 30.0\n    },\n    \"denoise\": {\n      \"enabled\": false,\n      \"strength\": 0.5,\n      \"floor\": 0.3,\n      \"noise_percentile\": 10.0\n    },\n    \"hotwords\": null,\n    \"glossary_version\": null,\n    \"redecode\": false,\n    \"max_redecode_passes\": 1,\n    \"redecode_logprob_threshold\": -0.8,\n    \"episode_gap_sec\": 2.0,\n    \"episode_max_sec\": 30.0,\n    \"episode_max_tokens\": 100,\n    \"classifier\": \"rules_v1\",\n    \"classifier_artifact\": null\n  },\n  \"model\": {\n    \"model\": \"small\",\n    \"repo\": \"Systran/faster-whisper-small\",\n    \"revision\": \"536b0662742c02347bc0e980a01041f333bce120\",\n    \"files\": {\n      \"model.bin\": \"3e305921506d8872816023e4c273e75d2419fb89b24da97b4fe7bce14170d671\",\n      \"tokenizer.json\": \"fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab\",\n      \"README.md\": \"329373481008c7c38654aff8ecdcf0163c211557cc7ba8e2ef6f2f84b4f75ec8\",\n      \"config.json\": \"b55496ac7940a7ae47d2c01eab40edfd8701feec1229d9cce3b40014383fb828\",\n      \"vocabulary.txt\": \"34ce3fe1c5041027b3f8d42912270993f986dbc4bb34cf27f951e34a1e453913\"\n    },\n    \"license\": \"MIT\",\n    \"acquired_at\": \"2026-09-13T14:51:11Z\",\n    \"faster_whisper_version\": \"1.2.1\",\n    \"silero\": {\n      \"path\": \"/opt/venv/lib/python3.11/site-packages/faster_whisper/assets/silero_vad_v6.onnx\",\n      \"sha256\": \"4cbf549b8326f60f80f2536d9eefeb450a9abe83365a098031c89719f1be17d2\",\n      \"distribution\": \"bundled_with_faster_whisper\"\n    }\n  },\n  \"code_hash\": \"3ebe06c6b5e3d924e96623be9a6829076844c701b9692cb02eed154824ea749f\",\n  \"scorer_hash\": \"987cf5b3f4f9c189b5ea31b43fb2125185918646e1b1633f1b6aee824e6ad79b\",\n  \"created_at\": \"2026-09-13T16:18:27.760042+00:00\",\n  \"common_audio_preparation\": \"ffmpeg_pcm16k_v1\",\n  \"hardware\": \"Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.36\",\n  \"normalizer\": \"lexical_normalizer_v1\",\n  \"status\": \"FROZEN_BASELINE_NOT_QUALITY_PASS\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "benchmark",
+        "dev"
+      ],
+      "exit_code": 4,
+      "expected": 4,
+      "stdout": "{\n  \"status\": \"NEEDS_MORE_DATA\",\n  \"error\": {\n    \"code\": \"MISSING_DEV_DATA\",\n    \"message\": \"No admitted dev manifest; acquire/annotate/split lawful recordings\",\n    \"retryable\": false\n  },\n  \"executed\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "train",
+        "events"
+      ],
+      "exit_code": 5,
+      "expected": 5,
+      "stdout": "{\n  \"status\": \"BLOCKED\",\n  \"error\": {\n    \"code\": \"MISSING_EVENT_LABELS\",\n    \"message\": \"Supply lawful train/dev human event and salience annotations\",\n    \"retryable\": false\n  },\n  \"executed\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "benchmark",
+        "freeze"
+      ],
+      "exit_code": 5,
+      "expected": 5,
+      "stdout": "{\n  \"status\": \"BLOCKED\",\n  \"error\": {\n    \"code\": \"MISSING_DEV_SELECTION\",\n    \"message\": \"Run bounded dev search before final selection freeze\",\n    \"retryable\": false\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "benchmark",
+        "test"
+      ],
+      "exit_code": 5,
+      "expected": 5,
+      "stdout": "{\n  \"status\": \"BLOCKED\",\n  \"error\": {\n    \"code\": \"EVALUATOR_REQUIRED\",\n    \"message\": \"Only evaluator may open final test references\",\n    \"retryable\": false\n  }\n}\n",
+      "stderr": ""
+    }
+  ]
+}

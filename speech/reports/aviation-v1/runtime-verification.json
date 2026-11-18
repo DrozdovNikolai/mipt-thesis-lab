@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "end_to_end_cli_runs": 2,
+  "recorded_at": "2026-09-14T20:31:51.504873+00:00",
+  "selection": "Frozen smoke inputs chosen before candidate scoring",
+  "runs": [
+    {
+      "sample_id": "atcosim_sm2_09_001_000000_000507",
+      "result": "reports/local-transcriptions/aviation/smoke/599a8ca9898b474b8ce3a33e2f32bed9/result.json",
+      "result_sha256": "15a10a0657b8ce4d808a457849247396b33de9693624e6c9014b91724485daef",
+      "text": "thom seven five three three good afternoon squawk one seven four three",
+      "text_matches_benchmark": true,
+      "segment_and_word_timestamps_match_benchmark": true,
+      "timestamps_within_audio": true,
+      "recipe_sha256": "a49eb0358e6173bb6d612f2e1563237e22100345aef6448e70022b742b542f53",
+      "device": "cuda",
+      "precision": "float16"
+    },
+    {
+      "sample_id": "atcosim_zf1_05_146_000000_000350",
+      "result": "reports/local-transcriptions/aviation/smoke/d05e30cde95c4bcd811b3c771529e2b2/result.json",
+      "result_sha256": "0637641e6db27ce6cc57ce170bca29c71fca1fd16c105b73e1c6616d0099e779",
+      "text": "lufthansa four three nine three descend flight level two seven zero",
+      "text_matches_benchmark": true,
+      "segment_and_word_timestamps_match_benchmark": true,
+      "timestamps_within_audio": true,
+      "recipe_sha256": "a49eb0358e6173bb6d612f2e1563237e22100345aef6448e70022b742b542f53",
+      "device": "cuda",
+      "precision": "float16"
+    }
+  ]
+}

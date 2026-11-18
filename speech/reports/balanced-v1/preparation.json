@@ -1,0 +1,51 @@
+{
+  "eligible_EN": 2039,
+  "selected_EN": 200,
+  "known_EN_speakers": 19,
+  "speaker_counts": {
+    "1088": 11,
+    "1246": 11,
+    "1263": 10,
+    "1743": 11,
+    "226": 10,
+    "2514": 11,
+    "307": 8,
+    "3240": 10,
+    "374": 11,
+    "4214": 10,
+    "5390": 10,
+    "5456": 10,
+    "5750": 11,
+    "5789": 11,
+    "587": 11,
+    "7505": 11,
+    "7635": 11,
+    "7800": 11,
+    "8238": 11
+  },
+  "exclusions": {},
+  "pairs": 433,
+  "minutes": 91.49932708333333,
+  "EN_support_minutes": 42.70232708333334,
+  "old_EN_support_minutes": 44.29633541666666,
+  "groups": {
+    "independent_groups": 27,
+    "split_groups": {
+      "train": 25,
+      "dev": 2,
+      "test": 0
+    },
+    "unknown_speakers": 200,
+    "script_overlap": {
+      "bleriot:BEA:Checklists": [
+        "dev",
+        "train"
+      ]
+    },
+    "claim_limitation": "unknown speakers cannot establish speaker-disjoint generalization"
+  },
+  "protected_233_records_unchanged": true,
+  "new_EN_overlap_with_old_selection": 18,
+  "test_accessed": false,
+  "local_manual_verification": false
+}

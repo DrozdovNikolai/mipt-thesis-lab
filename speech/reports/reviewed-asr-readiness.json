@@ -1,0 +1,139 @@
+{
+  "status": "NEEDS_MORE_DATA",
+  "task": "asr",
+  "eligible_train": 0,
+  "eligible_dev": 0,
+  "pending": [
+    {
+      "id": "4b795094d9b67f47f5f37626136f4f69",
+      "split": "train",
+      "reasons": [
+        "no_human_revision"
+      ]
+    },
+    {
+      "id": "13a76ec2e985e283e00d1420fc528f63",
+      "split": "train",
+      "reasons": [
+        "no_human_revision"
+      ]
+    },
+    {
+      "id": "4aee8e1b1146f7198df0b6b1593c473a",
+      "split": "train",
+      "reasons": [
+        "no_human_revision"
+      ]
+    },
+    {
+      "id": "8bcef2746d99bdd0d2900f096b2a1680",
+      "split": "train",
+      "reasons": [
+        "no_human_revision"
+      ]
+    },
+    {
+      "id": "fe1d55a2dce836cd2011449c4a9cc580",
+      "split": "train",
+      "reasons": [
+        "no_human_revision"
+      ]
+    },
+    {
+      "id": "f16346d35b6182acf7c409752b5b84d9",
+      "split": "train",
+      "reasons": [
+        "no_human_revision"
+      ]
+    },
+    {
+      "id": "02f3c0880dac0babd078159ba6373426",
+      "split": "train",
+      "reasons": [
+        "no_human_revision"
+      ]
+    },
+    {
+      "id": "dbf545dd4e7008a1002172f5d0b5d929",
+      "split": "train",
+      "reasons": [
+        "no_human_revision"
+      ]
+    },
+    {
+      "id": "4e0e170db09a82e57ba12f956d181c83",
+      "split": "train",
+      "reasons": [
+        "no_human_revision"
+      ]
+    },
+    {
+      "id": "1aa8c39628e3516e8af2523c342abb24",
+      "split": "train",
+      "reasons": [
+        "no_human_revision"
+      ]
+    },
+    {
+      "id": "dc84f2b77565d804f16ea31f42380abb",
+      "split": "dev",
+      "reasons": [
+        "no_human_revision"
+      ]
+    },
+    {
+      "id": "767df23c7c14166f8579da284d5a4219",
+      "split": "dev",
+      "reasons": [
+        "no_human_revision"
+      ]
+    },
+    {
+      "id": "c656ad84b78a3f41dcc8ff4653393346",
+      "split": "dev",
+      "reasons": [
+        "no_human_revision"
+      ]
+    },
+    {
+      "id": "c55f9c7708704c548f503aa642c2288d",
+      "split": "dev",
+      "reasons": [
+        "no_human_revision"
+      ]
+    },
+    {
+      "id": "291ebb141aa4e7a7ba94ccf8d18002fb",
+      "split": "dev",
+      "reasons": [
+        "no_human_revision"
+      ]
+    },
+    {
+      "id": "325b235ca91365d6e590ac76eb5acd40",
+      "split": "dev",
+      "reasons": [
+        "no_human_revision"
+      ]
+    },
+    {
+      "id": "b8d2fc3fc1893f19ae7fb8d7c2722a4d",
+      "split": "dev",
+      "reasons": [
+        "no_human_revision"
+      ]
+    },
+    {
+      "id": "58d136c00041f7a4ce599740ee1b5210",
+      "split": "dev",
+      "reasons": [
+        "no_human_revision"
+      ]
+    }
+  ],
+  "source_revisions": [],
+  "training_executed": false,
+  "quality_evidence": false,
+  "test_data_accessed": false,
+  "output": null
+}

@@ -1,0 +1,57 @@
+{
+  "status": "EXECUTED_METADATA_AUDIT",
+  "source_checksums": {
+    "librispeech-0000.parquet": true,
+    "fleurs-train.tsv": true,
+    "fleurs-train.tar.gz": true
+  },
+  "acquisition_sha256": "39b63218252d4d49f52f88d50c10a4927142a8ce7a3dd7ae4ab8e67aab491f24",
+  "audit_script_sha256": "41b8b3b6d9a989c7f3c50a924a8d672239197ba0406feb99a1dc5be1f715b9a8",
+  "existing_train_manifest_sha256": "1f5726dee1572a3970b84afbd9914a9f5135ca8325005e6a756ef8b6284259ad",
+  "librispeech_downloaded": {
+    "records": 2039,
+    "speakers": 19,
+    "chapters": 47,
+    "records_per_speaker": {
+      "1088": 112,
+      "1246": 117,
+      "1263": 109,
+      "1743": 103,
+      "226": 107,
+      "2514": 108,
+      "307": 8,
+      "3240": 127,
+      "374": 113,
+      "4214": 81,
+      "5390": 116,
+      "5456": 112,
+      "5750": 122,
+      "5789": 112,
+      "587": 117,
+      "7505": 115,
+      "7635": 122,
+      "7800": 115,
+      "8238": 123
+    },
+    "known_dev_speaker_overlap": []
+  },
+  "librispeech_previously_imported": {
+    "records": 200,
+    "speakers": 2
+  },
+  "fleurs_downloaded": {
+    "rows": 2562,
+    "distinct_sentence_ids": 1465,
+    "individual_speaker_ids": "UNAVAILABLE"
+  },
+  "new_training_admitted": 0,
+  "ASR_calls": 0,
+  "training_runs": 0,
+  "test_accessed": false,
+  "limitations": [
+    "Metadata inventory is not a validated training manifest.",
+    "New selection still needs duration, audio duplicates, transcript and group checks.",
+    "General speech does not provide independent cockpit quality evidence.",
+    "Two-speaker sampling is a limitation, not a proven causal explanation of LoRA degradation."
+  ]
+}

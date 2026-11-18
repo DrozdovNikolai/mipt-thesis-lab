@@ -1,0 +1,10 @@
+{
+  "script_sha256": "7f895bb03b68b10b3ed579fca86af9c0f4e51ebabdb6dc7a58cbfc4ebaafd381",
+  "metrics_sha256": "fc6295ec671a4c42c8a901ccfd602b1da0040343486470eae40269526af0dccd",
+  "exact_atcosim_utterances": 1901,
+  "errors": {
+    "small": 15773,
+    "medium": 14166,
+    "atc": 2741
+  }
+}

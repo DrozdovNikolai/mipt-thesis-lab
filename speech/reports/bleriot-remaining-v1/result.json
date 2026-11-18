@@ -1,0 +1,41 @@
+{
+  "train_original_recordings": 27,
+  "train_original_minutes": 161.4757853363568,
+  "processed_original_recordings": 9,
+  "processed_original_minutes": 114.50947354497356,
+  "omitted_original_recordings": 18,
+  "omitted_original_minutes": 46.96631179138323,
+  "omitted_with_publisher_text_recordings": 16,
+  "omitted_with_publisher_text_minutes": 44.530718820861686,
+  "omitted_without_publisher_text_minutes": 2.4355929705215416,
+  "omitted_document_language_counts": {
+    "fr_with_en_spans": 7,
+    "en_with_fr_context_in_document": 2,
+    "mostly_fr_with_en_spans": 1,
+    "fr": 4,
+    "en_fr": 2,
+    "unknown": 2
+  },
+  "train_noisy_versions": 20,
+  "train_noisy_minutes": 55.62229166666667,
+  "noisy_versions_with_confirmed_parent": 19,
+  "pause_clip_minutes": 107.64469583333332,
+  "vad_held_long_spans": 0,
+  "document_only_rejects_checked": 201,
+  "pass_after_alias_expansion": 21,
+  "pass_after_alias_expansion_minutes": 3.860533333333333,
+  "pass_after_alias_expansion_by_source": {
+    "bleriot-a:BEA_checklists_sp001": 7,
+    "bleriot-a:BEA_checklists_sp004": 3,
+    "bleriot-a:BEA_checklists_sp008": 3,
+    "bleriot-a:BEA_checklists_sp009": 5,
+    "bleriot-a:BEA_checklists_sp010": 2,
+    "bleriot-a:BEA_checklists_sp011": 1
+  },
+  "rejected_clips_with_at_least_four_word_common_publisher_run": 144,
+  "common_publisher_run_words": 1026,
+  "new_accepted_training_pairs": 0,
+  "new_asr_calls": 0,
+  "training_steps": 0,
+  "interpretation": "Diagnostic candidates are not accepted audio-text pairs. Categories overlap and must not be summed."
+}

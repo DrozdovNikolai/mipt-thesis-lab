@@ -1,0 +1,20 @@
+[
+  {
+    "name": "north55-speech-postgres-1",
+    "restart_policy": {
+      "Name": "unless-stopped",
+      "MaximumRetryCount": 0
+    },
+    "status": "running",
+    "health": "healthy"
+  },
+  {
+    "name": "north55-speech-rabbitmq-1",
+    "restart_policy": {
+      "Name": "unless-stopped",
+      "MaximumRetryCount": 0
+    },
+    "status": "running",
+    "health": "healthy"
+  }
+]

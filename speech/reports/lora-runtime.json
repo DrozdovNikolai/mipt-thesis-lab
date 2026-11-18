@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "executed": true,
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "torch": "2.8.0+cu128",
+  "transformers": "4.57.1",
+  "peft": "0.17.1",
+  "trainer_import": "Seq2SeqTrainer",
+  "finite_loss": true,
+  "gradient_update": true,
+  "adapter_save_merge": true,
+  "fixture": "random_tiny_model_and_tensors",
+  "real_asr_adaptation_executed": false,
+  "quality_evidence": false
+}

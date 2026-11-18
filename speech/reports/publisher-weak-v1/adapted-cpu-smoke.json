@@ -1,0 +1,140 @@
+{
+  "status": "PASS",
+  "device": "cpu",
+  "compute_type": "int8",
+  "network": "none",
+  "audio_sha256": "3909a6c5ae93112518681fcbf0a74df43615a4f88bd6d5cd788775255296e3f6",
+  "model_manifest": {
+    "model": "whisper-small-publisher-lora-v2-ct2",
+    "repo": "local_lora_adaptation",
+    "revision": "b1aa049fbc11e1d9377305ec384049e27495afc23f7c8925777d7f9b62dc864f",
+    "source_train_manifest_sha256": "267cb22d3d95b0ed1abc6867b678775ba51b65fd8ba2921226100ba92dee28dd",
+    "files": {
+      "model.bin": "a6d58a2e6f0eeb5b6e1fc1401e88c2c1da75ee6d74122c4e25e16724435b2ed6",
+      "tokenizer.json": "7b469ff15eb7816315aa45eec391f5943d639b9d73d110f5c003df5192fd54e3",
+      "vocabulary.json": "5ad28279db5e546349708b9a74736e2c018737ac5a600f1048f1f26c99b85b47",
+      "preprocessor_config.json": "994838f1fa6462c8b9b3c90edada831f11f3dd8b4664634e18f4694d005c9dbf",
+      "config.json": "707bcfea9f540464f702957e4c974a262cd378df563f25c96da0778e3b9f7b84"
+    },
+    "license": "inherited_base_model_and_training_data_restrictions",
+    "model_comparison": "A5_separate_checkpoint",
+    "reference_policy": "publisher_weak_exploratory_v1",
+    "quality_evidence": false
+  },
+  "segments": [
+    {
+      "segment_id": "cpu-adapted-0",
+      "start_sec": 0.0,
+      "end_sec": 4.38,
+      "raw_asr_text": " The long drizzle had begun. Pedestrians had turned up collars and trousers at the bottom.",
+      "display_text": "",
+      "reviewed_text": null,
+      "channel": null,
+      "speaker_id": null,
+      "role": "unknown",
+      "role_provenance": null,
+      "language": "en",
+      "words": [
+        {
+          "word": " The",
+          "start_sec": 0.0,
+          "end_sec": 0.28,
+          "probability": 0.890326201915741
+        },
+        {
+          "word": " long",
+          "start_sec": 0.28,
+          "end_sec": 0.52,
+          "probability": 0.9907643795013428
+        },
+        {
+          "word": " drizzle",
+          "start_sec": 0.52,
+          "end_sec": 0.8,
+          "probability": 0.9426194429397583
+        },
+        {
+          "word": " had",
+          "start_sec": 0.8,
+          "end_sec": 1.06,
+          "probability": 0.9931076169013977
+        },
+        {
+          "word": " begun.",
+          "start_sec": 1.06,
+          "end_sec": 1.42,
+          "probability": 0.9964123368263245
+        },
+        {
+          "word": " Pedestrians",
+          "start_sec": 1.74,
+          "end_sec": 2.2,
+          "probability": 0.977783739566803
+        },
+        {
+          "word": " had",
+          "start_sec": 2.2,
+          "end_sec": 2.4,
+          "probability": 0.9863801598548889
+        },
+        {
+          "word": " turned",
+          "start_sec": 2.4,
+          "end_sec": 2.64,
+          "probability": 0.9959844350814819
+        },
+        {
+          "word": " up",
+          "start_sec": 2.64,
+          "end_sec": 2.8,
+          "probability": 0.9413637518882751
+        },
+        {
+          "word": " collars",
+          "start_sec": 2.8,
+          "end_sec": 3.32,
+          "probability": 0.9841433763504028
+        },
+        {
+          "word": " and",
+          "start_sec": 3.32,
+          "end_sec": 3.46,
+          "probability": 0.9892557859420776
+        },
+        {
+          "word": " trousers",
+          "start_sec": 3.46,
+          "end_sec": 3.78,
+          "probability": 0.9735206961631775
+        },
+        {
+          "word": " at",
+          "start_sec": 3.78,
+          "end_sec": 4.04,
+          "probability": 0.9928026795387268
+        },
+        {
+          "word": " the",
+          "start_sec": 4.04,
+          "end_sec": 4.14,
+          "probability": 0.9993951320648193
+        },
+        {
+          "word": " bottom.",
+          "start_sec": 4.14,
+          "end_sec": 4.38,
+          "probability": 0.9988644123077393
+        }
+      ],
+      "avg_logprob": -0.20428404730299246,
+      "no_speech_prob": 0.004139317199587822,
+      "alternatives": [],
+      "normalization_changes": [],
+      "risk_level": "unknown",
+      "risk_reasons": [
+        "uncalibrated_asr_confidence"
+      ]
+    }
+  ],
+  "quality_evidence": false
+}

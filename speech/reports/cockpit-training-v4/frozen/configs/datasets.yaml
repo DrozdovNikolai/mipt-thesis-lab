@@ -1,0 +1,24 @@
+schema_version: "1.0"
+manifest: /data/curated/manifest.jsonl
+split_output: /data/manifests
+sources:
+  BLeRIOT-A:
+    status: ACQUIRED_PREPARED_FOR_REVIEW
+    doi: 10.57745/EWXJLT
+    license: CC-BY-NC-4.0
+    restriction: Noncommercial research only; not bundled with product release
+    limitation: Requires audio inspection, segment scope filtering, aligned human transcripts and independent event/entity labels
+  BLeRIOT-C:
+    status: ACQUIRED_ALL_UNIQUE_PREPARED_TWO_LINKAGES_REVIEW_PENDING
+    doi: 10.57745/ASYVFP
+    license: CC-BY-NC-4.0
+    restriction: Derived from A; variants MUST share groups
+    limitation: One modeled chain/noise condition; not real flight generalization
+  HIWIRE: {status: BLOCKED, reason: delivery_terms_not_verified_no_purchase}
+  VOICI: {status: ACQUIRED_VERIFIED_CHECKSUM, reason: noise_only_pending_content_review_train_dev_use_only}
+  aviation-command-dataset-ru: {status: NOT_ADMITTED, reason: provenance_license_and_human_origin_not_verified}
+  LibriSpeech:
+    status: ENGINEERING_CONTROL_ONLY
+    license: CC-BY-4.0
+    scope: general_control
+    source: https://www.openslr.org/12/

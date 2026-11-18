@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "unchanged_prediction_hashes": 675,
+  "new_ASR_calls": 0,
+  "reused_records": 675,
+  "scope": "completed-job resume; no new crash injection"
+}

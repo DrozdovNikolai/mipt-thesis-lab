@@ -1,0 +1,96 @@
+{
+  "source_report": "reports/publisher-weak-v1/comparison.json",
+  "source_sha256": "b16289e445c7f6e8d5229cb713863c9f13e4aaf46837425649fe314c0cc6013e",
+  "omitted_payload_key": "rows",
+  "omitted_record_count": 52,
+  "note": "Aggregate values copied unchanged; no evaluation or gate rerun.",
+  "metrics": {
+    "status": "EXECUTED_EXPLORATORY",
+    "plan_sha256": "7bd4a4525251dd1aabe2eb30c69b537248efd275c906ba12a6312c02777a8a2b",
+    "comparison": {
+      "dev": {
+        "parent": {
+          "S": 59,
+          "D": 4,
+          "I": 7,
+          "N": 178,
+          "H": 115,
+          "character_errors": 236,
+          "reference_characters": 1040,
+          "wer_lexical_corpus": 0.39325842696629215,
+          "cer": 0.22692307692307692
+        },
+        "adapted": {
+          "S": 34,
+          "D": 16,
+          "I": 7,
+          "N": 178,
+          "H": 128,
+          "character_errors": 199,
+          "reference_characters": 1040,
+          "wer_lexical_corpus": 0.3202247191011236,
+          "cer": 0.19134615384615383
+        }
+      },
+      "general_control": {
+        "parent": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 30,
+          "H": 30,
+          "character_errors": 0,
+          "reference_characters": 180,
+          "wer_lexical_corpus": 0.0,
+          "cer": 0.0
+        },
+        "adapted": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 30,
+          "H": 30,
+          "character_errors": 0,
+          "reference_characters": 180,
+          "wer_lexical_corpus": 0.0,
+          "cer": 0.0
+        }
+      }
+    },
+    "dev_total": 24,
+    "dev_proxy_scored": 7,
+    "general_controls": 2,
+    "general_control_independent_groups": 1,
+    "runtime_failures": 0,
+    "asr_quality_gate": "NEEDS_MORE_DATA",
+    "candidate_selected": false,
+    "release_promoted": false,
+    "critical_entity_quality": "NOT_MEASURED",
+    "nlp_quality": "NEEDS_MORE_DATA",
+    "test_accessed": false,
+    "interpretation": {
+      "dev": "Lexical disagreement with automatically aligned publisher script; not independent WER gold. Alignment uses the parent ASR family and may bias this result.",
+      "general_control": "WER against existing publisher transcripts for two recordings of one general-speech reader. Too little for the clean-control acceptance gate.",
+      "comparison": "A5 model adaptation with both checkpoints converted from the same local base and decoded in float16. Not an A0-A4 pipeline improvement claim."
+    },
+    "training": {
+      "train_metrics": {
+        "train_runtime": 52.805,
+        "train_samples_per_second": 3.03,
+        "train_steps_per_second": 0.758,
+        "total_flos": 3.942088114176e+16,
+        "train_loss": 1.6066823959350587,
+        "epoch": 8.0
+      },
+      "dev_metrics": {
+        "eval_loss": 1.8531213998794556,
+        "eval_runtime": 0.5053,
+        "eval_samples_per_second": 13.852,
+        "eval_steps_per_second": 13.852,
+        "epoch": 8.0
+      },
+      "reference_policy": "publisher_weak_exploratory_v1",
+      "gpu": "NVIDIA GeForce RTX 5070 Ti"
+    }
+  }
+}

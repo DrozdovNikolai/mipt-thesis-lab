@@ -1,0 +1,82 @@
+{
+  "implemented": [
+    "isolated text decoding and VAD",
+    "original timeline alignment",
+    "bounded frozen protocol",
+    "quiet and short retention diagnostics",
+    "offline resumable launcher and reports"
+  ],
+  "executed": {
+    "GPU_new_predictions": 1084,
+    "GPU_reused_controls": 500,
+    "CPU_smoke_predictions": 16,
+    "new_training_runs": 0
+  },
+  "verified": "PASS",
+  "diagnostic_gates": {
+    "parent_text": {
+      "human_dev_point_target": "FAIL",
+      "clean_guard": "FAIL",
+      "ru_guard": "FAIL",
+      "noise_guard": "FAIL",
+      "runtime_guard": "PASS",
+      "statistical_confirmation": "INCONCLUSIVE",
+      "paired_ci_excludes_zero": false,
+      "statistical_limitation": "Only three exposed human-dev groups; independent acceptance population is insufficient.",
+      "critical_entities": "NEEDS_MORE_DATA",
+      "quiet_short_command_recall": "NEEDS_MORE_DATA",
+      "release": "FAIL"
+    },
+    "parent_vad": {
+      "human_dev_point_target": "FAIL",
+      "clean_guard": "PASS",
+      "ru_guard": "PASS",
+      "noise_guard": "PASS",
+      "runtime_guard": "PASS",
+      "statistical_confirmation": "INCONCLUSIVE",
+      "paired_ci_excludes_zero": false,
+      "statistical_limitation": "Only three exposed human-dev groups; independent acceptance population is insufficient.",
+      "critical_entities": "NEEDS_MORE_DATA",
+      "quiet_short_command_recall": "NEEDS_MORE_DATA",
+      "release": "FAIL"
+    },
+    "augmented_text": {
+      "human_dev_point_target": "FAIL",
+      "clean_guard": "FAIL",
+      "ru_guard": "FAIL",
+      "noise_guard": "FAIL",
+      "runtime_guard": "PASS",
+      "statistical_confirmation": "INCONCLUSIVE",
+      "paired_ci_excludes_zero": false,
+      "statistical_limitation": "Only three exposed human-dev groups; independent acceptance population is insufficient.",
+      "critical_entities": "NEEDS_MORE_DATA",
+      "quiet_short_command_recall": "NEEDS_MORE_DATA",
+      "release": "FAIL"
+    },
+    "augmented_vad": {
+      "human_dev_point_target": "FAIL",
+      "clean_guard": "PASS",
+      "ru_guard": "PASS",
+      "noise_guard": "PASS",
+      "runtime_guard": "PASS",
+      "statistical_confirmation": "INCONCLUSIVE",
+      "paired_ci_excludes_zero": false,
+      "statistical_limitation": "Only three exposed human-dev groups; independent acceptance population is insufficient.",
+      "critical_entities": "NEEDS_MORE_DATA",
+      "quiet_short_command_recall": "NEEDS_MORE_DATA",
+      "release": "FAIL"
+    }
+  },
+  "asr_quality_gate": "NEEDS_MORE_DATA",
+  "critical_entity_gate": "NEEDS_MORE_DATA",
+  "nlp_quality_gate": "NEEDS_MORE_DATA",
+  "temporal_detection_gate": "NEEDS_MORE_DATA",
+  "full_word_timestamp_coverage": {
+    "parent_text": "FAIL",
+    "parent_vad": "PASS",
+    "augmented_text": "FAIL",
+    "augmented_vad": "PASS"
+  },
+  "release_promoted": false,
+  "test_accessed": false
+}

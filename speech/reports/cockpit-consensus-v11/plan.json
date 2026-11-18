@@ -1,0 +1,28 @@
+{
+  "prior_plan_sha256": "3412cf06a3916ca5f6be201a273d00865c477d9748e0e00c7c22ba52db9a310f",
+  "new_ASR_calls": 0,
+  "records": 541,
+  "files_sha256": {
+    "inputs.json": "cc11863f6754b8605381a8ce4013ff35784d7dd9c1828059937e07582723fdeb",
+    "protocol.md": "78b7d56881821389e669d5dd25fdc315d3faed0267231657bf41198edd0df697",
+    "scoring/references.json": "1d92bd70aa861bad5b11d6b0f4a925da15d95bafd4bcc8a9e179c50cfdf3f34e",
+    "scoring/base-counts.json": "6ddddbcec34050d245acbbd7142ff2deaef710490fbd18a024d29fdc7da4ab2a"
+  },
+  "implementation_sha256": {
+    "scripts/cockpit_consensus_v11.py": "cb1cdb719452904c1a4f816faded8db286615ff73e52998d09d591cf6d424c3c",
+    "src/north55_speech/cockpit_consensus_v11.py": "8a253e20326cbe85a3374e7c9997fa743862fc9e56ef38c7d0940d6821b5d0f4",
+    "src/north55_speech/metrics.py": "03876483b34afa31243136a5a3f9b52b17d2a2c15e8435fccfbf23986344792a",
+    "src/north55_speech/core.py": "111df2551edaa60b744e60c2e482b6a4fd99850d88047bf64cbffebb882c9656",
+    "src/north55_speech/__init__.py": "f1cd82ffbdc2435df77df6fda53e5d3eaee8c29d3cb60b0ae2a610112ff8fda0"
+  },
+  "selection_uses_references": false,
+  "blind_dev_accessed": false,
+  "test_accessed": false,
+  "source_results": {
+    "composed-predictions.json": "589e3a8412f8adb3205289b402bc2dc63fdabfdcd778d96b63dbfd020b5d217e",
+    "scored-counts.json": "a34b888104ff3aa21293fe80decb7057bf54a0b7278eed4a031e157478167368",
+    "comparison.json": "3d2976bedba1635cd48a09bfffaa4675613613ddffd9bb3124586cfccb4205f6",
+    "verification.json": "bbce4b232cc599c67311075763fcf1d83bb34d72733e3abc0386e3349b794b51",
+    "io-canary/execution.json": "c2895d6d892babb6bd9ed3e75e36774cc90b32b030c28fb7940120f7dfbc214b"
+  }
+}

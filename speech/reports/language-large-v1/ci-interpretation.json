@@ -1,0 +1,114 @@
+{
+  "bleriot_b_noise": {
+    "language_effect": {
+      "finite_interval": false,
+      "independent_sampling_interpretable": false,
+      "frozen_scorer_flag": true,
+      "note": "Frozen scorer flag checks group count alone. Empty-reference noise has no WER interval even with two groups. No measurements or frozen scorer bytes changed."
+    },
+    "model_effect": {
+      "finite_interval": false,
+      "independent_sampling_interpretable": false,
+      "frozen_scorer_flag": true,
+      "note": "Frozen scorer flag checks group count alone. Empty-reference noise has no WER interval even with two groups. No measurements or frozen scorer bytes changed."
+    }
+  },
+  "general_clean": {
+    "language_effect": {
+      "finite_interval": true,
+      "independent_sampling_interpretable": true,
+      "frozen_scorer_flag": true,
+      "note": "Frozen scorer flag checks group count alone. Empty-reference noise has no WER interval even with two groups. No measurements or frozen scorer bytes changed."
+    },
+    "model_effect": {
+      "finite_interval": true,
+      "independent_sampling_interpretable": true,
+      "frozen_scorer_flag": true,
+      "note": "Frozen scorer flag checks group count alone. Empty-reference noise has no WER interval even with two groups. No measurements or frozen scorer bytes changed."
+    }
+  },
+  "general_ru": {
+    "language_effect": {
+      "finite_interval": true,
+      "independent_sampling_interpretable": false,
+      "frozen_scorer_flag": false,
+      "note": "Frozen scorer flag checks group count alone. Empty-reference noise has no WER interval even with two groups. No measurements or frozen scorer bytes changed."
+    },
+    "model_effect": {
+      "finite_interval": true,
+      "independent_sampling_interpretable": false,
+      "frozen_scorer_flag": false,
+      "note": "Frozen scorer flag checks group count alone. Empty-reference noise has no WER interval even with two groups. No measurements or frozen scorer bytes changed."
+    }
+  },
+  "noise_only": {
+    "language_effect": {
+      "finite_interval": false,
+      "independent_sampling_interpretable": false,
+      "frozen_scorer_flag": false,
+      "note": "Frozen scorer flag checks group count alone. Empty-reference noise has no WER interval even with two groups. No measurements or frozen scorer bytes changed."
+    },
+    "model_effect": {
+      "finite_interval": false,
+      "independent_sampling_interpretable": false,
+      "frozen_scorer_flag": false,
+      "note": "Frozen scorer flag checks group count alone. Empty-reference noise has no WER interval even with two groups. No measurements or frozen scorer bytes changed."
+    }
+  },
+  "partial_human_dev": {
+    "language_effect": {
+      "finite_interval": true,
+      "independent_sampling_interpretable": true,
+      "frozen_scorer_flag": true,
+      "note": "Frozen scorer flag checks group count alone. Empty-reference noise has no WER interval even with two groups. No measurements or frozen scorer bytes changed."
+    },
+    "model_effect": {
+      "finite_interval": true,
+      "independent_sampling_interpretable": true,
+      "frozen_scorer_flag": true,
+      "note": "Frozen scorer flag checks group count alone. Empty-reference noise has no WER interval even with two groups. No measurements or frozen scorer bytes changed."
+    }
+  },
+  "publisher_weak_dev": {
+    "language_effect": {
+      "finite_interval": true,
+      "independent_sampling_interpretable": true,
+      "frozen_scorer_flag": true,
+      "note": "Frozen scorer flag checks group count alone. Empty-reference noise has no WER interval even with two groups. No measurements or frozen scorer bytes changed."
+    },
+    "model_effect": {
+      "finite_interval": true,
+      "independent_sampling_interpretable": true,
+      "frozen_scorer_flag": true,
+      "note": "Frozen scorer flag checks group count alone. Empty-reference noise has no WER interval even with two groups. No measurements or frozen scorer bytes changed."
+    }
+  },
+  "voici_mix_0dB": {
+    "language_effect": {
+      "finite_interval": true,
+      "independent_sampling_interpretable": false,
+      "frozen_scorer_flag": false,
+      "note": "Frozen scorer flag checks group count alone. Empty-reference noise has no WER interval even with two groups. No measurements or frozen scorer bytes changed."
+    },
+    "model_effect": {
+      "finite_interval": true,
+      "independent_sampling_interpretable": false,
+      "frozen_scorer_flag": false,
+      "note": "Frozen scorer flag checks group count alone. Empty-reference noise has no WER interval even with two groups. No measurements or frozen scorer bytes changed."
+    }
+  },
+  "voici_mix_10dB": {
+    "language_effect": {
+      "finite_interval": true,
+      "independent_sampling_interpretable": false,
+      "frozen_scorer_flag": false,
+      "note": "Frozen scorer flag checks group count alone. Empty-reference noise has no WER interval even with two groups. No measurements or frozen scorer bytes changed."
+    },
+    "model_effect": {
+      "finite_interval": true,
+      "independent_sampling_interpretable": false,
+      "frozen_scorer_flag": false,
+      "note": "Frozen scorer flag checks group count alone. Empty-reference noise has no WER interval even with two groups. No measurements or frozen scorer bytes changed."
+    }
+  }
+}

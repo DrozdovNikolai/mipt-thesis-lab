@@ -1,0 +1,41 @@
+x-gpu: &gpu
+  image: north55-speech-gpu:0.1.0
+  environment:
+    NORTH55_DEVICE: cuda
+    NORTH55_COMPUTE_TYPE: float16
+    CUDA_VISIBLE_DEVICES: ${NORTH55_CUDA_VISIBLE_DEVICES:-0}
+  deploy:
+    resources:
+      reservations:
+        devices:
+          - driver: nvidia
+            device_ids: ["${NORTH55_GPU_ID:-0}"]
+            capabilities: [gpu]
+services:
+  api:
+    environment:
+      NORTH55_DEVICE: cuda
+      NORTH55_COMPUTE_TYPE: float16
+  worker:
+    <<: *gpu
+    build:
+      context: .
+      target: gpu
+  tools:
+    <<: *gpu
+  trainer:
+    image: north55-speech-train:0.1.0
+    build:
+      context: .
+      dockerfile: Dockerfile.train
+    environment:
+      NORTH55_DEVICE: cuda
+      NORTH55_COMPUTE_TYPE: float16
+      CUDA_VISIBLE_DEVICES: ${NORTH55_CUDA_VISIBLE_DEVICES:-0}
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ["${NORTH55_GPU_ID:-0}"]
+              capabilities: [gpu]

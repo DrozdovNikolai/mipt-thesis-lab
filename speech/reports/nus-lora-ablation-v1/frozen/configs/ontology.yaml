@@ -1,0 +1,7 @@
+version: "1.0"
+labels: [CHECKLIST, CONFIGURATION_MENTION, REPORTED_DEVIATION, WARNING_MENTION, CREW_COORDINATION, INSTRUCTOR_FEEDBACK, OTHER]
+claimed_labels: [CHECKLIST, CONFIGURATION_MENTION, CREW_COORDINATION]
+other_exclusive: true
+salience: [true, false, unknown]
+assertion_kind: spoken_mention
+

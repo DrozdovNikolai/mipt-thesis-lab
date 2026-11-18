@@ -1,0 +1,2319 @@
+{
+  "kind": "exploratory_known_english_diagnostic",
+  "summaries": {
+    "auto": {
+      "S": 27,
+      "D": 1,
+      "I": 6,
+      "N": 115,
+      "H": 87,
+      "character_errors": 95,
+      "reference_characters": 674,
+      "wer_lexical_corpus": 0.2956521739130435,
+      "cer": 0.14094955489614244
+    },
+    "en": {
+      "S": 10,
+      "D": 1,
+      "I": 5,
+      "N": 115,
+      "H": 104,
+      "character_errors": 50,
+      "reference_characters": 674,
+      "wer_lexical_corpus": 0.1391304347826087,
+      "cer": 0.07418397626112759
+    }
+  },
+  "groups": 3,
+  "items": 5,
+  "rows": [
+    {
+      "id": "reviewed-dc84f2b77565d804f16ea31f42380abb",
+      "group_id": "4db855a36a7bacee2960c6fd",
+      "language": "auto",
+      "hypothesis": "Coquipit préparation, parking brake, set, chocs, set, engine masters of engine mode selector, norme, landing gear level, check down, flaps lever.",
+      "segments": [
+        {
+          "segment_id": "reviewed-dc84f2b77565d804f16ea31f42380abb-0",
+          "start_sec": 2.96,
+          "end_sec": 14.4,
+          "raw_asr_text": " Coquipit préparation, parking brake, set, chocs, set, engine masters of engine mode selector, norme,",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "fr",
+          "words": [
+            {
+              "word": " Coquipit",
+              "start_sec": 2.96,
+              "end_sec": 3.96,
+              "probability": 0.5463676452636719
+            },
+            {
+              "word": " préparation,",
+              "start_sec": 3.96,
+              "end_sec": 4.86,
+              "probability": 0.78955078125
+            },
+            {
+              "word": " parking",
+              "start_sec": 5.28,
+              "end_sec": 6.0,
+              "probability": 0.73388671875
+            },
+            {
+              "word": " brake,",
+              "start_sec": 6.0,
+              "end_sec": 6.42,
+              "probability": 0.890625
+            },
+            {
+              "word": " set,",
+              "start_sec": 6.92,
+              "end_sec": 7.36,
+              "probability": 0.7734375
+            },
+            {
+              "word": " chocs,",
+              "start_sec": 7.94,
+              "end_sec": 8.74,
+              "probability": 0.740234375
+            },
+            {
+              "word": " set,",
+              "start_sec": 9.02,
+              "end_sec": 9.34,
+              "probability": 0.87255859375
+            },
+            {
+              "word": " engine",
+              "start_sec": 10.12,
+              "end_sec": 10.44,
+              "probability": 0.6474609375
+            },
+            {
+              "word": " masters",
+              "start_sec": 10.44,
+              "end_sec": 10.98,
+              "probability": 0.6240234375
+            },
+            {
+              "word": " of",
+              "start_sec": 10.98,
+              "end_sec": 11.98,
+              "probability": 0.501953125
+            },
+            {
+              "word": " engine",
+              "start_sec": 11.98,
+              "end_sec": 12.8,
+              "probability": 0.8408203125
+            },
+            {
+              "word": " mode",
+              "start_sec": 12.8,
+              "end_sec": 13.14,
+              "probability": 0.630859375
+            },
+            {
+              "word": " selector,",
+              "start_sec": 13.14,
+              "end_sec": 13.74,
+              "probability": 0.987548828125
+            },
+            {
+              "word": " norme,",
+              "start_sec": 14.22,
+              "end_sec": 14.72,
+              "probability": 0.739501953125
+            }
+          ],
+          "avg_logprob": -0.4811789664355191,
+          "no_speech_prob": 0.459716796875,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        },
+        {
+          "segment_id": "reviewed-dc84f2b77565d804f16ea31f42380abb-1",
+          "start_sec": 15.34,
+          "end_sec": 19.8,
+          "raw_asr_text": " landing gear level, check down, flaps lever.",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "fr",
+          "words": [
+            {
+              "word": " landing",
+              "start_sec": 15.34,
+              "end_sec": 15.86,
+              "probability": 0.68359375
+            },
+            {
+              "word": " gear",
+              "start_sec": 15.86,
+              "end_sec": 16.3,
+              "probability": 0.99853515625
+            },
+            {
+              "word": " level,",
+              "start_sec": 16.3,
+              "end_sec": 16.66,
+              "probability": 0.94921875
+            },
+            {
+              "word": " check",
+              "start_sec": 17.5,
+              "end_sec": 17.82,
+              "probability": 0.9501953125
+            },
+            {
+              "word": " down,",
+              "start_sec": 17.82,
+              "end_sec": 18.44,
+              "probability": 0.85546875
+            },
+            {
+              "word": " flaps",
+              "start_sec": 19.18,
+              "end_sec": 19.46,
+              "probability": 0.974609375
+            },
+            {
+              "word": " lever.",
+              "start_sec": 19.46,
+              "end_sec": 19.8,
+              "probability": 0.8916015625
+            }
+          ],
+          "avg_logprob": -0.4811789664355191,
+          "no_speech_prob": 0.459716796875,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        }
+      ],
+      "runtime_failure": null,
+      "audio_sha256": "b43f839d2a2e31ad85b9b26ea7c80d72b54a6baf1e2f1ca52a05204c51cfb3a8",
+      "plan_sha256": "e7fba5e8dcaca0ff2598ee78be69504e4d5b224eaa1b33282ad80bf0c01426a8",
+      "elapsed_sec": 7.597294961000443,
+      "reference": "cockpit preparation parking brake set chocks set engine masters off engine mode selector norm landing gear lever check down flaps lever",
+      "counts": {
+        "S": 6,
+        "D": 0,
+        "I": 0,
+        "N": 21,
+        "H": 15,
+        "wer": 0.2857142857142857,
+        "character_errors": 8,
+        "reference_characters": 135,
+        "cer": 0.05925925925925926
+      }
+    },
+    {
+      "id": "reviewed-dc84f2b77565d804f16ea31f42380abb",
+      "group_id": "4db855a36a7bacee2960c6fd",
+      "language": "en",
+      "hypothesis": "gas cockpit preparation parking brake set chocks set engine masters of engine mode selector norm landing gear level check down flaps lever",
+      "segments": [
+        {
+          "segment_id": "reviewed-dc84f2b77565d804f16ea31f42380abb-0",
+          "start_sec": 0.0,
+          "end_sec": 12.8,
+          "raw_asr_text": " gas cockpit preparation parking brake set chocks set engine masters of engine",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "en",
+          "words": [
+            {
+              "word": " gas",
+              "start_sec": 0.0,
+              "end_sec": 0.86,
+              "probability": 0.0303955078125
+            },
+            {
+              "word": " cockpit",
+              "start_sec": 0.86,
+              "end_sec": 3.74,
+              "probability": 0.27099609375
+            },
+            {
+              "word": " preparation",
+              "start_sec": 3.74,
+              "end_sec": 4.72,
+              "probability": 0.98779296875
+            },
+            {
+              "word": " parking",
+              "start_sec": 4.72,
+              "end_sec": 5.96,
+              "probability": 0.92333984375
+            },
+            {
+              "word": " brake",
+              "start_sec": 5.96,
+              "end_sec": 6.4,
+              "probability": 0.9404296875
+            },
+            {
+              "word": " set",
+              "start_sec": 6.4,
+              "end_sec": 7.38,
+              "probability": 0.94091796875
+            },
+            {
+              "word": " chocks",
+              "start_sec": 7.38,
+              "end_sec": 8.56,
+              "probability": 0.5401611328125
+            },
+            {
+              "word": " set",
+              "start_sec": 8.56,
+              "end_sec": 9.32,
+              "probability": 0.9189453125
+            },
+            {
+              "word": " engine",
+              "start_sec": 9.32,
+              "end_sec": 10.42,
+              "probability": 0.9404296875
+            },
+            {
+              "word": " masters",
+              "start_sec": 10.42,
+              "end_sec": 11.04,
+              "probability": 0.83447265625
+            },
+            {
+              "word": " of",
+              "start_sec": 11.04,
+              "end_sec": 12.0,
+              "probability": 0.8896484375
+            },
+            {
+              "word": " engine",
+              "start_sec": 12.0,
+              "end_sec": 12.8,
+              "probability": 0.96728515625
+            }
+          ],
+          "avg_logprob": -0.450161625599039,
+          "no_speech_prob": 0.459716796875,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        },
+        {
+          "segment_id": "reviewed-dc84f2b77565d804f16ea31f42380abb-1",
+          "start_sec": 12.8,
+          "end_sec": 19.82,
+          "raw_asr_text": " mode selector norm landing gear level check down flaps lever",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "en",
+          "words": [
+            {
+              "word": " mode",
+              "start_sec": 12.8,
+              "end_sec": 13.14,
+              "probability": 0.65087890625
+            },
+            {
+              "word": " selector",
+              "start_sec": 13.14,
+              "end_sec": 13.84,
+              "probability": 0.99267578125
+            },
+            {
+              "word": " norm",
+              "start_sec": 13.84,
+              "end_sec": 14.46,
+              "probability": 0.95263671875
+            },
+            {
+              "word": " landing",
+              "start_sec": 14.46,
+              "end_sec": 15.86,
+              "probability": 0.873046875
+            },
+            {
+              "word": " gear",
+              "start_sec": 15.86,
+              "end_sec": 16.3,
+              "probability": 0.9970703125
+            },
+            {
+              "word": " level",
+              "start_sec": 16.3,
+              "end_sec": 16.68,
+              "probability": 0.923828125
+            },
+            {
+              "word": " check",
+              "start_sec": 16.68,
+              "end_sec": 17.8,
+              "probability": 0.96484375
+            },
+            {
+              "word": " down",
+              "start_sec": 17.8,
+              "end_sec": 18.46,
+              "probability": 0.9443359375
+            },
+            {
+              "word": " flaps",
+              "start_sec": 18.46,
+              "end_sec": 19.44,
+              "probability": 0.96142578125
+            },
+            {
+              "word": " lever",
+              "start_sec": 19.44,
+              "end_sec": 19.82,
+              "probability": 0.93603515625
+            }
+          ],
+          "avg_logprob": -0.450161625599039,
+          "no_speech_prob": 0.459716796875,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        }
+      ],
+      "runtime_failure": null,
+      "audio_sha256": "b43f839d2a2e31ad85b9b26ea7c80d72b54a6baf1e2f1ca52a05204c51cfb3a8",
+      "plan_sha256": "e7fba5e8dcaca0ff2598ee78be69504e4d5b224eaa1b33282ad80bf0c01426a8",
+      "elapsed_sec": 0.268057327999486,
+      "reference": "cockpit preparation parking brake set chocks set engine masters off engine mode selector norm landing gear lever check down flaps lever",
+      "counts": {
+        "S": 2,
+        "D": 0,
+        "I": 1,
+        "N": 21,
+        "H": 19,
+        "wer": 0.14285714285714285,
+        "character_errors": 6,
+        "reference_characters": 135,
+        "cer": 0.044444444444444446
+      }
+    },
+    {
+      "id": "reviewed-767df23c7c14166f8579da284d5a4219",
+      "group_id": "4db855a36a7bacee2960c6fd",
+      "language": "auto",
+      "hypothesis": "generators, on fuel pumps, all on hydraulic electric pumps, on GPWS, all on FCS, all on barrel reference, set QNH. Start boarding passenger and load.",
+      "segments": [
+        {
+          "segment_id": "reviewed-767df23c7c14166f8579da284d5a4219-0",
+          "start_sec": 0.0,
+          "end_sec": 13.18,
+          "raw_asr_text": " generators, on fuel pumps, all on hydraulic electric pumps, on GPWS, all on FCS, all on",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "en",
+          "words": [
+            {
+              "word": " generators,",
+              "start_sec": 0.0,
+              "end_sec": 0.62,
+              "probability": 0.33837890625
+            },
+            {
+              "word": " on",
+              "start_sec": 1.26,
+              "end_sec": 1.4,
+              "probability": 0.5068359375
+            },
+            {
+              "word": " fuel",
+              "start_sec": 1.4,
+              "end_sec": 2.18,
+              "probability": 0.73388671875
+            },
+            {
+              "word": " pumps,",
+              "start_sec": 2.18,
+              "end_sec": 2.62,
+              "probability": 0.98193359375
+            },
+            {
+              "word": " all",
+              "start_sec": 3.26,
+              "end_sec": 3.46,
+              "probability": 0.85888671875
+            },
+            {
+              "word": " on",
+              "start_sec": 3.46,
+              "end_sec": 3.88,
+              "probability": 0.95947265625
+            },
+            {
+              "word": " hydraulic",
+              "start_sec": 3.88,
+              "end_sec": 5.04,
+              "probability": 0.88232421875
+            },
+            {
+              "word": " electric",
+              "start_sec": 5.04,
+              "end_sec": 5.74,
+              "probability": 0.87060546875
+            },
+            {
+              "word": " pumps,",
+              "start_sec": 5.74,
+              "end_sec": 6.26,
+              "probability": 0.9921875
+            },
+            {
+              "word": " on",
+              "start_sec": 6.66,
+              "end_sec": 7.08,
+              "probability": 0.9794921875
+            },
+            {
+              "word": " GPWS,",
+              "start_sec": 7.08,
+              "end_sec": 9.64,
+              "probability": 0.4637858072916667
+            },
+            {
+              "word": " all",
+              "start_sec": 9.64,
+              "end_sec": 10.24,
+              "probability": 0.94921875
+            },
+            {
+              "word": " on",
+              "start_sec": 10.24,
+              "end_sec": 10.7,
+              "probability": 0.98486328125
+            },
+            {
+              "word": " FCS,",
+              "start_sec": 10.7,
+              "end_sec": 11.76,
+              "probability": 0.857666015625
+            },
+            {
+              "word": " all",
+              "start_sec": 12.48,
+              "end_sec": 12.78,
+              "probability": 0.98779296875
+            },
+            {
+              "word": " on",
+              "start_sec": 12.78,
+              "end_sec": 13.18,
+              "probability": 0.9892578125
+            }
+          ],
+          "avg_logprob": -0.4031250052981906,
+          "no_speech_prob": 0.05902099609375,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        },
+        {
+          "segment_id": "reviewed-767df23c7c14166f8579da284d5a4219-1",
+          "start_sec": 13.18,
+          "end_sec": 16.2,
+          "raw_asr_text": " barrel reference, set QNH.",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "en",
+          "words": [
+            {
+              "word": " barrel",
+              "start_sec": 13.18,
+              "end_sec": 13.94,
+              "probability": 0.7138671875
+            },
+            {
+              "word": " reference,",
+              "start_sec": 13.94,
+              "end_sec": 14.48,
+              "probability": 0.9658203125
+            },
+            {
+              "word": " set",
+              "start_sec": 14.98,
+              "end_sec": 15.32,
+              "probability": 0.939453125
+            },
+            {
+              "word": " QNH.",
+              "start_sec": 15.32,
+              "end_sec": 16.2,
+              "probability": 0.8772786458333334
+            }
+          ],
+          "avg_logprob": -0.4031250052981906,
+          "no_speech_prob": 0.05902099609375,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        },
+        {
+          "segment_id": "reviewed-767df23c7c14166f8579da284d5a4219-2",
+          "start_sec": 16.6,
+          "end_sec": 18.8,
+          "raw_asr_text": " Start boarding passenger and load.",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "en",
+          "words": [
+            {
+              "word": " Start",
+              "start_sec": 16.6,
+              "end_sec": 17.14,
+              "probability": 0.986328125
+            },
+            {
+              "word": " boarding",
+              "start_sec": 17.14,
+              "end_sec": 17.52,
+              "probability": 0.91943359375
+            },
+            {
+              "word": " passenger",
+              "start_sec": 17.52,
+              "end_sec": 18.04,
+              "probability": 0.72998046875
+            },
+            {
+              "word": " and",
+              "start_sec": 18.04,
+              "end_sec": 18.54,
+              "probability": 0.68603515625
+            },
+            {
+              "word": " load.",
+              "start_sec": 18.54,
+              "end_sec": 18.8,
+              "probability": 0.9951171875
+            }
+          ],
+          "avg_logprob": -0.4031250052981906,
+          "no_speech_prob": 0.05902099609375,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        }
+      ],
+      "runtime_failure": null,
+      "audio_sha256": "0542bf9f778e9f474fa85412e2e45510c8cd0fa9eade7e09edbeeda23ec3b553",
+      "plan_sha256": "e7fba5e8dcaca0ff2598ee78be69504e4d5b224eaa1b33282ad80bf0c01426a8",
+      "elapsed_sec": 0.3833779179994963,
+      "reference": "generators on fuel pumps all on hydraulic electric pumps on gpws all on fcs all on baro reference set qnh start boarding passenger and load",
+      "counts": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 25,
+        "H": 24,
+        "wer": 0.04,
+        "character_errors": 3,
+        "reference_characters": 139,
+        "cer": 0.02158273381294964
+      }
+    },
+    {
+      "id": "reviewed-767df23c7c14166f8579da284d5a4219",
+      "group_id": "4db855a36a7bacee2960c6fd",
+      "language": "en",
+      "hypothesis": "generators, on fuel pumps, all on hydraulic electric pumps, on GPWS, all on FCS, all on barrel reference, set QNH. Start boarding passenger and load.",
+      "segments": [
+        {
+          "segment_id": "reviewed-767df23c7c14166f8579da284d5a4219-0",
+          "start_sec": 0.0,
+          "end_sec": 13.18,
+          "raw_asr_text": " generators, on fuel pumps, all on hydraulic electric pumps, on GPWS, all on FCS, all on",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "en",
+          "words": [
+            {
+              "word": " generators,",
+              "start_sec": 0.0,
+              "end_sec": 0.62,
+              "probability": 0.33837890625
+            },
+            {
+              "word": " on",
+              "start_sec": 1.26,
+              "end_sec": 1.4,
+              "probability": 0.5068359375
+            },
+            {
+              "word": " fuel",
+              "start_sec": 1.4,
+              "end_sec": 2.18,
+              "probability": 0.73388671875
+            },
+            {
+              "word": " pumps,",
+              "start_sec": 2.18,
+              "end_sec": 2.62,
+              "probability": 0.98193359375
+            },
+            {
+              "word": " all",
+              "start_sec": 3.26,
+              "end_sec": 3.46,
+              "probability": 0.85888671875
+            },
+            {
+              "word": " on",
+              "start_sec": 3.46,
+              "end_sec": 3.88,
+              "probability": 0.95947265625
+            },
+            {
+              "word": " hydraulic",
+              "start_sec": 3.88,
+              "end_sec": 5.04,
+              "probability": 0.88232421875
+            },
+            {
+              "word": " electric",
+              "start_sec": 5.04,
+              "end_sec": 5.74,
+              "probability": 0.87060546875
+            },
+            {
+              "word": " pumps,",
+              "start_sec": 5.74,
+              "end_sec": 6.26,
+              "probability": 0.9921875
+            },
+            {
+              "word": " on",
+              "start_sec": 6.66,
+              "end_sec": 7.08,
+              "probability": 0.9794921875
+            },
+            {
+              "word": " GPWS,",
+              "start_sec": 7.08,
+              "end_sec": 9.64,
+              "probability": 0.4637858072916667
+            },
+            {
+              "word": " all",
+              "start_sec": 9.64,
+              "end_sec": 10.24,
+              "probability": 0.94921875
+            },
+            {
+              "word": " on",
+              "start_sec": 10.24,
+              "end_sec": 10.7,
+              "probability": 0.98486328125
+            },
+            {
+              "word": " FCS,",
+              "start_sec": 10.7,
+              "end_sec": 11.76,
+              "probability": 0.857666015625
+            },
+            {
+              "word": " all",
+              "start_sec": 12.48,
+              "end_sec": 12.78,
+              "probability": 0.98779296875
+            },
+            {
+              "word": " on",
+              "start_sec": 12.78,
+              "end_sec": 13.18,
+              "probability": 0.9892578125
+            }
+          ],
+          "avg_logprob": -0.4031250052981906,
+          "no_speech_prob": 0.05902099609375,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        },
+        {
+          "segment_id": "reviewed-767df23c7c14166f8579da284d5a4219-1",
+          "start_sec": 13.18,
+          "end_sec": 16.2,
+          "raw_asr_text": " barrel reference, set QNH.",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "en",
+          "words": [
+            {
+              "word": " barrel",
+              "start_sec": 13.18,
+              "end_sec": 13.94,
+              "probability": 0.7138671875
+            },
+            {
+              "word": " reference,",
+              "start_sec": 13.94,
+              "end_sec": 14.48,
+              "probability": 0.9658203125
+            },
+            {
+              "word": " set",
+              "start_sec": 14.98,
+              "end_sec": 15.32,
+              "probability": 0.939453125
+            },
+            {
+              "word": " QNH.",
+              "start_sec": 15.32,
+              "end_sec": 16.2,
+              "probability": 0.8772786458333334
+            }
+          ],
+          "avg_logprob": -0.4031250052981906,
+          "no_speech_prob": 0.05902099609375,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        },
+        {
+          "segment_id": "reviewed-767df23c7c14166f8579da284d5a4219-2",
+          "start_sec": 16.6,
+          "end_sec": 18.8,
+          "raw_asr_text": " Start boarding passenger and load.",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "en",
+          "words": [
+            {
+              "word": " Start",
+              "start_sec": 16.6,
+              "end_sec": 17.14,
+              "probability": 0.986328125
+            },
+            {
+              "word": " boarding",
+              "start_sec": 17.14,
+              "end_sec": 17.52,
+              "probability": 0.91943359375
+            },
+            {
+              "word": " passenger",
+              "start_sec": 17.52,
+              "end_sec": 18.04,
+              "probability": 0.72998046875
+            },
+            {
+              "word": " and",
+              "start_sec": 18.04,
+              "end_sec": 18.54,
+              "probability": 0.68603515625
+            },
+            {
+              "word": " load.",
+              "start_sec": 18.54,
+              "end_sec": 18.8,
+              "probability": 0.9951171875
+            }
+          ],
+          "avg_logprob": -0.4031250052981906,
+          "no_speech_prob": 0.05902099609375,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        }
+      ],
+      "runtime_failure": null,
+      "audio_sha256": "0542bf9f778e9f474fa85412e2e45510c8cd0fa9eade7e09edbeeda23ec3b553",
+      "plan_sha256": "e7fba5e8dcaca0ff2598ee78be69504e4d5b224eaa1b33282ad80bf0c01426a8",
+      "elapsed_sec": 0.3145153589994152,
+      "reference": "generators on fuel pumps all on hydraulic electric pumps on gpws all on fcs all on baro reference set qnh start boarding passenger and load",
+      "counts": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 25,
+        "H": 24,
+        "wer": 0.04,
+        "character_errors": 3,
+        "reference_characters": 139,
+        "cer": 0.02158273381294964
+      }
+    },
+    {
+      "id": "reviewed-c55f9c7708704c548f503aa642c2288d",
+      "group_id": "c9999f4c03403ed5886b9c86",
+      "language": "auto",
+      "hypothesis": "1.0.1.6, set, pause, seat belt on, minimum 3000 feet, minimum 300 feet, auto-brake, non, auto-brake, low, engine mode select, non, landing, il y a un memo, landing...",
+      "segments": [
+        {
+          "segment_id": "reviewed-c55f9c7708704c548f503aa642c2288d-0",
+          "start_sec": 0.0,
+          "end_sec": 10.36,
+          "raw_asr_text": " 1.0.1.6, set, pause, seat belt on, minimum 3000 feet, minimum 300 feet, auto-brake,",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "fr",
+          "words": [
+            {
+              "word": " 1",
+              "start_sec": 0.0,
+              "end_sec": 0.42,
+              "probability": 0.046295166015625
+            },
+            {
+              "word": ".0",
+              "start_sec": 0.42,
+              "end_sec": 0.64,
+              "probability": 0.640625
+            },
+            {
+              "word": ".1",
+              "start_sec": 0.64,
+              "end_sec": 0.88,
+              "probability": 0.649658203125
+            },
+            {
+              "word": ".6,",
+              "start_sec": 0.88,
+              "end_sec": 1.26,
+              "probability": 0.985107421875
+            },
+            {
+              "word": " set,",
+              "start_sec": 1.42,
+              "end_sec": 1.84,
+              "probability": 0.205322265625
+            },
+            {
+              "word": " pause,",
+              "start_sec": 1.96,
+              "end_sec": 2.26,
+              "probability": 0.53125
+            },
+            {
+              "word": " seat",
+              "start_sec": 2.84,
+              "end_sec": 3.56,
+              "probability": 0.638671875
+            },
+            {
+              "word": " belt",
+              "start_sec": 3.56,
+              "end_sec": 3.84,
+              "probability": 0.45654296875
+            },
+            {
+              "word": " on,",
+              "start_sec": 3.84,
+              "end_sec": 4.32,
+              "probability": 0.78271484375
+            },
+            {
+              "word": " minimum",
+              "start_sec": 5.08,
+              "end_sec": 5.5,
+              "probability": 0.97998046875
+            },
+            {
+              "word": " 3000",
+              "start_sec": 5.5,
+              "end_sec": 6.34,
+              "probability": 0.81982421875
+            },
+            {
+              "word": " feet,",
+              "start_sec": 6.34,
+              "end_sec": 6.72,
+              "probability": 0.5673828125
+            },
+            {
+              "word": " minimum",
+              "start_sec": 7.58,
+              "end_sec": 8.0,
+              "probability": 0.95458984375
+            },
+            {
+              "word": " 300",
+              "start_sec": 8.0,
+              "end_sec": 8.6,
+              "probability": 0.99462890625
+            },
+            {
+              "word": " feet,",
+              "start_sec": 8.6,
+              "end_sec": 8.98,
+              "probability": 0.97216796875
+            },
+            {
+              "word": " auto",
+              "start_sec": 9.34,
+              "end_sec": 9.88,
+              "probability": 0.5556640625
+            },
+            {
+              "word": "-brake,",
+              "start_sec": 9.88,
+              "end_sec": 10.36,
+              "probability": 0.6340738932291666
+            }
+          ],
+          "avg_logprob": -0.6427083442608515,
+          "no_speech_prob": 0.0994873046875,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        },
+        {
+          "segment_id": "reviewed-c55f9c7708704c548f503aa642c2288d-1",
+          "start_sec": 11.2,
+          "end_sec": 19.98,
+          "raw_asr_text": " non, auto-brake, low, engine mode select, non, landing, il y a un memo, landing...",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "fr",
+          "words": [
+            {
+              "word": " non,",
+              "start_sec": 11.2,
+              "end_sec": 11.74,
+              "probability": 0.319580078125
+            },
+            {
+              "word": " auto",
+              "start_sec": 12.32,
+              "end_sec": 12.46,
+              "probability": 0.97802734375
+            },
+            {
+              "word": "-brake,",
+              "start_sec": 12.46,
+              "end_sec": 12.9,
+              "probability": 0.95458984375
+            },
+            {
+              "word": " low,",
+              "start_sec": 13.42,
+              "end_sec": 14.02,
+              "probability": 0.9453125
+            },
+            {
+              "word": " engine",
+              "start_sec": 14.82,
+              "end_sec": 15.26,
+              "probability": 0.5625
+            },
+            {
+              "word": " mode",
+              "start_sec": 15.26,
+              "end_sec": 15.64,
+              "probability": 0.93798828125
+            },
+            {
+              "word": " select,",
+              "start_sec": 15.64,
+              "end_sec": 16.06,
+              "probability": 0.935546875
+            },
+            {
+              "word": " non,",
+              "start_sec": 16.98,
+              "end_sec": 17.26,
+              "probability": 0.61572265625
+            },
+            {
+              "word": " landing,",
+              "start_sec": 17.9,
+              "end_sec": 18.28,
+              "probability": 0.96533203125
+            },
+            {
+              "word": " il",
+              "start_sec": 18.8,
+              "end_sec": 18.9,
+              "probability": 0.2392578125
+            },
+            {
+              "word": " y",
+              "start_sec": 18.9,
+              "end_sec": 18.98,
+              "probability": 0.06317138671875
+            },
+            {
+              "word": " a",
+              "start_sec": 18.98,
+              "end_sec": 19.04,
+              "probability": 0.923828125
+            },
+            {
+              "word": " un",
+              "start_sec": 19.04,
+              "end_sec": 19.1,
+              "probability": 0.5927734375
+            },
+            {
+              "word": " memo,",
+              "start_sec": 19.1,
+              "end_sec": 19.38,
+              "probability": 0.546630859375
+            },
+            {
+              "word": " landing...",
+              "start_sec": 19.58,
+              "end_sec": 19.98,
+              "probability": 0.5343017578125
+            }
+          ],
+          "avg_logprob": -0.6427083442608515,
+          "no_speech_prob": 0.0994873046875,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        }
+      ],
+      "runtime_failure": null,
+      "audio_sha256": "49d542966770cb4895f838b46e23d124c8ff1c622b5a512e7f320f8f13f165ff",
+      "plan_sha256": "e7fba5e8dcaca0ff2598ee78be69504e4d5b224eaa1b33282ad80bf0c01426a8",
+      "elapsed_sec": 0.5188316150006358,
+      "reference": "1.0.1.6 set pause, seat belt on minimum 3000 feet minimum 300 feet, auto break no auto break low engine mode select, no landing",
+      "counts": {
+        "S": 4,
+        "D": 0,
+        "I": 6,
+        "N": 23,
+        "H": 19,
+        "wer": 0.43478260869565216,
+        "character_errors": 29,
+        "reference_characters": 124,
+        "cer": 0.23387096774193547
+      }
+    },
+    {
+      "id": "reviewed-c55f9c7708704c548f503aa642c2288d",
+      "group_id": "c9999f4c03403ed5886b9c86",
+      "language": "en",
+      "hypothesis": "1016 set both seat belt on minimum 3000 feet minimum 300 feet auto brake no auto brake low engine mode select no landing it came memo landing",
+      "segments": [
+        {
+          "segment_id": "reviewed-c55f9c7708704c548f503aa642c2288d-0",
+          "start_sec": 0.0,
+          "end_sec": 11.74,
+          "raw_asr_text": " 1016 set both seat belt on minimum 3000 feet minimum 300 feet auto brake no",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "en",
+          "words": [
+            {
+              "word": " 1016",
+              "start_sec": 0.0,
+              "end_sec": 1.12,
+              "probability": 0.5203857421875
+            },
+            {
+              "word": " set",
+              "start_sec": 1.12,
+              "end_sec": 1.84,
+              "probability": 0.46923828125
+            },
+            {
+              "word": " both",
+              "start_sec": 1.84,
+              "end_sec": 2.26,
+              "probability": 0.1270751953125
+            },
+            {
+              "word": " seat",
+              "start_sec": 2.26,
+              "end_sec": 3.54,
+              "probability": 0.410400390625
+            },
+            {
+              "word": " belt",
+              "start_sec": 3.54,
+              "end_sec": 3.86,
+              "probability": 0.439208984375
+            },
+            {
+              "word": " on",
+              "start_sec": 3.86,
+              "end_sec": 4.34,
+              "probability": 0.96533203125
+            },
+            {
+              "word": " minimum",
+              "start_sec": 4.34,
+              "end_sec": 5.46,
+              "probability": 0.8876953125
+            },
+            {
+              "word": " 3000",
+              "start_sec": 5.46,
+              "end_sec": 6.4,
+              "probability": 0.70556640625
+            },
+            {
+              "word": " feet",
+              "start_sec": 6.4,
+              "end_sec": 6.72,
+              "probability": 0.884765625
+            },
+            {
+              "word": " minimum",
+              "start_sec": 6.72,
+              "end_sec": 7.96,
+              "probability": 0.91259765625
+            },
+            {
+              "word": " 300",
+              "start_sec": 7.96,
+              "end_sec": 8.6,
+              "probability": 0.98876953125
+            },
+            {
+              "word": " feet",
+              "start_sec": 8.6,
+              "end_sec": 8.94,
+              "probability": 0.98974609375
+            },
+            {
+              "word": " auto",
+              "start_sec": 8.94,
+              "end_sec": 9.88,
+              "probability": 0.52783203125
+            },
+            {
+              "word": " brake",
+              "start_sec": 9.88,
+              "end_sec": 10.2,
+              "probability": 0.77978515625
+            },
+            {
+              "word": " no",
+              "start_sec": 10.2,
+              "end_sec": 11.74,
+              "probability": 0.59423828125
+            }
+          ],
+          "avg_logprob": -0.5549242424242424,
+          "no_speech_prob": 0.0994873046875,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        },
+        {
+          "segment_id": "reviewed-c55f9c7708704c548f503aa642c2288d-1",
+          "start_sec": 11.74,
+          "end_sec": 19.82,
+          "raw_asr_text": " auto brake low engine mode select no landing it came memo landing",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "en",
+          "words": [
+            {
+              "word": " auto",
+              "start_sec": 11.74,
+              "end_sec": 12.46,
+              "probability": 0.7880859375
+            },
+            {
+              "word": " brake",
+              "start_sec": 12.46,
+              "end_sec": 12.84,
+              "probability": 0.93701171875
+            },
+            {
+              "word": " low",
+              "start_sec": 12.84,
+              "end_sec": 14.02,
+              "probability": 0.9169921875
+            },
+            {
+              "word": " engine",
+              "start_sec": 14.02,
+              "end_sec": 15.2,
+              "probability": 0.7109375
+            },
+            {
+              "word": " mode",
+              "start_sec": 15.2,
+              "end_sec": 15.64,
+              "probability": 0.92236328125
+            },
+            {
+              "word": " select",
+              "start_sec": 15.64,
+              "end_sec": 16.12,
+              "probability": 0.966796875
+            },
+            {
+              "word": " no",
+              "start_sec": 16.12,
+              "end_sec": 17.26,
+              "probability": 0.53076171875
+            },
+            {
+              "word": " landing",
+              "start_sec": 17.26,
+              "end_sec": 18.3,
+              "probability": 0.951171875
+            },
+            {
+              "word": " it",
+              "start_sec": 18.3,
+              "end_sec": 18.9,
+              "probability": 0.34765625
+            },
+            {
+              "word": " came",
+              "start_sec": 18.9,
+              "end_sec": 19.06,
+              "probability": 0.481201171875
+            },
+            {
+              "word": " memo",
+              "start_sec": 19.06,
+              "end_sec": 19.34,
+              "probability": 0.81640625
+            },
+            {
+              "word": " landing",
+              "start_sec": 19.34,
+              "end_sec": 19.82,
+              "probability": 0.8828125
+            }
+          ],
+          "avg_logprob": -0.5549242424242424,
+          "no_speech_prob": 0.0994873046875,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        }
+      ],
+      "runtime_failure": null,
+      "audio_sha256": "49d542966770cb4895f838b46e23d124c8ff1c622b5a512e7f320f8f13f165ff",
+      "plan_sha256": "e7fba5e8dcaca0ff2598ee78be69504e4d5b224eaa1b33282ad80bf0c01426a8",
+      "elapsed_sec": 0.26003896900056134,
+      "reference": "1.0.1.6 set pause, seat belt on minimum 3000 feet minimum 300 feet, auto break no auto break low engine mode select, no landing",
+      "counts": {
+        "S": 4,
+        "D": 0,
+        "I": 4,
+        "N": 23,
+        "H": 19,
+        "wer": 0.34782608695652173,
+        "character_errors": 33,
+        "reference_characters": 124,
+        "cer": 0.2661290322580645
+      }
+    },
+    {
+      "id": "reviewed-291ebb141aa4e7a7ba94ccf8d18002fb",
+      "group_id": "f4b1dfdde7e44044fdcd54d9",
+      "language": "auto",
+      "hypothesis": "anti-ice, as recueillir, heat prop blades, as recueillir, air-conditioning, heat, cool off, annonciateur panel, novembre en red, oxygène, as recueillir",
+      "segments": [
+        {
+          "segment_id": "reviewed-291ebb141aa4e7a7ba94ccf8d18002fb-0",
+          "start_sec": 0.0,
+          "end_sec": 9.28,
+          "raw_asr_text": " anti-ice, as recueillir, heat prop blades, as recueillir, air-conditioning, heat, cool off,",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "fr",
+          "words": [
+            {
+              "word": " anti",
+              "start_sec": 0.0,
+              "end_sec": 0.76,
+              "probability": 0.09686279296875
+            },
+            {
+              "word": "-ice,",
+              "start_sec": 0.76,
+              "end_sec": 1.14,
+              "probability": 0.7388916015625
+            },
+            {
+              "word": " as",
+              "start_sec": 1.78,
+              "end_sec": 1.78,
+              "probability": 0.5361328125
+            },
+            {
+              "word": " recueillir,",
+              "start_sec": 1.78,
+              "end_sec": 2.26,
+              "probability": 0.55181884765625
+            },
+            {
+              "word": " heat",
+              "start_sec": 3.28,
+              "end_sec": 3.82,
+              "probability": 0.630859375
+            },
+            {
+              "word": " prop",
+              "start_sec": 3.82,
+              "end_sec": 4.02,
+              "probability": 0.3740234375
+            },
+            {
+              "word": " blades,",
+              "start_sec": 4.02,
+              "end_sec": 4.44,
+              "probability": 0.88330078125
+            },
+            {
+              "word": " as",
+              "start_sec": 5.14,
+              "end_sec": 5.22,
+              "probability": 0.9072265625
+            },
+            {
+              "word": " recueillir,",
+              "start_sec": 5.22,
+              "end_sec": 5.66,
+              "probability": 0.9793701171875
+            },
+            {
+              "word": " air",
+              "start_sec": 6.18,
+              "end_sec": 6.82,
+              "probability": 0.95458984375
+            },
+            {
+              "word": "-conditioning,",
+              "start_sec": 6.82,
+              "end_sec": 7.34,
+              "probability": 0.7638092041015625
+            },
+            {
+              "word": " heat,",
+              "start_sec": 8.22,
+              "end_sec": 8.64,
+              "probability": 0.97705078125
+            },
+            {
+              "word": " cool",
+              "start_sec": 8.9,
+              "end_sec": 9.04,
+              "probability": 0.943359375
+            },
+            {
+              "word": " off,",
+              "start_sec": 9.04,
+              "end_sec": 9.28,
+              "probability": 0.63330078125
+            }
+          ],
+          "avg_logprob": -0.5242456814338421,
+          "no_speech_prob": 0.52978515625,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        },
+        {
+          "segment_id": "reviewed-291ebb141aa4e7a7ba94ccf8d18002fb-1",
+          "start_sec": 10.14,
+          "end_sec": 13.6,
+          "raw_asr_text": " annonciateur panel, novembre en red,",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "fr",
+          "words": [
+            {
+              "word": " annonciateur",
+              "start_sec": 10.14,
+              "end_sec": 10.62,
+              "probability": 0.891845703125
+            },
+            {
+              "word": " panel,",
+              "start_sec": 10.62,
+              "end_sec": 10.88,
+              "probability": 0.90478515625
+            },
+            {
+              "word": " novembre",
+              "start_sec": 11.44,
+              "end_sec": 12.98,
+              "probability": 0.5906982421875
+            },
+            {
+              "word": " en",
+              "start_sec": 12.98,
+              "end_sec": 13.38,
+              "probability": 0.57470703125
+            },
+            {
+              "word": " red,",
+              "start_sec": 13.38,
+              "end_sec": 13.6,
+              "probability": 0.73046875
+            }
+          ],
+          "avg_logprob": -0.5242456814338421,
+          "no_speech_prob": 0.52978515625,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        },
+        {
+          "segment_id": "reviewed-291ebb141aa4e7a7ba94ccf8d18002fb-2",
+          "start_sec": 17.8,
+          "end_sec": 19.8,
+          "raw_asr_text": " oxygène, as recueillir",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "fr",
+          "words": [
+            {
+              "word": " oxygène,",
+              "start_sec": 17.8,
+              "end_sec": 18.64,
+              "probability": 0.67523193359375
+            },
+            {
+              "word": " as",
+              "start_sec": 19.22,
+              "end_sec": 19.38,
+              "probability": 0.9658203125
+            },
+            {
+              "word": " recueillir",
+              "start_sec": 19.38,
+              "end_sec": 19.8,
+              "probability": 0.99658203125
+            }
+          ],
+          "avg_logprob": -0.5242456814338421,
+          "no_speech_prob": 0.52978515625,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        }
+      ],
+      "runtime_failure": null,
+      "audio_sha256": "8a7a9552c6e2dd231c47a401fa86ca8c24ac3f3c6f1044958791082a67c4d041",
+      "plan_sha256": "e7fba5e8dcaca0ff2598ee78be69504e4d5b224eaa1b33282ad80bf0c01426a8",
+      "elapsed_sec": 0.4687399579997873,
+      "reference": "anti-ice, as required, heat prop blades, as required, air conditioning, heat, cool off, annunciator panel, No amber or red, oxygen, as required",
+      "counts": {
+        "S": 7,
+        "D": 1,
+        "I": 0,
+        "N": 23,
+        "H": 15,
+        "wer": 0.34782608695652173,
+        "character_errors": 29,
+        "reference_characters": 133,
+        "cer": 0.21804511278195488
+      }
+    },
+    {
+      "id": "reviewed-291ebb141aa4e7a7ba94ccf8d18002fb",
+      "group_id": "f4b1dfdde7e44044fdcd54d9",
+      "language": "en",
+      "hypothesis": "anti-ice, as required, heat prop blades, as required, air conditioning, heat, cool off, annunciator panel, November in red, oxygen, as required,",
+      "segments": [
+        {
+          "segment_id": "reviewed-291ebb141aa4e7a7ba94ccf8d18002fb-0",
+          "start_sec": 0.0,
+          "end_sec": 9.02,
+          "raw_asr_text": " anti-ice, as required, heat prop blades, as required, air conditioning, heat, cool",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "en",
+          "words": [
+            {
+              "word": " anti",
+              "start_sec": 0.0,
+              "end_sec": 0.76,
+              "probability": 0.311279296875
+            },
+            {
+              "word": "-ice,",
+              "start_sec": 0.76,
+              "end_sec": 1.14,
+              "probability": 0.78955078125
+            },
+            {
+              "word": " as",
+              "start_sec": 1.8,
+              "end_sec": 1.8,
+              "probability": 0.8876953125
+            },
+            {
+              "word": " required,",
+              "start_sec": 1.8,
+              "end_sec": 2.06,
+              "probability": 0.87060546875
+            },
+            {
+              "word": " heat",
+              "start_sec": 3.3,
+              "end_sec": 3.82,
+              "probability": 0.67822265625
+            },
+            {
+              "word": " prop",
+              "start_sec": 3.82,
+              "end_sec": 4.04,
+              "probability": 0.350341796875
+            },
+            {
+              "word": " blades,",
+              "start_sec": 4.04,
+              "end_sec": 4.42,
+              "probability": 0.9482421875
+            },
+            {
+              "word": " as",
+              "start_sec": 5.06,
+              "end_sec": 5.2,
+              "probability": 0.98486328125
+            },
+            {
+              "word": " required,",
+              "start_sec": 5.2,
+              "end_sec": 5.54,
+              "probability": 0.966796875
+            },
+            {
+              "word": " air",
+              "start_sec": 6.58,
+              "end_sec": 6.78,
+              "probability": 0.9755859375
+            },
+            {
+              "word": " conditioning,",
+              "start_sec": 6.78,
+              "end_sec": 7.1,
+              "probability": 0.8818359375
+            },
+            {
+              "word": " heat,",
+              "start_sec": 8.22,
+              "end_sec": 8.66,
+              "probability": 0.98828125
+            },
+            {
+              "word": " cool",
+              "start_sec": 8.88,
+              "end_sec": 9.02,
+              "probability": 0.96484375
+            }
+          ],
+          "avg_logprob": -0.5304054118491508,
+          "no_speech_prob": 0.52978515625,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        },
+        {
+          "segment_id": "reviewed-291ebb141aa4e7a7ba94ccf8d18002fb-1",
+          "start_sec": 9.02,
+          "end_sec": 13.66,
+          "raw_asr_text": " off, annunciator panel, November in red,",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "en",
+          "words": [
+            {
+              "word": " off,",
+              "start_sec": 9.02,
+              "end_sec": 9.28,
+              "probability": 0.76953125
+            },
+            {
+              "word": " annunciator",
+              "start_sec": 10.18,
+              "end_sec": 10.62,
+              "probability": 0.8670247395833334
+            },
+            {
+              "word": " panel,",
+              "start_sec": 10.62,
+              "end_sec": 10.9,
+              "probability": 0.99462890625
+            },
+            {
+              "word": " November",
+              "start_sec": 11.42,
+              "end_sec": 11.72,
+              "probability": 0.5859375
+            },
+            {
+              "word": " in",
+              "start_sec": 11.72,
+              "end_sec": 13.36,
+              "probability": 0.28173828125
+            },
+            {
+              "word": " red,",
+              "start_sec": 13.36,
+              "end_sec": 13.66,
+              "probability": 0.923828125
+            }
+          ],
+          "avg_logprob": -0.5304054118491508,
+          "no_speech_prob": 0.52978515625,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        },
+        {
+          "segment_id": "reviewed-291ebb141aa4e7a7ba94ccf8d18002fb-2",
+          "start_sec": 17.52,
+          "end_sec": 19.58,
+          "raw_asr_text": " oxygen, as required,",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "en",
+          "words": [
+            {
+              "word": " oxygen,",
+              "start_sec": 17.52,
+              "end_sec": 18.32,
+              "probability": 0.00012636184692382812
+            },
+            {
+              "word": " as",
+              "start_sec": 19.1,
+              "end_sec": 19.4,
+              "probability": 0.5478515625
+            },
+            {
+              "word": " required,",
+              "start_sec": 19.4,
+              "end_sec": 19.58,
+              "probability": 0.327880859375
+            }
+          ],
+          "avg_logprob": -0.8120117112994194,
+          "no_speech_prob": 0.304931640625,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        }
+      ],
+      "runtime_failure": null,
+      "audio_sha256": "8a7a9552c6e2dd231c47a401fa86ca8c24ac3f3c6f1044958791082a67c4d041",
+      "plan_sha256": "e7fba5e8dcaca0ff2598ee78be69504e4d5b224eaa1b33282ad80bf0c01426a8",
+      "elapsed_sec": 0.37525009699947987,
+      "reference": "anti-ice, as required, heat prop blades, as required, air conditioning, heat, cool off, annunciator panel, No amber or red, oxygen, as required",
+      "counts": {
+        "S": 2,
+        "D": 1,
+        "I": 0,
+        "N": 23,
+        "H": 20,
+        "wer": 0.13043478260869565,
+        "character_errors": 4,
+        "reference_characters": 133,
+        "cer": 0.03007518796992481
+      }
+    },
+    {
+      "id": "reviewed-b8d2fc3fc1893f19ae7fb8d7c2722a4d",
+      "group_id": "f4b1dfdde7e44044fdcd54d9",
+      "language": "auto",
+      "hypothesis": "NG, ITT, monitor, NG d'instruments, check, oxygène, check, c'est Azure acquired, fuel balance, check, exodact fuel, check, transfer Azure acquired, boost pumps, on,",
+      "segments": [
+        {
+          "segment_id": "reviewed-b8d2fc3fc1893f19ae7fb8d7c2722a4d-0",
+          "start_sec": 0.0,
+          "end_sec": 11.24,
+          "raw_asr_text": " NG, ITT, monitor, NG d'instruments, check, oxygène, check, c'est Azure acquired, fuel balance,",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "fr",
+          "words": [
+            {
+              "word": " NG,",
+              "start_sec": 0.0,
+              "end_sec": 0.34,
+              "probability": 0.5015869140625
+            },
+            {
+              "word": " ITT,",
+              "start_sec": 0.56,
+              "end_sec": 1.1,
+              "probability": 0.84912109375
+            },
+            {
+              "word": " monitor,",
+              "start_sec": 1.54,
+              "end_sec": 1.9,
+              "probability": 0.277587890625
+            },
+            {
+              "word": " NG",
+              "start_sec": 2.82,
+              "end_sec": 4.46,
+              "probability": 0.850341796875
+            },
+            {
+              "word": " d",
+              "start_sec": 4.46,
+              "end_sec": 4.6,
+              "probability": 0.120361328125
+            },
+            {
+              "word": "'instruments,",
+              "start_sec": 4.6,
+              "end_sec": 4.9,
+              "probability": 0.8644205729166666
+            },
+            {
+              "word": " check,",
+              "start_sec": 5.54,
+              "end_sec": 5.86,
+              "probability": 0.90234375
+            },
+            {
+              "word": " oxygène,",
+              "start_sec": 6.52,
+              "end_sec": 7.08,
+              "probability": 0.7744954427083334
+            },
+            {
+              "word": " check,",
+              "start_sec": 7.4,
+              "end_sec": 7.58,
+              "probability": 0.97705078125
+            },
+            {
+              "word": " c",
+              "start_sec": 8.0,
+              "end_sec": 8.04,
+              "probability": 0.16357421875
+            },
+            {
+              "word": "'est",
+              "start_sec": 8.04,
+              "end_sec": 8.08,
+              "probability": 0.9755859375
+            },
+            {
+              "word": " Azure",
+              "start_sec": 8.08,
+              "end_sec": 8.32,
+              "probability": 0.193603515625
+            },
+            {
+              "word": " acquired,",
+              "start_sec": 8.32,
+              "end_sec": 8.54,
+              "probability": 0.2685546875
+            },
+            {
+              "word": " fuel",
+              "start_sec": 9.72,
+              "end_sec": 10.92,
+              "probability": 0.8369140625
+            },
+            {
+              "word": " balance,",
+              "start_sec": 10.92,
+              "end_sec": 11.24,
+              "probability": 0.98291015625
+            }
+          ],
+          "avg_logprob": -0.5926136580380527,
+          "no_speech_prob": 0.281005859375,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        },
+        {
+          "segment_id": "reviewed-b8d2fc3fc1893f19ae7fb8d7c2722a4d-1",
+          "start_sec": 11.68,
+          "end_sec": 19.04,
+          "raw_asr_text": " check, exodact fuel, check, transfer Azure acquired, boost pumps, on,",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "fr",
+          "words": [
+            {
+              "word": " check,",
+              "start_sec": 11.68,
+              "end_sec": 11.94,
+              "probability": 0.99365234375
+            },
+            {
+              "word": " exodact",
+              "start_sec": 13.1,
+              "end_sec": 13.52,
+              "probability": 0.4449259440104167
+            },
+            {
+              "word": " fuel,",
+              "start_sec": 13.52,
+              "end_sec": 13.76,
+              "probability": 0.71923828125
+            },
+            {
+              "word": " check,",
+              "start_sec": 14.18,
+              "end_sec": 14.58,
+              "probability": 0.9921875
+            },
+            {
+              "word": " transfer",
+              "start_sec": 14.92,
+              "end_sec": 15.08,
+              "probability": 0.95654296875
+            },
+            {
+              "word": " Azure",
+              "start_sec": 15.08,
+              "end_sec": 15.34,
+              "probability": 0.50732421875
+            },
+            {
+              "word": " acquired,",
+              "start_sec": 15.34,
+              "end_sec": 15.7,
+              "probability": 0.97998046875
+            },
+            {
+              "word": " boost",
+              "start_sec": 17.1,
+              "end_sec": 17.98,
+              "probability": 0.92724609375
+            },
+            {
+              "word": " pumps,",
+              "start_sec": 17.98,
+              "end_sec": 18.32,
+              "probability": 0.86328125
+            },
+            {
+              "word": " on,",
+              "start_sec": 18.86,
+              "end_sec": 19.04,
+              "probability": 0.8271484375
+            }
+          ],
+          "avg_logprob": -0.5926136580380527,
+          "no_speech_prob": 0.281005859375,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        }
+      ],
+      "runtime_failure": null,
+      "audio_sha256": "d625c3386567aceb1901b7ec91bbbd6bf99a1b45650d1bb2cfcbba48277a1d09",
+      "plan_sha256": "e7fba5e8dcaca0ff2598ee78be69504e4d5b224eaa1b33282ad80bf0c01426a8",
+      "elapsed_sec": 0.4570162079999136,
+      "reference": "ng itt monitor engine instruments check oxygen check set as required fuel balance check external fuel check transfer as required boost pumps on",
+      "counts": {
+        "S": 9,
+        "D": 0,
+        "I": 0,
+        "N": 23,
+        "H": 14,
+        "wer": 0.391304347826087,
+        "character_errors": 26,
+        "reference_characters": 143,
+        "cer": 0.18181818181818182
+      }
+    },
+    {
+      "id": "reviewed-b8d2fc3fc1893f19ae7fb8d7c2722a4d",
+      "group_id": "f4b1dfdde7e44044fdcd54d9",
+      "language": "en",
+      "hypothesis": "NG, ITT, monitor, NG instruments, check, oxygen, check, set as required, fuel balance, check, external fuel, check, transfer as required, boost pumps, on.",
+      "segments": [
+        {
+          "segment_id": "reviewed-b8d2fc3fc1893f19ae7fb8d7c2722a4d-0",
+          "start_sec": 0.0,
+          "end_sec": 7.56,
+          "raw_asr_text": " NG, ITT, monitor, NG instruments, check, oxygen, check,",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "en",
+          "words": [
+            {
+              "word": " NG,",
+              "start_sec": 0.0,
+              "end_sec": 0.32,
+              "probability": 0.5709228515625
+            },
+            {
+              "word": " ITT,",
+              "start_sec": 0.6,
+              "end_sec": 1.1,
+              "probability": 0.822265625
+            },
+            {
+              "word": " monitor,",
+              "start_sec": 1.52,
+              "end_sec": 1.9,
+              "probability": 0.50634765625
+            },
+            {
+              "word": " NG",
+              "start_sec": 2.8,
+              "end_sec": 4.46,
+              "probability": 0.851806640625
+            },
+            {
+              "word": " instruments,",
+              "start_sec": 4.46,
+              "end_sec": 4.7,
+              "probability": 0.67138671875
+            },
+            {
+              "word": " check,",
+              "start_sec": 5.58,
+              "end_sec": 5.86,
+              "probability": 0.93115234375
+            },
+            {
+              "word": " oxygen,",
+              "start_sec": 6.52,
+              "end_sec": 6.9,
+              "probability": 0.8486328125
+            },
+            {
+              "word": " check,",
+              "start_sec": 7.3,
+              "end_sec": 7.56,
+              "probability": 0.9931640625
+            }
+          ],
+          "avg_logprob": -0.3684895758827527,
+          "no_speech_prob": 0.281005859375,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        },
+        {
+          "segment_id": "reviewed-b8d2fc3fc1893f19ae7fb8d7c2722a4d-1",
+          "start_sec": 7.98,
+          "end_sec": 11.92,
+          "raw_asr_text": " set as required, fuel balance, check,",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "en",
+          "words": [
+            {
+              "word": " set",
+              "start_sec": 7.98,
+              "end_sec": 8.1,
+              "probability": 0.8427734375
+            },
+            {
+              "word": " as",
+              "start_sec": 8.1,
+              "end_sec": 8.26,
+              "probability": 0.460693359375
+            },
+            {
+              "word": " required,",
+              "start_sec": 8.26,
+              "end_sec": 8.54,
+              "probability": 0.9580078125
+            },
+            {
+              "word": " fuel",
+              "start_sec": 9.94,
+              "end_sec": 10.92,
+              "probability": 0.94140625
+            },
+            {
+              "word": " balance,",
+              "start_sec": 10.92,
+              "end_sec": 11.26,
+              "probability": 0.98486328125
+            },
+            {
+              "word": " check,",
+              "start_sec": 11.68,
+              "end_sec": 11.92,
+              "probability": 0.99560546875
+            }
+          ],
+          "avg_logprob": -0.3684895758827527,
+          "no_speech_prob": 0.281005859375,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        },
+        {
+          "segment_id": "reviewed-b8d2fc3fc1893f19ae7fb8d7c2722a4d-2",
+          "start_sec": 13.08,
+          "end_sec": 19.02,
+          "raw_asr_text": " external fuel, check, transfer as required, boost pumps, on.",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "en",
+          "words": [
+            {
+              "word": " external",
+              "start_sec": 13.08,
+              "end_sec": 13.42,
+              "probability": 0.36279296875
+            },
+            {
+              "word": " fuel,",
+              "start_sec": 13.42,
+              "end_sec": 13.76,
+              "probability": 0.9912109375
+            },
+            {
+              "word": " check,",
+              "start_sec": 14.18,
+              "end_sec": 14.56,
+              "probability": 0.99658203125
+            },
+            {
+              "word": " transfer",
+              "start_sec": 14.94,
+              "end_sec": 15.14,
+              "probability": 0.99169921875
+            },
+            {
+              "word": " as",
+              "start_sec": 15.14,
+              "end_sec": 15.32,
+              "probability": 0.923828125
+            },
+            {
+              "word": " required,",
+              "start_sec": 15.32,
+              "end_sec": 15.62,
+              "probability": 0.9462890625
+            },
+            {
+              "word": " boost",
+              "start_sec": 17.1,
+              "end_sec": 17.98,
+              "probability": 0.974609375
+            },
+            {
+              "word": " pumps,",
+              "start_sec": 17.98,
+              "end_sec": 18.36,
+              "probability": 0.9150390625
+            },
+            {
+              "word": " on.",
+              "start_sec": 18.84,
+              "end_sec": 19.02,
+              "probability": 0.9267578125
+            }
+          ],
+          "avg_logprob": -0.3684895758827527,
+          "no_speech_prob": 0.281005859375,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        }
+      ],
+      "runtime_failure": null,
+      "audio_sha256": "d625c3386567aceb1901b7ec91bbbd6bf99a1b45650d1bb2cfcbba48277a1d09",
+      "plan_sha256": "e7fba5e8dcaca0ff2598ee78be69504e4d5b224eaa1b33282ad80bf0c01426a8",
+      "elapsed_sec": 0.35097453800062794,
+      "reference": "ng itt monitor engine instruments check oxygen check set as required fuel balance check external fuel check transfer as required boost pumps on",
+      "counts": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 23,
+        "H": 22,
+        "wer": 0.043478260869565216,
+        "character_errors": 4,
+        "reference_characters": 143,
+        "cer": 0.027972027972027972
+      }
+    }
+  ],
+  "quality_evidence": false,
+  "release_promoted": false,
+  "limitations": [
+    "Five 20-second dev clips, 115 words, three groups; repeatedly inspected development set.",
+    "Existing human references had suggestion exposure and unresolved digit spelling convention.",
+    "English mode is an explicit experimental assumption, not newly verified human language annotation.",
+    "No independent test, new training, entity or event labels.",
+    "No predicted improvement or significance claimed before measurement."
+  ]
+}

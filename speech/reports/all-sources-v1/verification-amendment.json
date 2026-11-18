@@ -1,0 +1,7 @@
+{
+  "first_verification_status": "FAIL",
+  "failed_check": "noise_never_admitted_to_training",
+  "cause": "Verifier erroneously prohibited every augmentation, including the one explicitly admitted supplied BLeRIOT-C publisher_audio_chain pair. Actual 33 train pairs contain 32 original A pairs and 1 C pair; none uses VOICI. All 35 accepted dev pairs have no augmentation.",
+  "correction": "Require VOICI dev-only flags and no VOICI paths; permit only absent augmentation or an existing BLeRIOT-C variant with publisher_audio_chain type and a source hash different from VOICI. Frozen data, models, inference, scorer and acceptance were not changed.",
+  "prior_report": "verification-first-attempt.json"
+}

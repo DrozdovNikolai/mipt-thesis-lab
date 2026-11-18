@@ -1,0 +1,24 @@
+{
+  "source": {
+    "key": "Crew_02/DVR/DVR10_Case_1_SOTERIA_20220504-170006Z_S1R1.mp4",
+    "size": 90608135,
+    "etag": "\"23a758391e194b5c340374c97b187261-11\"",
+    "last_modified": "2025-03-06T15:31:38.000Z"
+  },
+  "selection": "smallest Crew_02 DVR MP4 by metadata",
+  "group": "soteria:Crew_02",
+  "use": "source_inspection_dev_only",
+  "license": "CC BY 4.0",
+  "source_registry": "https://registry.opendata.aws/nasa-soteria-data/",
+  "checked_at": "2026-09-14T12:54:46.052460+00:00",
+  "url": "https://nasa-soteria-data.s3.us-west-2.amazonaws.com/Crew_02/DVR/DVR10_Case_1_SOTERIA_20220504-170006Z_S1R1.mp4",
+  "local_path": "data\\input\\nasa-soteria-v1\\DVR10_Case_1_SOTERIA_20220504-170006Z_S1R1.mp4",
+  "bytes": 90608135,
+  "sha256": "775b21eb5d77aa746831efaed5fd3b1158c1fbdfcb9ccc24acd959eaa1ac0927",
+  "multipart_etag_verified": true,
+  "verified_part_bytes": 8388608,
+  "audio_content_verified": false,
+  "transcripts_found": false,
+  "asr_executed": false,
+  "benchmark_admitted": false
+}

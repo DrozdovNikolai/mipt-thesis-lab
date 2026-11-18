@@ -1,0 +1,96 @@
+{
+  "repository": "wangyubo013-blip/CDE4301-VR-401-Final-Report",
+  "revision": "0c520edbcd345cb9005cc77c3345eedbfef7147b",
+  "files": [
+    {
+      "file": "CombinedSamples_01_03_04_05_06_07.parquet",
+      "bytes": 12835578,
+      "sha256": "61bfb8469036898875aedfae37e0d851f415cb2e530fc4350f0d43aae5e47c25",
+      "git_blob_sha1": "17f05ccc0aaeeed59593d980a0bc6a0117f32ea8",
+      "columns": [
+        "id",
+        "audio",
+        "text",
+        "segment_start_time",
+        "segment_end_time",
+        "duration"
+      ],
+      "rows": 263,
+      "seconds": 803.0999999999999,
+      "groups_by_filename_not_verified_speakers": {
+        "clip01": {
+          "rows": 16,
+          "seconds": 109.0
+        },
+        "clip03": {
+          "rows": 36,
+          "seconds": 120.5
+        },
+        "clip04": {
+          "rows": 44,
+          "seconds": 119.89999999999999
+        },
+        "clip05": {
+          "rows": 61,
+          "seconds": 168.29999999999998
+        },
+        "clip06": {
+          "rows": 48,
+          "seconds": 122.7
+        },
+        "clip07": {
+          "rows": 58,
+          "seconds": 162.7
+        }
+      },
+      "audio_formats_rate_channels_samplewidth": [
+        [
+          16000,
+          1,
+          2
+        ]
+      ],
+      "unique_pcm_hashes": 263,
+      "empty_texts": 0
+    },
+    {
+      "file": "Sample02.parquet",
+      "bytes": 3631865,
+      "sha256": "5245f80e97f2d990860cae9911426956122e2c3ec6ff6540572d5cca8c170afb",
+      "git_blob_sha1": "6e5670b95eec85ef01adb1f2552b57949dcc2438",
+      "columns": [
+        "id",
+        "audio",
+        "text",
+        "segment_start_time",
+        "segment_end_time",
+        "duration"
+      ],
+      "rows": 50,
+      "seconds": 221.0,
+      "groups_by_filename_not_verified_speakers": {
+        "clip02": {
+          "rows": 50,
+          "seconds": 221.0
+        }
+      },
+      "audio_formats_rate_channels_samplewidth": [
+        [
+          16000,
+          1,
+          2
+        ]
+      ],
+      "unique_pcm_hashes": 50,
+      "empty_texts": 0
+    }
+  ],
+  "total_rows": 313,
+  "total_seconds": 1024.1,
+  "unique_pcm_hashes_across_files": 313,
+  "rights_for_training_confirmed": false,
+  "local_human_transcript_verification": false,
+  "speaker_independence_verified": false,
+  "scope": "mixed cockpit and ATC examples; no sample admitted to project benchmark",
+  "asr_or_training_executed": false
+}

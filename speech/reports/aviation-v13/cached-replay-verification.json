@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "command": "scripts/Run-AviationV13.ps1",
+  "new_ASR_calls": 0,
+  "identical_outputs": {
+    "io-full/hybrid.json": "0eabaad736083bd9de1955ee0da945bf2b7dac85139f313a0457d3fb0bffda2e",
+    "io-full/consensus-guarded.json": "cded7bd5b98a0e798d79278a1ee2222d66648577ab8572501fe1d4bd6c37e093",
+    "comparison.json": "741c9c1884537466b68054b0f58996682b01fc0d57cc2ab4f44d61d02b6066a7",
+    "report.md": "74343005454789befa97b6c9ad2e8f5cc595ce2e02001e06e11c681c83243999"
+  },
+  "cached_execution_logs": [
+    "io-smoke/hybrid.log",
+    "io-smoke/consensus.log",
+    "io-full/hybrid.log",
+    "io-smoke/guard-replay.log",
+    "io-smoke/guard-failure-fixture.log",
+    "io-full/guard-full.log"
+  ]
+}

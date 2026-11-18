@@ -1,0 +1,502 @@
+[
+  {
+    "id": "reviewed-dc84f2b77565d804f16ea31f42380abb",
+    "reference": "cockpit preparation parking brake set chocks set engine masters off engine mode selector norm landing gear lever check down flaps lever",
+    "hypotheses": {
+      "baseline": "gas cockpit preparation parking brake set chocks set engine masters of engine mode selector norm landing gear level check down flaps lever",
+      "v5-balanced": "Start gas, cockpit preparation, parking brake, set, chocks, set, engine masters, off, engine mode selector, norm, landing gear level, check down, flaps lever.",
+      "control": "Start gas, cockpit preparation, parking brake, set, chocks, set, engine masters, off, engine mode selector, norm, landing gear level, check down, flaps lever.",
+      "expanded": "hard gas, cockpit preparation, parking brake, set, chokes, set, engine masters, off, engine mode selector, norm, landing gear level, check down, flaps lever."
+    },
+    "scores": {
+      "baseline-raw": {
+        "S": 2,
+        "D": 0,
+        "I": 1,
+        "N": 21,
+        "H": 19,
+        "wer": 0.14285714285714285,
+        "character_errors": 6,
+        "reference_characters": 135,
+        "cer": 0.044444444444444446
+      },
+      "baseline-gate": {
+        "S": 2,
+        "D": 0,
+        "I": 1,
+        "N": 21,
+        "H": 19,
+        "wer": 0.14285714285714285,
+        "character_errors": 6,
+        "reference_characters": 135,
+        "cer": 0.044444444444444446
+      },
+      "v5-balanced-raw": {
+        "S": 1,
+        "D": 0,
+        "I": 2,
+        "N": 21,
+        "H": 20,
+        "wer": 0.14285714285714285,
+        "character_errors": 11,
+        "reference_characters": 135,
+        "cer": 0.08148148148148149
+      },
+      "v5-balanced-gate": {
+        "S": 1,
+        "D": 0,
+        "I": 2,
+        "N": 21,
+        "H": 20,
+        "wer": 0.14285714285714285,
+        "character_errors": 11,
+        "reference_characters": 135,
+        "cer": 0.08148148148148149
+      },
+      "control-raw": {
+        "S": 1,
+        "D": 0,
+        "I": 2,
+        "N": 21,
+        "H": 20,
+        "wer": 0.14285714285714285,
+        "character_errors": 11,
+        "reference_characters": 135,
+        "cer": 0.08148148148148149
+      },
+      "control-gate": {
+        "S": 1,
+        "D": 0,
+        "I": 2,
+        "N": 21,
+        "H": 20,
+        "wer": 0.14285714285714285,
+        "character_errors": 11,
+        "reference_characters": 135,
+        "cer": 0.08148148148148149
+      },
+      "expanded-raw": {
+        "S": 2,
+        "D": 0,
+        "I": 2,
+        "N": 21,
+        "H": 19,
+        "wer": 0.19047619047619047,
+        "character_errors": 12,
+        "reference_characters": 135,
+        "cer": 0.08888888888888889
+      },
+      "expanded-gate": {
+        "S": 2,
+        "D": 0,
+        "I": 2,
+        "N": 21,
+        "H": 19,
+        "wer": 0.19047619047619047,
+        "character_errors": 12,
+        "reference_characters": 135,
+        "cer": 0.08888888888888889
+      }
+    }
+  },
+  {
+    "id": "reviewed-767df23c7c14166f8579da284d5a4219",
+    "reference": "generators on fuel pumps all on hydraulic electric pumps on gpws all on fcs all on baro reference set qnh start boarding passenger and load",
+    "hypotheses": {
+      "baseline": "generators, on fuel pumps, all on hydraulic electric pumps, on GPWS, all on FCS, all on barrel reference, set QNH. Start boarding passenger and load.",
+      "v5-balanced": "generators, on, fuel pumps, all on, hydraulic electric pumps, on, GPWS, all on, FCS, all on, barrel reference, set QNH. Start boarding passenger and load.",
+      "control": "generators, on, fuel pumps, all on, hydraulic electric pumps, on, GPWS, all on, FCS, all on, barrel reference, set QNH. Start boarding passenger and load.",
+      "expanded": "generators on, fuel pumps all on, hydraulic electric pumps on, GPWS all on, FCS all on, barrel reference set QNH. Start boarding passenger unload."
+    },
+    "scores": {
+      "baseline-raw": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 25,
+        "H": 24,
+        "wer": 0.04,
+        "character_errors": 3,
+        "reference_characters": 139,
+        "cer": 0.02158273381294964
+      },
+      "baseline-gate": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 25,
+        "H": 24,
+        "wer": 0.04,
+        "character_errors": 3,
+        "reference_characters": 139,
+        "cer": 0.02158273381294964
+      },
+      "v5-balanced-raw": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 25,
+        "H": 24,
+        "wer": 0.04,
+        "character_errors": 3,
+        "reference_characters": 139,
+        "cer": 0.02158273381294964
+      },
+      "v5-balanced-gate": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 25,
+        "H": 24,
+        "wer": 0.04,
+        "character_errors": 3,
+        "reference_characters": 139,
+        "cer": 0.02158273381294964
+      },
+      "control-raw": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 25,
+        "H": 24,
+        "wer": 0.04,
+        "character_errors": 3,
+        "reference_characters": 139,
+        "cer": 0.02158273381294964
+      },
+      "control-gate": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 25,
+        "H": 24,
+        "wer": 0.04,
+        "character_errors": 3,
+        "reference_characters": 139,
+        "cer": 0.02158273381294964
+      },
+      "expanded-raw": {
+        "S": 2,
+        "D": 1,
+        "I": 0,
+        "N": 25,
+        "H": 22,
+        "wer": 0.12,
+        "character_errors": 6,
+        "reference_characters": 139,
+        "cer": 0.04316546762589928
+      },
+      "expanded-gate": {
+        "S": 2,
+        "D": 1,
+        "I": 0,
+        "N": 25,
+        "H": 22,
+        "wer": 0.12,
+        "character_errors": 6,
+        "reference_characters": 139,
+        "cer": 0.04316546762589928
+      }
+    }
+  },
+  {
+    "id": "reviewed-c55f9c7708704c548f503aa642c2288d",
+    "reference": "1.0.1.6 set pause, seat belt on minimum 3000 feet minimum 300 feet, auto break no auto break low engine mode select, no landing",
+    "hypotheses": {
+      "baseline": "1016 set both seat belt on minimum 3000 feet minimum 300 feet auto brake no auto brake low engine mode select no landing it came memo landing",
+      "v5-balanced": "1016, set, pause, seat belt on, minimum 3000 feet, minimum 300 feet, auto brake, no, auto brake low, engine mode select, no, landing, it came memo, landing",
+      "control": "1016, set, pause, seat belt on, minimum 3000 feet, minimum 300 feet, auto brake, no, auto brake low, engine mode select, no, landing, it came memo, landing",
+      "expanded": "1016 set pulse, seat belt on, minimum 3000 feet, minimum 300 feet, auto brake, no, auto brake, low, engine mode select, no, landing, it came memo, landing,"
+    },
+    "scores": {
+      "baseline-raw": {
+        "S": 4,
+        "D": 0,
+        "I": 4,
+        "N": 23,
+        "H": 19,
+        "wer": 0.34782608695652173,
+        "character_errors": 33,
+        "reference_characters": 124,
+        "cer": 0.2661290322580645
+      },
+      "baseline-gate": {
+        "S": 4,
+        "D": 0,
+        "I": 4,
+        "N": 23,
+        "H": 19,
+        "wer": 0.34782608695652173,
+        "character_errors": 33,
+        "reference_characters": 124,
+        "cer": 0.2661290322580645
+      },
+      "v5-balanced-raw": {
+        "S": 3,
+        "D": 0,
+        "I": 4,
+        "N": 23,
+        "H": 20,
+        "wer": 0.30434782608695654,
+        "character_errors": 28,
+        "reference_characters": 124,
+        "cer": 0.22580645161290322
+      },
+      "v5-balanced-gate": {
+        "S": 3,
+        "D": 0,
+        "I": 4,
+        "N": 23,
+        "H": 20,
+        "wer": 0.30434782608695654,
+        "character_errors": 28,
+        "reference_characters": 124,
+        "cer": 0.22580645161290322
+      },
+      "control-raw": {
+        "S": 3,
+        "D": 0,
+        "I": 4,
+        "N": 23,
+        "H": 20,
+        "wer": 0.30434782608695654,
+        "character_errors": 28,
+        "reference_characters": 124,
+        "cer": 0.22580645161290322
+      },
+      "control-gate": {
+        "S": 3,
+        "D": 0,
+        "I": 4,
+        "N": 23,
+        "H": 20,
+        "wer": 0.30434782608695654,
+        "character_errors": 28,
+        "reference_characters": 124,
+        "cer": 0.22580645161290322
+      },
+      "expanded-raw": {
+        "S": 4,
+        "D": 0,
+        "I": 4,
+        "N": 23,
+        "H": 19,
+        "wer": 0.34782608695652173,
+        "character_errors": 30,
+        "reference_characters": 124,
+        "cer": 0.24193548387096775
+      },
+      "expanded-gate": {
+        "S": 4,
+        "D": 0,
+        "I": 4,
+        "N": 23,
+        "H": 19,
+        "wer": 0.34782608695652173,
+        "character_errors": 30,
+        "reference_characters": 124,
+        "cer": 0.24193548387096775
+      }
+    }
+  },
+  {
+    "id": "reviewed-291ebb141aa4e7a7ba94ccf8d18002fb",
+    "reference": "anti-ice, as required, heat prop blades, as required, air conditioning, heat, cool off, annunciator panel, No amber or red, oxygen, as required",
+    "hypotheses": {
+      "baseline": "anti-ice, as required, heat prop blades, as required, air conditioning, heat, cool off, annunciator panel, November in red, oxygen, as required,",
+      "v5-balanced": "anti-ice as required, heat prop blades as required, air conditioning, heat cool off, annunciator panel, november in red, oxygen as required,",
+      "control": "anti-ice as required, heat prop blades as required, air conditioning, heat cool off, annunciator panel, november in red, oxygen as required,",
+      "expanded": "anti-ice, as required, heat prop blades, as required, air conditioning, heat, cool off, annunciator panel, November in red, oxygen, as required,"
+    },
+    "scores": {
+      "baseline-raw": {
+        "S": 2,
+        "D": 1,
+        "I": 0,
+        "N": 23,
+        "H": 20,
+        "wer": 0.13043478260869565,
+        "character_errors": 4,
+        "reference_characters": 133,
+        "cer": 0.03007518796992481
+      },
+      "baseline-gate": {
+        "S": 2,
+        "D": 1,
+        "I": 0,
+        "N": 23,
+        "H": 20,
+        "wer": 0.13043478260869565,
+        "character_errors": 4,
+        "reference_characters": 133,
+        "cer": 0.03007518796992481
+      },
+      "v5-balanced-raw": {
+        "S": 2,
+        "D": 1,
+        "I": 0,
+        "N": 23,
+        "H": 20,
+        "wer": 0.13043478260869565,
+        "character_errors": 4,
+        "reference_characters": 133,
+        "cer": 0.03007518796992481
+      },
+      "v5-balanced-gate": {
+        "S": 2,
+        "D": 1,
+        "I": 0,
+        "N": 23,
+        "H": 20,
+        "wer": 0.13043478260869565,
+        "character_errors": 4,
+        "reference_characters": 133,
+        "cer": 0.03007518796992481
+      },
+      "control-raw": {
+        "S": 2,
+        "D": 1,
+        "I": 0,
+        "N": 23,
+        "H": 20,
+        "wer": 0.13043478260869565,
+        "character_errors": 4,
+        "reference_characters": 133,
+        "cer": 0.03007518796992481
+      },
+      "control-gate": {
+        "S": 2,
+        "D": 1,
+        "I": 0,
+        "N": 23,
+        "H": 20,
+        "wer": 0.13043478260869565,
+        "character_errors": 4,
+        "reference_characters": 133,
+        "cer": 0.03007518796992481
+      },
+      "expanded-raw": {
+        "S": 2,
+        "D": 1,
+        "I": 0,
+        "N": 23,
+        "H": 20,
+        "wer": 0.13043478260869565,
+        "character_errors": 4,
+        "reference_characters": 133,
+        "cer": 0.03007518796992481
+      },
+      "expanded-gate": {
+        "S": 2,
+        "D": 1,
+        "I": 0,
+        "N": 23,
+        "H": 20,
+        "wer": 0.13043478260869565,
+        "character_errors": 4,
+        "reference_characters": 133,
+        "cer": 0.03007518796992481
+      }
+    }
+  },
+  {
+    "id": "reviewed-b8d2fc3fc1893f19ae7fb8d7c2722a4d",
+    "reference": "ng itt monitor engine instruments check oxygen check set as required fuel balance check external fuel check transfer as required boost pumps on",
+    "hypotheses": {
+      "baseline": "NG, ITT, monitor, NG instruments, check, oxygen, check, set as required, fuel balance, check, external fuel, check, transfer as required, boost pumps, on.",
+      "v5-balanced": "NG, ITT, monitor, NG instruments, check, oxygen, check, set as required, fuel balance, check, external fuel, check, transfer as required, boost pumps on.",
+      "control": "NG, ITT, monitor, NG instruments, check, oxygen, check, set as required, fuel balance, check, external fuel, check, transfer as required, boost pumps on.",
+      "expanded": "NG, ITT, monitor, NG instruments, check, oxygen, check, set as required, fuel balance, check, external fuel, check, transfer as required, boost pumps on."
+    },
+    "scores": {
+      "baseline-raw": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 23,
+        "H": 22,
+        "wer": 0.043478260869565216,
+        "character_errors": 4,
+        "reference_characters": 143,
+        "cer": 0.027972027972027972
+      },
+      "baseline-gate": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 23,
+        "H": 22,
+        "wer": 0.043478260869565216,
+        "character_errors": 4,
+        "reference_characters": 143,
+        "cer": 0.027972027972027972
+      },
+      "v5-balanced-raw": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 23,
+        "H": 22,
+        "wer": 0.043478260869565216,
+        "character_errors": 4,
+        "reference_characters": 143,
+        "cer": 0.027972027972027972
+      },
+      "v5-balanced-gate": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 23,
+        "H": 22,
+        "wer": 0.043478260869565216,
+        "character_errors": 4,
+        "reference_characters": 143,
+        "cer": 0.027972027972027972
+      },
+      "control-raw": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 23,
+        "H": 22,
+        "wer": 0.043478260869565216,
+        "character_errors": 4,
+        "reference_characters": 143,
+        "cer": 0.027972027972027972
+      },
+      "control-gate": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 23,
+        "H": 22,
+        "wer": 0.043478260869565216,
+        "character_errors": 4,
+        "reference_characters": 143,
+        "cer": 0.027972027972027972
+      },
+      "expanded-raw": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 23,
+        "H": 22,
+        "wer": 0.043478260869565216,
+        "character_errors": 4,
+        "reference_characters": 143,
+        "cer": 0.027972027972027972
+      },
+      "expanded-gate": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 23,
+        "H": 22,
+        "wer": 0.043478260869565216,
+        "character_errors": 4,
+        "reference_characters": 143,
+        "cer": 0.027972027972027972
+      }
+    }
+  }
+]

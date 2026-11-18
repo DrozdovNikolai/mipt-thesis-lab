@@ -1,0 +1,2074 @@
+{
+  "plan_sha256": "8de86e53847fd47a2e64e51c610792adbc0f4dc70fc2317827ff47b933170af6",
+  "cohorts": {
+    "atcosim": {
+      "small": {
+        "lexical": {
+          "S": 8048,
+          "D": 6893,
+          "I": 832,
+          "N": 22642,
+          "H": 7701,
+          "character_errors": 62689,
+          "reference_characters": 126856,
+          "wer_lexical_corpus": 0.6966257397756382,
+          "cer": 0.49417449706754113
+        },
+        "canonical": {
+          "S": 4556,
+          "D": 1045,
+          "I": 2147,
+          "N": 15245,
+          "H": 9644,
+          "character_errors": 19258,
+          "reference_characters": 88102,
+          "wer_lexical_corpus": 0.5082322072810758,
+          "cer": 0.2185875462532065
+        },
+        "clips": 1901,
+        "minutes": 122.73774583333334,
+        "failures": 0
+      },
+      "small_gate": {
+        "lexical": {
+          "S": 8048,
+          "D": 6893,
+          "I": 832,
+          "N": 22642,
+          "H": 7701,
+          "character_errors": 62689,
+          "reference_characters": 126856,
+          "wer_lexical_corpus": 0.6966257397756382,
+          "cer": 0.49417449706754113
+        },
+        "canonical": {
+          "S": 4556,
+          "D": 1045,
+          "I": 2147,
+          "N": 15245,
+          "H": 9644,
+          "character_errors": 19258,
+          "reference_characters": 88102,
+          "wer_lexical_corpus": 0.5082322072810758,
+          "cer": 0.2185875462532065
+        },
+        "clips": 1901,
+        "minutes": 122.73774583333334,
+        "failures": 0
+      },
+      "medium": {
+        "lexical": {
+          "S": 6748,
+          "D": 7085,
+          "I": 333,
+          "N": 22642,
+          "H": 8809,
+          "character_errors": 56744,
+          "reference_characters": 126856,
+          "wer_lexical_corpus": 0.6256514442187086,
+          "cer": 0.44731033612915433
+        },
+        "canonical": {
+          "S": 3697,
+          "D": 1218,
+          "I": 1427,
+          "N": 15245,
+          "H": 10330,
+          "character_errors": 14107,
+          "reference_characters": 88102,
+          "wer_lexical_corpus": 0.4160052476221712,
+          "cer": 0.1601212231277383
+        },
+        "clips": 1901,
+        "minutes": 122.73774583333334,
+        "failures": 0
+      },
+      "medium_gate": {
+        "lexical": {
+          "S": 6748,
+          "D": 7085,
+          "I": 333,
+          "N": 22642,
+          "H": 8809,
+          "character_errors": 56744,
+          "reference_characters": 126856,
+          "wer_lexical_corpus": 0.6256514442187086,
+          "cer": 0.44731033612915433
+        },
+        "canonical": {
+          "S": 3697,
+          "D": 1218,
+          "I": 1427,
+          "N": 15245,
+          "H": 10330,
+          "character_errors": 14107,
+          "reference_characters": 88102,
+          "wer_lexical_corpus": 0.4160052476221712,
+          "cer": 0.1601212231277383
+        },
+        "clips": 1901,
+        "minutes": 122.73774583333334,
+        "failures": 0
+      },
+      "atc": {
+        "lexical": {
+          "S": 1816,
+          "D": 378,
+          "I": 547,
+          "N": 22642,
+          "H": 20448,
+          "character_errors": 8675,
+          "reference_characters": 126856,
+          "wer_lexical_corpus": 0.12105821040544122,
+          "cer": 0.06838462508671249
+        },
+        "canonical": {
+          "S": 1849,
+          "D": 408,
+          "I": 483,
+          "N": 15245,
+          "H": 12988,
+          "character_errors": 8493,
+          "reference_characters": 88102,
+          "wer_lexical_corpus": 0.1797310593637258,
+          "cer": 0.0963996277042519
+        },
+        "clips": 1901,
+        "minutes": 122.73774583333334,
+        "failures": 0
+      },
+      "atc_gate": {
+        "lexical": {
+          "S": 1816,
+          "D": 378,
+          "I": 547,
+          "N": 22642,
+          "H": 20448,
+          "character_errors": 8675,
+          "reference_characters": 126856,
+          "wer_lexical_corpus": 0.12105821040544122,
+          "cer": 0.06838462508671249
+        },
+        "canonical": {
+          "S": 1849,
+          "D": 408,
+          "I": 483,
+          "N": 15245,
+          "H": 12988,
+          "character_errors": 8493,
+          "reference_characters": 88102,
+          "wer_lexical_corpus": 0.1797310593637258,
+          "cer": 0.0963996277042519
+        },
+        "clips": 1901,
+        "minutes": 122.73774583333334,
+        "failures": 0
+      }
+    },
+    "bleriot_b_noise": {
+      "small": {
+        "lexical": {
+          "S": 0,
+          "D": 0,
+          "I": 48,
+          "N": 0,
+          "H": 0,
+          "character_errors": 247,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "canonical": {
+          "S": 0,
+          "D": 0,
+          "I": 48,
+          "N": 0,
+          "H": 0,
+          "character_errors": 247,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "clips": 25,
+        "minutes": 5.012222916666667,
+        "failures": 0
+      },
+      "small_gate": {
+        "lexical": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "canonical": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "clips": 25,
+        "minutes": 5.012222916666667,
+        "failures": 0
+      },
+      "medium": {
+        "lexical": {
+          "S": 0,
+          "D": 0,
+          "I": 45,
+          "N": 0,
+          "H": 0,
+          "character_errors": 249,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "canonical": {
+          "S": 0,
+          "D": 0,
+          "I": 45,
+          "N": 0,
+          "H": 0,
+          "character_errors": 249,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "clips": 25,
+        "minutes": 5.012222916666667,
+        "failures": 0
+      },
+      "medium_gate": {
+        "lexical": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "canonical": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "clips": 25,
+        "minutes": 5.012222916666667,
+        "failures": 0
+      },
+      "atc": {
+        "lexical": {
+          "S": 0,
+          "D": 0,
+          "I": 213,
+          "N": 0,
+          "H": 0,
+          "character_errors": 1094,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "canonical": {
+          "S": 0,
+          "D": 0,
+          "I": 176,
+          "N": 0,
+          "H": 0,
+          "character_errors": 850,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "clips": 25,
+        "minutes": 5.012222916666667,
+        "failures": 0
+      },
+      "atc_gate": {
+        "lexical": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "canonical": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "clips": 25,
+        "minutes": 5.012222916666667,
+        "failures": 0
+      }
+    },
+    "general_clean": {
+      "small": {
+        "lexical": {
+          "S": 37,
+          "D": 2,
+          "I": 5,
+          "N": 1214,
+          "H": 1175,
+          "character_errors": 97,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.036243822075782535,
+          "cer": 0.014804639804639804
+        },
+        "canonical": {
+          "S": 36,
+          "D": 1,
+          "I": 5,
+          "N": 1213,
+          "H": 1176,
+          "character_errors": 88,
+          "reference_characters": 6522,
+          "wer_lexical_corpus": 0.03462489694971146,
+          "cer": 0.01349279362158847
+        },
+        "clips": 50,
+        "minutes": 7.355583333333334,
+        "failures": 0
+      },
+      "small_gate": {
+        "lexical": {
+          "S": 37,
+          "D": 2,
+          "I": 5,
+          "N": 1214,
+          "H": 1175,
+          "character_errors": 97,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.036243822075782535,
+          "cer": 0.014804639804639804
+        },
+        "canonical": {
+          "S": 36,
+          "D": 1,
+          "I": 5,
+          "N": 1213,
+          "H": 1176,
+          "character_errors": 88,
+          "reference_characters": 6522,
+          "wer_lexical_corpus": 0.03462489694971146,
+          "cer": 0.01349279362158847
+        },
+        "clips": 50,
+        "minutes": 7.355583333333334,
+        "failures": 0
+      },
+      "medium": {
+        "lexical": {
+          "S": 34,
+          "D": 2,
+          "I": 4,
+          "N": 1214,
+          "H": 1178,
+          "character_errors": 62,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.032948929159802305,
+          "cer": 0.009462759462759462
+        },
+        "canonical": {
+          "S": 34,
+          "D": 2,
+          "I": 4,
+          "N": 1213,
+          "H": 1177,
+          "character_errors": 65,
+          "reference_characters": 6522,
+          "wer_lexical_corpus": 0.03297609233305853,
+          "cer": 0.00996626801594603
+        },
+        "clips": 50,
+        "minutes": 7.355583333333334,
+        "failures": 0
+      },
+      "medium_gate": {
+        "lexical": {
+          "S": 34,
+          "D": 2,
+          "I": 4,
+          "N": 1214,
+          "H": 1178,
+          "character_errors": 62,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.032948929159802305,
+          "cer": 0.009462759462759462
+        },
+        "canonical": {
+          "S": 34,
+          "D": 2,
+          "I": 4,
+          "N": 1213,
+          "H": 1177,
+          "character_errors": 65,
+          "reference_characters": 6522,
+          "wer_lexical_corpus": 0.03297609233305853,
+          "cer": 0.00996626801594603
+        },
+        "clips": 50,
+        "minutes": 7.355583333333334,
+        "failures": 0
+      },
+      "atc": {
+        "lexical": {
+          "S": 40,
+          "D": 0,
+          "I": 8,
+          "N": 1214,
+          "H": 1174,
+          "character_errors": 93,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.039538714991762765,
+          "cer": 0.014194139194139194
+        },
+        "canonical": {
+          "S": 40,
+          "D": 0,
+          "I": 8,
+          "N": 1213,
+          "H": 1173,
+          "character_errors": 96,
+          "reference_characters": 6522,
+          "wer_lexical_corpus": 0.03957131079967024,
+          "cer": 0.014719411223551058
+        },
+        "clips": 50,
+        "minutes": 7.355583333333334,
+        "failures": 0
+      },
+      "atc_gate": {
+        "lexical": {
+          "S": 40,
+          "D": 0,
+          "I": 8,
+          "N": 1214,
+          "H": 1174,
+          "character_errors": 93,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.039538714991762765,
+          "cer": 0.014194139194139194
+        },
+        "canonical": {
+          "S": 40,
+          "D": 0,
+          "I": 8,
+          "N": 1213,
+          "H": 1173,
+          "character_errors": 96,
+          "reference_characters": 6522,
+          "wer_lexical_corpus": 0.03957131079967024,
+          "cer": 0.014719411223551058
+        },
+        "clips": 50,
+        "minutes": 7.355583333333334,
+        "failures": 0
+      }
+    },
+    "noise_only": {
+      "small": {
+        "lexical": {
+          "S": 0,
+          "D": 0,
+          "I": 9,
+          "N": 0,
+          "H": 0,
+          "character_errors": 47,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "canonical": {
+          "S": 0,
+          "D": 0,
+          "I": 9,
+          "N": 0,
+          "H": 0,
+          "character_errors": 47,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "clips": 15,
+        "minutes": 5.0,
+        "failures": 0
+      },
+      "small_gate": {
+        "lexical": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "canonical": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "clips": 15,
+        "minutes": 5.0,
+        "failures": 0
+      },
+      "medium": {
+        "lexical": {
+          "S": 0,
+          "D": 0,
+          "I": 3,
+          "N": 0,
+          "H": 0,
+          "character_errors": 9,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "canonical": {
+          "S": 0,
+          "D": 0,
+          "I": 3,
+          "N": 0,
+          "H": 0,
+          "character_errors": 9,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "clips": 15,
+        "minutes": 5.0,
+        "failures": 0
+      },
+      "medium_gate": {
+        "lexical": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "canonical": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "clips": 15,
+        "minutes": 5.0,
+        "failures": 0
+      },
+      "atc": {
+        "lexical": {
+          "S": 0,
+          "D": 0,
+          "I": 96,
+          "N": 0,
+          "H": 0,
+          "character_errors": 502,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "canonical": {
+          "S": 0,
+          "D": 0,
+          "I": 75,
+          "N": 0,
+          "H": 0,
+          "character_errors": 354,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "clips": 15,
+        "minutes": 5.0,
+        "failures": 0
+      },
+      "atc_gate": {
+        "lexical": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "canonical": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "clips": 15,
+        "minutes": 5.0,
+        "failures": 0
+      }
+    },
+    "partial_human_dev": {
+      "small": {
+        "lexical": {
+          "S": 10,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 104,
+          "character_errors": 50,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.1391304347826087,
+          "cer": 0.07418397626112759
+        },
+        "canonical": {
+          "S": 10,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 104,
+          "character_errors": 50,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.1391304347826087,
+          "cer": 0.07418397626112759
+        },
+        "clips": 5,
+        "minutes": 1.6666666666666667,
+        "failures": 0
+      },
+      "small_gate": {
+        "lexical": {
+          "S": 10,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 104,
+          "character_errors": 50,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.1391304347826087,
+          "cer": 0.07418397626112759
+        },
+        "canonical": {
+          "S": 10,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 104,
+          "character_errors": 50,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.1391304347826087,
+          "cer": 0.07418397626112759
+        },
+        "clips": 5,
+        "minutes": 1.6666666666666667,
+        "failures": 0
+      },
+      "medium": {
+        "lexical": {
+          "S": 12,
+          "D": 0,
+          "I": 20,
+          "N": 115,
+          "H": 103,
+          "character_errors": 105,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.2782608695652174,
+          "cer": 0.15578635014836795
+        },
+        "canonical": {
+          "S": 12,
+          "D": 0,
+          "I": 20,
+          "N": 115,
+          "H": 103,
+          "character_errors": 105,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.2782608695652174,
+          "cer": 0.15578635014836795
+        },
+        "clips": 5,
+        "minutes": 1.6666666666666667,
+        "failures": 0
+      },
+      "medium_gate": {
+        "lexical": {
+          "S": 12,
+          "D": 0,
+          "I": 20,
+          "N": 115,
+          "H": 103,
+          "character_errors": 105,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.2782608695652174,
+          "cer": 0.15578635014836795
+        },
+        "canonical": {
+          "S": 12,
+          "D": 0,
+          "I": 20,
+          "N": 115,
+          "H": 103,
+          "character_errors": 105,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.2782608695652174,
+          "cer": 0.15578635014836795
+        },
+        "clips": 5,
+        "minutes": 1.6666666666666667,
+        "failures": 0
+      },
+      "atc": {
+        "lexical": {
+          "S": 20,
+          "D": 0,
+          "I": 79,
+          "N": 115,
+          "H": 95,
+          "character_errors": 738,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.8608695652173913,
+          "cer": 1.0949554896142433
+        },
+        "canonical": {
+          "S": 18,
+          "D": 0,
+          "I": 74,
+          "N": 115,
+          "H": 97,
+          "character_errors": 698,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.8,
+          "cer": 1.0356083086053411
+        },
+        "clips": 5,
+        "minutes": 1.6666666666666667,
+        "failures": 0
+      },
+      "atc_gate": {
+        "lexical": {
+          "S": 20,
+          "D": 0,
+          "I": 79,
+          "N": 115,
+          "H": 95,
+          "character_errors": 738,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.8608695652173913,
+          "cer": 1.0949554896142433
+        },
+        "canonical": {
+          "S": 18,
+          "D": 0,
+          "I": 74,
+          "N": 115,
+          "H": 97,
+          "character_errors": 698,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.8,
+          "cer": 1.0356083086053411
+        },
+        "clips": 5,
+        "minutes": 1.6666666666666667,
+        "failures": 0
+      }
+    },
+    "publisher_weak_dev": {
+      "small": {
+        "lexical": {
+          "S": 149,
+          "D": 13,
+          "I": 39,
+          "N": 879,
+          "H": 717,
+          "character_errors": 593,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.22866894197952217,
+          "cer": 0.1152575315840622
+        },
+        "canonical": {
+          "S": 149,
+          "D": 13,
+          "I": 39,
+          "N": 879,
+          "H": 717,
+          "character_errors": 590,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.22866894197952217,
+          "cer": 0.11467444120505345
+        },
+        "clips": 35,
+        "minutes": 11.666666666666666,
+        "failures": 0
+      },
+      "small_gate": {
+        "lexical": {
+          "S": 149,
+          "D": 13,
+          "I": 39,
+          "N": 879,
+          "H": 717,
+          "character_errors": 593,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.22866894197952217,
+          "cer": 0.1152575315840622
+        },
+        "canonical": {
+          "S": 149,
+          "D": 13,
+          "I": 39,
+          "N": 879,
+          "H": 717,
+          "character_errors": 590,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.22866894197952217,
+          "cer": 0.11467444120505345
+        },
+        "clips": 35,
+        "minutes": 11.666666666666666,
+        "failures": 0
+      },
+      "medium": {
+        "lexical": {
+          "S": 129,
+          "D": 46,
+          "I": 51,
+          "N": 879,
+          "H": 704,
+          "character_errors": 813,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.2571103526734926,
+          "cer": 0.15801749271137025
+        },
+        "canonical": {
+          "S": 125,
+          "D": 46,
+          "I": 51,
+          "N": 879,
+          "H": 708,
+          "character_errors": 798,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.2525597269624573,
+          "cer": 0.15510204081632653
+        },
+        "clips": 35,
+        "minutes": 11.666666666666666,
+        "failures": 0
+      },
+      "medium_gate": {
+        "lexical": {
+          "S": 129,
+          "D": 46,
+          "I": 51,
+          "N": 879,
+          "H": 704,
+          "character_errors": 813,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.2571103526734926,
+          "cer": 0.15801749271137025
+        },
+        "canonical": {
+          "S": 125,
+          "D": 46,
+          "I": 51,
+          "N": 879,
+          "H": 708,
+          "character_errors": 798,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.2525597269624573,
+          "cer": 0.15510204081632653
+        },
+        "clips": 35,
+        "minutes": 11.666666666666666,
+        "failures": 0
+      },
+      "atc": {
+        "lexical": {
+          "S": 190,
+          "D": 20,
+          "I": 69,
+          "N": 879,
+          "H": 669,
+          "character_errors": 866,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.3174061433447099,
+          "cer": 0.16831875607385813
+        },
+        "canonical": {
+          "S": 181,
+          "D": 21,
+          "I": 68,
+          "N": 879,
+          "H": 677,
+          "character_errors": 826,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.30716723549488056,
+          "cer": 0.16054421768707483
+        },
+        "clips": 35,
+        "minutes": 11.666666666666666,
+        "failures": 0
+      },
+      "atc_gate": {
+        "lexical": {
+          "S": 190,
+          "D": 20,
+          "I": 69,
+          "N": 879,
+          "H": 669,
+          "character_errors": 866,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.3174061433447099,
+          "cer": 0.16831875607385813
+        },
+        "canonical": {
+          "S": 181,
+          "D": 21,
+          "I": 68,
+          "N": 879,
+          "H": 677,
+          "character_errors": 826,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.30716723549488056,
+          "cer": 0.16054421768707483
+        },
+        "clips": 35,
+        "minutes": 11.666666666666666,
+        "failures": 0
+      }
+    },
+    "quiet_general_clean": {
+      "small": {
+        "lexical": {
+          "S": 1,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 68,
+          "character_errors": 4,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.014492753623188406,
+          "cer": 0.011627906976744186
+        },
+        "canonical": {
+          "S": 1,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 68,
+          "character_errors": 4,
+          "reference_characters": 340,
+          "wer_lexical_corpus": 0.014492753623188406,
+          "cer": 0.011764705882352941
+        },
+        "clips": 9,
+        "minutes": 0.4309166666666667,
+        "failures": 0
+      },
+      "small_gate": {
+        "lexical": {
+          "S": 1,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 68,
+          "character_errors": 4,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.014492753623188406,
+          "cer": 0.011627906976744186
+        },
+        "canonical": {
+          "S": 1,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 68,
+          "character_errors": 4,
+          "reference_characters": 340,
+          "wer_lexical_corpus": 0.014492753623188406,
+          "cer": 0.011764705882352941
+        },
+        "clips": 9,
+        "minutes": 0.4309166666666667,
+        "failures": 0
+      },
+      "medium": {
+        "lexical": {
+          "S": 1,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 68,
+          "character_errors": 4,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.014492753623188406,
+          "cer": 0.011627906976744186
+        },
+        "canonical": {
+          "S": 1,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 68,
+          "character_errors": 4,
+          "reference_characters": 340,
+          "wer_lexical_corpus": 0.014492753623188406,
+          "cer": 0.011764705882352941
+        },
+        "clips": 9,
+        "minutes": 0.4309166666666667,
+        "failures": 0
+      },
+      "medium_gate": {
+        "lexical": {
+          "S": 1,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 68,
+          "character_errors": 4,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.014492753623188406,
+          "cer": 0.011627906976744186
+        },
+        "canonical": {
+          "S": 1,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 68,
+          "character_errors": 4,
+          "reference_characters": 340,
+          "wer_lexical_corpus": 0.014492753623188406,
+          "cer": 0.011764705882352941
+        },
+        "clips": 9,
+        "minutes": 0.4309166666666667,
+        "failures": 0
+      },
+      "atc": {
+        "lexical": {
+          "S": 2,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 67,
+          "character_errors": 5,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.028985507246376812,
+          "cer": 0.014534883720930232
+        },
+        "canonical": {
+          "S": 2,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 67,
+          "character_errors": 5,
+          "reference_characters": 340,
+          "wer_lexical_corpus": 0.028985507246376812,
+          "cer": 0.014705882352941176
+        },
+        "clips": 9,
+        "minutes": 0.4309166666666667,
+        "failures": 0
+      },
+      "atc_gate": {
+        "lexical": {
+          "S": 2,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 67,
+          "character_errors": 5,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.028985507246376812,
+          "cer": 0.014534883720930232
+        },
+        "canonical": {
+          "S": 2,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 67,
+          "character_errors": 5,
+          "reference_characters": 340,
+          "wer_lexical_corpus": 0.028985507246376812,
+          "cer": 0.014705882352941176
+        },
+        "clips": 9,
+        "minutes": 0.4309166666666667,
+        "failures": 0
+      }
+    },
+    "quiet_partial_human_dev": {
+      "small": {
+        "lexical": {
+          "S": 11,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 103,
+          "character_errors": 56,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.14782608695652175,
+          "cer": 0.0830860534124629
+        },
+        "canonical": {
+          "S": 11,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 103,
+          "character_errors": 56,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.14782608695652175,
+          "cer": 0.0830860534124629
+        },
+        "clips": 5,
+        "minutes": 1.6666666666666667,
+        "failures": 0
+      },
+      "small_gate": {
+        "lexical": {
+          "S": 11,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 103,
+          "character_errors": 56,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.14782608695652175,
+          "cer": 0.0830860534124629
+        },
+        "canonical": {
+          "S": 11,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 103,
+          "character_errors": 56,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.14782608695652175,
+          "cer": 0.0830860534124629
+        },
+        "clips": 5,
+        "minutes": 1.6666666666666667,
+        "failures": 0
+      },
+      "medium": {
+        "lexical": {
+          "S": 11,
+          "D": 5,
+          "I": 8,
+          "N": 115,
+          "H": 99,
+          "character_errors": 79,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.20869565217391303,
+          "cer": 0.1172106824925816
+        },
+        "canonical": {
+          "S": 11,
+          "D": 5,
+          "I": 8,
+          "N": 115,
+          "H": 99,
+          "character_errors": 79,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.20869565217391303,
+          "cer": 0.1172106824925816
+        },
+        "clips": 5,
+        "minutes": 1.6666666666666667,
+        "failures": 0
+      },
+      "medium_gate": {
+        "lexical": {
+          "S": 11,
+          "D": 5,
+          "I": 8,
+          "N": 115,
+          "H": 99,
+          "character_errors": 79,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.20869565217391303,
+          "cer": 0.1172106824925816
+        },
+        "canonical": {
+          "S": 11,
+          "D": 5,
+          "I": 8,
+          "N": 115,
+          "H": 99,
+          "character_errors": 79,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.20869565217391303,
+          "cer": 0.1172106824925816
+        },
+        "clips": 5,
+        "minutes": 1.6666666666666667,
+        "failures": 0
+      },
+      "atc": {
+        "lexical": {
+          "S": 21,
+          "D": 0,
+          "I": 79,
+          "N": 115,
+          "H": 94,
+          "character_errors": 737,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.8695652173913043,
+          "cer": 1.0934718100890208
+        },
+        "canonical": {
+          "S": 19,
+          "D": 0,
+          "I": 74,
+          "N": 115,
+          "H": 96,
+          "character_errors": 697,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.808695652173913,
+          "cer": 1.0341246290801187
+        },
+        "clips": 5,
+        "minutes": 1.6666666666666667,
+        "failures": 0
+      },
+      "atc_gate": {
+        "lexical": {
+          "S": 21,
+          "D": 0,
+          "I": 79,
+          "N": 115,
+          "H": 94,
+          "character_errors": 737,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.8695652173913043,
+          "cer": 1.0934718100890208
+        },
+        "canonical": {
+          "S": 19,
+          "D": 0,
+          "I": 74,
+          "N": 115,
+          "H": 96,
+          "character_errors": 697,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.808695652173913,
+          "cer": 1.0341246290801187
+        },
+        "clips": 5,
+        "minutes": 1.6666666666666667,
+        "failures": 0
+      }
+    },
+    "speaker_sm2": {
+      "small": {
+        "lexical": {
+          "S": 645,
+          "D": 507,
+          "I": 49,
+          "N": 1882,
+          "H": 730,
+          "character_errors": 4727,
+          "reference_characters": 10328,
+          "wer_lexical_corpus": 0.6381509032943677,
+          "cer": 0.4576878388845856
+        },
+        "canonical": {
+          "S": 338,
+          "D": 60,
+          "I": 212,
+          "N": 1256,
+          "H": 858,
+          "character_errors": 1207,
+          "reference_characters": 6953,
+          "wer_lexical_corpus": 0.4856687898089172,
+          "cer": 0.17359413202933985
+        },
+        "clips": 202,
+        "minutes": 12.106955208333337,
+        "failures": 0
+      },
+      "small_gate": {
+        "lexical": {
+          "S": 645,
+          "D": 507,
+          "I": 49,
+          "N": 1882,
+          "H": 730,
+          "character_errors": 4727,
+          "reference_characters": 10328,
+          "wer_lexical_corpus": 0.6381509032943677,
+          "cer": 0.4576878388845856
+        },
+        "canonical": {
+          "S": 338,
+          "D": 60,
+          "I": 212,
+          "N": 1256,
+          "H": 858,
+          "character_errors": 1207,
+          "reference_characters": 6953,
+          "wer_lexical_corpus": 0.4856687898089172,
+          "cer": 0.17359413202933985
+        },
+        "clips": 202,
+        "minutes": 12.106955208333337,
+        "failures": 0
+      },
+      "medium": {
+        "lexical": {
+          "S": 499,
+          "D": 608,
+          "I": 22,
+          "N": 1882,
+          "H": 775,
+          "character_errors": 4711,
+          "reference_characters": 10328,
+          "wer_lexical_corpus": 0.599893730074389,
+          "cer": 0.45613865220759103
+        },
+        "canonical": {
+          "S": 264,
+          "D": 108,
+          "I": 111,
+          "N": 1256,
+          "H": 884,
+          "character_errors": 1009,
+          "reference_characters": 6953,
+          "wer_lexical_corpus": 0.38455414012738853,
+          "cer": 0.14511721559039265
+        },
+        "clips": 202,
+        "minutes": 12.106955208333337,
+        "failures": 0
+      },
+      "medium_gate": {
+        "lexical": {
+          "S": 499,
+          "D": 608,
+          "I": 22,
+          "N": 1882,
+          "H": 775,
+          "character_errors": 4711,
+          "reference_characters": 10328,
+          "wer_lexical_corpus": 0.599893730074389,
+          "cer": 0.45613865220759103
+        },
+        "canonical": {
+          "S": 264,
+          "D": 108,
+          "I": 111,
+          "N": 1256,
+          "H": 884,
+          "character_errors": 1009,
+          "reference_characters": 6953,
+          "wer_lexical_corpus": 0.38455414012738853,
+          "cer": 0.14511721559039265
+        },
+        "clips": 202,
+        "minutes": 12.106955208333337,
+        "failures": 0
+      },
+      "atc": {
+        "lexical": {
+          "S": 110,
+          "D": 25,
+          "I": 57,
+          "N": 1882,
+          "H": 1747,
+          "character_errors": 588,
+          "reference_characters": 10328,
+          "wer_lexical_corpus": 0.10201912858660998,
+          "cer": 0.05693261037955073
+        },
+        "canonical": {
+          "S": 113,
+          "D": 24,
+          "I": 46,
+          "N": 1256,
+          "H": 1119,
+          "character_errors": 536,
+          "reference_characters": 6953,
+          "wer_lexical_corpus": 0.14570063694267515,
+          "cer": 0.07708902631957429
+        },
+        "clips": 202,
+        "minutes": 12.106955208333337,
+        "failures": 0
+      },
+      "atc_gate": {
+        "lexical": {
+          "S": 110,
+          "D": 25,
+          "I": 57,
+          "N": 1882,
+          "H": 1747,
+          "character_errors": 588,
+          "reference_characters": 10328,
+          "wer_lexical_corpus": 0.10201912858660998,
+          "cer": 0.05693261037955073
+        },
+        "canonical": {
+          "S": 113,
+          "D": 24,
+          "I": 46,
+          "N": 1256,
+          "H": 1119,
+          "character_errors": 536,
+          "reference_characters": 6953,
+          "wer_lexical_corpus": 0.14570063694267515,
+          "cer": 0.07708902631957429
+        },
+        "clips": 202,
+        "minutes": 12.106955208333337,
+        "failures": 0
+      }
+    },
+    "speaker_zf1": {
+      "small": {
+        "lexical": {
+          "S": 2490,
+          "D": 2570,
+          "I": 197,
+          "N": 7404,
+          "H": 2344,
+          "character_errors": 19986,
+          "reference_characters": 40673,
+          "wer_lexical_corpus": 0.7100216099405726,
+          "cer": 0.4913824896122735
+        },
+        "canonical": {
+          "S": 1356,
+          "D": 423,
+          "I": 580,
+          "N": 4824,
+          "H": 3045,
+          "character_errors": 4774,
+          "reference_characters": 27264,
+          "wer_lexical_corpus": 0.48901326699834163,
+          "cer": 0.17510269953051644
+        },
+        "clips": 641,
+        "minutes": 37.64849791666666,
+        "failures": 0
+      },
+      "small_gate": {
+        "lexical": {
+          "S": 2490,
+          "D": 2570,
+          "I": 197,
+          "N": 7404,
+          "H": 2344,
+          "character_errors": 19986,
+          "reference_characters": 40673,
+          "wer_lexical_corpus": 0.7100216099405726,
+          "cer": 0.4913824896122735
+        },
+        "canonical": {
+          "S": 1356,
+          "D": 423,
+          "I": 580,
+          "N": 4824,
+          "H": 3045,
+          "character_errors": 4774,
+          "reference_characters": 27264,
+          "wer_lexical_corpus": 0.48901326699834163,
+          "cer": 0.17510269953051644
+        },
+        "clips": 641,
+        "minutes": 37.64849791666666,
+        "failures": 0
+      },
+      "medium": {
+        "lexical": {
+          "S": 2294,
+          "D": 2571,
+          "I": 48,
+          "N": 7404,
+          "H": 2539,
+          "character_errors": 18888,
+          "reference_characters": 40673,
+          "wer_lexical_corpus": 0.6635602377093462,
+          "cer": 0.464386693875544
+        },
+        "canonical": {
+          "S": 1187,
+          "D": 462,
+          "I": 410,
+          "N": 4824,
+          "H": 3175,
+          "character_errors": 3737,
+          "reference_characters": 27264,
+          "wer_lexical_corpus": 0.4268242122719735,
+          "cer": 0.13706719483568075
+        },
+        "clips": 641,
+        "minutes": 37.64849791666666,
+        "failures": 0
+      },
+      "medium_gate": {
+        "lexical": {
+          "S": 2294,
+          "D": 2571,
+          "I": 48,
+          "N": 7404,
+          "H": 2539,
+          "character_errors": 18888,
+          "reference_characters": 40673,
+          "wer_lexical_corpus": 0.6635602377093462,
+          "cer": 0.464386693875544
+        },
+        "canonical": {
+          "S": 1187,
+          "D": 462,
+          "I": 410,
+          "N": 4824,
+          "H": 3175,
+          "character_errors": 3737,
+          "reference_characters": 27264,
+          "wer_lexical_corpus": 0.4268242122719735,
+          "cer": 0.13706719483568075
+        },
+        "clips": 641,
+        "minutes": 37.64849791666666,
+        "failures": 0
+      },
+      "atc": {
+        "lexical": {
+          "S": 547,
+          "D": 181,
+          "I": 108,
+          "N": 7404,
+          "H": 6676,
+          "character_errors": 2634,
+          "reference_characters": 40673,
+          "wer_lexical_corpus": 0.1129119394921664,
+          "cer": 0.0647604061662528
+        },
+        "canonical": {
+          "S": 553,
+          "D": 186,
+          "I": 95,
+          "N": 4824,
+          "H": 4085,
+          "character_errors": 2570,
+          "reference_characters": 27264,
+          "wer_lexical_corpus": 0.17288557213930347,
+          "cer": 0.09426349765258216
+        },
+        "clips": 641,
+        "minutes": 37.64849791666666,
+        "failures": 0
+      },
+      "atc_gate": {
+        "lexical": {
+          "S": 547,
+          "D": 181,
+          "I": 108,
+          "N": 7404,
+          "H": 6676,
+          "character_errors": 2634,
+          "reference_characters": 40673,
+          "wer_lexical_corpus": 0.1129119394921664,
+          "cer": 0.0647604061662528
+        },
+        "canonical": {
+          "S": 553,
+          "D": 186,
+          "I": 95,
+          "N": 4824,
+          "H": 4085,
+          "character_errors": 2570,
+          "reference_characters": 27264,
+          "wer_lexical_corpus": 0.17288557213930347,
+          "cer": 0.09426349765258216
+        },
+        "clips": 641,
+        "minutes": 37.64849791666666,
+        "failures": 0
+      }
+    },
+    "speaker_zf2": {
+      "small": {
+        "lexical": {
+          "S": 3147,
+          "D": 2448,
+          "I": 336,
+          "N": 8281,
+          "H": 2686,
+          "character_errors": 24026,
+          "reference_characters": 46803,
+          "wer_lexical_corpus": 0.71621784808598,
+          "cer": 0.5133431617631349
+        },
+        "canonical": {
+          "S": 1858,
+          "D": 353,
+          "I": 880,
+          "N": 5614,
+          "H": 3403,
+          "character_errors": 8620,
+          "reference_characters": 32865,
+          "wer_lexical_corpus": 0.5505878161738511,
+          "cer": 0.26228510573558494
+        },
+        "clips": 675,
+        "minutes": 45.5893177083333,
+        "failures": 0
+      },
+      "small_gate": {
+        "lexical": {
+          "S": 3147,
+          "D": 2448,
+          "I": 336,
+          "N": 8281,
+          "H": 2686,
+          "character_errors": 24026,
+          "reference_characters": 46803,
+          "wer_lexical_corpus": 0.71621784808598,
+          "cer": 0.5133431617631349
+        },
+        "canonical": {
+          "S": 1858,
+          "D": 353,
+          "I": 880,
+          "N": 5614,
+          "H": 3403,
+          "character_errors": 8620,
+          "reference_characters": 32865,
+          "wer_lexical_corpus": 0.5505878161738511,
+          "cer": 0.26228510573558494
+        },
+        "clips": 675,
+        "minutes": 45.5893177083333,
+        "failures": 0
+      },
+      "medium": {
+        "lexical": {
+          "S": 2546,
+          "D": 2391,
+          "I": 166,
+          "N": 8281,
+          "H": 3344,
+          "character_errors": 20577,
+          "reference_characters": 46803,
+          "wer_lexical_corpus": 0.6162299239222316,
+          "cer": 0.43965130440356387
+        },
+        "canonical": {
+          "S": 1465,
+          "D": 383,
+          "I": 578,
+          "N": 5614,
+          "H": 3766,
+          "character_errors": 5918,
+          "reference_characters": 32865,
+          "wer_lexical_corpus": 0.43213395083719275,
+          "cer": 0.18006998326487145
+        },
+        "clips": 675,
+        "minutes": 45.5893177083333,
+        "failures": 0
+      },
+      "medium_gate": {
+        "lexical": {
+          "S": 2546,
+          "D": 2391,
+          "I": 166,
+          "N": 8281,
+          "H": 3344,
+          "character_errors": 20577,
+          "reference_characters": 46803,
+          "wer_lexical_corpus": 0.6162299239222316,
+          "cer": 0.43965130440356387
+        },
+        "canonical": {
+          "S": 1465,
+          "D": 383,
+          "I": 578,
+          "N": 5614,
+          "H": 3766,
+          "character_errors": 5918,
+          "reference_characters": 32865,
+          "wer_lexical_corpus": 0.43213395083719275,
+          "cer": 0.18006998326487145
+        },
+        "clips": 675,
+        "minutes": 45.5893177083333,
+        "failures": 0
+      },
+      "atc": {
+        "lexical": {
+          "S": 781,
+          "D": 120,
+          "I": 229,
+          "N": 8281,
+          "H": 7380,
+          "character_errors": 3800,
+          "reference_characters": 46803,
+          "wer_lexical_corpus": 0.13645694964376284,
+          "cer": 0.08119137662115676
+        },
+        "canonical": {
+          "S": 799,
+          "D": 138,
+          "I": 209,
+          "N": 5614,
+          "H": 4677,
+          "character_errors": 3748,
+          "reference_characters": 32865,
+          "wer_lexical_corpus": 0.20413252582828642,
+          "cer": 0.11404229423398753
+        },
+        "clips": 675,
+        "minutes": 45.5893177083333,
+        "failures": 0
+      },
+      "atc_gate": {
+        "lexical": {
+          "S": 781,
+          "D": 120,
+          "I": 229,
+          "N": 8281,
+          "H": 7380,
+          "character_errors": 3800,
+          "reference_characters": 46803,
+          "wer_lexical_corpus": 0.13645694964376284,
+          "cer": 0.08119137662115676
+        },
+        "canonical": {
+          "S": 799,
+          "D": 138,
+          "I": 209,
+          "N": 5614,
+          "H": 4677,
+          "character_errors": 3748,
+          "reference_characters": 32865,
+          "wer_lexical_corpus": 0.20413252582828642,
+          "cer": 0.11404229423398753
+        },
+        "clips": 675,
+        "minutes": 45.5893177083333,
+        "failures": 0
+      }
+    },
+    "speaker_zf3": {
+      "small": {
+        "lexical": {
+          "S": 1766,
+          "D": 1368,
+          "I": 250,
+          "N": 5075,
+          "H": 1941,
+          "character_errors": 13950,
+          "reference_characters": 29052,
+          "wer_lexical_corpus": 0.6667980295566502,
+          "cer": 0.4801734820322181
+        },
+        "canonical": {
+          "S": 1004,
+          "D": 209,
+          "I": 475,
+          "N": 3551,
+          "H": 2338,
+          "character_errors": 4657,
+          "reference_characters": 21020,
+          "wer_lexical_corpus": 0.47535905378766546,
+          "cer": 0.22155090390104662
+        },
+        "clips": 383,
+        "minutes": 27.39297499999999,
+        "failures": 0
+      },
+      "small_gate": {
+        "lexical": {
+          "S": 1766,
+          "D": 1368,
+          "I": 250,
+          "N": 5075,
+          "H": 1941,
+          "character_errors": 13950,
+          "reference_characters": 29052,
+          "wer_lexical_corpus": 0.6667980295566502,
+          "cer": 0.4801734820322181
+        },
+        "canonical": {
+          "S": 1004,
+          "D": 209,
+          "I": 475,
+          "N": 3551,
+          "H": 2338,
+          "character_errors": 4657,
+          "reference_characters": 21020,
+          "wer_lexical_corpus": 0.47535905378766546,
+          "cer": 0.22155090390104662
+        },
+        "clips": 383,
+        "minutes": 27.39297499999999,
+        "failures": 0
+      },
+      "medium": {
+        "lexical": {
+          "S": 1409,
+          "D": 1515,
+          "I": 97,
+          "N": 5075,
+          "H": 2151,
+          "character_errors": 12568,
+          "reference_characters": 29052,
+          "wer_lexical_corpus": 0.5952709359605911,
+          "cer": 0.4326036073247969
+        },
+        "canonical": {
+          "S": 781,
+          "D": 265,
+          "I": 328,
+          "N": 3551,
+          "H": 2505,
+          "character_errors": 3443,
+          "reference_characters": 21020,
+          "wer_lexical_corpus": 0.38693325823711633,
+          "cer": 0.1637963843958135
+        },
+        "clips": 383,
+        "minutes": 27.39297499999999,
+        "failures": 0
+      },
+      "medium_gate": {
+        "lexical": {
+          "S": 1409,
+          "D": 1515,
+          "I": 97,
+          "N": 5075,
+          "H": 2151,
+          "character_errors": 12568,
+          "reference_characters": 29052,
+          "wer_lexical_corpus": 0.5952709359605911,
+          "cer": 0.4326036073247969
+        },
+        "canonical": {
+          "S": 781,
+          "D": 265,
+          "I": 328,
+          "N": 3551,
+          "H": 2505,
+          "character_errors": 3443,
+          "reference_characters": 21020,
+          "wer_lexical_corpus": 0.38693325823711633,
+          "cer": 0.1637963843958135
+        },
+        "clips": 383,
+        "minutes": 27.39297499999999,
+        "failures": 0
+      },
+      "atc": {
+        "lexical": {
+          "S": 378,
+          "D": 52,
+          "I": 153,
+          "N": 5075,
+          "H": 4645,
+          "character_errors": 1653,
+          "reference_characters": 29052,
+          "wer_lexical_corpus": 0.11487684729064039,
+          "cer": 0.05689797604295745
+        },
+        "canonical": {
+          "S": 384,
+          "D": 60,
+          "I": 133,
+          "N": 3551,
+          "H": 3107,
+          "character_errors": 1639,
+          "reference_characters": 21020,
+          "wer_lexical_corpus": 0.16248943959448042,
+          "cer": 0.0779733587059943
+        },
+        "clips": 383,
+        "minutes": 27.39297499999999,
+        "failures": 0
+      },
+      "atc_gate": {
+        "lexical": {
+          "S": 378,
+          "D": 52,
+          "I": 153,
+          "N": 5075,
+          "H": 4645,
+          "character_errors": 1653,
+          "reference_characters": 29052,
+          "wer_lexical_corpus": 0.11487684729064039,
+          "cer": 0.05689797604295745
+        },
+        "canonical": {
+          "S": 384,
+          "D": 60,
+          "I": 133,
+          "N": 3551,
+          "H": 3107,
+          "character_errors": 1639,
+          "reference_characters": 21020,
+          "wer_lexical_corpus": 0.16248943959448042,
+          "cer": 0.0779733587059943
+        },
+        "clips": 383,
+        "minutes": 27.39297499999999,
+        "failures": 0
+      }
+    }
+  },
+  "decision": {
+    "quality": true,
+    "gate": true,
+    "selected": "atc_gate"
+  },
+  "speaker_bootstrap": {
+    "atc_vs_small_lexical": {
+      "lower": -0.5923466423175895,
+      "upper": -0.5476498490728763,
+      "method": "paired_cluster_bootstrap",
+      "seed": 55,
+      "resamples": 2000,
+      "confidence_level": 0.95,
+      "independent_groups": 4,
+      "delta_definition": "candidate - baseline",
+      "valid_resamples": 2000,
+      "system_intervals": {
+        "baseline": {
+          "lower": 0.6590484404197211,
+          "upper": 0.713292955052598
+        },
+        "candidate": {
+          "lower": 0.1081992337164751,
+          "upper": 0.1327963099137643
+        }
+      }
+    },
+    "atc_vs_small_canonical": {
+      "lower": -0.3452692867540029,
+      "upper": -0.3147462686567164,
+      "method": "paired_cluster_bootstrap",
+      "seed": 55,
+      "resamples": 2000,
+      "confidence_level": 0.95,
+      "independent_groups": 4,
+      "delta_definition": "candidate - baseline",
+      "valid_resamples": 2000,
+      "system_intervals": {
+        "baseline": {
+          "lower": 0.47805283960890366,
+          "upper": 0.5387190684133916
+        },
+        "candidate": {
+          "lower": 0.15810276679841898,
+          "upper": 0.19717529770146774
+        }
+      }
+    },
+    "atc_vs_medium_lexical": {
+      "lower": -0.5399526168425587,
+      "upper": -0.48000898472596587,
+      "method": "paired_cluster_bootstrap",
+      "seed": 55,
+      "resamples": 2000,
+      "confidence_level": 0.95,
+      "independent_groups": 4,
+      "delta_definition": "candidate - baseline",
+      "valid_resamples": 2000,
+      "system_intervals": {
+        "baseline": {
+          "lower": 0.5965214891476212,
+          "upper": 0.650859383589255
+        },
+        "candidate": {
+          "lower": 0.1081992337164751,
+          "upper": 0.1327963099137643
+        }
+      }
+    },
+    "atc_vs_medium_canonical": {
+      "lower": -0.25082236842105265,
+      "upper": -0.22596355697371737,
+      "method": "paired_cluster_bootstrap",
+      "seed": 55,
+      "resamples": 2000,
+      "confidence_level": 0.95,
+      "independent_groups": 4,
+      "delta_definition": "candidate - baseline",
+      "valid_resamples": 2000,
+      "system_intervals": {
+        "baseline": {
+          "lower": 0.38631162887455794,
+          "upper": 0.429680015328607
+        },
+        "candidate": {
+          "lower": 0.15810276679841898,
+          "upper": 0.19717529770146774
+        }
+      }
+    }
+  },
+  "primary_scope": "ATCOSIM simulated controller English",
+  "full_spec_gate": "NEEDS_MORE_DATA",
+  "runtime_failures": {
+    "small": [],
+    "small_gate": [],
+    "medium": [],
+    "medium_gate": [],
+    "atc": [],
+    "atc_gate": []
+  }
+}

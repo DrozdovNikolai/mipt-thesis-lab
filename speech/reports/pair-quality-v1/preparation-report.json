@@ -1,0 +1,73 @@
+{
+  "status": "NEEDS_MORE_DATA",
+  "plan_sha256": "8ddc80ed93f2a7be0a399737dcfb0f8a85aa613110f9b06546a19ebeade3a3b5",
+  "policy": {
+    "version": "publisher_pause_consensus_v1",
+    "train_only": true,
+    "target_min_seconds": 8,
+    "maximum_span_seconds": 24,
+    "maximum_joined_pause_seconds": 2,
+    "padding_seconds": 0.2,
+    "minimum_words": 8,
+    "boundary_margin_seconds": 0.08,
+    "minimum_word_probability": 0.35,
+    "small_language": "en",
+    "large_language": "auto",
+    "require_large_detected_language": "en",
+    "require_exact_lexical_three_way_agreement": true,
+    "old_alignment_thresholds_unchanged": true,
+    "human_verified": false,
+    "quality_evidence": false,
+    "release_promoted": false
+  },
+  "assembler_sha256": "0fba5a82ee34ec76b802ffae507a03782e486ddb6727ccadcffd6a353cec0f1d",
+  "considered_train_windows": 675,
+  "accepted_train_pairs": 0,
+  "accepted_minutes": 0.0,
+  "accepted_speakers": 0,
+  "old_train_pairs": 33,
+  "old_train_minutes": 11.0,
+  "unchanged_dev_pairs": 35,
+  "dev_sha256": "76fbf9ba6c29f31aeeff27d0cf0013638a76ab95e3d6a21b2d62f88a4e5384f6",
+  "groups": {
+    "independent_groups": 2,
+    "split_groups": {
+      "train": 0,
+      "dev": 2,
+      "test": 0
+    },
+    "unknown_speakers": 0,
+    "script_overlap": {},
+    "claim_limitation": null
+  },
+  "rejection_reasons": {
+    "large_unforced_language_not_english": 479,
+    "lexical_disagreement": 663,
+    "small_word_at_clip_boundary": 659,
+    "small_low_word_score": 368,
+    "large_word_at_clip_boundary": 535,
+    "large_low_word_score": 420,
+    "large_invalid_word_times": 133,
+    "insufficient_words": 74,
+    "numeric_disagreement": 230,
+    "small_invalid_word_times": 7
+  },
+  "asr_calls": 1350,
+  "asr_failures": {
+    "small": 0,
+    "large": 0
+  },
+  "true_pair_accuracy": null,
+  "human_verified_pairs": 0,
+  "quality_gate": "NEEDS_MORE_DATA",
+  "training_comparison": "BLOCKED_SEARCH_BUDGET_EXHAUSTED",
+  "test_accessed": false,
+  "release_promoted": false,
+  "limitations": [
+    "Consensus is a filter, not human verification or calibrated reliability.",
+    "Both recognizers belong to the Whisper family and can share errors.",
+    "Pause and word-margin checks cannot guarantee complete audible words.",
+    "English publisher family is not human-verified language/scope.",
+    "Clean originals only; no copied targets for noisy variants or dev-to-train moves."
+  ]
+}

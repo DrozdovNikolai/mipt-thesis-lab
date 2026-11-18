@@ -1,0 +1,167 @@
+{
+  "checked_at": "2026-09-14T12:48:07.827892+00:00",
+  "purpose": "metadata_discovery",
+  "audio_imported": false,
+  "messages_sent": false,
+  "purchases_made": false,
+  "records": [
+    {
+      "id": "boeing-aviation-ner-BIO-card",
+      "url": "https://huggingface.co/datasets/boeing/aviation-ner-BIO/raw/36832b83a85b15936b6f2dd15c7cd886194a9535/README.md",
+      "checked_at": "2026-09-14T12:48:06.122286+00:00",
+      "status": 200,
+      "bytes": 24,
+      "final_url": "https://huggingface.co/datasets/boeing/aviation-ner-BIO/raw/36832b83a85b15936b6f2dd15c7cd886194a9535/README.md",
+      "content_type": "text/plain; charset=utf-8",
+      "sha256": "d8d7a46d41a1a37fe4f0a5f637bf55c649310185329127d8a2204632e480be17"
+    },
+    {
+      "id": "boeing-aviation-ner-BIO-api",
+      "url": "https://huggingface.co/api/datasets/boeing/aviation-ner-BIO/revision/36832b83a85b15936b6f2dd15c7cd886194a9535",
+      "checked_at": "2026-09-14T12:48:06.122834+00:00",
+      "status": 200,
+      "bytes": 508,
+      "final_url": "https://huggingface.co/api/datasets/boeing/aviation-ner-BIO/revision/36832b83a85b15936b6f2dd15c7cd886194a9535",
+      "content_type": "application/json; charset=utf-8",
+      "sha256": "361b3e9040c3a7182a6b7f864d7776c36782c9fbc300dfd6d1e9d6abb16265ad"
+    },
+    {
+      "id": "aether-raid-sg-aviation-clean-card",
+      "url": "https://huggingface.co/datasets/aether-raid/sg-aviation-clean/raw/a8e821ec98df126bfba17906566e16a004af83e5/README.md",
+      "checked_at": "2026-09-14T12:48:06.123210+00:00",
+      "status": 401,
+      "error": "HTTPError: HTTP Error 401: Unauthorized"
+    },
+    {
+      "id": "aether-raid-sg-aviation-clean-api",
+      "url": "https://huggingface.co/api/datasets/aether-raid/sg-aviation-clean/revision/a8e821ec98df126bfba17906566e16a004af83e5",
+      "checked_at": "2026-09-14T12:48:06.123545+00:00",
+      "status": 200,
+      "bytes": 2248,
+      "final_url": "https://huggingface.co/api/datasets/aether-raid/sg-aviation-clean/revision/a8e821ec98df126bfba17906566e16a004af83e5",
+      "content_type": "application/json; charset=utf-8",
+      "sha256": "a3f6e6fd871c40943b56336199aef7662d1264fc53a8c6b49909fc3a0bbb575b"
+    },
+    {
+      "id": "aether-raid-sg-aviation-el-combined-card",
+      "url": "https://huggingface.co/datasets/aether-raid/sg-aviation-el-combined/raw/2bc4467911740e62e0950d168b8ed1d10b495a73/README.md",
+      "checked_at": "2026-09-14T12:48:06.555575+00:00",
+      "status": 401,
+      "error": "HTTPError: HTTP Error 401: Unauthorized"
+    },
+    {
+      "id": "aether-raid-sg-aviation-el-combined-api",
+      "url": "https://huggingface.co/api/datasets/aether-raid/sg-aviation-el-combined/revision/2bc4467911740e62e0950d168b8ed1d10b495a73",
+      "checked_at": "2026-09-14T12:48:06.597668+00:00",
+      "status": 200,
+      "bytes": 1015,
+      "final_url": "https://huggingface.co/api/datasets/aether-raid/sg-aviation-el-combined/revision/2bc4467911740e62e0950d168b8ed1d10b495a73",
+      "content_type": "application/json; charset=utf-8",
+      "sha256": "95f9378910048e14e118d999f5be3c65da2182027f576150aa7ad18d426fbde9"
+    },
+    {
+      "id": "meghtedari-AviationRadio-card",
+      "url": "https://huggingface.co/datasets/meghtedari/AviationRadio/raw/a95a25e979ec8dec41315d64182164a3f1639460/README.md",
+      "checked_at": "2026-09-14T12:48:06.649479+00:00",
+      "status": 200,
+      "bytes": 23,
+      "final_url": "https://huggingface.co/datasets/meghtedari/AviationRadio/raw/a95a25e979ec8dec41315d64182164a3f1639460/README.md",
+      "content_type": "text/plain; charset=utf-8",
+      "sha256": "5cd90383fd9b88cdd9481555d2576cfa76d216de0eb2530b680dd649bce822d6"
+    },
+    {
+      "id": "meghtedari-AviationRadio-api",
+      "url": "https://huggingface.co/api/datasets/meghtedari/AviationRadio/revision/a95a25e979ec8dec41315d64182164a3f1639460",
+      "checked_at": "2026-09-14T12:48:06.717598+00:00",
+      "status": 200,
+      "bytes": 8232,
+      "final_url": "https://huggingface.co/api/datasets/meghtedari/AviationRadio/revision/a95a25e979ec8dec41315d64182164a3f1639460",
+      "content_type": "application/json; charset=utf-8",
+      "sha256": "1e180db3d2771d4b4ca29ddaa17f34f4c8699a25719c8b1f1716be84fed8ebb1"
+    },
+    {
+      "id": "sophiaechavez2247-cockpit-card",
+      "url": "https://huggingface.co/datasets/sophiaechavez2247/cockpit/raw/d489a0f316fad703da0bcb2c08148f4bb2612daa/README.md",
+      "checked_at": "2026-09-14T12:48:06.906485+00:00",
+      "status": 404,
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "id": "sophiaechavez2247-cockpit-api",
+      "url": "https://huggingface.co/api/datasets/sophiaechavez2247/cockpit/revision/d489a0f316fad703da0bcb2c08148f4bb2612daa",
+      "checked_at": "2026-09-14T12:48:06.919148+00:00",
+      "status": 200,
+      "bytes": 378,
+      "final_url": "https://huggingface.co/api/datasets/sophiaechavez2247/cockpit/revision/d489a0f316fad703da0bcb2c08148f4bb2612daa",
+      "content_type": "application/json; charset=utf-8",
+      "sha256": "8a4934a2c172d62e67e5dba65cbd5fbbd4b44120bc6a6ab30543cf37bee7dbf2"
+    },
+    {
+      "id": "Susasmx-Susas-card",
+      "url": "https://huggingface.co/datasets/Susasmx/Susas/raw/1270d8dafc8232a40bb382b5e4524eea58009cd3/README.md",
+      "checked_at": "2026-09-14T12:48:06.955545+00:00",
+      "status": 404,
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "id": "Susasmx-Susas-api",
+      "url": "https://huggingface.co/api/datasets/Susasmx/Susas/revision/1270d8dafc8232a40bb382b5e4524eea58009cd3",
+      "checked_at": "2026-09-14T12:48:07.048642+00:00",
+      "status": 200,
+      "bytes": 356,
+      "final_url": "https://huggingface.co/api/datasets/Susasmx/Susas/revision/1270d8dafc8232a40bb382b5e4524eea58009cd3",
+      "content_type": "application/json; charset=utf-8",
+      "sha256": "34039429572d8772d666b2e4f65a8094dacd029b8d5872e9a3acf0f56908c530"
+    },
+    {
+      "id": "vr-readme",
+      "url": "https://raw.githubusercontent.com/wangyubo013-blip/CDE4301-VR-401-Final-Report/0c520edbcd345cb9005cc77c3345eedbfef7147b/README.md",
+      "checked_at": "2026-09-14T12:48:07.195055+00:00",
+      "status": 200,
+      "bytes": 2777,
+      "final_url": "https://raw.githubusercontent.com/wangyubo013-blip/CDE4301-VR-401-Final-Report/0c520edbcd345cb9005cc77c3345eedbfef7147b/README.md",
+      "content_type": "text/plain; charset=utf-8",
+      "sha256": "e6d65e9f0e84830c73a74d651ba38119e4bef50748d615460e0cac5e96774d2d"
+    },
+    {
+      "id": "vr-recording-link",
+      "url": "https://raw.githubusercontent.com/wangyubo013-blip/CDE4301-VR-401-Final-Report/0c520edbcd345cb9005cc77c3345eedbfef7147b/Scripts/Workstream2_PhysiologicalSensors/real-world_VR_training_data/link_of_recording_for_VR_training",
+      "checked_at": "2026-09-14T12:48:07.233832+00:00",
+      "status": 200,
+      "bytes": 90,
+      "final_url": "https://raw.githubusercontent.com/wangyubo013-blip/CDE4301-VR-401-Final-Report/0c520edbcd345cb9005cc77c3345eedbfef7147b/Scripts/Workstream2_PhysiologicalSensors/real-world_VR_training_data/link_of_recording_for_VR_training",
+      "content_type": "text/plain; charset=utf-8",
+      "sha256": "d5aa837c908c605e5423d63df69b3a6ddf5071bc591bd63a06ede4b3f20bb0e3"
+    },
+    {
+      "id": "hf-asr-pilot",
+      "url": "https://huggingface.co/api/datasets?search=pilot&filter=task_categories%3Aautomatic-speech-recognition&limit=100&full=true",
+      "checked_at": "2026-09-14T12:48:07.245051+00:00",
+      "status": 200,
+      "bytes": 3487,
+      "final_url": "https://huggingface.co/api/datasets?search=pilot&filter=task_categories%3Aautomatic-speech-recognition&limit=100&full=true",
+      "content_type": "application/json; charset=utf-8",
+      "sha256": "e1d30fd37346f7f7c1345cade950812b963c2328064e237173aafbf58987a2bd"
+    },
+    {
+      "id": "hf-asr-flight",
+      "url": "https://huggingface.co/api/datasets?search=flight&filter=task_categories%3Aautomatic-speech-recognition&limit=100&full=true",
+      "checked_at": "2026-09-14T12:48:07.497488+00:00",
+      "status": 200,
+      "bytes": 2,
+      "final_url": "https://huggingface.co/api/datasets?search=flight&filter=task_categories%3Aautomatic-speech-recognition&limit=100&full=true",
+      "content_type": "application/json; charset=utf-8",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "id": "hf-asr-checklist",
+      "url": "https://huggingface.co/api/datasets?search=checklist&filter=task_categories%3Aautomatic-speech-recognition&limit=100&full=true",
+      "checked_at": "2026-09-14T12:48:07.529314+00:00",
+      "status": 200,
+      "bytes": 2,
+      "final_url": "https://huggingface.co/api/datasets?search=checklist&filter=task_categories%3Aautomatic-speech-recognition&limit=100&full=true",
+      "content_type": "application/json; charset=utf-8",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  ]
+}

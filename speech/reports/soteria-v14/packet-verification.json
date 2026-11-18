@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "clips": 358,
+  "all_crops_equal_source_samples": true,
+  "all_vad_intervals_covered_once": true,
+  "crew_split_disjoint": true,
+  "speaker_split_independence": "unverified_shared_actors",
+  "base_human_labels": 0,
+  "test_accessed": false
+}

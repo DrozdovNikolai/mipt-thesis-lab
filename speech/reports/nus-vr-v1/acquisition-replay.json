@@ -1,0 +1,126 @@
+{
+  "checked_at": "2026-09-14T14:09:27.061747+00:00",
+  "repository": "wangyubo013-blip/CDE4301-VR-401-Final-Report",
+  "revision": "0c520edbcd345cb9005cc77c3345eedbfef7147b",
+  "tree_sha256": "7736cda99d176bc603de74514cbd4a98560b64a772900193b5437b0334e90f1f",
+  "purpose": "user_requested_public_payload_inspection",
+  "admission": "QUARANTINE_RIGHTS_NOT_ESTABLISHED",
+  "reuse_permission_verified": false,
+  "training_executed": false,
+  "inference_executed": false,
+  "benchmark_admitted": false,
+  "files": [
+    {
+      "name": "CombinedSamples_01_03_04_05_06_07.parquet",
+      "source_path": "faster_whisper/whisper_training/CombinedSamples_01_03_04_05_06_07.parquet",
+      "url": "https://raw.githubusercontent.com/wangyubo013-blip/CDE4301-VR-401-Final-Report/0c520edbcd345cb9005cc77c3345eedbfef7147b/faster_whisper/whisper_training/CombinedSamples_01_03_04_05_06_07.parquet",
+      "bytes": 12835578,
+      "git_blob": "17f05ccc0aaeeed59593d980a0bc6a0117f32ea8",
+      "sha256": "61bfb8469036898875aedfae37e0d851f415cb2e530fc4350f0d43aae5e47c25",
+      "local_path": "data/quarantine/nus-vr-v1/CombinedSamples_01_03_04_05_06_07.parquet",
+      "reused": true,
+      "verified": true
+    },
+    {
+      "name": "Sample01(1).parquet",
+      "source_path": "faster_whisper/whisper_training/Sample01(1).parquet",
+      "url": "https://raw.githubusercontent.com/wangyubo013-blip/CDE4301-VR-401-Final-Report/0c520edbcd345cb9005cc77c3345eedbfef7147b/faster_whisper/whisper_training/Sample01%281%29.parquet",
+      "bytes": 1705624,
+      "git_blob": "f38e1a33beed317d68a62dd86e546641a7198bd6",
+      "sha256": "73bab081e5c5fc8600cd52f96bde9a26a68e6485784f42598836465aea2efe88",
+      "local_path": "data/quarantine/nus-vr-v1/Sample01(1).parquet",
+      "reused": true,
+      "verified": true
+    },
+    {
+      "name": "Sample01.parquet",
+      "source_path": "faster_whisper/whisper_training/Sample01.parquet",
+      "url": "https://raw.githubusercontent.com/wangyubo013-blip/CDE4301-VR-401-Final-Report/0c520edbcd345cb9005cc77c3345eedbfef7147b/faster_whisper/whisper_training/Sample01.parquet",
+      "bytes": 1705625,
+      "git_blob": "9c13bb04d9e9c632f9edd67b3c1c65a72f02363d",
+      "sha256": "5d0ce73be65f9bb01f97787a6fb424e8aeeaf90c8b2de5b84b10ecf552ca03b7",
+      "local_path": "data/quarantine/nus-vr-v1/Sample01.parquet",
+      "reused": true,
+      "verified": true
+    },
+    {
+      "name": "Sample02(1).parquet",
+      "source_path": "faster_whisper/whisper_training/Sample02(1).parquet",
+      "url": "https://raw.githubusercontent.com/wangyubo013-blip/CDE4301-VR-401-Final-Report/0c520edbcd345cb9005cc77c3345eedbfef7147b/faster_whisper/whisper_training/Sample02%281%29.parquet",
+      "bytes": 3631864,
+      "git_blob": "40302341f457d3930d3780669ecf7ddb2dfeb2cf",
+      "sha256": "4d8653bfe8577c06db8969657b86fbab6c346433f4b5844ffd22c3cc40514759",
+      "local_path": "data/quarantine/nus-vr-v1/Sample02(1).parquet",
+      "reused": true,
+      "verified": true
+    },
+    {
+      "name": "Sample02.parquet",
+      "source_path": "faster_whisper/whisper_training/Sample02.parquet",
+      "url": "https://raw.githubusercontent.com/wangyubo013-blip/CDE4301-VR-401-Final-Report/0c520edbcd345cb9005cc77c3345eedbfef7147b/faster_whisper/whisper_training/Sample02.parquet",
+      "bytes": 3631865,
+      "git_blob": "6e5670b95eec85ef01adb1f2552b57949dcc2438",
+      "sha256": "5245f80e97f2d990860cae9911426956122e2c3ec6ff6540572d5cca8c170afb",
+      "local_path": "data/quarantine/nus-vr-v1/Sample02.parquet",
+      "reused": true,
+      "verified": true
+    },
+    {
+      "name": "Sample03.parquet",
+      "source_path": "faster_whisper/whisper_training/Sample03.parquet",
+      "url": "https://raw.githubusercontent.com/wangyubo013-blip/CDE4301-VR-401-Final-Report/0c520edbcd345cb9005cc77c3345eedbfef7147b/faster_whisper/whisper_training/Sample03.parquet",
+      "bytes": 1959443,
+      "git_blob": "913c138a33eab5358b4ef8085edc721fdca7df93",
+      "sha256": "e199f473683bab5ae64670ae1246564bb4dc3820c421ba55a84dc736902a3089",
+      "local_path": "data/quarantine/nus-vr-v1/Sample03.parquet",
+      "reused": true,
+      "verified": true
+    },
+    {
+      "name": "Sample04.parquet",
+      "source_path": "faster_whisper/whisper_training/Sample04.parquet",
+      "url": "https://raw.githubusercontent.com/wangyubo013-blip/CDE4301-VR-401-Final-Report/0c520edbcd345cb9005cc77c3345eedbfef7147b/faster_whisper/whisper_training/Sample04.parquet",
+      "bytes": 1857448,
+      "git_blob": "a6922632371cd85be4b15f46a9adc3d4be629ca5",
+      "sha256": "80b1f46eac1ddcc23bd06fc83db9ebb81102a97968cd6babfee214b8055bae6f",
+      "local_path": "data/quarantine/nus-vr-v1/Sample04.parquet",
+      "reused": true,
+      "verified": true
+    },
+    {
+      "name": "Sample05.parquet",
+      "source_path": "faster_whisper/whisper_training/Sample05.parquet",
+      "url": "https://raw.githubusercontent.com/wangyubo013-blip/CDE4301-VR-401-Final-Report/0c520edbcd345cb9005cc77c3345eedbfef7147b/faster_whisper/whisper_training/Sample05.parquet",
+      "bytes": 2915094,
+      "git_blob": "dd817c32df8159f3351c0b5036f120734eef6822",
+      "sha256": "cd0110c0fe75fcdbc6ea813d616cd4f52c4691545bc40035ccf517647f3a52cc",
+      "local_path": "data/quarantine/nus-vr-v1/Sample05.parquet",
+      "reused": true,
+      "verified": true
+    },
+    {
+      "name": "Sample06.parquet",
+      "source_path": "faster_whisper/whisper_training/Sample06.parquet",
+      "url": "https://raw.githubusercontent.com/wangyubo013-blip/CDE4301-VR-401-Final-Report/0c520edbcd345cb9005cc77c3345eedbfef7147b/faster_whisper/whisper_training/Sample06.parquet",
+      "bytes": 1786304,
+      "git_blob": "172d7f4714175dde9383e7063c4f49ae7db35edf",
+      "sha256": "f0308591fb9f9d009cf656d8bdf016d89b54dc826ee8af4ccade0fb0c18770b6",
+      "local_path": "data/quarantine/nus-vr-v1/Sample06.parquet",
+      "reused": true,
+      "verified": true
+    },
+    {
+      "name": "Sample07.parquet",
+      "source_path": "faster_whisper/whisper_training/Sample07.parquet",
+      "url": "https://raw.githubusercontent.com/wangyubo013-blip/CDE4301-VR-401-Final-Report/0c520edbcd345cb9005cc77c3345eedbfef7147b/faster_whisper/whisper_training/Sample07.parquet",
+      "bytes": 2602598,
+      "git_blob": "f51d97274e525142f68b96e7741fe43fe0db4c5d",
+      "sha256": "06ac29c9cf7523f01831fd762f53df5371cbe96e5392d889dd13e27a36c65a1c",
+      "local_path": "data/quarantine/nus-vr-v1/Sample07.parquet",
+      "reused": true,
+      "verified": true
+    }
+  ],
+  "total_bytes": 34631443,
+  "retrieval_status": "PASS"
+}

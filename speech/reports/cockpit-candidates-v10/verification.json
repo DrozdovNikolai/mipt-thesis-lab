@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "plan_sha256": "3412cf06a3916ca5f6be201a273d00865c477d9748e0e00c7c22ba52db9a310f",
+  "original_waveforms_and_VAD_checked": 491,
+  "decisions_checked": 541,
+  "independent_edit_totals": 6492,
+  "denoised_waves_checked": 56,
+  "denoiser_replays_exact": 3,
+  "new_GPU_ASR_calls": 547,
+  "verifier_sha256": "ba25ed3df85c23f02390e10d093770cf3d058d2f446753444d3bf61f323198af"
+}

@@ -1,0 +1,13 @@
+{
+  "file": "Recording 6_low_freq_boost_remove_speech_2_WoodPk_reinsert_16b.wav",
+  "sample_rate": 48000,
+  "channels": 1,
+  "duration_sec": 3016.8359791666667,
+  "subtype": "PCM_16",
+  "origin": "noise_recording_processed_by_publisher",
+  "noise_session_id": "VOICI_TRH_OSL_2018_09_13",
+  "assigned_usage": "train_dev_only",
+  "test_usage": false,
+  "speech_review": "PENDING",
+  "license_id": "CC-BY-SA-4.0"
+}

@@ -1,0 +1,40 @@
+dev_manifest: /data/train-dev/dev.jsonl
+partition_proof: /data/protocol/partition-proof.json
+baseline: configs/baseline.yaml
+acceptance: configs/acceptance.yaml
+max_configurations: 16
+selection_policy: guardrails_then_lexical_wer_then_rtf_then_stage_count
+trials:
+  - id: A0
+    overrides: {}
+  - id: A1
+    overrides:
+      vad: {enabled: true, threshold: 0.5, min_speech_duration_ms: 100, min_silence_duration_ms: 400, speech_pad_ms: 200, max_speech_duration_s: 30}
+  - id: A2
+    overrides:
+      vad: {enabled: true}
+      hotwords: checklist, flaps, landing gear, autopilot, go-around, briefing, crosscheck
+      glossary_version: glossary_en_v1
+  - id: A3
+    overrides:
+      vad: {enabled: true}
+      hotwords: checklist, flaps, landing gear, autopilot, go-around, briefing, crosscheck
+      glossary_version: glossary_en_v1
+      denoise: {enabled: true}
+  - id: A4
+    overrides:
+      vad: {enabled: true}
+      hotwords: checklist, flaps, landing gear, autopilot, go-around, briefing, crosscheck
+      glossary_version: glossary_en_v1
+      denoise: {enabled: true}
+      redecode: true
+  - id: VAD_SHORT
+    overrides:
+      vad: {enabled: true, threshold: 0.4, min_speech_duration_ms: 50, min_silence_duration_ms: 250, speech_pad_ms: 250, max_speech_duration_s: 20}
+  - id: HINTS_ONLY
+    overrides:
+      hotwords: checklist, flaps, landing gear, autopilot, go-around, briefing, crosscheck
+      glossary_version: glossary_en_v1
+  - id: DENOISE_ONLY
+    overrides:
+      denoise: {enabled: true, strength: 0.3}

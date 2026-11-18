@@ -1,0 +1,256 @@
+{
+  "driver_sha256": "a65d9d119f5c918ce32124b03bfaa2a79f16f63f241eb918e68d15364d493662",
+  "code_sha256": "bcada67fe2cfe40514eee9e1d144e30d042bf1bbcb43b9068ec24d410a4a9655",
+  "scorer_sha256": "12d299fc3407caf6f82a2e4c3c3e0d1443b5d065a95ffbf0b5fcc01731421084",
+  "vad_weights_sha256": "4cbf549b8326f60f80f2536d9eefeb450a9abe83365a098031c89719f1be17d2",
+  "acceptance_sha256": "32d35b1e80b64f38e6adcc9895515b37f224a9e51dcf5ff95389e1f9ecc45071",
+  "baseline_sha256": "419accafb0874a51c11bd4865117a4daf761345a48242e36269c71e88a73e1d1",
+  "uv_lock_sha256": "55a8e553c1ae4894347e17a16957bc5a7ea7bbcd06f33e0bd74fa85a440e062b",
+  "protocol_sha256": "12f3aa3fafb6f70a0fcd2ac5c78c7df63c602e31fe311538a886203509ab8ee3",
+  "experiment_driver_sha256": "586e71fb11a75902dbe3781679fbb0d6770c4b40c3b91c0210dcd20f33560df5",
+  "training_implementation_sha256": "76f267b6a1d90a316dedb5a264c72792d1f9ac3a9bf88819ae9e422160a89a28",
+  "frozen_at": "2026-09-14T14:24:57.058636+00:00",
+  "models": {
+    "parent": {
+      "name": "whisper-small-publisher-base-ct2",
+      "manifest": {
+        "model": "whisper-small-publisher-base-ct2",
+        "repo": "local_unadapted_conversion",
+        "revision": "973afd24965f72e36ca33b3055d56a652f456b4d",
+        "source_manifest_sha256": "b92a7c691f46da8afd9b3d4ec859e7941584784dac32d1e1f4fe78d27279a83a",
+        "license": "apache-2.0",
+        "files": {
+          "model.bin": "eef2cbde70d256f29b6e3432c85b92becd26f804650e855cc4ff7e66f12122b0",
+          "tokenizer.json": "27fc476bfe7f17299480be2273fc0608e4d5a99aba2ab5dec5374b4482d1a566",
+          "vocabulary.json": "5ad28279db5e546349708b9a74736e2c018737ac5a600f1048f1f26c99b85b47",
+          "preprocessor_config.json": "9b5cd03a36fbb8a627c64d98a5b5b126ead95a77720723944487311f0110b666",
+          "config.json": "b55496ac7940a7ae47d2c01eab40edfd8701feec1229d9cce3b40014383fb828"
+        },
+        "purpose": "same source weights and CT2 float16 conversion control for A5"
+      },
+      "manifest_sha256": "51d9aee1e6faddc26a8fecf114e3d716dd7965e7169250dfd4f0d939657a4f90"
+    },
+    "balanced": {
+      "name": "whisper-small-balanced-v1-ct2",
+      "manifest": {
+        "model": "whisper-small-balanced-v1-ct2",
+        "repo": "local_lora_adaptation",
+        "revision": "b1aa049fbc11e1d9377305ec384049e27495afc23f7c8925777d7f9b62dc864f",
+        "source_train_manifest_sha256": "e60840bc72fba9107fec2783ab67aa2e4684f8ed43c6622a68dba9c3e857f86d",
+        "files": {
+          "model.bin": "99807245f1a2f210362e3d19df5d4e8d9e346701422436b4528d94ef145e426d",
+          "tokenizer.json": "7b469ff15eb7816315aa45eec391f5943d639b9d73d110f5c003df5192fd54e3",
+          "vocabulary.json": "5ad28279db5e546349708b9a74736e2c018737ac5a600f1048f1f26c99b85b47",
+          "preprocessor_config.json": "994838f1fa6462c8b9b3c90edada831f11f3dd8b4664634e18f4694d005c9dbf",
+          "config.json": "707bcfea9f540464f702957e4c974a262cd378df563f25c96da0778e3b9f7b84"
+        },
+        "license": "inherited_base_model_and_training_data_restrictions",
+        "model_comparison": "A5_separate_checkpoint",
+        "reference_policy": "mixed_sources_exploratory_v1",
+        "quality_evidence": false
+      },
+      "manifest_sha256": "ea75d71112132c605400830295f439d0f44b9fa7f3e63744b202286c72a6f10b"
+    },
+    "nus": {
+      "name": "whisper-small-nus-v1-ct2",
+      "manifest": {
+        "model": "whisper-small-nus-v1-ct2",
+        "repo": "local_lora_adaptation",
+        "revision": "b1aa049fbc11e1d9377305ec384049e27495afc23f7c8925777d7f9b62dc864f",
+        "source_train_manifest_sha256": "00268dfb9bf0367e283e49acb089b9c9ae1c34342fc8f863d7721ede61b9072f",
+        "files": {
+          "model.bin": "e664df63a7df4593e4398112d5d87e35fc3240e0a8b07fc1cccf21fcd899f8df",
+          "tokenizer.json": "7b469ff15eb7816315aa45eec391f5943d639b9d73d110f5c003df5192fd54e3",
+          "vocabulary.json": "5ad28279db5e546349708b9a74736e2c018737ac5a600f1048f1f26c99b85b47",
+          "preprocessor_config.json": "994838f1fa6462c8b9b3c90edada831f11f3dd8b4664634e18f4694d005c9dbf",
+          "config.json": "707bcfea9f540464f702957e4c974a262cd378df563f25c96da0778e3b9f7b84"
+        },
+        "license": "inherited_base_model_and_training_data_restrictions",
+        "model_comparison": "A5_separate_checkpoint",
+        "reference_policy": "nus_sources_exploratory_v1",
+        "quality_evidence": false
+      },
+      "manifest_sha256": "5e162ab4d1342e83b06c6a55b23cbc53770334bd0e56fe73c099e58af81a5d65"
+    }
+  },
+  "systems": [
+    "parent",
+    "balanced",
+    "nus"
+  ],
+  "configs": {
+    "parent": {
+      "schema_version": "1.0",
+      "name": "baseline",
+      "model": "whisper-small-publisher-base-ct2",
+      "compute_type": "float16",
+      "device": "cuda",
+      "task": "transcribe",
+      "beam_size": 5,
+      "temperature": 0.0,
+      "best_of": 5,
+      "patience": 1.0,
+      "length_penalty": 1.0,
+      "repetition_penalty": 1.0,
+      "no_repeat_ngram_size": 0,
+      "condition_on_previous_text": true,
+      "compression_ratio_threshold": 2.4,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        -1
+      ],
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "language_detection_threshold": 0.5,
+      "language_detection_segments": 1,
+      "vad": {
+        "enabled": false,
+        "threshold": 0.5,
+        "min_speech_duration_ms": 100,
+        "min_silence_duration_ms": 400,
+        "speech_pad_ms": 200,
+        "max_speech_duration_s": 30.0
+      },
+      "denoise": {
+        "enabled": false,
+        "strength": 0.5,
+        "floor": 0.3,
+        "noise_percentile": 10.0
+      },
+      "hotwords": null,
+      "glossary_version": null,
+      "redecode": false,
+      "max_redecode_passes": 1,
+      "redecode_logprob_threshold": -0.8,
+      "episode_gap_sec": 2.0,
+      "episode_max_sec": 30.0,
+      "episode_max_tokens": 100,
+      "classifier": "rules_v1",
+      "classifier_artifact": null
+    },
+    "balanced": {
+      "schema_version": "1.0",
+      "name": "baseline",
+      "model": "whisper-small-balanced-v1-ct2",
+      "compute_type": "float16",
+      "device": "cuda",
+      "task": "transcribe",
+      "beam_size": 5,
+      "temperature": 0.0,
+      "best_of": 5,
+      "patience": 1.0,
+      "length_penalty": 1.0,
+      "repetition_penalty": 1.0,
+      "no_repeat_ngram_size": 0,
+      "condition_on_previous_text": true,
+      "compression_ratio_threshold": 2.4,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        -1
+      ],
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "language_detection_threshold": 0.5,
+      "language_detection_segments": 1,
+      "vad": {
+        "enabled": false,
+        "threshold": 0.5,
+        "min_speech_duration_ms": 100,
+        "min_silence_duration_ms": 400,
+        "speech_pad_ms": 200,
+        "max_speech_duration_s": 30.0
+      },
+      "denoise": {
+        "enabled": false,
+        "strength": 0.5,
+        "floor": 0.3,
+        "noise_percentile": 10.0
+      },
+      "hotwords": null,
+      "glossary_version": null,
+      "redecode": false,
+      "max_redecode_passes": 1,
+      "redecode_logprob_threshold": -0.8,
+      "episode_gap_sec": 2.0,
+      "episode_max_sec": 30.0,
+      "episode_max_tokens": 100,
+      "classifier": "rules_v1",
+      "classifier_artifact": null
+    },
+    "nus": {
+      "schema_version": "1.0",
+      "name": "baseline",
+      "model": "whisper-small-nus-v1-ct2",
+      "compute_type": "float16",
+      "device": "cuda",
+      "task": "transcribe",
+      "beam_size": 5,
+      "temperature": 0.0,
+      "best_of": 5,
+      "patience": 1.0,
+      "length_penalty": 1.0,
+      "repetition_penalty": 1.0,
+      "no_repeat_ngram_size": 0,
+      "condition_on_previous_text": true,
+      "compression_ratio_threshold": 2.4,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        -1
+      ],
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "language_detection_threshold": 0.5,
+      "language_detection_segments": 1,
+      "vad": {
+        "enabled": false,
+        "threshold": 0.5,
+        "min_speech_duration_ms": 100,
+        "min_silence_duration_ms": 400,
+        "speech_pad_ms": 200,
+        "max_speech_duration_s": 30.0
+      },
+      "denoise": {
+        "enabled": false,
+        "strength": 0.5,
+        "floor": 0.3,
+        "noise_percentile": 10.0
+      },
+      "hotwords": null,
+      "glossary_version": null,
+      "redecode": false,
+      "max_redecode_passes": 1,
+      "redecode_logprob_threshold": -0.8,
+      "episode_gap_sec": 2.0,
+      "episode_max_sec": 30.0,
+      "episode_max_tokens": 100,
+      "classifier": "rules_v1",
+      "classifier_artifact": null
+    }
+  },
+  "options_overrides": {
+    "parent": {
+      "without_timestamps": false
+    },
+    "balanced": {
+      "without_timestamps": false
+    },
+    "nus": {
+      "without_timestamps": false
+    }
+  },
+  "inputs_sha256": "81336ad032a25eb85071f712f1b44f6260f709b4061b80cb9f59198539a70877",
+  "references_sha256": "804a18e60747e3e9b6620f8e03fd95214a70eef95dd826c28e29f883a342fa12",
+  "training_plan_sha256": "3d4e05db9d6911782425fcd1f8e165b3c26c4a51ca7773be07fe9c5e386037b1",
+  "historical_sha256": {
+    "parent": "d9bdc6a2723f7e190b1e4d64d01e59266448b09d25bafa1da530358fcc402cfc",
+    "balanced": "6d54c6b57c980ccf53f2cf92bae6134a41abd54fb37dbe8360121c52adeeb9f8"
+  },
+  "test_accessed": false,
+  "release_promoted": false
+}

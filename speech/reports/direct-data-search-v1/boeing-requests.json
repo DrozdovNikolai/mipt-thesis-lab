@@ -1,0 +1,7 @@
+{
+  "boeing-dataset-tree": "https://huggingface.co/api/datasets/boeing/aviation-ner-BIO/tree/36832b83a85b15936b6f2dd15c7cd886194a9535?recursive=true",
+  "boeing-model-card": "https://huggingface.co/boeing/aviation-ner/raw/main/README.md",
+  "boeing-code-repo": "https://api.github.com/repos/Boeing/aviation_ner_sdr",
+  "boeing-code-readme": "https://raw.githubusercontent.com/Boeing/aviation_ner_sdr/main/README.md",
+  "boeing-code-license": "https://raw.githubusercontent.com/Boeing/aviation_ner_sdr/main/LICENSE"
+}

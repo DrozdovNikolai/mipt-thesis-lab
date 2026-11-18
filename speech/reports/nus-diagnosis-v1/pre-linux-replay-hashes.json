@@ -1,0 +1,6 @@
+{
+  "reports/nus-diagnosis-v1/comparison.json": "ffb15e4ecd3a7f01e8269fa8592207432fefcf097f1e0b5b26b09b1f59c32368",
+  "reports/nus-diagnosis-v1/legacy-waveform-evidence.json": "5d4aa1704c95dafa50de103c46ef84f669f8d74d678b638d05a64604c4af5ccf",
+  "reports/nus-lora-ablation-v1/comparison.json": "335f1142ecf4996dcf53a3a9de2508f00a40ee4cc618c8b4e9d1b5e8886eccb5",
+  "reports/nus-lora-ablation-v1/legacy-waveform-evidence.json": "0460fd4f60ca60a1d611a24283ba98968ae638dafef14f87862edaee59e53b13"
+}

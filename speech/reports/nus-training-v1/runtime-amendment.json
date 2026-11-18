@@ -1,0 +1,14 @@
+{
+  "reason": "Frozen driver imports pyarrow at module load; minimal GPU image lacks pyarrow.",
+  "failed_attempt": "north55-nus-v1-freeze-eval-20260914t142336331777z",
+  "exit_code": 1,
+  "exception": "ModuleNotFoundError: No module named 'pyarrow'",
+  "phase": "evaluation preflight before any candidate evaluation predictions",
+  "correction": "Use existing north55-speech-train:publisher-v2 for all driver stages; scorer retains GPU image.",
+  "training_repeated": false,
+  "frozen_driver_modified": false,
+  "frozen_plan_modified": false,
+  "asr_library_versions": {"faster-whisper": "1.2.1", "ctranslate2": "4.8.2", "numpy": "2.2.6", "soundfile": "0.13.1"},
+  "effective_precision_must_still_equal": "cuda float16",
+  "original_failure_log_preserved": true
+}

@@ -1,0 +1,9 @@
+{
+  "status": "COMPLETE",
+  "plan_sha256": "6e9ff1f0c526a1cd4f3419923c652ae88b951cbe8c8465499ddb9ae35852b05a",
+  "new_GPU_ASR_calls": 491,
+  "decisions_sha256": "d23a14703e9adb827179586c911e2910372a94125e2672cdf36f9041251e73ee",
+  "parakeet_differences": 29,
+  "seconds": 488.5722921689994,
+  "peak_GPU_bytes": 2935023104
+}

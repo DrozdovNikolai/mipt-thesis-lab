@@ -1,0 +1,238 @@
+{
+  "completed": true,
+  "candidate_errors": 53,
+  "reference_words": 203,
+  "all_model_errors": {
+    "replay_control": 42,
+    "soteria_mix": 53,
+    "small": 56,
+    "large": 17,
+    "previous_v9": 31
+  },
+  "lowest_error_systems": [
+    "large"
+  ],
+  "candidate_deltas": {
+    "small": {
+      "errors_change": -3,
+      "improved_clips": 1,
+      "worsened_clips": 2,
+      "unchanged_clips": 13,
+      "per_clip": [
+        {
+          "id": "1adcaf07144ecec26885317491eaaf89",
+          "error_change": 2
+        },
+        {
+          "id": "a451a40719957efeda4921760e503b0e",
+          "error_change": 0
+        },
+        {
+          "id": "730375ae3bced1cca710c5d411207a62",
+          "error_change": 0
+        },
+        {
+          "id": "b62884d2c8624983768c9d9376ac7299",
+          "error_change": 0
+        },
+        {
+          "id": "0193ef559a1d007c98c708be9ec060cb",
+          "error_change": 1
+        },
+        {
+          "id": "455c47ed8f2e3568db981b8a35a07a8d",
+          "error_change": 0
+        },
+        {
+          "id": "809afd7909b97310c9a68a832daaa70a",
+          "error_change": 0
+        },
+        {
+          "id": "fd53a0010c36d64598d50b5dc2d03144",
+          "error_change": 0
+        },
+        {
+          "id": "86862d0a0f2c38424c749538ad898b97",
+          "error_change": -6
+        },
+        {
+          "id": "c0d20c6d6cd4148dd97691452603a4d7",
+          "error_change": 0
+        },
+        {
+          "id": "3868827f982828ab2d37b1e405894ca1",
+          "error_change": 0
+        },
+        {
+          "id": "2bfec39502ca469c1f1c18d0a408ba45",
+          "error_change": 0
+        },
+        {
+          "id": "c1acffbf5c2957b10e31fcbe49335ebe",
+          "error_change": 0
+        },
+        {
+          "id": "abecc5e274cf54252c289305a111513a",
+          "error_change": 0
+        },
+        {
+          "id": "af438f5fce37f5644b554eb9c3ef3e42",
+          "error_change": 0
+        },
+        {
+          "id": "7dcbef2bb6ef1150d862ab1e596d7c89",
+          "error_change": 0
+        }
+      ]
+    },
+    "replay_control": {
+      "errors_change": 11,
+      "improved_clips": 0,
+      "worsened_clips": 3,
+      "unchanged_clips": 13,
+      "per_clip": [
+        {
+          "id": "1adcaf07144ecec26885317491eaaf89",
+          "error_change": 3
+        },
+        {
+          "id": "a451a40719957efeda4921760e503b0e",
+          "error_change": 0
+        },
+        {
+          "id": "730375ae3bced1cca710c5d411207a62",
+          "error_change": 0
+        },
+        {
+          "id": "b62884d2c8624983768c9d9376ac7299",
+          "error_change": 0
+        },
+        {
+          "id": "0193ef559a1d007c98c708be9ec060cb",
+          "error_change": 1
+        },
+        {
+          "id": "455c47ed8f2e3568db981b8a35a07a8d",
+          "error_change": 0
+        },
+        {
+          "id": "809afd7909b97310c9a68a832daaa70a",
+          "error_change": 0
+        },
+        {
+          "id": "fd53a0010c36d64598d50b5dc2d03144",
+          "error_change": 0
+        },
+        {
+          "id": "86862d0a0f2c38424c749538ad898b97",
+          "error_change": 0
+        },
+        {
+          "id": "c0d20c6d6cd4148dd97691452603a4d7",
+          "error_change": 0
+        },
+        {
+          "id": "3868827f982828ab2d37b1e405894ca1",
+          "error_change": 0
+        },
+        {
+          "id": "2bfec39502ca469c1f1c18d0a408ba45",
+          "error_change": 0
+        },
+        {
+          "id": "c1acffbf5c2957b10e31fcbe49335ebe",
+          "error_change": 0
+        },
+        {
+          "id": "abecc5e274cf54252c289305a111513a",
+          "error_change": 0
+        },
+        {
+          "id": "af438f5fce37f5644b554eb9c3ef3e42",
+          "error_change": 7
+        },
+        {
+          "id": "7dcbef2bb6ef1150d862ab1e596d7c89",
+          "error_change": 0
+        }
+      ]
+    },
+    "previous_v9": {
+      "errors_change": 22,
+      "improved_clips": 1,
+      "worsened_clips": 9,
+      "unchanged_clips": 6,
+      "per_clip": [
+        {
+          "id": "1adcaf07144ecec26885317491eaaf89",
+          "error_change": 3
+        },
+        {
+          "id": "a451a40719957efeda4921760e503b0e",
+          "error_change": 0
+        },
+        {
+          "id": "730375ae3bced1cca710c5d411207a62",
+          "error_change": 0
+        },
+        {
+          "id": "b62884d2c8624983768c9d9376ac7299",
+          "error_change": 1
+        },
+        {
+          "id": "0193ef559a1d007c98c708be9ec060cb",
+          "error_change": 1
+        },
+        {
+          "id": "455c47ed8f2e3568db981b8a35a07a8d",
+          "error_change": 1
+        },
+        {
+          "id": "809afd7909b97310c9a68a832daaa70a",
+          "error_change": 3
+        },
+        {
+          "id": "fd53a0010c36d64598d50b5dc2d03144",
+          "error_change": -1
+        },
+        {
+          "id": "86862d0a0f2c38424c749538ad898b97",
+          "error_change": 0
+        },
+        {
+          "id": "c0d20c6d6cd4148dd97691452603a4d7",
+          "error_change": 0
+        },
+        {
+          "id": "3868827f982828ab2d37b1e405894ca1",
+          "error_change": 3
+        },
+        {
+          "id": "2bfec39502ca469c1f1c18d0a408ba45",
+          "error_change": 2
+        },
+        {
+          "id": "c1acffbf5c2957b10e31fcbe49335ebe",
+          "error_change": 0
+        },
+        {
+          "id": "abecc5e274cf54252c289305a111513a",
+          "error_change": 0
+        },
+        {
+          "id": "af438f5fce37f5644b554eb9c3ef3e42",
+          "error_change": 7
+        },
+        {
+          "id": "7dcbef2bb6ef1150d862ab1e596d7c89",
+          "error_change": 2
+        }
+      ]
+    }
+  },
+  "SOTERIA_specific_human_accuracy_measured": false,
+  "promotion_performed": false,
+  "comparison_sha256": "0ed1750fdf2b955b381aa662978ac13379de63b0990acf649a49528f273aac43",
+  "artifact_audit_sha256": "39f53fb53e6f0800db31856a02461f64cac8eae0b23847f9433ceb8a22ddbcd4",
+  "reporting_script_sha256": "0a71508169fc60e709b79eef06b8674cafc7be92db665f17bd01cc9eb6271f55"
+}

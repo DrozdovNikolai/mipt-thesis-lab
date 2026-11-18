@@ -1,0 +1,78 @@
+{
+  "status": "ATTACHED",
+  "items": [
+    {
+      "id": "4b795094d9b67f47f5f37626136f4f69",
+      "eligible": true,
+      "nonempty": true
+    },
+    {
+      "id": "13a76ec2e985e283e00d1420fc528f63",
+      "eligible": false,
+      "nonempty": true
+    },
+    {
+      "id": "4aee8e1b1146f7198df0b6b1593c473a",
+      "eligible": false,
+      "nonempty": true
+    },
+    {
+      "id": "8bcef2746d99bdd0d2900f096b2a1680",
+      "eligible": false,
+      "nonempty": true
+    },
+    {
+      "id": "fe1d55a2dce836cd2011449c4a9cc580",
+      "eligible": false,
+      "nonempty": true
+    },
+    {
+      "id": "f16346d35b6182acf7c409752b5b84d9",
+      "eligible": false,
+      "nonempty": true
+    },
+    {
+      "id": "dc84f2b77565d804f16ea31f42380abb",
+      "eligible": true,
+      "nonempty": true
+    },
+    {
+      "id": "767df23c7c14166f8579da284d5a4219",
+      "eligible": true,
+      "nonempty": true
+    },
+    {
+      "id": "c656ad84b78a3f41dcc8ff4653393346",
+      "eligible": false,
+      "nonempty": true
+    },
+    {
+      "id": "c55f9c7708704c548f503aa642c2288d",
+      "eligible": false,
+      "nonempty": true
+    },
+    {
+      "id": "291ebb141aa4e7a7ba94ccf8d18002fb",
+      "eligible": false,
+      "nonempty": true
+    },
+    {
+      "id": "325b235ca91365d6e590ac76eb5acd40",
+      "eligible": false,
+      "nonempty": true
+    },
+    {
+      "id": "b8d2fc3fc1893f19ae7fb8d7c2722a4d",
+      "eligible": true,
+      "nonempty": true
+    },
+    {
+      "id": "58d136c00041f7a4ce599740ee1b5210",
+      "eligible": true,
+      "nonempty": true
+    }
+  ],
+  "human_revision_writes": 0,
+  "test_accessed": false,
+  "original_manifest_writes": 0
+}

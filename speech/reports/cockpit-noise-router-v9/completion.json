@@ -1,0 +1,21 @@
+{
+  "status": "completed",
+  "diagnostic_status": "INCONCLUSIVE",
+  "quality_confirmed": false,
+  "production_replaced": false,
+  "artifact_sha256": {
+    "protocol.md": "4f9c262520ddb29f9380c13be3e431d4a0cb95e83fc3b8140065a4f22c303940",
+    "plan.json": "95baf3d19575aacabe03a83486b87419b6282ee05b8051619fec0eb4057519ad",
+    "comparison.json": "77b2412ccf48d1eff44161970c56490646b2376a50327a9bf312387dd7f7c0b6",
+    "verification.json": "9196f02dc129ba8ba865f9fa9dcd20d021f719be04a0202cdd9452b69c1aea3f",
+    "decision.md": "8766ea0bf483dd2d78eb78ac8f97a0ac05623a5c8b5219033c50b9727e79a5a4",
+    "report.md": "5358f9ebd673b0228ce47a67308547d73f527aeb1b19982811471c0dc66362a7",
+    "test-results.xml": "c90817ca4312bd20aaa1d5cdea5b351945d9ceed082433f6e282ba6ba5a5afd0",
+    "io-train/training.json": "6c645f891a177255602dcca040416cfb30512d0cf8b30ba4def1c2ad24e8ef0a",
+    "io-train/router.joblib": "287b0373eb258e18e9783843c5e9af65219a2e1307f1c383745f2103189dda1f",
+    "io-infer/execution.json": "73520344f95c91da0a898c44f248af3a2ca3de2e4c07ba24461fed853c7d90eb",
+    "live-smoke-verification.json": "f5c8cd8166392bdd75ebb7cafac20fa2d35bbcc71c5bfe9ec22998023e2075aa",
+    "local-runtime/runtime.json": "3110b95f554cf492ac4b41bd8384e81e93a6861f893b50e7c8bd261c2c7f36a3",
+    "runtime-test-results.xml": "65de9dbe7106c86dfd19b3f8bda2a2a2e2c38aacabc7ac4d4fb7ddaea7623030"
+  }
+}

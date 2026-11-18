@@ -1,0 +1,75 @@
+{
+  "container_name": "/north55-clean-control-v1",
+  "image_id": "sha256:b5d7218f10baaa6b4bda2ac5da03462d4029f6249f2a93168e4352c47ebb2285",
+  "network_mode": "none",
+  "device_requests": [
+    {
+      "Driver": "",
+      "Count": -1,
+      "DeviceIDs": null,
+      "Capabilities": [
+        [
+          "gpu"
+        ]
+      ],
+      "Options": {}
+    }
+  ],
+  "command": [
+    "-m",
+    "scripts.evaluate_clean_controls",
+    "infer"
+  ],
+  "mounts": [
+    {
+      "Type": "volume",
+      "Source": "/var/lib/docker/volumes/north55-speech_audio_data/_data",
+      "Destination": "/audio",
+      "RW": false
+    },
+    {
+      "Type": "volume",
+      "Source": "/var/lib/docker/volumes/north55-speech_model_cache/_data",
+      "Destination": "/models",
+      "RW": false
+    },
+    {
+      "Type": "bind",
+      "Source": "/run/desktop/mnt/host/c/DEV/MIPT/Diploma/Speech/scripts",
+      "Destination": "/app/scripts",
+      "RW": false
+    },
+    {
+      "Type": "bind",
+      "Source": "/run/desktop/mnt/host/c/DEV/MIPT/Diploma/Speech/src",
+      "Destination": "/app/src",
+      "RW": false
+    },
+    {
+      "Type": "bind",
+      "Source": "C:\\DEV\\MIPT\\Diploma\\Speech/configs",
+      "Destination": "/app/configs",
+      "RW": false
+    },
+    {
+      "Type": "bind",
+      "Source": "C:\\DEV\\MIPT\\Diploma\\Speech/ACCEPTANCE.yaml",
+      "Destination": "/app/ACCEPTANCE.yaml",
+      "RW": false
+    },
+    {
+      "Type": "bind",
+      "Source": "C:\\DEV\\MIPT\\Diploma\\Speech/data/curated/clean-controls-v1",
+      "Destination": "/controls",
+      "RW": false
+    },
+    {
+      "Type": "bind",
+      "Source": "C:\\DEV\\MIPT\\Diploma\\Speech/reports",
+      "Destination": "/reports",
+      "RW": true
+    }
+  ],
+  "started_at": "2026-09-13T23:55:49.581399655Z",
+  "preparation_image": "sha256:c8cd23b37ba06b2be11de789298bbed59c1b257f867ca11b3efd34b5176b5cd1"
+}

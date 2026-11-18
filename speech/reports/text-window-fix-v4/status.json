@@ -1,0 +1,41 @@
+{
+  "implemented": true,
+  "executed": true,
+  "artifact_verification": "PASS",
+  "tail_loop_regression": "PASS",
+  "repeated_utterance_exact_retention": "FAIL",
+  "full_functional_regression": "FAIL",
+  "GPU_predictions": 1056,
+  "CPU_smokes": 8,
+  "new_training_runs": 0,
+  "diagnostic_gates": {
+    "parent": {
+      "human_dev_point_target": "FAIL",
+      "clean_guard": "PASS",
+      "ru_guard": "PASS",
+      "noise_guard": "FAIL",
+      "runtime_guard": "PASS",
+      "paired_ci_excludes_zero": false,
+      "statistical_confirmation": "INCONCLUSIVE",
+      "critical_entities": "NEEDS_MORE_DATA",
+      "release": "FAIL"
+    },
+    "augmented": {
+      "human_dev_point_target": "FAIL",
+      "clean_guard": "PASS",
+      "ru_guard": "PASS",
+      "noise_guard": "FAIL",
+      "runtime_guard": "PASS",
+      "paired_ci_excludes_zero": false,
+      "statistical_confirmation": "INCONCLUSIVE",
+      "critical_entities": "NEEDS_MORE_DATA",
+      "release": "FAIL"
+    }
+  },
+  "independent_ASR_quality": "NEEDS_MORE_DATA",
+  "critical_entities": "NEEDS_MORE_DATA",
+  "NLP": "NEEDS_MORE_DATA",
+  "temporal_detection": "NEEDS_MORE_DATA",
+  "release_gate": "FAIL",
+  "release_promoted": false
+}

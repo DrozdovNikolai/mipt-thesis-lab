@@ -1,0 +1,31 @@
+{
+  "unit_contract_tests": {
+    "passed": 467,
+    "deselected": 9,
+    "warnings": 8,
+    "seconds": 22.49,
+    "command": "docker compose -f compose.improvement.yaml run --rm checks -q -p no:cacheprovider -m 'not integration and not real_asr' tests"
+  },
+  "focused_tests": {
+    "passed": 17,
+    "seconds": 2.25,
+    "files": [
+      "tests/test_publisher_phrases.py",
+      "tests/test_publisher_recovery.py"
+    ]
+  },
+  "ruff": "PASS (eight changed/new Python files, --no-cache)",
+  "mypy": {
+    "status": "PASS",
+    "files": [
+      "src/north55_speech/publisher_pairs.py",
+      "src/north55_speech/lora.py"
+    ],
+    "note": "Initial missing Counter[str] annotation repaired, then check passed."
+  },
+  "frozen_code_sha256_verified": true,
+  "inference_resume": "PASS; zero new calls; completed predictions verified",
+  "coverage_and_target_integrity": "PASS; see coverage-audit.json",
+  "git_diff_check": "PASS",
+  "full_suite_timing_note": "Full suite preceded a type-only Counter[str] annotation; Mypy and Ruff checked final code. No frozen selection code changed."
+}

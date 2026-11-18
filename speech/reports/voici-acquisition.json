@@ -1,0 +1,26 @@
+{
+  "status": "ACQUIRED_AND_CHECKSUM_VERIFIED",
+  "record": 2660112,
+  "license_id": "CC-BY-SA-4.0",
+  "source_role": "noise_only",
+  "scope": "Falcon 2000LXS flight background; speech removed by publisher",
+  "training_admission": "PENDING_AUDIO_INSPECTION_AND_PARTITION_POLICY",
+  "files": [
+    {
+      "filename": "Cockpit  noise Falcon 2000LXS TRH-OSL description.pdf",
+      "url": "https://zenodo.org/api/records/2660112/files/Cockpit%20%20noise%20Falcon%202000LXS%20TRH-OSL%20description.pdf/content",
+      "bytes": 185736,
+      "md5": "62cf27aa6eeec18dfdfcd2b9b092be49",
+      "sha256": "33077f73d9f76b07fbcc64786ce892006968900038a99e9072ab782d79cdb2b1"
+    },
+    {
+      "filename": "Recording 6_low_freq_boost_remove_speech_2_WoodPk_reinsert_16b.wav",
+      "url": "https://zenodo.org/api/records/2660112/files/Recording%206_low_freq_boost_remove_speech_2_WoodPk_reinsert_16b.wav/content",
+      "bytes": 289616504,
+      "md5": "1ea1ac980ab2563a31ba58cbfa053465",
+      "sha256": "dd3793b6108007b50ef10da363ef9e18b68a0953bc3f0a09ed6548b9aedde6e2"
+    }
+  ],
+  "metadata_sha256": "2513c19031b4bb541b7c50d91d06df95ef90d1a872f469fb4cb5fa56b23ff398",
+  "checked_at": "2026-09-13T16:59:30.880502+00:00"
+}

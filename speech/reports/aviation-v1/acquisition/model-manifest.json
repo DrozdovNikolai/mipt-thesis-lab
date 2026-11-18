@@ -1,0 +1,67 @@
+{
+  "model": "whisper-medium-en-atc-jacktol-ct2",
+  "repo": "jacktol/whisper-medium.en-fine-tuned-for-ATC-faster-whisper",
+  "revision": "f243e13340c9bc0c34b971f0df4af80b70811895",
+  "license": "MIT",
+  "files": {
+    "README.md": "2071baa3bdab64c797426691ecb6aa40d3be06d7954d07ae9d26325669f55d49",
+    "config.json": "245d600f500b886d159711a1b16e5893be0c6300a803076d9e3166c1cd251c28",
+    "model.bin": "f1001512e660aaf27f82200384e5badb23e7bf1eedd9c1e3a4a721921e7ee064",
+    "preprocessor_config.json": "a6a76d28c93edb273669eb9e0b0636a2bddbb1272c3261e47b7ca6dfdbac1b8d",
+    "vocabulary.json": "561cc18c4b9a8b41a2ecfc3b5092b62a24d1bb6e79998ca1bb45326353647874",
+    "tokenizer.json": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df"
+  },
+  "tokenizer_source": {
+    "repo": "Systran/faster-whisper-medium.en",
+    "revision": "a29b04bd15381511a9af671baec01072039215e3",
+    "vocabulary_mapping_verified_tokens": 51864,
+    "verified_files": {
+      "tokenizer.json": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df"
+    }
+  },
+  "acquisition": {
+    "repo": "jacktol/whisper-medium.en-fine-tuned-for-ATC-faster-whisper",
+    "repo_type": "model",
+    "revision": "f243e13340c9bc0c34b971f0df4af80b70811895",
+    "files": {
+      "README.md": {
+        "size": 4508,
+        "blob_id": "6240b123d14ba329c7e05c8dfde8aca1a779ef56",
+        "lfs": null
+      },
+      "config.json": {
+        "size": 1959,
+        "blob_id": "4f0674b26346d06e53c55a548e64eb272161aebe",
+        "lfs": null
+      },
+      "model.bin": {
+        "size": 3055765653,
+        "blob_id": "480a0ae616e8bb0d9022424e3db00178a8d1881c",
+        "lfs": "f1001512e660aaf27f82200384e5badb23e7bf1eedd9c1e3a4a721921e7ee064"
+      },
+      "preprocessor_config.json": {
+        "size": 339,
+        "blob_id": "91876762a536a746d268353c5cba57286e76b058",
+        "lfs": null
+      },
+      "vocabulary.json": {
+        "size": 877345,
+        "blob_id": "eac876515b5710955ba87726353487973af64f3a",
+        "lfs": null
+      }
+    },
+    "verified_files": {
+      "README.md": "2071baa3bdab64c797426691ecb6aa40d3be06d7954d07ae9d26325669f55d49",
+      "config.json": "245d600f500b886d159711a1b16e5893be0c6300a803076d9e3166c1cd251c28",
+      "model.bin": "f1001512e660aaf27f82200384e5badb23e7bf1eedd9c1e3a4a721921e7ee064",
+      "preprocessor_config.json": "a6a76d28c93edb273669eb9e0b0636a2bddbb1272c3261e47b7ca6dfdbac1b8d",
+      "vocabulary.json": "561cc18c4b9a8b41a2ecfc3b5092b62a24d1bb6e79998ca1bb45326353647874"
+    },
+    "acquired_at": "2026-09-14T19:43:05.495811+00:00"
+  },
+  "declared_finetuning_sources": [
+    "ATCO2 1h subset",
+    "UWB-ATCC"
+  ],
+  "external_training_manifest_available": false
+}

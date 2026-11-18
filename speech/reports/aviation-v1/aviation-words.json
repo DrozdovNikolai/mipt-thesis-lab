@@ -1,0 +1,74 @@
+{
+  "script_sha256": "00010ce4ba76be9b3107b8add5f31820635a1939293ba8e23fa28f565a996e53",
+  "terms": [
+    "cleared",
+    "climb",
+    "contact",
+    "descend",
+    "flight",
+    "heading",
+    "hold",
+    "left",
+    "level",
+    "maintain",
+    "negative",
+    "no",
+    "not",
+    "right",
+    "roger",
+    "runway",
+    "speed",
+    "squawk",
+    "stop",
+    "turn",
+    "unable",
+    "wilco"
+  ],
+  "negations": [
+    "negative",
+    "no",
+    "not",
+    "unable"
+  ],
+  "systems": {
+    "small": {
+      "aviation_words": {
+        "reference_occurrences": 2864,
+        "correctly_aligned": 2232,
+        "missed_or_substituted": 632
+      },
+      "negations": {
+        "reference_occurrences": 5,
+        "correctly_aligned": 4,
+        "missed_or_substituted": 1
+      }
+    },
+    "medium": {
+      "aviation_words": {
+        "reference_occurrences": 2864,
+        "correctly_aligned": 2359,
+        "missed_or_substituted": 505
+      },
+      "negations": {
+        "reference_occurrences": 5,
+        "correctly_aligned": 5,
+        "missed_or_substituted": 0
+      }
+    },
+    "atc": {
+      "aviation_words": {
+        "reference_occurrences": 2864,
+        "correctly_aligned": 2843,
+        "missed_or_substituted": 21
+      },
+      "negations": {
+        "reference_occurrences": 5,
+        "correctly_aligned": 5,
+        "missed_or_substituted": 0
+      }
+    }
+  },
+  "candidate_selection_input": false,
+  "human_command_or_entity_labels": false,
+  "meaning": "Exact reference-word recovery under lexical edit alignment; not command interpretation or entity validation"
+}

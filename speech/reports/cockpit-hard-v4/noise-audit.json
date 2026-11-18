@@ -1,0 +1,130 @@
+[
+  {
+    "id": "d4ee5ee545de8a2dfc913b81ece4097a",
+    "parent_clip": "92cf95f45fa02c633d0cf6af211a805b",
+    "noisy_source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+    "mean_coherence": 0.4543899893760681,
+    "duration_difference_sec": 0.0,
+    "accepted": true
+  },
+  {
+    "id": "bb394900f74faa98f92a1239dbf9133a",
+    "parent_clip": "d3a5e3eaf2053634acf4495db888d62b",
+    "noisy_source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+    "mean_coherence": 0.3384861946105957,
+    "duration_difference_sec": 0.0,
+    "accepted": true
+  },
+  {
+    "id": "f6c81eb1ea547dbc0ba4ce7e556957c9",
+    "parent_clip": "48f5d59484d25d6b6022b76144fa32d7",
+    "noisy_source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+    "mean_coherence": 0.2974148690700531,
+    "duration_difference_sec": 0.0,
+    "accepted": true
+  },
+  {
+    "id": "4c8ec0152511020ec030229642e7e21d",
+    "parent_clip": "015ee35de80d03489ebb517c7b4ee4bf",
+    "noisy_source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+    "mean_coherence": 0.31566122174263,
+    "duration_difference_sec": 0.0,
+    "accepted": true
+  },
+  {
+    "id": "6422342ad3dd0c1f6434600c9f62126c",
+    "parent_clip": "c8336825452d4b7d96ed284ddd19c5ed",
+    "noisy_source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+    "mean_coherence": 0.40033969283103943,
+    "duration_difference_sec": 0.0,
+    "accepted": true
+  },
+  {
+    "id": "b097cb3b45a17f024aa8ae0ff0003f9c",
+    "parent_clip": "9ab8abd6e7a045d61962a2b8078e6d2f",
+    "noisy_source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+    "mean_coherence": 0.3758608400821686,
+    "duration_difference_sec": 0.0,
+    "accepted": true
+  },
+  {
+    "id": "993564eb7564cc7f8664f669b57b8e19",
+    "parent_clip": "a88dac0cf65c8f89fcc1d29f563ca997",
+    "noisy_source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+    "mean_coherence": 0.43383973836898804,
+    "duration_difference_sec": 0.0,
+    "accepted": true
+  },
+  {
+    "id": "395f06925b6feb74bc6232b0cc436042",
+    "parent_clip": "c5930dd8e5865b3a7c04f92a74f5fda6",
+    "noisy_source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+    "mean_coherence": 0.447830468416214,
+    "duration_difference_sec": 0.0,
+    "accepted": true
+  },
+  {
+    "id": "656a68176d1a94495f878e474127ffc1",
+    "parent_clip": "7f5d9f4d552e845110cd9f91c6f12816",
+    "noisy_source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+    "mean_coherence": 0.3903922438621521,
+    "duration_difference_sec": 0.0,
+    "accepted": true
+  },
+  {
+    "id": "8751d3b0c3e7d893eeb64ce734a6ea2d",
+    "parent_clip": "825eaa444bea106df9738d700c4a909d",
+    "noisy_source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+    "mean_coherence": 0.3981275260448456,
+    "duration_difference_sec": 0.0,
+    "accepted": true
+  },
+  {
+    "id": "ed94928e9d0dcd58307ae59e92ab3acc",
+    "parent_clip": "c870953e8a4e201d9dd683e503751264",
+    "noisy_source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+    "mean_coherence": 0.2553235590457916,
+    "duration_difference_sec": 0.0,
+    "accepted": true
+  },
+  {
+    "id": "06ed1de2b4cad106264f7563cc0c97d4",
+    "parent_clip": "43fa02c872aa0d9e39a2178fe325fc58",
+    "noisy_source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+    "mean_coherence": 0.2901833951473236,
+    "duration_difference_sec": 0.0,
+    "accepted": true
+  },
+  {
+    "id": "75440ac7a487bb8c8c4e6480b4f625b0",
+    "parent_clip": "5239686dfe0fcf887aeeddd9adbc6f65",
+    "noisy_source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+    "mean_coherence": 0.34107622504234314,
+    "duration_difference_sec": 0.0,
+    "accepted": true
+  },
+  {
+    "id": "0f6d58572884c2d9b76cf9268e7fdf3d",
+    "parent_clip": "6cf7b6e727c8f5e4b6b3d13d29fbf68b",
+    "noisy_source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+    "mean_coherence": 0.34239819645881653,
+    "duration_difference_sec": 0.0,
+    "accepted": true
+  },
+  {
+    "id": "01b6f820b5fa18cc180d49414d775d83",
+    "parent_clip": "69458f0bb5de5603b51510e33cbe38e4",
+    "noisy_source": "bleriot-c:CVR_DGA_checklist-TBM940_sp102",
+    "mean_coherence": 0.3975887894630432,
+    "duration_difference_sec": 0.0,
+    "accepted": true
+  },
+  {
+    "id": "9b3a0e6088957aaeff23de5acfd3ac2a",
+    "parent_clip": "62138ea13bb607a7a5b90c0dea94aa50",
+    "noisy_source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+    "mean_coherence": 0.43498900532722473,
+    "duration_difference_sec": 0.0,
+    "accepted": true
+  }
+]

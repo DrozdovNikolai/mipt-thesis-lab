@@ -1,0 +1,14 @@
+{
+  "source_revisions_unchanged": 16,
+  "source_manifest_unchanged": true,
+  "test_accessed": false,
+  "human_labels_created_or_changed": 0,
+  "reference_qa_flags": [
+    {
+      "id": "809afd7909b97310c9a68a832daaa70a",
+      "reason": "numeric_format_requires_audio_recheck",
+      "excluded_from_scores": false
+    }
+  ],
+  "report_sha256": "4a36610bd6118816a6ce0eb45b3aac7368f899b8dddf60dc1c2bb086d993d419"
+}

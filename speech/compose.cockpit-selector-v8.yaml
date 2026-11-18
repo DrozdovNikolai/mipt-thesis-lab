@@ -1,0 +1,72 @@
+name: north55-cockpit-selector-v8
+x-common: &common
+  image: north55-speech-train:publisher-v2
+  network_mode: none
+  entrypoint: [python, -u, -m, scripts.cockpit_selector_v8]
+  working_dir: /app
+  environment:
+    PYTHONPATH: /app:/app/src
+    HF_HUB_OFFLINE: '1'
+    TRANSFORMERS_OFFLINE: '1'
+    CUDA_VISIBLE_DEVICES: '0'
+    LD_LIBRARY_PATH: /opt/venv/lib/python3.11/site-packages/nvidia/cublas/lib:/opt/venv/lib/python3.11/site-packages/nvidia/cudnn/lib
+x-gpu: &gpu
+  resources:
+    reservations:
+      devices:
+        - driver: nvidia
+          device_ids: ['0']
+          capabilities: [gpu]
+services:
+  prepare:
+    <<: *common
+    entrypoint: [python, -u, -c]
+    command:
+      - |
+        import os
+        from pathlib import Path
+        from scripts.cockpit_selector_v8 import prepare
+        prepare()
+        for name in ('io-gpu', 'io-cpu', 'io-replay'):
+            path = Path('/study') / name
+            path.mkdir(exist_ok=True)
+            os.chown(path, 10001, 10001)
+    user: '0:0'
+    volumes:
+      - .:/app:ro
+      - ./reports/cockpit-selector-v8:/study
+      - cross:/cross:ro
+      - models:/models:ro
+  infer:
+    <<: *common
+    command: [infer]
+    deploy: *gpu
+    volumes:
+      - ./reports/cockpit-selector-v8/frozen:/app:ro
+      - ./reports/cockpit-selector-v8/plan.json:/study/plan.json:ro
+      - ./reports/cockpit-selector-v8/inputs.json:/study/inputs.json:ro
+      - ./reports/cockpit-selector-v8/io-${V8_MODE:-gpu}:/output
+      - cross:/cross:ro
+      - models:/models:ro
+  score:
+    <<: *common
+    command: [score]
+    volumes:
+      - ./reports/cockpit-selector-v8/frozen:/app:ro
+      - ./reports/cockpit-selector-v8:/study
+      - models:/models:ro
+  checks:
+    <<: *common
+    command: [verify]
+    volumes:
+      - ./reports/cockpit-selector-v8/frozen:/app:ro
+      - ./reports/cockpit-selector-v8:/study
+      - cross:/cross:ro
+      - models:/models:ro
+volumes:
+  cross:
+    external: true
+    name: north55-speech_cockpit_cross_asr_v6
+  models:
+    external: true
+    name: north55-speech_model_cache

@@ -1,0 +1,19 @@
+{
+  "image_id": "sha256:34ed3eca5f649c8d1b3fc1b021bae236a3030829d9c9347368a32ba4fa6b347c",
+  "state": {
+    "Status": "exited",
+    "Running": false,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 0,
+    "ExitCode": 1,
+    "Error": "",
+    "StartedAt": "2026-09-14T08:55:42.206460444Z",
+    "FinishedAt": "2026-09-14T08:56:02.661348464Z"
+  },
+  "reason": "FLEURS train TSV has literal quotation marks; default CSV quoting merged fields in two rows",
+  "name": "north55-training-support-import-v1",
+  "script_sha256": "c5cd8eb99c26f05e8264684e230d021cf8dd9a8c30522ddd386f89a6f96cbe72"
+}

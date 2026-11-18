@@ -1,0 +1,170 @@
+{
+  "schema_version": "1.0",
+  "source_plan_sha256": "ca10bb5d8e428b7d044cedbcefe8a160eea4b78b003c37e2e1b33559bbe8bdad",
+  "metrics_sha256": "d547419652052d9a8b413b622c96ac46552fd1c267e33722c7fc29d97d8ac39b",
+  "default": {
+    "schema_version": "1.0",
+    "name": "measured_preview_v1",
+    "model": "whisper-small-publisher-base-ct2",
+    "compute_type": "float16",
+    "device": "cuda",
+    "task": "transcribe",
+    "beam_size": 5,
+    "temperature": 0.0,
+    "best_of": 5,
+    "patience": 1.0,
+    "length_penalty": 1.0,
+    "repetition_penalty": 1.0,
+    "no_repeat_ngram_size": 0,
+    "condition_on_previous_text": true,
+    "compression_ratio_threshold": 2.4,
+    "log_prob_threshold": -1.0,
+    "no_speech_threshold": 0.6,
+    "suppress_blank": true,
+    "suppress_tokens": [
+      -1
+    ],
+    "max_initial_timestamp": 1.0,
+    "word_timestamps": true,
+    "language_detection_threshold": 0.5,
+    "language_detection_segments": 1,
+    "vad": {
+      "enabled": false,
+      "threshold": 0.5,
+      "min_speech_duration_ms": 100,
+      "min_silence_duration_ms": 400,
+      "speech_pad_ms": 200,
+      "max_speech_duration_s": 30.0
+    },
+    "denoise": {
+      "enabled": false,
+      "strength": 0.5,
+      "floor": 0.3,
+      "noise_percentile": 10.0
+    },
+    "hotwords": null,
+    "glossary_version": null,
+    "redecode": false,
+    "max_redecode_passes": 1,
+    "redecode_logprob_threshold": -0.8,
+    "episode_gap_sec": 2.0,
+    "episode_max_sec": 30.0,
+    "episode_max_tokens": 100,
+    "classifier": "rules_v1",
+    "classifier_artifact": null
+  },
+  "by_language": {
+    "en": {
+      "schema_version": "1.0",
+      "name": "measured_preview_v1",
+      "model": "whisper-small-publisher-base-ct2",
+      "compute_type": "float16",
+      "device": "cuda",
+      "task": "transcribe",
+      "beam_size": 5,
+      "temperature": 0.0,
+      "best_of": 5,
+      "patience": 1.0,
+      "length_penalty": 1.0,
+      "repetition_penalty": 1.0,
+      "no_repeat_ngram_size": 0,
+      "condition_on_previous_text": true,
+      "compression_ratio_threshold": 2.4,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        -1
+      ],
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "language_detection_threshold": 0.5,
+      "language_detection_segments": 1,
+      "vad": {
+        "enabled": false,
+        "threshold": 0.5,
+        "min_speech_duration_ms": 100,
+        "min_silence_duration_ms": 400,
+        "speech_pad_ms": 200,
+        "max_speech_duration_s": 30.0
+      },
+      "denoise": {
+        "enabled": false,
+        "strength": 0.5,
+        "floor": 0.3,
+        "noise_percentile": 10.0
+      },
+      "hotwords": null,
+      "glossary_version": null,
+      "redecode": false,
+      "max_redecode_passes": 1,
+      "redecode_logprob_threshold": -0.8,
+      "episode_gap_sec": 2.0,
+      "episode_max_sec": 30.0,
+      "episode_max_tokens": 100,
+      "classifier": "rules_v1",
+      "classifier_artifact": null
+    },
+    "ru": {
+      "schema_version": "1.0",
+      "name": "measured_preview_v1",
+      "model": "whisper-large-v3-systran-ct2",
+      "compute_type": "float16",
+      "device": "cuda",
+      "task": "transcribe",
+      "beam_size": 5,
+      "temperature": 0.0,
+      "best_of": 5,
+      "patience": 1.0,
+      "length_penalty": 1.0,
+      "repetition_penalty": 1.0,
+      "no_repeat_ngram_size": 0,
+      "condition_on_previous_text": true,
+      "compression_ratio_threshold": 2.4,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        -1
+      ],
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "language_detection_threshold": 0.5,
+      "language_detection_segments": 1,
+      "vad": {
+        "enabled": false,
+        "threshold": 0.5,
+        "min_speech_duration_ms": 100,
+        "min_silence_duration_ms": 400,
+        "speech_pad_ms": 200,
+        "max_speech_duration_s": 30.0
+      },
+      "denoise": {
+        "enabled": false,
+        "strength": 0.5,
+        "floor": 0.3,
+        "noise_percentile": 10.0
+      },
+      "hotwords": null,
+      "glossary_version": null,
+      "redecode": false,
+      "max_redecode_passes": 1,
+      "redecode_logprob_threshold": -0.8,
+      "episode_gap_sec": 2.0,
+      "episode_max_sec": 30.0,
+      "episode_max_tokens": 100,
+      "classifier": "rules_v1",
+      "classifier_artifact": null
+    }
+  },
+  "model_manifest_digests": {
+    "whisper-small-publisher-base-ct2": "c2d7036311c882d968f3f3002f43ebf93d6d3cf760ac87429f91e711c6f2f75e",
+    "whisper-large-v3-systran-ct2": "02e0485f388b67eaab50b01bc95e218dd76db93592abbac414bddf9751af4db8"
+  },
+  "evaluation_scope": {
+    "ru": "new general read-speech dev; unknown speaker identities",
+    "en": "previous exploratory cockpit dev and regression controls",
+    "auto_and_mixed": "unchanged small; no new quality validation",
+    "full_spec_gate": "NEEDS_MORE_DATA"
+  }
+}

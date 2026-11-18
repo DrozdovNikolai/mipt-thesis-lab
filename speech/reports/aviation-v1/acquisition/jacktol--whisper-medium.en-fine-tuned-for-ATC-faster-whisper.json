@@ -1,0 +1,32 @@
+{
+  "repo": "jacktol/whisper-medium.en-fine-tuned-for-ATC-faster-whisper",
+  "repo_type": "model",
+  "revision": "f243e13340c9bc0c34b971f0df4af80b70811895",
+  "files": {
+    "README.md": {
+      "size": 4508,
+      "blob_id": "6240b123d14ba329c7e05c8dfde8aca1a779ef56",
+      "lfs": null
+    },
+    "config.json": {
+      "size": 1959,
+      "blob_id": "4f0674b26346d06e53c55a548e64eb272161aebe",
+      "lfs": null
+    },
+    "model.bin": {
+      "size": 3055765653,
+      "blob_id": "480a0ae616e8bb0d9022424e3db00178a8d1881c",
+      "lfs": "f1001512e660aaf27f82200384e5badb23e7bf1eedd9c1e3a4a721921e7ee064"
+    },
+    "preprocessor_config.json": {
+      "size": 339,
+      "blob_id": "91876762a536a746d268353c5cba57286e76b058",
+      "lfs": null
+    },
+    "vocabulary.json": {
+      "size": 877345,
+      "blob_id": "eac876515b5710955ba87726353487973af64f3a",
+      "lfs": null
+    }
+  }
+}

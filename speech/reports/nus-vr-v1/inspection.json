@@ -1,0 +1,2713 @@
+{
+  "checked_at": "2026-09-14T14:02:37.440769+00:00",
+  "source_revision": "0c520edbcd345cb9005cc77c3345eedbfef7147b",
+  "acquisition_sha256": "3c50cf9e8830b43a4100ae5360021bbdce0fa7b0b33371836b05144ea347f7e4",
+  "script_sha256": "5a238c462645a178a4f59c16a24c3407af10aba459ebff88adf847560a090a55",
+  "runtime": {
+    "python": "3.11.14",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+    "pyarrow": "25.0.1",
+    "soundfile": "0.13.1",
+    "numpy": "2.2.6"
+  },
+  "files": [
+    {
+      "file": "CombinedSamples_01_03_04_05_06_07.parquet",
+      "rows": 263,
+      "schema": "id: string\naudio: struct<bytes: binary, path: string>\n  child 0, bytes: binary\n  child 1, path: string\ntext: string\nsegment_start_time: float\nsegment_end_time: float\nduration: float",
+      "schema_metadata_keys": [],
+      "decoded": 0,
+      "duration_sec_including_duplicates": 0.0
+    },
+    {
+      "file": "Sample01(1).parquet",
+      "rows": 16,
+      "schema": "id: string\naudio: struct<bytes: binary, path: string>\n  child 0, bytes: binary\n  child 1, path: string\ntext: string\nsegment_start_time: float\nsegment_end_time: float\nduration: float",
+      "schema_metadata_keys": [],
+      "decoded": 0,
+      "duration_sec_including_duplicates": 0.0
+    },
+    {
+      "file": "Sample01.parquet",
+      "rows": 16,
+      "schema": "id: string\naudio: struct<bytes: binary, path: string>\n  child 0, bytes: binary\n  child 1, path: string\ntext: string\nsegment_start_time: float\nsegment_end_time: float\nduration: float",
+      "schema_metadata_keys": [],
+      "decoded": 0,
+      "duration_sec_including_duplicates": 0.0
+    },
+    {
+      "file": "Sample02(1).parquet",
+      "rows": 50,
+      "schema": "id: string\naudio: struct<bytes: binary, path: string>\n  child 0, bytes: binary\n  child 1, path: string\ntext: string\nsegment_start_time: float\nsegment_end_time: float\nduration: float",
+      "schema_metadata_keys": [],
+      "decoded": 0,
+      "duration_sec_including_duplicates": 0.0
+    },
+    {
+      "file": "Sample02.parquet",
+      "rows": 50,
+      "schema": "id: string\naudio: struct<bytes: binary, path: string>\n  child 0, bytes: binary\n  child 1, path: string\ntext: string\nsegment_start_time: float\nsegment_end_time: float\nduration: float",
+      "schema_metadata_keys": [],
+      "decoded": 0,
+      "duration_sec_including_duplicates": 0.0
+    },
+    {
+      "file": "Sample03.parquet",
+      "rows": 36,
+      "schema": "id: string\naudio: struct<bytes: binary, path: string>\n  child 0, bytes: binary\n  child 1, path: string\ntext: string\nsegment_start_time: float\nsegment_end_time: float\nduration: float",
+      "schema_metadata_keys": [],
+      "decoded": 0,
+      "duration_sec_including_duplicates": 0.0
+    },
+    {
+      "file": "Sample04.parquet",
+      "rows": 44,
+      "schema": "id: string\naudio: struct<bytes: binary, path: string>\n  child 0, bytes: binary\n  child 1, path: string\ntext: string\nsegment_start_time: float\nsegment_end_time: float\nduration: float",
+      "schema_metadata_keys": [],
+      "decoded": 0,
+      "duration_sec_including_duplicates": 0.0
+    },
+    {
+      "file": "Sample05.parquet",
+      "rows": 61,
+      "schema": "id: string\naudio: struct<bytes: binary, path: string>\n  child 0, bytes: binary\n  child 1, path: string\ntext: string\nsegment_start_time: float\nsegment_end_time: float\nduration: float",
+      "schema_metadata_keys": [],
+      "decoded": 0,
+      "duration_sec_including_duplicates": 0.0
+    },
+    {
+      "file": "Sample06.parquet",
+      "rows": 48,
+      "schema": "id: string\naudio: struct<bytes: binary, path: string>\n  child 0, bytes: binary\n  child 1, path: string\ntext: string\nsegment_start_time: float\nsegment_end_time: float\nduration: float",
+      "schema_metadata_keys": [],
+      "decoded": 0,
+      "duration_sec_including_duplicates": 0.0
+    },
+    {
+      "file": "Sample07.parquet",
+      "rows": 58,
+      "schema": "id: string\naudio: struct<bytes: binary, path: string>\n  child 0, bytes: binary\n  child 1, path: string\ntext: string\nsegment_start_time: float\nsegment_end_time: float\nduration: float",
+      "schema_metadata_keys": [],
+      "decoded": 0,
+      "duration_sec_including_duplicates": 0.0
+    }
+  ],
+  "row_count": 642,
+  "decoded_rows": 0,
+  "failures": [
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:0",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:1",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:2",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:3",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:4",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:5",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:6",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:7",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:8",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:9",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:10",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:11",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:12",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:13",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:14",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:15",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:16",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:17",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:18",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:19",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:20",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:21",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:22",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:23",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:24",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:25",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:26",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:27",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:28",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:29",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:30",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:31",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:32",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:33",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:34",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:35",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:36",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:37",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:38",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:39",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:40",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:41",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:42",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:43",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:44",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:45",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:46",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:47",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:48",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:49",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:50",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:51",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:52",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:53",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:54",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:55",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:56",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:57",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:58",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:59",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:60",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:61",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:62",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:63",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:64",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:65",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:66",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:67",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:68",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:69",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:70",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:71",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:72",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:73",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:74",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:75",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:76",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:77",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:78",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:79",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:80",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:81",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:82",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:83",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:84",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:85",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:86",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:87",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:88",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:89",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:90",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:91",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:92",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:93",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:94",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:95",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:96",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:97",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:98",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:99",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:100",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:101",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:102",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:103",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:104",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:105",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:106",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:107",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:108",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:109",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:110",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:111",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:112",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:113",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:114",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:115",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:116",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:117",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:118",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:119",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:120",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:121",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:122",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:123",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:124",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:125",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:126",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:127",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:128",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:129",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:130",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:131",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:132",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:133",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:134",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:135",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:136",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:137",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:138",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:139",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:140",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:141",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:142",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:143",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:144",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:145",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:146",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:147",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:148",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:149",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:150",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:151",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:152",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:153",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:154",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:155",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:156",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:157",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:158",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:159",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:160",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:161",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:162",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:163",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:164",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:165",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:166",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:167",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:168",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:169",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:170",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:171",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:172",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:173",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:174",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:175",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:176",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:177",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:178",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:179",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:180",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:181",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:182",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:183",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:184",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:185",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:186",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:187",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:188",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:189",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:190",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:191",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:192",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:193",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:194",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:195",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:196",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:197",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:198",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:199",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:200",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:201",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:202",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:203",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:204",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:205",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:206",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:207",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:208",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:209",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:210",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:211",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:212",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:213",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:214",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:215",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:216",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:217",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:218",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:219",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:220",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:221",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:222",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:223",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:224",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:225",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:226",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:227",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:228",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:229",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:230",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:231",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:232",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:233",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:234",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:235",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:236",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:237",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:238",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:239",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:240",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:241",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:242",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:243",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:244",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:245",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:246",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:247",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:248",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:249",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:250",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:251",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:252",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:253",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:254",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:255",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:256",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:257",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:258",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:259",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:260",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:261",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "CombinedSamples_01_03_04_05_06_07.parquet:262",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample01(1).parquet:0",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample01(1).parquet:1",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample01(1).parquet:2",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample01(1).parquet:3",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample01(1).parquet:4",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample01(1).parquet:5",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample01(1).parquet:6",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample01(1).parquet:7",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample01(1).parquet:8",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample01(1).parquet:9",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample01(1).parquet:10",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample01(1).parquet:11",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample01(1).parquet:12",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample01(1).parquet:13",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample01(1).parquet:14",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample01(1).parquet:15",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample01.parquet:0",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample01.parquet:1",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample01.parquet:2",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample01.parquet:3",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample01.parquet:4",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample01.parquet:5",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample01.parquet:6",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample01.parquet:7",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample01.parquet:8",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample01.parquet:9",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample01.parquet:10",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample01.parquet:11",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample01.parquet:12",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample01.parquet:13",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample01.parquet:14",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample01.parquet:15",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:0",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:1",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:2",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:3",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:4",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:5",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:6",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:7",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:8",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:9",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:10",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:11",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:12",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:13",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:14",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:15",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:16",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:17",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:18",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:19",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:20",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:21",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:22",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:23",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:24",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:25",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:26",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:27",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:28",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:29",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:30",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:31",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:32",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:33",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:34",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:35",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:36",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:37",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:38",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:39",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:40",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:41",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:42",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:43",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:44",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:45",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:46",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:47",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:48",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02(1).parquet:49",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:0",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:1",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:2",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:3",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:4",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:5",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:6",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:7",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:8",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:9",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:10",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:11",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:12",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:13",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:14",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:15",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:16",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:17",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:18",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:19",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:20",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:21",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:22",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:23",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:24",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:25",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:26",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:27",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:28",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:29",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:30",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:31",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:32",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:33",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:34",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:35",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:36",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:37",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:38",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:39",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:40",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:41",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:42",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:43",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:44",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:45",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:46",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:47",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:48",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample02.parquet:49",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:0",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:1",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:2",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:3",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:4",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:5",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:6",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:7",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:8",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:9",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:10",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:11",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:12",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:13",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:14",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:15",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:16",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:17",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:18",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:19",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:20",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:21",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:22",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:23",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:24",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:25",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:26",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:27",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:28",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:29",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:30",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:31",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:32",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:33",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:34",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample03.parquet:35",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:0",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:1",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:2",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:3",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:4",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:5",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:6",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:7",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:8",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:9",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:10",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:11",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:12",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:13",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:14",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:15",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:16",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:17",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:18",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:19",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:20",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:21",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:22",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:23",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:24",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:25",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:26",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:27",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:28",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:29",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:30",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:31",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:32",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:33",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:34",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:35",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:36",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:37",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:38",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:39",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:40",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:41",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:42",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample04.parquet:43",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:0",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:1",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:2",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:3",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:4",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:5",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:6",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:7",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:8",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:9",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:10",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:11",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:12",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:13",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:14",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:15",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:16",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:17",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:18",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:19",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:20",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:21",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:22",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:23",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:24",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:25",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:26",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:27",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:28",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:29",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:30",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:31",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:32",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:33",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:34",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:35",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:36",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:37",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:38",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:39",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:40",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:41",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:42",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:43",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:44",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:45",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:46",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:47",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:48",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:49",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:50",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:51",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:52",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:53",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:54",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:55",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:56",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:57",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:58",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:59",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample05.parquet:60",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:0",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:1",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:2",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:3",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:4",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:5",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:6",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:7",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:8",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:9",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:10",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:11",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:12",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:13",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:14",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:15",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:16",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:17",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:18",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:19",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:20",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:21",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:22",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:23",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:24",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:25",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:26",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:27",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:28",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:29",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:30",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:31",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:32",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:33",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:34",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:35",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:36",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:37",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:38",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:39",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:40",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:41",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:42",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:43",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:44",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:45",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:46",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample06.parquet:47",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:0",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:1",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:2",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:3",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:4",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:5",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:6",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:7",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:8",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:9",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:10",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:11",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:12",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:13",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:14",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:15",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:16",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:17",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:18",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:19",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:20",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:21",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:22",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:23",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:24",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:25",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:26",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:27",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:28",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:29",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:30",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:31",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:32",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:33",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:34",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:35",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:36",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:37",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:38",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:39",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:40",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:41",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:42",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:43",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:44",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:45",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:46",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:47",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:48",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:49",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:50",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:51",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:52",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:53",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:54",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:55",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:56",
+      "error": "ValueError: Invalid source time interval"
+    },
+    {
+      "row_id": "Sample07.parquet:57",
+      "error": "ValueError: Invalid source time interval"
+    }
+  ],
+  "decode_status": "FAIL",
+  "sample_rates": {},
+  "channels": {},
+  "audio_formats": {},
+  "min_clip_sec": null,
+  "max_clip_sec": null,
+  "zero_signal_rows": 0,
+  "interval_mismatch_over_20ms": 0,
+  "duration_mismatch_over_20ms": 0,
+  "source_ids_count": 0,
+  "source_audio_paths_count": 0,
+  "duplicates": {
+    "unique_pcm_clips": 0,
+    "duplicate_rows": 0,
+    "unique_audio_duration_sec": 0,
+    "unique_reference_words_first_occurrence": 0,
+    "conflicting_reference_audio_groups": [],
+    "duplicate_groups": []
+  },
+  "cross_file_audio_overlap": [],
+  "rights": {
+    "status": "BLOCKED",
+    "reason": "SOURCE_USE_PERMISSION_NOT_ESTABLISHED",
+    "github_license_metadata": null,
+    "current_tree_sha": "0c520edbcd345cb9005cc77c3345eedbfef7147b",
+    "tree_complete": true,
+    "permission_file_candidates": [],
+    "source_readme_reviewed": true,
+    "public_visibility_is_not_training_permission": true
+  },
+  "technical_inspection_executed": true,
+  "listening_executed": false,
+  "alignment_human_verified": false,
+  "speaker_session_groups_verified": false,
+  "provisional_leakage_groups": 1,
+  "train_dev_test_split_created": false,
+  "all_rows_exposed_for_inspection": true,
+  "final_test_eligible": false,
+  "asr_inference_executed": false,
+  "training_executed": false,
+  "wer": null,
+  "nlp_f1": null,
+  "project_quality_gate": "NEEDS_MORE_DATA",
+  "release_gate": "BLOCKED",
+  "candidate_promoted": false,
+  "private_index_sha256": "8d5ae1d17a3b7fae7d86786b536a7b1b96677e55e706f53ebca423f1a681f31f"
+}

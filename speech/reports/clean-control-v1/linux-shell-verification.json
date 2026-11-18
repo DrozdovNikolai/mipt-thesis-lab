@@ -1,0 +1,7 @@
+{
+  "shell": "bash inside Linux Docker container on Windows host",
+  "exit_code": 0,
+  "comparison_sha256_before": "8298537A64B49E2AC81DEB04D1FA1ABC8A186F6FC9EE6D54D8B64923D2FFB492",
+  "comparison_sha256_after": "8298537A64B49E2AC81DEB04D1FA1ABC8A186F6FC9EE6D54D8B64923D2FFB492",
+  "identical": true
+}

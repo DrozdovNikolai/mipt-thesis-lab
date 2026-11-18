@@ -1,0 +1,8 @@
+{
+  "status": "STOPPED_BEFORE_INFERENCE",
+  "reason": "User redirected effort to pilot and aviation speech; general-English evaluation expansion cancelled.",
+  "recorded_at": "2026-09-14T22:29:14.5440732+03:00",
+  "candidate_inference_calls": 0,
+  "general_english_new_samples": 0,
+  "training_steps": 0
+}

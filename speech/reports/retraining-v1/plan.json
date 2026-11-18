@@ -1,0 +1,231 @@
+{
+  "frozen_at": "2026-09-14T09:24:06.433838+00:00",
+  "script_sha256": "d5b8ba65daf50ed7cf8be330ae3aa7f8b4596b6a0e5ddc8ee57dd11ed057494c",
+  "code_sha256": "b7465f6230eb41734a4775583cf8e688bf010c1d5e55c8d672a7c1a455df6034",
+  "scorer_sha256": "12d299fc3407caf6f82a2e4c3c3e0d1443b5d065a95ffbf0b5fcc01731421084",
+  "acceptance_sha256": "32d35b1e80b64f38e6adcc9895515b37f224a9e51dcf5ff95389e1f9ecc45071",
+  "baseline_sha256": "419accafb0874a51c11bd4865117a4daf761345a48242e36269c71e88a73e1d1",
+  "uv_lock_sha256": "55a8e553c1ae4894347e17a16957bc5a7ea7bbcd06f33e0bd74fa85a440e062b",
+  "retraining_script_sha256": "b78305689182df50dc41e0fc3371826d32e893cadc5f18f2d4f3e916ec518953",
+  "admission_sha256": "9eed0d54f4d87b645498e45600f01f7db96c5b52da03db732f4382af302ee8e1",
+  "configs": {
+    "control": {
+      "train_manifest": "/dataset/control/train.jsonl",
+      "dev_manifest": "/dataset/dev.jsonl",
+      "base_model": "whisper-small-transformers",
+      "output": "whisper-small-retraining-v1-control",
+      "reference_policy": "mixed_sources_exploratory_v1",
+      "quality_evidence": false,
+      "selection_allowed": false,
+      "rank": 8,
+      "max_steps": 120,
+      "eval_steps": 120,
+      "learning_rate": 0.0001
+    },
+    "augmented": {
+      "train_manifest": "/dataset/augmented/train.jsonl",
+      "dev_manifest": "/dataset/dev.jsonl",
+      "base_model": "whisper-small-transformers",
+      "output": "whisper-small-retraining-v1-augmented",
+      "reference_policy": "mixed_sources_exploratory_v1",
+      "quality_evidence": false,
+      "selection_allowed": false,
+      "rank": 8,
+      "max_steps": 120,
+      "eval_steps": 120,
+      "learning_rate": 0.0001
+    }
+  },
+  "data": {
+    "control": {
+      "pairs": 33,
+      "minutes": 11.0,
+      "languages": {
+        "en": 33
+      },
+      "groups": {
+        "independent_groups": 7,
+        "split_groups": {
+          "train": 5,
+          "dev": 2,
+          "test": 0
+        },
+        "unknown_speakers": 0,
+        "script_overlap": {
+          "bleriot:BEA:Checklists": [
+            "dev",
+            "train"
+          ]
+        },
+        "claim_limitation": null
+      },
+      "train_sha256": "ab6bf1ef6d99e657374ba6e6e76d66a32720d7c5e4077e72be60461926012b00",
+      "dev_sha256": "76fbf9ba6c29f31aeeff27d0cf0013638a76ab95e3d6a21b2d62f88a4e5384f6"
+    },
+    "augmented": {
+      "pairs": 433,
+      "minutes": 93.0933354166667,
+      "languages": {
+        "en": 233,
+        "ru": 200
+      },
+      "groups": {
+        "independent_groups": 10,
+        "split_groups": {
+          "train": 8,
+          "dev": 2,
+          "test": 0
+        },
+        "unknown_speakers": 200,
+        "script_overlap": {
+          "bleriot:BEA:Checklists": [
+            "dev",
+            "train"
+          ]
+        },
+        "claim_limitation": "unknown speakers cannot establish speaker-disjoint generalization"
+      },
+      "train_sha256": "8fe6112701bd1921aaa0c44f97b64105b31550358a3ff986592c885131008933",
+      "dev_sha256": "76fbf9ba6c29f31aeeff27d0cf0013638a76ab95e3d6a21b2d62f88a4e5384f6"
+    }
+  },
+  "models": {
+    "parent": "whisper-small-publisher-base-ct2",
+    "control": "whisper-small-retraining-v1-control-ct2",
+    "augmented": "whisper-small-retraining-v1-augmented-ct2"
+  },
+  "base_manifest": {
+    "repo": "openai/whisper-small",
+    "revision": "973afd24965f72e36ca33b3055d56a652f456b4d",
+    "license": "apache-2.0",
+    "files": {
+      "README.md": "967fa44eefe5d3436e040b0f171fc54da67aad96923bae10af37dac9be5bb6b0",
+      "added_tokens.json": "9715fd2243b6f06a5858b5e32950d2853f73dd5bc201aafcf76f5082a2d8acd1",
+      "config.json": "e6a2b489da1b5aed65a8eb8d1e7466fa867ad5643a8bc138ba708bd56b2875c4",
+      "generation_config.json": "71565b8ef50d0bf7a1193ed4bbed195b94e70c18894d81bba2f1233dcec3ab53",
+      "merges.txt": "2df2990a395e35e8dfbc7511e08c12d56018d8d04691e0133e5d63b21e154dc6",
+      "model.safetensors": "1d7734884874f1a1513ed9aa760a4f8e97aaa02fd6d93a3a85d27b2ae9ca596b",
+      "normalizer.json": "bf1c507dc8724ca9cf9903640dacfb69dae2f00edee4f21ceba106a7392f26dd",
+      "preprocessor_config.json": "9b5cd03a36fbb8a627c64d98a5b5b126ead95a77720723944487311f0110b666",
+      "special_tokens_map.json": "e67ae3a0aaa99abcd9f187138e12db1f65c16a14761c50ef10eef2c174a7a691",
+      "tokenizer.json": "27fc476bfe7f17299480be2273fc0608e4d5a99aba2ab5dec5374b4482d1a566",
+      "tokenizer_config.json": "2a4c4281cf9f51ac6ccc406fdc711a087afe6530f671fa7b80953edc498275ce",
+      "vocab.json": "8f680bba319e01a653d2e8a5dbc17a9157179e0576e6ce74ce0c06356c6e24f9"
+    },
+    "purpose": "optional supervised ASR LoRA after verified training annotations",
+    "excluded_formats": [
+      "pytorch_model.bin",
+      "flax_model.msgpack",
+      "tf_model.h5"
+    ],
+    "training_executed": false
+  },
+  "parent_manifest": {
+    "model": "whisper-small-publisher-base-ct2",
+    "repo": "local_unadapted_conversion",
+    "revision": "973afd24965f72e36ca33b3055d56a652f456b4d",
+    "source_manifest_sha256": "b92a7c691f46da8afd9b3d4ec859e7941584784dac32d1e1f4fe78d27279a83a",
+    "license": "apache-2.0",
+    "files": {
+      "model.bin": "eef2cbde70d256f29b6e3432c85b92becd26f804650e855cc4ff7e66f12122b0",
+      "tokenizer.json": "27fc476bfe7f17299480be2273fc0608e4d5a99aba2ab5dec5374b4482d1a566",
+      "vocabulary.json": "5ad28279db5e546349708b9a74736e2c018737ac5a600f1048f1f26c99b85b47",
+      "preprocessor_config.json": "9b5cd03a36fbb8a627c64d98a5b5b126ead95a77720723944487311f0110b666",
+      "config.json": "b55496ac7940a7ae47d2c01eab40edfd8701feec1229d9cce3b40014383fb828"
+    },
+    "purpose": "same source weights and CT2 float16 conversion control for A5"
+  },
+  "protocol_sha256": "b643b328ac57868e66fe98c5a79dbb1a28bc5799b85070e9fe07bfe0255a1714",
+  "source_manifests": {
+    "weak_train": "a3fa5eae9dbe260e9a4e877fddce688051c5aa95732b43e9b563f64c2de28fe3",
+    "support_train": "1f5726dee1572a3970b84afbd9914a9f5135ca8325005e6a756ef8b6284259ad",
+    "weak_dev": "76fbf9ba6c29f31aeeff27d0cf0013638a76ab95e3d6a21b2d62f88a4e5384f6"
+  },
+  "inputs_sha256": "95de12b68fed19502a003a07fb26a64837299db773322edf8060264f6ed0cb7e",
+  "references_sha256": "804a18e60747e3e9b6620f8e03fd95214a70eef95dd826c28e29f883a342fa12",
+  "inference_template": {
+    "schema_version": "1.0",
+    "name": "baseline",
+    "model": "whisper-small-publisher-base-ct2",
+    "compute_type": "float16",
+    "device": "cuda",
+    "task": "transcribe",
+    "beam_size": 5,
+    "temperature": 0.0,
+    "best_of": 5,
+    "patience": 1.0,
+    "length_penalty": 1.0,
+    "repetition_penalty": 1.0,
+    "no_repeat_ngram_size": 0,
+    "condition_on_previous_text": true,
+    "compression_ratio_threshold": 2.4,
+    "log_prob_threshold": -1.0,
+    "no_speech_threshold": 0.6,
+    "suppress_blank": true,
+    "suppress_tokens": [
+      -1
+    ],
+    "max_initial_timestamp": 1.0,
+    "word_timestamps": true,
+    "language_detection_threshold": 0.5,
+    "language_detection_segments": 1,
+    "vad": {
+      "enabled": false,
+      "threshold": 0.5,
+      "min_speech_duration_ms": 100,
+      "min_silence_duration_ms": 400,
+      "speech_pad_ms": 200,
+      "max_speech_duration_s": 30.0
+    },
+    "denoise": {
+      "enabled": false,
+      "strength": 0.5,
+      "floor": 0.3,
+      "noise_percentile": 10.0
+    },
+    "hotwords": null,
+    "glossary_version": null,
+    "redecode": false,
+    "max_redecode_passes": 1,
+    "redecode_logprob_threshold": -0.8,
+    "episode_gap_sec": 2.0,
+    "episode_max_sec": 30.0,
+    "episode_max_tokens": 100,
+    "classifier": "rules_v1",
+    "classifier_artifact": null
+  },
+  "prior_plan_sha256": "d523caebd225b728985d1b15fd0d74e99156b7eac634412649fbd3eaff2c8b92",
+  "budget": {
+    "prior_development_configurations": 16,
+    "additional_fixed_training_arms": 2,
+    "total_cumulative_configurations": 18,
+    "steps_per_arm": 120,
+    "adaptive_trials": 0,
+    "authorization": "user: так переобучай; SPEC section 362"
+  },
+  "test_accessed": false,
+  "selection_allowed": false,
+  "release_promoted": false,
+  "limitations": [
+    "Automatic publisher targets are not independent lexical WER gold.",
+    "Human dev subset is small, previously inspected and includes unresolved digit spelling.",
+    "Whole VOICI original is dev-only; mixtures share ONE noise group, not independent flights.",
+    "Noise has publisher speech-removal provenance, no independent human verification.",
+    "General clean controls were already observed; regression only, no tuning or selection.",
+    "No human event/salience/entity or continuous temporal labels are created.",
+    "B noise microphones/channels are correlated; conservative grouping by aircraft, only two groups.",
+    "Flight noise has publisher provenance, no independent human speech-absence audit.",
+    "FLEURS is general read Russian, no speaker identifiers, one conservative group, no cabin claim.",
+    "Impulse responses validated as data, not used to simulate independent recordings.",
+    "Language-effect comparison deliberately changes input information and is not same-information pipeline evidence.",
+    "Small versus large changes checkpoint; it cannot establish same-checkpoint pipeline improvement.",
+    "English is a saved human declaration; French and mixed language are never inferred from a desired transcript.",
+    "Memory sampling is device-wide on a shared GPU, not exact per-process GPU allocation or guaranteed peak.",
+    "All data are already exposed dev/diagnostic cohorts, not independent final test.",
+    "Supplement contains 2 known EN speakers and one conservative RU train group; RU individual IDs unavailable.",
+    "Publisher train/dev speaker partition for FLEURS is inherited, not independently audited.",
+    "Equal optimizer steps do not mean equal epochs or equal cockpit-example exposure.",
+    "Only 5 partial human cockpit dev references, no independent final-test or complete critical entities.",
+    "Monolingual EN and RU training does not validate mixed-language or spontaneous cockpit speech."
+  ]
+}

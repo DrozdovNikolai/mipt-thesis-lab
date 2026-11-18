@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "common_decoder_initialization_identical": true,
+  "sample_schedules_identical": true,
+  "arms": {
+    "decoder-kl": {
+      "actual_updates": 240,
+      "coverage": {
+        "4": 219,
+        "3": 28
+      },
+      "nonzero_decoder_B_tensors": 48,
+      "nonzero_encoder_B_tensors": 0,
+      "frozen_base_unchanged": true,
+      "model": "whisper-small-cockpit-hard-v4-decoder-kl"
+    },
+    "decoder-ce": {
+      "actual_updates": 240,
+      "coverage": {
+        "4": 219,
+        "3": 28
+      },
+      "nonzero_decoder_B_tensors": 48,
+      "nonzero_encoder_B_tensors": 0,
+      "frozen_base_unchanged": true,
+      "model": "whisper-small-cockpit-hard-v4-decoder-ce"
+    },
+    "full-ce": {
+      "actual_updates": 240,
+      "coverage": {
+        "4": 219,
+        "3": 28
+      },
+      "nonzero_decoder_B_tensors": 48,
+      "nonzero_encoder_B_tensors": 24,
+      "frozen_base_unchanged": true,
+      "model": "whisper-small-cockpit-hard-v4-full-ce"
+    }
+  },
+  "plan_sha256": "f3ca9c8e6da4362a6ea688367f43dad0d8b0ef6ff2324fb842819bd8f5a87c0a"
+}

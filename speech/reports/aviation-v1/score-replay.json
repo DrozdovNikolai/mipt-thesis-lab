@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "command": "docker compose -f compose.aviation.yaml run --rm score",
+  "exit_code": 0,
+  "new_asr_calls": 0,
+  "files": [
+    {
+      "path": "reports/aviation-v1/recipe/selected.json",
+      "before_sha256": "a49eb0358e6173bb6d612f2e1563237e22100345aef6448e70022b742b542f53",
+      "after_sha256": "a49eb0358e6173bb6d612f2e1563237e22100345aef6448e70022b742b542f53",
+      "byte_identical": true
+    },
+    {
+      "path": "reports/aviation-v1/metrics.json",
+      "before_sha256": "fc6295ec671a4c42c8a901ccfd602b1da0040343486470eae40269526af0dccd",
+      "after_sha256": "fc6295ec671a4c42c8a901ccfd602b1da0040343486470eae40269526af0dccd",
+      "byte_identical": true
+    }
+  ],
+  "recorded_at": "2026-09-14T23:32:10.0267965+03:00"
+}

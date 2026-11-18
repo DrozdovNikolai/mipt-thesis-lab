@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-09-14T07:51:33.666112+00:00",
+  "files": {
+    "SPEC.md": "9191d785add8109b4a3edd75171fab81987aac5df34036cb34daecbbe4de644f",
+    "SOURCES.md": "74e70ac86c48d423f9a3da3d3d6bd8a13ee32cab6e537502ba0f12c3a939f114",
+    "ACCEPTANCE.yaml": "32d35b1e80b64f38e6adcc9895515b37f224a9e51dcf5ff95389e1f9ecc45071",
+    "configs/baseline.yaml": "419accafb0874a51c11bd4865117a4daf761345a48242e36269c71e88a73e1d1",
+    "data/curated/reviewed-pilot-v2/dev.jsonl": "f0e0dcabfba85f8d291d6b4052117b3e389ae8f149530782d0b7feaa6d63a7e7",
+    "reports/additional-sources-v1/verification.json": "f4c0e576cc2b234118e548b4e923e18f4ce45660a9abda80c8f8dbaaa0048394",
+    "reports/additional-sources-v1/asr/comparison.json": "d58f04c50b07944035f517e27e232f8c1648150354541dac37368234ea2124f8",
+    "reports/all-sources-v1/verification.json": "a7931332ba1698d6c5821419dba72a406b3fc44a3d910fec0a7a051904ab8ada"
+  }
+}

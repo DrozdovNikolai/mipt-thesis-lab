@@ -1,0 +1,32 @@
+{
+  "images": {
+    "north55-speech:0.1.0": "sha256:664bf78bcea698c45d90dd1a5870abfcb39d8e054dd93ddb8a8eb6b949beb76d",
+    "north55-speech-gpu:0.1.0": "sha256:394be6ab0e22daa9bc743fe6657643be8cfcc96a40898ef1ae4a92a3715617c3",
+    "north55-speech-train:0.1.0": "sha256:b8931907335f6bccc5ef822abc30dce7bb58c47128c7c6d46228c25798bbc3bb",
+    "north55-annotation-tools:0.1.0": "sha256:76e3f86c2c89687abe7562be3ae3467c178a016f9054d54e0da964b78e66e5f4",
+    "north55-speech:asr-plan-a5578a68": "sha256:06958443ce034c9e53e4c54fb51dfea43e9c4c22292bdb0396fb1c47884f4057"
+  },
+  "running_container_images": {
+    "north55-speech-api-1": "sha256:664bf78bcea698c45d90dd1a5870abfcb39d8e054dd93ddb8a8eb6b949beb76d",
+    "north55-speech-worker-1": "sha256:664bf78bcea698c45d90dd1a5870abfcb39d8e054dd93ddb8a8eb6b949beb76d",
+    "north55-speech-annotation-1": "sha256:76e3f86c2c89687abe7562be3ae3467c178a016f9054d54e0da964b78e66e5f4"
+  },
+  "compose_checks": {
+    "cpu": {
+      "exit_code": 0,
+      "stderr": ""
+    },
+    "gpu": {
+      "exit_code": 0,
+      "stderr": ""
+    },
+    "annotation": {
+      "exit_code": 0,
+      "stderr": ""
+    },
+    "reviewed-training": {
+      "exit_code": 0,
+      "stderr": ""
+    }
+  }
+}

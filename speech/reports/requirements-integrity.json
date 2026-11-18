@@ -1,0 +1,17 @@
+[
+  {
+    "path": "ACCEPTANCE.yaml",
+    "unchanged": true,
+    "sha256": "32d35b1e80b64f38e6adcc9895515b37f224a9e51dcf5ff95389e1f9ecc45071"
+  },
+  {
+    "path": "SPEC.md",
+    "unchanged": true,
+    "sha256": "9191d785add8109b4a3edd75171fab81987aac5df34036cb34daecbbe4de644f"
+  },
+  {
+    "path": "SOURCES.md",
+    "unchanged": true,
+    "sha256": "74e70ac86c48d423f9a3da3d3d6bd8a13ee32cab6e537502ba0f12c3a939f114"
+  }
+]

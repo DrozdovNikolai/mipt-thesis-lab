@@ -1,0 +1,42 @@
+[
+  {
+    "file": "clean.wav",
+    "id": "fit-000c93d063a0c47c8acf885f2adb762b",
+    "pcm_sha256": "cd65076c1e49c27d9a9800fa1fca3e529efa07c6bdc010924adb1e9c84bf26bd",
+    "route": "whisper",
+    "whisper": "210 knots, landing lights check on, taxi lights on, ground spoilers arm, auto brake set, flaps set one.",
+    "parakeet": "two hundred ten knots. Landing lights check on Taxi lights on ground spoilers arm. Auto brake set. Flaps set one.",
+    "hypothesis": "210 knots, landing lights check on, taxi lights on, ground spoilers arm, auto brake set, flaps set one.",
+    "original_language": "en"
+  },
+  {
+    "file": "noisy.wav",
+    "id": "fit-01b6f820b5fa18cc180d49414d775d83",
+    "pcm_sha256": "422e4ba5651c88426b35f73d7450248c98e6e2be9b1250a2066963c443922a8f",
+    "route": "parakeet",
+    "whisper": "It's pretty, and of course it is.",
+    "parakeet": "He's good. And of course.",
+    "hypothesis": "He's good. And of course.",
+    "original_language": "en"
+  },
+  {
+    "file": "empty.wav",
+    "id": "voici-2660112-0240",
+    "pcm_sha256": "4563fc458af722852509bd6ca648edd808ecf628b1765c5f72df6670e2b08dc4",
+    "route": "parakeet",
+    "whisper": "2.5 km",
+    "parakeet": "",
+    "hypothesis": "",
+    "original_language": "auto"
+  },
+  {
+    "file": "quiet.wav",
+    "id": "1462-170145-0012--quiet12",
+    "pcm_sha256": "f9e8edc6920873eed5c1da76b84b03855607da8befd27b11d6da1f139a5b768e",
+    "route": "whisper",
+    "whisper": "He bent his face over her hair",
+    "parakeet": "He bent his face over her hair.",
+    "hypothesis": "He bent his face over her hair",
+    "original_language": "en"
+  }
+]

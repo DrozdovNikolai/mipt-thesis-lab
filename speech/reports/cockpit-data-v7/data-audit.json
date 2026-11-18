@@ -1,0 +1,18 @@
+{
+  "control_rows": 247,
+  "expanded_rows": 259,
+  "new_weak_rows": 18,
+  "replacements": {
+    "215926ef38ce7db4e5f511d3f6231926": "b7afee42a0bc47296cc47aac25693241",
+    "ff60360bdf8082cdef1915e07ffe2a53": "1d0e70aef3370300439e0b3420e9a1d0",
+    "2e6e4ac7ddc445eab76cc5aa99f03346": "4225003ffec8630592697b64e2718a2f",
+    "304b822bf9f4e4eeaf66e0d9129c49a7": "6199beb4d45803531fab77df7adba4bc",
+    "7bec19ebcd217e73c1d102e8cacbfe0a": "934a9fa2933d3b414e125ddf4e45f02d",
+    "46142034122de65cd27277b2642d3833": "996789648a6e7e1166c8315e14b75fc0"
+  },
+  "expanded_seconds": 1885.2659375000003,
+  "clean_unique_seconds": 1797.9259375,
+  "overlapping_clean_intervals": 0,
+  "partition_check": "PASS",
+  "human_verified": false
+}

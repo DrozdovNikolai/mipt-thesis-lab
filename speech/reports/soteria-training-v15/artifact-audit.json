@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "audit_script_sha256": "cccaa0b036adbc16f038881b60fdf78a3aba1acb75fc7ea22c6329d2406586f8",
+  "waveforms_and_targets_reverified": 310,
+  "schedule_updates_per_arm": 160,
+  "saved_optimizer_tensors_per_arm": 96,
+  "finite_trained_adapters": {
+    "replay_control": "f35b1e3623274162a5feb49aeb50b01f8baeb43da2a3948b01b94d59e3d02ea9",
+    "soteria_mix": "5d464abcc8e8e7d77bfd1fba045a6d91bcb91175d7d3be3147b3f7a79beba392"
+  },
+  "inference_only_repair_verified": true,
+  "training_evaluation_audio_disjoint": true,
+  "human_annotations_created": 0,
+  "closed_test_accessed": false
+}

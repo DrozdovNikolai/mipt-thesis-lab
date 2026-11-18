@@ -1,0 +1,47 @@
+name: north55-cockpit-hybrid-v10-local
+services:
+  transcribe:
+    image: north55-speech-parakeet:v6
+    network_mode: none
+    entrypoint: [python, -u, /app/scripts/transcribe_cockpit_hybrid_v10.py]
+    working_dir: /app
+    environment:
+      PYTHONPATH: /app:/app/src
+      HF_HUB_OFFLINE: '1'
+      TRANSFORMERS_OFFLINE: '1'
+      CUDA_VISIBLE_DEVICES: '0'
+      LD_LIBRARY_PATH: /opt/venv/lib/python3.11/site-packages/nvidia/cublas/lib:/opt/venv/lib/python3.11/site-packages/nvidia/cudnn/lib
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['0']
+              capabilities: [gpu]
+    volumes:
+      - ./reports/cockpit-candidates-v10/local-runtime/frozen:/app:ro
+      - ./reports/cockpit-candidates-v10/local-runtime/runtime.json:/profile/runtime.json:ro
+      - ./reports/cockpit-noise-router-v9/io-train:/trained:ro
+      - ./reports/cockpit-candidates-v10/local-runtime/output:/output
+      - ${HYBRID_AUDIO_DIR:-./reports/cockpit-candidates-v10/local-runtime/smoke-audio}:/input:ro
+      - candidates:/models:ro
+      - type: volume
+        source: robust
+        target: /whisper-models
+        volume:
+          subpath: models
+      - type: volume
+        source: cross
+        target: /parakeet
+        volume:
+          subpath: parakeet
+volumes:
+  robust:
+    external: true
+    name: north55-speech_cockpit_robust_v5
+  cross:
+    external: true
+    name: north55-speech_cockpit_cross_asr_v6
+  candidates:
+    external: true
+    name: north55-speech_cockpit_models_v10

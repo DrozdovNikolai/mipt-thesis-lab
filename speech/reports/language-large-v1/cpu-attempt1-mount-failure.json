@@ -1,0 +1,61 @@
+{
+  "name": "north55-language-large-cpu-v1",
+  "image_id": "sha256:c8cd23b37ba06b2be11de789298bbed59c1b257f867ca11b3efd34b5176b5cd1",
+  "network_mode": "none",
+  "command": [
+    "-m",
+    "scripts.language_large_cpu_smoke"
+  ],
+  "state": {
+    "Status": "created",
+    "Running": false,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 0,
+    "ExitCode": 128,
+    "Error": "failed to create task for container: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: error mounting \"/run/desktop/mnt/host/c/DEV/MIPT/Diploma/Speech/scripts/language_large_cpu_smoke.py\" to rootfs at \"/app/scripts/language_large_cpu_smoke.py\": create mountpoint for /app/scripts/language_large_cpu_smoke.py mount: create target of file bind-mount: mknod regular file /var/lib/docker/rootfs/overlayfs/31a4160847f08d7becb5f5f2f6d08c029db64aaac6615e57cec923b2009ea64f/app/scripts/language_large_cpu_smoke.py: read-only file system: unknown",
+    "StartedAt": "0001-01-01T00:00:00Z",
+    "FinishedAt": "0001-01-01T00:00:00Z"
+  },
+  "mounts": [
+    {
+      "Type": "bind",
+      "Source": "/run/desktop/mnt/host/c/DEV/MIPT/Diploma/Speech/reports/language-large-v1/frozen/scripts",
+      "Destination": "/app/scripts",
+      "RW": false
+    },
+    {
+      "Type": "bind",
+      "Source": "/run/desktop/mnt/host/c/DEV/MIPT/Diploma/Speech/reports/language-large-v1/frozen/src",
+      "Destination": "/app/src",
+      "RW": false
+    },
+    {
+      "Type": "bind",
+      "Source": "C:\\DEV\\MIPT\\Diploma\\Speech/scripts/language_large_cpu_smoke.py",
+      "Destination": "/app/scripts/language_large_cpu_smoke.py",
+      "RW": false
+    },
+    {
+      "Type": "bind",
+      "Source": "C:\\DEV\\MIPT\\Diploma\\Speech/reports/language-large-v1",
+      "Destination": "/reports/language-large-v1",
+      "RW": true
+    },
+    {
+      "Type": "volume",
+      "Source": "/var/lib/docker/volumes/north55-speech_audio_data/_data",
+      "Destination": "/audio",
+      "RW": false
+    },
+    {
+      "Type": "volume",
+      "Source": "/var/lib/docker/volumes/north55-speech_model_cache/_data",
+      "Destination": "/models",
+      "RW": false
+    }
+  ],
+  "reason": "New helper file overlaid inside an immutable directory; container did not start and no ASR ran. Retried using separate /app helper file mount."
+}

@@ -1,0 +1,1601 @@
+{
+  "plan_sha256": "2326ef45fb73bd19b3e44d9ae1a3670c4688adfedd7b0b4527411b7b13fc6499",
+  "cohorts": {
+    "acoustic_15_partial_human_dev": {
+      "samples": 5,
+      "scores": {
+        "base-raw": {
+          "S": 18,
+          "D": 0,
+          "I": 12,
+          "N": 115,
+          "H": 97,
+          "character_errors": 105,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.2608695652173913,
+          "cer": 0.15578635014836795
+        },
+        "base-gate": {
+          "S": 18,
+          "D": 0,
+          "I": 12,
+          "N": 115,
+          "H": 97,
+          "character_errors": 105,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.2608695652173913,
+          "cer": 0.15578635014836795
+        },
+        "utterance-raw": {
+          "S": 18,
+          "D": 0,
+          "I": 12,
+          "N": 115,
+          "H": 97,
+          "character_errors": 105,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.2608695652173913,
+          "cer": 0.15578635014836795
+        },
+        "utterance-gate": {
+          "S": 18,
+          "D": 0,
+          "I": 12,
+          "N": 115,
+          "H": 97,
+          "character_errors": 105,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.2608695652173913,
+          "cer": 0.15578635014836795
+        },
+        "edits-raw": {
+          "S": 15,
+          "D": 0,
+          "I": 12,
+          "N": 115,
+          "H": 100,
+          "character_errors": 95,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.23478260869565218,
+          "cer": 0.14094955489614244
+        },
+        "edits-gate": {
+          "S": 15,
+          "D": 0,
+          "I": 12,
+          "N": 115,
+          "H": 100,
+          "character_errors": 95,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.23478260869565218,
+          "cer": 0.14094955489614244
+        }
+      },
+      "comparisons": {
+        "utterance": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "method": "paired_cluster_bootstrap",
+          "seed": 55,
+          "resamples": 2000,
+          "confidence_level": 0.95,
+          "independent_groups": 3,
+          "delta_definition": "candidate - baseline",
+          "valid_resamples": 2000,
+          "system_intervals": {
+            "baseline": {
+              "lower": 0.21739130434782608,
+              "upper": 0.34782608695652173
+            },
+            "candidate": {
+              "lower": 0.21739130434782608,
+              "upper": 0.34782608695652173
+            }
+          }
+        },
+        "edits": {
+          "lower": -0.043478260869565216,
+          "upper": -0.021739130434782608,
+          "method": "paired_cluster_bootstrap",
+          "seed": 55,
+          "resamples": 2000,
+          "confidence_level": 0.95,
+          "independent_groups": 3,
+          "delta_definition": "candidate - baseline",
+          "valid_resamples": 2000,
+          "system_intervals": {
+            "baseline": {
+              "lower": 0.21739130434782608,
+              "upper": 0.34782608695652173
+            },
+            "candidate": {
+              "lower": 0.1956521739130435,
+              "upper": 0.30434782608695654
+            }
+          }
+        }
+      },
+      "nonempty": {
+        "base": 5,
+        "utterance": 5,
+        "edits": 5
+      },
+      "changed": {
+        "edits": 4
+      }
+    },
+    "acoustic_15_publisher_weak_dev": {
+      "samples": 35,
+      "scores": {
+        "base-raw": {
+          "S": 188,
+          "D": 24,
+          "I": 64,
+          "N": 879,
+          "H": 667,
+          "character_errors": 851,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.31399317406143346,
+          "cer": 0.16540330417881438
+        },
+        "base-gate": {
+          "S": 188,
+          "D": 24,
+          "I": 64,
+          "N": 879,
+          "H": 667,
+          "character_errors": 851,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.31399317406143346,
+          "cer": 0.16540330417881438
+        },
+        "utterance-raw": {
+          "S": 189,
+          "D": 24,
+          "I": 64,
+          "N": 879,
+          "H": 666,
+          "character_errors": 852,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.31513083048919227,
+          "cer": 0.16559766763848396
+        },
+        "utterance-gate": {
+          "S": 189,
+          "D": 24,
+          "I": 64,
+          "N": 879,
+          "H": 666,
+          "character_errors": 852,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.31513083048919227,
+          "cer": 0.16559766763848396
+        },
+        "edits-raw": {
+          "S": 170,
+          "D": 25,
+          "I": 56,
+          "N": 879,
+          "H": 684,
+          "character_errors": 797,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.285551763367463,
+          "cer": 0.15490767735665695
+        },
+        "edits-gate": {
+          "S": 170,
+          "D": 25,
+          "I": 56,
+          "N": 879,
+          "H": 684,
+          "character_errors": 797,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.285551763367463,
+          "cer": 0.15490767735665695
+        }
+      },
+      "comparisons": {
+        "utterance": {
+          "lower": 0.0,
+          "upper": 0.0013513513513513514,
+          "method": "paired_cluster_bootstrap",
+          "seed": 55,
+          "resamples": 2000,
+          "confidence_level": 0.95,
+          "independent_groups": 2,
+          "delta_definition": "candidate - baseline",
+          "valid_resamples": 2000,
+          "system_intervals": {
+            "baseline": {
+              "lower": 0.2891891891891892,
+              "upper": 0.4460431654676259
+            },
+            "candidate": {
+              "lower": 0.2905405405405405,
+              "upper": 0.4460431654676259
+            }
+          }
+        },
+        "edits": {
+          "lower": -0.04316546762589928,
+          "upper": -0.025675675675675677,
+          "method": "paired_cluster_bootstrap",
+          "seed": 55,
+          "resamples": 2000,
+          "confidence_level": 0.95,
+          "independent_groups": 2,
+          "delta_definition": "candidate - baseline",
+          "valid_resamples": 2000,
+          "system_intervals": {
+            "baseline": {
+              "lower": 0.2891891891891892,
+              "upper": 0.4460431654676259
+            },
+            "candidate": {
+              "lower": 0.2635135135135135,
+              "upper": 0.4028776978417266
+            }
+          }
+        }
+      },
+      "nonempty": {
+        "base": 35,
+        "utterance": 35,
+        "edits": 35
+      },
+      "changed": {
+        "edits": 23,
+        "utterance": 1
+      }
+    },
+    "acoustic_5_partial_human_dev": {
+      "samples": 5,
+      "scores": {
+        "base-raw": {
+          "S": 37,
+          "D": 4,
+          "I": 15,
+          "N": 115,
+          "H": 74,
+          "character_errors": 190,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.48695652173913045,
+          "cer": 0.2818991097922849
+        },
+        "base-gate": {
+          "S": 37,
+          "D": 4,
+          "I": 15,
+          "N": 115,
+          "H": 74,
+          "character_errors": 190,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.48695652173913045,
+          "cer": 0.2818991097922849
+        },
+        "utterance-raw": {
+          "S": 37,
+          "D": 4,
+          "I": 15,
+          "N": 115,
+          "H": 74,
+          "character_errors": 190,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.48695652173913045,
+          "cer": 0.2818991097922849
+        },
+        "utterance-gate": {
+          "S": 37,
+          "D": 4,
+          "I": 15,
+          "N": 115,
+          "H": 74,
+          "character_errors": 190,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.48695652173913045,
+          "cer": 0.2818991097922849
+        },
+        "edits-raw": {
+          "S": 37,
+          "D": 4,
+          "I": 15,
+          "N": 115,
+          "H": 74,
+          "character_errors": 190,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.48695652173913045,
+          "cer": 0.2818991097922849
+        },
+        "edits-gate": {
+          "S": 37,
+          "D": 4,
+          "I": 15,
+          "N": 115,
+          "H": 74,
+          "character_errors": 190,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.48695652173913045,
+          "cer": 0.2818991097922849
+        }
+      },
+      "comparisons": {
+        "utterance": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "method": "paired_cluster_bootstrap",
+          "seed": 55,
+          "resamples": 2000,
+          "confidence_level": 0.95,
+          "independent_groups": 3,
+          "delta_definition": "candidate - baseline",
+          "valid_resamples": 2000,
+          "system_intervals": {
+            "baseline": {
+              "lower": 0.3695652173913043,
+              "upper": 0.8260869565217391
+            },
+            "candidate": {
+              "lower": 0.3695652173913043,
+              "upper": 0.8260869565217391
+            }
+          }
+        },
+        "edits": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "method": "paired_cluster_bootstrap",
+          "seed": 55,
+          "resamples": 2000,
+          "confidence_level": 0.95,
+          "independent_groups": 3,
+          "delta_definition": "candidate - baseline",
+          "valid_resamples": 2000,
+          "system_intervals": {
+            "baseline": {
+              "lower": 0.3695652173913043,
+              "upper": 0.8260869565217391
+            },
+            "candidate": {
+              "lower": 0.3695652173913043,
+              "upper": 0.8260869565217391
+            }
+          }
+        }
+      },
+      "nonempty": {
+        "base": 5,
+        "utterance": 5,
+        "edits": 5
+      },
+      "changed": {}
+    },
+    "acoustic_5_publisher_weak_dev": {
+      "samples": 35,
+      "scores": {
+        "base-raw": {
+          "S": 347,
+          "D": 52,
+          "I": 55,
+          "N": 879,
+          "H": 480,
+          "character_errors": 1545,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.5164960182025028,
+          "cer": 0.30029154518950435
+        },
+        "base-gate": {
+          "S": 347,
+          "D": 52,
+          "I": 55,
+          "N": 879,
+          "H": 480,
+          "character_errors": 1545,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.5164960182025028,
+          "cer": 0.30029154518950435
+        },
+        "utterance-raw": {
+          "S": 347,
+          "D": 52,
+          "I": 55,
+          "N": 879,
+          "H": 480,
+          "character_errors": 1545,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.5164960182025028,
+          "cer": 0.30029154518950435
+        },
+        "utterance-gate": {
+          "S": 347,
+          "D": 52,
+          "I": 55,
+          "N": 879,
+          "H": 480,
+          "character_errors": 1545,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.5164960182025028,
+          "cer": 0.30029154518950435
+        },
+        "edits-raw": {
+          "S": 347,
+          "D": 52,
+          "I": 55,
+          "N": 879,
+          "H": 480,
+          "character_errors": 1545,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.5164960182025028,
+          "cer": 0.30029154518950435
+        },
+        "edits-gate": {
+          "S": 347,
+          "D": 52,
+          "I": 55,
+          "N": 879,
+          "H": 480,
+          "character_errors": 1545,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.5164960182025028,
+          "cer": 0.30029154518950435
+        }
+      },
+      "comparisons": {
+        "utterance": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "method": "paired_cluster_bootstrap",
+          "seed": 55,
+          "resamples": 2000,
+          "confidence_level": 0.95,
+          "independent_groups": 2,
+          "delta_definition": "candidate - baseline",
+          "valid_resamples": 2000,
+          "system_intervals": {
+            "baseline": {
+              "lower": 0.48243243243243245,
+              "upper": 0.697841726618705
+            },
+            "candidate": {
+              "lower": 0.48243243243243245,
+              "upper": 0.697841726618705
+            }
+          }
+        },
+        "edits": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "method": "paired_cluster_bootstrap",
+          "seed": 55,
+          "resamples": 2000,
+          "confidence_level": 0.95,
+          "independent_groups": 2,
+          "delta_definition": "candidate - baseline",
+          "valid_resamples": 2000,
+          "system_intervals": {
+            "baseline": {
+              "lower": 0.48243243243243245,
+              "upper": 0.697841726618705
+            },
+            "candidate": {
+              "lower": 0.48243243243243245,
+              "upper": 0.697841726618705
+            }
+          }
+        }
+      },
+      "nonempty": {
+        "base": 35,
+        "utterance": 35,
+        "edits": 35
+      },
+      "changed": {}
+    },
+    "bleriot_b_noise": {
+      "samples": 25,
+      "scores": {
+        "base-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "base-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "utterance-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "utterance-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "edits-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "edits-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        }
+      },
+      "comparisons": {},
+      "nonempty": {
+        "base": 0,
+        "utterance": 0,
+        "edits": 0
+      },
+      "changed": {}
+    },
+    "general_clean": {
+      "samples": 50,
+      "scores": {
+        "base-raw": {
+          "S": 37,
+          "D": 2,
+          "I": 5,
+          "N": 1214,
+          "H": 1175,
+          "character_errors": 95,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.036243822075782535,
+          "cer": 0.0144993894993895
+        },
+        "base-gate": {
+          "S": 37,
+          "D": 2,
+          "I": 5,
+          "N": 1214,
+          "H": 1175,
+          "character_errors": 95,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.036243822075782535,
+          "cer": 0.0144993894993895
+        },
+        "utterance-raw": {
+          "S": 21,
+          "D": 0,
+          "I": 3,
+          "N": 1214,
+          "H": 1193,
+          "character_errors": 41,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.019769357495881382,
+          "cer": 0.006257631257631258
+        },
+        "utterance-gate": {
+          "S": 21,
+          "D": 0,
+          "I": 3,
+          "N": 1214,
+          "H": 1193,
+          "character_errors": 41,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.019769357495881382,
+          "cer": 0.006257631257631258
+        },
+        "edits-raw": {
+          "S": 17,
+          "D": 0,
+          "I": 2,
+          "N": 1214,
+          "H": 1197,
+          "character_errors": 32,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.015650741350906095,
+          "cer": 0.004884004884004884
+        },
+        "edits-gate": {
+          "S": 17,
+          "D": 0,
+          "I": 2,
+          "N": 1214,
+          "H": 1197,
+          "character_errors": 32,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.015650741350906095,
+          "cer": 0.004884004884004884
+        }
+      },
+      "comparisons": {},
+      "nonempty": {
+        "base": 50,
+        "utterance": 50,
+        "edits": 50
+      },
+      "changed": {
+        "utterance": 14,
+        "edits": 19
+      }
+    },
+    "general_ru": {
+      "samples": 50,
+      "scores": {
+        "base-raw": {
+          "S": 70,
+          "D": 6,
+          "I": 7,
+          "N": 921,
+          "H": 845,
+          "character_errors": 155,
+          "reference_characters": 6406,
+          "wer_lexical_corpus": 0.09011943539630836,
+          "cer": 0.024196066187948798
+        },
+        "base-gate": {
+          "S": 70,
+          "D": 6,
+          "I": 7,
+          "N": 921,
+          "H": 845,
+          "character_errors": 155,
+          "reference_characters": 6406,
+          "wer_lexical_corpus": 0.09011943539630836,
+          "cer": 0.024196066187948798
+        },
+        "utterance-raw": {
+          "S": 70,
+          "D": 6,
+          "I": 7,
+          "N": 921,
+          "H": 845,
+          "character_errors": 155,
+          "reference_characters": 6406,
+          "wer_lexical_corpus": 0.09011943539630836,
+          "cer": 0.024196066187948798
+        },
+        "utterance-gate": {
+          "S": 70,
+          "D": 6,
+          "I": 7,
+          "N": 921,
+          "H": 845,
+          "character_errors": 155,
+          "reference_characters": 6406,
+          "wer_lexical_corpus": 0.09011943539630836,
+          "cer": 0.024196066187948798
+        },
+        "edits-raw": {
+          "S": 70,
+          "D": 6,
+          "I": 7,
+          "N": 921,
+          "H": 845,
+          "character_errors": 155,
+          "reference_characters": 6406,
+          "wer_lexical_corpus": 0.09011943539630836,
+          "cer": 0.024196066187948798
+        },
+        "edits-gate": {
+          "S": 70,
+          "D": 6,
+          "I": 7,
+          "N": 921,
+          "H": 845,
+          "character_errors": 155,
+          "reference_characters": 6406,
+          "wer_lexical_corpus": 0.09011943539630836,
+          "cer": 0.024196066187948798
+        }
+      },
+      "comparisons": {},
+      "nonempty": {
+        "base": 50,
+        "utterance": 50,
+        "edits": 50
+      },
+      "changed": {}
+    },
+    "noise_only": {
+      "samples": 15,
+      "scores": {
+        "base-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "base-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "utterance-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "utterance-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "edits-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "edits-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        }
+      },
+      "comparisons": {},
+      "nonempty": {
+        "base": 0,
+        "utterance": 0,
+        "edits": 0
+      },
+      "changed": {}
+    },
+    "partial_human_dev": {
+      "samples": 5,
+      "scores": {
+        "base-raw": {
+          "S": 8,
+          "D": 1,
+          "I": 6,
+          "N": 115,
+          "H": 106,
+          "character_errors": 50,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.13043478260869565,
+          "cer": 0.07418397626112759
+        },
+        "base-gate": {
+          "S": 8,
+          "D": 1,
+          "I": 6,
+          "N": 115,
+          "H": 106,
+          "character_errors": 50,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.13043478260869565,
+          "cer": 0.07418397626112759
+        },
+        "utterance-raw": {
+          "S": 8,
+          "D": 1,
+          "I": 6,
+          "N": 115,
+          "H": 106,
+          "character_errors": 50,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.13043478260869565,
+          "cer": 0.07418397626112759
+        },
+        "utterance-gate": {
+          "S": 8,
+          "D": 1,
+          "I": 6,
+          "N": 115,
+          "H": 106,
+          "character_errors": 50,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.13043478260869565,
+          "cer": 0.07418397626112759
+        },
+        "edits-raw": {
+          "S": 7,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 107,
+          "character_errors": 41,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.11304347826086956,
+          "cer": 0.06083086053412463
+        },
+        "edits-gate": {
+          "S": 7,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 107,
+          "character_errors": 41,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.11304347826086956,
+          "cer": 0.06083086053412463
+        }
+      },
+      "comparisons": {
+        "utterance": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "method": "paired_cluster_bootstrap",
+          "seed": 55,
+          "resamples": 2000,
+          "confidence_level": 0.95,
+          "independent_groups": 3,
+          "delta_definition": "candidate - baseline",
+          "valid_resamples": 2000,
+          "system_intervals": {
+            "baseline": {
+              "lower": 0.08695652173913043,
+              "upper": 0.30434782608695654
+            },
+            "candidate": {
+              "lower": 0.08695652173913043,
+              "upper": 0.30434782608695654
+            }
+          }
+        },
+        "edits": {
+          "lower": -0.043478260869565216,
+          "upper": 0.0,
+          "method": "paired_cluster_bootstrap",
+          "seed": 55,
+          "resamples": 2000,
+          "confidence_level": 0.95,
+          "independent_groups": 3,
+          "delta_definition": "candidate - baseline",
+          "valid_resamples": 2000,
+          "system_intervals": {
+            "baseline": {
+              "lower": 0.08695652173913043,
+              "upper": 0.30434782608695654
+            },
+            "candidate": {
+              "lower": 0.06521739130434782,
+              "upper": 0.2608695652173913
+            }
+          }
+        }
+      },
+      "nonempty": {
+        "base": 5,
+        "utterance": 5,
+        "edits": 5
+      },
+      "changed": {
+        "edits": 2
+      }
+    },
+    "publisher_weak_dev": {
+      "samples": 35,
+      "scores": {
+        "base-raw": {
+          "S": 130,
+          "D": 15,
+          "I": 48,
+          "N": 879,
+          "H": 734,
+          "character_errors": 633,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.21956769055745165,
+          "cer": 0.12303206997084548
+        },
+        "base-gate": {
+          "S": 130,
+          "D": 15,
+          "I": 48,
+          "N": 879,
+          "H": 734,
+          "character_errors": 633,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.21956769055745165,
+          "cer": 0.12303206997084548
+        },
+        "utterance-raw": {
+          "S": 135,
+          "D": 15,
+          "I": 50,
+          "N": 879,
+          "H": 729,
+          "character_errors": 649,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.22753128555176336,
+          "cer": 0.12614188532555878
+        },
+        "utterance-gate": {
+          "S": 135,
+          "D": 15,
+          "I": 50,
+          "N": 879,
+          "H": 729,
+          "character_errors": 649,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.22753128555176336,
+          "cer": 0.12614188532555878
+        },
+        "edits-raw": {
+          "S": 125,
+          "D": 13,
+          "I": 51,
+          "N": 879,
+          "H": 741,
+          "character_errors": 621,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.2150170648464164,
+          "cer": 0.1206997084548105
+        },
+        "edits-gate": {
+          "S": 125,
+          "D": 13,
+          "I": 51,
+          "N": 879,
+          "H": 741,
+          "character_errors": 621,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.2150170648464164,
+          "cer": 0.1206997084548105
+        }
+      },
+      "comparisons": {
+        "utterance": {
+          "lower": 0.0,
+          "upper": 0.00945945945945946,
+          "method": "paired_cluster_bootstrap",
+          "seed": 55,
+          "resamples": 2000,
+          "confidence_level": 0.95,
+          "independent_groups": 2,
+          "delta_definition": "candidate - baseline",
+          "valid_resamples": 2000,
+          "system_intervals": {
+            "baseline": {
+              "lower": 0.19864864864864865,
+              "upper": 0.33093525179856115
+            },
+            "candidate": {
+              "lower": 0.20810810810810812,
+              "upper": 0.33093525179856115
+            }
+          }
+        },
+        "edits": {
+          "lower": -0.014388489208633094,
+          "upper": -0.002702702702702703,
+          "method": "paired_cluster_bootstrap",
+          "seed": 55,
+          "resamples": 2000,
+          "confidence_level": 0.95,
+          "independent_groups": 2,
+          "delta_definition": "candidate - baseline",
+          "valid_resamples": 2000,
+          "system_intervals": {
+            "baseline": {
+              "lower": 0.19864864864864865,
+              "upper": 0.33093525179856115
+            },
+            "candidate": {
+              "lower": 0.19594594594594594,
+              "upper": 0.31654676258992803
+            }
+          }
+        }
+      },
+      "nonempty": {
+        "base": 35,
+        "utterance": 35,
+        "edits": 35
+      },
+      "changed": {
+        "edits": 19,
+        "utterance": 4
+      }
+    },
+    "quiet_general_clean": {
+      "samples": 9,
+      "scores": {
+        "base-raw": {
+          "S": 1,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 68,
+          "character_errors": 4,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.014492753623188406,
+          "cer": 0.011627906976744186
+        },
+        "base-gate": {
+          "S": 1,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 68,
+          "character_errors": 4,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.014492753623188406,
+          "cer": 0.011627906976744186
+        },
+        "utterance-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 69,
+          "character_errors": 0,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.0,
+          "cer": 0.0
+        },
+        "utterance-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 69,
+          "character_errors": 0,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.0,
+          "cer": 0.0
+        },
+        "edits-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 69,
+          "character_errors": 0,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.0,
+          "cer": 0.0
+        },
+        "edits-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 69,
+          "character_errors": 0,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.0,
+          "cer": 0.0
+        }
+      },
+      "comparisons": {},
+      "nonempty": {
+        "base": 9,
+        "utterance": 9,
+        "edits": 9
+      },
+      "changed": {
+        "utterance": 1,
+        "edits": 1
+      }
+    },
+    "quiet_partial_human_dev": {
+      "samples": 5,
+      "scores": {
+        "base-raw": {
+          "S": 10,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 104,
+          "character_errors": 52,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.1391304347826087,
+          "cer": 0.0771513353115727
+        },
+        "base-gate": {
+          "S": 10,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 104,
+          "character_errors": 52,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.1391304347826087,
+          "cer": 0.0771513353115727
+        },
+        "utterance-raw": {
+          "S": 10,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 104,
+          "character_errors": 52,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.1391304347826087,
+          "cer": 0.0771513353115727
+        },
+        "utterance-gate": {
+          "S": 10,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 104,
+          "character_errors": 52,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.1391304347826087,
+          "cer": 0.0771513353115727
+        },
+        "edits-raw": {
+          "S": 8,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 106,
+          "character_errors": 43,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.12173913043478261,
+          "cer": 0.06379821958456973
+        },
+        "edits-gate": {
+          "S": 8,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 106,
+          "character_errors": 43,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.12173913043478261,
+          "cer": 0.06379821958456973
+        }
+      },
+      "comparisons": {
+        "utterance": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "method": "paired_cluster_bootstrap",
+          "seed": 55,
+          "resamples": 2000,
+          "confidence_level": 0.95,
+          "independent_groups": 3,
+          "delta_definition": "candidate - baseline",
+          "valid_resamples": 2000,
+          "system_intervals": {
+            "baseline": {
+              "lower": 0.08695652173913043,
+              "upper": 0.30434782608695654
+            },
+            "candidate": {
+              "lower": 0.08695652173913043,
+              "upper": 0.30434782608695654
+            }
+          }
+        },
+        "edits": {
+          "lower": -0.043478260869565216,
+          "upper": 0.0,
+          "method": "paired_cluster_bootstrap",
+          "seed": 55,
+          "resamples": 2000,
+          "confidence_level": 0.95,
+          "independent_groups": 3,
+          "delta_definition": "candidate - baseline",
+          "valid_resamples": 2000,
+          "system_intervals": {
+            "baseline": {
+              "lower": 0.08695652173913043,
+              "upper": 0.30434782608695654
+            },
+            "candidate": {
+              "lower": 0.06521739130434782,
+              "upper": 0.2608695652173913
+            }
+          }
+        }
+      },
+      "nonempty": {
+        "base": 5,
+        "utterance": 5,
+        "edits": 5
+      },
+      "changed": {
+        "edits": 3
+      }
+    },
+    "synthetic_nonspeech": {
+      "samples": 20,
+      "scores": {
+        "base-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "base-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "utterance-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "utterance-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "edits-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "edits-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        }
+      },
+      "comparisons": {},
+      "nonempty": {
+        "base": 0,
+        "utterance": 0,
+        "edits": 0
+      },
+      "changed": {}
+    },
+    "train_hard_fit": {
+      "samples": 25,
+      "scores": {
+        "base-raw": {
+          "S": 25,
+          "D": 2,
+          "I": 8,
+          "N": 363,
+          "H": 336,
+          "character_errors": 79,
+          "reference_characters": 2214,
+          "wer_lexical_corpus": 0.09641873278236915,
+          "cer": 0.03568202348690153
+        },
+        "base-gate": {
+          "S": 25,
+          "D": 2,
+          "I": 8,
+          "N": 363,
+          "H": 336,
+          "character_errors": 79,
+          "reference_characters": 2214,
+          "wer_lexical_corpus": 0.09641873278236915,
+          "cer": 0.03568202348690153
+        },
+        "utterance-raw": {
+          "S": 23,
+          "D": 2,
+          "I": 8,
+          "N": 363,
+          "H": 338,
+          "character_errors": 73,
+          "reference_characters": 2214,
+          "wer_lexical_corpus": 0.09090909090909091,
+          "cer": 0.03297199638663053
+        },
+        "utterance-gate": {
+          "S": 23,
+          "D": 2,
+          "I": 8,
+          "N": 363,
+          "H": 338,
+          "character_errors": 73,
+          "reference_characters": 2214,
+          "wer_lexical_corpus": 0.09090909090909091,
+          "cer": 0.03297199638663053
+        },
+        "edits-raw": {
+          "S": 21,
+          "D": 1,
+          "I": 7,
+          "N": 363,
+          "H": 341,
+          "character_errors": 66,
+          "reference_characters": 2214,
+          "wer_lexical_corpus": 0.07988980716253444,
+          "cer": 0.02981029810298103
+        },
+        "edits-gate": {
+          "S": 21,
+          "D": 1,
+          "I": 7,
+          "N": 363,
+          "H": 341,
+          "character_errors": 66,
+          "reference_characters": 2214,
+          "wer_lexical_corpus": 0.07988980716253444,
+          "cer": 0.02981029810298103
+        }
+      },
+      "comparisons": {},
+      "nonempty": {
+        "base": 25,
+        "utterance": 25,
+        "edits": 25
+      },
+      "changed": {
+        "edits": 10,
+        "utterance": 3
+      }
+    },
+    "train_noisy_fit": {
+      "samples": 16,
+      "scores": {
+        "base-raw": {
+          "S": 93,
+          "D": 5,
+          "I": 17,
+          "N": 127,
+          "H": 29,
+          "character_errors": 427,
+          "reference_characters": 793,
+          "wer_lexical_corpus": 0.905511811023622,
+          "cer": 0.5384615384615384
+        },
+        "base-gate": {
+          "S": 36,
+          "D": 76,
+          "I": 8,
+          "N": 127,
+          "H": 15,
+          "character_errors": 632,
+          "reference_characters": 793,
+          "wer_lexical_corpus": 0.9448818897637795,
+          "cer": 0.7969735182849937
+        },
+        "utterance-raw": {
+          "S": 93,
+          "D": 5,
+          "I": 17,
+          "N": 127,
+          "H": 29,
+          "character_errors": 427,
+          "reference_characters": 793,
+          "wer_lexical_corpus": 0.905511811023622,
+          "cer": 0.5384615384615384
+        },
+        "utterance-gate": {
+          "S": 36,
+          "D": 76,
+          "I": 8,
+          "N": 127,
+          "H": 15,
+          "character_errors": 632,
+          "reference_characters": 793,
+          "wer_lexical_corpus": 0.9448818897637795,
+          "cer": 0.7969735182849937
+        },
+        "edits-raw": {
+          "S": 93,
+          "D": 5,
+          "I": 17,
+          "N": 127,
+          "H": 29,
+          "character_errors": 427,
+          "reference_characters": 793,
+          "wer_lexical_corpus": 0.905511811023622,
+          "cer": 0.5384615384615384
+        },
+        "edits-gate": {
+          "S": 36,
+          "D": 76,
+          "I": 8,
+          "N": 127,
+          "H": 15,
+          "character_errors": 632,
+          "reference_characters": 793,
+          "wer_lexical_corpus": 0.9448818897637795,
+          "cer": 0.7969735182849937
+        }
+      },
+      "comparisons": {},
+      "nonempty": {
+        "base": 16,
+        "utterance": 16,
+        "edits": 16
+      },
+      "changed": {}
+    },
+    "train_retained_fit": {
+      "samples": 206,
+      "scores": {
+        "base-raw": {
+          "S": 80,
+          "D": 16,
+          "I": 19,
+          "N": 2212,
+          "H": 2116,
+          "character_errors": 209,
+          "reference_characters": 13326,
+          "wer_lexical_corpus": 0.051989150090415916,
+          "cer": 0.015683625994296863
+        },
+        "base-gate": {
+          "S": 80,
+          "D": 16,
+          "I": 19,
+          "N": 2212,
+          "H": 2116,
+          "character_errors": 209,
+          "reference_characters": 13326,
+          "wer_lexical_corpus": 0.051989150090415916,
+          "cer": 0.015683625994296863
+        },
+        "utterance-raw": {
+          "S": 78,
+          "D": 13,
+          "I": 28,
+          "N": 2212,
+          "H": 2121,
+          "character_errors": 280,
+          "reference_characters": 13326,
+          "wer_lexical_corpus": 0.05379746835443038,
+          "cer": 0.021011556355995796
+        },
+        "utterance-gate": {
+          "S": 78,
+          "D": 13,
+          "I": 28,
+          "N": 2212,
+          "H": 2121,
+          "character_errors": 280,
+          "reference_characters": 13326,
+          "wer_lexical_corpus": 0.05379746835443038,
+          "cer": 0.021011556355995796
+        },
+        "edits-raw": {
+          "S": 87,
+          "D": 11,
+          "I": 28,
+          "N": 2212,
+          "H": 2114,
+          "character_errors": 327,
+          "reference_characters": 13326,
+          "wer_lexical_corpus": 0.056962025316455694,
+          "cer": 0.024538496172895094
+        },
+        "edits-gate": {
+          "S": 87,
+          "D": 11,
+          "I": 28,
+          "N": 2212,
+          "H": 2114,
+          "character_errors": 327,
+          "reference_characters": 13326,
+          "wer_lexical_corpus": 0.056962025316455694,
+          "cer": 0.024538496172895094
+        }
+      },
+      "comparisons": {},
+      "nonempty": {
+        "base": 206,
+        "utterance": 206,
+        "edits": 206
+      },
+      "changed": {
+        "edits": 51,
+        "utterance": 25
+      }
+    }
+  },
+  "checks": {
+    "utterance": {
+      "cockpit_preserved": false,
+      "cockpit_improved": false,
+      "EN_control": true,
+      "RU_control": true,
+      "nonspeech_empty": true
+    },
+    "edits": {
+      "cockpit_preserved": true,
+      "cockpit_improved": true,
+      "EN_control": true,
+      "RU_control": true,
+      "nonspeech_empty": true
+    }
+  },
+  "diagnostic_pass": {
+    "utterance": false,
+    "edits": true
+  },
+  "independent_quality_acceptance": false,
+  "new_ASR_calls": 0,
+  "release_promoted": false
+}

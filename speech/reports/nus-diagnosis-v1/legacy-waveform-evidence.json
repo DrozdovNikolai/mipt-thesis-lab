@@ -1,0 +1,35 @@
+{
+  "records": {
+    "reviewed-dc84f2b77565d804f16ea31f42380abb": {
+      "source_audio_sha256": "b43f839d2a2e31ad85b9b26ea7c80d72b54a6baf1e2f1ca52a05204c51cfb3a8",
+      "reconstructed_declared_pcm_sha256": "6616a90a3e82f6257934b1a12acedb4c478a74e39661399052e4b8a1e22cb4a6",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "reviewed-767df23c7c14166f8579da284d5a4219": {
+      "source_audio_sha256": "0542bf9f778e9f474fa85412e2e45510c8cd0fa9eade7e09edbeeda23ec3b553",
+      "reconstructed_declared_pcm_sha256": "0e480f9abfcbf2d5147c4d619cc82d9c0f5170682c3928edd73f801882731b5d",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "reviewed-c55f9c7708704c548f503aa642c2288d": {
+      "source_audio_sha256": "49d542966770cb4895f838b46e23d124c8ff1c622b5a512e7f320f8f13f165ff",
+      "reconstructed_declared_pcm_sha256": "2840ede91b9989082db7aa7a6a2d7a9298989a1bc83d44aba269662aaab71d16",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "reviewed-291ebb141aa4e7a7ba94ccf8d18002fb": {
+      "source_audio_sha256": "8a7a9552c6e2dd231c47a401fa86ca8c24ac3f3c6f1044958791082a67c4d041",
+      "reconstructed_declared_pcm_sha256": "76ab2713c720cb108c619819fa1e8d6ff94063d0caddbe7b40823e10464b9630",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "reviewed-b8d2fc3fc1893f19ae7fb8d7c2722a4d": {
+      "source_audio_sha256": "d625c3386567aceb1901b7ec91bbbd6bf99a1b45650d1bb2cfcbba48277a1d09",
+      "reconstructed_declared_pcm_sha256": "164edd5e6e55d4af4de6844329b00c7d9738c55725f0edb7cbf6133f1f44154b",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    }
+  },
+  "historical_predictions_modified": false
+}

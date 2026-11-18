@@ -1,0 +1,232 @@
+{
+  "files": [
+    {
+      "path": "CVR-like-speech/CVR_BEA_cvr_sp01.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 10581706,
+      "duration_sec": 220.45220833333335,
+      "subtype": "FLOAT"
+    },
+    {
+      "path": "CVR-like-speech/CVR_BEA_cvr_sp02.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 11343869,
+      "duration_sec": 236.33060416666666,
+      "subtype": "FLOAT"
+    },
+    {
+      "path": "CVR-like-speech/CVR_BEA_cvr_sp03.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 9409351,
+      "duration_sec": 196.02814583333333,
+      "subtype": "FLOAT"
+    },
+    {
+      "path": "CVR-like-speech/CVR_BEA_cvr_sp03_.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 5760000,
+      "duration_sec": 120.0,
+      "subtype": "FLOAT"
+    },
+    {
+      "path": "CVR-like-speech/CVR_BEA_cvr_sp04.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 8763614,
+      "duration_sec": 182.57529166666666,
+      "subtype": "FLOAT"
+    },
+    {
+      "path": "CVR-like-speech/CVR_BEA_cvr_sp06.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 9634709,
+      "duration_sec": 200.72310416666667,
+      "subtype": "FLOAT"
+    },
+    {
+      "path": "CVR-like-speech/CVR_BEA_cvr_sp07.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 10586789,
+      "duration_sec": 220.55810416666668,
+      "subtype": "FLOAT"
+    },
+    {
+      "path": "CVR-like-speech/CVR_BEA_cvr_sp08.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 13544086,
+      "duration_sec": 282.1684583333333,
+      "subtype": "FLOAT"
+    },
+    {
+      "path": "CVR-like-speech/CVR_BEA_cvr_sp09.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 10599093,
+      "duration_sec": 220.8144375,
+      "subtype": "FLOAT"
+    },
+    {
+      "path": "CVR-like-speech/CVR_BEA_cvr_sp10.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 9899265,
+      "duration_sec": 206.2346875,
+      "subtype": "FLOAT"
+    },
+    {
+      "path": "CVR-like-speech/CVR_BEA_cvr_sp11.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 19493885,
+      "duration_sec": 406.1226041666667,
+      "subtype": "FLOAT"
+    },
+    {
+      "path": "CVR-like-speech/CVR_BEA_cvr_sp12.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 10266746,
+      "duration_sec": 213.89054166666668,
+      "subtype": "FLOAT"
+    },
+    {
+      "path": "CVR-like-speech/CVR_DGA_CVR1_track1_sp102.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 2880000,
+      "duration_sec": 60.0,
+      "subtype": "FLOAT"
+    },
+    {
+      "path": "CVR-like-speech/CVR_DGA_CVR1_track2_sp105.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 2880000,
+      "duration_sec": 60.0,
+      "subtype": "FLOAT"
+    },
+    {
+      "path": "CVR-like-speech/CVR_DGA_CVR2_track1_sp103.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 7680000,
+      "duration_sec": 160.0,
+      "subtype": "FLOAT"
+    },
+    {
+      "path": "CVR-like-speech/CVR_DGA_CVR2_track2_sp104.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 7680000,
+      "duration_sec": 160.0,
+      "subtype": "FLOAT"
+    },
+    {
+      "path": "CVR-like-speech/CVR_DGA_CVR3_track1_sp106.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 979884,
+      "duration_sec": 20.41425,
+      "subtype": "FLOAT"
+    },
+    {
+      "path": "CVR-like-speech/CVR_DGA_CVR3_track2_sp101.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 1008000,
+      "duration_sec": 21.0,
+      "subtype": "FLOAT"
+    },
+    {
+      "path": "CVR-like-speech/CVR_DGA_CVR4_track1_sp103.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 5760000,
+      "duration_sec": 120.0,
+      "subtype": "FLOAT"
+    },
+    {
+      "path": "CVR-like-speech/CVR_DGA_CVR4_track2_sp104 .wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 5760000,
+      "duration_sec": 120.0,
+      "subtype": "FLOAT"
+    },
+    {
+      "path": "CVR-like-speech/CVR_DGA_CVR5_track1_sp101.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 4176657,
+      "duration_sec": 87.0136875,
+      "subtype": "FLOAT"
+    },
+    {
+      "path": "CVR-like-speech/CVR_DGA_CVR5_track2_sp102.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 4320000,
+      "duration_sec": 90.0,
+      "subtype": "FLOAT"
+    },
+    {
+      "path": "CVR-like-speech/CVR_DGA_checklist-Beech_sp101.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 19186420,
+      "duration_sec": 399.71708333333333,
+      "subtype": "FLOAT"
+    },
+    {
+      "path": "CVR-like-speech/CVR_DGA_checklist-PC7_sp104 .wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 11812402,
+      "duration_sec": 246.09170833333334,
+      "subtype": "FLOAT"
+    },
+    {
+      "path": "CVR-like-speech/CVR_DGA_checklist-Puma-1_sp105.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 16047577,
+      "duration_sec": 334.32452083333334,
+      "subtype": "FLOAT"
+    },
+    {
+      "path": "CVR-like-speech/CVR_DGA_checklist-Puma-2_sp103.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 6368454,
+      "duration_sec": 132.676125,
+      "subtype": "FLOAT"
+    },
+    {
+      "path": "CVR-like-speech/CVR_DGA_checklist-TBM940_sp102.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 5742796,
+      "duration_sec": 119.64158333333333,
+      "subtype": "FLOAT"
+    },
+    {
+      "path": "CVR-like-speech/CVR_DGA_checklist-unknown_sp102.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 646054,
+      "duration_sec": 13.459458333333334,
+      "subtype": "FLOAT"
+    }
+  ],
+  "count": 28,
+  "duration_minutes": 80.83727673611111,
+  "audio_header_check": "EXECUTED",
+  "scope_verified": false
+}

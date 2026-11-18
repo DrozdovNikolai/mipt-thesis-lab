@@ -1,0 +1,7 @@
+{
+  "status": "FAILED_BEFORE_WRITE",
+  "action": "Replay split metadata helper under Ubuntu WSL",
+  "reason": "Host Linux UID could not read a private artifact created by container UID 10001.",
+  "source_data_changed": false,
+  "resolution": "Read the two source files through read-only mounts in an offline container with the original UID; no permission broadening."
+}

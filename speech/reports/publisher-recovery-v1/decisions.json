@@ -1,0 +1,1801 @@
+[
+  {
+    "id": "aaabed86621516e13a1d72690f36c65a",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.21428571428571427,
+    "median_word_probability": 0.894775390625,
+    "counts": {
+      "S": 4,
+      "D": 0,
+      "I": 2,
+      "N": 28,
+      "H": 24,
+      "wer": 0.21428571428571427,
+      "character_errors": 19,
+      "reference_characters": 165,
+      "cer": 0.11515151515151516
+    }
+  },
+  {
+    "id": "03b32606496d3919d3ab169b1c7589e4",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.3333333333333333,
+    "median_word_probability": 0.9482421875,
+    "counts": {
+      "S": 6,
+      "D": 0,
+      "I": 2,
+      "N": 24,
+      "H": 18,
+      "wer": 0.3333333333333333,
+      "character_errors": 40,
+      "reference_characters": 151,
+      "cer": 0.26490066225165565
+    }
+  },
+  {
+    "id": "152aaba78f9cc0a4982a087330db866b",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.5,
+    "median_word_probability": 0.8453369140625,
+    "counts": {
+      "S": 8,
+      "D": 7,
+      "I": 1,
+      "N": 32,
+      "H": 17,
+      "wer": 0.5,
+      "character_errors": 52,
+      "reference_characters": 171,
+      "cer": 0.30409356725146197
+    }
+  },
+  {
+    "id": "31eef21aee4992b722fd202c8a3b0034",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement",
+      "numeric_disagreement"
+    ],
+    "lexical_disagreement": 0.32,
+    "median_word_probability": 0.958251953125,
+    "counts": {
+      "S": 7,
+      "D": 0,
+      "I": 1,
+      "N": 25,
+      "H": 18,
+      "wer": 0.32,
+      "character_errors": 30,
+      "reference_characters": 141,
+      "cer": 0.2127659574468085
+    }
+  },
+  {
+    "id": "d12d9e3050aaa830de737f7344cb9d4f",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.4,
+    "median_word_probability": 0.8909505208333333,
+    "counts": {
+      "S": 5,
+      "D": 3,
+      "I": 2,
+      "N": 25,
+      "H": 17,
+      "wer": 0.4,
+      "character_errors": 25,
+      "reference_characters": 133,
+      "cer": 0.18796992481203006
+    }
+  },
+  {
+    "id": "0d877ee9d37aa2be0998f2215fa96a2a",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.20833333333333334,
+    "median_word_probability": 0.961669921875,
+    "counts": {
+      "S": 5,
+      "D": 0,
+      "I": 0,
+      "N": 24,
+      "H": 19,
+      "wer": 0.20833333333333334,
+      "character_errors": 14,
+      "reference_characters": 119,
+      "cer": 0.11764705882352941
+    }
+  },
+  {
+    "id": "007cd391a02a420d0ab9f096dd3a5c80",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.44,
+    "median_word_probability": 0.90087890625,
+    "counts": {
+      "S": 8,
+      "D": 3,
+      "I": 0,
+      "N": 25,
+      "H": 14,
+      "wer": 0.44,
+      "character_errors": 54,
+      "reference_characters": 147,
+      "cer": 0.3673469387755102
+    }
+  },
+  {
+    "id": "86dede69cde93da913613c8c316a3ecd",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.16,
+    "median_word_probability": 0.9462890625,
+    "counts": {
+      "S": 3,
+      "D": 1,
+      "I": 0,
+      "N": 25,
+      "H": 21,
+      "wer": 0.16,
+      "character_errors": 8,
+      "reference_characters": 146,
+      "cer": 0.0547945205479452
+    }
+  },
+  {
+    "id": "e4fbfb79403ebdb3a96ff3ecc61ad34e",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.15384615384615385,
+    "median_word_probability": 0.9241943359375,
+    "counts": {
+      "S": 2,
+      "D": 2,
+      "I": 0,
+      "N": 26,
+      "H": 22,
+      "wer": 0.15384615384615385,
+      "character_errors": 13,
+      "reference_characters": 156,
+      "cer": 0.08333333333333333
+    }
+  },
+  {
+    "id": "14149498977d6ec57fd880aca3e0678c",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement",
+      "numeric_disagreement"
+    ],
+    "lexical_disagreement": 0.32,
+    "median_word_probability": 0.83447265625,
+    "counts": {
+      "S": 6,
+      "D": 1,
+      "I": 1,
+      "N": 25,
+      "H": 18,
+      "wer": 0.32,
+      "character_errors": 23,
+      "reference_characters": 151,
+      "cer": 0.152317880794702
+    }
+  },
+  {
+    "id": "b663c2ed0b035d30f00a0a73a209a36f",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.21052631578947367,
+    "median_word_probability": 0.90185546875,
+    "counts": {
+      "S": 3,
+      "D": 0,
+      "I": 1,
+      "N": 19,
+      "H": 16,
+      "wer": 0.21052631578947367,
+      "character_errors": 14,
+      "reference_characters": 105,
+      "cer": 0.13333333333333333
+    }
+  },
+  {
+    "id": "f4a522b6c6f58110e8b9d2db2cb6b3a8",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.2916666666666667,
+    "median_word_probability": 0.921875,
+    "counts": {
+      "S": 2,
+      "D": 4,
+      "I": 1,
+      "N": 24,
+      "H": 18,
+      "wer": 0.2916666666666667,
+      "character_errors": 48,
+      "reference_characters": 163,
+      "cer": 0.294478527607362
+    }
+  },
+  {
+    "id": "87f4425150c31acee2aca3e13c6b25d5",
+    "accepted": true,
+    "reasons": [],
+    "lexical_disagreement": 0.0,
+    "median_word_probability": 0.88232421875,
+    "counts": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 22,
+      "H": 22,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 144,
+      "cer": 0.0
+    }
+  },
+  {
+    "id": "aadc3f62a7f07cf0006f6dc904818d3f",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement",
+      "numeric_disagreement"
+    ],
+    "lexical_disagreement": 0.25806451612903225,
+    "median_word_probability": 0.9189453125,
+    "counts": {
+      "S": 6,
+      "D": 2,
+      "I": 0,
+      "N": 31,
+      "H": 23,
+      "wer": 0.25806451612903225,
+      "character_errors": 17,
+      "reference_characters": 161,
+      "cer": 0.10559006211180125
+    }
+  },
+  {
+    "id": "f4ceef70dcfa668e99384d3a67fd6798",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.2962962962962963,
+    "median_word_probability": 0.9683837890625,
+    "counts": {
+      "S": 7,
+      "D": 1,
+      "I": 0,
+      "N": 27,
+      "H": 19,
+      "wer": 0.2962962962962963,
+      "character_errors": 20,
+      "reference_characters": 142,
+      "cer": 0.14084507042253522
+    }
+  },
+  {
+    "id": "3e6cccd7995d5222cd3778f6930d66b5",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.25925925925925924,
+    "median_word_probability": 0.972900390625,
+    "counts": {
+      "S": 2,
+      "D": 4,
+      "I": 1,
+      "N": 27,
+      "H": 21,
+      "wer": 0.25925925925925924,
+      "character_errors": 33,
+      "reference_characters": 154,
+      "cer": 0.21428571428571427
+    }
+  },
+  {
+    "id": "03b22a84db0659373a727491196e4b84",
+    "accepted": true,
+    "reasons": [],
+    "lexical_disagreement": 0.03571428571428571,
+    "median_word_probability": 0.96240234375,
+    "counts": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 28,
+      "H": 27,
+      "wer": 0.03571428571428571,
+      "character_errors": 3,
+      "reference_characters": 151,
+      "cer": 0.019867549668874173
+    }
+  },
+  {
+    "id": "a57ed12f11f78690eb3b16dfda9c273f",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.30434782608695654,
+    "median_word_probability": 0.916015625,
+    "counts": {
+      "S": 5,
+      "D": 2,
+      "I": 0,
+      "N": 23,
+      "H": 16,
+      "wer": 0.30434782608695654,
+      "character_errors": 23,
+      "reference_characters": 128,
+      "cer": 0.1796875
+    }
+  },
+  {
+    "id": "5e18d8d99da82c0163936267cbfe7a6c",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.16,
+    "median_word_probability": 0.942626953125,
+    "counts": {
+      "S": 1,
+      "D": 3,
+      "I": 0,
+      "N": 25,
+      "H": 21,
+      "wer": 0.16,
+      "character_errors": 14,
+      "reference_characters": 128,
+      "cer": 0.109375
+    }
+  },
+  {
+    "id": "6fff658092132cee1f5911315fd49e45",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.24,
+    "median_word_probability": 0.83154296875,
+    "counts": {
+      "S": 4,
+      "D": 0,
+      "I": 2,
+      "N": 25,
+      "H": 21,
+      "wer": 0.24,
+      "character_errors": 4,
+      "reference_characters": 164,
+      "cer": 0.024390243902439025
+    }
+  },
+  {
+    "id": "1c4c58f217d814665abe440bf6a4aed9",
+    "accepted": true,
+    "reasons": [],
+    "lexical_disagreement": 0.05,
+    "median_word_probability": 0.966796875,
+    "counts": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 20,
+      "H": 19,
+      "wer": 0.05,
+      "character_errors": 3,
+      "reference_characters": 119,
+      "cer": 0.025210084033613446
+    }
+  },
+  {
+    "id": "9ea17861e329254d245963df2d3a1209",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.2222222222222222,
+    "median_word_probability": 0.920166015625,
+    "counts": {
+      "S": 6,
+      "D": 0,
+      "I": 2,
+      "N": 36,
+      "H": 30,
+      "wer": 0.2222222222222222,
+      "character_errors": 19,
+      "reference_characters": 226,
+      "cer": 0.084070796460177
+    }
+  },
+  {
+    "id": "7b09d374fc11435ef826237dc9c2cdcd",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.21875,
+    "median_word_probability": 0.962158203125,
+    "counts": {
+      "S": 7,
+      "D": 0,
+      "I": 0,
+      "N": 32,
+      "H": 25,
+      "wer": 0.21875,
+      "character_errors": 27,
+      "reference_characters": 181,
+      "cer": 0.14917127071823205
+    }
+  },
+  {
+    "id": "66de14be7aa11833d9a1fab81de147de",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement",
+      "negation_disagreement"
+    ],
+    "lexical_disagreement": 0.38095238095238093,
+    "median_word_probability": 0.9296875,
+    "counts": {
+      "S": 7,
+      "D": 8,
+      "I": 1,
+      "N": 42,
+      "H": 27,
+      "wer": 0.38095238095238093,
+      "character_errors": 54,
+      "reference_characters": 236,
+      "cer": 0.2288135593220339
+    }
+  },
+  {
+    "id": "c45be8bb3f49d7d76ba5f715b51b67c7",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.5,
+    "median_word_probability": 0.9658203125,
+    "counts": {
+      "S": 9,
+      "D": 6,
+      "I": 6,
+      "N": 42,
+      "H": 27,
+      "wer": 0.5,
+      "character_errors": 64,
+      "reference_characters": 223,
+      "cer": 0.28699551569506726
+    }
+  },
+  {
+    "id": "3daa349bb07b63a67857e1c2b6809aa3",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.2702702702702703,
+    "median_word_probability": 0.95361328125,
+    "counts": {
+      "S": 5,
+      "D": 1,
+      "I": 4,
+      "N": 37,
+      "H": 31,
+      "wer": 0.2702702702702703,
+      "character_errors": 29,
+      "reference_characters": 222,
+      "cer": 0.13063063063063063
+    }
+  },
+  {
+    "id": "a0010ae431899b12781555edb326fa1f",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.3142857142857143,
+    "median_word_probability": 0.9521484375,
+    "counts": {
+      "S": 4,
+      "D": 3,
+      "I": 4,
+      "N": 35,
+      "H": 28,
+      "wer": 0.3142857142857143,
+      "character_errors": 53,
+      "reference_characters": 206,
+      "cer": 0.25728155339805825
+    }
+  },
+  {
+    "id": "1af40e23104a87656b4b539d2672c69b",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.46153846153846156,
+    "median_word_probability": 0.827392578125,
+    "counts": {
+      "S": 6,
+      "D": 0,
+      "I": 6,
+      "N": 26,
+      "H": 20,
+      "wer": 0.46153846153846156,
+      "character_errors": 43,
+      "reference_characters": 152,
+      "cer": 0.28289473684210525
+    }
+  },
+  {
+    "id": "65935e5f736f9912c361cdfcf3b89254",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.3076923076923077,
+    "median_word_probability": 0.8870849609375,
+    "counts": {
+      "S": 5,
+      "D": 4,
+      "I": 3,
+      "N": 39,
+      "H": 30,
+      "wer": 0.3076923076923077,
+      "character_errors": 45,
+      "reference_characters": 218,
+      "cer": 0.20642201834862386
+    }
+  },
+  {
+    "id": "ca83e9e1428a5c790fd998f4d59f805e",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.27586206896551724,
+    "median_word_probability": 0.889892578125,
+    "counts": {
+      "S": 3,
+      "D": 1,
+      "I": 4,
+      "N": 29,
+      "H": 25,
+      "wer": 0.27586206896551724,
+      "character_errors": 29,
+      "reference_characters": 161,
+      "cer": 0.18012422360248448
+    }
+  },
+  {
+    "id": "2242d1a20fa97074f02df07cc7a29cc3",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.3684210526315789,
+    "median_word_probability": 0.95947265625,
+    "counts": {
+      "S": 7,
+      "D": 6,
+      "I": 1,
+      "N": 38,
+      "H": 25,
+      "wer": 0.3684210526315789,
+      "character_errors": 47,
+      "reference_characters": 208,
+      "cer": 0.22596153846153846
+    }
+  },
+  {
+    "id": "15771e0fa1196b199e71d88c133f0d91",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.32432432432432434,
+    "median_word_probability": 0.89306640625,
+    "counts": {
+      "S": 6,
+      "D": 6,
+      "I": 0,
+      "N": 37,
+      "H": 25,
+      "wer": 0.32432432432432434,
+      "character_errors": 49,
+      "reference_characters": 196,
+      "cer": 0.25
+    }
+  },
+  {
+    "id": "062f7287c0c01bf0ecc43f7a5a081065",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement",
+      "numeric_disagreement"
+    ],
+    "lexical_disagreement": 0.19230769230769232,
+    "median_word_probability": 0.833984375,
+    "counts": {
+      "S": 3,
+      "D": 2,
+      "I": 0,
+      "N": 26,
+      "H": 21,
+      "wer": 0.19230769230769232,
+      "character_errors": 3,
+      "reference_characters": 156,
+      "cer": 0.019230769230769232
+    }
+  },
+  {
+    "id": "e8cfac5a7ec59c56181e27b442093239",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.3333333333333333,
+    "median_word_probability": 0.76904296875,
+    "counts": {
+      "S": 5,
+      "D": 2,
+      "I": 0,
+      "N": 21,
+      "H": 14,
+      "wer": 0.3333333333333333,
+      "character_errors": 22,
+      "reference_characters": 117,
+      "cer": 0.18803418803418803
+    }
+  },
+  {
+    "id": "3c51175bd6deb9cbceb9f2cd7f213d4b",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.4117647058823529,
+    "median_word_probability": 0.949462890625,
+    "counts": {
+      "S": 10,
+      "D": 1,
+      "I": 3,
+      "N": 34,
+      "H": 23,
+      "wer": 0.4117647058823529,
+      "character_errors": 40,
+      "reference_characters": 203,
+      "cer": 0.19704433497536947
+    }
+  },
+  {
+    "id": "1c6906c92684904c1d37368ca3ace9c4",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.17857142857142858,
+    "median_word_probability": 0.925537109375,
+    "counts": {
+      "S": 5,
+      "D": 0,
+      "I": 0,
+      "N": 28,
+      "H": 23,
+      "wer": 0.17857142857142858,
+      "character_errors": 7,
+      "reference_characters": 159,
+      "cer": 0.0440251572327044
+    }
+  },
+  {
+    "id": "7cb1448773efdb9dae2cb622954fa6ac",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.25,
+    "median_word_probability": 0.871826171875,
+    "counts": {
+      "S": 4,
+      "D": 0,
+      "I": 2,
+      "N": 24,
+      "H": 20,
+      "wer": 0.25,
+      "character_errors": 9,
+      "reference_characters": 135,
+      "cer": 0.06666666666666667
+    }
+  },
+  {
+    "id": "c751dc2b6f78c66df2d0abbfc72e5a99",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.2222222222222222,
+    "median_word_probability": 0.9226888020833334,
+    "counts": {
+      "S": 4,
+      "D": 2,
+      "I": 0,
+      "N": 27,
+      "H": 21,
+      "wer": 0.2222222222222222,
+      "character_errors": 13,
+      "reference_characters": 159,
+      "cer": 0.08176100628930817
+    }
+  },
+  {
+    "id": "e85bc385bea64c34576b57e1f2291409",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.45454545454545453,
+    "median_word_probability": 0.7548828125,
+    "counts": {
+      "S": 9,
+      "D": 0,
+      "I": 1,
+      "N": 22,
+      "H": 13,
+      "wer": 0.45454545454545453,
+      "character_errors": 33,
+      "reference_characters": 138,
+      "cer": 0.2391304347826087
+    }
+  },
+  {
+    "id": "d345ab0c42a190772a4e9c01379b9fc6",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.2972972972972973,
+    "median_word_probability": 0.8916015625,
+    "counts": {
+      "S": 8,
+      "D": 3,
+      "I": 0,
+      "N": 37,
+      "H": 26,
+      "wer": 0.2972972972972973,
+      "character_errors": 45,
+      "reference_characters": 205,
+      "cer": 0.21951219512195122
+    }
+  },
+  {
+    "id": "cd91e20ae6f0f43d70b607c6293bab94",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.28205128205128205,
+    "median_word_probability": 0.93212890625,
+    "counts": {
+      "S": 5,
+      "D": 6,
+      "I": 0,
+      "N": 39,
+      "H": 28,
+      "wer": 0.28205128205128205,
+      "character_errors": 36,
+      "reference_characters": 220,
+      "cer": 0.16363636363636364
+    }
+  },
+  {
+    "id": "f446db0a51d9c9d762f0415217178844",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.36363636363636365,
+    "median_word_probability": 0.9560546875,
+    "counts": {
+      "S": 5,
+      "D": 5,
+      "I": 2,
+      "N": 33,
+      "H": 23,
+      "wer": 0.36363636363636365,
+      "character_errors": 52,
+      "reference_characters": 200,
+      "cer": 0.26
+    }
+  },
+  {
+    "id": "ea3d2764557000dca9d6c1c44a8cccd5",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.17391304347826086,
+    "median_word_probability": 0.9228515625,
+    "counts": {
+      "S": 2,
+      "D": 0,
+      "I": 2,
+      "N": 23,
+      "H": 21,
+      "wer": 0.17391304347826086,
+      "character_errors": 19,
+      "reference_characters": 158,
+      "cer": 0.12025316455696203
+    }
+  },
+  {
+    "id": "75cff4a38cf6d4518f0844336a819fd4",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.17142857142857143,
+    "median_word_probability": 0.939453125,
+    "counts": {
+      "S": 2,
+      "D": 2,
+      "I": 2,
+      "N": 35,
+      "H": 31,
+      "wer": 0.17142857142857143,
+      "character_errors": 22,
+      "reference_characters": 219,
+      "cer": 0.1004566210045662
+    }
+  },
+  {
+    "id": "e0a87155f2f731a5aca6af7658d3ca94",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.3125,
+    "median_word_probability": 0.93115234375,
+    "counts": {
+      "S": 3,
+      "D": 6,
+      "I": 1,
+      "N": 32,
+      "H": 23,
+      "wer": 0.3125,
+      "character_errors": 47,
+      "reference_characters": 196,
+      "cer": 0.23979591836734693
+    }
+  },
+  {
+    "id": "b7585571e73cbde471fe294f46eecf45",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement",
+      "numeric_disagreement"
+    ],
+    "lexical_disagreement": 0.17142857142857143,
+    "median_word_probability": 0.82275390625,
+    "counts": {
+      "S": 6,
+      "D": 0,
+      "I": 0,
+      "N": 35,
+      "H": 29,
+      "wer": 0.17142857142857143,
+      "character_errors": 16,
+      "reference_characters": 206,
+      "cer": 0.07766990291262135
+    }
+  },
+  {
+    "id": "f41a3ee89f0c70f21f4afe462201ebc1",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.45454545454545453,
+    "median_word_probability": 0.945556640625,
+    "counts": {
+      "S": 0,
+      "D": 0,
+      "I": 10,
+      "N": 22,
+      "H": 22,
+      "wer": 0.45454545454545453,
+      "character_errors": 72,
+      "reference_characters": 129,
+      "cer": 0.5581395348837209
+    }
+  },
+  {
+    "id": "ecca6f2810ed0de6fd356cd824aca4c0",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement",
+      "numeric_disagreement"
+    ],
+    "lexical_disagreement": 0.2926829268292683,
+    "median_word_probability": 0.91748046875,
+    "counts": {
+      "S": 7,
+      "D": 3,
+      "I": 2,
+      "N": 41,
+      "H": 31,
+      "wer": 0.2926829268292683,
+      "character_errors": 39,
+      "reference_characters": 269,
+      "cer": 0.1449814126394052
+    }
+  },
+  {
+    "id": "946568bf1217e74d270d5d640df2dff7",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.5476190476190477,
+    "median_word_probability": 0.9150390625,
+    "counts": {
+      "S": 8,
+      "D": 12,
+      "I": 3,
+      "N": 42,
+      "H": 22,
+      "wer": 0.5476190476190477,
+      "character_errors": 91,
+      "reference_characters": 229,
+      "cer": 0.39737991266375544
+    }
+  },
+  {
+    "id": "a255fdbf98134f075b52b54fcbaf9a93",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.3142857142857143,
+    "median_word_probability": 0.93310546875,
+    "counts": {
+      "S": 4,
+      "D": 3,
+      "I": 4,
+      "N": 35,
+      "H": 28,
+      "wer": 0.3142857142857143,
+      "character_errors": 56,
+      "reference_characters": 176,
+      "cer": 0.3181818181818182
+    }
+  },
+  {
+    "id": "8e95cd2b1104156172f38bd43a4c5742",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.36363636363636365,
+    "median_word_probability": 0.94580078125,
+    "counts": {
+      "S": 8,
+      "D": 0,
+      "I": 4,
+      "N": 33,
+      "H": 25,
+      "wer": 0.36363636363636365,
+      "character_errors": 44,
+      "reference_characters": 192,
+      "cer": 0.22916666666666666
+    }
+  },
+  {
+    "id": "ae05660346e2f040a2c5f07294ff66da",
+    "accepted": true,
+    "reasons": [],
+    "lexical_disagreement": 0.10714285714285714,
+    "median_word_probability": 0.962890625,
+    "counts": {
+      "S": 2,
+      "D": 0,
+      "I": 1,
+      "N": 28,
+      "H": 26,
+      "wer": 0.10714285714285714,
+      "character_errors": 4,
+      "reference_characters": 173,
+      "cer": 0.023121387283236993
+    }
+  },
+  {
+    "id": "438671a8176731d2fc362d44d7e8641f",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.15151515151515152,
+    "median_word_probability": 0.97900390625,
+    "counts": {
+      "S": 4,
+      "D": 1,
+      "I": 0,
+      "N": 33,
+      "H": 28,
+      "wer": 0.15151515151515152,
+      "character_errors": 19,
+      "reference_characters": 178,
+      "cer": 0.10674157303370786
+    }
+  },
+  {
+    "id": "260eb7e86aaf89e835fb88cb0ba24718",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.16,
+    "median_word_probability": 0.9482421875,
+    "counts": {
+      "S": 4,
+      "D": 0,
+      "I": 0,
+      "N": 25,
+      "H": 21,
+      "wer": 0.16,
+      "character_errors": 6,
+      "reference_characters": 143,
+      "cer": 0.04195804195804196
+    }
+  },
+  {
+    "id": "8be0c87dd65528c5497d76ce9d5fba34",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.28125,
+    "median_word_probability": 0.9248046875,
+    "counts": {
+      "S": 4,
+      "D": 3,
+      "I": 2,
+      "N": 32,
+      "H": 25,
+      "wer": 0.28125,
+      "character_errors": 35,
+      "reference_characters": 224,
+      "cer": 0.15625
+    }
+  },
+  {
+    "id": "e68ec4af42c900872c8596ac68b0b728",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.2222222222222222,
+    "median_word_probability": 0.956298828125,
+    "counts": {
+      "S": 5,
+      "D": 0,
+      "I": 3,
+      "N": 36,
+      "H": 31,
+      "wer": 0.2222222222222222,
+      "character_errors": 24,
+      "reference_characters": 195,
+      "cer": 0.12307692307692308
+    }
+  },
+  {
+    "id": "066c282973b81ad6d450b548ca12d806",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.2,
+    "median_word_probability": 0.9658203125,
+    "counts": {
+      "S": 5,
+      "D": 2,
+      "I": 0,
+      "N": 35,
+      "H": 28,
+      "wer": 0.2,
+      "character_errors": 20,
+      "reference_characters": 194,
+      "cer": 0.10309278350515463
+    }
+  },
+  {
+    "id": "9182fb26b24b0ecbf54ebb67d0039c79",
+    "accepted": true,
+    "reasons": [],
+    "lexical_disagreement": 0.09090909090909091,
+    "median_word_probability": 0.968994140625,
+    "counts": {
+      "S": 2,
+      "D": 1,
+      "I": 0,
+      "N": 33,
+      "H": 30,
+      "wer": 0.09090909090909091,
+      "character_errors": 9,
+      "reference_characters": 185,
+      "cer": 0.04864864864864865
+    }
+  },
+  {
+    "id": "5189bc42829ae97cbdff4c06848d090d",
+    "accepted": true,
+    "reasons": [],
+    "lexical_disagreement": 0.10714285714285714,
+    "median_word_probability": 0.9208984375,
+    "counts": {
+      "S": 3,
+      "D": 0,
+      "I": 0,
+      "N": 28,
+      "H": 25,
+      "wer": 0.10714285714285714,
+      "character_errors": 7,
+      "reference_characters": 168,
+      "cer": 0.041666666666666664
+    }
+  },
+  {
+    "id": "1bf0d18d170839445ad86ec4e43d7177",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.1875,
+    "median_word_probability": 0.9267578125,
+    "counts": {
+      "S": 5,
+      "D": 1,
+      "I": 0,
+      "N": 32,
+      "H": 26,
+      "wer": 0.1875,
+      "character_errors": 12,
+      "reference_characters": 207,
+      "cer": 0.057971014492753624
+    }
+  },
+  {
+    "id": "d5bdafb03ce7b933514addd008c5e10d",
+    "accepted": true,
+    "reasons": [],
+    "lexical_disagreement": 0.12121212121212122,
+    "median_word_probability": 0.9547119140625,
+    "counts": {
+      "S": 3,
+      "D": 0,
+      "I": 1,
+      "N": 33,
+      "H": 30,
+      "wer": 0.12121212121212122,
+      "character_errors": 12,
+      "reference_characters": 195,
+      "cer": 0.06153846153846154
+    }
+  },
+  {
+    "id": "a657b98d1fd0e8d6521ac00bcebc9289",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.18181818181818182,
+    "median_word_probability": 0.94287109375,
+    "counts": {
+      "S": 4,
+      "D": 0,
+      "I": 2,
+      "N": 33,
+      "H": 29,
+      "wer": 0.18181818181818182,
+      "character_errors": 10,
+      "reference_characters": 179,
+      "cer": 0.055865921787709494
+    }
+  },
+  {
+    "id": "a0151f804f67af142981ccd71f073279",
+    "accepted": true,
+    "reasons": [],
+    "lexical_disagreement": 0.08333333333333333,
+    "median_word_probability": 0.97021484375,
+    "counts": {
+      "S": 2,
+      "D": 0,
+      "I": 1,
+      "N": 36,
+      "H": 34,
+      "wer": 0.08333333333333333,
+      "character_errors": 2,
+      "reference_characters": 218,
+      "cer": 0.009174311926605505
+    }
+  },
+  {
+    "id": "3a6620b0f3acf91396266c43165706ff",
+    "accepted": true,
+    "reasons": [],
+    "lexical_disagreement": 0.13333333333333333,
+    "median_word_probability": 0.96044921875,
+    "counts": {
+      "S": 3,
+      "D": 0,
+      "I": 1,
+      "N": 30,
+      "H": 27,
+      "wer": 0.13333333333333333,
+      "character_errors": 10,
+      "reference_characters": 183,
+      "cer": 0.0546448087431694
+    }
+  },
+  {
+    "id": "2abdfe7ce93c00cbad4a1d4a5d467d78",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.23333333333333334,
+    "median_word_probability": 0.90478515625,
+    "counts": {
+      "S": 4,
+      "D": 0,
+      "I": 3,
+      "N": 30,
+      "H": 26,
+      "wer": 0.23333333333333334,
+      "character_errors": 24,
+      "reference_characters": 200,
+      "cer": 0.12
+    }
+  },
+  {
+    "id": "4f5f64572dabe1dcf9aa2bcae06d7907",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement",
+      "negation_disagreement"
+    ],
+    "lexical_disagreement": 0.3793103448275862,
+    "median_word_probability": 0.8994140625,
+    "counts": {
+      "S": 8,
+      "D": 1,
+      "I": 2,
+      "N": 29,
+      "H": 20,
+      "wer": 0.3793103448275862,
+      "character_errors": 15,
+      "reference_characters": 172,
+      "cer": 0.0872093023255814
+    }
+  },
+  {
+    "id": "79a83032af0103321c0efce72d3fb73c",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.26666666666666666,
+    "median_word_probability": 0.929443359375,
+    "counts": {
+      "S": 4,
+      "D": 0,
+      "I": 4,
+      "N": 30,
+      "H": 26,
+      "wer": 0.26666666666666666,
+      "character_errors": 30,
+      "reference_characters": 169,
+      "cer": 0.17751479289940827
+    }
+  },
+  {
+    "id": "8a06a09bf694a5a44540729af9a59805",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.25,
+    "median_word_probability": 0.9306640625,
+    "counts": {
+      "S": 7,
+      "D": 0,
+      "I": 2,
+      "N": 36,
+      "H": 29,
+      "wer": 0.25,
+      "character_errors": 30,
+      "reference_characters": 171,
+      "cer": 0.17543859649122806
+    }
+  },
+  {
+    "id": "2ca5e340bc3352297796d6e911adf9ef",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.1794871794871795,
+    "median_word_probability": 0.963134765625,
+    "counts": {
+      "S": 6,
+      "D": 0,
+      "I": 1,
+      "N": 39,
+      "H": 33,
+      "wer": 0.1794871794871795,
+      "character_errors": 23,
+      "reference_characters": 201,
+      "cer": 0.11442786069651742
+    }
+  },
+  {
+    "id": "59ea032df0de44448134d376cf8adcdd",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.2857142857142857,
+    "median_word_probability": 0.90771484375,
+    "counts": {
+      "S": 7,
+      "D": 2,
+      "I": 1,
+      "N": 35,
+      "H": 26,
+      "wer": 0.2857142857142857,
+      "character_errors": 29,
+      "reference_characters": 178,
+      "cer": 0.16292134831460675
+    }
+  },
+  {
+    "id": "286a94c414095aab78f4f3d2c21e0bdd",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.4117647058823529,
+    "median_word_probability": 0.900390625,
+    "counts": {
+      "S": 9,
+      "D": 2,
+      "I": 3,
+      "N": 34,
+      "H": 23,
+      "wer": 0.4117647058823529,
+      "character_errors": 43,
+      "reference_characters": 187,
+      "cer": 0.22994652406417113
+    }
+  },
+  {
+    "id": "7ee8b48d244109af772c229c87aa94fb",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.25,
+    "median_word_probability": 0.97998046875,
+    "counts": {
+      "S": 4,
+      "D": 1,
+      "I": 2,
+      "N": 28,
+      "H": 23,
+      "wer": 0.25,
+      "character_errors": 9,
+      "reference_characters": 189,
+      "cer": 0.047619047619047616
+    }
+  },
+  {
+    "id": "217e1554b3909f18d1e745df90bb6b94",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement",
+      "numeric_disagreement"
+    ],
+    "lexical_disagreement": 0.2727272727272727,
+    "median_word_probability": 0.944580078125,
+    "counts": {
+      "S": 8,
+      "D": 1,
+      "I": 0,
+      "N": 33,
+      "H": 24,
+      "wer": 0.2727272727272727,
+      "character_errors": 24,
+      "reference_characters": 179,
+      "cer": 0.1340782122905028
+    }
+  },
+  {
+    "id": "eccb216c0e93ec7a59c25e71ffa1598a",
+    "accepted": true,
+    "reasons": [],
+    "lexical_disagreement": 0.10810810810810811,
+    "median_word_probability": 0.9501953125,
+    "counts": {
+      "S": 3,
+      "D": 1,
+      "I": 0,
+      "N": 37,
+      "H": 33,
+      "wer": 0.10810810810810811,
+      "character_errors": 11,
+      "reference_characters": 216,
+      "cer": 0.05092592592592592
+    }
+  },
+  {
+    "id": "a54ac52bf372d3fd4beea7e057f5c785",
+    "accepted": true,
+    "reasons": [],
+    "lexical_disagreement": 0.1388888888888889,
+    "median_word_probability": 0.912841796875,
+    "counts": {
+      "S": 3,
+      "D": 1,
+      "I": 1,
+      "N": 36,
+      "H": 32,
+      "wer": 0.1388888888888889,
+      "character_errors": 21,
+      "reference_characters": 214,
+      "cer": 0.09813084112149532
+    }
+  },
+  {
+    "id": "4266d66af504dd08e1f01a831f78f437",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement",
+      "numeric_disagreement"
+    ],
+    "lexical_disagreement": 0.3170731707317073,
+    "median_word_probability": 0.89013671875,
+    "counts": {
+      "S": 11,
+      "D": 1,
+      "I": 1,
+      "N": 41,
+      "H": 29,
+      "wer": 0.3170731707317073,
+      "character_errors": 45,
+      "reference_characters": 183,
+      "cer": 0.2459016393442623
+    }
+  },
+  {
+    "id": "3064439b991338b115864d71068dbf75",
+    "accepted": true,
+    "reasons": [],
+    "lexical_disagreement": 0.13157894736842105,
+    "median_word_probability": 0.93505859375,
+    "counts": {
+      "S": 4,
+      "D": 0,
+      "I": 1,
+      "N": 38,
+      "H": 34,
+      "wer": 0.13157894736842105,
+      "character_errors": 7,
+      "reference_characters": 217,
+      "cer": 0.03225806451612903
+    }
+  },
+  {
+    "id": "f963dad81e0c1dfedcfbf22d9cc82ea7",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.5555555555555556,
+    "median_word_probability": 0.7802734375,
+    "counts": {
+      "S": 7,
+      "D": 4,
+      "I": 4,
+      "N": 27,
+      "H": 16,
+      "wer": 0.5555555555555556,
+      "character_errors": 52,
+      "reference_characters": 153,
+      "cer": 0.33986928104575165
+    }
+  },
+  {
+    "id": "0074c536706b79c542477861d2b0ac7a",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.26666666666666666,
+    "median_word_probability": 0.87841796875,
+    "counts": {
+      "S": 6,
+      "D": 0,
+      "I": 2,
+      "N": 30,
+      "H": 24,
+      "wer": 0.26666666666666666,
+      "character_errors": 14,
+      "reference_characters": 170,
+      "cer": 0.08235294117647059
+    }
+  },
+  {
+    "id": "ba8beb861e93e405715a323cf7d7e04e",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.5,
+    "median_word_probability": 0.9248046875,
+    "counts": {
+      "S": 10,
+      "D": 4,
+      "I": 4,
+      "N": 36,
+      "H": 22,
+      "wer": 0.5,
+      "character_errors": 64,
+      "reference_characters": 196,
+      "cer": 0.32653061224489793
+    }
+  },
+  {
+    "id": "ea0e11a12131ed18931b6f829e5db9f8",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement",
+      "numeric_disagreement"
+    ],
+    "lexical_disagreement": 0.21052631578947367,
+    "median_word_probability": 0.92626953125,
+    "counts": {
+      "S": 3,
+      "D": 4,
+      "I": 1,
+      "N": 38,
+      "H": 31,
+      "wer": 0.21052631578947367,
+      "character_errors": 35,
+      "reference_characters": 228,
+      "cer": 0.15350877192982457
+    }
+  },
+  {
+    "id": "e4d9f8f409ca3f77d913d322145ecdee",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.3076923076923077,
+    "median_word_probability": 0.90673828125,
+    "counts": {
+      "S": 4,
+      "D": 3,
+      "I": 1,
+      "N": 26,
+      "H": 19,
+      "wer": 0.3076923076923077,
+      "character_errors": 31,
+      "reference_characters": 172,
+      "cer": 0.18023255813953487
+    }
+  },
+  {
+    "id": "26ab84934b7c41861a5ad9fd9becb179",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.3,
+    "median_word_probability": 0.9521484375,
+    "counts": {
+      "S": 7,
+      "D": 0,
+      "I": 2,
+      "N": 30,
+      "H": 23,
+      "wer": 0.3,
+      "character_errors": 23,
+      "reference_characters": 191,
+      "cer": 0.12041884816753927
+    }
+  },
+  {
+    "id": "09f19d6b873db636f1e6ec76f287eaef",
+    "accepted": true,
+    "reasons": [],
+    "lexical_disagreement": 0.10714285714285714,
+    "median_word_probability": 0.958984375,
+    "counts": {
+      "S": 2,
+      "D": 0,
+      "I": 1,
+      "N": 28,
+      "H": 26,
+      "wer": 0.10714285714285714,
+      "character_errors": 7,
+      "reference_characters": 180,
+      "cer": 0.03888888888888889
+    }
+  },
+  {
+    "id": "4e3dc46c1e9092fcda0fa4811a6a392f",
+    "accepted": true,
+    "reasons": [],
+    "lexical_disagreement": 0.11538461538461539,
+    "median_word_probability": 0.94677734375,
+    "counts": {
+      "S": 2,
+      "D": 0,
+      "I": 1,
+      "N": 26,
+      "H": 24,
+      "wer": 0.11538461538461539,
+      "character_errors": 4,
+      "reference_characters": 170,
+      "cer": 0.023529411764705882
+    }
+  },
+  {
+    "id": "8e6203ffbaea155f3aff834b8b888d4b",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.34375,
+    "median_word_probability": 0.8321533203125,
+    "counts": {
+      "S": 7,
+      "D": 1,
+      "I": 3,
+      "N": 32,
+      "H": 24,
+      "wer": 0.34375,
+      "character_errors": 28,
+      "reference_characters": 186,
+      "cer": 0.15053763440860216
+    }
+  },
+  {
+    "id": "b5b9f1952398fb2bdf342d9432628b3f",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.42857142857142855,
+    "median_word_probability": 0.8294677734375,
+    "counts": {
+      "S": 6,
+      "D": 0,
+      "I": 6,
+      "N": 28,
+      "H": 22,
+      "wer": 0.42857142857142855,
+      "character_errors": 51,
+      "reference_characters": 143,
+      "cer": 0.35664335664335667
+    }
+  },
+  {
+    "id": "123acb4c28dd926124cd07fa769e88b3",
+    "accepted": true,
+    "reasons": [],
+    "lexical_disagreement": 0.14285714285714285,
+    "median_word_probability": 0.93896484375,
+    "counts": {
+      "S": 1,
+      "D": 4,
+      "I": 0,
+      "N": 35,
+      "H": 30,
+      "wer": 0.14285714285714285,
+      "character_errors": 25,
+      "reference_characters": 210,
+      "cer": 0.11904761904761904
+    }
+  },
+  {
+    "id": "f2680d55663f924e8f1d068ae217f9d3",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 0.3103448275862069,
+    "median_word_probability": 0.89501953125,
+    "counts": {
+      "S": 6,
+      "D": 0,
+      "I": 3,
+      "N": 29,
+      "H": 23,
+      "wer": 0.3103448275862069,
+      "character_errors": 30,
+      "reference_characters": 176,
+      "cer": 0.17045454545454544
+    }
+  },
+  {
+    "id": "48801f180866c24015057f866d08ca65",
+    "accepted": true,
+    "reasons": [],
+    "lexical_disagreement": 0.1,
+    "median_word_probability": 0.9765625,
+    "counts": {
+      "S": 0,
+      "D": 3,
+      "I": 0,
+      "N": 30,
+      "H": 27,
+      "wer": 0.1,
+      "character_errors": 13,
+      "reference_characters": 179,
+      "cer": 0.07262569832402235
+    }
+  },
+  {
+    "id": "39bc44fa1179ed4bc1846e66086db732",
+    "accepted": false,
+    "reasons": [
+      "second_model_lexical_disagreement"
+    ],
+    "lexical_disagreement": 2.3666666666666667,
+    "median_word_probability": 0.88427734375,
+    "counts": {
+      "S": 30,
+      "D": 0,
+      "I": 41,
+      "N": 30,
+      "H": 0,
+      "wer": 2.3666666666666667,
+      "character_errors": 229,
+      "reference_characters": 179,
+      "cer": 1.2793296089385475
+    }
+  }
+]

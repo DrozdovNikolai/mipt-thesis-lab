@@ -1,0 +1,96 @@
+{
+  "static": {
+    "command": [
+      "docker",
+      "run",
+      "--rm",
+      "--network",
+      "none",
+      "--entrypoint",
+      "sh",
+      "north55-speech:0.1.0",
+      "-c",
+      "ruff check src tests && mypy src/north55_speech"
+    ],
+    "exit_code": 0,
+    "stdout": "All checks passed!\nSuccess: no issues found in 24 source files\n",
+    "stderr": ""
+  },
+  "gpu_dependencies": {
+    "command": [
+      "docker",
+      "run",
+      "--rm",
+      "--network",
+      "none",
+      "--entrypoint",
+      "uv",
+      "north55-speech-gpu:0.1.0",
+      "pip",
+      "check"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "Using Python 3.11.14 environment at: /opt/venv\nChecked 100 packages in 165ms\nAll installed packages are compatible\n"
+  },
+  "train_dependencies": {
+    "command": [
+      "docker",
+      "run",
+      "--rm",
+      "--network",
+      "none",
+      "--entrypoint",
+      "uv",
+      "north55-speech-train:0.1.0",
+      "pip",
+      "check"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "Using Python 3.11.14 environment at: /opt/venv\nChecked 147 packages in 165ms\nAll installed packages are compatible\n"
+  },
+  "compose_cpu": {
+    "command": [
+      "docker",
+      "compose",
+      "config",
+      "--quiet"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "compose_gpu": {
+    "command": [
+      "docker",
+      "compose",
+      "-f",
+      "compose.yaml",
+      "-f",
+      "compose.gpu.yaml",
+      "config",
+      "--quiet"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "compose_reviewed": {
+    "command": [
+      "docker",
+      "compose",
+      "-f",
+      "compose.yaml",
+      "-f",
+      "compose.reviewed-training.yaml",
+      "--profile",
+      "training",
+      "config",
+      "--quiet"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+}

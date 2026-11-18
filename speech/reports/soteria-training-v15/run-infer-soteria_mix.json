@@ -1,0 +1,105 @@
+{
+  "exit_code": 0,
+  "image": "sha256:34ed3eca5f649c8d1b3fc1b021bae236a3030829d9c9347368a32ba4fa6b347c",
+  "state": {
+    "Status": "exited",
+    "Running": false,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 0,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-09-16T07:50:12.769482457Z",
+    "FinishedAt": "2026-09-16T07:52:38.032183289Z"
+  },
+  "network": "none",
+  "devices": [
+    {
+      "Driver": "",
+      "Count": 0,
+      "DeviceIDs": [
+        "0"
+      ],
+      "Capabilities": [
+        [
+          "gpu"
+        ]
+      ],
+      "Options": {}
+    }
+  ],
+  "mounts": [
+    {
+      "Type": "bind",
+      "Source": "/run/desktop/mnt/host/c/DEV/MIPT/Diploma/Speech/reports/soteria-training-v15/runtime/soteria_training_v15.py",
+      "Destination": "/runtime.py",
+      "Mode": "",
+      "RW": false,
+      "Propagation": "rprivate"
+    },
+    {
+      "Type": "bind",
+      "Source": "/run/desktop/mnt/host/c/DEV/MIPT/Diploma/Speech/reports/cockpit-reviewed-v12/audio",
+      "Destination": "/human",
+      "Mode": "",
+      "RW": false,
+      "Propagation": "rprivate"
+    },
+    {
+      "Type": "bind",
+      "Source": "/run/desktop/mnt/host/c/DEV/MIPT/Diploma/Speech/data/curated/soteria-v14/audio",
+      "Destination": "/soteria",
+      "Mode": "",
+      "RW": false,
+      "Propagation": "rprivate"
+    },
+    {
+      "Type": "bind",
+      "Source": "C:/DEV/MIPT/Diploma/Speech/reports/soteria-training-v15/frozen",
+      "Destination": "/app",
+      "Mode": "",
+      "RW": false,
+      "Propagation": "rprivate"
+    },
+    {
+      "Type": "bind",
+      "Source": "C:/DEV/MIPT/Diploma/Speech/reports/soteria-training-v15",
+      "Destination": "/study",
+      "Mode": "",
+      "RW": true,
+      "Propagation": "rprivate"
+    },
+    {
+      "Type": "volume",
+      "Name": "north55-speech_model_cache",
+      "Source": "/var/lib/docker/volumes/north55-speech_model_cache/_data",
+      "Destination": "/models",
+      "Driver": "local",
+      "Mode": "z",
+      "RW": false,
+      "Propagation": ""
+    }
+  ],
+  "command": [
+    "-u",
+    "/runtime.py",
+    "infer",
+    "--arm",
+    "soteria_mix"
+  ],
+  "log": "run-infer-soteria_mix-runtimefix1.log",
+  "runtime_fix": {
+    "reason": "AsrProvider.options inspects model.transcribe; attach the existing WhisperModel to the options helper",
+    "diff": "one assignment: provider.model = model",
+    "original_sha256": "8a679e030ebc69aff499bcf043fcf795d13e2b6287f9b22a51d1a46ff7514fb5",
+    "runtime_sha256": "04b57d0f1160b04189e007bf9bfd4da7d7c3048872029c4812c7ddf69439500d",
+    "original_plan_sha256": "0cd636b294b5f8898681fdb4d7c253aa1623e0cb94bf275402f8757791211c9e",
+    "fix_script_sha256": "d8ada82e27c46d0da6066d11270902ebe743552378cd9933fb8890e447de894d",
+    "existing_ASR_predictions": 0,
+    "training_and_models_changed": false,
+    "ASR_options_changed": false,
+    "original_failure_preserved": "failed-infer-small.json"
+  }
+}

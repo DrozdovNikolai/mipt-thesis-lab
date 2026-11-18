@@ -1,0 +1,193 @@
+{
+  "created_at": "2026-09-14T18:48:30.268100+00:00",
+  "code": {
+    "scripts/improvement_experiment.py": "919a4e2507bbec1b6298707415c713a44cce4e1f6a8f51e8a4326ef3104c8293",
+    "src/north55_speech/__init__.py": "f1cd82ffbdc2435df77df6fda53e5d3eaee8c29d3cb60b0ae2a610112ff8fda0",
+    "src/north55_speech/api.py": "a319f23b78063e6d93b469902bc64a63267e1b78c9ab87ae9402a2d79b753a72",
+    "src/north55_speech/asr.py": "028dcdab204ea383d4dd423e4f3707e02f6c5788dcb27dc51689d7d50a585f3b",
+    "src/north55_speech/assets.py": "3a06517744d3fd320730986592f7894cfc22a37e1d5050c4d1d66c3afcec57fc",
+    "src/north55_speech/audio.py": "ecc3906671382cc66d5ba7a46774d23f70de2a68b95ebf2791157b8d301217ce",
+    "src/north55_speech/augmentation.py": "9a6d3f6db05b9827d85a4f31a02425daf1555bf0fc85f600bd026af89c7527d9",
+    "src/north55_speech/benchmark.py": "ff30df29ccb1f4412a1d2a55fc2400080a9d4434e76964bc1f8e8c436bf0a2db",
+    "src/north55_speech/cli.py": "82aa77d10880b6003a2bef1aa791e6aea18b7e48735482e7521b5c686e3563c3",
+    "src/north55_speech/continuation.py": "a3850f974c555d5303cb76f4a69aac5be60b977f0d101ef13ce1e41a60877bf5",
+    "src/north55_speech/convergence.py": "c9def67c3e158c40dca7850e35dd8d031e1463fcdae93b14d6f2f9a9a6bec108",
+    "src/north55_speech/core.py": "111df2551edaa60b744e60c2e482b6a4fd99850d88047bf64cbffebb882c9656",
+    "src/north55_speech/datasets.py": "52b0049324fb55d5c632b6ec70698295a6490aa1bb7a6cce4547f231fe019f18",
+    "src/north55_speech/db.py": "8a1dce17699713d19c37b4acdf7d1ec4ea71b0e85c9db7257941b695f38c552b",
+    "src/north55_speech/decoder_adaptation.py": "d9ae3345a7b6099e0b1282b9da14b1d4a9ef09f4340c37bcdaf4e2a6b2f96444",
+    "src/north55_speech/diarization.py": "ebde8a8e87af0099a6ee78971f74c802991a65d196a12c9f3db30c64ebf1decc",
+    "src/north55_speech/gates.py": "a1be6fbc78476c86b83de727b950e0d17bcaa22b320f9619bc520d7c27275476",
+    "src/north55_speech/jobs.py": "a677f63b031d1dfd361988a4b3144c407272e77eb8ab1fbcf79bd431b6f4e3de",
+    "src/north55_speech/journal.py": "b8ffa787b69444133800bfc5e4288bb7fee5a24014d7cbca05222c0060b5079f",
+    "src/north55_speech/lora.py": "76f267b6a1d90a316dedb5a264c72792d1f9ac3a9bf88819ae9e422160a89a28",
+    "src/north55_speech/lora_ablation.py": "cec9f25e099bed79fedab40f32729fea14097c076bd89ef1162f59672443d080",
+    "src/north55_speech/metrics.py": "03876483b34afa31243136a5a3f9b52b17d2a2c15e8435fccfbf23986344792a",
+    "src/north55_speech/nlp.py": "e3dcc378ea66f6be96c81d7a4c884acaad4a930036abda5f0077e916d1dcbbf5",
+    "src/north55_speech/nus_training.py": "c593bb116093427922e8a7b7090e5522810e6e5a0cd7a5dcd534dd010b57183a",
+    "src/north55_speech/pipeline.py": "ca339e5c106aa25a103d3f9034d9ffd50eba7d4220718fe45189e1ac16d22b70",
+    "src/north55_speech/release.py": "317216d47a924ad29ed4069d7ebd10c3dea36661706a6ae75a5af7580110c8ed",
+    "src/north55_speech/reporting.py": "6dbb8df7111b017a91cf9e2bdc5b25bea9b43b535819b9347a1980691af8575e",
+    "src/north55_speech/retention.py": "ea02456b98e5005a6bc26e727da0c605761b071f205c60e163d7ce27c0bb1b8b",
+    "src/north55_speech/retraining.py": "cf93e2366ef873f189ca200f7f36ae370be0cd3c2a8d0dd007d1ac94965d5045",
+    "src/north55_speech/sampling.py": "34eaa07aa3b3edb66968581cf4b16470180ed06e329005fe73e16c6ff6bc73a3",
+    "src/north55_speech/schemas.py": "3af2ad6dde74662b938f1c9eb7b20e0f6bf7af37535db5d4633da24811a7c343",
+    "src/north55_speech/selftest.py": "2f5dd462295bd1134b8db6823bc07257a749227505515733a7805e6bf2413aa3",
+    "src/north55_speech/text_windows.py": "ee7e13796f885ff1c47f4d94e95cff4d0760d4f89c92d0ae348bbbbb88d64305",
+    "src/north55_speech/training.py": "2cb7b518d953f96501771a0b50af494d8498968468478b7b71d3b73eb11e369e"
+  },
+  "baseline": {
+    "schema_version": "1.0",
+    "name": "baseline",
+    "model": "whisper-small-publisher-base-ct2",
+    "compute_type": "float16",
+    "device": "cuda",
+    "task": "transcribe",
+    "beam_size": 5,
+    "temperature": 0.0,
+    "best_of": 5,
+    "patience": 1.0,
+    "length_penalty": 1.0,
+    "repetition_penalty": 1.0,
+    "no_repeat_ngram_size": 0,
+    "condition_on_previous_text": true,
+    "compression_ratio_threshold": 2.4,
+    "log_prob_threshold": -1.0,
+    "no_speech_threshold": 0.6,
+    "suppress_blank": true,
+    "suppress_tokens": [
+      -1
+    ],
+    "max_initial_timestamp": 1.0,
+    "word_timestamps": true,
+    "language_detection_threshold": 0.5,
+    "language_detection_segments": 1,
+    "vad": {
+      "enabled": false,
+      "threshold": 0.5,
+      "min_speech_duration_ms": 100,
+      "min_silence_duration_ms": 400,
+      "speech_pad_ms": 200,
+      "max_speech_duration_s": 30.0
+    },
+    "denoise": {
+      "enabled": false,
+      "strength": 0.5,
+      "floor": 0.3,
+      "noise_percentile": 10.0
+    },
+    "hotwords": null,
+    "glossary_version": null,
+    "redecode": false,
+    "max_redecode_passes": 1,
+    "redecode_logprob_threshold": -0.8,
+    "episode_gap_sec": 2.0,
+    "episode_max_sec": 30.0,
+    "episode_max_tokens": 100,
+    "classifier": "rules_v1",
+    "classifier_artifact": null
+  },
+  "protocol_sha256": "fe923dc7a1d49c3ec245ba650e012dfaa261e805a6d0d20a84abec40c8ead61f",
+  "glossary": "roger, flaps, lights, confirm, check, checklist, route, runway, landing, engine, execute, gear, heat, anti, taxi, activated, direct, required, lnav, auto, brake, parking, whites, flight, thrust, below, complete, heading, idle, levers, speed, transponder, activate, checked, fuel, mode, obtain, packs, pumps, cycling, ecam, pitot, speedbreaks, stabilized, start, control, altitude, approach",
+  "glossary_train_count": 308,
+  "train_pcm_count": 708,
+  "models": {
+    "small": {
+      "model": "whisper-small-publisher-base-ct2",
+      "repo": "local_unadapted_conversion",
+      "revision": "973afd24965f72e36ca33b3055d56a652f456b4d",
+      "source_manifest_sha256": "b92a7c691f46da8afd9b3d4ec859e7941584784dac32d1e1f4fe78d27279a83a",
+      "license": "apache-2.0",
+      "files": {
+        "model.bin": "eef2cbde70d256f29b6e3432c85b92becd26f804650e855cc4ff7e66f12122b0",
+        "tokenizer.json": "27fc476bfe7f17299480be2273fc0608e4d5a99aba2ab5dec5374b4482d1a566",
+        "vocabulary.json": "5ad28279db5e546349708b9a74736e2c018737ac5a600f1048f1f26c99b85b47",
+        "preprocessor_config.json": "9b5cd03a36fbb8a627c64d98a5b5b126ead95a77720723944487311f0110b666",
+        "config.json": "b55496ac7940a7ae47d2c01eab40edfd8701feec1229d9cce3b40014383fb828"
+      },
+      "purpose": "same source weights and CT2 float16 conversion control for A5"
+    },
+    "large": {
+      "model": "whisper-large-v3-systran-ct2",
+      "repo": "Systran/faster-whisper-large-v3",
+      "revision": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+      "license": "MIT",
+      "upstream": "openai/whisper-large-v3",
+      "format": "CTranslate2 FP16 conversion by SYSTRAN",
+      "files": {
+        "README.md": "39e96252229f5a3d0141dc81afb65a36fd205461ac21e5b70f2cd1248ef0082c",
+        "config.json": "a9306624f5ec14270a014b647e5c316b6e03a662c369758d1b90697a7b0655b9",
+        "model.bin": "69f74147e3334731bc3a76048724833325d2ec74642fb52620eda87352e3d4f1",
+        "preprocessor_config.json": "7ccc62c6f2765af1f3b46c00c9b5894426835a05021c8b9c01eecb6dfb542711",
+        "tokenizer.json": "6d8cbd7cd0d8d5815e478dac67b85a26bbe77c1f5e0c6d76d1ce2abc0e5f21ca",
+        "vocabulary.json": "c69260f2ab26d659b7c398f9a2b2b48ed0df16c3b47d7326782fd9cba71690c1"
+      },
+      "acquired_at": "2026-09-14T07:32:40.284608+00:00",
+      "source_metadata_sha256": "28260f2c86f4f87a7534a48d4e255bffbf18aa0f2aee2c64980a29c2876c49c3"
+    }
+  },
+  "model_names": {
+    "small": "whisper-small-publisher-base-ct2",
+    "large": "whisper-large-v3-systran-ct2"
+  },
+  "inputs_sha256": "b10799badbac134e0aaea126b228e71528679ae01ab24bb2b524ad03bcc04420",
+  "references_sha256": "095e70e660ad0f8703784d1e2ec77f0e6246b1f7922bc0644cc1a4255714f45a",
+  "source_acquisition": {
+    "source": "Google FLEURS",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "license": "CC-BY-4.0",
+    "attribution": "Conneau et al., FLEURS: Few-shot Learning Evaluation of Universal Representations of Speech, 2022",
+    "role": "general_RU_development_controls_only",
+    "source_split": "dev",
+    "local_human_audio_audit": false,
+    "speaker_ids_available": false,
+    "test_downloaded": false,
+    "files": [
+      {
+        "path": "dev.tar.gz",
+        "url": "https://huggingface.co/datasets/google/fleurs/resolve/70bb2e84b976b7e960aa89f1c648e09c59f894dd/data/ru_ru/audio/dev.tar.gz",
+        "bytes": 187377526,
+        "publisher_algorithm": "sha256",
+        "publisher_checksum": "4dc533cd0f312f749bd6d0fe968f3183288d938e07ed97dc141d9f10570457f9",
+        "sha256": "4dc533cd0f312f749bd6d0fe968f3183288d938e07ed97dc141d9f10570457f9"
+      },
+      {
+        "path": "dev.tsv",
+        "url": "https://huggingface.co/datasets/google/fleurs/resolve/70bb2e84b976b7e960aa89f1c648e09c59f894dd/data/ru_ru/dev.tsv",
+        "bytes": 316328,
+        "publisher_algorithm": "git_blob_sha1",
+        "publisher_checksum": "8e6be8c301fcdf2df3a99219c9c6ab643cf10e36",
+        "sha256": "25d9dc88a7533fc0f303354a8e6d3c8186c557229c9a0024487090a11226171e"
+      }
+    ]
+  },
+  "fleurs_source_rows": 356,
+  "fleurs_train_sentence_exclusions": 1465,
+  "previous_ru_sentence_exclusions": 50,
+  "cohorts": {
+    "general_clean": 50,
+    "partial_human_dev": 5,
+    "general_ru": 50,
+    "quiet_general_clean": 9,
+    "quiet_partial_human_dev": 5,
+    "noise_only": 15,
+    "bleriot_b_noise": 25,
+    "publisher_weak_dev": 35,
+    "new_ru_primary": 100,
+    "new_ru_repeat_readings": 137
+  },
+  "systems": [
+    "small",
+    "small_glossary",
+    "large",
+    "large_glossary"
+  ],
+  "gate": {
+    "threshold": 0.5,
+    "min_speech_duration_ms": 100
+  },
+  "max_configurations": 8,
+  "new_training_steps": 0,
+  "closed_test_accessed": false,
+  "new_ru_policy_locked": "large baseline, no glossary, no gate"
+}

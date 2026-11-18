@@ -1,0 +1,13 @@
+name: north55-bleriot-remaining-audit
+services:
+  audit:
+    image: north55-speech-gpu:0.1.0
+    network_mode: none
+    entrypoint: [python, -u, /code/scripts/audit_bleriot_remaining.py]
+    environment:
+      PYTHONPATH: /code/src:/code
+    volumes:
+      - ./src:/code/src:ro
+      - ./scripts:/code/scripts:ro
+      - .:/workspace:ro
+      - ./reports/bleriot-remaining-v1:/audit

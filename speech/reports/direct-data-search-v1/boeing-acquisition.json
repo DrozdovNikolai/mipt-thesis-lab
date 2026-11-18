@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-09-14T12:53:05.197960+00:00",
+  "source": "boeing/aviation-ner-BIO",
+  "revision": "36832b83a85b15936b6f2dd15c7cd886194a9535",
+  "url": "https://huggingface.co/datasets/boeing/aviation-ner-BIO/resolve/36832b83a85b15936b6f2dd15c7cd886194a9535/train.10.23.bio.json",
+  "path": "data\\input\\boeing-ner-v1\\train.10.23.bio.json",
+  "bytes": 986339,
+  "sha256": "7b1040456b335fc781d9f3ab53c50c28dd2525305fd493a65d32f1c91504d245",
+  "publisher_git_blob": "3c414e83e464efcc677e40e62c9466d26dbf6f48",
+  "publisher_hash_verified": true,
+  "license": "MIT (dataset card)",
+  "license_evidence": "followup/boeing-aviation-ner-BIO-card.response",
+  "rows": 894,
+  "fields": [
+    "ner",
+    "tokenized_text"
+  ],
+  "source_split": "train",
+  "test_downloaded": false,
+  "audio_present": false,
+  "scope": "service_difficulty_reports_text_only_auxiliary_NER",
+  "human_annotation_provenance": "NOT_ESTABLISHED",
+  "project_event_labels": false,
+  "project_critical_entity_gold": false,
+  "training_executed": false,
+  "admission": "AUXILIARY_SOURCE_NATIVE_INSPECTION_ONLY"
+}

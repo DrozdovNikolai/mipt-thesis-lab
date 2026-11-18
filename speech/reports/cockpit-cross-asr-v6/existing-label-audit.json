@@ -1,0 +1,4695 @@
+[
+  {
+    "id": "fit-7257f1829fe378c8d7f68726c2c2bc05",
+    "paired_noise": false,
+    "reference": "Set to nav, nav lights, on, primary flight display, bright, navigation displayed, bright.",
+    "parakeet": "Set to nav. Nav lights on. Primary flight display. Bright. Navigation displayed. Bright.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 13,
+      "H": 13,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 82,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-9c615cc65622109f67a6ededdea2afa8",
+    "paired_noise": false,
+    "reference": "Engine masters off. Engine mode selector, norm. Landing gear set lever, check down.",
+    "parakeet": "Engine Masters Off Engine mode selector norm Landing gear set lever check down",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 13,
+      "H": 13,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 80,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-037f567fa5606886c3c538dd1da9c7d7",
+    "paired_noise": false,
+    "reference": "thrust levers, idle, engine area, clear, engine mode selector, ignition start, engine 2",
+    "parakeet": "Truss levers, idle. Engine area, clear. Engine mode selector. Ignition start. Engine two.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 2,
+      "D": 0,
+      "I": 0,
+      "N": 13,
+      "H": 11,
+      "wer": 0.15384615384615385,
+      "character_errors": 5,
+      "reference_characters": 81,
+      "cer": 0.06172839506172839
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-7a850bf5ade4c769e28f16023583744e",
+    "paired_noise": false,
+    "reference": "weather radar on, flight director on, transponder set",
+    "parakeet": "Weather radar on Flight Director ON Transponder Set",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 8,
+      "H": 8,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 51,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-ae3a2cfbe43cf4bd5b5bfe2b826e780f",
+    "paired_noise": false,
+    "reference": "strobe lights on, landing lights on, runway turn on lights as required, nose lights take off.",
+    "parakeet": "Strobe lights on. Landing lights on. Runway turn on runway turn on lights as required. Nose lights. Take off.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 3,
+      "N": 15,
+      "H": 15,
+      "wer": 0.2,
+      "character_errors": 15,
+      "reference_characters": 88,
+      "cer": 0.17045454545454544
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-0daa83ab69b3a3a988a280732bba2572",
+    "paired_noise": false,
+    "reference": "Learning lights check on Taxi lights on Ground spoilers arm auto brake set",
+    "parakeet": "Landing lights, check on Taxi lights, on Ground spoilers, arm Auto brake, set",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 12,
+      "H": 11,
+      "wer": 0.08333333333333333,
+      "character_errors": 3,
+      "reference_characters": 73,
+      "cer": 0.0410958904109589
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-313a3d0efe223f850e4911960bf1050a",
+    "paired_noise": false,
+    "reference": "Spoilers. Verify extended. Breaks as required. After landing. Spoilers disarmed.",
+    "parakeet": "Spoilers Verify extended. Brakes as required. After landing. Spoilers disarmed.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 10,
+      "H": 9,
+      "wer": 0.1,
+      "character_errors": 2,
+      "reference_characters": 75,
+      "cer": 0.02666666666666667
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-224586f6ff1b8e567ae8eb509c97bc24",
+    "paired_noise": false,
+    "reference": "flaps retract engine mode selector norm landing lights off strobe lights off",
+    "parakeet": "Flaps, retract. Engine mode selector, norm. Landing lights, off. Strobe lights, off.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 12,
+      "H": 12,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 78,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-485733e96a2386c61fd6759456955ae1",
+    "paired_noise": false,
+    "reference": "ground operations as required.",
+    "parakeet": "ground operations as required.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 4,
+      "H": 4,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 29,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-6a11d5b5303b75c6a1a4ab6e32b094f9",
+    "paired_noise": false,
+    "reference": "ON. Hydraulic pumps, ON. Anti-collision light, ON. Ground equipment removed.",
+    "parakeet": "On Hydraulic pumps, on Anti collision light, on Ground equipment, removed",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 11,
+      "H": 11,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 70,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-75824e9e4a122d01d75ccfc6100153ad",
+    "paired_noise": false,
+    "reference": "Engine start checklist Engine display select packs off Engine start switch ground",
+    "parakeet": "Engine start checklist Engine display Select PAX Off Engine Start Switch Ground",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 12,
+      "H": 11,
+      "wer": 0.08333333333333333,
+      "character_errors": 3,
+      "reference_characters": 81,
+      "cer": 0.037037037037037035
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-a12ad05974ac3b1d21630f42159acb71",
+    "paired_noise": false,
+    "reference": "Before takeoff checklist, fuel flow. Reset then wait. Center fuel pumps, as required. Anti-ice, as required.",
+    "parakeet": "Before takeoff checklist, fuel flow. Reset then wait. Center fuel pumps, as required. Anti-ice, as required.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 16,
+      "H": 16,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 100,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-a934612faf2881377c7917d15568519e",
+    "paired_noise": false,
+    "reference": "Flight instruments check, engine instruments check, take-off data V1 via V2 check. Landing lights on.",
+    "parakeet": "Flight instruments check engine instruments check Takeoff data V1 VR V two check Landing lights on",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 2,
+      "D": 0,
+      "I": 1,
+      "N": 15,
+      "H": 13,
+      "wer": 0.2,
+      "character_errors": 6,
+      "reference_characters": 96,
+      "cer": 0.0625
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-0c13b03781fd6612830e0e3d03b530cf",
+    "paired_noise": false,
+    "reference": "Clock. Start. After takeoff checklist. Positive rate of climb. Gear up. Auto brake.",
+    "parakeet": "Clock start after takeoff checklist positive rate of climb gear up auto brake",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 12,
+      "H": 12,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 76,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-8cf095b4954c30fe874b0136e7509dc3",
+    "paired_noise": false,
+    "reference": "off. Engine start switches off. Gear lever off. Runway turn off lights.",
+    "parakeet": "Off Engine start switches off Gear level off Runway turn off lights",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 12,
+      "H": 11,
+      "wer": 0.08333333333333333,
+      "character_errors": 1,
+      "reference_characters": 67,
+      "cer": 0.014925373134328358
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-56f2dde550b7b19602bcd02ea9337400",
+    "paired_noise": false,
+    "reference": "Altimeter check. Radios check set. Reset MCP altitude check. Vref",
+    "parakeet": "Altimeter check radios check set reset MCP altitude check VRAF",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 10,
+      "H": 9,
+      "wer": 0.1,
+      "character_errors": 1,
+      "reference_characters": 62,
+      "cer": 0.016129032258064516
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-ce4688cdd596fb3b857dcb822cf2b513",
+    "paired_noise": false,
+    "reference": "Anti ice, as required. Landing altitude, check. Recall, check. Radio altitude baro min, set.",
+    "parakeet": "Anti-ice as required. Landing altitude. Check. Recall. Check. Radio altitude barrow mean. Set.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 2,
+      "D": 0,
+      "I": 0,
+      "N": 13,
+      "H": 11,
+      "wer": 0.15384615384615385,
+      "character_errors": 4,
+      "reference_characters": 83,
+      "cer": 0.04819277108433735
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-236f317537ee93fa0b092a99afd56b09",
+    "paired_noise": false,
+    "reference": "altimeter check localizer frequency check localizer course check app arm",
+    "parakeet": "Altimeter, check. Localizer frequency, check. Localizer course, check. APP, arm.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 10,
+      "H": 10,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 72,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-a358d7c24e643dc38eb8d2aaac04ce65",
+    "paired_noise": false,
+    "reference": "Off. Few pumps. Off. Anti-ice. Off. Hydraulic pumps. Off. Isolation valve.",
+    "parakeet": "Off Fuel pumps Off Anti ice Off Hydraulic Pumps Off Isolation Valve",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 11,
+      "H": 10,
+      "wer": 0.09090909090909091,
+      "character_errors": 2,
+      "reference_characters": 65,
+      "cer": 0.03076923076923077
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-a530d48decff9d918f84fbc483e41307",
+    "paired_noise": false,
+    "reference": "IRS board selectors. Off. APU. Off. Emergency exit lights. Off. Window heat. Off.",
+    "parakeet": "IRS board selectors off. APU off Emergency Exit Lights Off Window Heat Off",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 13,
+      "H": 13,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 73,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-4f883118073d54b0f9380a412e5251a1",
+    "paired_noise": false,
+    "reference": "packs off, standby power off, battery off, airport bar checklist",
+    "parakeet": "Packs off. Standby power off. Battery off. Airport power checklist.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 10,
+      "H": 9,
+      "wer": 0.1,
+      "character_errors": 4,
+      "reference_characters": 61,
+      "cer": 0.06557377049180328
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-f7c6fdac0ffa048e493f0de2ddb6e090",
+    "paired_noise": false,
+    "reference": "Eng generators on, fuel pumps all on, hydraulic electric pumps on, GPWS all on.",
+    "parakeet": "engine generators on, fuel pumps all on, hydraulic electric pumps on, GPW S all on,",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 1,
+      "N": 14,
+      "H": 13,
+      "wer": 0.14285714285714285,
+      "character_errors": 1,
+      "reference_characters": 78,
+      "cer": 0.01282051282051282
+    },
+    "source": "bleriot-a:BEA_checklists_sp004"
+  },
+  {
+    "id": "fit-e9ed429c3577f9a9b20e8d98e5e9a5bf",
+    "paired_noise": false,
+    "reference": "APU start check run, APU turn on check volts, elevator trim take-off setting, turning into the gate taxi lights off.",
+    "parakeet": "APU start check run, APU gen on check vaults, elevator trim takeoff setting, turning into the gate taxi lights off.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 2,
+      "D": 0,
+      "I": 0,
+      "N": 20,
+      "H": 18,
+      "wer": 0.1,
+      "character_errors": 10,
+      "reference_characters": 111,
+      "cer": 0.09009009009009009
+    },
+    "source": "bleriot-a:BEA_checklists_sp004"
+  },
+  {
+    "id": "fit-9f4848db1eb7702285d6e9f84ab5b67e",
+    "paired_noise": false,
+    "reference": "Engine instruments, check. Engine instruments, check. Take-off data, V1, VR, V2, check. Landing lights, on. Strobe lights, on. Taxi lights, off. Transponder.",
+    "parakeet": "Engine instruments check. Engine instruments check. Takeoff data V one, V R V two check. Landing lights on. Strobe lights on. Taxi lights off. Transponder.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 3,
+      "D": 0,
+      "I": 3,
+      "N": 22,
+      "H": 19,
+      "wer": 0.2727272727272727,
+      "character_errors": 9,
+      "reference_characters": 140,
+      "cer": 0.06428571428571428
+    },
+    "source": "bleriot-a:BEA_checklists_sp004"
+  },
+  {
+    "id": "fit-1517960866a872035a13e2708675309d",
+    "paired_noise": false,
+    "reference": "Battery off.",
+    "parakeet": "Battery of",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 2,
+      "H": 1,
+      "wer": 0.5,
+      "character_errors": 1,
+      "reference_characters": 11,
+      "cer": 0.09090909090909091
+    },
+    "source": "bleriot-a:BEA_checklists_sp004"
+  },
+  {
+    "id": "fit-8f05c82844dc7fcff993f18330efcb51",
+    "paired_noise": false,
+    "reference": "Park brake set, engines off, wing lights off, fuel pumps off.",
+    "parakeet": "Park brakes set, engines off, wing lights off, fuel pumps off.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 11,
+      "H": 10,
+      "wer": 0.09090909090909091,
+      "character_errors": 1,
+      "reference_characters": 57,
+      "cer": 0.017543859649122806
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-5eb58f25d35229ff08ca76e194f9d7a3",
+    "paired_noise": false,
+    "reference": "Isolation valve open.",
+    "parakeet": "Isolation valve open.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 3,
+      "H": 3,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 20,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-0c7c12846e8d7b157920d52bb328cbbc",
+    "paired_noise": false,
+    "reference": "Engine APU bleed on",
+    "parakeet": "Engine APU bleed on.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 4,
+      "H": 4,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 19,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-d0426924104a7833a4159fbf8b3f40e3",
+    "paired_noise": false,
+    "reference": "on, flight altitude set, landing altitude set, flight directors on.",
+    "parakeet": "on flight altitude set landing altitude set flight directors on",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 10,
+      "H": 10,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 63,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-2b8b6cd39d319950299c232225d3bb43",
+    "paired_noise": false,
+    "reference": "ground equipment removed, engine area clear, engine display select, packs off.",
+    "parakeet": "Ground equipment removed. Engine area clear. Engine display select. Packs off.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 11,
+      "H": 11,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 74,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-50563dfc30c853b908350d03b449afef",
+    "paired_noise": false,
+    "reference": "Takeoff data v1, vr, v2, check. Request takeoff clearance.",
+    "parakeet": "Takeoff data V one V R V two check Request takeoff clearance",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 3,
+      "D": 0,
+      "I": 3,
+      "N": 9,
+      "H": 6,
+      "wer": 0.6666666666666666,
+      "character_errors": 9,
+      "reference_characters": 53,
+      "cer": 0.16981132075471697
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-7bc79d282bc3eac079819714aca37a31",
+    "paired_noise": false,
+    "reference": "speed maximum 250 landing lights on passenger signs on altimeter check",
+    "parakeet": "Speed Maximum two five zero. Landing lights on. Passenger signs on. Altimeter check.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 2,
+      "N": 11,
+      "H": 10,
+      "wer": 0.2727272727272727,
+      "character_errors": 13,
+      "reference_characters": 70,
+      "cer": 0.18571428571428572
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-d2dd49f0aa034911ad22e25127081b7f",
+    "paired_noise": false,
+    "reference": "gear down flaps 15 speed brake arm second autopilot arm engine start switches",
+    "parakeet": "Gear down. Flaps fifteen. Speed brake arm. Second autopilot arm. Engine start switches",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 12,
+      "H": 11,
+      "wer": 0.08333333333333333,
+      "character_errors": 7,
+      "reference_characters": 76,
+      "cer": 0.09210526315789473
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-091f7126aff0e8da0f3f70b9cc4ef05e",
+    "paired_noise": false,
+    "reference": "APU bleed air on, anti-collision lights off, fuel pumps off, anti-ice off, hydraulic pumps off.",
+    "parakeet": "APO bleed air on anti-collision lights of fuel pumps of anti-ice of hydraulic pumps of",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 5,
+      "D": 0,
+      "I": 0,
+      "N": 16,
+      "H": 11,
+      "wer": 0.3125,
+      "character_errors": 5,
+      "reference_characters": 89,
+      "cer": 0.056179775280898875
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-13619d4ad763e48f0fd2e56cf6498db4",
+    "paired_noise": false,
+    "reference": "Isolation valve open, flat director off, ground power establish, doors open, IRS mode selectors off, APU off, emergency exit lights off, windows heat off, packs off, standby power off, battery off.",
+    "parakeet": "Insulation valve open. Flood director off ground power establish. Doors open. IRS mode selectors off APU off. Emergency exit lights off. Windows it off. Packs off. Standby power off. Battery off.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 3,
+      "D": 0,
+      "I": 0,
+      "N": 31,
+      "H": 28,
+      "wer": 0.0967741935483871,
+      "character_errors": 8,
+      "reference_characters": 186,
+      "cer": 0.043010752688172046
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-8c7e69f5baa2f4fc4ab8f93449ba99be",
+    "paired_noise": false,
+    "reference": "speed managed landing gear down landing gear 3 green set flaps 3",
+    "parakeet": "Speed managed Landing Gear Down Landing Gear 3 Green Set Flaps 3",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 12,
+      "H": 12,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 64,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-cdab40664d513661ec650f741bc23410",
+    "paired_noise": false,
+    "reference": "Spoilers, verify extended, breaks as required. Cancel reverse thrust at 60.",
+    "parakeet": "Spoilers. Verify extended. Breaks as required. Cancel reverse thrust at sixty",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 11,
+      "H": 10,
+      "wer": 0.09090909090909091,
+      "character_errors": 5,
+      "reference_characters": 71,
+      "cer": 0.07042253521126761
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-1af32e12351d2295d8655c9777169610",
+    "paired_noise": false,
+    "reference": "Nav lights on, external lights off, NTIs off, passenger signs off, doors open, flight director off, APU bleed as required, fuel pumps all off, beacon lights off.",
+    "parakeet": "nav lights on, external lights off, NTIs off, passenger signs off, doors open, flight director off, APU bleed as required, uh fuel pumps uh all off, beacon lights",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 1,
+      "I": 2,
+      "N": 27,
+      "H": 26,
+      "wer": 0.1111111111111111,
+      "character_errors": 10,
+      "reference_characters": 152,
+      "cer": 0.06578947368421052
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-e005c247fa7635e33626f95743b7d98c",
+    "paired_noise": false,
+    "reference": "flight control check auto brake max before takeoff checklist accomplish single engine taxi in",
+    "parakeet": "Flight control, check. Auto brake max before takeoff checklist accomplish. Single engine taxi in.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 13,
+      "H": 13,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 92,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-4c469566583c475477eb0ebbc0f88780",
+    "paired_noise": false,
+    "reference": "Auto parking procedures apply.",
+    "parakeet": "Auto parking procedures apply.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 4,
+      "H": 4,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 29,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-72c18eb5e92e7f729759f30d5300ce84",
+    "paired_noise": false,
+    "reference": "transponder set, mcp v2 set, mcp heading takeoff runway set, mcp initial alt set, yaw damper on",
+    "parakeet": "Transmonder set, M C P V two set, M C P heading takeoff runway set, M C P initial alt set, U dumper on,",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 4,
+      "D": 0,
+      "I": 1,
+      "N": 17,
+      "H": 13,
+      "wer": 0.29411764705882354,
+      "character_errors": 9,
+      "reference_characters": 96,
+      "cer": 0.09375
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-8c2d8163884a41217107cd129c6a9c08",
+    "paired_noise": false,
+    "reference": "Window Heat on, Flight Altitude set, Landing Altitude set, Flight Directors on, LNAV.",
+    "parakeet": "Window heat on, flight altitude set, landing altitude set, flight directors on, L nav",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 1,
+      "N": 13,
+      "H": 12,
+      "wer": 0.15384615384615385,
+      "character_errors": 1,
+      "reference_characters": 80,
+      "cer": 0.0125
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-e1a6c8348032df89769913fd32c8e528",
+    "paired_noise": false,
+    "reference": "Engine area clear. Engine start checklist. Engine display select. Packs off. Engine start switch ground. Engine start lever. Idle at 25% and 2.",
+    "parakeet": "Engine area clear. Engine start checklist. Engine display select. Packs off. Engine start switch ground. Engine start lever idle at twenty five percent and two.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 2,
+      "D": 0,
+      "I": 2,
+      "N": 23,
+      "H": 21,
+      "wer": 0.17391304347826086,
+      "character_errors": 22,
+      "reference_characters": 135,
+      "cer": 0.16296296296296298
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-fb6781154986a2275ced41d3a2afcd19",
+    "paired_noise": false,
+    "reference": "Engine ATIs as required, packs auto, isolation valve auto, APU bleed off, APU off, engine start switches",
+    "parakeet": "engine anti's as required, packs, auto, isolation valve, auto, APU bleed, off, APU off, engine start switches,",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 17,
+      "H": 16,
+      "wer": 0.058823529411764705,
+      "character_errors": 2,
+      "reference_characters": 99,
+      "cer": 0.020202020202020204
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-d791ae38f20a367cb0103b4029f7ae2a",
+    "paired_noise": false,
+    "reference": "flight instruments check, engine instruments check, takeoff data V1 via V2 check.",
+    "parakeet": "Flight flight instruments check, engine instruments check, take off data, V one, VR, V two check.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 3,
+      "D": 0,
+      "I": 3,
+      "N": 12,
+      "H": 9,
+      "wer": 0.5,
+      "character_errors": 17,
+      "reference_characters": 78,
+      "cer": 0.21794871794871795
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-2ebc16e567b2cde25a8754066a1ae911",
+    "paired_noise": false,
+    "reference": "After takeoff checklist, positive rate of climb, gear up, auto bike, off, engine start switches, off, gear lever, off, runway turn, off lights.",
+    "parakeet": "After takeoff checklist, positive rate of climb gear up, autobrake off, engine start switches off, gear lever off, runway turn off, lights,",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 1,
+      "I": 0,
+      "N": 23,
+      "H": 21,
+      "wer": 0.08695652173913043,
+      "character_errors": 3,
+      "reference_characters": 132,
+      "cer": 0.022727272727272728
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-ecb678658af143f931882fcc8d1b7856",
+    "paired_noise": false,
+    "reference": "250 knots, landing lights off, fasten seat belts off, center fuel pumps as required, engine and instruments monitor, fuel quantity check.",
+    "parakeet": "two hundred and fifty knots, landing lights off, fasten seat belts off, centre fuel pumps as required, engine and instruments monitor, fuel quantity check.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 2,
+      "D": 0,
+      "I": 3,
+      "N": 20,
+      "H": 18,
+      "wer": 0.25,
+      "character_errors": 23,
+      "reference_characters": 130,
+      "cer": 0.17692307692307693
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-834fd72eace0269ca374ef3f1ef4690e",
+    "paired_noise": false,
+    "reference": "Speed max 250 knots. Landing lights on. Passenger signs on. Approach checklist.",
+    "parakeet": "Speed max two hundred and fifty knots Landing lights on Passenger signs on Approach checklist",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 3,
+      "N": 12,
+      "H": 11,
+      "wer": 0.3333333333333333,
+      "character_errors": 21,
+      "reference_characters": 75,
+      "cer": 0.28
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-9b489ed68cb73d41364936707730f4ff",
+    "paired_noise": false,
+    "reference": "Altimeter check, localizer frequency check, localizer course check, APP, approach, arm.",
+    "parakeet": "Altimeter check, localiser frequency check, localiser course check, APP approach arm.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 2,
+      "D": 0,
+      "I": 0,
+      "N": 11,
+      "H": 9,
+      "wer": 0.18181818181818182,
+      "character_errors": 2,
+      "reference_characters": 81,
+      "cer": 0.024691358024691357
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-e551d17573e38c1234bad4f86c568e9b",
+    "paired_noise": false,
+    "reference": "anti-collision light off, fuel pumps off, anti-ice off, hydraulic pumps off, isolation valve open, flight director off, ground power established, doors open.",
+    "parakeet": "Anti collision light off. Fuel pumps off. Anti ice off. Hydroling pumps off. Isolation valve open. Flight director off. Crown power established. Doors open.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 2,
+      "D": 0,
+      "I": 0,
+      "N": 23,
+      "H": 21,
+      "wer": 0.08695652173913043,
+      "character_errors": 7,
+      "reference_characters": 148,
+      "cer": 0.0472972972972973
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-105b9126e09932a8a204d2b48a804f4a",
+    "paired_noise": false,
+    "reference": "Securing aircraft, IRS mode selectors off, APU off, emergency exit lights off, window heat off.",
+    "parakeet": "Securing aircraft, IRS mode selectors off, APU off, emergency exit lights off, window heat off,",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 15,
+      "H": 15,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 90,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-8cafd711526f74a3882ad39235ccc066",
+    "paired_noise": false,
+    "reference": "Idle, engine area clear, engine mode selector, ignition start, engine 2 on.",
+    "parakeet": "Idol, engine area, clear, engine mode selector, initial start, engine to on.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 3,
+      "D": 0,
+      "I": 0,
+      "N": 12,
+      "H": 9,
+      "wer": 0.25,
+      "character_errors": 7,
+      "reference_characters": 70,
+      "cer": 0.1
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-145b3c7f4e9de247b6c1183ef57a5f07",
+    "paired_noise": false,
+    "reference": "On ground emergency evacuation, aircraft parking brake on stop, ATC notify cabin crew.",
+    "parakeet": "On ground emergency evacuation aircraft parking brake on stop ATC notify cabin crew",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 13,
+      "H": 13,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 83,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-f8b21b7ee06022dcf588d74d70067561",
+    "paired_noise": false,
+    "reference": "signs on, cabin ready",
+    "parakeet": "Signs on, cabin ready.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 4,
+      "H": 4,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 20,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-f8dca4f431a6d33c53e5293c9d2a3933",
+    "paired_noise": false,
+    "reference": "Window head on flight altitude set landing altitude set flight directors on",
+    "parakeet": "Window head on. Flight altitude set. Landing altitude set. Flight directors on.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 12,
+      "H": 12,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 75,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-4273f708e6ee54471b588a087a05f2fb",
+    "paired_noise": false,
+    "reference": "hydraulic pumps on, anti-collision lights on, ground equipment removed, engine area clear. Engine start checklist",
+    "parakeet": "Hydraulic pumps on. Anti collision lights on. Ground equipment removed. Engine array clear. Engine start checklist.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 16,
+      "H": 15,
+      "wer": 0.0625,
+      "character_errors": 2,
+      "reference_characters": 109,
+      "cer": 0.01834862385321101
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-f4e17b8a61ee7e4c2e2a1d9d8912c379",
+    "paired_noise": false,
+    "reference": "Isolation valve auto, APU bleed off, APU off, engine start switches continuous, flaps set for take off.",
+    "parakeet": "Isolation valve auto. APU bleed off. APU off. Engine start switches continuous. Flaps set for takeoff.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 16,
+      "H": 16,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 97,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-450ce02127b4119a282598a810a6ae18",
+    "paired_noise": false,
+    "reference": "tfc push on clock start after takeoff checklist positive rate of climb gear up auto brake off",
+    "parakeet": "TFC Push on Clock Start After takeoff checklist Positive rate of climb gear up Auto brake off",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 16,
+      "H": 16,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 92,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-34f06b463a4a29e104d7497567145e79",
+    "paired_noise": false,
+    "reference": "Engine start switches off, gear lever off, runway turn off lights off. Climb and cruise checklist.",
+    "parakeet": "Engine start switches off. Gear lever off. Runway turn off lights off. Climb and cruise checklist.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 16,
+      "H": 16,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 94,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-7b1f52f63294e7d66af50a3c020b3082",
+    "paired_noise": false,
+    "reference": "Cruise, engine and instruments, monitor, fuel quantity, check. Descent checklist. Before top of descent",
+    "parakeet": "Cruise, engine and instruments, monitor, fuel quantity, check. Descent checklist. Before top of descent,",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 14,
+      "H": 14,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 97,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-273a08ffa4a1edc778e4955754a962b7",
+    "paired_noise": false,
+    "reference": "landing altitude check recall check radio alt baro minimum set auto brake as required passing transition altitude altimeter reset to local",
+    "parakeet": "Landing altitude, check. Recall, check. Radio alt, barrow minimum, set. Auto brake as required. Passing transition altitude, altimeter, reset to local.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 20,
+      "H": 19,
+      "wer": 0.05,
+      "character_errors": 2,
+      "reference_characters": 142,
+      "cer": 0.014084507042253521
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-b89ce2773259fd1a1494f0a84a5733d2",
+    "paired_noise": false,
+    "reference": "altimeter check, localizer frequency check, localizer course check, Approach arm, glideslope alive, gear down.",
+    "parakeet": "Altimeter, check. Localizer frequency, check. Localiser course, check. Approach, arm. Glide slope alive, gear down.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 2,
+      "D": 0,
+      "I": 1,
+      "N": 14,
+      "H": 12,
+      "wer": 0.21428571428571427,
+      "character_errors": 2,
+      "reference_characters": 104,
+      "cer": 0.019230769230769232
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-b6994f2579f5d386b87cc19ebd94b79a",
+    "paired_noise": false,
+    "reference": "flaps retract, speed brake down, landing lights off, position lights steady, taxi lights on.",
+    "parakeet": "Flaps retract. Speed brake down. Landing lights off. Position lights steady. Taxi lights on.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 13,
+      "H": 13,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 86,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-35591ce45b62c5ebe19e2b600ea1dcc5",
+    "paired_noise": false,
+    "reference": "Engine start levels cut off, ground operations as required, passenger signs off, APU bleed air on, anti-collision light off.",
+    "parakeet": "Engine start levers cut off. Ground operations as required. Passenger signs off. APU bleed air on. Anti collision light off.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 20,
+      "H": 19,
+      "wer": 0.05,
+      "character_errors": 1,
+      "reference_characters": 119,
+      "cer": 0.008403361344537815
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-99604540d1cf07f79ddf04386fa4dbea",
+    "paired_noise": false,
+    "reference": "fuel pumps off, anti-ice off, hydraulic pumps off, isolation valve open, flight director off.",
+    "parakeet": "fuel pumps of anti ice of hydraulic pumps of isolation valve open flight director of",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 4,
+      "D": 0,
+      "I": 0,
+      "N": 14,
+      "H": 10,
+      "wer": 0.2857142857142857,
+      "character_errors": 4,
+      "reference_characters": 87,
+      "cer": 0.04597701149425287
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-e7ef3af87133186d4e7be1f47a34b47e",
+    "paired_noise": false,
+    "reference": "Ground power established. Doors open. Securing aircraft. IRS mode selectors off. APU off.",
+    "parakeet": "Ground power established. Doors open. Securing aircraft. IRS mode selectors off. APU off.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 13,
+      "H": 13,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 84,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-ea04971fc81d728c79962e426448221d",
+    "paired_noise": false,
+    "reference": "emergency exit lights off, window heat off, packs off, standby power off, battery off, airport bat checklist",
+    "parakeet": "Emergency exit lights off. Window heat off. Packs off. Standby power off. Battery off. Airport bad checklist.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 17,
+      "H": 16,
+      "wer": 0.058823529411764705,
+      "character_errors": 1,
+      "reference_characters": 103,
+      "cer": 0.009708737864077669
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-d6b164c3cbcbcd74906743d92f60cebb",
+    "paired_noise": false,
+    "reference": "Engine mode selector norm Landing gear lever check down. Flaps lever up. Spoilers retracted. Frust levers idle",
+    "parakeet": "Engine mode selector norm. Landing gear lever check down. Flaps lever up. Spoilers retracted. Thrust levers idle.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 17,
+      "H": 16,
+      "wer": 0.058823529411764705,
+      "character_errors": 2,
+      "reference_characters": 109,
+      "cer": 0.01834862385321101
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-8d47cc841bbe3734dc87710853762b51",
+    "paired_noise": false,
+    "reference": "fans on, engine generators on, fuel pumps all on, hydraulic electric pumps on, GPWS all on, FCS all on.",
+    "parakeet": "fans on, engine generators on, fuel pumps all on, hydraulic electric pumps on, GPW S all on, F C S all on.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 1,
+      "N": 19,
+      "H": 18,
+      "wer": 0.10526315789473684,
+      "character_errors": 1,
+      "reference_characters": 97,
+      "cer": 0.010309278350515464
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-c174e5b5247fea7a15b4c81484969936",
+    "paired_noise": false,
+    "reference": "Closed and locked. APU on. Expect APU to run. Green master light. APU bleed on. Parking brake set.",
+    "parakeet": "Closed and locked. APU on. Expect APU to run. Green Masterlight. APU bleed on. Parking brake set.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 1,
+      "I": 0,
+      "N": 18,
+      "H": 16,
+      "wer": 0.1111111111111111,
+      "character_errors": 1,
+      "reference_characters": 92,
+      "cer": 0.010869565217391304
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-8021df6eca452591dc9f726f575bb579",
+    "paired_noise": false,
+    "reference": "Before taxi. Engine mode selector, norm. APU bleed, off. APU, off. Spoilers, arm. Rudder trim, set. Pitch trim, set.",
+    "parakeet": "Before taxi Engine mode selector norm APU bleed off APU off spoilers arm rudder trim set pitch trim set",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 19,
+      "H": 19,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 105,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-8774128cc401697d618b8939181da428",
+    "paired_noise": false,
+    "reference": "take off thrust toga flex chrono start after takeoff engine mode selector norm spoilers disarmed flaps up gear up nose lights off",
+    "parakeet": "Takeoff thrust Toga Flex Chrono Start After takeoff Engine mode selector norm Spoilers disarmed flaps up gear up Nose light off",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 21,
+      "H": 20,
+      "wer": 0.047619047619047616,
+      "character_errors": 1,
+      "reference_characters": 130,
+      "cer": 0.007692307692307693
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-000c93d063a0c47c8acf885f2adb762b",
+    "paired_noise": false,
+    "reference": "210 knots, landing lights check on, taxi lights on, ground spoilers arm, auto brake set, flaps set 1.",
+    "parakeet": "two hundred ten knots. Landing lights check on Taxi lights on ground spoilers arm. Auto brake set. Flaps set one.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 2,
+      "D": 0,
+      "I": 2,
+      "N": 17,
+      "H": 15,
+      "wer": 0.23529411764705882,
+      "character_errors": 18,
+      "reference_characters": 94,
+      "cer": 0.19148936170212766
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-6af3125246226445f89ab444e05a9379",
+    "paired_noise": false,
+    "reference": "cancel reverse thrust at 60 knots. After landing, spoilers, disarmed, flaps, retract. Engine mode selector, norm.",
+    "parakeet": "Cancel river thrust at sixty knots. After landing, spoilers disarmed, flaps retract, engine mode selector, norm.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 2,
+      "D": 0,
+      "I": 0,
+      "N": 16,
+      "H": 14,
+      "wer": 0.125,
+      "character_errors": 8,
+      "reference_characters": 107,
+      "cer": 0.07476635514018691
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-372ac78bad5b2ce4904f71d5204e977b",
+    "paired_noise": false,
+    "reference": "taxi to gate, max speed 20 knots, APU start check run, APU gen on check volts, elevator stream",
+    "parakeet": "Taxi to gate max speed twenty knots APU start check run APU gen on check vaults Innovator stream",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 3,
+      "D": 0,
+      "I": 0,
+      "N": 18,
+      "H": 15,
+      "wer": 0.16666666666666666,
+      "character_errors": 12,
+      "reference_characters": 96,
+      "cer": 0.125
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-2ab86af6722176a07c13550f8bdb83a0",
+    "paired_noise": false,
+    "reference": "exterior lights off, anti-ice off, passenger signs off, doors open, flight director off, APU bleed as required",
+    "parakeet": "Exterior lights off, anti lights off, passenger signs off, doors open, flight director of APU bleed as required.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 2,
+      "D": 0,
+      "I": 1,
+      "N": 17,
+      "H": 15,
+      "wer": 0.17647058823529413,
+      "character_errors": 7,
+      "reference_characters": 104,
+      "cer": 0.0673076923076923
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-664689abb3f1014f60452c83accb6ca4",
+    "paired_noise": false,
+    "reference": "PAX Auto, Isolation Valve Auto, APU Bleed Off, APU Off, Engine Start Switches.",
+    "parakeet": "PAX Auto. Isolation Valve Auto. A PU bleed off. A PU off. Engine start switches",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 2,
+      "D": 0,
+      "I": 2,
+      "N": 13,
+      "H": 11,
+      "wer": 0.3076923076923077,
+      "character_errors": 2,
+      "reference_characters": 73,
+      "cer": 0.0273972602739726
+    },
+    "source": "bleriot-a:BEA_checklists_sp011"
+  },
+  {
+    "id": "fit-5ab4c11d7c3cf1d34c240756fe548a99",
+    "paired_noise": false,
+    "reference": "TI, TFC, push on, clock start, positive rate of climb, gear up, auto brake off, engine start switches off, gear lever off.",
+    "parakeet": "T AI, T F C push on, uh, clock start, uh, positive rate of climb, gear up, uh, auto brake off, uh, engine start switches off, uh l gear lever off,",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 2,
+      "D": 0,
+      "I": 9,
+      "N": 21,
+      "H": 19,
+      "wer": 0.5238095238095238,
+      "character_errors": 21,
+      "reference_characters": 112,
+      "cer": 0.1875
+    },
+    "source": "bleriot-a:BEA_checklists_sp011"
+  },
+  {
+    "id": "fit-e0804576db9a2bfdcde677aa45feddf3",
+    "paired_noise": false,
+    "reference": "Renuet, turn off lights. Off. Climb A or B. Engage. Altimeter set standard.",
+    "parakeet": "Runway turn off lights off. Climb A or B Engage. Ultimator set standard.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 2,
+      "D": 0,
+      "I": 0,
+      "N": 13,
+      "H": 11,
+      "wer": 0.15384615384615385,
+      "character_errors": 7,
+      "reference_characters": 69,
+      "cer": 0.10144927536231885
+    },
+    "source": "bleriot-a:BEA_checklists_sp011"
+  },
+  {
+    "id": "fit-31103d70a1327e9622e6a918e2443f28",
+    "paired_noise": false,
+    "reference": "passenger signs on, altimeter check, localizer, frequency check, localizer cross check.",
+    "parakeet": "passenger signs on altimeter check uh localizer frequency check localizer course check",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 1,
+      "N": 11,
+      "H": 10,
+      "wer": 0.18181818181818182,
+      "character_errors": 7,
+      "reference_characters": 82,
+      "cer": 0.08536585365853659
+    },
+    "source": "bleriot-a:BEA_checklists_sp011"
+  },
+  {
+    "id": "fit-ad4dd96bed8f51a2eb98e6c99f243e55",
+    "paired_noise": false,
+    "reference": "as required, packs on, fans on, and generators on, fuel pumps all on.",
+    "parakeet": "as required. Packs on, fans on, and generators on fuel pumps all on.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 13,
+      "H": 13,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 64,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp011"
+  },
+  {
+    "id": "fit-099ef7daaf0cc01274a1991fed718d39",
+    "paired_noise": false,
+    "reference": "landing lights, check-on, taxi lights, on, ground spoilers, arm, auto-brake set, flaps, set 1.",
+    "parakeet": "Landing lights check on Taxi lights on Ground Spoilers Arm Auto Brake Set Flaps Set One",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 15,
+      "H": 14,
+      "wer": 0.06666666666666667,
+      "character_errors": 3,
+      "reference_characters": 84,
+      "cer": 0.03571428571428571
+    },
+    "source": "bleriot-a:BEA_checklists_sp011"
+  },
+  {
+    "id": "fit-5c3aa4879168234255ec54647fb2dbba",
+    "paired_noise": false,
+    "reference": "check run, APU gen on, check volts, elevator trim, take off setting, turning into the gate, taxi lights off.",
+    "parakeet": "Check run, APU, gen on, check vaults, elevator trim, take off setting, turning into the gate, taxi lights off,",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 18,
+      "H": 17,
+      "wer": 0.05555555555555555,
+      "character_errors": 2,
+      "reference_characters": 106,
+      "cer": 0.018867924528301886
+    },
+    "source": "bleriot-a:BEA_checklists_sp011"
+  },
+  {
+    "id": "fit-e86f1492576aebfcf521257b124e2abe",
+    "paired_noise": false,
+    "reference": "electrical power established, nav lights on, exterior lights off, anti-ice off.",
+    "parakeet": "electrical power established. N nav lights on, exterior lights of anti eyes of",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 3,
+      "D": 0,
+      "I": 2,
+      "N": 11,
+      "H": 8,
+      "wer": 0.45454545454545453,
+      "character_errors": 8,
+      "reference_characters": 74,
+      "cer": 0.10810810810810811
+    },
+    "source": "bleriot-a:BEA_checklists_sp011"
+  },
+  {
+    "id": "fit-37a62965c9eede3e52d984dc1326f387",
+    "paired_noise": false,
+    "reference": "passenger signs off, doors open, flight director off, APU bleed as required, fuel pumps all off, beacon lights off.",
+    "parakeet": "Passenger signs off, doors open, flight director off, APU bleed as required, fuel pumps all off, beacon lights off,",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 19,
+      "H": 19,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 109,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp011"
+  },
+  {
+    "id": "fit-92cf95f45fa02c633d0cf6af211a805b",
+    "paired_noise": false,
+    "reference": "Check. Left ignition and engine start. Off. Right condition lever. Reduce to low idle.",
+    "parakeet": "Check. Left ignition and engine start. Off. Right condition level. Reduce to low idle.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 14,
+      "H": 13,
+      "wer": 0.07142857142857142,
+      "character_errors": 1,
+      "reference_characters": 81,
+      "cer": 0.012345679012345678
+    },
+    "source": "bleriot-a:DGA_checklist-Beech_sp101"
+  },
+  {
+    "id": "fit-d3a5e3eaf2053634acf4495db888d62b",
+    "paired_noise": false,
+    "reference": "as required. Master panel and cockpit lights as required. Mic switch normal. Cabin lights as required.",
+    "parakeet": "as required. Master panel and cockpit lights, as required. Mic switch, normal. Cabin lights as required.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 16,
+      "H": 16,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 98,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:DGA_checklist-Beech_sp101"
+  },
+  {
+    "id": "fit-48f5d59484d25d6b6022b76144fa32d7",
+    "paired_noise": false,
+    "reference": "check, ice protection equipment, check, full quantity, flight and engine instruments, check, static",
+    "parakeet": "Check. Ice protection equipment. Check. Full quantity. Flight. And engine instruments. Check. Static.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 13,
+      "H": 13,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 93,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:DGA_checklist-Beech_sp101"
+  },
+  {
+    "id": "fit-015ee35de80d03489ebb517c7b4ee4bf",
+    "paired_noise": false,
+    "reference": "cockpit cabin blower as required, cockpit cabin temp as required, interior lights as required.",
+    "parakeet": "Cockpit cabin blower, as required. Cockpit cabin tamp, as required, interiorized, as required.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 2,
+      "D": 1,
+      "I": 0,
+      "N": 14,
+      "H": 11,
+      "wer": 0.21428571428571427,
+      "character_errors": 14,
+      "reference_characters": 98,
+      "cer": 0.14285714285714285
+    },
+    "source": "bleriot-a:DGA_checklist-Beech_sp101"
+  },
+  {
+    "id": "fit-ab6bc7e12b61c1c9aeb0e7866ac0a72e",
+    "paired_noise": false,
+    "reference": "on. Flight director on. Emergency lights",
+    "parakeet": "On. Flight director on. Emergency lights.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 6,
+      "H": 6,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 38,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-28fa2c65b3ca24f448b38f2f8e9e03cf",
+    "paired_noise": false,
+    "reference": "check, generator switch, on, engine 1, on.",
+    "parakeet": "Check. Generator switch on. Engine one. On.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 7,
+      "H": 6,
+      "wer": 0.14285714285714285,
+      "character_errors": 3,
+      "reference_characters": 37,
+      "cer": 0.08108108108108109
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-4ff05915a34901ab426bccae446863bf",
+    "paired_noise": false,
+    "reference": "engine anti-ice as required, wing anti-ice as required,",
+    "parakeet": "Engine anti ice, as required. Wing anti ice, as required.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 8,
+      "H": 8,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 51,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-0d7e7b69abd81ea7b67a9e7e5510ff05",
+    "paired_noise": false,
+    "reference": "Engine mode selector normal. Transponder set",
+    "parakeet": "Engine mode selector, normal, transponder, set,",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 6,
+      "H": 6,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 43,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-865da6f413477ecf6736f8644757f28e",
+    "paired_noise": false,
+    "reference": "start. After takeoff checklist.",
+    "parakeet": "Start. After takeoff checklist,",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 4,
+      "H": 4,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 29,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-91cc32c50e6df25338a7cc5b3465f573",
+    "paired_noise": false,
+    "reference": "Engine mode selector, normal. Spoilers, disarmed. Flights, up. Gear, up. Nose light, off.",
+    "parakeet": "Engine mode sector normal. Spoilers disarmed. Flights up. Gear up. Nose light off.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 13,
+      "H": 12,
+      "wer": 0.07692307692307693,
+      "character_errors": 2,
+      "reference_characters": 79,
+      "cer": 0.02531645569620253
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-f3593708698d946c4d2a5ac11cb5adc6",
+    "paired_noise": false,
+    "reference": "flaps set 1 speed",
+    "parakeet": "Flaps set one speed",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 4,
+      "H": 3,
+      "wer": 0.25,
+      "character_errors": 3,
+      "reference_characters": 17,
+      "cer": 0.17647058823529413
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-8c38854dc71a6c89cb5060899f81f8c1",
+    "paired_noise": false,
+    "reference": "Landing gear check down Autopilot as required Go around altitude set in FCU Autothrust as required",
+    "parakeet": "Landing gear, check down. Autopilot, as required. Go around altitude. Set in FCU. Auto thrust, as required.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 16,
+      "H": 16,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 98,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-ae519566c9f25eceb3752c00e7830de1",
+    "paired_noise": false,
+    "reference": "anti ice as required APU start bike temperature check Transponder standby",
+    "parakeet": "Anti-ice as required. APU start. Brake brake temperature. Check. Transponder. Standby.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 1,
+      "N": 10,
+      "H": 9,
+      "wer": 0.2,
+      "character_errors": 8,
+      "reference_characters": 72,
+      "cer": 0.1111111111111111
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-23189b97cec0cd929b159d5aaa734ba8",
+    "paired_noise": false,
+    "reference": "Battery, guard closed, standby power, guard closed, ground power available, ground power switch on.",
+    "parakeet": "Battery Guard closed. Standby standby power. Guard closed. Ground power available. Ground power switch on.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 1,
+      "N": 14,
+      "H": 14,
+      "wer": 0.07142857142857142,
+      "character_errors": 8,
+      "reference_characters": 93,
+      "cer": 0.08602150537634409
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-30d11b82bb7e03f889a384a48d1b898e",
+    "paired_noise": false,
+    "reference": "Engine APU bleed on",
+    "parakeet": "Engine APU bleed. On.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 4,
+      "H": 4,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 19,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-bf248b313b6cda0ca66568a501e3007f",
+    "paired_noise": false,
+    "reference": "Before start checklist",
+    "parakeet": "Before start checklist.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 3,
+      "H": 3,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 22,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-42e951bdfd39fe4d3f0bb148dfbfa113",
+    "paired_noise": false,
+    "reference": "before start checklist",
+    "parakeet": "Before start checklist.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 3,
+      "H": 3,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 22,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-467dc8892b32fa07e961c916704f4f31",
+    "paired_noise": false,
+    "reference": "flight controls check, recall check, taxi lights on, runway turn off lights as required",
+    "parakeet": "Flight controls, check. Recall, check. Taxi lights on. Runway turn off flights as required.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 14,
+      "H": 13,
+      "wer": 0.07142857142857142,
+      "character_errors": 1,
+      "reference_characters": 84,
+      "cer": 0.011904761904761904
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-56f528a0eae24918856d403d752a7332",
+    "paired_noise": false,
+    "reference": "Altimeter reset to local.",
+    "parakeet": "Ultimator reset to reco to local.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 2,
+      "N": 4,
+      "H": 3,
+      "wer": 0.75,
+      "character_errors": 11,
+      "reference_characters": 24,
+      "cer": 0.4583333333333333
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-215926ef38ce7db4e5f511d3f6231926",
+    "paired_noise": false,
+    "reference": "checklist. Thrust reverse. Engage. Autopilot off.",
+    "parakeet": "Roll checklist, thrust reverse, engage, autopilot, off.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 1,
+      "N": 6,
+      "H": 6,
+      "wer": 0.16666666666666666,
+      "character_errors": 5,
+      "reference_characters": 45,
+      "cer": 0.1111111111111111
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-aebb30658a680a65404bfcbdd7921068",
+    "paired_noise": false,
+    "reference": "on anti-collision light.",
+    "parakeet": "On anti-collision light.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 4,
+      "H": 4,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 23,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-799344fe95a8f28ee6517b78e7b42efd",
+    "paired_noise": false,
+    "reference": "start boarding passengers and load.",
+    "parakeet": "start boarding start boarding passengers and load.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 2,
+      "N": 5,
+      "H": 5,
+      "wer": 0.4,
+      "character_errors": 15,
+      "reference_characters": 34,
+      "cer": 0.4411764705882353
+    },
+    "source": "bleriot-a:BEA_checklists_sp004"
+  },
+  {
+    "id": "fit-7f31263142a6852271abad385e2a496b",
+    "paired_noise": false,
+    "reference": "idle, engine area, clear, engine mode selector.",
+    "parakeet": "idle engine area click engine mode selector.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 7,
+      "H": 6,
+      "wer": 0.14285714285714285,
+      "character_errors": 3,
+      "reference_characters": 43,
+      "cer": 0.06976744186046512
+    },
+    "source": "bleriot-a:BEA_checklists_sp004"
+  },
+  {
+    "id": "fit-45a23384195290007c18bb849940509c",
+    "paired_noise": false,
+    "reference": "retract, engine mode selector, norm, landing lights off, strobe lights off, anti-ice as required. APU start, brake temp check, transponder standby, APU start, check run, APU gen on, check volt, elevator trim take-off setting, APU start.",
+    "parakeet": "Retract, engine mode selector, norm, landing lights off, strobe lights off, and T ice as required. APU start, brake tump, check, transponder standby, IPU start, check run, IPU gen on, check volts, elevator trim, take off setting, mm, IPU start,",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 6,
+      "D": 0,
+      "I": 3,
+      "N": 36,
+      "H": 30,
+      "wer": 0.25,
+      "character_errors": 18,
+      "reference_characters": 234,
+      "cer": 0.07692307692307693
+    },
+    "source": "bleriot-a:BEA_checklists_sp004"
+  },
+  {
+    "id": "fit-8415eb5a85641011a00bbd1d319aadac",
+    "paired_noise": false,
+    "reference": "off, passenger signs off, doors open, flight director off, APU bleed as required, fuel pumps all off, beacon lights off,",
+    "parakeet": "Off, passenger signs off, doors open, flight director off, APU bleed as required, fuel pumps all off, beacon lights off.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 20,
+      "H": 20,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 113,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp004"
+  },
+  {
+    "id": "fit-c455b37036f50332ec61c84805e0528b",
+    "paired_noise": false,
+    "reference": "ground power switch on,",
+    "parakeet": "Ground power switch on.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 4,
+      "H": 4,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 22,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp004"
+  },
+  {
+    "id": "fit-cb76c7c8777929d9384f1d9ff53a3f0d",
+    "paired_noise": false,
+    "reference": "Auto, APU bleed off, APU off, engine start switches",
+    "parakeet": "Auto. APU bleed off. APU off. Engine start switches.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 9,
+      "H": 9,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 48,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp004"
+  },
+  {
+    "id": "fit-4236aad38111f38e3c52e881abafcb79",
+    "paired_noise": false,
+    "reference": "taxi lights on, runway turnoff lights as required,",
+    "parakeet": "taxi lights on, runway turn off lights as required.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 9,
+      "H": 9,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 49,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp004"
+  },
+  {
+    "id": "fit-2c403a8910cb255f22cd44af589d3849",
+    "paired_noise": false,
+    "reference": "center fuel pumps as required,",
+    "parakeet": "center fuel pumps as required",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 5,
+      "H": 5,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 29,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp004"
+  },
+  {
+    "id": "fit-e2b41f365ed4b1af4b8b2f96c5b06ce2",
+    "paired_noise": false,
+    "reference": "as required, flight instruments check.",
+    "parakeet": "as required, flight instruments check.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 5,
+      "H": 5,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 36,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp004"
+  },
+  {
+    "id": "fit-04b128d9a3eadd316224b22ad243ee10",
+    "paired_noise": false,
+    "reference": "positive rate of climb, gear up, auto brake, off, engine start switches.",
+    "parakeet": "Positive rate of climb, gear up, auto brake, off, engine sa engine start switches.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 2,
+      "N": 11,
+      "H": 11,
+      "wer": 0.18181818181818182,
+      "character_errors": 10,
+      "reference_characters": 66,
+      "cer": 0.15151515151515152
+    },
+    "source": "bleriot-a:BEA_checklists_sp004"
+  },
+  {
+    "id": "fit-6ad94056bf37d0542b96e1390281ec40",
+    "paired_noise": false,
+    "reference": "off, gear lever off, runway turn off lights off, command A or B engaged, altimeter set standard.",
+    "parakeet": "off, gear lever off, runway turn off lights, off command A or B engaged, ultimator set standard,",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 17,
+      "H": 16,
+      "wer": 0.058823529411764705,
+      "character_errors": 3,
+      "reference_characters": 91,
+      "cer": 0.03296703296703297
+    },
+    "source": "bleriot-a:BEA_checklists_sp004"
+  },
+  {
+    "id": "fit-a65bbbb3969c73bd7e2f7569a4aea7a6",
+    "paired_noise": false,
+    "reference": "off, center fuel pumps as required,",
+    "parakeet": "off, center fuel pumps as required.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 6,
+      "H": 6,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 33,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp004"
+  },
+  {
+    "id": "fit-c0e4a60d9f2166b285e0179ac4f1f46c",
+    "paired_noise": false,
+    "reference": "Landing lights on, passenger signs on.",
+    "parakeet": "Landing lights on, passenger signs on.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 6,
+      "H": 6,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 36,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp004"
+  },
+  {
+    "id": "fit-c639c51cd7822172959ce16b485aa5ef",
+    "paired_noise": false,
+    "reference": "Altimeter check, localizer frequency check, localizer course check,",
+    "parakeet": "Ultimator check, localizer frequency check, localizer course check.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 8,
+      "H": 7,
+      "wer": 0.125,
+      "character_errors": 3,
+      "reference_characters": 64,
+      "cer": 0.046875
+    },
+    "source": "bleriot-a:BEA_checklists_sp004"
+  },
+  {
+    "id": "fit-4d852b802234a9859fafefe85ba22580",
+    "paired_noise": false,
+    "reference": "Transponder as required, flaps retract, speed break down, landing lights off, position lights steady, taxi lights on, anti-ice as required, APU start, prop heat off, engine start switches off, auto brake off, runway turn off lights off, APU gen on.",
+    "parakeet": "Transponder as required, flaps retract, speed brake down, landing lights off, position lights steady, taxi lights on, and chase as required, APU starts, probe heats off, engine start switches off, auto brake off, runway turn off lights off, APU gen on,",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 5,
+      "D": 1,
+      "I": 1,
+      "N": 39,
+      "H": 33,
+      "wer": 0.1794871794871795,
+      "character_errors": 13,
+      "reference_characters": 239,
+      "cer": 0.05439330543933055
+    },
+    "source": "bleriot-a:BEA_checklists_sp004"
+  },
+  {
+    "id": "fit-962754acaec1ad7a805d58c4b87f235f",
+    "paired_noise": false,
+    "reference": "cockpit preparation checklist",
+    "parakeet": "Cockpit preparation checklist.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 3,
+      "H": 3,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 29,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp006"
+  },
+  {
+    "id": "fit-1521ac75d72a7a9be5b42dc6fbfb42e9",
+    "paired_noise": false,
+    "reference": "before start checklist.",
+    "parakeet": "Before start checklist.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 3,
+      "H": 3,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 22,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp006"
+  },
+  {
+    "id": "fit-d856826bcea866918207b6dab510cd1e",
+    "paired_noise": false,
+    "reference": "Takeoff speed and thrust 134 135 140.",
+    "parakeet": "Takeoff speed and thrust. Uh one thirty four, one thirty five, one forty.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 3,
+      "D": 0,
+      "I": 6,
+      "N": 7,
+      "H": 4,
+      "wer": 1.2857142857142858,
+      "character_errors": 42,
+      "reference_characters": 36,
+      "cer": 1.1666666666666667
+    },
+    "source": "bleriot-a:BEA_checklists_sp006"
+  },
+  {
+    "id": "fit-9a2b1dd7d023d8e9d2a6f13af78882cd",
+    "paired_noise": false,
+    "reference": "After landing checklist,",
+    "parakeet": "After a landing checklist.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 1,
+      "N": 3,
+      "H": 3,
+      "wer": 0.3333333333333333,
+      "character_errors": 2,
+      "reference_characters": 23,
+      "cer": 0.08695652173913043
+    },
+    "source": "bleriot-a:BEA_checklists_sp006"
+  },
+  {
+    "id": "fit-24b314fbd175718e40e32631d9927365",
+    "paired_noise": false,
+    "reference": "securing the aircraft checklist,",
+    "parakeet": "Securing the aircraft checklist.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 4,
+      "H": 4,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 31,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp006"
+  },
+  {
+    "id": "fit-b00c38d25097cee0e96d5eb270cd95c3",
+    "paired_noise": false,
+    "reference": "Windows closed,",
+    "parakeet": "windows closed",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 2,
+      "H": 2,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 14,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-cf4430e73fcb855cbbb3d462e9ce9fc4",
+    "paired_noise": false,
+    "reference": "minimum 800",
+    "parakeet": "Minimum eight hundred.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 1,
+      "N": 2,
+      "H": 1,
+      "wer": 1.0,
+      "character_errors": 13,
+      "reference_characters": 11,
+      "cer": 1.1818181818181819
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-498deb6fa45ef5592955af3544c22ebb",
+    "paired_noise": false,
+    "reference": "flaps, take off. Elevator trim, take off. Flat controls, check. Recall, check.",
+    "parakeet": "Flaps take off. Elevator trim take off. Flight controls check. Recall check.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 10,
+      "H": 9,
+      "wer": 0.1,
+      "character_errors": 3,
+      "reference_characters": 68,
+      "cer": 0.04411764705882353
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-622b8f3af087dac02eb7a396a5c0afc3",
+    "paired_noise": false,
+    "reference": "Engine start switches off gear lever off",
+    "parakeet": "Engine start switches off. Gear lever off.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 7,
+      "H": 7,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 40,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-141d276df0de8e4ace4f62b06ac5d384",
+    "paired_noise": false,
+    "reference": "airport info check altimeter check",
+    "parakeet": "Please airport info. Check. Ultimator check.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 1,
+      "N": 5,
+      "H": 4,
+      "wer": 0.4,
+      "character_errors": 10,
+      "reference_characters": 34,
+      "cer": 0.29411764705882354
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-f476311aac3060d4e4eda297b28bf615",
+    "paired_noise": false,
+    "reference": "recall check radio altitude set autobrake as required altimeter",
+    "parakeet": "Recall, check Radio altitude, set Auto Brake as required Altimator",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 9,
+      "H": 8,
+      "wer": 0.1111111111111111,
+      "character_errors": 2,
+      "reference_characters": 63,
+      "cer": 0.031746031746031744
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-ff60360bdf8082cdef1915e07ffe2a53",
+    "paired_noise": false,
+    "reference": "landing lights off, position lights steady, taxi lights on.",
+    "parakeet": "Landing lights off. Position lights steady. Taxi lights on.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 9,
+      "H": 9,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 56,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-f4c9dd9ebf382d0f40117019d7504c5e",
+    "paired_noise": false,
+    "reference": "turn off lights off.",
+    "parakeet": "Way turn off lights off.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 1,
+      "N": 4,
+      "H": 4,
+      "wer": 0.25,
+      "character_errors": 4,
+      "reference_characters": 19,
+      "cer": 0.21052631578947367
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-9a7c1d96ae0a9d85693b05136a45cb01",
+    "paired_noise": false,
+    "reference": "cockpit preparation, parking brake set,",
+    "parakeet": "Cockpit preparation. Parking brake set.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 5,
+      "H": 5,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 37,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-269f4ee5cf035f4eb4ca0f9c62101119",
+    "paired_noise": false,
+    "reference": "on, flight director on, emergency",
+    "parakeet": "",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 5,
+      "I": 0,
+      "N": 5,
+      "H": 0,
+      "wer": 1.0,
+      "character_errors": 31,
+      "reference_characters": 31,
+      "cer": 1.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-29de61ef58c9fa5f7a35ff5fd776373c",
+    "paired_noise": false,
+    "reference": "on, parking brake set,",
+    "parakeet": "I'm going to go to the next one.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 4,
+      "D": 0,
+      "I": 4,
+      "N": 4,
+      "H": 0,
+      "wer": 2.0,
+      "character_errors": 24,
+      "reference_characters": 20,
+      "cer": 1.2
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-3188edb80eb35316c4e5068e6f63e684",
+    "paired_noise": false,
+    "reference": "flaps set for take-off",
+    "parakeet": "Flaps set for takeoff.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 4,
+      "H": 4,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 21,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-2e6e4ac7ddc445eab76cc5aa99f03346",
+    "paired_noise": false,
+    "reference": "flight director on, transponder set.",
+    "parakeet": "Flight Director On. Transponder Set.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 5,
+      "H": 5,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 34,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-b2c7fd512169217b4047bd78fa56cd9e",
+    "paired_noise": false,
+    "reference": "elevator trim takeoff setting,",
+    "parakeet": "Elevator trim takeoff setting",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 4,
+      "H": 4,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 29,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-7ae1e4cf9bcecde880b822b410f2d7e7",
+    "paired_noise": false,
+    "reference": "ADLs off, avionics off, no smoking off, APU as required, batteries as required. On ground emergency evacuation.",
+    "parakeet": "ADARS OFF AVIONICS OFF. No Smoking OFF. APO as required. Batteries as required. On Ground Emergency Evacuation.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 2,
+      "D": 0,
+      "I": 0,
+      "N": 17,
+      "H": 15,
+      "wer": 0.11764705882352941,
+      "character_errors": 3,
+      "reference_characters": 105,
+      "cer": 0.02857142857142857
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-3172647996006a3e21b93961c8b0598e",
+    "paired_noise": false,
+    "reference": "Single engine taxi out.",
+    "parakeet": "Single engine taxi out.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 4,
+      "H": 4,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 22,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-901012cf6ad48304252d11d0fbc4d98b",
+    "paired_noise": false,
+    "reference": "flaps set for takeoff elevator trim set for takeoff flight controls check recall check taxi lights on",
+    "parakeet": "Flaps set for takeoff. Elevator trim set for takeoff. Flight controls check. Recall check. Taxi lights on.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 17,
+      "H": 17,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 101,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-d58d16e558f2d9b7bfd6f8d047c85cb2",
+    "paired_noise": false,
+    "reference": "runway turn off lights as required before takeoff checklist fuel flow reset then rate center fuel pumps as required anti-ice as required",
+    "parakeet": "runway turn off lights as required. Before take off chec checklist, fuel flow reset zen rate, center fuel pumps as required, anti i's as required,",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 2,
+      "D": 0,
+      "I": 2,
+      "N": 22,
+      "H": 20,
+      "wer": 0.18181818181818182,
+      "character_errors": 10,
+      "reference_characters": 135,
+      "cer": 0.07407407407407407
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-24f89b1aaa375a2b0a96590cb2672e0b",
+    "paired_noise": false,
+    "reference": "TFC push on, clock start.",
+    "parakeet": "TFC push on clock start.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 5,
+      "H": 5,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 23,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-d2119c37fe3ab31970c030c298eb7afb",
+    "paired_noise": false,
+    "reference": "reset mcp altitude check",
+    "parakeet": "Reset MCP altitude check.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 4,
+      "H": 4,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 24,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-57d602436055f6e7a96a646990768f53",
+    "paired_noise": false,
+    "reference": "landing flaps set, landing checklist,",
+    "parakeet": "Landing flaps set. Landing checklist",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 5,
+      "H": 5,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 35,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-b29cdea708ebd56f3941508006770695",
+    "paired_noise": false,
+    "reference": "off. Runway turn off lights off. APU gen on taxi lights off. Parking shutdown checklist. Parking brakes set.",
+    "parakeet": "off. Runway turn off lights off. APU gen on. Taxi lights off. Parking shut down checklist. Parking brakes set.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 1,
+      "N": 18,
+      "H": 17,
+      "wer": 0.1111111111111111,
+      "character_errors": 1,
+      "reference_characters": 109,
+      "cer": 0.009174311926605505
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-df91170732225e886e4a61648fd6845f",
+    "paired_noise": false,
+    "reference": "cockpit preparation checklist,",
+    "parakeet": "Good big preparation checklist.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 1,
+      "N": 3,
+      "H": 2,
+      "wer": 0.6666666666666666,
+      "character_errors": 6,
+      "reference_characters": 29,
+      "cer": 0.20689655172413793
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-d5aeff9c11ed151263b52df09dddc396",
+    "paired_noise": false,
+    "reference": "Before start, parking brake",
+    "parakeet": "Before start. Parking break.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 4,
+      "H": 3,
+      "wer": 0.25,
+      "character_errors": 2,
+      "reference_characters": 26,
+      "cer": 0.07692307692307693
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-35218cd2a6ff6ad190ef9f93cf135775",
+    "paired_noise": false,
+    "reference": "flaps set. After landing,",
+    "parakeet": "Flaps set. After landing.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 4,
+      "H": 4,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 23,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-e5584a2b82b02ebc5e2c230dfcded8f1",
+    "paired_noise": false,
+    "reference": "set, engines off, wing lights off, fuel pumps off.",
+    "parakeet": "Trucks set, engines off, wing lights off, fuel pumps off.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 1,
+      "N": 9,
+      "H": 9,
+      "wer": 0.1111111111111111,
+      "character_errors": 7,
+      "reference_characters": 46,
+      "cer": 0.15217391304347827
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-304b822bf9f4e4eeaf66e0d9129c49a7",
+    "paired_noise": false,
+    "reference": "After takeoff, engine mode selector normal, spoilers disarmed, flaps up, gear up,",
+    "parakeet": "After takeoff, engine mode selector normal, spoilers disarmed, flaps up, gear up.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 12,
+      "H": 12,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 76,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-6c24082b1488919d8c51419b06dbe94a",
+    "paired_noise": false,
+    "reference": "landing landing gear check down autopilot",
+    "parakeet": "On landing, landing gear, check down, autopilot.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 1,
+      "N": 6,
+      "H": 6,
+      "wer": 0.16666666666666666,
+      "character_errors": 3,
+      "reference_characters": 41,
+      "cer": 0.07317073170731707
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-8415b3526ead3c31570ffd5f9d247658",
+    "paired_noise": false,
+    "reference": "After landing, spoilers disarmed, flaps retract, engine mode selector normal, landing lights off, strobe lights off,",
+    "parakeet": "After landing, spoilers disarmed, flaps retract, engine mode selector normal, landing lights off, strobe lights off.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 16,
+      "H": 16,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 110,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-b1326fc2bb2c5adbfcfac7588025a8c7",
+    "paired_noise": false,
+    "reference": "break temp check, transponder standby, APU start check run, APU gen on check volts",
+    "parakeet": "Brake temp check. Transponder standby. APU start check run. APU gen un check vaults.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 3,
+      "D": 0,
+      "I": 0,
+      "N": 14,
+      "H": 11,
+      "wer": 0.21428571428571427,
+      "character_errors": 5,
+      "reference_characters": 92,
+      "cer": 0.05434782608695652
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-a22ba8d073111e8949e1d305704b2b71",
+    "paired_noise": false,
+    "reference": "parking brakes as required, nav lights on, exterior lights off,",
+    "parakeet": "packing brakes as required, nav lights on, exterior lights off.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 10,
+      "H": 9,
+      "wer": 0.1,
+      "character_errors": 1,
+      "reference_characters": 60,
+      "cer": 0.016666666666666666
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-ae7e7df75b14ad7c694c162b3aed6902",
+    "paired_noise": false,
+    "reference": "off, passenger signs off, doors open, flight director off,",
+    "parakeet": "Of passenger signs of doors open fleet junctor of",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 5,
+      "D": 0,
+      "I": 0,
+      "N": 9,
+      "H": 4,
+      "wer": 0.5555555555555556,
+      "character_errors": 10,
+      "reference_characters": 54,
+      "cer": 0.18518518518518517
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-50ffba0755d99ad3e7259b95497b9087",
+    "paired_noise": false,
+    "reference": "if evacuation not required, cabin crew and passengers",
+    "parakeet": "If evacuation not required, cabin crew and passengers",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 8,
+      "H": 8,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 52,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-8c884e2d14b16f2bb1f51f5286804002",
+    "paired_noise": false,
+    "reference": "Auto. Parking procedures apply.",
+    "parakeet": "Auto parking procedures apply.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 4,
+      "H": 4,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 29,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-6477c0aab9b5c75f85d3dc2434c70e5d",
+    "paired_noise": false,
+    "reference": "securing the aircraft, oxygen,",
+    "parakeet": "Securing the aircraft. Oxygen.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 4,
+      "H": 4,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 28,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-e9d60ea02ad66f5342e4dbf8d54f41b7",
+    "paired_noise": false,
+    "reference": "checklist, parking brake, set, battery, guard closed.",
+    "parakeet": "Checklist. Parking brake. Set. Battery. Guard closed.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 7,
+      "H": 7,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 48,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-1617af6760417f748421e041765b0d7e",
+    "paired_noise": false,
+    "reference": "Standby power guard closed. Ground power available. Ground power switch on.",
+    "parakeet": "Standby power, guard closed. Ground power available. Ground power switch on.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 11,
+      "H": 11,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 72,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-9578d44fcff0423b242861bb9ac62b6e",
+    "paired_noise": false,
+    "reference": "Emergency exit lights guard closed. Passenger signs on. Pax auto high. Isolation valve open.",
+    "parakeet": "Emergency exit lights guard closed. Passenger signs on. Packs auto high. Isolation valve open.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 14,
+      "H": 13,
+      "wer": 0.07142857142857142,
+      "character_errors": 3,
+      "reference_characters": 88,
+      "cer": 0.03409090909090909
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-a8533cc8e2b8c90a1d93b90b1c9f7325",
+    "paired_noise": false,
+    "reference": "FMC set Request flight plan clearance",
+    "parakeet": "FMC set. Request flight plan clearance.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 6,
+      "H": 6,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 37,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-331cfd81c3ad269c5c72da27dc2172e6",
+    "paired_noise": false,
+    "reference": "LNAV as required, VNAV as required, minimums ref, baro or radio, minimums set, altimeter ref,",
+    "parakeet": "L nav as required. V nav as required. Minimums ref, barrow or radio. Minimums set. Ultimator ref",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 4,
+      "D": 0,
+      "I": 2,
+      "N": 15,
+      "H": 11,
+      "wer": 0.4,
+      "character_errors": 7,
+      "reference_characters": 87,
+      "cer": 0.08045977011494253
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-69f54d99bc1f780b2c2bd683be7b9cfa",
+    "paired_noise": false,
+    "reference": "runway turn off lights as required before takeoff checklist fuel flow reset then rate center fuel pumps as required",
+    "parakeet": "Runway turnoff lights as required. Before takeoff checklist: Fuel flow, reset, then rate center fuel pumps as required.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 19,
+      "H": 19,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 115,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-5028d5813329195b4d614e02c4082d98",
+    "paired_noise": false,
+    "reference": "landing lights on passenger signs on approach checklist",
+    "parakeet": "Landing lights on. Passenger signs on. Approach checklist.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 8,
+      "H": 8,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 55,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-d77d0041d999c3ebae960cb70d7497e5",
+    "paired_noise": false,
+    "reference": "flaps 15, speed brake arm,",
+    "parakeet": "Flaps fifteen. Speed brake arm.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 4,
+      "H": 3,
+      "wer": 0.25,
+      "character_errors": 7,
+      "reference_characters": 23,
+      "cer": 0.30434782608695654
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-7f9c20962ca6e4213c5c455f0bc2dbe9",
+    "paired_noise": false,
+    "reference": "auto brake disengage. After landing checklist. Transponder as required.",
+    "parakeet": "Auto break disengage. After landing checklist, transponder as required.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 1,
+      "N": 8,
+      "H": 7,
+      "wer": 0.25,
+      "character_errors": 3,
+      "reference_characters": 67,
+      "cer": 0.04477611940298507
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-7bec19ebcd217e73c1d102e8cacbfe0a",
+    "paired_noise": false,
+    "reference": "taxi to gate, runway turnoff lights off,",
+    "parakeet": "Taxi to gate. Runway turn off lights off.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 8,
+      "H": 8,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 39,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-8f00d8df691e8ceddfd5783dd5b0c0af",
+    "paired_noise": false,
+    "reference": "cockpit preparation, parking brake set,",
+    "parakeet": "Quick preparation. Parking brake set.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 5,
+      "H": 4,
+      "wer": 0.2,
+      "character_errors": 6,
+      "reference_characters": 37,
+      "cer": 0.16216216216216217
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-9bf0220abfca67c2e9f40ce106690df5",
+    "paired_noise": false,
+    "reference": "and load. Before start, windows",
+    "parakeet": "Before start, Windows",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 2,
+      "I": 0,
+      "N": 5,
+      "H": 3,
+      "wer": 0.4,
+      "character_errors": 9,
+      "reference_characters": 29,
+      "cer": 0.3103448275862069
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-46142034122de65cd27277b2642d3833",
+    "paired_noise": false,
+    "reference": "Remove all ground services and request pushback clearance.",
+    "parakeet": "remove all grant services and request pushback clearance.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 8,
+      "H": 7,
+      "wer": 0.125,
+      "character_errors": 3,
+      "reference_characters": 57,
+      "cer": 0.05263157894736842
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-b5ba30852323557156b35bfcc2d37296",
+    "paired_noise": false,
+    "reference": "flight controls check, flaps set for takeoff, engine anti-ice",
+    "parakeet": "Flight controls check. Flaps set for takeoff. Engine anti-iyes are.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 2,
+      "N": 9,
+      "H": 8,
+      "wer": 0.3333333333333333,
+      "character_errors": 7,
+      "reference_characters": 58,
+      "cer": 0.1206896551724138
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-ddf823bba062ebb3b12c6304d03e25e9",
+    "paired_noise": false,
+    "reference": "taxi, nose light on, parking brake off,",
+    "parakeet": "Taxi. Nose light on. Parking brake off.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 7,
+      "H": 7,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 36,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-0425ab25431b304e566ce9a11a4fdf1f",
+    "paired_noise": false,
+    "reference": "Flight director, on. Transponder, set.",
+    "parakeet": "Flight Director on Transponder Set",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 5,
+      "H": 5,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 34,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-5aa3f18736f7fcd1982a2cd87e96f083",
+    "paired_noise": false,
+    "reference": "engine mode selector norm, transponder set",
+    "parakeet": "Engine mode selector norm. Transponder set",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 6,
+      "H": 6,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 43,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-5ccce9f7ad74e5187179c24ba1ca0cc2",
+    "paired_noise": false,
+    "reference": "Ground operations as required.",
+    "parakeet": "Ground operations as required.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 4,
+      "H": 4,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 29,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-62270a316fc085bfc11d133a28aa2213",
+    "paired_noise": false,
+    "reference": "If evacuation required, evacuation",
+    "parakeet": "If evacuation required, evacuation is",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 1,
+      "N": 4,
+      "H": 4,
+      "wer": 0.25,
+      "character_errors": 3,
+      "reference_characters": 33,
+      "cer": 0.09090909090909091
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-1378106456fb707370579986428eed41",
+    "paired_noise": false,
+    "reference": "fuel pumps all off, beacon lights off,",
+    "parakeet": "Fuel pumps all off. Beacon lights off.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 7,
+      "H": 7,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 36,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-b6c8fb40ca350ef103712b65fbe41307",
+    "paired_noise": false,
+    "reference": "MCP initial alt set",
+    "parakeet": "MCP initial alt uh set",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 1,
+      "N": 4,
+      "H": 4,
+      "wer": 0.25,
+      "character_errors": 3,
+      "reference_characters": 24,
+      "cer": 0.125
+    },
+    "source": "bleriot-a:BEA_checklists_sp011"
+  },
+  {
+    "id": "fit-f10be54d8991de5f866d44c9aa73d426",
+    "paired_noise": false,
+    "reference": "on, anti-collision light on,",
+    "parakeet": "on anti-collision light on",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 5,
+      "H": 5,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 26,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp011"
+  },
+  {
+    "id": "fit-44ce4a4783b7b3737503893b50f756d7",
+    "paired_noise": false,
+    "reference": "taxi lights on, runway turn off lights as required, fuel flow reset generate, center fuel pumps as required, anti-ice as required.",
+    "parakeet": "taxi lights on. Runway turn off lights as required. Fuel flow reset design rate. Center fuel pumps as required. Anti ice as required.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 1,
+      "N": 21,
+      "H": 20,
+      "wer": 0.09523809523809523,
+      "character_errors": 5,
+      "reference_characters": 124,
+      "cer": 0.04032258064516129
+    },
+    "source": "bleriot-a:BEA_checklists_sp011"
+  },
+  {
+    "id": "fit-931b219fa28db3b0885d6e7b724492df",
+    "paired_noise": false,
+    "reference": "Center fuel pumps as required,",
+    "parakeet": "centre fuel pumps as required.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 5,
+      "H": 4,
+      "wer": 0.2,
+      "character_errors": 2,
+      "reference_characters": 29,
+      "cer": 0.06896551724137931
+    },
+    "source": "bleriot-a:BEA_checklists_sp011"
+  },
+  {
+    "id": "fit-2d173a71ef434fee722cbef416410780",
+    "paired_noise": false,
+    "reference": "Anti-ice as required, landing altitude check,",
+    "parakeet": "Anti-ice has required the landing altitude check.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 1,
+      "N": 6,
+      "H": 5,
+      "wer": 0.3333333333333333,
+      "character_errors": 5,
+      "reference_characters": 42,
+      "cer": 0.11904761904761904
+    },
+    "source": "bleriot-a:BEA_checklists_sp011"
+  },
+  {
+    "id": "fit-53bcdef7a22ce6e5c9a050268543e89c",
+    "paired_noise": false,
+    "reference": "Altimeter reset to local,",
+    "parakeet": "Ultimator reset to local.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 4,
+      "H": 3,
+      "wer": 0.25,
+      "character_errors": 3,
+      "reference_characters": 24,
+      "cer": 0.125
+    },
+    "source": "bleriot-a:BEA_checklists_sp011"
+  },
+  {
+    "id": "fit-dee05991c95bfd00f4b5c2eb0d28adfb",
+    "paired_noise": false,
+    "reference": "taxi lights off, parking",
+    "parakeet": "Taxi lights off parking shop.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 1,
+      "N": 4,
+      "H": 4,
+      "wer": 0.25,
+      "character_errors": 5,
+      "reference_characters": 23,
+      "cer": 0.21739130434782608
+    },
+    "source": "bleriot-a:BEA_checklists_sp011"
+  },
+  {
+    "id": "fit-f7bcc2ffa54eaa4e70dd65ce14c49018",
+    "paired_noise": false,
+    "reference": "set to nav, nav lights on,",
+    "parakeet": "set to nav nav lights on.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 6,
+      "H": 6,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 24,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp011"
+  },
+  {
+    "id": "fit-f4a4ca6e46e015ebeaccc0f22c245163",
+    "paired_noise": false,
+    "reference": "Hydraulic electric pumps on.",
+    "parakeet": "hydraulic electric pumps on.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 4,
+      "H": 4,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 27,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp011"
+  },
+  {
+    "id": "fit-b49df3f588dfdb917cc0d127ed9c597d",
+    "paired_noise": false,
+    "reference": "pitch trim set, flight controls check, flaps set for takeoff, engine,",
+    "parakeet": "pitch trim set, flight controls check, flaps set for takeoff, engine,",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 11,
+      "H": 11,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 65,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp011"
+  },
+  {
+    "id": "fit-132d942bd8daadd55b8173e6b792ebe1",
+    "paired_noise": false,
+    "reference": "Flaps up, gear up,",
+    "parakeet": "Flaps up, gear up.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 4,
+      "H": 4,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 16,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp011"
+  },
+  {
+    "id": "fit-5d0fcd21c8a4ef9c6eeb4deefa0c0f35",
+    "paired_noise": false,
+    "reference": "Landing. Landing gear. Check down. Autopilot",
+    "parakeet": "Landing. Landing gear. Check down. Autopilot.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 6,
+      "H": 6,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 41,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp011"
+  },
+  {
+    "id": "fit-ea21473f6093501dff321b65ff660502",
+    "paired_noise": false,
+    "reference": "As required, landing memo, no blue, landing speed, managed,",
+    "parakeet": "As required, landing memo no blue landing speed managed.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 9,
+      "H": 9,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 54,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp011"
+  },
+  {
+    "id": "fit-48d2d63fe59def177e1ea291c8ed61f3",
+    "paired_noise": false,
+    "reference": "flight control checked,",
+    "parakeet": "Flight control checks.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 3,
+      "H": 2,
+      "wer": 0.3333333333333333,
+      "character_errors": 2,
+      "reference_characters": 22,
+      "cer": 0.09090909090909091
+    },
+    "source": "bleriot-a:BEA_checklists_sp011"
+  },
+  {
+    "id": "fit-c8336825452d4b7d96ed284ddd19c5ed",
+    "paired_noise": false,
+    "reference": "Off. Right condition lever.",
+    "parakeet": "Of right condition lever.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 4,
+      "H": 3,
+      "wer": 0.25,
+      "character_errors": 1,
+      "reference_characters": 25,
+      "cer": 0.04
+    },
+    "source": "bleriot-a:DGA_checklist-Beech_sp101"
+  },
+  {
+    "id": "fit-9ab8abd6e7a045d61962a2b8078e6d2f",
+    "paired_noise": false,
+    "reference": "left generator, reset, then on,",
+    "parakeet": "Left generator, reset, then on.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 5,
+      "H": 5,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 28,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:DGA_checklist-Beech_sp101"
+  },
+  {
+    "id": "fit-a88dac0cf65c8f89fcc1d29f563ca997",
+    "paired_noise": false,
+    "reference": "ignition and engine start starter only ITT below",
+    "parakeet": "Ignition and engine start. Starter only. ITT below.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 8,
+      "H": 8,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 48,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:DGA_checklist-Beech_sp101"
+  },
+  {
+    "id": "fit-c5930dd8e5865b3a7c04f92a74f5fda6",
+    "paired_noise": false,
+    "reference": "ignition and engine start off",
+    "parakeet": "Ignition and engine start off.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 5,
+      "H": 5,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 29,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:DGA_checklist-Beech_sp101"
+  },
+  {
+    "id": "fit-7f5d9f4d552e845110cd9f91c6f12816",
+    "paired_noise": false,
+    "reference": "ignition and engine start, starter only,",
+    "parakeet": "ignition and engine start. Starter only.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 6,
+      "H": 6,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 38,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:DGA_checklist-Beech_sp101"
+  },
+  {
+    "id": "fit-825eaa444bea106df9738d700c4a909d",
+    "paired_noise": false,
+    "reference": "complete, exterior lights as required,",
+    "parakeet": "Exterior lights as required.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 1,
+      "I": 0,
+      "N": 5,
+      "H": 4,
+      "wer": 0.2,
+      "character_errors": 9,
+      "reference_characters": 36,
+      "cer": 0.25
+    },
+    "source": "bleriot-a:DGA_checklist-Beech_sp101"
+  },
+  {
+    "id": "fit-c870953e8a4e201d9dd683e503751264",
+    "paired_noise": false,
+    "reference": "set flaps check and set",
+    "parakeet": "Set. Flaps. Check and set.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 5,
+      "H": 5,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 23,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:DGA_checklist-Beech_sp101"
+  },
+  {
+    "id": "fit-43fa02c872aa0d9e39a2178fe325fc58",
+    "paired_noise": false,
+    "reference": "lights as required. Ice protection as required.",
+    "parakeet": "Lights as required. Eyes protection as required.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 7,
+      "H": 6,
+      "wer": 0.14285714285714285,
+      "character_errors": 3,
+      "reference_characters": 45,
+      "cer": 0.06666666666666667
+    },
+    "source": "bleriot-a:DGA_checklist-Beech_sp101"
+  },
+  {
+    "id": "fit-5239686dfe0fcf887aeeddd9adbc6f65",
+    "paired_noise": false,
+    "reference": "confirm full forward, trim, confirm set,",
+    "parakeet": "Confirm full forward. Trim. Confirm set.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 6,
+      "H": 6,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 37,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:DGA_checklist-Beech_sp101"
+  },
+  {
+    "id": "fit-6cf7b6e727c8f5e4b6b3d13d29fbf68b",
+    "paired_noise": false,
+    "reference": "check, lights as required.",
+    "parakeet": "Check lights as required.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 4,
+      "H": 4,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 24,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:DGA_checklist-Beech_sp101"
+  },
+  {
+    "id": "fit-69458f0bb5de5603b51510e33cbe38e4",
+    "paired_noise": false,
+    "reference": "disconnect, end of procedure.",
+    "parakeet": "Disconnect. End of procedure.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 4,
+      "H": 4,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 27,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:DGA_checklist-TBM940_sp102"
+  },
+  {
+    "id": "fit-f5771fd0a7456154881d4d8069271512",
+    "paired_noise": false,
+    "reference": "Flaps lever up. Spoilers retracted. Thrust levers idle. Transponder mode.",
+    "parakeet": "Flap sliver up Spoilers retracted Thrust levers idle Transponder mode",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 2,
+      "D": 0,
+      "I": 0,
+      "N": 10,
+      "H": 8,
+      "wer": 0.2,
+      "character_errors": 3,
+      "reference_characters": 69,
+      "cer": 0.043478260869565216
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-430c9511b44164ea8acc30e21e0c14a1",
+    "paired_noise": false,
+    "reference": "probe window heat as required packs on fans on engine generators on",
+    "parakeet": "probe window heat as required. Packs on. Fans on engine generators on",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 12,
+      "H": 12,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 67,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-479e20e113e53c702267b602643707c2",
+    "paired_noise": false,
+    "reference": "fuel films all on hydraulic electric pumps on gpws all on fcs all on",
+    "parakeet": "Shule pumps, all on Hydraulic electric pumps, on GPWS, all on FCS, all on.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 2,
+      "D": 0,
+      "I": 0,
+      "N": 14,
+      "H": 12,
+      "wer": 0.14285714285714285,
+      "character_errors": 8,
+      "reference_characters": 68,
+      "cer": 0.11764705882352941
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-60f7190dd03bcc657d7cf93a44154a51",
+    "paired_noise": false,
+    "reference": "anti-ice off, passenger signs off, doors open, flight director off, happy bleed as required.",
+    "parakeet": "Anti ice off. Passenger signs off. Doors open. Flight director off. Apparently bleed as required.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 14,
+      "H": 13,
+      "wer": 0.07142857142857142,
+      "character_errors": 7,
+      "reference_characters": 86,
+      "cer": 0.08139534883720931
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-25ac02f0e20a30a5c1c1bd38e1ffc21f",
+    "paired_noise": false,
+    "reference": "MCP initial altitude set. Yaw damper on. Window heat on. Flight altitude set. Learning altitude set.",
+    "parakeet": "MCP initial altitude set. Yeodamper, on window heat, on flight altitude, set. Landing altitude, set.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 2,
+      "D": 1,
+      "I": 0,
+      "N": 16,
+      "H": 13,
+      "wer": 0.1875,
+      "character_errors": 6,
+      "reference_characters": 95,
+      "cer": 0.06315789473684211
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-91001a0a33c3d3547f9b9003083c25cf",
+    "paired_noise": false,
+    "reference": "Apeu off. Engine start switches. Cont. Flaps set for takeoff. Elevator trim set for takeoff.",
+    "parakeet": "Appear off Engine start switches COT Flaps set for takeoff Elevator trim set for takeoff",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 2,
+      "D": 0,
+      "I": 0,
+      "N": 15,
+      "H": 13,
+      "wer": 0.13333333333333333,
+      "character_errors": 4,
+      "reference_characters": 87,
+      "cer": 0.04597701149425287
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-96afcf6ca60b8aec76192585908f61c9",
+    "paired_noise": false,
+    "reference": "After landing checklist, transponder as required, flaps retract, speed brake down.",
+    "parakeet": "After landing checklist, transponder, as required, flaps, re retract, speed brake, down,",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 1,
+      "N": 10,
+      "H": 10,
+      "wer": 0.1,
+      "character_errors": 3,
+      "reference_characters": 77,
+      "cer": 0.03896103896103896
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-73761d4c3e50b4b366c1a0b83f10db1a",
+    "paired_noise": false,
+    "reference": "landing lights off, position lights steady, taxi lights on, anti-ice as required.",
+    "parakeet": "Landing lights off. Position lights steady. Taxi lights on. Anti ice as required.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 12,
+      "H": 12,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 76,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp001"
+  },
+  {
+    "id": "fit-caa995794e231b2f02c2105e4d9d6277",
+    "paired_noise": false,
+    "reference": "Flight progress check, weather check, ECAM check, ECAM pages check.",
+    "parakeet": "Flight progress check, weather check, ecam check, ecam pages check.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 10,
+      "H": 10,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 63,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp004"
+  },
+  {
+    "id": "fit-f074863409da69a13c98177a78dc9a45",
+    "paired_noise": false,
+    "reference": "On, ground equipment removed, engine area clear, engine display select, packs off, engine start switch ground.",
+    "parakeet": "on, ground equip ground equipment removed, engine area clear, engine display select, packs off, engine start s engine start switch ground,",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 5,
+      "N": 16,
+      "H": 16,
+      "wer": 0.3125,
+      "character_errors": 28,
+      "reference_characters": 104,
+      "cer": 0.2692307692307692
+    },
+    "source": "bleriot-a:BEA_checklists_sp004"
+  },
+  {
+    "id": "fit-cb005d9273cd6aab3859ebf84235c5ba",
+    "paired_noise": false,
+    "reference": "Check generator switch on, engine 1 on, at N2 20% fuel flow check on, N1 increasing N2 increase.",
+    "parakeet": "check generator switch on engine one on at end to twelve percent fuel flow check on n one increasing as n two increase",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 5,
+      "D": 0,
+      "I": 5,
+      "N": 18,
+      "H": 13,
+      "wer": 0.5555555555555556,
+      "character_errors": 33,
+      "reference_characters": 91,
+      "cer": 0.3626373626373626
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-9a16742c0bec24e233b15bd97af11092",
+    "paired_noise": false,
+    "reference": "Crews flight progress check, weather check, ECAM check, ECAM pages check, descent preparation.",
+    "parakeet": "Cruise flight progress check. Weather check ECAM check ECAM pages check Descent preparation.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 13,
+      "H": 12,
+      "wer": 0.07692307692307693,
+      "character_errors": 3,
+      "reference_characters": 89,
+      "cer": 0.033707865168539325
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-2ff83a7053b5f40a9ba97f058e71821a",
+    "paired_noise": false,
+    "reference": "If evacuation, evacuation initiate. If evacuation not required, cabin crew passenger notify.",
+    "parakeet": "If evacuation evacuation initiate If evacuation not required, cabin crew passenger notify.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 12,
+      "H": 12,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 88,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp008"
+  },
+  {
+    "id": "fit-fae3d5c71858fadc0701a0d6a1f71f17",
+    "paired_noise": false,
+    "reference": "at 30 knots, auto-brake disengage. After landing checklist, transponder as required, flaps, restracked, speed brake down, landing lights off, position lights steady.",
+    "parakeet": "At thirty nodes auto brake disengage. After landing checklist, transponder as required flaps restrict, speed brake down, landing lights off, position lights steady,",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 3,
+      "D": 0,
+      "I": 0,
+      "N": 21,
+      "H": 18,
+      "wer": 0.14285714285714285,
+      "character_errors": 13,
+      "reference_characters": 154,
+      "cer": 0.08441558441558442
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-4d1cf2167b7b055a4e5930ab1b743afb",
+    "paired_noise": false,
+    "reference": "taxi lights on, anti ice as required, APU start, probe heat off, engine start switches off, autobrake.",
+    "parakeet": "Taxi lights on, anti-lights as required, APU start, probe heat, off, and just switches off, auto brake.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 3,
+      "D": 0,
+      "I": 1,
+      "N": 16,
+      "H": 13,
+      "wer": 0.25,
+      "character_errors": 15,
+      "reference_characters": 95,
+      "cer": 0.15789473684210525
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-dc0d2d3b2340ea41b019b75836a285ff",
+    "paired_noise": false,
+    "reference": "Single engine taxi out, when cleared to start engine, brake accumulator press checked, engine 1 start",
+    "parakeet": "Single NG taxi out. When clear to start engine, brake accumulator press checked, engine one, start.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 3,
+      "D": 0,
+      "I": 0,
+      "N": 16,
+      "H": 13,
+      "wer": 0.1875,
+      "character_errors": 9,
+      "reference_characters": 98,
+      "cer": 0.09183673469387756
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-7de938746691b787bfeb02f1052fe319",
+    "paired_noise": false,
+    "reference": "After start procedures apply. Taxi procedures apply. Yellow electric hydraulic pump off. Apu bleed on.",
+    "parakeet": "After start procedures apply. Taxi procedures apply. Yellow electric hydraulic pump off. APU bleed on.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 15,
+      "H": 15,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 98,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp009"
+  },
+  {
+    "id": "fit-56b8f4da6f1ae1b8ed72719bcd3c7493",
+    "paired_noise": false,
+    "reference": "anti-ice as required, flight instruments check, engine instruments check, takeoff data v1 vr v2 check.",
+    "parakeet": "Anti-ice as required. Flight instruments check. Engine instruments check. Takeoff data V one V R V two check.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 3,
+      "D": 0,
+      "I": 3,
+      "N": 15,
+      "H": 12,
+      "wer": 0.4,
+      "character_errors": 9,
+      "reference_characters": 97,
+      "cer": 0.09278350515463918
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-db1c3fcfcbf8a340397c3d913ae91288",
+    "paired_noise": false,
+    "reference": "Request clearance at hold position Strobe lights on, landing lights on, runway turn on lights as required, nose lights take off",
+    "parakeet": "Request clearance at hold position. Strobe lights on. Landing lights on. Runway turn on lights as required. Nose lights take off.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 20,
+      "H": 20,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 123,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-57315a9607afb7c31fe30fde44eed20b",
+    "paired_noise": false,
+    "reference": "landing lights off, strobe lights off, anti ice as required, APU start, brake temperature check, transponder standby",
+    "parakeet": "Landing lights off. Stop lights off. Anti ice as required. APU start. Brake temperature check. Transponder standby.",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 0,
+      "N": 16,
+      "H": 15,
+      "wer": 0.0625,
+      "character_errors": 3,
+      "reference_characters": 110,
+      "cer": 0.02727272727272727
+    },
+    "source": "bleriot-a:BEA_checklists_sp010"
+  },
+  {
+    "id": "fit-6dc17022f787b8d0ca86e8bb4aebeadd",
+    "paired_noise": false,
+    "reference": "transponder as required, flaps retract, speed brake down, landing lights off, position lights TD.",
+    "parakeet": "Transponder has required flaps retract, speed brake down, landing lights off, position lights, T V",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 2,
+      "D": 0,
+      "I": 1,
+      "N": 13,
+      "H": 11,
+      "wer": 0.23076923076923078,
+      "character_errors": 3,
+      "reference_characters": 91,
+      "cer": 0.03296703296703297
+    },
+    "source": "bleriot-a:BEA_checklists_sp011"
+  },
+  {
+    "id": "fit-4f8c8b81fea0a661dbd26c2c653fa551",
+    "paired_noise": false,
+    "reference": "Taxi lights on, anti-ice as required, APU start, probe heat off.",
+    "parakeet": "Taxi lights on anti ice as required. APU start probe heat off",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 0,
+      "N": 11,
+      "H": 11,
+      "wer": 0.0,
+      "character_errors": 0,
+      "reference_characters": 59,
+      "cer": 0.0
+    },
+    "source": "bleriot-a:BEA_checklists_sp011"
+  },
+  {
+    "id": "fit-9d32a47bdf74edc8c0b65eb49dde870d",
+    "paired_noise": false,
+    "reference": "Security aircraft, IRS mode selectors off, APU off, emergency exit lights off.",
+    "parakeet": "security aircraft, IRS mode selectors of APU, of emergency exit lights, of",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 3,
+      "D": 0,
+      "I": 0,
+      "N": 12,
+      "H": 9,
+      "wer": 0.25,
+      "character_errors": 3,
+      "reference_characters": 74,
+      "cer": 0.04054054054054054
+    },
+    "source": "bleriot-a:BEA_checklists_sp011"
+  },
+  {
+    "id": "fit-a3c9a952edb115e66d5ab49ef412bebf",
+    "paired_noise": false,
+    "reference": "off, parking brake or chocks set, engines off, wing lights off, fuel pumps off.",
+    "parakeet": "off parking park brake or chocks set engines off wing lights off fuel pumps off",
+    "cross_family_compatible": true,
+    "normalized_disagreement": {
+      "S": 0,
+      "D": 0,
+      "I": 1,
+      "N": 14,
+      "H": 14,
+      "wer": 0.07142857142857142,
+      "character_errors": 5,
+      "reference_characters": 74,
+      "cer": 0.06756756756756757
+    },
+    "source": "bleriot-a:BEA_checklists_sp011"
+  },
+  {
+    "id": "fit-62138ea13bb607a7a5b90c0dea94aa50",
+    "paired_noise": false,
+    "reference": "airspeed, maintain V35 until clear of obstacles, flaps, up, brakes, release",
+    "parakeet": "Airspeed. Maintain V three five until clear of obstacles. Flaps. Up. Brakes. Release.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 1,
+      "D": 0,
+      "I": 2,
+      "N": 11,
+      "H": 10,
+      "wer": 0.2727272727272727,
+      "character_errors": 11,
+      "reference_characters": 70,
+      "cer": 0.15714285714285714
+    },
+    "source": "bleriot-a:DGA_checklist-Beech_sp101"
+  },
+  {
+    "id": "fit-d4ee5ee545de8a2dfc913b81ece4097a",
+    "paired_noise": true,
+    "reference": "Check. Left ignition and engine start. Off. Right condition lever. Reduce to low idle.",
+    "parakeet": "Checked. Left condition. Engine toe. Off. High condition level. Reduced to low height.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 7,
+      "D": 1,
+      "I": 0,
+      "N": 14,
+      "H": 6,
+      "wer": 0.5714285714285714,
+      "character_errors": 22,
+      "reference_characters": 81,
+      "cer": 0.2716049382716049
+    },
+    "source": "bleriot-a:DGA_checklist-Beech_sp101"
+  },
+  {
+    "id": "fit-bb394900f74faa98f92a1239dbf9133a",
+    "paired_noise": true,
+    "reference": "as required. Master panel and cockpit lights as required. Mic switch normal. Cabin lights as required.",
+    "parakeet": "That's required. Pass our buttons and go clients. That's required. Light switch or can be light and three graphs.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 12,
+      "D": 0,
+      "I": 3,
+      "N": 16,
+      "H": 4,
+      "wer": 0.9375,
+      "character_errors": 53,
+      "reference_characters": 98,
+      "cer": 0.5408163265306123
+    },
+    "source": "bleriot-a:DGA_checklist-Beech_sp101"
+  },
+  {
+    "id": "fit-f6c81eb1ea547dbc0ba4ce7e556957c9",
+    "paired_noise": true,
+    "reference": "check, ice protection equipment, check, full quantity, flight and engine instruments, check, static",
+    "parakeet": "Change is the prediction we want to change quantity light and the genetic change. That's equal to",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 11,
+      "D": 0,
+      "I": 4,
+      "N": 13,
+      "H": 2,
+      "wer": 1.1538461538461537,
+      "character_errors": 54,
+      "reference_characters": 93,
+      "cer": 0.5806451612903226
+    },
+    "source": "bleriot-a:DGA_checklist-Beech_sp101"
+  },
+  {
+    "id": "fit-4c8ec0152511020ec030229642e7e21d",
+    "paired_noise": true,
+    "reference": "cockpit cabin blower as required, cockpit cabin temp as required, interior lights as required.",
+    "parakeet": "Could be coming love, I think. She's coming to something quiet. Interior life, nothing quiet.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 13,
+      "D": 0,
+      "I": 1,
+      "N": 14,
+      "H": 1,
+      "wer": 1.0,
+      "character_errors": 60,
+      "reference_characters": 98,
+      "cer": 0.6122448979591837
+    },
+    "source": "bleriot-a:DGA_checklist-Beech_sp101"
+  },
+  {
+    "id": "fit-6422342ad3dd0c1f6434600c9f62126c",
+    "paired_noise": true,
+    "reference": "Off. Right condition lever.",
+    "parakeet": "Okay. White condition level.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 3,
+      "D": 0,
+      "I": 0,
+      "N": 4,
+      "H": 1,
+      "wer": 0.75,
+      "character_errors": 9,
+      "reference_characters": 25,
+      "cer": 0.36
+    },
+    "source": "bleriot-a:DGA_checklist-Beech_sp101"
+  },
+  {
+    "id": "fit-b097cb3b45a17f024aa8ae0ff0003f9c",
+    "paired_noise": true,
+    "reference": "left generator, reset, then on,",
+    "parakeet": "Abginerat recess management.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 3,
+      "D": 2,
+      "I": 0,
+      "N": 5,
+      "H": 0,
+      "wer": 1.0,
+      "character_errors": 20,
+      "reference_characters": 28,
+      "cer": 0.7142857142857143
+    },
+    "source": "bleriot-a:DGA_checklist-Beech_sp101"
+  },
+  {
+    "id": "fit-993564eb7564cc7f8664f669b57b8e19",
+    "paired_noise": true,
+    "reference": "ignition and engine start starter only ITT below",
+    "parakeet": "Signation and seng. Power running. I C D below.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 6,
+      "D": 0,
+      "I": 1,
+      "N": 8,
+      "H": 2,
+      "wer": 0.875,
+      "character_errors": 25,
+      "reference_characters": 48,
+      "cer": 0.5208333333333334
+    },
+    "source": "bleriot-a:DGA_checklist-Beech_sp101"
+  },
+  {
+    "id": "fit-395f06925b6feb74bc6232b0cc436042",
+    "paired_noise": true,
+    "reference": "ignition and engine start off",
+    "parakeet": "technicians and engine storage.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 2,
+      "D": 1,
+      "I": 0,
+      "N": 5,
+      "H": 2,
+      "wer": 0.6,
+      "character_errors": 13,
+      "reference_characters": 29,
+      "cer": 0.4482758620689655
+    },
+    "source": "bleriot-a:DGA_checklist-Beech_sp101"
+  },
+  {
+    "id": "fit-656a68176d1a94495f878e474127ffc1",
+    "paired_noise": true,
+    "reference": "ignition and engine start, starter only,",
+    "parakeet": "Ignition and engine start out or running.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 2,
+      "D": 0,
+      "I": 1,
+      "N": 6,
+      "H": 4,
+      "wer": 0.5,
+      "character_errors": 11,
+      "reference_characters": 38,
+      "cer": 0.2894736842105263
+    },
+    "source": "bleriot-a:DGA_checklist-Beech_sp101"
+  },
+  {
+    "id": "fit-8751d3b0c3e7d893eeb64ce734a6ea2d",
+    "paired_noise": true,
+    "reference": "complete, exterior lights as required,",
+    "parakeet": "They should relate otherwise.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 4,
+      "D": 1,
+      "I": 0,
+      "N": 5,
+      "H": 0,
+      "wer": 1.0,
+      "character_errors": 27,
+      "reference_characters": 36,
+      "cer": 0.75
+    },
+    "source": "bleriot-a:DGA_checklist-Beech_sp101"
+  },
+  {
+    "id": "fit-ed94928e9d0dcd58307ae59e92ab3acc",
+    "paired_noise": true,
+    "reference": "set flaps check and set",
+    "parakeet": "Eight five check and then",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 3,
+      "D": 0,
+      "I": 0,
+      "N": 5,
+      "H": 2,
+      "wer": 0.6,
+      "character_errors": 11,
+      "reference_characters": 23,
+      "cer": 0.4782608695652174
+    },
+    "source": "bleriot-a:DGA_checklist-Beech_sp101"
+  },
+  {
+    "id": "fit-06ed1de2b4cad106264f7563cc0c97d4",
+    "paired_noise": true,
+    "reference": "lights as required. Ice protection as required.",
+    "parakeet": "As we do, light projection as we try.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 6,
+      "D": 0,
+      "I": 1,
+      "N": 7,
+      "H": 1,
+      "wer": 1.0,
+      "character_errors": 25,
+      "reference_characters": 45,
+      "cer": 0.5555555555555556
+    },
+    "source": "bleriot-a:DGA_checklist-Beech_sp101"
+  },
+  {
+    "id": "fit-75440ac7a487bb8c8c4e6480b4f625b0",
+    "paired_noise": true,
+    "reference": "confirm full forward, trim, confirm set,",
+    "parakeet": "Compare four or one three computer six.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 6,
+      "D": 0,
+      "I": 1,
+      "N": 6,
+      "H": 0,
+      "wer": 1.1666666666666667,
+      "character_errors": 23,
+      "reference_characters": 37,
+      "cer": 0.6216216216216216
+    },
+    "source": "bleriot-a:DGA_checklist-Beech_sp101"
+  },
+  {
+    "id": "fit-0f6d58572884c2d9b76cf9268e7fdf3d",
+    "paired_noise": true,
+    "reference": "check, lights as required.",
+    "parakeet": "Jack, light, free graph.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 4,
+      "D": 0,
+      "I": 0,
+      "N": 4,
+      "H": 0,
+      "wer": 1.0,
+      "character_errors": 13,
+      "reference_characters": 24,
+      "cer": 0.5416666666666666
+    },
+    "source": "bleriot-a:DGA_checklist-Beech_sp101"
+  },
+  {
+    "id": "fit-01b6f820b5fa18cc180d49414d775d83",
+    "paired_noise": true,
+    "reference": "disconnect, end of procedure.",
+    "parakeet": "He's good. And of course.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 3,
+      "D": 0,
+      "I": 1,
+      "N": 4,
+      "H": 1,
+      "wer": 1.0,
+      "character_errors": 17,
+      "reference_characters": 27,
+      "cer": 0.6296296296296297
+    },
+    "source": "bleriot-a:DGA_checklist-TBM940_sp102"
+  },
+  {
+    "id": "fit-9b3a0e6088957aaeff23de5acfd3ac2a",
+    "paired_noise": true,
+    "reference": "airspeed, maintain V35 until clear of obstacles, flaps, up, brakes, release",
+    "parakeet": "Just be dead feet, three, five until clear of the action. Fast, fast, great, really.",
+    "cross_family_compatible": false,
+    "normalized_disagreement": {
+      "S": 8,
+      "D": 0,
+      "I": 4,
+      "N": 11,
+      "H": 3,
+      "wer": 1.0909090909090908,
+      "character_errors": 47,
+      "reference_characters": 70,
+      "cer": 0.6714285714285714
+    },
+    "source": "bleriot-a:DGA_checklist-Beech_sp101"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "independent_edit_distance_checks": 15208,
+  "scored_clips_per_system": 1901,
+  "omitted_clips": 0,
+  "human_labels_created_or_changed": 0,
+  "sealed_cockpit_test_accessed": false,
+  "scorer_sha256": "c202d580f5a8dba1eaa259fa4fdb3aa8e78cc5f6dd73176d0688a095652b4163",
+  "plan_sha256": "d557c4ccfedefc59fb39bae46f03c30f0879f59370667e761022a28694fa2a74",
+  "generation_limit_failures_retained": 5,
+  "outputs": {
+    "io-full/hybrid.json": "0eabaad736083bd9de1955ee0da945bf2b7dac85139f313a0457d3fb0bffda2e",
+    "io-full/consensus-guarded.json": "cded7bd5b98a0e798d79278a1ee2222d66648577ab8572501fe1d4bd6c37e093",
+    "comparison.json": "741c9c1884537466b68054b0f58996682b01fc0d57cc2ab4f44d61d02b6066a7",
+    "report.md": "74343005454789befa97b6c9ad2e8f5cc595ce2e02001e06e11c681c83243999"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "plan_sha256": "33ab2e0dc6a3f9b2d7a3253ca9f493ae766bbf3d2aca7a225f010180e3e97634",
+  "step": 240,
+  "records": 1,
+  "runtime_failures": [],
+  "prediction_sha256": {
+    "nus-clip07_0057.json": "45dfbe520b37ea5d2294b16e4551f05c617ce8a531ebd01b52c816cbb6016f32"
+  },
+  "actual_device": "cpu",
+  "actual_precision": "int8_float32",
+  "new_ASR_calls": 1,
+  "resumed": 0
+}

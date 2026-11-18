@@ -1,0 +1,21 @@
+# Exploratory data preparation and adaptation; never a release-selection protocol.
+version: publisher-weak-v1
+source_families: [BEA_checklists, DGA_checklist-Beech, DGA_checklist-PC7]
+window_starts_sec: [30, 60, 90, 120, 150, 180]
+window_duration_sec: 20
+alignment_model: small
+alignment_precision: float16
+alignment_device: cuda
+minimum_exact_anchor_coverage: 0.45
+minimum_exact_anchor_tokens: 8
+minimum_median_alignment_score: 0.35
+maximum_zero_duration_fraction: 0.25
+reject_numeric_disagreement: true
+language: en
+max_optimizer_steps: 40
+eval_steps: 10
+rank: 8
+learning_rate: 0.0001
+use_test: false
+selection_allowed: false
+quality_evidence: false

@@ -1,0 +1,5 @@
+{
+  "path": "scripts\\report_cockpit_cross_asr_v6.py",
+  "sha256": "fc3608ac62333a0d29ea0a424c5d6220dd3e5e6b16e7196ece134c61386a50d5",
+  "before_scoring": true
+}

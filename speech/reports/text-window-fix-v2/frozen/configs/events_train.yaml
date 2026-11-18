@@ -1,0 +1,6 @@
+train_manifest: /data/train-dev/train.jsonl
+dev_manifest: /data/train-dev/dev.jsonl
+output: events-v1
+C: 1.0
+threshold_grid: [0.35, 0.5, 0.65]
+

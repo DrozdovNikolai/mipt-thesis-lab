@@ -1,0 +1,40 @@
+{
+  "purpose": "Post-hoc training-data diagnosis; not independent model evaluation or pair admission",
+  "asr_calls_planned": 0,
+  "training_steps": 0,
+  "aliases": {
+    "pwr": "power",
+    "avail": "available",
+    "t o": "takeoff",
+    "alt": "altitude",
+    "cmd": "command",
+    "gen": "generator",
+    "gens": "generators",
+    "emer": "emergency",
+    "norm": "normal",
+    "temp": "temperature",
+    "stand by": "standby",
+    "auto thrust": "autothrust",
+    "speed brake": "speedbrake",
+    "seat belts": "seatbelts",
+    "turnoff": "turn off"
+  },
+  "policy_unchanged": {
+    "version": "publisher_phrase_consensus_v2",
+    "minimum_words": 2,
+    "maximum_asr_disagreement": 0.15,
+    "exact_asr_below_words": 8,
+    "minimum_publisher_coverage": 0.9,
+    "minimum_median_word_probability": 0.6,
+    "maximum_zero_duration_fraction": 0.25,
+    "maximum_source_span_ratio": 3.0,
+    "human_verified": false,
+    "training_steps": 0
+  },
+  "source_manifest_sha256": "7de1dc33070754c37e46a80b2be93b6267443be48590f83d08043724dadbba0c",
+  "decisions_sha256": "011f0f15d0ad9df23899fff085879b3f1d58ad1ba20b92997202709425bbc451",
+  "documents_sha256": "ff4bd0370569da478da41824a6276833d8a4cb982d98aa61801c2ab0dbc73bd8",
+  "script_sha256": "9b4066b0f9938d5498a440659e3773a35ddf846a16f732568e56567a25847dfd",
+  "dev_used": false,
+  "test_used": false
+}

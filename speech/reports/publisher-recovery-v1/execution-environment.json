@@ -1,0 +1,51 @@
+{
+  "image": "sha256:b5d7218f10baaa6b4bda2ac5da03462d4029f6249f2a93168e4352c47ebb2285",
+  "network": "none",
+  "devices": [
+    {
+      "Driver": "nvidia",
+      "Count": 0,
+      "DeviceIDs": [
+        "0"
+      ],
+      "Capabilities": [
+        [
+          "gpu"
+        ]
+      ],
+      "Options": null
+    }
+  ],
+  "mounts": [
+    {
+      "Source": "/run/desktop/mnt/host/c/DEV/MIPT/Diploma/Speech/src",
+      "Destination": "/code/src",
+      "RW": false
+    },
+    {
+      "Source": "C:\\DEV\\MIPT\\Diploma\\Speech\\scripts",
+      "Destination": "/code/scripts",
+      "RW": false
+    },
+    {
+      "Source": "C:\\DEV\\MIPT\\Diploma\\Speech\\reports\\publisher-recovery-v1\\inference",
+      "Destination": "/study",
+      "RW": false
+    },
+    {
+      "Source": "C:\\DEV\\MIPT\\Diploma\\Speech\\reports\\publisher-recovery-v1\\predictions",
+      "Destination": "/predictions",
+      "RW": true
+    },
+    {
+      "Source": "/var/lib/docker/volumes/north55-speech_audio_data/_data",
+      "Destination": "/audio",
+      "RW": false
+    },
+    {
+      "Source": "/var/lib/docker/volumes/north55-speech_model_cache/_data",
+      "Destination": "/models",
+      "RW": false
+    }
+  ]
+}

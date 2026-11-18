@@ -1,0 +1,88 @@
+{
+  "status": "PASS",
+  "checks": {
+    "frozen_files": true,
+    "frozen_inputs": true,
+    "frozen_protocol": true,
+    "model_manifests_unchanged": true,
+    "same_scorer": true,
+    "same_references": true,
+    "acceptance_unchanged": true,
+    "baseline_config_unchanged": true,
+    "SPEC_unchanged": true,
+    "SOURCES_unchanged": true,
+    "old_measurements_unchanged": true,
+    "complete_population": true,
+    "result_plan_link": true,
+    "regression_plan_link": true,
+    "tail_loop_mechanically_fixed": true,
+    "failed_repeat_check_retained": true,
+    "actual_regression_word_times": true,
+    "license_preserved": true,
+    "parent_reference_prediction_hashes": true,
+    "parent_reference_runtime_hashes": true,
+    "parent_reference_cuda_float16": true,
+    "parent_reference_zero_runtime_failures": true,
+    "parent_reference_frozen_before_inference": true,
+    "parent_reference_options_and_plan": true,
+    "parent_reference_baseline_hypotheses_and_word_times_replayed": true,
+    "parent_text_prediction_hashes": true,
+    "parent_text_runtime_hashes": true,
+    "parent_text_cuda_float16": true,
+    "parent_text_zero_runtime_failures": true,
+    "parent_text_frozen_before_inference": true,
+    "parent_text_options_and_plan": true,
+    "parent_text_tail_decisions_audited": true,
+    "augmented_reference_prediction_hashes": true,
+    "augmented_reference_runtime_hashes": true,
+    "augmented_reference_cuda_float16": true,
+    "augmented_reference_zero_runtime_failures": true,
+    "augmented_reference_frozen_before_inference": true,
+    "augmented_reference_options_and_plan": true,
+    "augmented_reference_baseline_hypotheses_and_word_times_replayed": true,
+    "augmented_text_prediction_hashes": true,
+    "augmented_text_runtime_hashes": true,
+    "augmented_text_cuda_float16": true,
+    "augmented_text_zero_runtime_failures": true,
+    "augmented_text_frozen_before_inference": true,
+    "augmented_text_options_and_plan": true,
+    "augmented_text_tail_decisions_audited": true,
+    "parent_text_CPU_hashes": true,
+    "parent_text_CPU_execution": true,
+    "augmented_text_CPU_hashes": true,
+    "augmented_text_CPU_execution": true,
+    "resume_without_ASR_calls": true,
+    "offline_inference_exit_zero": true,
+    "inference_cannot_access_references_or_history": true,
+    "only_own_output_is_writable": true,
+    "22_tests_passed": true,
+    "3_audio_contract_tests_passed": true,
+    "serving_baseline_preserved": true
+  },
+  "failed": [],
+  "resume_records": {
+    "parent_reference": [],
+    "parent_text": [
+      264
+    ],
+    "augmented_reference": [],
+    "augmented_text": []
+  },
+  "CPU": {
+    "parent_text": {
+      "records": 4,
+      "precision": [
+        "int8_float32"
+      ],
+      "quality": "NOT_EVALUATED_CPU_SMOKE"
+    },
+    "augmented_text": {
+      "records": 4,
+      "precision": [
+        "int8_float32"
+      ],
+      "quality": "NOT_EVALUATED_CPU_SMOKE"
+    }
+  },
+  "scope": "Artifact integrity/execution only; functional repeat safeguard remains FAIL."
+}

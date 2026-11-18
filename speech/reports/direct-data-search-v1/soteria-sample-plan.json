@@ -1,0 +1,13 @@
+{
+  "source": {
+    "key": "Crew_02/DVR/DVR10_Case_1_SOTERIA_20220504-170006Z_S1R1.mp4",
+    "size": 90608135,
+    "etag": "\"23a758391e194b5c340374c97b187261-11\"",
+    "last_modified": "2025-03-06T15:31:38.000Z"
+  },
+  "selection": "smallest Crew_02 DVR MP4 by metadata",
+  "group": "soteria:Crew_02",
+  "use": "source_inspection_dev_only",
+  "license": "CC BY 4.0",
+  "source_registry": "https://registry.opendata.aws/nasa-soteria-data/"
+}

@@ -1,0 +1,16 @@
+{
+  "focused_tests": {
+    "passed": 26,
+    "seconds": 3.98
+  },
+  "full_tests": {
+    "passed": 476,
+    "deselected": 9,
+    "warnings": 8,
+    "seconds": 30.42,
+    "command": "docker compose -f compose.improvement.yaml run --rm checks -q -p no:cacheprovider -m 'not integration and not real_asr' tests"
+  },
+  "ruff": "PASS; selection, runner, verification, admission, lora and tests",
+  "mypy": "PASS; src/north55_speech/publisher_pairs.py and lora.py",
+  "training_steps": 0
+}

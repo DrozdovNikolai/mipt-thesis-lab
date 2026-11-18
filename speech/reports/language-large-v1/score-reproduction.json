@@ -1,0 +1,32 @@
+[
+  {
+    "environment": "powershell",
+    "command": [
+      "powershell",
+      "-NoProfile",
+      "-File",
+      "scripts/language_large_report.ps1",
+      "score"
+    ],
+    "exit_code": 0,
+    "before_sha256": "6b7303521f86cfda395eef7cb7719cd913332638a0322e28da61d7701d578862",
+    "after_sha256": "6b7303521f86cfda395eef7cb7719cd913332638a0322e28da61d7701d578862",
+    "identical": true
+  },
+  {
+    "environment": "linux_wsl_ubuntu",
+    "command": [
+      "wsl",
+      "-d",
+      "Ubuntu",
+      "--",
+      "sh",
+      "/mnt/c/DEV/MIPT/Diploma/Speech/scripts/language_large_report.sh",
+      "score"
+    ],
+    "exit_code": 0,
+    "before_sha256": "6b7303521f86cfda395eef7cb7719cd913332638a0322e28da61d7701d578862",
+    "after_sha256": "6b7303521f86cfda395eef7cb7719cd913332638a0322e28da61d7701d578862",
+    "identical": true
+  }
+]

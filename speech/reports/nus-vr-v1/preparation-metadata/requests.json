@@ -1,0 +1,5 @@
+{
+  "parquet-generation": "https://raw.githubusercontent.com/wangyubo013-blip/CDE4301-VR-401-Final-Report/0c520edbcd345cb9005cc77c3345eedbfef7147b/Scripts/Workstream1_SpeechRecognition/2.%20DatasetPreparation/ParquetGeneration.py",
+  "timeline-template": "https://raw.githubusercontent.com/wangyubo013-blip/CDE4301-VR-401-Final-Report/0c520edbcd345cb9005cc77c3345eedbfef7147b/Scripts/Workstream1_SpeechRecognition/2.%20DatasetPreparation/TimelineTemplate.csv",
+  "sound-extraction": "https://raw.githubusercontent.com/wangyubo013-blip/CDE4301-VR-401-Final-Report/0c520edbcd345cb9005cc77c3345eedbfef7147b/Scripts/Workstream1_SpeechRecognition/2.%20DatasetPreparation/SoundExtraction.py"
+}

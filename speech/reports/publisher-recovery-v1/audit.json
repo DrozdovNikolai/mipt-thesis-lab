@@ -1,0 +1,49 @@
+{
+  "total_windows": 476,
+  "old_train": 33,
+  "old_dev": 35,
+  "overlapping_reasons": {
+    "non_English_or_uncertain_detected_language": 317,
+    "insufficient_script_anchors": 127,
+    "numeric_disagreement_requires_review": 153,
+    "low_forced_alignment_score": 80,
+    "collapsed_word_times": 31
+  },
+  "exclusive_reason_combinations": {
+    "non_English_or_uncertain_detected_language": 108,
+    "insufficient_script_anchors + non_English_or_uncertain_detected_language": 102,
+    "numeric_disagreement_requires_review + non_English_or_uncertain_detected_language": 59,
+    "low_forced_alignment_score + non_English_or_uncertain_detected_language": 10,
+    "low_forced_alignment_score + numeric_disagreement_requires_review + non_English_or_uncertain_detected_language": 18,
+    "low_forced_alignment_score + collapsed_word_times + numeric_disagreement_requires_review + non_English_or_uncertain_detected_language": 20,
+    "accepted": 68,
+    "insufficient_script_anchors": 25,
+    "numeric_disagreement_requires_review": 34,
+    "low_forced_alignment_score + collapsed_word_times + numeric_disagreement_requires_review": 9,
+    "low_forced_alignment_score": 8,
+    "low_forced_alignment_score + numeric_disagreement_requires_review": 13,
+    "low_forced_alignment_score + collapsed_word_times": 2
+  },
+  "language_only_by_split": {
+    "train": 91,
+    "dev": 17
+  },
+  "old_candidates_human_verified": false,
+  "new_policy": {
+    "version": "publisher_language_recheck_v1",
+    "train_only": true,
+    "original_reasons": [
+      "non_English_or_uncertain_detected_language"
+    ],
+    "maximum_lexical_disagreement": 0.15,
+    "minimum_median_word_probability": 0.6,
+    "minimum_reference_words": 8,
+    "require_exact_numeric_sequence": true,
+    "require_exact_negation_sequence": true,
+    "publisher_text_modified": false,
+    "human_verified": false,
+    "language_verified": false,
+    "quality_evidence": false,
+    "training_steps": 0
+  }
+}

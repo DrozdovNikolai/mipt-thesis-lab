@@ -1,0 +1,1556 @@
+{
+  "checked_at": "2026-09-14T14:03:29.200542+00:00",
+  "source_revision": "0c520edbcd345cb9005cc77c3345eedbfef7147b",
+  "acquisition_sha256": "3c50cf9e8830b43a4100ae5360021bbdce0fa7b0b33371836b05144ea347f7e4",
+  "script_sha256": "1905bc388ee0e592518ef4fa5f14647dba7918c665de9df8690c6622ac0de07f",
+  "runtime": {
+    "python": "3.11.14",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+    "pyarrow": "25.0.1",
+    "soundfile": "0.13.1",
+    "numpy": "2.2.6"
+  },
+  "files": [
+    {
+      "file": "CombinedSamples_01_03_04_05_06_07.parquet",
+      "rows": 263,
+      "schema": "id: string\naudio: struct<bytes: binary, path: string>\n  child 0, bytes: binary\n  child 1, path: string\ntext: string\nsegment_start_time: float\nsegment_end_time: float\nduration: float",
+      "schema_metadata_keys": [],
+      "decoded": 263,
+      "duration_sec_including_duplicates": 803.1
+    },
+    {
+      "file": "Sample01(1).parquet",
+      "rows": 16,
+      "schema": "id: string\naudio: struct<bytes: binary, path: string>\n  child 0, bytes: binary\n  child 1, path: string\ntext: string\nsegment_start_time: float\nsegment_end_time: float\nduration: float",
+      "schema_metadata_keys": [],
+      "decoded": 16,
+      "duration_sec_including_duplicates": 109.0
+    },
+    {
+      "file": "Sample01.parquet",
+      "rows": 16,
+      "schema": "id: string\naudio: struct<bytes: binary, path: string>\n  child 0, bytes: binary\n  child 1, path: string\ntext: string\nsegment_start_time: float\nsegment_end_time: float\nduration: float",
+      "schema_metadata_keys": [],
+      "decoded": 16,
+      "duration_sec_including_duplicates": 109.0
+    },
+    {
+      "file": "Sample02(1).parquet",
+      "rows": 50,
+      "schema": "id: string\naudio: struct<bytes: binary, path: string>\n  child 0, bytes: binary\n  child 1, path: string\ntext: string\nsegment_start_time: float\nsegment_end_time: float\nduration: float",
+      "schema_metadata_keys": [],
+      "decoded": 50,
+      "duration_sec_including_duplicates": 221.0
+    },
+    {
+      "file": "Sample02.parquet",
+      "rows": 50,
+      "schema": "id: string\naudio: struct<bytes: binary, path: string>\n  child 0, bytes: binary\n  child 1, path: string\ntext: string\nsegment_start_time: float\nsegment_end_time: float\nduration: float",
+      "schema_metadata_keys": [],
+      "decoded": 50,
+      "duration_sec_including_duplicates": 221.0
+    },
+    {
+      "file": "Sample03.parquet",
+      "rows": 36,
+      "schema": "id: string\naudio: struct<bytes: binary, path: string>\n  child 0, bytes: binary\n  child 1, path: string\ntext: string\nsegment_start_time: float\nsegment_end_time: float\nduration: float",
+      "schema_metadata_keys": [],
+      "decoded": 36,
+      "duration_sec_including_duplicates": 120.5
+    },
+    {
+      "file": "Sample04.parquet",
+      "rows": 44,
+      "schema": "id: string\naudio: struct<bytes: binary, path: string>\n  child 0, bytes: binary\n  child 1, path: string\ntext: string\nsegment_start_time: float\nsegment_end_time: float\nduration: float",
+      "schema_metadata_keys": [],
+      "decoded": 44,
+      "duration_sec_including_duplicates": 119.89999999999999
+    },
+    {
+      "file": "Sample05.parquet",
+      "rows": 61,
+      "schema": "id: string\naudio: struct<bytes: binary, path: string>\n  child 0, bytes: binary\n  child 1, path: string\ntext: string\nsegment_start_time: float\nsegment_end_time: float\nduration: float",
+      "schema_metadata_keys": [],
+      "decoded": 61,
+      "duration_sec_including_duplicates": 168.29999999999998
+    },
+    {
+      "file": "Sample06.parquet",
+      "rows": 48,
+      "schema": "id: string\naudio: struct<bytes: binary, path: string>\n  child 0, bytes: binary\n  child 1, path: string\ntext: string\nsegment_start_time: float\nsegment_end_time: float\nduration: float",
+      "schema_metadata_keys": [],
+      "decoded": 48,
+      "duration_sec_including_duplicates": 122.7
+    },
+    {
+      "file": "Sample07.parquet",
+      "rows": 58,
+      "schema": "id: string\naudio: struct<bytes: binary, path: string>\n  child 0, bytes: binary\n  child 1, path: string\ntext: string\nsegment_start_time: float\nsegment_end_time: float\nduration: float",
+      "schema_metadata_keys": [],
+      "decoded": 58,
+      "duration_sec_including_duplicates": 162.7
+    }
+  ],
+  "row_count": 642,
+  "decoded_rows": 642,
+  "failures": [],
+  "decode_status": "PASS",
+  "sample_rates": {
+    "16000": 642
+  },
+  "channels": {
+    "1": 642
+  },
+  "audio_formats": {
+    "WAV": 642
+  },
+  "min_clip_sec": 1.0,
+  "max_clip_sec": 13.0,
+  "zero_signal_rows": 0,
+  "missing_or_invalid_source_interval_rows": 642,
+  "interval_mismatch_over_20ms": 0,
+  "missing_declared_duration_rows": 0,
+  "duration_mismatch_over_20ms": 0,
+  "source_ids_count": 313,
+  "source_audio_paths_count": 576,
+  "duplicates": {
+    "unique_pcm_clips": 313,
+    "duplicate_rows": 329,
+    "unique_audio_duration_sec": 1024.1,
+    "unique_reference_words_first_occurrence": 1256,
+    "conflicting_reference_audio_groups": [
+      {
+        "pcm_sha256": "2119004a6846448194f18e7d134d9d66ef731acd8e005ffb4037b7a46b2d64e6",
+        "rows": [
+          "CombinedSamples_01_03_04_05_06_07.parquet:2",
+          "Sample01(1).parquet:2",
+          "Sample01.parquet:2"
+        ]
+      },
+      {
+        "pcm_sha256": "2c1b552dca39426001cbd50ef0f8072665b29d2c083d33be984e55231e22a9d2",
+        "rows": [
+          "CombinedSamples_01_03_04_05_06_07.parquet:4",
+          "Sample01(1).parquet:4",
+          "Sample01.parquet:4"
+        ]
+      },
+      {
+        "pcm_sha256": "12a01e83a4b724222ad0c21d0dbe1281773068c85e63766e3a35beb45b5e6ea5",
+        "rows": [
+          "CombinedSamples_01_03_04_05_06_07.parquet:50",
+          "Sample03.parquet:34"
+        ]
+      },
+      {
+        "pcm_sha256": "797edb8cb89e261a4b6a5d10e2d0a443008dedd9bbc1e1f78a7262f00080e9db",
+        "rows": [
+          "CombinedSamples_01_03_04_05_06_07.parquet:51",
+          "Sample03.parquet:35"
+        ]
+      },
+      {
+        "pcm_sha256": "a5ebadd93c4da57252aed19416631a7a8a84cca9b0dc42e7c94dac1a278efae8",
+        "rows": [
+          "CombinedSamples_01_03_04_05_06_07.parquet:93",
+          "Sample04.parquet:41"
+        ]
+      },
+      {
+        "pcm_sha256": "e51d491c35598fd376c1df3befbd51131de95f62ba9c9d0597b8a87d19d31075",
+        "rows": [
+          "CombinedSamples_01_03_04_05_06_07.parquet:94",
+          "Sample04.parquet:42"
+        ]
+      },
+      {
+        "pcm_sha256": "e9a0b1c234dedded07d05b93e95d3fa5fb5c3c5c6bbeb410a1fcd35436921559",
+        "rows": [
+          "Sample02(1).parquet:0",
+          "Sample02.parquet:0"
+        ]
+      },
+      {
+        "pcm_sha256": "ff769047edff9eae600ede8f31da977e0b0fdaa585fdcc56cca5c3afaa9a9ad8",
+        "rows": [
+          "Sample02(1).parquet:1",
+          "Sample02.parquet:1"
+        ]
+      },
+      {
+        "pcm_sha256": "c9e121635b3abbbc124a42310efc68414485435bb3b6596983103caec1557f46",
+        "rows": [
+          "Sample02(1).parquet:5",
+          "Sample02.parquet:5"
+        ]
+      },
+      {
+        "pcm_sha256": "9ba395cb80cc59ca18bdab8b0b97639730e8413f7896d6ccb417433e8927b2c4",
+        "rows": [
+          "Sample02(1).parquet:25",
+          "Sample02.parquet:25"
+        ]
+      },
+      {
+        "pcm_sha256": "8fb503ef371d2d8f97c001a68c060ed0b6694dec1f2dfd15a74c766aeed4d4d0",
+        "rows": [
+          "Sample02(1).parquet:48",
+          "Sample02.parquet:48"
+        ]
+      }
+    ],
+    "duplicate_groups": [
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:0",
+        "Sample01(1).parquet:0",
+        "Sample01.parquet:0"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:1",
+        "Sample01(1).parquet:1",
+        "Sample01.parquet:1"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:2",
+        "Sample01(1).parquet:2",
+        "Sample01.parquet:2"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:3",
+        "Sample01(1).parquet:3",
+        "Sample01.parquet:3"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:4",
+        "Sample01(1).parquet:4",
+        "Sample01.parquet:4"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:5",
+        "Sample01(1).parquet:5",
+        "Sample01.parquet:5"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:6",
+        "Sample01(1).parquet:6",
+        "Sample01.parquet:6"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:7",
+        "Sample01(1).parquet:7",
+        "Sample01.parquet:7"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:8",
+        "Sample01(1).parquet:8",
+        "Sample01.parquet:8"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:9",
+        "Sample01(1).parquet:9",
+        "Sample01.parquet:9"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:10",
+        "Sample01(1).parquet:10",
+        "Sample01.parquet:10"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:11",
+        "Sample01(1).parquet:11",
+        "Sample01.parquet:11"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:12",
+        "Sample01(1).parquet:12",
+        "Sample01.parquet:12"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:13",
+        "Sample01(1).parquet:13",
+        "Sample01.parquet:13"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:14",
+        "Sample01(1).parquet:14",
+        "Sample01.parquet:14"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:15",
+        "Sample01(1).parquet:15",
+        "Sample01.parquet:15"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:16",
+        "Sample03.parquet:0"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:17",
+        "Sample03.parquet:1"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:18",
+        "Sample03.parquet:2"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:19",
+        "Sample03.parquet:3"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:20",
+        "Sample03.parquet:4"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:21",
+        "Sample03.parquet:5"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:22",
+        "Sample03.parquet:6"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:23",
+        "Sample03.parquet:7"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:24",
+        "Sample03.parquet:8"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:25",
+        "Sample03.parquet:9"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:26",
+        "Sample03.parquet:10"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:27",
+        "Sample03.parquet:11"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:28",
+        "Sample03.parquet:12"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:29",
+        "Sample03.parquet:13"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:30",
+        "Sample03.parquet:14"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:31",
+        "Sample03.parquet:15"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:32",
+        "Sample03.parquet:16"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:33",
+        "Sample03.parquet:17"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:34",
+        "Sample03.parquet:18"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:35",
+        "Sample03.parquet:19"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:36",
+        "Sample03.parquet:20"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:37",
+        "Sample03.parquet:21"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:38",
+        "Sample03.parquet:22"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:39",
+        "Sample03.parquet:23"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:40",
+        "Sample03.parquet:24"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:41",
+        "Sample03.parquet:25"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:42",
+        "Sample03.parquet:26"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:43",
+        "Sample03.parquet:27"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:44",
+        "Sample03.parquet:28"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:45",
+        "Sample03.parquet:29"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:46",
+        "Sample03.parquet:30"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:47",
+        "Sample03.parquet:31"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:48",
+        "Sample03.parquet:32"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:49",
+        "Sample03.parquet:33"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:50",
+        "Sample03.parquet:34"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:51",
+        "Sample03.parquet:35"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:52",
+        "Sample04.parquet:0"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:53",
+        "Sample04.parquet:1"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:54",
+        "Sample04.parquet:2"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:55",
+        "Sample04.parquet:3"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:56",
+        "Sample04.parquet:4"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:57",
+        "Sample04.parquet:5"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:58",
+        "Sample04.parquet:6"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:59",
+        "Sample04.parquet:7"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:60",
+        "Sample04.parquet:8"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:61",
+        "Sample04.parquet:9"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:62",
+        "Sample04.parquet:10"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:63",
+        "Sample04.parquet:11"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:64",
+        "Sample04.parquet:12"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:65",
+        "Sample04.parquet:13"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:66",
+        "Sample04.parquet:14"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:67",
+        "Sample04.parquet:15"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:68",
+        "Sample04.parquet:16"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:69",
+        "Sample04.parquet:17"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:70",
+        "Sample04.parquet:18"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:71",
+        "Sample04.parquet:19"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:72",
+        "Sample04.parquet:20"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:73",
+        "Sample04.parquet:21"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:74",
+        "Sample04.parquet:22"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:75",
+        "Sample04.parquet:23"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:76",
+        "Sample04.parquet:24"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:77",
+        "Sample04.parquet:25"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:78",
+        "Sample04.parquet:26"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:79",
+        "Sample04.parquet:27"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:80",
+        "Sample04.parquet:28"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:81",
+        "Sample04.parquet:29"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:82",
+        "Sample04.parquet:30"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:83",
+        "Sample04.parquet:31"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:84",
+        "Sample04.parquet:32"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:85",
+        "Sample04.parquet:33"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:86",
+        "Sample04.parquet:34"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:87",
+        "Sample04.parquet:35"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:88",
+        "Sample04.parquet:36"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:89",
+        "Sample04.parquet:37"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:90",
+        "Sample04.parquet:38"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:91",
+        "Sample04.parquet:39"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:92",
+        "Sample04.parquet:40"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:93",
+        "Sample04.parquet:41"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:94",
+        "Sample04.parquet:42"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:95",
+        "Sample04.parquet:43"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:96",
+        "Sample05.parquet:0"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:97",
+        "Sample05.parquet:1"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:98",
+        "Sample05.parquet:2"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:99",
+        "Sample05.parquet:3"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:100",
+        "Sample05.parquet:4"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:101",
+        "Sample05.parquet:5"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:102",
+        "Sample05.parquet:6"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:103",
+        "Sample05.parquet:7"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:104",
+        "Sample05.parquet:8"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:105",
+        "Sample05.parquet:9"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:106",
+        "Sample05.parquet:10"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:107",
+        "Sample05.parquet:11"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:108",
+        "Sample05.parquet:12"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:109",
+        "Sample05.parquet:13"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:110",
+        "Sample05.parquet:14"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:111",
+        "Sample05.parquet:15"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:112",
+        "Sample05.parquet:16"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:113",
+        "Sample05.parquet:17"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:114",
+        "Sample05.parquet:18"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:115",
+        "Sample05.parquet:19"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:116",
+        "Sample05.parquet:20"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:117",
+        "Sample05.parquet:21"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:118",
+        "Sample05.parquet:22"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:119",
+        "Sample05.parquet:23"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:120",
+        "Sample05.parquet:24"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:121",
+        "Sample05.parquet:25"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:122",
+        "Sample05.parquet:26"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:123",
+        "Sample05.parquet:27"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:124",
+        "Sample05.parquet:28"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:125",
+        "Sample05.parquet:29"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:126",
+        "Sample05.parquet:30"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:127",
+        "Sample05.parquet:31"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:128",
+        "Sample05.parquet:32"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:129",
+        "Sample05.parquet:33"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:130",
+        "Sample05.parquet:34"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:131",
+        "Sample05.parquet:35"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:132",
+        "Sample05.parquet:36"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:133",
+        "Sample05.parquet:37"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:134",
+        "Sample05.parquet:38"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:135",
+        "Sample05.parquet:39"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:136",
+        "Sample05.parquet:40"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:137",
+        "Sample05.parquet:41"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:138",
+        "Sample05.parquet:42"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:139",
+        "Sample05.parquet:43"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:140",
+        "Sample05.parquet:44"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:141",
+        "Sample05.parquet:45"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:142",
+        "Sample05.parquet:46"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:143",
+        "Sample05.parquet:47"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:144",
+        "Sample05.parquet:48"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:145",
+        "Sample05.parquet:49"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:146",
+        "Sample05.parquet:50"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:147",
+        "Sample05.parquet:51"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:148",
+        "Sample05.parquet:52"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:149",
+        "Sample05.parquet:53"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:150",
+        "Sample05.parquet:54"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:151",
+        "Sample05.parquet:55"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:152",
+        "Sample05.parquet:56"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:153",
+        "Sample05.parquet:57"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:154",
+        "Sample05.parquet:58"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:155",
+        "Sample05.parquet:59"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:156",
+        "Sample05.parquet:60"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:157",
+        "Sample06.parquet:0"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:158",
+        "Sample06.parquet:1"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:159",
+        "Sample06.parquet:2"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:160",
+        "Sample06.parquet:3"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:161",
+        "Sample06.parquet:4"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:162",
+        "Sample06.parquet:5"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:163",
+        "Sample06.parquet:6"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:164",
+        "Sample06.parquet:7"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:165",
+        "Sample06.parquet:8"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:166",
+        "Sample06.parquet:9"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:167",
+        "Sample06.parquet:10"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:168",
+        "Sample06.parquet:11"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:169",
+        "Sample06.parquet:12"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:170",
+        "Sample06.parquet:13"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:171",
+        "Sample06.parquet:14"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:172",
+        "Sample06.parquet:15"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:173",
+        "Sample06.parquet:16"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:174",
+        "Sample06.parquet:17"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:175",
+        "Sample06.parquet:18"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:176",
+        "Sample06.parquet:19"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:177",
+        "Sample06.parquet:20"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:178",
+        "Sample06.parquet:21"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:179",
+        "Sample06.parquet:22"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:180",
+        "Sample06.parquet:23"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:181",
+        "Sample06.parquet:24"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:182",
+        "Sample06.parquet:25"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:183",
+        "Sample06.parquet:26"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:184",
+        "Sample06.parquet:27"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:185",
+        "Sample06.parquet:28"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:186",
+        "Sample06.parquet:29"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:187",
+        "Sample06.parquet:30"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:188",
+        "Sample06.parquet:31"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:189",
+        "Sample06.parquet:32"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:190",
+        "Sample06.parquet:33"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:191",
+        "Sample06.parquet:34"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:192",
+        "Sample06.parquet:35"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:193",
+        "Sample06.parquet:36"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:194",
+        "Sample06.parquet:37"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:195",
+        "Sample06.parquet:38"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:196",
+        "Sample06.parquet:39"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:197",
+        "Sample06.parquet:40"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:198",
+        "Sample06.parquet:41"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:199",
+        "Sample06.parquet:42"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:200",
+        "Sample06.parquet:43"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:201",
+        "Sample06.parquet:44"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:202",
+        "Sample06.parquet:45"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:203",
+        "Sample06.parquet:46"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:204",
+        "Sample06.parquet:47"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:205",
+        "Sample07.parquet:0"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:206",
+        "Sample07.parquet:1"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:207",
+        "Sample07.parquet:2"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:208",
+        "Sample07.parquet:3"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:209",
+        "Sample07.parquet:4"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:210",
+        "Sample07.parquet:5"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:211",
+        "Sample07.parquet:6"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:212",
+        "Sample07.parquet:7"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:213",
+        "Sample07.parquet:8"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:214",
+        "Sample07.parquet:9"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:215",
+        "Sample07.parquet:10"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:216",
+        "Sample07.parquet:11"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:217",
+        "Sample07.parquet:12"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:218",
+        "Sample07.parquet:13"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:219",
+        "Sample07.parquet:14"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:220",
+        "Sample07.parquet:15"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:221",
+        "Sample07.parquet:16"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:222",
+        "Sample07.parquet:17"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:223",
+        "Sample07.parquet:18"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:224",
+        "Sample07.parquet:19"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:225",
+        "Sample07.parquet:20"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:226",
+        "Sample07.parquet:21"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:227",
+        "Sample07.parquet:22"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:228",
+        "Sample07.parquet:23"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:229",
+        "Sample07.parquet:24"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:230",
+        "Sample07.parquet:25"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:231",
+        "Sample07.parquet:26"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:232",
+        "Sample07.parquet:27"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:233",
+        "Sample07.parquet:28"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:234",
+        "Sample07.parquet:29"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:235",
+        "Sample07.parquet:30"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:236",
+        "Sample07.parquet:31"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:237",
+        "Sample07.parquet:32"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:238",
+        "Sample07.parquet:33"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:239",
+        "Sample07.parquet:34"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:240",
+        "Sample07.parquet:35"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:241",
+        "Sample07.parquet:36"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:242",
+        "Sample07.parquet:37"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:243",
+        "Sample07.parquet:38"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:244",
+        "Sample07.parquet:39"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:245",
+        "Sample07.parquet:40"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:246",
+        "Sample07.parquet:41"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:247",
+        "Sample07.parquet:42"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:248",
+        "Sample07.parquet:43"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:249",
+        "Sample07.parquet:44"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:250",
+        "Sample07.parquet:45"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:251",
+        "Sample07.parquet:46"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:252",
+        "Sample07.parquet:47"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:253",
+        "Sample07.parquet:48"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:254",
+        "Sample07.parquet:49"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:255",
+        "Sample07.parquet:50"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:256",
+        "Sample07.parquet:51"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:257",
+        "Sample07.parquet:52"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:258",
+        "Sample07.parquet:53"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:259",
+        "Sample07.parquet:54"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:260",
+        "Sample07.parquet:55"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:261",
+        "Sample07.parquet:56"
+      ],
+      [
+        "CombinedSamples_01_03_04_05_06_07.parquet:262",
+        "Sample07.parquet:57"
+      ],
+      [
+        "Sample02(1).parquet:0",
+        "Sample02.parquet:0"
+      ],
+      [
+        "Sample02(1).parquet:1",
+        "Sample02.parquet:1"
+      ],
+      [
+        "Sample02(1).parquet:2",
+        "Sample02.parquet:2"
+      ],
+      [
+        "Sample02(1).parquet:3",
+        "Sample02.parquet:3"
+      ],
+      [
+        "Sample02(1).parquet:4",
+        "Sample02.parquet:4"
+      ],
+      [
+        "Sample02(1).parquet:5",
+        "Sample02.parquet:5"
+      ],
+      [
+        "Sample02(1).parquet:6",
+        "Sample02.parquet:6"
+      ],
+      [
+        "Sample02(1).parquet:7",
+        "Sample02.parquet:7"
+      ],
+      [
+        "Sample02(1).parquet:8",
+        "Sample02.parquet:8"
+      ],
+      [
+        "Sample02(1).parquet:9",
+        "Sample02.parquet:9"
+      ],
+      [
+        "Sample02(1).parquet:10",
+        "Sample02.parquet:10"
+      ],
+      [
+        "Sample02(1).parquet:11",
+        "Sample02.parquet:11"
+      ],
+      [
+        "Sample02(1).parquet:12",
+        "Sample02.parquet:12"
+      ],
+      [
+        "Sample02(1).parquet:13",
+        "Sample02.parquet:13"
+      ],
+      [
+        "Sample02(1).parquet:14",
+        "Sample02.parquet:14"
+      ],
+      [
+        "Sample02(1).parquet:15",
+        "Sample02.parquet:15"
+      ],
+      [
+        "Sample02(1).parquet:16",
+        "Sample02.parquet:16"
+      ],
+      [
+        "Sample02(1).parquet:17",
+        "Sample02.parquet:17"
+      ],
+      [
+        "Sample02(1).parquet:18",
+        "Sample02.parquet:18"
+      ],
+      [
+        "Sample02(1).parquet:19",
+        "Sample02.parquet:19"
+      ],
+      [
+        "Sample02(1).parquet:20",
+        "Sample02.parquet:20"
+      ],
+      [
+        "Sample02(1).parquet:21",
+        "Sample02.parquet:21"
+      ],
+      [
+        "Sample02(1).parquet:22",
+        "Sample02.parquet:22"
+      ],
+      [
+        "Sample02(1).parquet:23",
+        "Sample02.parquet:23"
+      ],
+      [
+        "Sample02(1).parquet:24",
+        "Sample02.parquet:24"
+      ],
+      [
+        "Sample02(1).parquet:25",
+        "Sample02.parquet:25"
+      ],
+      [
+        "Sample02(1).parquet:26",
+        "Sample02.parquet:26"
+      ],
+      [
+        "Sample02(1).parquet:27",
+        "Sample02.parquet:27"
+      ],
+      [
+        "Sample02(1).parquet:28",
+        "Sample02.parquet:28"
+      ],
+      [
+        "Sample02(1).parquet:29",
+        "Sample02.parquet:29"
+      ],
+      [
+        "Sample02(1).parquet:30",
+        "Sample02.parquet:30"
+      ],
+      [
+        "Sample02(1).parquet:31",
+        "Sample02.parquet:31"
+      ],
+      [
+        "Sample02(1).parquet:32",
+        "Sample02.parquet:32"
+      ],
+      [
+        "Sample02(1).parquet:33",
+        "Sample02.parquet:33"
+      ],
+      [
+        "Sample02(1).parquet:34",
+        "Sample02.parquet:34"
+      ],
+      [
+        "Sample02(1).parquet:35",
+        "Sample02.parquet:35"
+      ],
+      [
+        "Sample02(1).parquet:36",
+        "Sample02.parquet:36"
+      ],
+      [
+        "Sample02(1).parquet:37",
+        "Sample02.parquet:37"
+      ],
+      [
+        "Sample02(1).parquet:38",
+        "Sample02.parquet:38"
+      ],
+      [
+        "Sample02(1).parquet:39",
+        "Sample02.parquet:39"
+      ],
+      [
+        "Sample02(1).parquet:40",
+        "Sample02.parquet:40"
+      ],
+      [
+        "Sample02(1).parquet:41",
+        "Sample02.parquet:41"
+      ],
+      [
+        "Sample02(1).parquet:42",
+        "Sample02.parquet:42"
+      ],
+      [
+        "Sample02(1).parquet:43",
+        "Sample02.parquet:43"
+      ],
+      [
+        "Sample02(1).parquet:44",
+        "Sample02.parquet:44"
+      ],
+      [
+        "Sample02(1).parquet:45",
+        "Sample02.parquet:45"
+      ],
+      [
+        "Sample02(1).parquet:46",
+        "Sample02.parquet:46"
+      ],
+      [
+        "Sample02(1).parquet:47",
+        "Sample02.parquet:47"
+      ],
+      [
+        "Sample02(1).parquet:48",
+        "Sample02.parquet:48"
+      ],
+      [
+        "Sample02(1).parquet:49",
+        "Sample02.parquet:49"
+      ]
+    ]
+  },
+  "cross_file_audio_overlap": [
+    {
+      "left": "CombinedSamples_01_03_04_05_06_07.parquet",
+      "right": "Sample01(1).parquet",
+      "shared_unique_pcm": 16,
+      "identical_audio_sets": false
+    },
+    {
+      "left": "CombinedSamples_01_03_04_05_06_07.parquet",
+      "right": "Sample01.parquet",
+      "shared_unique_pcm": 16,
+      "identical_audio_sets": false
+    },
+    {
+      "left": "CombinedSamples_01_03_04_05_06_07.parquet",
+      "right": "Sample03.parquet",
+      "shared_unique_pcm": 36,
+      "identical_audio_sets": false
+    },
+    {
+      "left": "CombinedSamples_01_03_04_05_06_07.parquet",
+      "right": "Sample04.parquet",
+      "shared_unique_pcm": 44,
+      "identical_audio_sets": false
+    },
+    {
+      "left": "CombinedSamples_01_03_04_05_06_07.parquet",
+      "right": "Sample05.parquet",
+      "shared_unique_pcm": 61,
+      "identical_audio_sets": false
+    },
+    {
+      "left": "CombinedSamples_01_03_04_05_06_07.parquet",
+      "right": "Sample06.parquet",
+      "shared_unique_pcm": 48,
+      "identical_audio_sets": false
+    },
+    {
+      "left": "CombinedSamples_01_03_04_05_06_07.parquet",
+      "right": "Sample07.parquet",
+      "shared_unique_pcm": 58,
+      "identical_audio_sets": false
+    },
+    {
+      "left": "Sample01(1).parquet",
+      "right": "Sample01.parquet",
+      "shared_unique_pcm": 16,
+      "identical_audio_sets": true
+    },
+    {
+      "left": "Sample02(1).parquet",
+      "right": "Sample02.parquet",
+      "shared_unique_pcm": 50,
+      "identical_audio_sets": true
+    }
+  ],
+  "rights": {
+    "status": "BLOCKED",
+    "reason": "SOURCE_USE_PERMISSION_NOT_ESTABLISHED",
+    "github_license_metadata": null,
+    "current_tree_sha": "0c520edbcd345cb9005cc77c3345eedbfef7147b",
+    "tree_complete": true,
+    "permission_file_candidates": [],
+    "source_readme_reviewed": true,
+    "public_visibility_is_not_training_permission": true
+  },
+  "technical_inspection_executed": true,
+  "listening_executed": false,
+  "alignment_human_verified": false,
+  "speaker_session_groups_verified": false,
+  "provisional_leakage_groups": 1,
+  "train_dev_test_split_created": false,
+  "all_rows_exposed_for_inspection": true,
+  "final_test_eligible": false,
+  "asr_inference_executed": false,
+  "training_executed": false,
+  "wer": null,
+  "nlp_f1": null,
+  "project_quality_gate": "NEEDS_MORE_DATA",
+  "release_gate": "BLOCKED",
+  "candidate_promoted": false,
+  "private_index_sha256": "d245b5ee49095755bed25ccdd89d0d259128fd919c44a98325ec35f43ef3500a"
+}

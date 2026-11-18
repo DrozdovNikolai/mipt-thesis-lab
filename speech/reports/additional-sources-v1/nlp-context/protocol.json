@@ -1,0 +1,18 @@
+{
+  "created_at": "2026-09-14T06:43:18.289542+00:00",
+  "script_sha256": "4231f8a855925ca0f8a6facec9a75d823e09ba923cef2ece6a124b75a2a9294d",
+  "base_experiment_script_sha256": "8523a245dd8a5f16be90d712260344e422642627c4d07430178cd180be041628",
+  "C": [
+    0.25,
+    1.0,
+    4.0
+  ],
+  "threshold": 0.5,
+  "additional_trials": 3,
+  "cumulative_candidate_trials": 12,
+  "rule_baselines": 2,
+  "maximum_total_configurations": 16,
+  "context": "previous admitted turn only when consecutive raw turn number in same case; no future text",
+  "test_accessed": false,
+  "label": "source_native_safety_voice"
+}

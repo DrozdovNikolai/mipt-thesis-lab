@@ -1,0 +1,92 @@
+{
+  "status": "EXECUTED_DIAGNOSTIC",
+  "script_sha256": "0551876260215ea4227979bf241f326b4b7dce842fdc405bf93316f631cbf470",
+  "plan_sha256": "59355e6fd59e0ef31c3a0e8558ee48c618ee1e87e2a742235763b9c67f1f8cd8",
+  "inputs": 275,
+  "error_changes": {
+    "better": 61,
+    "same": 200,
+    "worse": 14
+  },
+  "lexical": {
+    "parent_on": {
+      "S": 344,
+      "D": 31,
+      "I": 235,
+      "N": 967,
+      "H": 592,
+      "character_errors": 1814,
+      "reference_characters": 5374,
+      "wer_lexical_corpus": 0.6308169596690796,
+      "cer": 0.33755117231112763
+    },
+    "nus_on": {
+      "S": 299,
+      "D": 25,
+      "I": 174,
+      "N": 967,
+      "H": 643,
+      "character_errors": 1450,
+      "reference_characters": 5374,
+      "wer_lexical_corpus": 0.5149948293691831,
+      "cer": 0.2698176404912542
+    }
+  },
+  "secondary_canonical_not_primary_WER": {
+    "parent_on": {
+      "S": 336,
+      "D": 30,
+      "I": 232,
+      "N": 966,
+      "H": 600,
+      "character_errors": 1738,
+      "reference_characters": 5358,
+      "wer_lexical_corpus": 0.6190476190476191,
+      "cer": 0.324374766703994
+    },
+    "nus_on": {
+      "S": 291,
+      "D": 24,
+      "I": 172,
+      "N": 966,
+      "H": 651,
+      "character_errors": 1382,
+      "reference_characters": 5358,
+      "wer_lexical_corpus": 0.5041407867494824,
+      "cer": 0.25793206420306086
+    }
+  },
+  "zero_error_clips": {
+    "parent_on": 89,
+    "nus_on": 116
+  },
+  "decode_call_distribution": {
+    "parent_on": {
+      "1": 274,
+      "2": 1
+    },
+    "nus_on": {
+      "1": 275
+    }
+  },
+  "vad": {
+    "config": {
+      "enabled": true,
+      "threshold": 0.4,
+      "min_speech_duration_ms": 50,
+      "min_silence_duration_ms": 400,
+      "speech_pad_ms": 0,
+      "max_speech_duration_s": 30.0
+    },
+    "zero_detected_speech": [],
+    "meaning": "Model screening only; VAD absence is not proof of absent speech. No exclusions."
+  },
+  "zero_signal": [],
+  "audio_scope_verified": false,
+  "references_changed": false,
+  "pairs_excluded": 0,
+  "new_ASR_calls": 0,
+  "quality_evidence": false,
+  "release_promoted": false,
+  "details_sha256": "f872d533bf48b8ff8cde00b2a5a405bd0d54a09784b2ef7e2bc34dabc08c37c7"
+}

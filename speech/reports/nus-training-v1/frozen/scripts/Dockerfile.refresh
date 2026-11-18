@@ -1,0 +1,14 @@
+# Optional source refresh after a successful full build. Refuse dependency drift.
+ARG BASE_IMAGE=north55-speech:0.1.0
+FROM ${BASE_IMAGE}
+USER root
+COPY pyproject.toml uv.lock /tmp/north55-contract/
+RUN cmp /tmp/north55-contract/pyproject.toml /app/pyproject.toml && cmp /tmp/north55-contract/uv.lock /app/uv.lock
+COPY src /app/src
+COPY configs /app/configs
+COPY tests /app/tests
+COPY migrations /app/migrations
+COPY scripts /app/scripts
+COPY alembic.ini ACCEPTANCE.yaml SPEC.md SOURCES.md /app/
+RUN chown -R app:app /app
+USER 10001:10001

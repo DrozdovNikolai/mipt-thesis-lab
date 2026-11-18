@@ -1,0 +1,71 @@
+{
+  "container": "/north55-aviation-v1-inference",
+  "image": "north55-speech-gpu:0.1.0",
+  "image_id": "sha256:b5d7218f10baaa6b4bda2ac5da03462d4029f6249f2a93168e4352c47ebb2285",
+  "network": "none",
+  "devices": [
+    {
+      "Driver": "nvidia",
+      "Count": 0,
+      "DeviceIDs": [
+        "0"
+      ],
+      "Capabilities": [
+        [
+          "gpu"
+        ]
+      ],
+      "Options": null
+    }
+  ],
+  "environment": [
+    "CUDA_VISIBLE_DEVICES=0",
+    "PYTHONPATH=/code/src:/code",
+    "HF_HUB_OFFLINE=1",
+    "TRANSFORMERS_OFFLINE=1"
+  ],
+  "mounts": [
+    {
+      "Source": "/var/lib/docker/volumes/north55-speech_model_cache/_data",
+      "Destination": "/models",
+      "RW": false
+    },
+    {
+      "Source": "/run/desktop/mnt/host/c/DEV/MIPT/Diploma/Speech/reports/aviation-v1/inference",
+      "Destination": "/study",
+      "RW": false
+    },
+    {
+      "Source": "/run/desktop/mnt/host/c/DEV/MIPT/Diploma/Speech/data/curated/aviation-v1/audio",
+      "Destination": "/new-audio",
+      "RW": false
+    },
+    {
+      "Source": "/run/desktop/mnt/host/c/DEV/MIPT/Diploma/Speech/reports/aviation-v1/predictions",
+      "Destination": "/predictions",
+      "RW": true
+    },
+    {
+      "Source": "/run/desktop/mnt/host/c/DEV/MIPT/Diploma/Speech/reports/aviation-v1/frozen/src",
+      "Destination": "/code/src",
+      "RW": false
+    },
+    {
+      "Source": "C:\\DEV\\MIPT\\Diploma\\Speech\\reports\\aviation-v1\\frozen\\scripts",
+      "Destination": "/code/scripts",
+      "RW": false
+    },
+    {
+      "Source": "/var/lib/docker/volumes/north55-speech_audio_data/_data",
+      "Destination": "/audio",
+      "RW": false
+    }
+  ],
+  "primary_reference_paths_mounted": false,
+  "legacy_audio_volume_mounted": true,
+  "command": [
+    "-u",
+    "-c",
+    "from scripts.aviation_experiment import infer; infer(\"small\"); infer(\"medium\"); infer(\"atc\")"
+  ]
+}

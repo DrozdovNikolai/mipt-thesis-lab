@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0",
+  "source_plan_sha256": "8de86e53847fd47a2e64e51c610792adbc0f4dc70fc2317827ff47b933170af6",
+  "metrics_sha256": "fc6295ec671a4c42c8a901ccfd602b1da0040343486470eae40269526af0dccd",
+  "default": {
+    "schema_version": "1.0",
+    "name": "aviation_atc_v1",
+    "model": "whisper-medium-en-atc-jacktol-ct2",
+    "compute_type": "float16",
+    "device": "cuda",
+    "task": "transcribe",
+    "beam_size": 5,
+    "temperature": 0.0,
+    "best_of": 5,
+    "patience": 1.0,
+    "length_penalty": 1.0,
+    "repetition_penalty": 1.0,
+    "no_repeat_ngram_size": 0,
+    "condition_on_previous_text": true,
+    "compression_ratio_threshold": 2.4,
+    "log_prob_threshold": -1.0,
+    "no_speech_threshold": 0.6,
+    "suppress_blank": true,
+    "suppress_tokens": [
+      -1
+    ],
+    "max_initial_timestamp": 1.0,
+    "word_timestamps": true,
+    "language_detection_threshold": 0.5,
+    "language_detection_segments": 1,
+    "vad": {
+      "enabled": true,
+      "mode": "gate",
+      "threshold": 0.5,
+      "min_speech_duration_ms": 100,
+      "min_silence_duration_ms": 400,
+      "speech_pad_ms": 200,
+      "max_speech_duration_s": 30.0
+    },
+    "denoise": {
+      "enabled": false,
+      "strength": 0.5,
+      "floor": 0.3,
+      "noise_percentile": 10.0
+    },
+    "hotwords": null,
+    "glossary_version": null,
+    "redecode": false,
+    "max_redecode_passes": 1,
+    "redecode_logprob_threshold": -0.8,
+    "episode_gap_sec": 2.0,
+    "episode_max_sec": 30.0,
+    "episode_max_tokens": 100,
+    "classifier": "rules_v1",
+    "classifier_artifact": null
+  },
+  "by_language": {
+    "en": {
+      "schema_version": "1.0",
+      "name": "aviation_atc_v1",
+      "model": "whisper-medium-en-atc-jacktol-ct2",
+      "compute_type": "float16",
+      "device": "cuda",
+      "task": "transcribe",
+      "beam_size": 5,
+      "temperature": 0.0,
+      "best_of": 5,
+      "patience": 1.0,
+      "length_penalty": 1.0,
+      "repetition_penalty": 1.0,
+      "no_repeat_ngram_size": 0,
+      "condition_on_previous_text": true,
+      "compression_ratio_threshold": 2.4,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        -1
+      ],
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "language_detection_threshold": 0.5,
+      "language_detection_segments": 1,
+      "vad": {
+        "enabled": true,
+        "mode": "gate",
+        "threshold": 0.5,
+        "min_speech_duration_ms": 100,
+        "min_silence_duration_ms": 400,
+        "speech_pad_ms": 200,
+        "max_speech_duration_s": 30.0
+      },
+      "denoise": {
+        "enabled": false,
+        "strength": 0.5,
+        "floor": 0.3,
+        "noise_percentile": 10.0
+      },
+      "hotwords": null,
+      "glossary_version": null,
+      "redecode": false,
+      "max_redecode_passes": 1,
+      "redecode_logprob_threshold": -0.8,
+      "episode_gap_sec": 2.0,
+      "episode_max_sec": 30.0,
+      "episode_max_tokens": 100,
+      "classifier": "rules_v1",
+      "classifier_artifact": null
+    }
+  },
+  "allowed_languages": [
+    "en"
+  ],
+  "profile": "aviation_atc_en",
+  "model_manifest_digests": {
+    "whisper-medium-en-atc-jacktol-ct2": "52ca88ead4e89c6b17d67fe562b25b58763cd59c8fda654fb2c0762a87a5bbea"
+  },
+  "evaluation_scope": {
+    "en": "ATCOSIM simulated controller English",
+    "full_spec_gate": "NEEDS_MORE_DATA",
+    "cockpit_and_general": "separate regression results; not default routes"
+  }
+}

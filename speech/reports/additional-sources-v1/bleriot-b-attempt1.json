@@ -1,0 +1,7 @@
+{
+  "status": "EXTRACTION_REPORT_ERROR",
+  "error": "Path.relative_to received an absolute extracted path and relative destination; first archive extracted but report not saved.",
+  "downloads_verified": true,
+  "preserved_partial_directory": "data/input/bleriot/verified/b/IR_headset-mic",
+  "correction": "Resolve destination before extraction and report paths. Keep the prior output, use fresh verified/b-v1 directory; reuse checksum-verified downloads."
+}

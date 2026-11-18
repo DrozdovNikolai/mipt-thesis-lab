@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-09-14T16:22:27.378924+00:00",
+  "reason": "Original exact comparison recomputed GPU-saved FP32 merge on CPU. CPU differed by <=1.4901161193847656e-08; CUDA FP32 reconstruction matches all 72 adapted tensors exactly. Repeat merge on original device without changing the equality requirement.",
+  "original_plan_sha256": "a701e0048bdc5aa9608ae133a5027462917a723a10fa6ad2917c972a64b936be",
+  "files": {
+    "audit_nus_training_contract.py": "abaa0b06de6e5d2509ee2e8f1abd00e53efcdd1b0b8aa41791462523e7cb6759",
+    "plan.json": "9bece47a4984b5a4446c7dc02345a02007c107ed1dfcf718b93a3033f16b856b"
+  },
+  "roundoff_script_sha256": "f6050d61e0e21ada5429257ad4fa3e1d703abc6c6b3f6f86487b58e6f723aead",
+  "roundoff_evidence_sha256": "d280d2e5929324f03d2cd1816f83040bd4973557b450ec6c4adc4d94037cfe78",
+  "weights_changed": false,
+  "thresholds_changed": false,
+  "inference_script_changed": false,
+  "prior_failure_preserved": true
+}

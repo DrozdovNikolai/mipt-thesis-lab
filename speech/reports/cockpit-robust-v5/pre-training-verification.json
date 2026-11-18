@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "speech_presentations_each": 960,
+  "augmented_presentations_each_balanced_arm": 420,
+  "unique_train_random_seeds": 660,
+  "evaluation_random_seeds": 100,
+  "seed_intersection": 0,
+  "train_unique_parents": 247,
+  "code_tests": {
+    "passed": 19,
+    "seconds": 5.06
+  },
+  "ruff": "PASS"
+}

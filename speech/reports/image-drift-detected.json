@@ -1,0 +1,19 @@
+{
+  "status": "BLOCKED",
+  "reasons": [
+    "require_offline_inference_after_prefetch"
+  ],
+  "checks": {
+    "require_valid_cpu_compose": "PASS",
+    "require_gpu_override_config_validation": "PASS",
+    "require_cpu_integration_execution": "PASS",
+    "require_real_asr_smoke_execution": "PASS",
+    "require_migrations_and_queue_recovery_tests": "PASS",
+    "require_review_audit_and_original_audio_preservation": "PASS",
+    "require_privacy_and_unsafe_correction_tests": "PASS",
+    "require_offline_inference_after_prefetch": "BLOCKED"
+  },
+  "code_hash": "6ff7d096e4dff693ad7ccfc0c3d05e9375e61779f92cc6375c76e5ec8de97571",
+  "test_cases": 78,
+  "integration_cases": 9
+}

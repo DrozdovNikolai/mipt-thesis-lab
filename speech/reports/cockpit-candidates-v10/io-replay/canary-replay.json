@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "new_GPU_ASR_calls": 2,
+  "plan_sha256": "3412cf06a3916ca5f6be201a273d00865c477d9748e0e00c7c22ba52db9a310f",
+  "selection": "first English input and longest English input in frozen manifest",
+  "cases": [
+    {
+      "id": "1272-128104-0007",
+      "duration_sec": 9.24,
+      "text_and_token_ids_exact": true
+    },
+    {
+      "id": "bnoise-TBM940_E3_Pil-MeasMic-ch1",
+      "duration_sec": 28.5239375,
+      "text_and_token_ids_exact": true
+    }
+  ],
+  "code_sha256": "1bcaacd772b96b0cf00d69be3677ce0176585203b276ce93cecb2a6e9ff75a8d"
+}

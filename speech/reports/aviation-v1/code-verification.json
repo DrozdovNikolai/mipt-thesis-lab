@@ -1,0 +1,13 @@
+{
+  "unit_contract_suite": {
+    "command": "docker compose -f compose.improvement.yaml run --rm checks -q -p no:cacheprovider -m 'not integration and not real_asr' tests",
+    "passed": 450,
+    "seconds": 34.55,
+    "warnings": 8,
+    "deselected": 9
+  },
+  "ruff": "PASS",
+  "mypy": "PASS: gates.py and local_transcription.py",
+  "new_direct_tests": 10,
+  "recorded_at": "2026-09-14T22:50:38.2294421+03:00"
+}

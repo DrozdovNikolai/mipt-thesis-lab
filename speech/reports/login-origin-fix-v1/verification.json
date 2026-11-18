@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "checks": {
+    "reproduced_browser_null_origin_403": true,
+    "browser_same_origin_login_303_after": true,
+    "live_services_correct_policy": true,
+    "248_tests_pass": true,
+    "live_annotation_read_only_pass": true,
+    "ruff_mypy_pass": true
+  },
+  "tests": 248,
+  "integration_tests": 9,
+  "live_headers": {
+    "8000": {
+      "status": 200,
+      "referrer_policy": "same-origin",
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self'; media-src 'self'; frame-ancestors 'none'; form-action 'self'"
+    },
+    "8010": {
+      "status": 200,
+      "referrer_policy": "same-origin",
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self'; media-src 'self'; frame-ancestors 'none'; form-action 'self'"
+    }
+  },
+  "browser": "Codex in-app browser; isolated synthetic fixture, real native form submit",
+  "annotation_writes": 0,
+  "origins_still_rejected": [
+    "null",
+    "foreign_site",
+    "different_port",
+    "different_scheme"
+  ],
+  "images": {
+    "before": "sha256:fab68437b0489603780e05a1a84773dc7f11cddf271852e5636b3da1b9fdc2a5",
+    "after": "sha256:c8cd23b37ba06b2be11de789298bbed59c1b257f867ca11b3efd34b5176b5cd1",
+    "preserved_before_tag": "north55-speech:before-login-fix-v1",
+    "deployed_after_tag": "north55-speech:0.1.0"
+  },
+  "source_sha256": {
+    "scripts/review_dataset.py": "2a9740d83db731a72d9fc06a4a54a898625818b9becd47a668efca86825cfbbf",
+    "src/north55_speech/api.py": "a319f23b78063e6d93b469902bc64a63267e1b78c9ab87ae9402a2d79b753a72",
+    "tests/test_annotation_sidecar.py": "7a4e94f9401ad94fa6e9de68b28b93a7df322b599672cedec4f417bd73ed46fe",
+    "tests/integration/test_service.py": "0b94978db7ea44b4c0fdae35b35f8b352876339e4ff22d69be9160adaa4a5dc1"
+  },
+  "ml_experiments_rerun": false
+}

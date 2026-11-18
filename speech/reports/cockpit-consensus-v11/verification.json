@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "plan_sha256": "2326ef45fb73bd19b3e44d9ae1a3670c4688adfedd7b0b4527411b7b13fc6499",
+  "decisions_replayed": 541,
+  "independent_edit_totals": 3246,
+  "base_counts_match_v10": true,
+  "new_ASR_calls": 0
+}

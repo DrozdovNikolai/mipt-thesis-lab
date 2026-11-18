@@ -1,0 +1,16 @@
+CLIMB CHECKS
+1. Altimeter... Set
+2. ANTIICE uu... eee AS required
+3. HEAT PROP BLADES.......As required
+4. Air conditioning.................As required
+5. RPM, PCL... eee AS required
+6. TORQUE, NG, ITT.............Monitor
+CRUISE CHECKS
+1. Engine instruments............Check
+2. OXYGEN... eeeeeeseeee Check, set as required
+3. Fuel balance......................Check
+4. External fuel.......................Check transfer as
+required
+AEROBATICS
+1. BOOST PUMPS.................ON
+2. No loose items in the cockpit

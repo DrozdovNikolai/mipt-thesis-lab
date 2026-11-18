@@ -1,0 +1,1754 @@
+[
+  {
+    "id": "1adcaf07144ecec26885317491eaaf89",
+    "file": "1adcaf07144ecec26885317491eaaf89.wav",
+    "audio_sha256": "86fb1585b9d8f3b19ebdd133506013ac284720f38df2b7ffb065f4896379afcc",
+    "duration_sec": 10.0,
+    "origin": "human_cockpit",
+    "language": "en"
+  },
+  {
+    "id": "a451a40719957efeda4921760e503b0e",
+    "file": "a451a40719957efeda4921760e503b0e.wav",
+    "audio_sha256": "2cfc566bfbdcc5dcd8b3a2330c5e2019dffdb5cbd7e7f695df4c2f25c906397d",
+    "duration_sec": 10.0,
+    "origin": "human_cockpit",
+    "language": "en"
+  },
+  {
+    "id": "730375ae3bced1cca710c5d411207a62",
+    "file": "730375ae3bced1cca710c5d411207a62.wav",
+    "audio_sha256": "6349a8c0e9619a91d1c505c09b86dae90d8834dfd5ed67aae9231fad9ae247fe",
+    "duration_sec": 10.0,
+    "origin": "human_cockpit",
+    "language": "en"
+  },
+  {
+    "id": "b62884d2c8624983768c9d9376ac7299",
+    "file": "b62884d2c8624983768c9d9376ac7299.wav",
+    "audio_sha256": "48c4e49f05f69441c637a31c0c783fa4e21e651f01923de57490648d7e92ab50",
+    "duration_sec": 10.0,
+    "origin": "human_cockpit",
+    "language": "en"
+  },
+  {
+    "id": "0193ef559a1d007c98c708be9ec060cb",
+    "file": "0193ef559a1d007c98c708be9ec060cb.wav",
+    "audio_sha256": "d0ab1f27d4c4ba9924b625ec4a0a8b0a23280a1e973a55854b516e67faf8e830",
+    "duration_sec": 10.0,
+    "origin": "human_cockpit",
+    "language": "en"
+  },
+  {
+    "id": "455c47ed8f2e3568db981b8a35a07a8d",
+    "file": "455c47ed8f2e3568db981b8a35a07a8d.wav",
+    "audio_sha256": "cb8c24d4e34c3d3ecad9729b56207649686636f2cd322144ad5b222b01da6147",
+    "duration_sec": 10.0,
+    "origin": "human_cockpit",
+    "language": "en"
+  },
+  {
+    "id": "809afd7909b97310c9a68a832daaa70a",
+    "file": "809afd7909b97310c9a68a832daaa70a.wav",
+    "audio_sha256": "db9c54bd33ae1a7e67f2a996d873a670bc96b70e4dc20de49ca1566d8cfb3c37",
+    "duration_sec": 10.0,
+    "origin": "human_cockpit",
+    "language": "en"
+  },
+  {
+    "id": "fd53a0010c36d64598d50b5dc2d03144",
+    "file": "fd53a0010c36d64598d50b5dc2d03144.wav",
+    "audio_sha256": "f3cc4c2e0e97394dd7defa0bc20073e89052572970bd5560cbe067e21b0390dd",
+    "duration_sec": 10.0,
+    "origin": "human_cockpit",
+    "language": "en"
+  },
+  {
+    "id": "86862d0a0f2c38424c749538ad898b97",
+    "file": "86862d0a0f2c38424c749538ad898b97.wav",
+    "audio_sha256": "bc36f8fb1da9306ed75ae6eed8470e5e39dcd6e7501220e76433ae3865996b8f",
+    "duration_sec": 10.0,
+    "origin": "human_cockpit",
+    "language": "en"
+  },
+  {
+    "id": "c0d20c6d6cd4148dd97691452603a4d7",
+    "file": "c0d20c6d6cd4148dd97691452603a4d7.wav",
+    "audio_sha256": "4a7eee612cbd01ca8c21db4300c2218a90f777ebe1a243b415b46f504be19ba1",
+    "duration_sec": 10.0,
+    "origin": "human_cockpit",
+    "language": "en"
+  },
+  {
+    "id": "3868827f982828ab2d37b1e405894ca1",
+    "file": "3868827f982828ab2d37b1e405894ca1.wav",
+    "audio_sha256": "980c8ac70519b4f51694684ffb83c88502c5ec4d8d33fbb8ba6f86abf2fafb65",
+    "duration_sec": 10.0,
+    "origin": "human_cockpit",
+    "language": "en"
+  },
+  {
+    "id": "2bfec39502ca469c1f1c18d0a408ba45",
+    "file": "2bfec39502ca469c1f1c18d0a408ba45.wav",
+    "audio_sha256": "b898f6eb1d339008c17ee824335999390906ac143695ec91205be1500fe5f8d4",
+    "duration_sec": 10.0,
+    "origin": "human_cockpit",
+    "language": "en"
+  },
+  {
+    "id": "c1acffbf5c2957b10e31fcbe49335ebe",
+    "file": "c1acffbf5c2957b10e31fcbe49335ebe.wav",
+    "audio_sha256": "54079049414b6d066a9ba6c5d62f068b67b5302afc54175d06b68ca4ca15ad2e",
+    "duration_sec": 10.0,
+    "origin": "human_cockpit",
+    "language": "en"
+  },
+  {
+    "id": "abecc5e274cf54252c289305a111513a",
+    "file": "abecc5e274cf54252c289305a111513a.wav",
+    "audio_sha256": "fed0c72737e8c84abb85e5b12bc8920210e68eb1b2d7b1b949edcda4af151c8c",
+    "duration_sec": 10.0,
+    "origin": "human_cockpit",
+    "language": "en"
+  },
+  {
+    "id": "af438f5fce37f5644b554eb9c3ef3e42",
+    "file": "af438f5fce37f5644b554eb9c3ef3e42.wav",
+    "audio_sha256": "24dc10d0cd92041f080ca7ef32f0af5a361642e74bcf23e475a7144b3777ce37",
+    "duration_sec": 10.0,
+    "origin": "human_cockpit",
+    "language": "en"
+  },
+  {
+    "id": "7dcbef2bb6ef1150d862ab1e596d7c89",
+    "file": "7dcbef2bb6ef1150d862ab1e596d7c89.wav",
+    "audio_sha256": "46bcbc14ca3a4d1eb312642b20c135bd64d895a0dbaaefc1d7d6248d50b132a5",
+    "duration_sec": 10.0,
+    "origin": "human_cockpit",
+    "language": "en"
+  },
+  {
+    "id": "485a9ac8d9cda4753572bf4839fde0e0",
+    "file": "clips/485a9ac8d9cda4753572bf4839fde0e0.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "11a462d03d78752c6c0fa4bd34c61e4f41373d576c23fdc6e7552b7a41d9e7ee",
+    "duration_sec": 13.388
+  },
+  {
+    "id": "ce98e80bb3422db038808e9cd06b0571",
+    "file": "clips/ce98e80bb3422db038808e9cd06b0571.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "918d8068cd5a6ed617b60e6d972bebb1d45dd1c321ae359c298610cd6854549c",
+    "duration_sec": 2.732
+  },
+  {
+    "id": "21efb5a8c9f72a0be7560f5c2a3c60c5",
+    "file": "clips/21efb5a8c9f72a0be7560f5c2a3c60c5.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "24edf02834876ab36d8eb252aa189e860a8ccaac8b6ceaf1f5ca5cdd8e35c310",
+    "duration_sec": 20.956
+  },
+  {
+    "id": "844362ad405cacb93b85464c5a898eca",
+    "file": "clips/844362ad405cacb93b85464c5a898eca.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "200c478a9afca93cd20605d2b71a15c5a008127315986d491c68e5911f8c4bfe",
+    "duration_sec": 14.648
+  },
+  {
+    "id": "7225c6b219a3e3f72538a4eb612a103b",
+    "file": "clips/7225c6b219a3e3f72538a4eb612a103b.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "b611fa89640913ab98387a29cddbe3266db8f1d0fac1f82250924a862c2c6f1e",
+    "duration_sec": 16.476
+  },
+  {
+    "id": "d3278025f4d0dd7d64bff68a48f76146",
+    "file": "clips/d3278025f4d0dd7d64bff68a48f76146.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "8db40318cf47c69b87645c1c2928b36db9c07c3dd98d36275bb071291a8c6c98",
+    "duration_sec": 11.992
+  },
+  {
+    "id": "d4ef8af7a9f3a8f10c366ccca4eb8617",
+    "file": "clips/d4ef8af7a9f3a8f10c366ccca4eb8617.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "14e5f937b4349c8568a9f419d69bc18bd0dd61c5a6425465e6a34733d6335133",
+    "duration_sec": 14.424
+  },
+  {
+    "id": "cc4920a9f64e99eab21306f30fb50150",
+    "file": "clips/cc4920a9f64e99eab21306f30fb50150.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "a7096960742fcee22ffef54d0b714fa6e2372c8e6452bed142db721b5031c473",
+    "duration_sec": 11.096
+  },
+  {
+    "id": "499419b3943757714d080d2c73334e44",
+    "file": "clips/499419b3943757714d080d2c73334e44.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "08deb52e70e41c47c81d9d220be420c281c814767540457ca17917c3aa401665",
+    "duration_sec": 2.296
+  },
+  {
+    "id": "a850cebf4430fcb3a808e7c4cf579b69",
+    "file": "clips/a850cebf4430fcb3a808e7c4cf579b69.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "827e7965de53465f5052eb0610cdda83db703218e3ef6bdfc1f10dc58b33ebc6",
+    "duration_sec": 8.312
+  },
+  {
+    "id": "9d4c1ced2983c7f11111b0406fbdcb7c",
+    "file": "clips/9d4c1ced2983c7f11111b0406fbdcb7c.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "c811d1fac5b2add7cd17b82d026364435e83537e6e673a80b688cfd49a1d4720",
+    "duration_sec": 2.904
+  },
+  {
+    "id": "f52ab1617f7de05a0ad6e829fd557cf4",
+    "file": "clips/f52ab1617f7de05a0ad6e829fd557cf4.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "ead5c9595562f72d23cb46c9ac2e9ec4583e6543bd3dee0430956ef8166445d5",
+    "duration_sec": 8.728
+  },
+  {
+    "id": "b257d27cf01672ade59c31265df5e045",
+    "file": "clips/b257d27cf01672ade59c31265df5e045.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "415bf86b66995954669fbf1affcf527f0ded090f24d21162c7f267f0a0c2640a",
+    "duration_sec": 11.608
+  },
+  {
+    "id": "d501c7be8fdbdb22d89cad609a8e2ffb",
+    "file": "clips/d501c7be8fdbdb22d89cad609a8e2ffb.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "0e141083793207671c44ac939acce795e0d2b1b445d1ddf3cf7fc49a9612ecfa",
+    "duration_sec": 17.272
+  },
+  {
+    "id": "6551ff99269cfe1cdeaad0c49ae43cf5",
+    "file": "clips/6551ff99269cfe1cdeaad0c49ae43cf5.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "1175aeabe99cfe6b380c28cc2e6e17ddcad1d0b2e621ff2e4bd528f067742902",
+    "duration_sec": 12.664
+  },
+  {
+    "id": "4ae9cb4fd630415cef09c2899fb09fa8",
+    "file": "clips/4ae9cb4fd630415cef09c2899fb09fa8.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "a53d923736ac65ac153cf87ad3d870e36fb7b69f4625c9364e7627b90efc4998",
+    "duration_sec": 14.008
+  },
+  {
+    "id": "288c23c900e24b1a5c6776ec3a93018d",
+    "file": "clips/288c23c900e24b1a5c6776ec3a93018d.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "06ea227f21e6cf57338150b4808061d829ff88f07b76d92f3320593fc70806fe",
+    "duration_sec": 18.764
+  },
+  {
+    "id": "118f276d352dd0cae48fe92c9110d117",
+    "file": "clips/118f276d352dd0cae48fe92c9110d117.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "894ab39b4685430c8c20aef6a3945035140201671ad8cd56403dafae56f83710",
+    "duration_sec": 9.816
+  },
+  {
+    "id": "85e334dba6868e7b7652b13723ad712b",
+    "file": "clips/85e334dba6868e7b7652b13723ad712b.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "28b85da1e5655744895ff509fc0660805eb1ba02e388557993178968d875b22e",
+    "duration_sec": 19.088
+  },
+  {
+    "id": "cc03e457ff6d48ff2fa41e4044adb72b",
+    "file": "clips/cc03e457ff6d48ff2fa41e4044adb72b.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "e9c5349801515f7273763a1ac52f1cb195abbad3a5e50cf2f1b62caf0c15baad",
+    "duration_sec": 13.048
+  },
+  {
+    "id": "1dbb269a071e22fdb03782ea8f6095c9",
+    "file": "clips/1dbb269a071e22fdb03782ea8f6095c9.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "0b90472f1af74aee06cd44b9cee6f4e7d514659c6e8a310d15cdae476cf98de2",
+    "duration_sec": 3.228
+  },
+  {
+    "id": "05de329cc3a9072ddeb6309de09bbdcc",
+    "file": "clips/05de329cc3a9072ddeb6309de09bbdcc.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "fe9d6932408372f6a13c03d465a9f0ac1202dd3a7946a2bce9f1a836f115d14d",
+    "duration_sec": 2.36
+  },
+  {
+    "id": "c6734553a4d2d707cb8fc99ddb41a492",
+    "file": "clips/c6734553a4d2d707cb8fc99ddb41a492.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "b7b15f87c4926468e91682dab9c5b7767be2ffcd0e30fb08d998d60d5702bd9e",
+    "duration_sec": 2.584
+  },
+  {
+    "id": "aa123addf5a23c8184a6905f99065008",
+    "file": "clips/aa123addf5a23c8184a6905f99065008.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "d8948ba4e27189f61ce38e9c1a0e1da0cde638bb629224f7a265f53608253a35",
+    "duration_sec": 8.056
+  },
+  {
+    "id": "387ebb3930ea65ba10a2f9fc5a7f9619",
+    "file": "clips/387ebb3930ea65ba10a2f9fc5a7f9619.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "ac5470b02d82b450cd91bab5e993f6ee55d1e2a77eb3a79684cff6dfc1b5f6a7",
+    "duration_sec": 2.456
+  },
+  {
+    "id": "c8ead4a3431e04a890e43b3b233c59d4",
+    "file": "clips/c8ead4a3431e04a890e43b3b233c59d4.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "6c4842cb92364bc4a666b12219bd6972179916c9a41c74d11b70d79a7ebc6c60",
+    "duration_sec": 15.512
+  },
+  {
+    "id": "18260cca09e76789bb73dfe20d2c1579",
+    "file": "clips/18260cca09e76789bb73dfe20d2c1579.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "93349ebb06b5ed2c752e06d37a39c87e143b1c978a88275a0b1411f0c8ce1d5e",
+    "duration_sec": 1.592
+  },
+  {
+    "id": "651855df249b7ba0648f5213e6050a1d",
+    "file": "clips/651855df249b7ba0648f5213e6050a1d.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "c9f977ff71da18e0f18d98f4dff9ca8edc54ed9bf2711f24b6baaa0c38224f90",
+    "duration_sec": 5.464
+  },
+  {
+    "id": "f1f34636320a9ca742a2fcc7740afa50",
+    "file": "clips/f1f34636320a9ca742a2fcc7740afa50.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "7a9c6882a9e83f1707392c99bac51bedc57e81eae9904da479398cb415e78605",
+    "duration_sec": 8.824
+  },
+  {
+    "id": "984e2f7c50a05f3b1b6dda4fffaad2f1",
+    "file": "clips/984e2f7c50a05f3b1b6dda4fffaad2f1.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "974996401a679ddf3c15317bc1119e5194e3ee1c0f06d054f70c6351c6b6fd43",
+    "duration_sec": 0.888
+  },
+  {
+    "id": "7bd643ea7d6a4a1efeb630a8c2a199d9",
+    "file": "clips/7bd643ea7d6a4a1efeb630a8c2a199d9.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "6afb751d44682c170832cd0f2e485d470740864b14630eec42370586f323c9b4",
+    "duration_sec": 10.52
+  },
+  {
+    "id": "3843a31d24887f91fc1e53aed6d9127b",
+    "file": "clips/3843a31d24887f91fc1e53aed6d9127b.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "3c494191a7f5bd998b86863b9e47275c5892347099b2014006db2959cb425c51",
+    "duration_sec": 6.776
+  },
+  {
+    "id": "d387f3f3ec5974ef794a85c49514e3e3",
+    "file": "clips/d387f3f3ec5974ef794a85c49514e3e3.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "366917bb13d665c41fe3dc70fc255c31a27f15f29ae879b8605b6dd47c3411f7",
+    "duration_sec": 8.472
+  },
+  {
+    "id": "65852a81543b839ce61e7600308f19f5",
+    "file": "clips/65852a81543b839ce61e7600308f19f5.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "547d5b8a018cf496359eee29a635a1d2f004c8c7b2a84b0da3306748c6f10cc8",
+    "duration_sec": 1.112
+  },
+  {
+    "id": "9cea0d261d345461dc4470e5d36daeb6",
+    "file": "clips/9cea0d261d345461dc4470e5d36daeb6.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "4d031fe9da7a166cdc6a63c51818b3c78917f645267cc5bcc28d7abda4a51915",
+    "duration_sec": 7.096
+  },
+  {
+    "id": "7578b6cd064af0792e5f22d964a86ff3",
+    "file": "clips/7578b6cd064af0792e5f22d964a86ff3.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "20dd8fc99f494364d85c5ae8f0a88edf9048f7598ca92160d81c7a7d41da6e5a",
+    "duration_sec": 1.048
+  },
+  {
+    "id": "e6adb8e7bc6ed206dd642b5a4846b2dd",
+    "file": "clips/e6adb8e7bc6ed206dd642b5a4846b2dd.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "a876a79c050cbe15dc86ff9e9ba847e6a45d3a1380690d9d580d22d9d086fc9d",
+    "duration_sec": 12.408
+  },
+  {
+    "id": "0d0e23968a2160690fa3fad8c1515f03",
+    "file": "clips/0d0e23968a2160690fa3fad8c1515f03.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "f3df9094af678e82556d77899b15daecae66403e9241f8d4ccc1f12b0fbffc18",
+    "duration_sec": 14.936
+  },
+  {
+    "id": "02f311ee95c0686ca01236053a4626e8",
+    "file": "clips/02f311ee95c0686ca01236053a4626e8.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "64a19b8e6302a74629740bfb25db38ce09d8d4d92155905be9f4b1a78ba8750f",
+    "duration_sec": 2.68
+  },
+  {
+    "id": "afdcbdbf3567849146ddf0b8d61ea2fc",
+    "file": "clips/afdcbdbf3567849146ddf0b8d61ea2fc.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "938cf428bb15067696782ddde6a08e07c8be35297cd3587f4cd973d821567d30",
+    "duration_sec": 14.648
+  },
+  {
+    "id": "6c6ea32a4a8a33a4c73c74a2eb9f4831",
+    "file": "clips/6c6ea32a4a8a33a4c73c74a2eb9f4831.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "1f049105139fb2e5aad2a6c7b4d804e16171cbed4bfbe3390420af7798da6324",
+    "duration_sec": 8.344
+  },
+  {
+    "id": "7c0ddb4b115a911079c27c3ed94024e1",
+    "file": "clips/7c0ddb4b115a911079c27c3ed94024e1.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "a0deb73ce1d023452b4a58263b2bf9f355cb101950271d7b53d81947f7b9a0db",
+    "duration_sec": 9.848
+  },
+  {
+    "id": "d372babb73795dbe0509190af9ac227e",
+    "file": "clips/d372babb73795dbe0509190af9ac227e.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "1f5310608b276b4ad49d6b8441c6380ba12f4e5653ad2a950e06306b20db230d",
+    "duration_sec": 4.12
+  },
+  {
+    "id": "997e6ad70fd307f135a0ee91032f9fb0",
+    "file": "clips/997e6ad70fd307f135a0ee91032f9fb0.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "749531d9e83826e1da86832750757c001ce948586346af95e3fc7178514fd468",
+    "duration_sec": 4.184
+  },
+  {
+    "id": "7bca763fd67beafc8f8ce35f54dfdeda",
+    "file": "clips/7bca763fd67beafc8f8ce35f54dfdeda.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "3c80149922329d240aead4940018e49ce503225d4b305a884539175be6c9579b",
+    "duration_sec": 1.72
+  },
+  {
+    "id": "236e31003ec9d1c0444bd193b2bdb790",
+    "file": "clips/236e31003ec9d1c0444bd193b2bdb790.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "6fd94de6c6c8e9ecba343276c73cd4dab3c29a6e085bebead5506628601d7271",
+    "duration_sec": 3.928
+  },
+  {
+    "id": "44fdcae4c937117cdc01f40eb4fbf86e",
+    "file": "clips/44fdcae4c937117cdc01f40eb4fbf86e.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "5698f6e25984406043dd0d18dfdee134d3a592f0dc7cf1bc4e28e70ab0f02248",
+    "duration_sec": 1.112
+  },
+  {
+    "id": "0adb8c78a283ecf7e7229e5c0d2f6b83",
+    "file": "clips/0adb8c78a283ecf7e7229e5c0d2f6b83.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "d01513e303a5c66582ec21917d0b831d0c578e78efac46e05f8a5ecfbff18a2e",
+    "duration_sec": 14.392
+  },
+  {
+    "id": "80e9fa92fe60fb1cdb55c81d9adde766",
+    "file": "clips/80e9fa92fe60fb1cdb55c81d9adde766.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "a943049d8e0674ee5811cbb8b8df8c40699949fa2862707be905ff567a67e91c",
+    "duration_sec": 7.384
+  },
+  {
+    "id": "e056b47be0634fcfd3ed4d8cd6b15ee6",
+    "file": "clips/e056b47be0634fcfd3ed4d8cd6b15ee6.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "da1bda21696257dc0037501b5b07f377f3ce48c33607488a47d1c472eb1e84fd",
+    "duration_sec": 8.888
+  },
+  {
+    "id": "f70da62de1a906b2dc756e8fa57f37e5",
+    "file": "clips/f70da62de1a906b2dc756e8fa57f37e5.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "6ee017d7454fe08e8ba1916afd86259a1c0aaeda73672e8ccbf516c9c7176a89",
+    "duration_sec": 2.936
+  },
+  {
+    "id": "6448199c4c510ea494a74bd666addab1",
+    "file": "clips/6448199c4c510ea494a74bd666addab1.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "c40a562c9888a34229b5f2ccb380ee8d28d3afb9b35e61f3272e599e69b111e2",
+    "duration_sec": 5.56
+  },
+  {
+    "id": "ec969c402756234fc191ce48ba2b60eb",
+    "file": "clips/ec969c402756234fc191ce48ba2b60eb.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "828d485df72a36719ac254ae041c3dfa1ee4195aa7bc8be7bd8193de82120ac8",
+    "duration_sec": 9.848
+  },
+  {
+    "id": "b15ed17a77c1f0b6bcc62598d1b939eb",
+    "file": "clips/b15ed17a77c1f0b6bcc62598d1b939eb.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "b8c139b7934d0f618df3dd31a88457dc8cda1d1a5660724894769915b124436a",
+    "duration_sec": 3.096
+  },
+  {
+    "id": "d2656953cf0be57af6c3ce034d6d2f52",
+    "file": "clips/d2656953cf0be57af6c3ce034d6d2f52.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "dec4b4d7fc0e119d59159adb740f1bd78ce2ae9683c2199228702f07ecc0b809",
+    "duration_sec": 13.496
+  },
+  {
+    "id": "74669ab4c1a513b0cfb7d6a34a77da64",
+    "file": "clips/74669ab4c1a513b0cfb7d6a34a77da64.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "e466c3cd7b4333aad61420c262dbb02a31d8b8dd33669a097dfff21dccd2e3a6",
+    "duration_sec": 12.888
+  },
+  {
+    "id": "9c9600cc16a9605b142790e85c46253a",
+    "file": "clips/9c9600cc16a9605b142790e85c46253a.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "ccd985464a6408adde3239a09124793a293c00f354f6baccd3e902ad2274d3c7",
+    "duration_sec": 10.296
+  },
+  {
+    "id": "f3b1d6eef5d3755e5715ec8a3ddbc0d5",
+    "file": "clips/f3b1d6eef5d3755e5715ec8a3ddbc0d5.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "58a0a6465f3d75bd55d67bd693ea3bae437eab8df23304c9ce41688e10364026",
+    "duration_sec": 6.328
+  },
+  {
+    "id": "c8e2a1e6bd81c28a21f04b9c7189fcb7",
+    "file": "clips/c8e2a1e6bd81c28a21f04b9c7189fcb7.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "8a2c4a428fdacceef911e16391b5e4eab7761cfc49d1a84b2ee6ab0ed119af2a",
+    "duration_sec": 6.872
+  },
+  {
+    "id": "bb7b27fb4b0380e9ce3ea0e6e52b51ac",
+    "file": "clips/bb7b27fb4b0380e9ce3ea0e6e52b51ac.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "b8c48b14dabed64f1717bd23d6429c65d7e992bd72226213ede8daad62a56d65",
+    "duration_sec": 1.048
+  },
+  {
+    "id": "10a337325adbe115a1f4e7544b1dcdc4",
+    "file": "clips/10a337325adbe115a1f4e7544b1dcdc4.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "8922395da37930b18004d4ff17b42c9812e273332e7624f5cfcc0052b882c16e",
+    "duration_sec": 9.112
+  },
+  {
+    "id": "730439e17e024c70883debae0a788c11",
+    "file": "clips/730439e17e024c70883debae0a788c11.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "56366424e82db9a720a1cb1c41c3b7010a74a72dfcc8dbc8d16d7355aa72abbf",
+    "duration_sec": 2.744
+  },
+  {
+    "id": "abb2d186b48c54179d18f62ba43633fe",
+    "file": "clips/abb2d186b48c54179d18f62ba43633fe.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "33bee29dd2536dad61809873ddb3adecba20613862f4602216a019cb00254bc4",
+    "duration_sec": 20.184
+  },
+  {
+    "id": "db2869b5781e7d60240c47b25434ebf5",
+    "file": "clips/db2869b5781e7d60240c47b25434ebf5.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "22a13b947a7498880baf2548e5d770746163a746aac0699b12928b7cd94051e5",
+    "duration_sec": 9.688
+  },
+  {
+    "id": "13e2466975381ccbcb0177c50d9815f1",
+    "file": "clips/13e2466975381ccbcb0177c50d9815f1.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "cc9ab85e0f6dd2fc2a8c86b8db85b14002a793badfc98d566b7b37ee930392f5",
+    "duration_sec": 16.248
+  },
+  {
+    "id": "9f7cf78df0c93f84a36059825f50ff29",
+    "file": "clips/9f7cf78df0c93f84a36059825f50ff29.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "7e0f6078a8c6dc02da163500635dd300a4090c8faf397ae2b2a8a7e51f6033af",
+    "duration_sec": 1.368
+  },
+  {
+    "id": "02d22121b080d7f1821116fe67ce2bb6",
+    "file": "clips/02d22121b080d7f1821116fe67ce2bb6.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "87462fc5cb89253984992f1026254d0289bae4b812a17466487e6d3f5fa23033",
+    "duration_sec": 12.44
+  },
+  {
+    "id": "91ecb6d07fe276a8cd3761ccb981cd90",
+    "file": "clips/91ecb6d07fe276a8cd3761ccb981cd90.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "f706374d7482da13f8647da70e6b502350aed1054a886181a2c81314cc17f8be",
+    "duration_sec": 11.16
+  },
+  {
+    "id": "4af0e81554b2cc0a7c4ece8bf7c07c8d",
+    "file": "clips/4af0e81554b2cc0a7c4ece8bf7c07c8d.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "65af6d2426ff9351eb9c25b4eb1e09e6cffb3c7b4d808d203cfe0b104bd6404a",
+    "duration_sec": 10.616
+  },
+  {
+    "id": "77221df2705d085f784124341b4a00ab",
+    "file": "clips/77221df2705d085f784124341b4a00ab.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "b0fcd0a5561cf0ca7f88272c534acd6e31ce05ce2b243310443114aedf6f3b73",
+    "duration_sec": 7.192
+  },
+  {
+    "id": "3dd65e7d8000ba2bc01e4ea15b5c8369",
+    "file": "clips/3dd65e7d8000ba2bc01e4ea15b5c8369.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "6c80fda9d0ab24ccc067db624eb955d2e7a1caf1762c7868ca30145ae053b1a6",
+    "duration_sec": 10.008
+  },
+  {
+    "id": "a6da717d37e73c14ee233384b987fab1",
+    "file": "clips/a6da717d37e73c14ee233384b987fab1.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "93d24b1af9ec576327b0e45458147af1ed5e34bbcecb9718f05be1819f0095d2",
+    "duration_sec": 8.472
+  },
+  {
+    "id": "f978d55dbb3c9a41cc64fd2701dc1b35",
+    "file": "clips/f978d55dbb3c9a41cc64fd2701dc1b35.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "bf9e1d5a24eafb17b6d8ff825d7e99778fbf6b61db1335dc7581b174173b8e71",
+    "duration_sec": 3.16
+  },
+  {
+    "id": "817db4398fe2bef8a2bc51419c7d1e3f",
+    "file": "clips/817db4398fe2bef8a2bc51419c7d1e3f.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "c0dc4aafe6938c94dcb1aae51f1ca2ac1f86c736dfac78d35edd27830c9d6baa",
+    "duration_sec": 1.528
+  },
+  {
+    "id": "ef31a09d22a3e85138f37435deb012f5",
+    "file": "clips/ef31a09d22a3e85138f37435deb012f5.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "8d913a898c206c6fbe23bab84c929595f9c41d72980b64e00704bb476cfb6b3b",
+    "duration_sec": 10.296
+  },
+  {
+    "id": "fb39a810801ba78f59cf35e62b8bbe6f",
+    "file": "clips/fb39a810801ba78f59cf35e62b8bbe6f.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "04a83ee041e70dc645b9aa5c93c440ebc06cdc4043d5f594a4e6ccceefda10c3",
+    "duration_sec": 1.144
+  },
+  {
+    "id": "6b0dec2c81da94f271d73fe653ae7b98",
+    "file": "clips/6b0dec2c81da94f271d73fe653ae7b98.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "83e4e32a3159c6a7a1eb65ce92c6a39ec42ebfca7c512e4cd0c70ffb305b6a9d",
+    "duration_sec": 1.208
+  },
+  {
+    "id": "c424be0f11017f2c24b3470f678ac546",
+    "file": "clips/c424be0f11017f2c24b3470f678ac546.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "0d7eed4ce5ab1c24b0ffe40074b475f322d0ed3b748fb34fbaefe98f12e2b175",
+    "duration_sec": 9.24
+  },
+  {
+    "id": "30b91a83ac3132848baf451b842dfcc0",
+    "file": "clips/30b91a83ac3132848baf451b842dfcc0.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "17e1a0c78b204c202f3960a92ed633627ad07b77d64638b5847a52bdd9de6532",
+    "duration_sec": 2.968
+  },
+  {
+    "id": "7684cb1134a2056663112dc01ae08a0e",
+    "file": "clips/7684cb1134a2056663112dc01ae08a0e.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "27eb60cf96e4703b6e1627d88fcc1a929097e8aaae4649a06b94ac81a1a25400",
+    "duration_sec": 4.792
+  },
+  {
+    "id": "7e1bf50f68a3dfa3a2421eaa9a1b8b71",
+    "file": "clips/7e1bf50f68a3dfa3a2421eaa9a1b8b71.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "f1f6cc4f3bb5c9fbdbb9543edf2b9f3553b9f48c03989ce9897d96a56b88abd3",
+    "duration_sec": 1.432
+  },
+  {
+    "id": "b1979e49683aa45d04f8e6fd2235ad85",
+    "file": "clips/b1979e49683aa45d04f8e6fd2235ad85.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "be0b66385ee7fe7db0ed297b6b6daad5a83a8bf404642f5a5bd7ba197677e905",
+    "duration_sec": 0.856
+  },
+  {
+    "id": "25f240cb6afe1352c034cf32f33d72d7",
+    "file": "clips/25f240cb6afe1352c034cf32f33d72d7.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "f204f0876d0ce3507fdb53f8cdfcbdb12323f53d8e83ca6a31e0ba107513c0a6",
+    "duration_sec": 2.392
+  },
+  {
+    "id": "8bbe1ef127b749be5f1b17261cf37d54",
+    "file": "clips/8bbe1ef127b749be5f1b17261cf37d54.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "3ac086974e567eec8c9eda3d08c92ce6c5044a7cf290f9bc0830c4fd04317d93",
+    "duration_sec": 11.608
+  },
+  {
+    "id": "108bc34bba7b9dd36a220b282f1af91b",
+    "file": "clips/108bc34bba7b9dd36a220b282f1af91b.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "d94e7937cfa55ddfd5228784120595b561562e4e608f6f22efd46cdc8510b446",
+    "duration_sec": 3.736
+  },
+  {
+    "id": "881e4ced46e593701ff09ccb1a30738b",
+    "file": "clips/881e4ced46e593701ff09ccb1a30738b.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "fc4a7f378ee231cb0bc11b7dbbf7640d835c2013173478809341f0914f66f3e2",
+    "duration_sec": 10.296
+  },
+  {
+    "id": "411d4afb221b04c89bed7e18d6ae39b6",
+    "file": "clips/411d4afb221b04c89bed7e18d6ae39b6.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "1c64149d980bbd71215d12b50ff4effaa2e6876f7335530863bfa1fc75513a56",
+    "duration_sec": 15.256
+  },
+  {
+    "id": "d24f1a08c4990069cb1fe8766d435139",
+    "file": "clips/d24f1a08c4990069cb1fe8766d435139.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "3d5ccaaa9a50da26ab083f7a123cacd5184004dc6309e8a620ce43058e8133f4",
+    "duration_sec": 5.72
+  },
+  {
+    "id": "4d8e32781fed013006c771e5336a2a7c",
+    "file": "clips/4d8e32781fed013006c771e5336a2a7c.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "fba253fb50e5e49eb953ef8f728e54fe4c354f457b07dc2e8bc04d5684b9279e",
+    "duration_sec": 9.496
+  },
+  {
+    "id": "20f44941bacdb236172ff08734f567bb",
+    "file": "clips/20f44941bacdb236172ff08734f567bb.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "b3157da3e262039cd26b35ce3a25dda0ef763d40a3b3f80521abf22d2a5ffffd",
+    "duration_sec": 10.808
+  },
+  {
+    "id": "419dd2bbdc49a9dacc6032a123d332c4",
+    "file": "clips/419dd2bbdc49a9dacc6032a123d332c4.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "178b60929752751d8f2444f87170b6511f06c55b03d1d9960217322f7527325a",
+    "duration_sec": 4.504
+  },
+  {
+    "id": "c6bceb5d3f99397e2451d4a14f319bde",
+    "file": "clips/c6bceb5d3f99397e2451d4a14f319bde.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "4a02e7b1ae18413fdfeb0aeeadeb52d1e4713be25306467df21b5a1d5d12f91a",
+    "duration_sec": 12.696
+  },
+  {
+    "id": "e19759dacffc220b9407e15c713a09ad",
+    "file": "clips/e19759dacffc220b9407e15c713a09ad.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "93947b9d1463b722270d49037b935a723c5b97e31fd8a7d7fe69c568b281d34c",
+    "duration_sec": 6.232
+  },
+  {
+    "id": "30a13900f53f3a08c1ecbae65ca31dad",
+    "file": "clips/30a13900f53f3a08c1ecbae65ca31dad.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "d7a4e1439175bb3443e2d1b7c63fec671c0563926367f7b6cacee00e02935089",
+    "duration_sec": 10.328
+  },
+  {
+    "id": "57fc4587e361df7c28f96b2aa6aaaaa2",
+    "file": "clips/57fc4587e361df7c28f96b2aa6aaaaa2.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "e1003bd8a88c6bc7c1a2f24d91eeda04bc8f42a8d191ecf8c5d03a8d82d7d132",
+    "duration_sec": 11.832
+  },
+  {
+    "id": "57c415e628c840f6fe8ee298c1c508e5",
+    "file": "clips/57c415e628c840f6fe8ee298c1c508e5.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "d864cc103bdb0844f56e8b7900290c232116d000b0ebcd9eb4fd53f23450c878",
+    "duration_sec": 4.632
+  },
+  {
+    "id": "55ba6d23c4bcc03d121f0ad57e0db0d7",
+    "file": "clips/55ba6d23c4bcc03d121f0ad57e0db0d7.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "9c5e937727eb231c99d6d7221eae9d0fcf2c1411fbbfdd4e92e586c0a1c7af81",
+    "duration_sec": 13.08
+  },
+  {
+    "id": "92242dd8afafc351626bf517725ed2f4",
+    "file": "clips/92242dd8afafc351626bf517725ed2f4.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "71e55de7938af34242101013c6fc560e681a3b8fe10fad15a7eef84fa41d0198",
+    "duration_sec": 9.976
+  },
+  {
+    "id": "b8a934f984239be3236e16b33556e88f",
+    "file": "clips/b8a934f984239be3236e16b33556e88f.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "0b7197b68e899a64419d9aaa3d566a08920b73f5d11f355aaab348c1ee234d4e",
+    "duration_sec": 10.168
+  },
+  {
+    "id": "8ee474144aeafb81e999efa987a49dd6",
+    "file": "clips/8ee474144aeafb81e999efa987a49dd6.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "2b09b9dde336e9b4209cbd573534d2d8caef0a19104815d39ea109d6f2f469d4",
+    "duration_sec": 12.024
+  },
+  {
+    "id": "80f27061c982f9bffe8f7f5f389d6cb6",
+    "file": "clips/80f27061c982f9bffe8f7f5f389d6cb6.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "0dc59704d030947c23498cb1db511673f3611dddbebaf3ab0a56552f44fc39a1",
+    "duration_sec": 1.528
+  },
+  {
+    "id": "b3dcc24bad8fdd31e2156ccd9f281d7c",
+    "file": "clips/b3dcc24bad8fdd31e2156ccd9f281d7c.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "45dbf92ecdede34c2de329269ead6eb02e3c7c3814f74eafe212e48893250307",
+    "duration_sec": 9.144
+  },
+  {
+    "id": "5f3a27fc7e90b2abd132b55a957df9a0",
+    "file": "clips/5f3a27fc7e90b2abd132b55a957df9a0.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "bc6a3e5b4567de16f15f8644357858c7dd814065274f83c4243af7656fa02d6b",
+    "duration_sec": 1.176
+  },
+  {
+    "id": "c90f43e740d94b62459b310db2d21a1b",
+    "file": "clips/c90f43e740d94b62459b310db2d21a1b.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "b20191440c94205043db241d32971b50cc1e4ca46952ac5c9caaa5200107e465",
+    "duration_sec": 9.784
+  },
+  {
+    "id": "24f387ac76ed23b8d75284dc9ec9945b",
+    "file": "clips/24f387ac76ed23b8d75284dc9ec9945b.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "55c4eac3005e91544e864d896ff2bb151ccd0d1993fa061fc5f73ad637275321",
+    "duration_sec": 4.888
+  },
+  {
+    "id": "e2aa7f35b9c9435a52994cde2c33632c",
+    "file": "clips/e2aa7f35b9c9435a52994cde2c33632c.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "404c62b055c4f608f0acb92b436ea224b466614a840771a6b33f8447974e2115",
+    "duration_sec": 1.4
+  },
+  {
+    "id": "1cd25fee2090eafc548cf15cd8707720",
+    "file": "clips/1cd25fee2090eafc548cf15cd8707720.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "77e9463bd2eddba400cf171feb8a97e2648c7d3af755dc926d8e909cc3111f8a",
+    "duration_sec": 4.28
+  },
+  {
+    "id": "900cac3b1e94cb6209d6549ad4f0b729",
+    "file": "clips/900cac3b1e94cb6209d6549ad4f0b729.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "0e9a636000f9b657782b9572ff895a8041e077353dad2772732a920642440bd2",
+    "duration_sec": 7.064
+  },
+  {
+    "id": "14e00fb5226b8dea1bcc68c1f2efd4c5",
+    "file": "clips/14e00fb5226b8dea1bcc68c1f2efd4c5.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "93ac48e1037a85172ff9516b834f837482d832c7d3294f08c63ca097d3fecdd5",
+    "duration_sec": 10.232
+  },
+  {
+    "id": "50b09673ee968dc148e529c17ac65df5",
+    "file": "clips/50b09673ee968dc148e529c17ac65df5.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "14270020fe5ef875044b686642e385cbf6ca4fb5ad17670e69c0604075366286",
+    "duration_sec": 10.904
+  },
+  {
+    "id": "c93b4da6a61f97482dccd58f4628995f",
+    "file": "clips/c93b4da6a61f97482dccd58f4628995f.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "0b62d3cc8f78e6470bf54b5ef8dca7dcc3d8ca94c3eaedfee3aa45ccf4114a85",
+    "duration_sec": 1.336
+  },
+  {
+    "id": "61e5e1f99a19993b3f9c1e1deb749631",
+    "file": "clips/61e5e1f99a19993b3f9c1e1deb749631.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "85a64612cc301d1d34a411b0d9e45f859fca8d969ad7a93e1bc66246e2a73ca5",
+    "duration_sec": 7.352
+  },
+  {
+    "id": "5746ef16286b8b61c76c100d1e329127",
+    "file": "clips/5746ef16286b8b61c76c100d1e329127.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "30628cf6a6b7877b1570697df250926fa206b36ba24c199e0682d15b4f240d6a",
+    "duration_sec": 17.756
+  },
+  {
+    "id": "97db0f9872d0435b965ff7c08c402be7",
+    "file": "clips/97db0f9872d0435b965ff7c08c402be7.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "cb1b58e767a1095d00ca66e0f85980cb920d108631942ec203ea64427e6f0592",
+    "duration_sec": 8.248
+  },
+  {
+    "id": "bee9f45a468ce42fd3d5a71799a27cfe",
+    "file": "clips/bee9f45a468ce42fd3d5a71799a27cfe.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "1578e7aec41e37773c0975f09f1f0552f53022e380d609c475e058770bb4813c",
+    "duration_sec": 6.908
+  },
+  {
+    "id": "3cbb766cd1bdefc302b6dfce88d5a9c7",
+    "file": "clips/3cbb766cd1bdefc302b6dfce88d5a9c7.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "881e065d06f6abe1f0d802db9575c8b368771dc2bb940605dc59d5935abdb322",
+    "duration_sec": 9.772
+  },
+  {
+    "id": "9805cb1caf198db1153373bd03f6fbaf",
+    "file": "clips/9805cb1caf198db1153373bd03f6fbaf.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "fe68277d77796966c0c32a9cd5258da766d19e7ac0bf55167ddaf425d9a1effc",
+    "duration_sec": 9.592
+  },
+  {
+    "id": "75417ca3735d120b21c14a3e2b4af4eb",
+    "file": "clips/75417ca3735d120b21c14a3e2b4af4eb.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "d2e3375d60e03d65c2ddaef90b88da480f8a6abfa9e6ce490d084f7688158518",
+    "duration_sec": 9.516
+  },
+  {
+    "id": "a96052d641272a306abe88224a8e4afa",
+    "file": "clips/a96052d641272a306abe88224a8e4afa.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "df88cdf9ff78526b0c363c56085d7076a703b727f0ec182c6d93adae0015c0bf",
+    "duration_sec": 6.552
+  },
+  {
+    "id": "e8ce98cc4ee373d1eca6d53182d62e22",
+    "file": "clips/e8ce98cc4ee373d1eca6d53182d62e22.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "6e0d3618028ee4898e2cab7b79bd01ff2092d293780443d3a16563efae5fbbd4",
+    "duration_sec": 19.928
+  },
+  {
+    "id": "132eb7c6696b0409077a7ce9f8197f7b",
+    "file": "clips/132eb7c6696b0409077a7ce9f8197f7b.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "a34d61a7d692741eeeadf038deada34eaf9e5c32ae318df20b3266ebf6a19f11",
+    "duration_sec": 3.48
+  },
+  {
+    "id": "19de12484c405117babb6ff175d6d179",
+    "file": "clips/19de12484c405117babb6ff175d6d179.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "2ef6abb31291698fc1306cfdad7f204e3d0d569ba1f994f54b1a1eedf9103ea9",
+    "duration_sec": 12.792
+  },
+  {
+    "id": "6f0a89b486293f0ddd086425515925db",
+    "file": "clips/6f0a89b486293f0ddd086425515925db.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "8e52465af773b7b473f321e90db88fa875ec32ceeffd44708d505fc86b95f9f9",
+    "duration_sec": 3.48
+  },
+  {
+    "id": "70051944b07e6a2b212f946943995790",
+    "file": "clips/70051944b07e6a2b212f946943995790.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "c8e7222bcf8f37a95b8a996476e950307b9fbab7988936aad1c0485f8eb4d71b",
+    "duration_sec": 4.792
+  },
+  {
+    "id": "6b50d6f6fc34294769679641b48c7544",
+    "file": "clips/6b50d6f6fc34294769679641b48c7544.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "53475ccd8b47e008c7a7db5f67ffcf29e638c585320fed205cb922f9c88756e9",
+    "duration_sec": 8.312
+  },
+  {
+    "id": "cd1678c440fca14f57b939b8fc74fd33",
+    "file": "clips/cd1678c440fca14f57b939b8fc74fd33.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "57e21d9567c0e046c074e65df2799b8c9aa581aad816d1ccfafbbb4d65a051cb",
+    "duration_sec": 3.448
+  },
+  {
+    "id": "0cd9bbdada4f8945e1ac4f4d3b08a5d4",
+    "file": "clips/0cd9bbdada4f8945e1ac4f4d3b08a5d4.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "15cdc5ff2126c2a658786abb15ba609d0a457e311e7db4ebd4c4529c9276b7ff",
+    "duration_sec": 9.016
+  },
+  {
+    "id": "214476d8b474fd059a882aebc1a1c374",
+    "file": "clips/214476d8b474fd059a882aebc1a1c374.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "cd893b51c4ca94c8918977fb7d7df525b7e9b3659903d7fa5ee393c046856463",
+    "duration_sec": 9.944
+  },
+  {
+    "id": "28a920328d6efe9f680d110e47b47cb6",
+    "file": "clips/28a920328d6efe9f680d110e47b47cb6.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "e98a6505a1be1e5a0006edda3a1cb89b76641825f029b2702a738e7325204aaa",
+    "duration_sec": 14.104
+  },
+  {
+    "id": "41e302cda619855e5f36b48a013898f9",
+    "file": "clips/41e302cda619855e5f36b48a013898f9.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "cd6049eef97e40e84b99703257e072a7a45bd2b838ef912a7e8a8a8117495526",
+    "duration_sec": 5.08
+  },
+  {
+    "id": "3a98ed5d4eaf27c1e1c00445f6822b9c",
+    "file": "clips/3a98ed5d4eaf27c1e1c00445f6822b9c.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "99bdcfe0ef2a48755bb373dad144f2a79ed604d654a5ea0769acd506a5094ef7",
+    "duration_sec": 5.56
+  },
+  {
+    "id": "b4c2a442e2f96e8ef8752970ff1e7958",
+    "file": "clips/b4c2a442e2f96e8ef8752970ff1e7958.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "bcbeef32973273f78eb42b8fe6d906d74595c8ed9348fccb117183221bd0fd98",
+    "duration_sec": 7.384
+  },
+  {
+    "id": "015c90273edfae9225ef7d2ef4e72c52",
+    "file": "clips/015c90273edfae9225ef7d2ef4e72c52.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "ed2675aa53e6a0206f030bc588719d6b83ae3f57d72efeec68e2b958d98d9725",
+    "duration_sec": 10.552
+  },
+  {
+    "id": "8ee7ba81bf2fd687f8fe39a369985312",
+    "file": "clips/8ee7ba81bf2fd687f8fe39a369985312.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "2c70ae6022c28cf9786c37b295decb90c0372bf30a01785483b0ae3feff85f0f",
+    "duration_sec": 11.672
+  },
+  {
+    "id": "eb641b40b002d52cfd035e7e71c39d89",
+    "file": "clips/eb641b40b002d52cfd035e7e71c39d89.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "3edf8ccca9f383ec99a8ce2c2b9a1b98c3c24ff507432dffea1d70687ace971d",
+    "duration_sec": 13.24
+  },
+  {
+    "id": "dafa2d7ebd13b165338ce25ee4b58bc1",
+    "file": "clips/dafa2d7ebd13b165338ce25ee4b58bc1.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "2480eb29acd826a1b231395a2a246be14efbb6a76c86cc192551eb10b46240d8",
+    "duration_sec": 3.736
+  },
+  {
+    "id": "f99d645fa41795a8fd5537ac458e4cab",
+    "file": "clips/f99d645fa41795a8fd5537ac458e4cab.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "38b5902bc038bdf358077051e460f81c91067e1ac0294a36dbf7a30f6b89825c",
+    "duration_sec": 3.768
+  },
+  {
+    "id": "079cfcadad0959dc945abd9e8df752ad",
+    "file": "clips/079cfcadad0959dc945abd9e8df752ad.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "1dfdde8563e09427677bdd9509608aded7b243bd0990f6218b5812b3968fa256",
+    "duration_sec": 6.456
+  },
+  {
+    "id": "b320027e78e81b4c3d23bea31004aff2",
+    "file": "clips/b320027e78e81b4c3d23bea31004aff2.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "02738e59a915ebf38b15d927dad52eaecfdae5e1cf58b8b4a7eb567ab8cb3317",
+    "duration_sec": 4.28
+  },
+  {
+    "id": "a839ef274fa5ee087618471a2ccd6ed7",
+    "file": "clips/a839ef274fa5ee087618471a2ccd6ed7.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "e765e8a183a7487cb231058baa3b57c6ec7342592b19ba870aaac80bf95ee0b1",
+    "duration_sec": 1.144
+  },
+  {
+    "id": "e35bb17d67c621f2c61a6123512ed72a",
+    "file": "clips/e35bb17d67c621f2c61a6123512ed72a.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "ae3726d73436b28ea11910631e165afa2fef99cd6f04832442d66e9b4eb034bb",
+    "duration_sec": 9.368
+  },
+  {
+    "id": "0da98bdf3f8865aa60ee137f564b22f8",
+    "file": "clips/0da98bdf3f8865aa60ee137f564b22f8.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "4ff0d318811a1ea2df7f4e3e0d7667dd465e2b513b0662134536dabef7063e81",
+    "duration_sec": 10.008
+  },
+  {
+    "id": "dc61b23c6508fa9f94351f0e0005bb03",
+    "file": "clips/dc61b23c6508fa9f94351f0e0005bb03.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "1184cac6c211031d23d3212b2f43345018615def1586c404ddb63e5e4e75a1b3",
+    "duration_sec": 13.752
+  },
+  {
+    "id": "b0e17fca7e1ed379e21da6f97c7b965e",
+    "file": "clips/b0e17fca7e1ed379e21da6f97c7b965e.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "68a22d49eb56e19bcd797d162048cab554efa603efa751e1cb71e3bc7d91dd00",
+    "duration_sec": 7.8
+  },
+  {
+    "id": "4335d2a40e79345c0b86fb1777c5f27c",
+    "file": "clips/4335d2a40e79345c0b86fb1777c5f27c.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "5b47e55cca7620ede574c68b08ee3110db71fe4034206afc4091dc926190e9e2",
+    "duration_sec": 4.536
+  },
+  {
+    "id": "7f306f275853516397096e7bb037064f",
+    "file": "clips/7f306f275853516397096e7bb037064f.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "4fda2e2af67205f248436141aed2a1ab41a4291f3c4f8d5497a883cdac33e3ea",
+    "duration_sec": 12.504
+  },
+  {
+    "id": "0489293f4e4ac34fd7e1e20639c19caf",
+    "file": "clips/0489293f4e4ac34fd7e1e20639c19caf.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "df731ec93f7ca5762ddb2d5e4e50bb3464aef8a6c8effe8cbca62063a804b30a",
+    "duration_sec": 9.784
+  },
+  {
+    "id": "6ebe63135976293041b3e55e0c7b7f13",
+    "file": "clips/6ebe63135976293041b3e55e0c7b7f13.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "2fba007c3aac11743be4723d47f33bd04d1189d6cb6a2eeec2c9d90d7438ac7e",
+    "duration_sec": 1.304
+  },
+  {
+    "id": "e9e6a4a4f3f2114aeb82806405435c4e",
+    "file": "clips/e9e6a4a4f3f2114aeb82806405435c4e.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "c2fa43549bc4bd22b3ef67270c3a35abfcd64102bdaefd015a5e152c7f9337ac",
+    "duration_sec": 7.928
+  },
+  {
+    "id": "0b3ac6a5582501876cab357be729d0c3",
+    "file": "clips/0b3ac6a5582501876cab357be729d0c3.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "e4d8473fd5882809ffda65a338c9a3f8ae4d54dcd3477d97676757acbb51327b",
+    "duration_sec": 20.504
+  },
+  {
+    "id": "feb99ce577d6f627cca97f2d1a2a1043",
+    "file": "clips/feb99ce577d6f627cca97f2d1a2a1043.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "e38f6192bf12fd5e12f586ec83ff421f3d8eab979e377085885353eed1015d72",
+    "duration_sec": 1.368
+  },
+  {
+    "id": "dd758eb09dee469ba4638eec787a487b",
+    "file": "clips/dd758eb09dee469ba4638eec787a487b.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "64090f09960e498a8e0307cbb5c3b050bcdbd864c3f0f42a2e9bb4763c518411",
+    "duration_sec": 3.512
+  },
+  {
+    "id": "31fd2c7619d7abdb7b788585e83bf59c",
+    "file": "clips/31fd2c7619d7abdb7b788585e83bf59c.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "b96c04c8b9bd9d21213a6853676d51625b6892c6ad5a1a891f5d77c297a9a1c8",
+    "duration_sec": 11.096
+  },
+  {
+    "id": "ea35264bf70fca95e36f2fbadfb76866",
+    "file": "clips/ea35264bf70fca95e36f2fbadfb76866.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "11f457eccd3bde1b31a174c7e5d902f5e112ca0524d58d923626af72f0e0a49d",
+    "duration_sec": 1.88
+  },
+  {
+    "id": "29e78377001f70a94a3011cdda68b924",
+    "file": "clips/29e78377001f70a94a3011cdda68b924.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "dc13a399d7ffaea8de9dc1956bc86644995e6afd3f6619c54ce7436a6050f2c5",
+    "duration_sec": 4.376
+  },
+  {
+    "id": "7dc1d7b72d99e55beba0be3ecd11fab2",
+    "file": "clips/7dc1d7b72d99e55beba0be3ecd11fab2.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "5737eec84092da2bb64057657bd989c500aede03cb9689ae360011364a5abc98",
+    "duration_sec": 1.112
+  },
+  {
+    "id": "8e809e8d2dc42a270223ef8871fe23b5",
+    "file": "clips/8e809e8d2dc42a270223ef8871fe23b5.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "da0db951648f46877c1e2eb324eda37d7c0d43b1351a3c89dc0d55894f0b7e0d",
+    "duration_sec": 4.312
+  },
+  {
+    "id": "94254aea1f197bb9b571e7bcfdd61aca",
+    "file": "clips/94254aea1f197bb9b571e7bcfdd61aca.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "0016806eca4c16d58899e4aa1975402e9fb8ec9372bba5cc1a9a2cf12f34ed2f",
+    "duration_sec": 17.144
+  },
+  {
+    "id": "f6e3da74b1f266f44c81b2485235e4f4",
+    "file": "clips/f6e3da74b1f266f44c81b2485235e4f4.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "4b56cb5c76965ebb63d55930f850a15c94145196bc5da6d536e430675555621d",
+    "duration_sec": 4.536
+  },
+  {
+    "id": "a3ca4a9e5f9c03958967e4629e6bfd49",
+    "file": "clips/a3ca4a9e5f9c03958967e4629e6bfd49.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "114d2de4253037ebc275a210a9adc8e5533efdc0459e09fc34b99ade5f8d4d48",
+    "duration_sec": 2.168
+  },
+  {
+    "id": "2811d8f0451e67c0fca53079130ec881",
+    "file": "clips/2811d8f0451e67c0fca53079130ec881.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "c95fe5bd38f15584cb50f1379ab91c1279fad6ee6f66f895116823f4c5cab81f",
+    "duration_sec": 8.888
+  },
+  {
+    "id": "ab1c39d0ccaa1d6bb96728c6ccbb7a5c",
+    "file": "clips/ab1c39d0ccaa1d6bb96728c6ccbb7a5c.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "cc7a4b5cb957fc60918975dfdd8ec705a9b8d75c8f63ea74819d4234bfc97002",
+    "duration_sec": 11.704
+  },
+  {
+    "id": "1a32b4e22c8ade12eedecebdd83ccf8d",
+    "file": "clips/1a32b4e22c8ade12eedecebdd83ccf8d.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "d7b73ce817de2ad2ce078dc3f8f852f7506d474c59c0a799d8be8dbd444b5966",
+    "duration_sec": 4.696
+  },
+  {
+    "id": "165cb28369de1e5abf7e0d01dc212d71",
+    "file": "clips/165cb28369de1e5abf7e0d01dc212d71.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "398c7007f9d00dc3a7fda5583dcf4570f008e6132d5412202235a3f32fc5c04d",
+    "duration_sec": 15.224
+  },
+  {
+    "id": "e1e416d1627d4d35e2729f642604eff0",
+    "file": "clips/e1e416d1627d4d35e2729f642604eff0.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "39d7b8fc107f9dcdc6f65272a268b482c70aa3b822289aea37667875c63a3f37",
+    "duration_sec": 2.104
+  },
+  {
+    "id": "61320be38a6b1afffc1cdef03ee62a49",
+    "file": "clips/61320be38a6b1afffc1cdef03ee62a49.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "818e372752d96b00046849df13d01d7eca180d8f227e2f2542eef5578e5abd06",
+    "duration_sec": 0.824
+  },
+  {
+    "id": "f93ee6fbd5720a942d3ef8423d83c9ba",
+    "file": "clips/f93ee6fbd5720a942d3ef8423d83c9ba.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "ddf3be4b256926496a9cedde86e3683a4bbb0ecffa9c166ff4fc55f49872fd4c",
+    "duration_sec": 9.016
+  },
+  {
+    "id": "a637750cf264ec914eb66c8da57c8bdf",
+    "file": "clips/a637750cf264ec914eb66c8da57c8bdf.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "69bdf7d78a4f00593103d359d8d043d4f71bd8398ff07d84eee69b484664ed56",
+    "duration_sec": 11.224
+  },
+  {
+    "id": "bdc8b6aceded3f699cf3ee3be74e1b67",
+    "file": "clips/bdc8b6aceded3f699cf3ee3be74e1b67.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "ed8f55b32027846b7cc49f6f179dfdb3872c93726437c1b685e8cb9c4161b6e6",
+    "duration_sec": 18.488
+  },
+  {
+    "id": "688ed9afc265114aa07ea4bd31f2af66",
+    "file": "clips/688ed9afc265114aa07ea4bd31f2af66.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "14c23ca4fb0c99627786265f1fc2badb9f5ed3603775bccfed8ebe8f3de46454",
+    "duration_sec": 21.688
+  },
+  {
+    "id": "d984186031e3d2ef0b802717c9ed1db3",
+    "file": "clips/d984186031e3d2ef0b802717c9ed1db3.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "27bd444988d81080014a0897f857566008d529abb19e3fa275475766cb7bfdbf",
+    "duration_sec": 1.112
+  },
+  {
+    "id": "3e00ec2f3c2d8548bdb8dcf3d58dc30d",
+    "file": "clips/3e00ec2f3c2d8548bdb8dcf3d58dc30d.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "139a22832029d25fb125e18435946c17764d1cf33107b1fcdeb4e6ac84ec65bd",
+    "duration_sec": 13.464
+  },
+  {
+    "id": "f02d7eaa6da63e6980851553fd120aab",
+    "file": "clips/f02d7eaa6da63e6980851553fd120aab.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "c3f3310353b90070ec2c5c6dcbd8e62d9ed936d0bb4410a52a62e8341e594cc1",
+    "duration_sec": 10.072
+  },
+  {
+    "id": "69ced0037be815fda9b408d4435ccb0f",
+    "file": "clips/69ced0037be815fda9b408d4435ccb0f.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "4884d1bdf863c5e94cee38a4d8f17119cdb8357143daaf10e362839375ea5473",
+    "duration_sec": 18.684
+  },
+  {
+    "id": "efbf53f53c0a9f88c33aee6e362a0bc6",
+    "file": "clips/efbf53f53c0a9f88c33aee6e362a0bc6.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "ce0ea57a31ad3fd1458c3e7693e84f7c16b879b07d8187a46ae86cbee3d4884b",
+    "duration_sec": 8.508
+  },
+  {
+    "id": "e9fbbae649b503b9f6d0d72fa0adf539",
+    "file": "clips/e9fbbae649b503b9f6d0d72fa0adf539.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "d40cfb710fb6e2b9d13d0c9676d58d3d91b69ea9e1a17a94e47630578d230e0f",
+    "duration_sec": 9.464
+  },
+  {
+    "id": "ace26318e6f69e27acc58a373f60f240",
+    "file": "clips/ace26318e6f69e27acc58a373f60f240.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "c3f23d946af40d7e424a421c59e89e09bf7bd45b0a51e29f6e6bbe2c2a731690",
+    "duration_sec": 14.808
+  },
+  {
+    "id": "0eeab1088c2fa5a4f11b2eb503a529f5",
+    "file": "clips/0eeab1088c2fa5a4f11b2eb503a529f5.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "6cabee074ca109c38e887323b8261c250300bc24914b87aab7cc4b42bb3b3e21",
+    "duration_sec": 6.968
+  },
+  {
+    "id": "de518e55c1ee0554f07ed111ccf7843a",
+    "file": "clips/de518e55c1ee0554f07ed111ccf7843a.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "94a565deaf986d4f4d96692776af4339c7e253078f92a501ab39fa1bfb036d73",
+    "duration_sec": 3.288
+  },
+  {
+    "id": "67c6c566fda851dec49241ca67d958ad",
+    "file": "clips/67c6c566fda851dec49241ca67d958ad.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "9db23c99c957a1a9553b9c7d131652c87cfd58606601a4ea2b51cfbbc811a2e2",
+    "duration_sec": 16.312
+  },
+  {
+    "id": "6c598cf7ddf3ead085e1a7a5a7a96447",
+    "file": "clips/6c598cf7ddf3ead085e1a7a5a7a96447.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "c638b44933a63d6f8c91aa9ddf08c516623dc68436bdc629c37b0767894356a3",
+    "duration_sec": 6.296
+  },
+  {
+    "id": "75838339bb184a872028aa35bf197b14",
+    "file": "clips/75838339bb184a872028aa35bf197b14.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "7ea00c98ab064e5c10fb5c8fc5cc2865116cfd7be0ef9d90e365e19221205857",
+    "duration_sec": 9.4
+  },
+  {
+    "id": "333ec36e834a86b49c8f843e49dc9f6b",
+    "file": "clips/333ec36e834a86b49c8f843e49dc9f6b.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "49e7dda14dcd68c2ff14c8f920a6268d020052f63bbc024c33217f3af9b426b2",
+    "duration_sec": 4.088
+  },
+  {
+    "id": "9d8ab66bfda7fa351f4d567742d5af2b",
+    "file": "clips/9d8ab66bfda7fa351f4d567742d5af2b.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "2908f036f441b68c616ec4217464c6d80bde0817ed2b86eb1763ce5f0eecc5dd",
+    "duration_sec": 0.984
+  },
+  {
+    "id": "8213ad18952c8a532f062ddac1dbd403",
+    "file": "clips/8213ad18952c8a532f062ddac1dbd403.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "0b3dc8195240c3126bb0da70b7b3bd405207f583bdfbc5012b6838481142f31d",
+    "duration_sec": 8.92
+  },
+  {
+    "id": "248fcde112badeab9f34ac375398d6c9",
+    "file": "clips/248fcde112badeab9f34ac375398d6c9.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "0eb74fe1e2ae2f149f7bc1b9cb078cffd62d85addb3049b5a30e8f189fe25734",
+    "duration_sec": 9.848
+  },
+  {
+    "id": "689a16ea081b743a1a22afbc2dff8af7",
+    "file": "clips/689a16ea081b743a1a22afbc2dff8af7.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "d88d0602e8796e56a5aabeda67345248ce2a44e8d9900f8dc1465b881750f21d",
+    "duration_sec": 10.776
+  },
+  {
+    "id": "cded70ad356c5005800bfad8b5395f03",
+    "file": "clips/cded70ad356c5005800bfad8b5395f03.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "9dc500d94f5b61b7163c0de63fce0e6a5c43f3c9d33e41c57383f66385c2e921",
+    "duration_sec": 9.56
+  },
+  {
+    "id": "18e8eb65831528976efce8009aeaddf2",
+    "file": "clips/18e8eb65831528976efce8009aeaddf2.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "7ae82036981119023025d9358b072fe3b62205540651dc5b696ee79ada0a5764",
+    "duration_sec": 19.42
+  },
+  {
+    "id": "e052b0c44f4525cc582e65c41b04b53a",
+    "file": "clips/e052b0c44f4525cc582e65c41b04b53a.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "b8672b244e98a149b90b63d303af6a147523ad0224e51c52d390d56313fc27f7",
+    "duration_sec": 20.188
+  },
+  {
+    "id": "0c46593d13a5e4033e9d98ed09109d38",
+    "file": "clips/0c46593d13a5e4033e9d98ed09109d38.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "307d65f11cc936dd45c123c33e27f58d64db75d3fea3222a671548ea0033da13",
+    "duration_sec": 13.592
+  },
+  {
+    "id": "267e86ecf9934374550865e0d5c33a0e",
+    "file": "clips/267e86ecf9934374550865e0d5c33a0e.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "5f1633e63e6020888137d54e512d20f50bf68e6ce9031e6da9be63749cc874bf",
+    "duration_sec": 13.336
+  },
+  {
+    "id": "c9afb24113626b44be549f55b37a6a47",
+    "file": "clips/c9afb24113626b44be549f55b37a6a47.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "bf5779b551eaf8b947d2aa54cff06497afedd4559e32871e3c724b8ef5ec15fa",
+    "duration_sec": 11.992
+  },
+  {
+    "id": "9d8a426f7eb80540d813eb46dcd5fee7",
+    "file": "clips/9d8a426f7eb80540d813eb46dcd5fee7.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "a6653387a23bfb04197ffe7465895a46ed0eb38478947a4c81a870862b5eb482",
+    "duration_sec": 15.548
+  },
+  {
+    "id": "c12ebce78f11f586b4c492fe51381e40",
+    "file": "clips/c12ebce78f11f586b4c492fe51381e40.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "2df2fffbcbcb2f099c98a5cf715e82d6b0f5fda39443b73d23cea5de71d4ca46",
+    "duration_sec": 11.196
+  },
+  {
+    "id": "a7998d70931dc98e03070d5526438eed",
+    "file": "clips/a7998d70931dc98e03070d5526438eed.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "8763ea75afb2d72e60ea16e8bb08ffab8f0902143412d4ebec76638bce457053",
+    "duration_sec": 11.16
+  },
+  {
+    "id": "5146a4874ee8d9d435c7e19d3b7136a4",
+    "file": "clips/5146a4874ee8d9d435c7e19d3b7136a4.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "5326a2717cbb8887ec9f41afa3da667ce69d4e08251c22f339a9ccc20d0115f1",
+    "duration_sec": 11.768
+  },
+  {
+    "id": "c6d6e08d72f3161edd6b94d27f7a3ea8",
+    "file": "clips/c6d6e08d72f3161edd6b94d27f7a3ea8.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "7ebd682e89e4f65ea564c2868f08bbe954cbafbca8ad88f88e67c1b0519646b5",
+    "duration_sec": 10.904
+  },
+  {
+    "id": "c355f69a7aa186a86d4e24aac7625220",
+    "file": "clips/c355f69a7aa186a86d4e24aac7625220.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "1894b44050dfd6e0b6784f262c2c5ae1b0d207e92505bd1cd6b9da7d7fd32029",
+    "duration_sec": 16.572
+  },
+  {
+    "id": "c93c3078fefbfef0f01f958e542180bd",
+    "file": "clips/c93c3078fefbfef0f01f958e542180bd.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "2608ed6d4424354932be5aa7c867a3d42c622bdb64ebfb05f3cb668da8b95888",
+    "duration_sec": 18.556
+  },
+  {
+    "id": "b870ae54d853e858c0a1e65765464276",
+    "file": "clips/b870ae54d853e858c0a1e65765464276.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "6305c887097e56e8eea9dcae981bf5a536457d44328c6d726726803b29c80956",
+    "duration_sec": 18.78
+  },
+  {
+    "id": "f6c2df29c85b20813cf520d7ae762af0",
+    "file": "clips/f6c2df29c85b20813cf520d7ae762af0.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "4ecd3c36271c08fdbb7bcfecdbf8e7f64f26c42d267feb9131bd8f108c2faecd",
+    "duration_sec": 17.024
+  },
+  {
+    "id": "2b7935135fadb6c207463117cb68b06b",
+    "file": "clips/2b7935135fadb6c207463117cb68b06b.wav",
+    "origin": "soteria_dev",
+    "language": "auto",
+    "audio_sha256": "ce547e7ff2fc4613c4d0315b022495c74eadeaa37ed078900172e38b5b92b08c",
+    "duration_sec": 11.9
+  }
+]

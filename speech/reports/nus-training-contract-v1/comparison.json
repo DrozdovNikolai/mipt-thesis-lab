@@ -1,0 +1,119 @@
+{
+  "kind": "training_contract_diagnosis",
+  "implemented": true,
+  "executed": true,
+  "mechanical_contract": "PASS",
+  "merge": {
+    "status": "PASS",
+    "saved_tensors_checked": 479,
+    "mismatches": [],
+    "exact_FP32_equality": true
+  },
+  "audio_token_pairs": 675,
+  "maximum_mel_difference": 5.1856040954589844e-05,
+  "train_lexical_WER": {
+    "parent": {
+      "timestamp_enabled": {
+        "S": 344,
+        "D": 31,
+        "I": 235,
+        "N": 967,
+        "H": 592,
+        "character_errors": 1814,
+        "reference_characters": 5374,
+        "wer_lexical_corpus": 0.6308169596690796,
+        "cer": 0.33755117231112763
+      },
+      "text_only": {
+        "S": 367,
+        "D": 8,
+        "I": 1099,
+        "N": 967,
+        "H": 592,
+        "character_errors": 6636,
+        "reference_characters": 5374,
+        "wer_lexical_corpus": 1.5243019648397105,
+        "cer": 1.2348343877930779
+      }
+    },
+    "nus": {
+      "timestamp_enabled": {
+        "S": 299,
+        "D": 25,
+        "I": 174,
+        "N": 967,
+        "H": 643,
+        "character_errors": 1450,
+        "reference_characters": 5374,
+        "wer_lexical_corpus": 0.5149948293691831,
+        "cer": 0.2698176404912542
+      },
+      "text_only": {
+        "S": 316,
+        "D": 10,
+        "I": 1066,
+        "N": 967,
+        "H": 641,
+        "character_errors": 6377,
+        "reference_characters": 5374,
+        "wer_lexical_corpus": 1.4395036194415718,
+        "cer": 1.1866393747673987
+      }
+    }
+  },
+  "timestamp_factor_case_changes": {
+    "parent": {
+      "better": 7,
+      "worse": 232,
+      "same": 36
+    },
+    "nus": {
+      "better": 8,
+      "worse": 242,
+      "same": 25
+    }
+  },
+  "teacher_forced_mean_loss": {
+    "parent": {
+      "matching_audio": 1.91937255859375,
+      "different_audio": 4.85882568359375,
+      "matching_audio_lower_loss_cases": 31
+    },
+    "nus": {
+      "matching_audio": 1.41876220703125,
+      "different_audio": 4.49066162109375,
+      "matching_audio_lower_loss_cases": 31
+    }
+  },
+  "teacher_forced_cases_per_model": 32,
+  "new_ASR_calls": 550,
+  "new_training_steps": 0,
+  "runtime_failures": {
+    "parent": [],
+    "nus": []
+  },
+  "tests": {
+    "tests": 4,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "test_accessed": false,
+  "human_audio_verification": false,
+  "labels_changed": false,
+  "candidate_selection": false,
+  "release_promoted": false,
+  "quality_gate": "NEEDS_MORE_DATA",
+  "plan_sha256": "a701e0048bdc5aa9608ae133a5027462917a723a10fa6ad2917c972a64b936be",
+  "scorer_sha256": "386b33053513d93cda96857b74be5f2fac3114b7b9d0333b16f48bfe75a35a17",
+  "metrics_sha256": "03876483b34afa31243136a5a3f9b52b17d2a2c15e8435fccfbf23986344792a",
+  "evidence_sha256": {
+    "contract-retry/contract.json": "7775527c8cea39fac40975fa066aa5838a54786f0c9b14c7bb4dbf51f6f7c09d",
+    "contract-retry/merge.json": "b80e1e68cbab1ce7bf01b033be6e446b778ac37b38374319f988bc3af83e91ca",
+    "contract-retry/audio-tokens.json": "8126b3479703e29d80caf94a24f97b866222a72c21aca79b677d6342ab6c01b6",
+    "contract-retry/teacher-forcing.json": "1327dd7ee95724fbd6b9b884fb1fc919a130a57f81eea5d0f3d3ae33641414d2",
+    "parent/execution.json": "10c62dbc767e147cb0b42f9b0da294931b0b3306fd867dd09751be5d9a54e782",
+    "nus/execution.json": "a4fffc4a2e578c648a0390f99199387b079dc6190896f837a93932b5190ea2c1",
+    "tests/tests.xml": "1154676456b617e59a7be680fda1bdfedf0f4f0ce1d3a6dbc8a164a4a6bc8fdf"
+  }
+}

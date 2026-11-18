@@ -1,0 +1,892 @@
+[
+  {
+    "id": "reviewed-dc84f2b77565d804f16ea31f42380abb",
+    "reference": "cockpit preparation parking brake set chocks set engine masters off engine mode selector norm landing gear lever check down flaps lever",
+    "hypotheses": {
+      "baseline": "gas cockpit preparation parking brake set chocks set engine masters of engine mode selector norm landing gear level check down flaps lever",
+      "uniform": "Start gas, cockpit preparation, parking brake, set, chocks, set, engine masters, off, engine mode selector, norm, landing gear level, check down, flaps lever.",
+      "balanced": "Start gas, cockpit preparation, parking brake, set, chocks, set, engine masters, off, engine mode selector, norm, landing gear level, check down, flaps lever.",
+      "balanced-silence": "Start gas, cockpit preparation, parking brake, set, chocks, set, engine masters, off, engine mode selector, norm, landing gear level, check down, flaps lever.",
+      "parakeet": "Gas cockpit preparation parking brake set chocks set engine masters off engine mode selector norm landing gear level check down flaps lever"
+    },
+    "scores": {
+      "baseline-raw": {
+        "S": 2,
+        "D": 0,
+        "I": 1,
+        "N": 21,
+        "H": 19,
+        "wer": 0.14285714285714285,
+        "character_errors": 6,
+        "reference_characters": 135,
+        "cer": 0.044444444444444446
+      },
+      "baseline-gate": {
+        "S": 2,
+        "D": 0,
+        "I": 1,
+        "N": 21,
+        "H": 19,
+        "wer": 0.14285714285714285,
+        "character_errors": 6,
+        "reference_characters": 135,
+        "cer": 0.044444444444444446
+      },
+      "baseline-canonical": {
+        "S": 2,
+        "D": 0,
+        "I": 1,
+        "N": 21,
+        "H": 19,
+        "wer": 0.14285714285714285,
+        "character_errors": 6,
+        "reference_characters": 135,
+        "cer": 0.044444444444444446
+      },
+      "uniform-raw": {
+        "S": 1,
+        "D": 0,
+        "I": 2,
+        "N": 21,
+        "H": 20,
+        "wer": 0.14285714285714285,
+        "character_errors": 11,
+        "reference_characters": 135,
+        "cer": 0.08148148148148149
+      },
+      "uniform-gate": {
+        "S": 1,
+        "D": 0,
+        "I": 2,
+        "N": 21,
+        "H": 20,
+        "wer": 0.14285714285714285,
+        "character_errors": 11,
+        "reference_characters": 135,
+        "cer": 0.08148148148148149
+      },
+      "uniform-canonical": {
+        "S": 1,
+        "D": 0,
+        "I": 2,
+        "N": 21,
+        "H": 20,
+        "wer": 0.14285714285714285,
+        "character_errors": 11,
+        "reference_characters": 135,
+        "cer": 0.08148148148148149
+      },
+      "balanced-raw": {
+        "S": 1,
+        "D": 0,
+        "I": 2,
+        "N": 21,
+        "H": 20,
+        "wer": 0.14285714285714285,
+        "character_errors": 11,
+        "reference_characters": 135,
+        "cer": 0.08148148148148149
+      },
+      "balanced-gate": {
+        "S": 1,
+        "D": 0,
+        "I": 2,
+        "N": 21,
+        "H": 20,
+        "wer": 0.14285714285714285,
+        "character_errors": 11,
+        "reference_characters": 135,
+        "cer": 0.08148148148148149
+      },
+      "balanced-canonical": {
+        "S": 1,
+        "D": 0,
+        "I": 2,
+        "N": 21,
+        "H": 20,
+        "wer": 0.14285714285714285,
+        "character_errors": 11,
+        "reference_characters": 135,
+        "cer": 0.08148148148148149
+      },
+      "balanced-silence-raw": {
+        "S": 1,
+        "D": 0,
+        "I": 2,
+        "N": 21,
+        "H": 20,
+        "wer": 0.14285714285714285,
+        "character_errors": 11,
+        "reference_characters": 135,
+        "cer": 0.08148148148148149
+      },
+      "balanced-silence-gate": {
+        "S": 1,
+        "D": 0,
+        "I": 2,
+        "N": 21,
+        "H": 20,
+        "wer": 0.14285714285714285,
+        "character_errors": 11,
+        "reference_characters": 135,
+        "cer": 0.08148148148148149
+      },
+      "balanced-silence-canonical": {
+        "S": 1,
+        "D": 0,
+        "I": 2,
+        "N": 21,
+        "H": 20,
+        "wer": 0.14285714285714285,
+        "character_errors": 11,
+        "reference_characters": 135,
+        "cer": 0.08148148148148149
+      },
+      "parakeet-raw": {
+        "S": 1,
+        "D": 0,
+        "I": 1,
+        "N": 21,
+        "H": 20,
+        "wer": 0.09523809523809523,
+        "character_errors": 5,
+        "reference_characters": 135,
+        "cer": 0.037037037037037035
+      },
+      "parakeet-gate": {
+        "S": 1,
+        "D": 0,
+        "I": 1,
+        "N": 21,
+        "H": 20,
+        "wer": 0.09523809523809523,
+        "character_errors": 5,
+        "reference_characters": 135,
+        "cer": 0.037037037037037035
+      },
+      "parakeet-canonical": {
+        "S": 1,
+        "D": 0,
+        "I": 1,
+        "N": 21,
+        "H": 20,
+        "wer": 0.09523809523809523,
+        "character_errors": 5,
+        "reference_characters": 135,
+        "cer": 0.037037037037037035
+      }
+    }
+  },
+  {
+    "id": "reviewed-767df23c7c14166f8579da284d5a4219",
+    "reference": "generators on fuel pumps all on hydraulic electric pumps on gpws all on fcs all on baro reference set qnh start boarding passenger and load",
+    "hypotheses": {
+      "baseline": "generators, on fuel pumps, all on hydraulic electric pumps, on GPWS, all on FCS, all on barrel reference, set QNH. Start boarding passenger and load.",
+      "uniform": "generators, on, fuel pumps, all on, hydraulic electric pumps, on, GPWS, all on, FCS, all on, barrel reference, set QNH. Start boarding passenger and load.",
+      "balanced": "generators, on, fuel pumps, all on, hydraulic electric pumps, on, GPWS, all on, FCS, all on, barrel reference, set QNH. Start boarding passenger and load.",
+      "balanced-silence": "generators, on, fuel pumps, all on, hydraulic electric pumps, on, GPWS, all on, FCS, all on, barrel reference, set QNH. Start boarding passenger and load.",
+      "parakeet": "Generators on fuel pumps all on hydraulic electric pumps on GPU WS all on FCS all on barrel reference set QNH start boarding passenger and load"
+    },
+    "scores": {
+      "baseline-raw": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 25,
+        "H": 24,
+        "wer": 0.04,
+        "character_errors": 3,
+        "reference_characters": 139,
+        "cer": 0.02158273381294964
+      },
+      "baseline-gate": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 25,
+        "H": 24,
+        "wer": 0.04,
+        "character_errors": 3,
+        "reference_characters": 139,
+        "cer": 0.02158273381294964
+      },
+      "baseline-canonical": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 25,
+        "H": 24,
+        "wer": 0.04,
+        "character_errors": 3,
+        "reference_characters": 139,
+        "cer": 0.02158273381294964
+      },
+      "uniform-raw": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 25,
+        "H": 24,
+        "wer": 0.04,
+        "character_errors": 3,
+        "reference_characters": 139,
+        "cer": 0.02158273381294964
+      },
+      "uniform-gate": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 25,
+        "H": 24,
+        "wer": 0.04,
+        "character_errors": 3,
+        "reference_characters": 139,
+        "cer": 0.02158273381294964
+      },
+      "uniform-canonical": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 25,
+        "H": 24,
+        "wer": 0.04,
+        "character_errors": 3,
+        "reference_characters": 139,
+        "cer": 0.02158273381294964
+      },
+      "balanced-raw": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 25,
+        "H": 24,
+        "wer": 0.04,
+        "character_errors": 3,
+        "reference_characters": 139,
+        "cer": 0.02158273381294964
+      },
+      "balanced-gate": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 25,
+        "H": 24,
+        "wer": 0.04,
+        "character_errors": 3,
+        "reference_characters": 139,
+        "cer": 0.02158273381294964
+      },
+      "balanced-canonical": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 25,
+        "H": 24,
+        "wer": 0.04,
+        "character_errors": 3,
+        "reference_characters": 139,
+        "cer": 0.02158273381294964
+      },
+      "balanced-silence-raw": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 25,
+        "H": 24,
+        "wer": 0.04,
+        "character_errors": 3,
+        "reference_characters": 139,
+        "cer": 0.02158273381294964
+      },
+      "balanced-silence-gate": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 25,
+        "H": 24,
+        "wer": 0.04,
+        "character_errors": 3,
+        "reference_characters": 139,
+        "cer": 0.02158273381294964
+      },
+      "balanced-silence-canonical": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 25,
+        "H": 24,
+        "wer": 0.04,
+        "character_errors": 3,
+        "reference_characters": 139,
+        "cer": 0.02158273381294964
+      },
+      "parakeet-raw": {
+        "S": 2,
+        "D": 0,
+        "I": 1,
+        "N": 25,
+        "H": 23,
+        "wer": 0.12,
+        "character_errors": 5,
+        "reference_characters": 139,
+        "cer": 0.03597122302158273
+      },
+      "parakeet-gate": {
+        "S": 2,
+        "D": 0,
+        "I": 1,
+        "N": 25,
+        "H": 23,
+        "wer": 0.12,
+        "character_errors": 5,
+        "reference_characters": 139,
+        "cer": 0.03597122302158273
+      },
+      "parakeet-canonical": {
+        "S": 2,
+        "D": 0,
+        "I": 1,
+        "N": 25,
+        "H": 23,
+        "wer": 0.12,
+        "character_errors": 5,
+        "reference_characters": 139,
+        "cer": 0.03597122302158273
+      }
+    }
+  },
+  {
+    "id": "reviewed-c55f9c7708704c548f503aa642c2288d",
+    "reference": "1.0.1.6 set pause, seat belt on minimum 3000 feet minimum 300 feet, auto break no auto break low engine mode select, no landing",
+    "hypotheses": {
+      "baseline": "1016 set both seat belt on minimum 3000 feet minimum 300 feet auto brake no auto brake low engine mode select no landing it came memo landing",
+      "uniform": "1016, set, pause, seat belt on, minimum 3000 feet, minimum 300 feet, auto brake, no, auto brake, low, engine mode select, no, landing, it came memo, landing,",
+      "balanced": "1016, set, pause, seat belt on, minimum 3000 feet, minimum 300 feet, auto brake, no, auto brake low, engine mode select, no, landing, it came memo, landing",
+      "balanced-silence": "1016, set, pause, seat belt on, minimum 3000 feet, minimum 300 feet, auto brake, no, auto brake low, engine mode select, no, landing, it came memo, landing",
+      "parakeet": "1016 set both seat belt on minimum 3000 feet, minimum 300 feet, auto brake, no, autobrake low, engine mode select, no landing accam memo, landing."
+    },
+    "scores": {
+      "baseline-raw": {
+        "S": 4,
+        "D": 0,
+        "I": 4,
+        "N": 23,
+        "H": 19,
+        "wer": 0.34782608695652173,
+        "character_errors": 33,
+        "reference_characters": 124,
+        "cer": 0.2661290322580645
+      },
+      "baseline-gate": {
+        "S": 4,
+        "D": 0,
+        "I": 4,
+        "N": 23,
+        "H": 19,
+        "wer": 0.34782608695652173,
+        "character_errors": 33,
+        "reference_characters": 124,
+        "cer": 0.2661290322580645
+      },
+      "baseline-canonical": {
+        "S": 4,
+        "D": 0,
+        "I": 4,
+        "N": 23,
+        "H": 19,
+        "wer": 0.34782608695652173,
+        "character_errors": 33,
+        "reference_characters": 124,
+        "cer": 0.2661290322580645
+      },
+      "uniform-raw": {
+        "S": 3,
+        "D": 0,
+        "I": 4,
+        "N": 23,
+        "H": 20,
+        "wer": 0.30434782608695654,
+        "character_errors": 28,
+        "reference_characters": 124,
+        "cer": 0.22580645161290322
+      },
+      "uniform-gate": {
+        "S": 3,
+        "D": 0,
+        "I": 4,
+        "N": 23,
+        "H": 20,
+        "wer": 0.30434782608695654,
+        "character_errors": 28,
+        "reference_characters": 124,
+        "cer": 0.22580645161290322
+      },
+      "uniform-canonical": {
+        "S": 3,
+        "D": 0,
+        "I": 4,
+        "N": 23,
+        "H": 20,
+        "wer": 0.30434782608695654,
+        "character_errors": 28,
+        "reference_characters": 124,
+        "cer": 0.22580645161290322
+      },
+      "balanced-raw": {
+        "S": 3,
+        "D": 0,
+        "I": 4,
+        "N": 23,
+        "H": 20,
+        "wer": 0.30434782608695654,
+        "character_errors": 28,
+        "reference_characters": 124,
+        "cer": 0.22580645161290322
+      },
+      "balanced-gate": {
+        "S": 3,
+        "D": 0,
+        "I": 4,
+        "N": 23,
+        "H": 20,
+        "wer": 0.30434782608695654,
+        "character_errors": 28,
+        "reference_characters": 124,
+        "cer": 0.22580645161290322
+      },
+      "balanced-canonical": {
+        "S": 3,
+        "D": 0,
+        "I": 4,
+        "N": 23,
+        "H": 20,
+        "wer": 0.30434782608695654,
+        "character_errors": 28,
+        "reference_characters": 124,
+        "cer": 0.22580645161290322
+      },
+      "balanced-silence-raw": {
+        "S": 3,
+        "D": 0,
+        "I": 4,
+        "N": 23,
+        "H": 20,
+        "wer": 0.30434782608695654,
+        "character_errors": 28,
+        "reference_characters": 124,
+        "cer": 0.22580645161290322
+      },
+      "balanced-silence-gate": {
+        "S": 3,
+        "D": 0,
+        "I": 4,
+        "N": 23,
+        "H": 20,
+        "wer": 0.30434782608695654,
+        "character_errors": 28,
+        "reference_characters": 124,
+        "cer": 0.22580645161290322
+      },
+      "balanced-silence-canonical": {
+        "S": 3,
+        "D": 0,
+        "I": 4,
+        "N": 23,
+        "H": 20,
+        "wer": 0.30434782608695654,
+        "character_errors": 28,
+        "reference_characters": 124,
+        "cer": 0.22580645161290322
+      },
+      "parakeet-raw": {
+        "S": 4,
+        "D": 1,
+        "I": 3,
+        "N": 23,
+        "H": 18,
+        "wer": 0.34782608695652173,
+        "character_errors": 32,
+        "reference_characters": 124,
+        "cer": 0.25806451612903225
+      },
+      "parakeet-gate": {
+        "S": 4,
+        "D": 1,
+        "I": 3,
+        "N": 23,
+        "H": 18,
+        "wer": 0.34782608695652173,
+        "character_errors": 32,
+        "reference_characters": 124,
+        "cer": 0.25806451612903225
+      },
+      "parakeet-canonical": {
+        "S": 4,
+        "D": 1,
+        "I": 3,
+        "N": 23,
+        "H": 18,
+        "wer": 0.34782608695652173,
+        "character_errors": 32,
+        "reference_characters": 124,
+        "cer": 0.25806451612903225
+      }
+    }
+  },
+  {
+    "id": "reviewed-291ebb141aa4e7a7ba94ccf8d18002fb",
+    "reference": "anti-ice, as required, heat prop blades, as required, air conditioning, heat, cool off, annunciator panel, No amber or red, oxygen, as required",
+    "hypotheses": {
+      "baseline": "anti-ice, as required, heat prop blades, as required, air conditioning, heat, cool off, annunciator panel, November in red, oxygen, as required,",
+      "uniform": "anti-ice, as required, heat prop blades, as required, air conditioning, heat, cool off, annunciator panel, november in red, oxygen, as required,",
+      "balanced": "anti-ice as required, heat prop blades as required, air conditioning, heat cool off, annunciator panel, november in red, oxygen as required,",
+      "balanced-silence": "anti-ice as required, heat prop blades as required, air conditioning, heat cool off, annunciator panel, november in red, oxygen as required,",
+      "parakeet": "Anti-ice, as required. Heat prop blades, as required. Air conditioning. Heat cool-off. Anunciator panel. No amber, no red no amber or red. Annunciator panel, no amber or red. Oxygen, as required."
+    },
+    "scores": {
+      "baseline-raw": {
+        "S": 2,
+        "D": 1,
+        "I": 0,
+        "N": 23,
+        "H": 20,
+        "wer": 0.13043478260869565,
+        "character_errors": 4,
+        "reference_characters": 133,
+        "cer": 0.03007518796992481
+      },
+      "baseline-gate": {
+        "S": 2,
+        "D": 1,
+        "I": 0,
+        "N": 23,
+        "H": 20,
+        "wer": 0.13043478260869565,
+        "character_errors": 4,
+        "reference_characters": 133,
+        "cer": 0.03007518796992481
+      },
+      "baseline-canonical": {
+        "S": 2,
+        "D": 1,
+        "I": 0,
+        "N": 23,
+        "H": 20,
+        "wer": 0.13043478260869565,
+        "character_errors": 4,
+        "reference_characters": 133,
+        "cer": 0.03007518796992481
+      },
+      "uniform-raw": {
+        "S": 2,
+        "D": 1,
+        "I": 0,
+        "N": 23,
+        "H": 20,
+        "wer": 0.13043478260869565,
+        "character_errors": 4,
+        "reference_characters": 133,
+        "cer": 0.03007518796992481
+      },
+      "uniform-gate": {
+        "S": 2,
+        "D": 1,
+        "I": 0,
+        "N": 23,
+        "H": 20,
+        "wer": 0.13043478260869565,
+        "character_errors": 4,
+        "reference_characters": 133,
+        "cer": 0.03007518796992481
+      },
+      "uniform-canonical": {
+        "S": 2,
+        "D": 1,
+        "I": 0,
+        "N": 23,
+        "H": 20,
+        "wer": 0.13043478260869565,
+        "character_errors": 4,
+        "reference_characters": 133,
+        "cer": 0.03007518796992481
+      },
+      "balanced-raw": {
+        "S": 2,
+        "D": 1,
+        "I": 0,
+        "N": 23,
+        "H": 20,
+        "wer": 0.13043478260869565,
+        "character_errors": 4,
+        "reference_characters": 133,
+        "cer": 0.03007518796992481
+      },
+      "balanced-gate": {
+        "S": 2,
+        "D": 1,
+        "I": 0,
+        "N": 23,
+        "H": 20,
+        "wer": 0.13043478260869565,
+        "character_errors": 4,
+        "reference_characters": 133,
+        "cer": 0.03007518796992481
+      },
+      "balanced-canonical": {
+        "S": 2,
+        "D": 1,
+        "I": 0,
+        "N": 23,
+        "H": 20,
+        "wer": 0.13043478260869565,
+        "character_errors": 4,
+        "reference_characters": 133,
+        "cer": 0.03007518796992481
+      },
+      "balanced-silence-raw": {
+        "S": 2,
+        "D": 1,
+        "I": 0,
+        "N": 23,
+        "H": 20,
+        "wer": 0.13043478260869565,
+        "character_errors": 4,
+        "reference_characters": 133,
+        "cer": 0.03007518796992481
+      },
+      "balanced-silence-gate": {
+        "S": 2,
+        "D": 1,
+        "I": 0,
+        "N": 23,
+        "H": 20,
+        "wer": 0.13043478260869565,
+        "character_errors": 4,
+        "reference_characters": 133,
+        "cer": 0.03007518796992481
+      },
+      "balanced-silence-canonical": {
+        "S": 2,
+        "D": 1,
+        "I": 0,
+        "N": 23,
+        "H": 20,
+        "wer": 0.13043478260869565,
+        "character_errors": 4,
+        "reference_characters": 133,
+        "cer": 0.03007518796992481
+      },
+      "parakeet-raw": {
+        "S": 0,
+        "D": 0,
+        "I": 10,
+        "N": 23,
+        "H": 23,
+        "wer": 0.43478260869565216,
+        "character_errors": 49,
+        "reference_characters": 133,
+        "cer": 0.3684210526315789
+      },
+      "parakeet-gate": {
+        "S": 0,
+        "D": 0,
+        "I": 10,
+        "N": 23,
+        "H": 23,
+        "wer": 0.43478260869565216,
+        "character_errors": 49,
+        "reference_characters": 133,
+        "cer": 0.3684210526315789
+      },
+      "parakeet-canonical": {
+        "S": 0,
+        "D": 0,
+        "I": 10,
+        "N": 23,
+        "H": 23,
+        "wer": 0.43478260869565216,
+        "character_errors": 49,
+        "reference_characters": 133,
+        "cer": 0.3684210526315789
+      }
+    }
+  },
+  {
+    "id": "reviewed-b8d2fc3fc1893f19ae7fb8d7c2722a4d",
+    "reference": "ng itt monitor engine instruments check oxygen check set as required fuel balance check external fuel check transfer as required boost pumps on",
+    "hypotheses": {
+      "baseline": "NG, ITT, monitor, NG instruments, check, oxygen, check, set as required, fuel balance, check, external fuel, check, transfer as required, boost pumps, on.",
+      "uniform": "NG, ITT, monitor, NG instruments, check, oxygen, check, set as required, fuel balance, check, external fuel, check, transfer as required, boost pumps, on.",
+      "balanced": "NG, ITT, monitor, NG instruments, check, oxygen, check, set as required, fuel balance, check, external fuel, check, transfer as required, boost pumps on.",
+      "balanced-silence": "NG, ITT, monitor, NG instruments, check, oxygen, check, set as required, fuel balance, check, external fuel, check, transfer as required, boost pumps on.",
+      "parakeet": "NG ITT monitor Engine instruments check oxygen check set as required Fuel balance check Extra light fuel check transfer as required Boost pumps on"
+    },
+    "scores": {
+      "baseline-raw": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 23,
+        "H": 22,
+        "wer": 0.043478260869565216,
+        "character_errors": 4,
+        "reference_characters": 143,
+        "cer": 0.027972027972027972
+      },
+      "baseline-gate": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 23,
+        "H": 22,
+        "wer": 0.043478260869565216,
+        "character_errors": 4,
+        "reference_characters": 143,
+        "cer": 0.027972027972027972
+      },
+      "baseline-canonical": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 23,
+        "H": 22,
+        "wer": 0.043478260869565216,
+        "character_errors": 4,
+        "reference_characters": 143,
+        "cer": 0.027972027972027972
+      },
+      "uniform-raw": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 23,
+        "H": 22,
+        "wer": 0.043478260869565216,
+        "character_errors": 4,
+        "reference_characters": 143,
+        "cer": 0.027972027972027972
+      },
+      "uniform-gate": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 23,
+        "H": 22,
+        "wer": 0.043478260869565216,
+        "character_errors": 4,
+        "reference_characters": 143,
+        "cer": 0.027972027972027972
+      },
+      "uniform-canonical": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 23,
+        "H": 22,
+        "wer": 0.043478260869565216,
+        "character_errors": 4,
+        "reference_characters": 143,
+        "cer": 0.027972027972027972
+      },
+      "balanced-raw": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 23,
+        "H": 22,
+        "wer": 0.043478260869565216,
+        "character_errors": 4,
+        "reference_characters": 143,
+        "cer": 0.027972027972027972
+      },
+      "balanced-gate": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 23,
+        "H": 22,
+        "wer": 0.043478260869565216,
+        "character_errors": 4,
+        "reference_characters": 143,
+        "cer": 0.027972027972027972
+      },
+      "balanced-canonical": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 23,
+        "H": 22,
+        "wer": 0.043478260869565216,
+        "character_errors": 4,
+        "reference_characters": 143,
+        "cer": 0.027972027972027972
+      },
+      "balanced-silence-raw": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 23,
+        "H": 22,
+        "wer": 0.043478260869565216,
+        "character_errors": 4,
+        "reference_characters": 143,
+        "cer": 0.027972027972027972
+      },
+      "balanced-silence-gate": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 23,
+        "H": 22,
+        "wer": 0.043478260869565216,
+        "character_errors": 4,
+        "reference_characters": 143,
+        "cer": 0.027972027972027972
+      },
+      "balanced-silence-canonical": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 23,
+        "H": 22,
+        "wer": 0.043478260869565216,
+        "character_errors": 4,
+        "reference_characters": 143,
+        "cer": 0.027972027972027972
+      },
+      "parakeet-raw": {
+        "S": 1,
+        "D": 0,
+        "I": 1,
+        "N": 23,
+        "H": 22,
+        "wer": 0.08695652173913043,
+        "character_errors": 7,
+        "reference_characters": 143,
+        "cer": 0.04895104895104895
+      },
+      "parakeet-gate": {
+        "S": 1,
+        "D": 0,
+        "I": 1,
+        "N": 23,
+        "H": 22,
+        "wer": 0.08695652173913043,
+        "character_errors": 7,
+        "reference_characters": 143,
+        "cer": 0.04895104895104895
+      },
+      "parakeet-canonical": {
+        "S": 1,
+        "D": 0,
+        "I": 1,
+        "N": 23,
+        "H": 22,
+        "wer": 0.08695652173913043,
+        "character_errors": 7,
+        "reference_characters": 143,
+        "cer": 0.04895104895104895
+      }
+    }
+  }
+]

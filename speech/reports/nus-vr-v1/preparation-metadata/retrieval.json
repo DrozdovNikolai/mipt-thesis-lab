@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-09-14T14:04:59.961115+00:00",
+  "purpose": "metadata_discovery",
+  "audio_imported": false,
+  "messages_sent": false,
+  "purchases_made": false,
+  "records": [
+    {
+      "id": "parquet-generation",
+      "url": "https://raw.githubusercontent.com/wangyubo013-blip/CDE4301-VR-401-Final-Report/0c520edbcd345cb9005cc77c3345eedbfef7147b/Scripts/Workstream1_SpeechRecognition/2.%20DatasetPreparation/ParquetGeneration.py",
+      "checked_at": "2026-09-14T14:04:59.556325+00:00",
+      "status": 200,
+      "bytes": 6644,
+      "final_url": "https://raw.githubusercontent.com/wangyubo013-blip/CDE4301-VR-401-Final-Report/0c520edbcd345cb9005cc77c3345eedbfef7147b/Scripts/Workstream1_SpeechRecognition/2.%20DatasetPreparation/ParquetGeneration.py",
+      "content_type": "text/plain; charset=utf-8",
+      "sha256": "c07abda94f9b736b96bfd3e83df4873aaa41e97dd4e850be7cbf2aaf87f8cccf"
+    },
+    {
+      "id": "timeline-template",
+      "url": "https://raw.githubusercontent.com/wangyubo013-blip/CDE4301-VR-401-Final-Report/0c520edbcd345cb9005cc77c3345eedbfef7147b/Scripts/Workstream1_SpeechRecognition/2.%20DatasetPreparation/TimelineTemplate.csv",
+      "checked_at": "2026-09-14T14:04:59.556815+00:00",
+      "status": 200,
+      "bytes": 511,
+      "final_url": "https://raw.githubusercontent.com/wangyubo013-blip/CDE4301-VR-401-Final-Report/0c520edbcd345cb9005cc77c3345eedbfef7147b/Scripts/Workstream1_SpeechRecognition/2.%20DatasetPreparation/TimelineTemplate.csv",
+      "content_type": "text/plain; charset=utf-8",
+      "sha256": "337b51c0b347ed40178ea4d0525636c96315ba45d9695429e8b5c8dc0892479c"
+    },
+    {
+      "id": "sound-extraction",
+      "url": "https://raw.githubusercontent.com/wangyubo013-blip/CDE4301-VR-401-Final-Report/0c520edbcd345cb9005cc77c3345eedbfef7147b/Scripts/Workstream1_SpeechRecognition/2.%20DatasetPreparation/SoundExtraction.py",
+      "checked_at": "2026-09-14T14:04:59.557115+00:00",
+      "status": 200,
+      "bytes": 3796,
+      "final_url": "https://raw.githubusercontent.com/wangyubo013-blip/CDE4301-VR-401-Final-Report/0c520edbcd345cb9005cc77c3345eedbfef7147b/Scripts/Workstream1_SpeechRecognition/2.%20DatasetPreparation/SoundExtraction.py",
+      "content_type": "text/plain; charset=utf-8",
+      "sha256": "5b9f907401a8129d27aa836ecfcce017f9a6162110b2f6bbe29fb0703574117b"
+    }
+  ]
+}

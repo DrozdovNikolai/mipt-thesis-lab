@@ -1,0 +1,3863 @@
+{
+  "status": "EXECUTED",
+  "network_mode": "none",
+  "cpu": true,
+  "plan": {
+    "purpose": "dev smoke and machine annotation drafts",
+    "test_opened": false,
+    "manifest_sha256": "05400924ac880e10c954c9955b163626c046e012019b29d9f0ef69d6110b1c24",
+    "code_hash": "3ebe06c6b5e3d924e96623be9a6829076844c701b9692cb02eed154824ea749f",
+    "selection_rule": "first dev raw checklist with a linked C variant, else first dev checklist",
+    "source_ids": [
+      "bleriot-a:DGA_checklist-PC7_sp104 ",
+      "bleriot-c:CVR_DGA_checklist-PC7_sp104 "
+    ],
+    "clip_start_sec": 30.0,
+    "clip_max_duration_sec": 30.0,
+    "configs": {
+      "baseline": {
+        "schema_version": "1.0",
+        "name": "baseline",
+        "model": "small",
+        "compute_type": "int8",
+        "device": "cpu",
+        "task": "transcribe",
+        "beam_size": 5,
+        "temperature": 0.0,
+        "best_of": 5,
+        "patience": 1.0,
+        "length_penalty": 1.0,
+        "repetition_penalty": 1.0,
+        "no_repeat_ngram_size": 0,
+        "condition_on_previous_text": true,
+        "compression_ratio_threshold": 2.4,
+        "log_prob_threshold": -1.0,
+        "no_speech_threshold": 0.6,
+        "suppress_blank": true,
+        "suppress_tokens": [
+          -1
+        ],
+        "max_initial_timestamp": 1.0,
+        "word_timestamps": true,
+        "language_detection_threshold": 0.5,
+        "language_detection_segments": 1,
+        "vad": {
+          "enabled": false,
+          "threshold": 0.5,
+          "min_speech_duration_ms": 100,
+          "min_silence_duration_ms": 400,
+          "speech_pad_ms": 200,
+          "max_speech_duration_s": 30.0
+        },
+        "denoise": {
+          "enabled": false,
+          "strength": 0.5,
+          "floor": 0.3,
+          "noise_percentile": 10.0
+        },
+        "hotwords": null,
+        "glossary_version": null,
+        "redecode": false,
+        "max_redecode_passes": 1,
+        "redecode_logprob_threshold": -0.8,
+        "episode_gap_sec": 2.0,
+        "episode_max_sec": 30.0,
+        "episode_max_tokens": 100,
+        "classifier": "rules_v1",
+        "classifier_artifact": null
+      },
+      "vad": {
+        "schema_version": "1.0",
+        "name": "baseline",
+        "model": "small",
+        "compute_type": "int8",
+        "device": "cpu",
+        "task": "transcribe",
+        "beam_size": 5,
+        "temperature": 0.0,
+        "best_of": 5,
+        "patience": 1.0,
+        "length_penalty": 1.0,
+        "repetition_penalty": 1.0,
+        "no_repeat_ngram_size": 0,
+        "condition_on_previous_text": true,
+        "compression_ratio_threshold": 2.4,
+        "log_prob_threshold": -1.0,
+        "no_speech_threshold": 0.6,
+        "suppress_blank": true,
+        "suppress_tokens": [
+          -1
+        ],
+        "max_initial_timestamp": 1.0,
+        "word_timestamps": true,
+        "language_detection_threshold": 0.5,
+        "language_detection_segments": 1,
+        "vad": {
+          "enabled": true,
+          "threshold": 0.5,
+          "min_speech_duration_ms": 100,
+          "min_silence_duration_ms": 400,
+          "speech_pad_ms": 200,
+          "max_speech_duration_s": 30.0
+        },
+        "denoise": {
+          "enabled": false,
+          "strength": 0.5,
+          "floor": 0.3,
+          "noise_percentile": 10.0
+        },
+        "hotwords": null,
+        "glossary_version": null,
+        "redecode": false,
+        "max_redecode_passes": 1,
+        "redecode_logprob_threshold": -0.8,
+        "episode_gap_sec": 2.0,
+        "episode_max_sec": 30.0,
+        "episode_max_tokens": 100,
+        "classifier": "rules_v1",
+        "classifier_artifact": null
+      }
+    }
+  },
+  "runs": [
+    {
+      "sample_id": "bleriot-a:DGA_checklist-PC7_sp104 ",
+      "split": "dev",
+      "pipeline": "baseline",
+      "source_audio_sha256": "8cbc53ad4b79a93b69ba2397f38f1949a32b793a252dece6b308fbfe9fa198f6",
+      "clip_sha256": "e21c34f94d8687adccb4cdb3936835cd23d19cf665009aeee30aee031bccb9a2",
+      "original_start_sec": 30.0,
+      "original_end_sec": 60.0,
+      "timestamp_mapping": "original seconds = clip seconds + original_start_sec",
+      "transcript_status": "machine",
+      "human_verified": false,
+      "result": {
+        "schema_version": "1.0",
+        "sample_id": "520adf9f459b183c6ba2c2cb77de989c34b41c69cf4466d4d2fb67d3fe7ab8a9",
+        "pipeline_version": "0.1.0",
+        "config_hash": "58d5c21bd34d262e8c2e2c9140bb42e8a593b0372c6828de20889a6ad48b8cfc",
+        "quality_gate_status": "NOT_RUN",
+        "deployment_candidate": "baseline",
+        "validated_scope": [],
+        "revision": 0,
+        "component_statuses": {
+          "asr": {
+            "status": "completed"
+          },
+          "diarization": {
+            "status": "not_requested",
+            "der": null,
+            "jer": null
+          },
+          "nlp": {
+            "status": "baseline",
+            "version": "rules_v1",
+            "trained": false,
+            "reason": "missing_event_labels_or_trained_artifact"
+          }
+        },
+        "segments": [
+          {
+            "segment_id": "ch0-chunk0-0",
+            "start_sec": 0.0,
+            "end_sec": 9.3,
+            "raw_asr_text": " anti-ice as required, heat prop blades as required, air conditioning, heat cool off,",
+            "display_text": "anti-ice as required, heat prop blades as required, air conditioning, heat cool off,",
+            "reviewed_text": null,
+            "channel": 0,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "language": "fr",
+            "words": [
+              {
+                "word": " anti",
+                "start_sec": 0.0,
+                "end_sec": 0.76,
+                "probability": 0.0057574305683374405
+              },
+              {
+                "word": "-ice",
+                "start_sec": 0.76,
+                "end_sec": 1.14,
+                "probability": 0.7620721757411957
+              },
+              {
+                "word": " as",
+                "start_sec": 1.14,
+                "end_sec": 1.8,
+                "probability": 0.3913595378398895
+              },
+              {
+                "word": " required,",
+                "start_sec": 1.8,
+                "end_sec": 2.04,
+                "probability": 0.48590412735939026
+              },
+              {
+                "word": " heat",
+                "start_sec": 3.28,
+                "end_sec": 3.82,
+                "probability": 0.8102652430534363
+              },
+              {
+                "word": " prop",
+                "start_sec": 3.82,
+                "end_sec": 4.04,
+                "probability": 0.3708024322986603
+              },
+              {
+                "word": " blades",
+                "start_sec": 4.04,
+                "end_sec": 4.44,
+                "probability": 0.8979859948158264
+              },
+              {
+                "word": " as",
+                "start_sec": 4.44,
+                "end_sec": 5.22,
+                "probability": 0.9399667382240295
+              },
+              {
+                "word": " required,",
+                "start_sec": 5.22,
+                "end_sec": 5.54,
+                "probability": 0.9581558108329773
+              },
+              {
+                "word": " air",
+                "start_sec": 6.58,
+                "end_sec": 6.8,
+                "probability": 0.9798049330711365
+              },
+              {
+                "word": " conditioning,",
+                "start_sec": 6.8,
+                "end_sec": 7.1,
+                "probability": 0.9293128848075867
+              },
+              {
+                "word": " heat",
+                "start_sec": 8.22,
+                "end_sec": 8.64,
+                "probability": 0.9832823872566223
+              },
+              {
+                "word": " cool",
+                "start_sec": 8.64,
+                "end_sec": 9.02,
+                "probability": 0.7433580160140991
+              },
+              {
+                "word": " off,",
+                "start_sec": 9.02,
+                "end_sec": 9.3,
+                "probability": 0.9042512774467468
+              }
+            ],
+            "avg_logprob": -0.5449892258644105,
+            "no_speech_prob": 0.8199203014373779,
+            "alternatives": [],
+            "normalization_changes": [
+              {
+                "old": " anti-ice as required, heat prop blades as required, air conditioning, heat cool off,",
+                "new": "anti-ice as required, heat prop blades as required, air conditioning, heat cool off,",
+                "rule_id": "nfc_whitespace",
+                "source_span": [
+                  0,
+                  85
+                ],
+                "justification": "Unicode NFC and whitespace formatting only",
+                "version": "display_normalizer_v1"
+              }
+            ],
+            "risk_level": "medium",
+            "risk_reasons": [
+              "uncalibrated_asr_confidence",
+              "unknown_speaker",
+              "unvalidated_language"
+            ]
+          },
+          {
+            "segment_id": "ch0-chunk0-1",
+            "start_sec": 10.18,
+            "end_sec": 23.98,
+            "raw_asr_text": " annonciateur panel novembre en red, oxygène as required, armless, amnette secured, flight",
+            "display_text": "annonciateur panel novembre en red, oxygène as required, armless, amnette secured, flight",
+            "reviewed_text": null,
+            "channel": 0,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "language": "fr",
+            "words": [
+              {
+                "word": " annonciateur",
+                "start_sec": 10.18,
+                "end_sec": 10.62,
+                "probability": 0.8703991621732712
+              },
+              {
+                "word": " panel",
+                "start_sec": 10.62,
+                "end_sec": 10.88,
+                "probability": 0.9312548637390137
+              },
+              {
+                "word": " novembre",
+                "start_sec": 10.88,
+                "end_sec": 13.02,
+                "probability": 0.46411117911338806
+              },
+              {
+                "word": " en",
+                "start_sec": 13.02,
+                "end_sec": 13.4,
+                "probability": 0.5341309309005737
+              },
+              {
+                "word": " red,",
+                "start_sec": 13.4,
+                "end_sec": 13.66,
+                "probability": 0.7839658856391907
+              },
+              {
+                "word": " oxygène",
+                "start_sec": 17.82,
+                "end_sec": 18.6,
+                "probability": 0.6963841815789541
+              },
+              {
+                "word": " as",
+                "start_sec": 18.6,
+                "end_sec": 19.38,
+                "probability": 0.94106125831604
+              },
+              {
+                "word": " required,",
+                "start_sec": 19.38,
+                "end_sec": 19.66,
+                "probability": 0.9248154759407043
+              },
+              {
+                "word": " armless,",
+                "start_sec": 20.62,
+                "end_sec": 21.1,
+                "probability": 0.7319266200065613
+              },
+              {
+                "word": " amnette",
+                "start_sec": 21.48,
+                "end_sec": 21.76,
+                "probability": 0.5657739229500294
+              },
+              {
+                "word": " secured,",
+                "start_sec": 21.76,
+                "end_sec": 22.58,
+                "probability": 0.11778314411640167
+              },
+              {
+                "word": " flight",
+                "start_sec": 23.84,
+                "end_sec": 23.98,
+                "probability": 0.9801827669143677
+              }
+            ],
+            "avg_logprob": -0.5449892258644105,
+            "no_speech_prob": 0.8199203014373779,
+            "alternatives": [],
+            "normalization_changes": [
+              {
+                "old": " annonciateur panel novembre en red, oxygène as required, armless, amnette secured, flight",
+                "new": "annonciateur panel novembre en red, oxygène as required, armless, amnette secured, flight",
+                "rule_id": "nfc_whitespace",
+                "source_span": [
+                  0,
+                  90
+                ],
+                "justification": "Unicode NFC and whitespace formatting only",
+                "version": "display_normalizer_v1"
+              }
+            ],
+            "risk_level": "medium",
+            "risk_reasons": [
+              "uncalibrated_asr_confidence",
+              "unknown_speaker",
+              "unvalidated_language"
+            ]
+          },
+          {
+            "segment_id": "ch0-chunk0-2",
+            "start_sec": 23.98,
+            "end_sec": 29.92,
+            "raw_asr_text": " console, flight controls, full and free movement, altimeter check",
+            "display_text": "console, flight controls, full and free movement, altimeter check",
+            "reviewed_text": null,
+            "channel": 0,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "language": "fr",
+            "words": [
+              {
+                "word": " console,",
+                "start_sec": 23.98,
+                "end_sec": 24.5,
+                "probability": 0.14520710706710815
+              },
+              {
+                "word": " flight",
+                "start_sec": 25.08,
+                "end_sec": 25.44,
+                "probability": 0.9146832823753357
+              },
+              {
+                "word": " controls,",
+                "start_sec": 25.44,
+                "end_sec": 25.94,
+                "probability": 0.7991334199905396
+              },
+              {
+                "word": " full",
+                "start_sec": 26.42,
+                "end_sec": 27.02,
+                "probability": 0.8790444731712341
+              },
+              {
+                "word": " and",
+                "start_sec": 27.02,
+                "end_sec": 27.3,
+                "probability": 0.7323544025421143
+              },
+              {
+                "word": " free",
+                "start_sec": 27.3,
+                "end_sec": 27.48,
+                "probability": 0.9786296486854553
+              },
+              {
+                "word": " movement,",
+                "start_sec": 27.48,
+                "end_sec": 27.78,
+                "probability": 0.796213686466217
+              },
+              {
+                "word": " altimeter",
+                "start_sec": 28.7,
+                "end_sec": 29.54,
+                "probability": 0.7840951681137085
+              },
+              {
+                "word": " check",
+                "start_sec": 29.54,
+                "end_sec": 29.92,
+                "probability": 0.6486107707023621
+              }
+            ],
+            "avg_logprob": -0.3511950373649597,
+            "no_speech_prob": 0.42401742935180664,
+            "alternatives": [],
+            "normalization_changes": [
+              {
+                "old": " console, flight controls, full and free movement, altimeter check",
+                "new": "console, flight controls, full and free movement, altimeter check",
+                "rule_id": "nfc_whitespace",
+                "source_span": [
+                  0,
+                  66
+                ],
+                "justification": "Unicode NFC and whitespace formatting only",
+                "version": "display_normalizer_v1"
+              }
+            ],
+            "risk_level": "medium",
+            "risk_reasons": [
+              "uncalibrated_asr_confidence",
+              "unknown_speaker",
+              "unvalidated_language"
+            ]
+          }
+        ],
+        "events": [
+          {
+            "event_id": "event-0",
+            "start_sec": 0.0,
+            "end_sec": 29.92,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "classifier_version": "rules_v1",
+            "ontology_version": "1.0",
+            "labels": [
+              "OTHER"
+            ],
+            "label_scores": {},
+            "score_kind": "heuristic_uncalibrated",
+            "speech_act": "unknown",
+            "salient_for_review": "unknown",
+            "evidence_segment_ids": [
+              "ch0-chunk0-0",
+              "ch0-chunk0-1",
+              "ch0-chunk0-2"
+            ],
+            "evidence_quote": "anti-ice as required, heat prop blades as required, air conditioning, heat cool off, annonciateur panel novembre en red, oxygène as required, armless, amnette secured, flight console, flight controls, full and free movement, altimeter check",
+            "reviewed_evidence_quote": null,
+            "assertion_kind": "spoken_mention",
+            "aircraft_state_verified": false,
+            "flight_phase": "unknown",
+            "phase_source": "unknown",
+            "entities": [],
+            "needs_review": true,
+            "review_status": "draft",
+            "risk_reasons": [
+              "uncalibrated_asr_confidence",
+              "unknown_speaker",
+              "unvalidated_language"
+            ]
+          }
+        ],
+        "audio": {
+          "sample_rate": 44100,
+          "channels": 1,
+          "duration_sec": 30.0,
+          "container": "wav",
+          "sha256": "e21c34f94d8687adccb4cdb3936835cd23d19cf665009aeee30aee031bccb9a2",
+          "channel_diagnostics": [
+            {
+              "channel": 0,
+              "peak": 0.015426716767251492,
+              "rms": 0.0013894290987466129,
+              "clipping_fraction": 0.0,
+              "prepared_rate": 16000,
+              "prepared_samples": 480000,
+              "original_offset_sec": 0,
+              "timeline_mapping": "original_sample = prepared_sample * original_rate / 16000"
+            }
+          ]
+        },
+        "timeline": [
+          {
+            "channel": 0,
+            "start_sample_16k": 0,
+            "end_sample_16k": 480000,
+            "original_start_sec": 0.0,
+            "original_end_sec": 30.0,
+            "original_sample_rate": 44100
+          }
+        ],
+        "crosstalk": [],
+        "effective_config": {
+          "schema_version": "1.0",
+          "name": "baseline",
+          "model": "small",
+          "compute_type": "int8",
+          "device": "cpu",
+          "task": "transcribe",
+          "beam_size": 5,
+          "temperature": 0.0,
+          "best_of": 5,
+          "patience": 1.0,
+          "length_penalty": 1.0,
+          "repetition_penalty": 1.0,
+          "no_repeat_ngram_size": 0,
+          "condition_on_previous_text": true,
+          "compression_ratio_threshold": 2.4,
+          "log_prob_threshold": -1.0,
+          "no_speech_threshold": 0.6,
+          "suppress_blank": true,
+          "suppress_tokens": [
+            -1
+          ],
+          "max_initial_timestamp": 1.0,
+          "word_timestamps": true,
+          "language_detection_threshold": 0.5,
+          "language_detection_segments": 1,
+          "vad": {
+            "enabled": false,
+            "threshold": 0.5,
+            "min_speech_duration_ms": 100,
+            "min_silence_duration_ms": 400,
+            "speech_pad_ms": 200,
+            "max_speech_duration_s": 30.0
+          },
+          "denoise": {
+            "enabled": false,
+            "strength": 0.5,
+            "floor": 0.3,
+            "noise_percentile": 10.0
+          },
+          "hotwords": null,
+          "glossary_version": null,
+          "redecode": false,
+          "max_redecode_passes": 1,
+          "redecode_logprob_threshold": -0.8,
+          "episode_gap_sec": 2.0,
+          "episode_max_sec": 30.0,
+          "episode_max_tokens": 100,
+          "classifier": "rules_v1",
+          "classifier_artifact": null
+        },
+        "effective_asr_options": {
+          "task": "transcribe",
+          "beam_size": 5,
+          "temperature": 0.0,
+          "best_of": 5,
+          "patience": 1.0,
+          "length_penalty": 1.0,
+          "repetition_penalty": 1.0,
+          "no_repeat_ngram_size": 0,
+          "condition_on_previous_text": true,
+          "compression_ratio_threshold": 2.4,
+          "log_prob_threshold": -1.0,
+          "no_speech_threshold": 0.6,
+          "suppress_blank": true,
+          "suppress_tokens": [
+            -1
+          ],
+          "max_initial_timestamp": 1.0,
+          "word_timestamps": true,
+          "language_detection_threshold": 0.5,
+          "language_detection_segments": 1,
+          "language": null,
+          "vad_filter": false,
+          "initial_prompt": null,
+          "hotwords": null,
+          "prompt_reset_on_temperature": 0.5,
+          "prefix": null,
+          "without_timestamps": false,
+          "prepend_punctuations": "\"'“¿([{-",
+          "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+          "max_new_tokens": null,
+          "chunk_length": null,
+          "clip_timestamps": "0",
+          "hallucination_silence_threshold": null,
+          "multilingual": false
+        },
+        "model_manifest": {
+          "model": "small",
+          "repo": "Systran/faster-whisper-small",
+          "revision": "536b0662742c02347bc0e980a01041f333bce120",
+          "files": {
+            "model.bin": "3e305921506d8872816023e4c273e75d2419fb89b24da97b4fe7bce14170d671",
+            "tokenizer.json": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab",
+            "README.md": "329373481008c7c38654aff8ecdcf0163c211557cc7ba8e2ef6f2f84b4f75ec8",
+            "config.json": "b55496ac7940a7ae47d2c01eab40edfd8701feec1229d9cce3b40014383fb828",
+            "vocabulary.txt": "34ce3fe1c5041027b3f8d42912270993f986dbc4bb34cf27f951e34a1e453913"
+          },
+          "license": "MIT",
+          "acquired_at": "2026-09-13T14:51:11Z",
+          "faster_whisper_version": "1.2.1",
+          "silero": {
+            "path": "/opt/venv/lib/python3.11/site-packages/faster_whisper/assets/silero_vad_v6.onnx",
+            "sha256": "4cbf549b8326f60f80f2536d9eefeb450a9abe83365a098031c89719f1be17d2",
+            "distribution": "bundled_with_faster_whisper"
+          }
+        },
+        "component_hashes": {
+          "audio.py": "ecc3906671382cc66d5ba7a46774d23f70de2a68b95ebf2791157b8d301217ce",
+          "asr.py": "4fa5c621e4d506ba41b531f7cbec46a59a0e26871c7a423c3bc398a5818c0da1",
+          "nlp.py": "e3dcc378ea66f6be96c81d7a4c884acaad4a930036abda5f0077e916d1dcbbf5",
+          "diarization.py": "ebde8a8e87af0099a6ee78971f74c802991a65d196a12c9f3db30c64ebf1decc",
+          "pipeline.py": "ca339e5c106aa25a103d3f9034d9ffd50eba7d4220718fe45189e1ac16d22b70",
+          "training.py": "2cb7b518d953f96501771a0b50af494d8498968468478b7b71d3b73eb11e369e",
+          "schemas.py": "3af2ad6dde74662b938f1c9eb7b20e0f6bf7af37535db5d4633da24811a7c343"
+        },
+        "cache_key": "129125bfbae6dfec320201181578f5864daca07a76c242039db72dc5bf3a88da",
+        "cache_hit": false,
+        "timing": {
+          "end_to_end_sec": 4.945170275001146,
+          "asr_sec": 3.762271506999241,
+          "model_initialization_sec": 1.0736519849997421,
+          "initialization_mode": "cold",
+          "end_to_end_rtf": 0.16483900916670488,
+          "asr_rtf": 0.12540905023330803
+        },
+        "environment": {
+          "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+          "processor": "",
+          "device": "cpu",
+          "precision": "int8",
+          "rss_bytes": 851701760,
+          "peak_rss_bytes": 959664128,
+          "hardware": {
+            "cpu_count": 20,
+            "memory_total_bytes": 33526280192,
+            "cpu_model": "Intel(R) Core(TM) i5-14600K"
+          }
+        },
+        "summary": "1 draft speech episodes; human review required."
+      }
+    },
+    {
+      "sample_id": "bleriot-a:DGA_checklist-PC7_sp104 ",
+      "split": "dev",
+      "pipeline": "vad",
+      "source_audio_sha256": "8cbc53ad4b79a93b69ba2397f38f1949a32b793a252dece6b308fbfe9fa198f6",
+      "clip_sha256": "e21c34f94d8687adccb4cdb3936835cd23d19cf665009aeee30aee031bccb9a2",
+      "original_start_sec": 30.0,
+      "original_end_sec": 60.0,
+      "timestamp_mapping": "original seconds = clip seconds + original_start_sec",
+      "transcript_status": "machine",
+      "human_verified": false,
+      "result": {
+        "schema_version": "1.0",
+        "sample_id": "520adf9f459b183c6ba2c2cb77de989c34b41c69cf4466d4d2fb67d3fe7ab8a9",
+        "pipeline_version": "0.1.0",
+        "config_hash": "8547b188b3b8d980daaf8e132c683b030a7de71ebb05d4dc04cfa82425cbc53f",
+        "quality_gate_status": "NOT_RUN",
+        "deployment_candidate": "baseline",
+        "validated_scope": [],
+        "revision": 0,
+        "component_statuses": {
+          "asr": {
+            "status": "completed"
+          },
+          "diarization": {
+            "status": "not_requested",
+            "der": null,
+            "jer": null
+          },
+          "nlp": {
+            "status": "baseline",
+            "version": "rules_v1",
+            "trained": false,
+            "reason": "missing_event_labels_or_trained_artifact"
+          }
+        },
+        "segments": [
+          {
+            "segment_id": "ch0-chunk0-0",
+            "start_sec": 0.504,
+            "end_sec": 1.1440000000000001,
+            "raw_asr_text": " On est à l'aise",
+            "display_text": "On est à l'aise",
+            "reviewed_text": null,
+            "channel": 0,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "language": "fr",
+            "words": [
+              {
+                "word": " On",
+                "start_sec": 0.504,
+                "end_sec": 0.6839999999999999,
+                "probability": 0.17956413328647614
+              },
+              {
+                "word": " est",
+                "start_sec": 0.6839999999999999,
+                "end_sec": 0.784,
+                "probability": 0.2553422152996063
+              },
+              {
+                "word": " à",
+                "start_sec": 0.784,
+                "end_sec": 0.9239999999999999,
+                "probability": 0.361650288105011
+              },
+              {
+                "word": " l",
+                "start_sec": 0.9239999999999999,
+                "end_sec": 1.004,
+                "probability": 0.8863105177879333
+              },
+              {
+                "word": "'aise",
+                "start_sec": 1.004,
+                "end_sec": 1.1440000000000001,
+                "probability": 0.8024268448352814
+              }
+            ],
+            "avg_logprob": -0.7267059624195099,
+            "no_speech_prob": 0.1585530787706375,
+            "alternatives": [],
+            "normalization_changes": [
+              {
+                "old": " On est à l'aise",
+                "new": "On est à l'aise",
+                "rule_id": "nfc_whitespace",
+                "source_span": [
+                  0,
+                  16
+                ],
+                "justification": "Unicode NFC and whitespace formatting only",
+                "version": "display_normalizer_v1"
+              }
+            ],
+            "risk_level": "medium",
+            "risk_reasons": [
+              "uncalibrated_asr_confidence",
+              "unknown_speaker",
+              "unvalidated_language"
+            ]
+          },
+          {
+            "segment_id": "ch0-chunk1-0",
+            "start_sec": 1.528,
+            "end_sec": 2.208,
+            "raw_asr_text": " That's what we're going to do.",
+            "display_text": "That's what we're going to do.",
+            "reviewed_text": null,
+            "channel": 0,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "language": "en",
+            "words": [
+              {
+                "word": " That's",
+                "start_sec": 1.528,
+                "end_sec": 1.828,
+                "probability": 0.51063053868711
+              },
+              {
+                "word": " what",
+                "start_sec": 1.828,
+                "end_sec": 1.888,
+                "probability": 0.5885223746299744
+              },
+              {
+                "word": " we're",
+                "start_sec": 1.888,
+                "end_sec": 2.028,
+                "probability": 0.6125802025198936
+              },
+              {
+                "word": " going",
+                "start_sec": 2.028,
+                "end_sec": 2.108,
+                "probability": 0.7004337906837463
+              },
+              {
+                "word": " to",
+                "start_sec": 2.108,
+                "end_sec": 2.208,
+                "probability": 0.963546633720398
+              },
+              {
+                "word": " do.",
+                "start_sec": 2.208,
+                "end_sec": 2.208,
+                "probability": 0.7878618240356445
+              }
+            ],
+            "avg_logprob": -0.7623999963204066,
+            "no_speech_prob": 0.1703868955373764,
+            "alternatives": [],
+            "normalization_changes": [
+              {
+                "old": " That's what we're going to do.",
+                "new": "That's what we're going to do.",
+                "rule_id": "nfc_whitespace",
+                "source_span": [
+                  0,
+                  31
+                ],
+                "justification": "Unicode NFC and whitespace formatting only",
+                "version": "display_normalizer_v1"
+              }
+            ],
+            "risk_level": "medium",
+            "risk_reasons": [
+              "uncalibrated_asr_confidence",
+              "unknown_speaker"
+            ]
+          },
+          {
+            "segment_id": "ch0-chunk2-0",
+            "start_sec": 3.512,
+            "end_sec": 4.4719999999999995,
+            "raw_asr_text": " c'est un peu bruyant",
+            "display_text": "c'est un peu bruyant",
+            "reviewed_text": null,
+            "channel": 0,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "language": "fr",
+            "words": [
+              {
+                "word": " c",
+                "start_sec": 3.512,
+                "end_sec": 3.812,
+                "probability": 0.06442723423242569
+              },
+              {
+                "word": "'est",
+                "start_sec": 3.812,
+                "end_sec": 3.892,
+                "probability": 0.9721607267856598
+              },
+              {
+                "word": " un",
+                "start_sec": 3.892,
+                "end_sec": 3.992,
+                "probability": 0.07962637394666672
+              },
+              {
+                "word": " peu",
+                "start_sec": 3.992,
+                "end_sec": 3.992,
+                "probability": 0.16329731047153473
+              },
+              {
+                "word": " bruyant",
+                "start_sec": 3.992,
+                "end_sec": 4.4719999999999995,
+                "probability": 0.3751806169748306
+              }
+            ],
+            "avg_logprob": -1.1601897803219883,
+            "no_speech_prob": 0.07214991748332977,
+            "alternatives": [],
+            "normalization_changes": [
+              {
+                "old": " c'est un peu bruyant",
+                "new": "c'est un peu bruyant",
+                "rule_id": "nfc_whitespace",
+                "source_span": [
+                  0,
+                  21
+                ],
+                "justification": "Unicode NFC and whitespace formatting only",
+                "version": "display_normalizer_v1"
+              }
+            ],
+            "risk_level": "medium",
+            "risk_reasons": [
+              "low_asr_logprob",
+              "uncalibrated_asr_confidence",
+              "unknown_speaker",
+              "unvalidated_language"
+            ]
+          },
+          {
+            "segment_id": "ch0-chunk3-0",
+            "start_sec": 4.92,
+            "end_sec": 5.66,
+            "raw_asr_text": " As-tu récroyé?",
+            "display_text": "As-tu récroyé?",
+            "reviewed_text": null,
+            "channel": 0,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "language": "fr",
+            "words": [
+              {
+                "word": " As",
+                "start_sec": 4.92,
+                "end_sec": 5.22,
+                "probability": 0.06606126576662064
+              },
+              {
+                "word": "-tu",
+                "start_sec": 5.22,
+                "end_sec": 5.3,
+                "probability": 0.42432941496372223
+              },
+              {
+                "word": " récroyé?",
+                "start_sec": 5.3,
+                "end_sec": 5.66,
+                "probability": 0.5384794026613235
+              }
+            ],
+            "avg_logprob": -0.9351742267608643,
+            "no_speech_prob": 0.1430339217185974,
+            "alternatives": [],
+            "normalization_changes": [
+              {
+                "old": " As-tu récroyé?",
+                "new": "As-tu récroyé?",
+                "rule_id": "nfc_whitespace",
+                "source_span": [
+                  0,
+                  15
+                ],
+                "justification": "Unicode NFC and whitespace formatting only",
+                "version": "display_normalizer_v1"
+              }
+            ],
+            "risk_level": "medium",
+            "risk_reasons": [
+              "low_asr_logprob",
+              "uncalibrated_asr_confidence",
+              "unknown_speaker",
+              "unvalidated_language"
+            ]
+          },
+          {
+            "segment_id": "ch0-chunk4-0",
+            "start_sec": 6.488,
+            "end_sec": 7.408,
+            "raw_asr_text": " E' con i cionigni",
+            "display_text": "E' con i cionigni",
+            "reviewed_text": null,
+            "channel": 0,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "language": "it",
+            "words": [
+              {
+                "word": " E'",
+                "start_sec": 6.488,
+                "end_sec": 6.768000000000001,
+                "probability": 0.12341547012329102
+              },
+              {
+                "word": " con",
+                "start_sec": 6.828,
+                "end_sec": 6.908,
+                "probability": 0.8758314847946167
+              },
+              {
+                "word": " i",
+                "start_sec": 6.908,
+                "end_sec": 7.008000000000001,
+                "probability": 0.8966023325920105
+              },
+              {
+                "word": " cionigni",
+                "start_sec": 7.008000000000001,
+                "end_sec": 7.408,
+                "probability": 0.5230613350868225
+              }
+            ],
+            "avg_logprob": -0.7887787168676202,
+            "no_speech_prob": 0.019567323848605156,
+            "alternatives": [],
+            "normalization_changes": [
+              {
+                "old": " E' con i cionigni",
+                "new": "E' con i cionigni",
+                "rule_id": "nfc_whitespace",
+                "source_span": [
+                  0,
+                  18
+                ],
+                "justification": "Unicode NFC and whitespace formatting only",
+                "version": "display_normalizer_v1"
+              }
+            ],
+            "risk_level": "medium",
+            "risk_reasons": [
+              "uncalibrated_asr_confidence",
+              "unknown_speaker",
+              "unvalidated_language"
+            ]
+          },
+          {
+            "segment_id": "ch0-chunk5-0",
+            "start_sec": 8.28,
+            "end_sec": 9.18,
+            "raw_asr_text": " Hit, cool off.",
+            "display_text": "Hit, cool off.",
+            "reviewed_text": null,
+            "channel": 0,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "language": "fr",
+            "words": [
+              {
+                "word": " Hit,",
+                "start_sec": 8.28,
+                "end_sec": 8.62,
+                "probability": 0.21979251503944397
+              },
+              {
+                "word": " cool",
+                "start_sec": 8.799999999999999,
+                "end_sec": 9.02,
+                "probability": 0.6197326183319092
+              },
+              {
+                "word": " off.",
+                "start_sec": 9.02,
+                "end_sec": 9.18,
+                "probability": 0.9059858322143555
+              }
+            ],
+            "avg_logprob": -0.8818276971578598,
+            "no_speech_prob": 0.08711231499910355,
+            "alternatives": [],
+            "normalization_changes": [
+              {
+                "old": " Hit, cool off.",
+                "new": "Hit, cool off.",
+                "rule_id": "nfc_whitespace",
+                "source_span": [
+                  0,
+                  15
+                ],
+                "justification": "Unicode NFC and whitespace formatting only",
+                "version": "display_normalizer_v1"
+              }
+            ],
+            "risk_level": "medium",
+            "risk_reasons": [
+              "low_asr_logprob",
+              "uncalibrated_asr_confidence",
+              "unknown_speaker",
+              "unvalidated_language"
+            ]
+          },
+          {
+            "segment_id": "ch0-chunk6-0",
+            "start_sec": 10.04,
+            "end_sec": 12.34,
+            "raw_asr_text": " annonciateur panel noambeur nore...",
+            "display_text": "annonciateur panel noambeur nore...",
+            "reviewed_text": null,
+            "channel": 0,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "language": "fr",
+            "words": [
+              {
+                "word": " annonciateur",
+                "start_sec": 10.04,
+                "end_sec": 10.62,
+                "probability": 0.6887456774711609
+              },
+              {
+                "word": " panel",
+                "start_sec": 10.62,
+                "end_sec": 10.899999999999999,
+                "probability": 0.869741678237915
+              },
+              {
+                "word": " noambeur",
+                "start_sec": 10.899999999999999,
+                "end_sec": 11.86,
+                "probability": 0.42714578099548817
+              },
+              {
+                "word": " nore...",
+                "start_sec": 11.86,
+                "end_sec": 12.34,
+                "probability": 0.22920620441436768
+              }
+            ],
+            "avg_logprob": -0.9432577565312386,
+            "no_speech_prob": 0.22132575511932373,
+            "alternatives": [],
+            "normalization_changes": [
+              {
+                "old": " annonciateur panel noambeur nore...",
+                "new": "annonciateur panel noambeur nore...",
+                "rule_id": "nfc_whitespace",
+                "source_span": [
+                  0,
+                  36
+                ],
+                "justification": "Unicode NFC and whitespace formatting only",
+                "version": "display_normalizer_v1"
+              }
+            ],
+            "risk_level": "medium",
+            "risk_reasons": [
+              "low_asr_logprob",
+              "uncalibrated_asr_confidence",
+              "unknown_speaker",
+              "unvalidated_language"
+            ]
+          },
+          {
+            "segment_id": "ch0-chunk6-1",
+            "start_sec": 12.34,
+            "end_sec": 13.76,
+            "raw_asr_text": " noambeur horre...",
+            "display_text": "noambeur horre...",
+            "reviewed_text": null,
+            "channel": 0,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "language": "fr",
+            "words": [
+              {
+                "word": " noambeur",
+                "start_sec": 12.34,
+                "end_sec": 13.219999999999999,
+                "probability": 0.8658014386892319
+              },
+              {
+                "word": " horre...",
+                "start_sec": 13.219999999999999,
+                "end_sec": 13.76,
+                "probability": 0.35957518219947815
+              }
+            ],
+            "avg_logprob": -0.9432577565312386,
+            "no_speech_prob": 0.22132575511932373,
+            "alternatives": [],
+            "normalization_changes": [
+              {
+                "old": " noambeur horre...",
+                "new": "noambeur horre...",
+                "rule_id": "nfc_whitespace",
+                "source_span": [
+                  0,
+                  18
+                ],
+                "justification": "Unicode NFC and whitespace formatting only",
+                "version": "display_normalizer_v1"
+              }
+            ],
+            "risk_level": "medium",
+            "risk_reasons": [
+              "low_asr_logprob",
+              "uncalibrated_asr_confidence",
+              "unknown_speaker",
+              "unvalidated_language"
+            ]
+          },
+          {
+            "segment_id": "ch0-chunk7-0",
+            "start_sec": 15.096,
+            "end_sec": 17.116,
+            "raw_asr_text": " annonciateur panel noamber en red",
+            "display_text": "annonciateur panel noamber en red",
+            "reviewed_text": null,
+            "channel": 0,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "language": "fr",
+            "words": [
+              {
+                "word": " annonciateur",
+                "start_sec": 15.096,
+                "end_sec": 15.656,
+                "probability": 0.6391064375638962
+              },
+              {
+                "word": " panel",
+                "start_sec": 15.656,
+                "end_sec": 15.936,
+                "probability": 0.9038922190666199
+              },
+              {
+                "word": " noamber",
+                "start_sec": 15.936,
+                "end_sec": 16.756,
+                "probability": 0.3789346516132355
+              },
+              {
+                "word": " en",
+                "start_sec": 16.756,
+                "end_sec": 16.936,
+                "probability": 0.6697350144386292
+              },
+              {
+                "word": " red",
+                "start_sec": 16.936,
+                "end_sec": 17.116,
+                "probability": 0.7678736448287964
+              }
+            ],
+            "avg_logprob": -0.6684628266554612,
+            "no_speech_prob": 0.13787075877189636,
+            "alternatives": [],
+            "normalization_changes": [
+              {
+                "old": " annonciateur panel noamber en red",
+                "new": "annonciateur panel noamber en red",
+                "rule_id": "nfc_whitespace",
+                "source_span": [
+                  0,
+                  34
+                ],
+                "justification": "Unicode NFC and whitespace formatting only",
+                "version": "display_normalizer_v1"
+              }
+            ],
+            "risk_level": "medium",
+            "risk_reasons": [
+              "uncalibrated_asr_confidence",
+              "unknown_speaker",
+              "unvalidated_language"
+            ]
+          },
+          {
+            "segment_id": "ch0-chunk8-0",
+            "start_sec": 17.976,
+            "end_sec": 18.596,
+            "raw_asr_text": " Oxygène.",
+            "display_text": "Oxygène.",
+            "reviewed_text": null,
+            "channel": 0,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "language": "fr",
+            "words": [
+              {
+                "word": " Oxygène.",
+                "start_sec": 17.976,
+                "end_sec": 18.596,
+                "probability": 0.7849700252215067
+              }
+            ],
+            "avg_logprob": -0.6343833548682076,
+            "no_speech_prob": 0.14465932548046112,
+            "alternatives": [],
+            "normalization_changes": [
+              {
+                "old": " Oxygène.",
+                "new": "Oxygène.",
+                "rule_id": "nfc_whitespace",
+                "source_span": [
+                  0,
+                  9
+                ],
+                "justification": "Unicode NFC and whitespace formatting only",
+                "version": "display_normalizer_v1"
+              }
+            ],
+            "risk_level": "medium",
+            "risk_reasons": [
+              "uncalibrated_asr_confidence",
+              "unknown_speaker",
+              "unvalidated_language"
+            ]
+          },
+          {
+            "segment_id": "ch0-chunk9-0",
+            "start_sec": 19.096,
+            "end_sec": 19.676,
+            "raw_asr_text": " À la semaine prochaine.",
+            "display_text": "À la semaine prochaine.",
+            "reviewed_text": null,
+            "channel": 0,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "language": "fr",
+            "words": [
+              {
+                "word": " À",
+                "start_sec": 19.096,
+                "end_sec": 19.376,
+                "probability": 0.17546828091144562
+              },
+              {
+                "word": " la",
+                "start_sec": 19.376,
+                "end_sec": 19.396,
+                "probability": 0.11752554774284363
+              },
+              {
+                "word": " semaine",
+                "start_sec": 19.396,
+                "end_sec": 19.456,
+                "probability": 0.1367986798286438
+              },
+              {
+                "word": " prochaine.",
+                "start_sec": 19.456,
+                "end_sec": 19.676,
+                "probability": 0.5704525709152222
+              }
+            ],
+            "avg_logprob": -1.0624848902225494,
+            "no_speech_prob": 0.11741778999567032,
+            "alternatives": [],
+            "normalization_changes": [
+              {
+                "old": " À la semaine prochaine.",
+                "new": "À la semaine prochaine.",
+                "rule_id": "nfc_whitespace",
+                "source_span": [
+                  0,
+                  24
+                ],
+                "justification": "Unicode NFC and whitespace formatting only",
+                "version": "display_normalizer_v1"
+              }
+            ],
+            "risk_level": "medium",
+            "risk_reasons": [
+              "low_asr_logprob",
+              "uncalibrated_asr_confidence",
+              "unknown_speaker",
+              "unvalidated_language"
+            ]
+          },
+          {
+            "segment_id": "ch0-chunk10-0",
+            "start_sec": 20.6,
+            "end_sec": 22.740000000000002,
+            "raw_asr_text": " Hamilez, ebniyette, sekiyordu.",
+            "display_text": "Hamilez, ebniyette, sekiyordu.",
+            "reviewed_text": null,
+            "channel": 0,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "language": "tr",
+            "words": [
+              {
+                "word": " Hamilez,",
+                "start_sec": 20.6,
+                "end_sec": 21.240000000000002,
+                "probability": 0.4292706449826558
+              },
+              {
+                "word": " ebniyette,",
+                "start_sec": 21.44,
+                "end_sec": 21.860000000000003,
+                "probability": 0.3734313502907753
+              },
+              {
+                "word": " sekiyordu.",
+                "start_sec": 22.12,
+                "end_sec": 22.740000000000002,
+                "probability": 0.6999123990535736
+              }
+            ],
+            "avg_logprob": -0.8582592705885569,
+            "no_speech_prob": 0.05940163880586624,
+            "alternatives": [],
+            "normalization_changes": [
+              {
+                "old": " Hamilez, ebniyette, sekiyordu.",
+                "new": "Hamilez, ebniyette, sekiyordu.",
+                "rule_id": "nfc_whitespace",
+                "source_span": [
+                  0,
+                  31
+                ],
+                "justification": "Unicode NFC and whitespace formatting only",
+                "version": "display_normalizer_v1"
+              }
+            ],
+            "risk_level": "medium",
+            "risk_reasons": [
+              "low_asr_logprob",
+              "uncalibrated_asr_confidence",
+              "unknown_speaker",
+              "unvalidated_language"
+            ]
+          },
+          {
+            "segment_id": "ch0-chunk11-0",
+            "start_sec": 23.704,
+            "end_sec": 24.364,
+            "raw_asr_text": " flight console",
+            "display_text": "flight console",
+            "reviewed_text": null,
+            "channel": 0,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "language": "fr",
+            "words": [
+              {
+                "word": " flight",
+                "start_sec": 23.704,
+                "end_sec": 23.984,
+                "probability": 0.22067400813102722
+              },
+              {
+                "word": " console",
+                "start_sec": 23.984,
+                "end_sec": 24.364,
+                "probability": 0.9390489459037781
+              }
+            ],
+            "avg_logprob": -0.6614880561828613,
+            "no_speech_prob": 0.24232235550880432,
+            "alternatives": [],
+            "normalization_changes": [
+              {
+                "old": " flight console",
+                "new": "flight console",
+                "rule_id": "nfc_whitespace",
+                "source_span": [
+                  0,
+                  15
+                ],
+                "justification": "Unicode NFC and whitespace formatting only",
+                "version": "display_normalizer_v1"
+              }
+            ],
+            "risk_level": "medium",
+            "risk_reasons": [
+              "uncalibrated_asr_confidence",
+              "unknown_speaker",
+              "unvalidated_language"
+            ]
+          },
+          {
+            "segment_id": "ch0-chunk12-0",
+            "start_sec": 25.144,
+            "end_sec": 25.924,
+            "raw_asr_text": " flight controls",
+            "display_text": "flight controls",
+            "reviewed_text": null,
+            "channel": 0,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "language": "fr",
+            "words": [
+              {
+                "word": " flight",
+                "start_sec": 25.144,
+                "end_sec": 25.444,
+                "probability": 0.3495435416698456
+              },
+              {
+                "word": " controls",
+                "start_sec": 25.444,
+                "end_sec": 25.924,
+                "probability": 0.8256436586380005
+              }
+            ],
+            "avg_logprob": -0.6332793712615967,
+            "no_speech_prob": 0.17311698198318481,
+            "alternatives": [],
+            "normalization_changes": [
+              {
+                "old": " flight controls",
+                "new": "flight controls",
+                "rule_id": "nfc_whitespace",
+                "source_span": [
+                  0,
+                  16
+                ],
+                "justification": "Unicode NFC and whitespace formatting only",
+                "version": "display_normalizer_v1"
+              }
+            ],
+            "risk_level": "medium",
+            "risk_reasons": [
+              "uncalibrated_asr_confidence",
+              "unknown_speaker",
+              "unvalidated_language"
+            ]
+          },
+          {
+            "segment_id": "ch0-chunk13-0",
+            "start_sec": 26.68,
+            "end_sec": 27.72,
+            "raw_asr_text": " Full and free movement.",
+            "display_text": "Full and free movement.",
+            "reviewed_text": null,
+            "channel": 0,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "language": "fr",
+            "words": [
+              {
+                "word": " Full",
+                "start_sec": 26.68,
+                "end_sec": 27.02,
+                "probability": 0.5187866687774658
+              },
+              {
+                "word": " and",
+                "start_sec": 27.02,
+                "end_sec": 27.3,
+                "probability": 0.3987696170806885
+              },
+              {
+                "word": " free",
+                "start_sec": 27.3,
+                "end_sec": 27.48,
+                "probability": 0.7370657324790955
+              },
+              {
+                "word": " movement.",
+                "start_sec": 27.48,
+                "end_sec": 27.72,
+                "probability": 0.9356139302253723
+              }
+            ],
+            "avg_logprob": -0.6346866935491562,
+            "no_speech_prob": 0.2526547312736511,
+            "alternatives": [],
+            "normalization_changes": [
+              {
+                "old": " Full and free movement.",
+                "new": "Full and free movement.",
+                "rule_id": "nfc_whitespace",
+                "source_span": [
+                  0,
+                  24
+                ],
+                "justification": "Unicode NFC and whitespace formatting only",
+                "version": "display_normalizer_v1"
+              }
+            ],
+            "risk_level": "medium",
+            "risk_reasons": [
+              "uncalibrated_asr_confidence",
+              "unknown_speaker",
+              "unvalidated_language"
+            ]
+          },
+          {
+            "segment_id": "ch0-chunk14-0",
+            "start_sec": 29.144,
+            "end_sec": 29.964,
+            "raw_asr_text": " Petit moteur, check !",
+            "display_text": "Petit moteur, check !",
+            "reviewed_text": null,
+            "channel": 0,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "language": "fr",
+            "words": [
+              {
+                "word": " Petit",
+                "start_sec": 29.144,
+                "end_sec": 29.343999999999998,
+                "probability": 0.10684169363230467
+              },
+              {
+                "word": " moteur,",
+                "start_sec": 29.343999999999998,
+                "end_sec": 29.723999999999997,
+                "probability": 0.8018226325511932
+              },
+              {
+                "word": " check",
+                "start_sec": 29.804,
+                "end_sec": 29.904,
+                "probability": 0.823535144329071
+              },
+              {
+                "word": " !",
+                "start_sec": 29.904,
+                "end_sec": 29.964,
+                "probability": 0.49318021535873413
+              }
+            ],
+            "avg_logprob": -0.9494684100151062,
+            "no_speech_prob": 0.1541033536195755,
+            "alternatives": [],
+            "normalization_changes": [
+              {
+                "old": " Petit moteur, check !",
+                "new": "Petit moteur, check !",
+                "rule_id": "nfc_whitespace",
+                "source_span": [
+                  0,
+                  22
+                ],
+                "justification": "Unicode NFC and whitespace formatting only",
+                "version": "display_normalizer_v1"
+              }
+            ],
+            "risk_level": "medium",
+            "risk_reasons": [
+              "low_asr_logprob",
+              "uncalibrated_asr_confidence",
+              "unknown_speaker",
+              "unvalidated_language"
+            ]
+          }
+        ],
+        "events": [
+          {
+            "event_id": "event-0",
+            "start_sec": 0.504,
+            "end_sec": 29.964,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "classifier_version": "rules_v1",
+            "ontology_version": "1.0",
+            "labels": [
+              "OTHER"
+            ],
+            "label_scores": {},
+            "score_kind": "heuristic_uncalibrated",
+            "speech_act": "unknown",
+            "salient_for_review": "unknown",
+            "evidence_segment_ids": [
+              "ch0-chunk0-0",
+              "ch0-chunk1-0",
+              "ch0-chunk2-0",
+              "ch0-chunk3-0",
+              "ch0-chunk4-0",
+              "ch0-chunk5-0",
+              "ch0-chunk6-0",
+              "ch0-chunk6-1",
+              "ch0-chunk7-0",
+              "ch0-chunk8-0",
+              "ch0-chunk9-0",
+              "ch0-chunk10-0",
+              "ch0-chunk11-0",
+              "ch0-chunk12-0",
+              "ch0-chunk13-0",
+              "ch0-chunk14-0"
+            ],
+            "evidence_quote": "On est à l'aise That's what we're going to do. c'est un peu bruyant As-tu récroyé? E' con i cionigni Hit, cool off. annonciateur panel noambeur nore... noambeur horre... annonciateur panel noamber en red Oxygène. À la semaine prochaine. Hamilez, ebniyette, sekiyordu. flight console flight controls Full and free movement. Petit moteur, check !",
+            "reviewed_evidence_quote": null,
+            "assertion_kind": "spoken_mention",
+            "aircraft_state_verified": false,
+            "flight_phase": "unknown",
+            "phase_source": "unknown",
+            "entities": [],
+            "needs_review": true,
+            "review_status": "draft",
+            "risk_reasons": [
+              "low_asr_logprob",
+              "uncalibrated_asr_confidence",
+              "unknown_speaker",
+              "unvalidated_language"
+            ]
+          }
+        ],
+        "audio": {
+          "sample_rate": 44100,
+          "channels": 1,
+          "duration_sec": 30.0,
+          "container": "wav",
+          "sha256": "e21c34f94d8687adccb4cdb3936835cd23d19cf665009aeee30aee031bccb9a2",
+          "channel_diagnostics": [
+            {
+              "channel": 0,
+              "peak": 0.015426716767251492,
+              "rms": 0.0013894290987466129,
+              "clipping_fraction": 0.0,
+              "prepared_rate": 16000,
+              "prepared_samples": 480000,
+              "original_offset_sec": 0,
+              "timeline_mapping": "original_sample = prepared_sample * original_rate / 16000"
+            }
+          ]
+        },
+        "timeline": [
+          {
+            "channel": 0,
+            "start_sample_16k": 8064,
+            "end_sample_16k": 23680,
+            "original_start_sec": 0.504,
+            "original_end_sec": 1.48,
+            "original_sample_rate": 44100
+          },
+          {
+            "channel": 0,
+            "start_sample_16k": 24448,
+            "end_sample_16k": 41088,
+            "original_start_sec": 1.528,
+            "original_end_sec": 2.568,
+            "original_sample_rate": 44100
+          },
+          {
+            "channel": 0,
+            "start_sample_16k": 56192,
+            "end_sample_16k": 76928,
+            "original_start_sec": 3.512,
+            "original_end_sec": 4.808,
+            "original_sample_rate": 44100
+          },
+          {
+            "channel": 0,
+            "start_sample_16k": 78720,
+            "end_sample_16k": 96384,
+            "original_start_sec": 4.92,
+            "original_end_sec": 6.024,
+            "original_sample_rate": 44100
+          },
+          {
+            "channel": 0,
+            "start_sample_16k": 103808,
+            "end_sample_16k": 121984,
+            "original_start_sec": 6.488,
+            "original_end_sec": 7.624,
+            "original_sample_rate": 44100
+          },
+          {
+            "channel": 0,
+            "start_sample_16k": 132480,
+            "end_sample_16k": 152704,
+            "original_start_sec": 8.28,
+            "original_end_sec": 9.544,
+            "original_sample_rate": 44100
+          },
+          {
+            "channel": 0,
+            "start_sample_16k": 160640,
+            "end_sample_16k": 223360,
+            "original_start_sec": 10.04,
+            "original_end_sec": 13.96,
+            "original_sample_rate": 44100
+          },
+          {
+            "channel": 0,
+            "start_sample_16k": 241536,
+            "end_sample_16k": 279680,
+            "original_start_sec": 15.096,
+            "original_end_sec": 17.48,
+            "original_sample_rate": 44100
+          },
+          {
+            "channel": 0,
+            "start_sample_16k": 287616,
+            "end_sample_16k": 302208,
+            "original_start_sec": 17.976,
+            "original_end_sec": 18.888,
+            "original_sample_rate": 44100
+          },
+          {
+            "channel": 0,
+            "start_sample_16k": 305536,
+            "end_sample_16k": 322176,
+            "original_start_sec": 19.096,
+            "original_end_sec": 20.136,
+            "original_sample_rate": 44100
+          },
+          {
+            "channel": 0,
+            "start_sample_16k": 329600,
+            "end_sample_16k": 369280,
+            "original_start_sec": 20.6,
+            "original_end_sec": 23.08,
+            "original_sample_rate": 44100
+          },
+          {
+            "channel": 0,
+            "start_sample_16k": 379264,
+            "end_sample_16k": 399488,
+            "original_start_sec": 23.704,
+            "original_end_sec": 24.968,
+            "original_sample_rate": 44100
+          },
+          {
+            "channel": 0,
+            "start_sample_16k": 402304,
+            "end_sample_16k": 422528,
+            "original_start_sec": 25.144,
+            "original_end_sec": 26.408,
+            "original_sample_rate": 44100
+          },
+          {
+            "channel": 0,
+            "start_sample_16k": 426880,
+            "end_sample_16k": 450176,
+            "original_start_sec": 26.68,
+            "original_end_sec": 28.136,
+            "original_sample_rate": 44100
+          },
+          {
+            "channel": 0,
+            "start_sample_16k": 466304,
+            "end_sample_16k": 480000,
+            "original_start_sec": 29.144,
+            "original_end_sec": 30.0,
+            "original_sample_rate": 44100
+          }
+        ],
+        "crosstalk": [],
+        "effective_config": {
+          "schema_version": "1.0",
+          "name": "baseline",
+          "model": "small",
+          "compute_type": "int8",
+          "device": "cpu",
+          "task": "transcribe",
+          "beam_size": 5,
+          "temperature": 0.0,
+          "best_of": 5,
+          "patience": 1.0,
+          "length_penalty": 1.0,
+          "repetition_penalty": 1.0,
+          "no_repeat_ngram_size": 0,
+          "condition_on_previous_text": true,
+          "compression_ratio_threshold": 2.4,
+          "log_prob_threshold": -1.0,
+          "no_speech_threshold": 0.6,
+          "suppress_blank": true,
+          "suppress_tokens": [
+            -1
+          ],
+          "max_initial_timestamp": 1.0,
+          "word_timestamps": true,
+          "language_detection_threshold": 0.5,
+          "language_detection_segments": 1,
+          "vad": {
+            "enabled": true,
+            "threshold": 0.5,
+            "min_speech_duration_ms": 100,
+            "min_silence_duration_ms": 400,
+            "speech_pad_ms": 200,
+            "max_speech_duration_s": 30.0
+          },
+          "denoise": {
+            "enabled": false,
+            "strength": 0.5,
+            "floor": 0.3,
+            "noise_percentile": 10.0
+          },
+          "hotwords": null,
+          "glossary_version": null,
+          "redecode": false,
+          "max_redecode_passes": 1,
+          "redecode_logprob_threshold": -0.8,
+          "episode_gap_sec": 2.0,
+          "episode_max_sec": 30.0,
+          "episode_max_tokens": 100,
+          "classifier": "rules_v1",
+          "classifier_artifact": null
+        },
+        "effective_asr_options": {
+          "task": "transcribe",
+          "beam_size": 5,
+          "temperature": 0.0,
+          "best_of": 5,
+          "patience": 1.0,
+          "length_penalty": 1.0,
+          "repetition_penalty": 1.0,
+          "no_repeat_ngram_size": 0,
+          "condition_on_previous_text": true,
+          "compression_ratio_threshold": 2.4,
+          "log_prob_threshold": -1.0,
+          "no_speech_threshold": 0.6,
+          "suppress_blank": true,
+          "suppress_tokens": [
+            -1
+          ],
+          "max_initial_timestamp": 1.0,
+          "word_timestamps": true,
+          "language_detection_threshold": 0.5,
+          "language_detection_segments": 1,
+          "language": null,
+          "vad_filter": false,
+          "initial_prompt": null,
+          "hotwords": null,
+          "prompt_reset_on_temperature": 0.5,
+          "prefix": null,
+          "without_timestamps": false,
+          "prepend_punctuations": "\"'“¿([{-",
+          "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+          "max_new_tokens": null,
+          "chunk_length": null,
+          "clip_timestamps": "0",
+          "hallucination_silence_threshold": null,
+          "multilingual": false
+        },
+        "model_manifest": {
+          "model": "small",
+          "repo": "Systran/faster-whisper-small",
+          "revision": "536b0662742c02347bc0e980a01041f333bce120",
+          "files": {
+            "model.bin": "3e305921506d8872816023e4c273e75d2419fb89b24da97b4fe7bce14170d671",
+            "tokenizer.json": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab",
+            "README.md": "329373481008c7c38654aff8ecdcf0163c211557cc7ba8e2ef6f2f84b4f75ec8",
+            "config.json": "b55496ac7940a7ae47d2c01eab40edfd8701feec1229d9cce3b40014383fb828",
+            "vocabulary.txt": "34ce3fe1c5041027b3f8d42912270993f986dbc4bb34cf27f951e34a1e453913"
+          },
+          "license": "MIT",
+          "acquired_at": "2026-09-13T14:51:11Z",
+          "faster_whisper_version": "1.2.1",
+          "silero": {
+            "path": "/opt/venv/lib/python3.11/site-packages/faster_whisper/assets/silero_vad_v6.onnx",
+            "sha256": "4cbf549b8326f60f80f2536d9eefeb450a9abe83365a098031c89719f1be17d2",
+            "distribution": "bundled_with_faster_whisper"
+          }
+        },
+        "component_hashes": {
+          "audio.py": "ecc3906671382cc66d5ba7a46774d23f70de2a68b95ebf2791157b8d301217ce",
+          "asr.py": "4fa5c621e4d506ba41b531f7cbec46a59a0e26871c7a423c3bc398a5818c0da1",
+          "nlp.py": "e3dcc378ea66f6be96c81d7a4c884acaad4a930036abda5f0077e916d1dcbbf5",
+          "diarization.py": "ebde8a8e87af0099a6ee78971f74c802991a65d196a12c9f3db30c64ebf1decc",
+          "pipeline.py": "ca339e5c106aa25a103d3f9034d9ffd50eba7d4220718fe45189e1ac16d22b70",
+          "training.py": "2cb7b518d953f96501771a0b50af494d8498968468478b7b71d3b73eb11e369e",
+          "schemas.py": "3af2ad6dde74662b938f1c9eb7b20e0f6bf7af37535db5d4633da24811a7c343"
+        },
+        "cache_key": "b63365ae83e4bd27ac2dd682b556e7718c49b3f3b38d5e0fdd812e88b2f86b57",
+        "cache_hit": false,
+        "timing": {
+          "end_to_end_sec": 28.600902930998927,
+          "asr_sec": 28.337174281999978,
+          "model_initialization_sec": 6.272199971135706e-05,
+          "initialization_mode": "warm",
+          "end_to_end_rtf": 0.9533634310332976,
+          "asr_rtf": 0.944572476066666
+        },
+        "environment": {
+          "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+          "processor": "",
+          "device": "cpu",
+          "precision": "int8",
+          "rss_bytes": 873271296,
+          "peak_rss_bytes": 981204992,
+          "hardware": {
+            "cpu_count": 20,
+            "memory_total_bytes": 33526280192,
+            "cpu_model": "Intel(R) Core(TM) i5-14600K"
+          }
+        },
+        "summary": "1 draft speech episodes; human review required."
+      }
+    },
+    {
+      "sample_id": "bleriot-c:CVR_DGA_checklist-PC7_sp104 ",
+      "split": "dev",
+      "pipeline": "baseline",
+      "source_audio_sha256": "1bb2703a821159b60a826d0d723578a978ac1c7ad2d40d61e7857c01790e6705",
+      "clip_sha256": "9a8d59f82272f9868fecac32e74a44ec5b9d7685327509fb385af169267a07e5",
+      "original_start_sec": 30.0,
+      "original_end_sec": 60.0,
+      "timestamp_mapping": "original seconds = clip seconds + original_start_sec",
+      "transcript_status": "machine",
+      "human_verified": false,
+      "result": {
+        "schema_version": "1.0",
+        "sample_id": "9699d9d6a42dff71a2ca6efdc950bdb5ba44e53fc3e0c4d4eeacf3954118ec65",
+        "pipeline_version": "0.1.0",
+        "config_hash": "58d5c21bd34d262e8c2e2c9140bb42e8a593b0372c6828de20889a6ad48b8cfc",
+        "quality_gate_status": "NOT_RUN",
+        "deployment_candidate": "baseline",
+        "validated_scope": [],
+        "revision": 0,
+        "component_statuses": {
+          "asr": {
+            "status": "completed"
+          },
+          "diarization": {
+            "status": "not_requested",
+            "der": null,
+            "jer": null
+          },
+          "nlp": {
+            "status": "baseline",
+            "version": "rules_v1",
+            "trained": false,
+            "reason": "missing_event_labels_or_trained_artifact"
+          }
+        },
+        "segments": [
+          {
+            "segment_id": "ch0-chunk0-0",
+            "start_sec": 0.0,
+            "end_sec": 17.44,
+            "raw_asr_text": " On dirait A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A,",
+            "display_text": "On dirait A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A,",
+            "reviewed_text": null,
+            "channel": 0,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "language": "fr",
+            "words": [
+              {
+                "word": " On",
+                "start_sec": 0.0,
+                "end_sec": 0.7,
+                "probability": 0.0294493418186903
+              },
+              {
+                "word": " dirait",
+                "start_sec": 0.7,
+                "end_sec": 0.86,
+                "probability": 0.5964769273996353
+              },
+              {
+                "word": " A,",
+                "start_sec": 0.86,
+                "end_sec": 1.6,
+                "probability": 0.06318860501050949
+              },
+              {
+                "word": " A,",
+                "start_sec": 1.6,
+                "end_sec": 1.84,
+                "probability": 0.2170272171497345
+              },
+              {
+                "word": " A,",
+                "start_sec": 1.88,
+                "end_sec": 2.1,
+                "probability": 0.3754490613937378
+              },
+              {
+                "word": " A,",
+                "start_sec": 2.18,
+                "end_sec": 3.02,
+                "probability": 0.549951434135437
+              },
+              {
+                "word": " A,",
+                "start_sec": 3.02,
+                "end_sec": 3.88,
+                "probability": 0.7749441266059875
+              },
+              {
+                "word": " A,",
+                "start_sec": 5.62,
+                "end_sec": 5.78,
+                "probability": 0.8901616930961609
+              },
+              {
+                "word": " A,",
+                "start_sec": 5.8,
+                "end_sec": 6.94,
+                "probability": 0.9399566054344177
+              },
+              {
+                "word": " A,",
+                "start_sec": 7.08,
+                "end_sec": 7.42,
+                "probability": 0.963855504989624
+              },
+              {
+                "word": " A,",
+                "start_sec": 7.42,
+                "end_sec": 8.0,
+                "probability": 0.9637803435325623
+              },
+              {
+                "word": " A,",
+                "start_sec": 8.0,
+                "end_sec": 8.68,
+                "probability": 0.968478798866272
+              },
+              {
+                "word": " A,",
+                "start_sec": 9.04,
+                "end_sec": 10.26,
+                "probability": 0.9739078283309937
+              },
+              {
+                "word": " A,",
+                "start_sec": 10.26,
+                "end_sec": 10.26,
+                "probability": 0.9761014580726624
+              },
+              {
+                "word": " A,",
+                "start_sec": 10.26,
+                "end_sec": 10.46,
+                "probability": 0.9789299368858337
+              },
+              {
+                "word": " A,",
+                "start_sec": 10.46,
+                "end_sec": 10.46,
+                "probability": 0.9806915521621704
+              },
+              {
+                "word": " A,",
+                "start_sec": 10.56,
+                "end_sec": 10.56,
+                "probability": 0.9829902648925781
+              },
+              {
+                "word": " A,",
+                "start_sec": 10.86,
+                "end_sec": 10.86,
+                "probability": 0.9848893880844116
+              },
+              {
+                "word": " A,",
+                "start_sec": 10.86,
+                "end_sec": 10.86,
+                "probability": 0.9865968823432922
+              },
+              {
+                "word": " A,",
+                "start_sec": 10.86,
+                "end_sec": 10.86,
+                "probability": 0.9875665903091431
+              },
+              {
+                "word": " A,",
+                "start_sec": 10.88,
+                "end_sec": 10.9,
+                "probability": 0.988842248916626
+              },
+              {
+                "word": " A,",
+                "start_sec": 10.9,
+                "end_sec": 10.9,
+                "probability": 0.9907926917076111
+              },
+              {
+                "word": " A,",
+                "start_sec": 10.9,
+                "end_sec": 10.96,
+                "probability": 0.9908127188682556
+              },
+              {
+                "word": " A,",
+                "start_sec": 10.96,
+                "end_sec": 10.96,
+                "probability": 0.9909294247627258
+              },
+              {
+                "word": " A,",
+                "start_sec": 10.96,
+                "end_sec": 10.96,
+                "probability": 0.991661548614502
+              },
+              {
+                "word": " A,",
+                "start_sec": 10.96,
+                "end_sec": 10.96,
+                "probability": 0.9923865795135498
+              },
+              {
+                "word": " A,",
+                "start_sec": 10.96,
+                "end_sec": 10.96,
+                "probability": 0.9922147393226624
+              },
+              {
+                "word": " A,",
+                "start_sec": 10.96,
+                "end_sec": 10.96,
+                "probability": 0.9930058717727661
+              },
+              {
+                "word": " A,",
+                "start_sec": 10.96,
+                "end_sec": 10.96,
+                "probability": 0.9921523928642273
+              },
+              {
+                "word": " A,",
+                "start_sec": 10.96,
+                "end_sec": 10.96,
+                "probability": 0.9919495582580566
+              },
+              {
+                "word": " A,",
+                "start_sec": 10.96,
+                "end_sec": 10.96,
+                "probability": 0.9936615228652954
+              },
+              {
+                "word": " A,",
+                "start_sec": 10.96,
+                "end_sec": 10.96,
+                "probability": 0.9934524297714233
+              },
+              {
+                "word": " A,",
+                "start_sec": 10.96,
+                "end_sec": 10.96,
+                "probability": 0.9937710165977478
+              },
+              {
+                "word": " A,",
+                "start_sec": 10.96,
+                "end_sec": 10.96,
+                "probability": 0.9947829842567444
+              },
+              {
+                "word": " A,",
+                "start_sec": 10.96,
+                "end_sec": 10.96,
+                "probability": 0.995810866355896
+              },
+              {
+                "word": " A,",
+                "start_sec": 10.96,
+                "end_sec": 10.96,
+                "probability": 0.9955821633338928
+              },
+              {
+                "word": " A,",
+                "start_sec": 10.98,
+                "end_sec": 10.98,
+                "probability": 0.9950954914093018
+              },
+              {
+                "word": " A,",
+                "start_sec": 11.0,
+                "end_sec": 11.0,
+                "probability": 0.9948862195014954
+              },
+              {
+                "word": " A,",
+                "start_sec": 11.0,
+                "end_sec": 11.16,
+                "probability": 0.9940565824508667
+              },
+              {
+                "word": " A,",
+                "start_sec": 11.34,
+                "end_sec": 11.48,
+                "probability": 0.9959589838981628
+              },
+              {
+                "word": " A,",
+                "start_sec": 11.54,
+                "end_sec": 11.54,
+                "probability": 0.9955262541770935
+              },
+              {
+                "word": " A,",
+                "start_sec": 11.74,
+                "end_sec": 11.74,
+                "probability": 0.9958351850509644
+              },
+              {
+                "word": " A,",
+                "start_sec": 11.8,
+                "end_sec": 12.02,
+                "probability": 0.9954339861869812
+              },
+              {
+                "word": " A,",
+                "start_sec": 12.02,
+                "end_sec": 12.02,
+                "probability": 0.9958603978157043
+              },
+              {
+                "word": " A,",
+                "start_sec": 12.02,
+                "end_sec": 12.02,
+                "probability": 0.9956021308898926
+              },
+              {
+                "word": " A,",
+                "start_sec": 12.02,
+                "end_sec": 12.02,
+                "probability": 0.9959443211555481
+              },
+              {
+                "word": " A,",
+                "start_sec": 12.02,
+                "end_sec": 12.02,
+                "probability": 0.9945482611656189
+              },
+              {
+                "word": " A,",
+                "start_sec": 12.02,
+                "end_sec": 12.02,
+                "probability": 0.9961495399475098
+              },
+              {
+                "word": " A,",
+                "start_sec": 12.02,
+                "end_sec": 12.02,
+                "probability": 0.9960491061210632
+              },
+              {
+                "word": " A,",
+                "start_sec": 12.02,
+                "end_sec": 12.02,
+                "probability": 0.996195912361145
+              },
+              {
+                "word": " A,",
+                "start_sec": 12.02,
+                "end_sec": 12.02,
+                "probability": 0.9963625073432922
+              },
+              {
+                "word": " A,",
+                "start_sec": 12.02,
+                "end_sec": 12.02,
+                "probability": 0.9961106181144714
+              },
+              {
+                "word": " A,",
+                "start_sec": 12.02,
+                "end_sec": 12.02,
+                "probability": 0.9961672425270081
+              },
+              {
+                "word": " A,",
+                "start_sec": 12.02,
+                "end_sec": 12.02,
+                "probability": 0.9951232075691223
+              },
+              {
+                "word": " A,",
+                "start_sec": 12.02,
+                "end_sec": 12.02,
+                "probability": 0.995119571685791
+              },
+              {
+                "word": " A,",
+                "start_sec": 12.02,
+                "end_sec": 12.02,
+                "probability": 0.9949383735656738
+              },
+              {
+                "word": " A,",
+                "start_sec": 12.02,
+                "end_sec": 12.14,
+                "probability": 0.9953399896621704
+              },
+              {
+                "word": " A,",
+                "start_sec": 12.14,
+                "end_sec": 12.2,
+                "probability": 0.9956225752830505
+              },
+              {
+                "word": " A,",
+                "start_sec": 12.2,
+                "end_sec": 12.2,
+                "probability": 0.9958844780921936
+              },
+              {
+                "word": " A,",
+                "start_sec": 12.2,
+                "end_sec": 12.3,
+                "probability": 0.9955631494522095
+              },
+              {
+                "word": " A,",
+                "start_sec": 12.3,
+                "end_sec": 12.3,
+                "probability": 0.9952951073646545
+              },
+              {
+                "word": " A,",
+                "start_sec": 12.3,
+                "end_sec": 12.3,
+                "probability": 0.9967588782310486
+              },
+              {
+                "word": " A,",
+                "start_sec": 12.3,
+                "end_sec": 12.3,
+                "probability": 0.9961903095245361
+              },
+              {
+                "word": " A,",
+                "start_sec": 12.3,
+                "end_sec": 12.36,
+                "probability": 0.9964381456375122
+              },
+              {
+                "word": " A,",
+                "start_sec": 12.36,
+                "end_sec": 12.36,
+                "probability": 0.9960709810256958
+              },
+              {
+                "word": " A,",
+                "start_sec": 12.36,
+                "end_sec": 12.36,
+                "probability": 0.9964151382446289
+              },
+              {
+                "word": " A,",
+                "start_sec": 12.36,
+                "end_sec": 12.36,
+                "probability": 0.9965079426765442
+              },
+              {
+                "word": " A,",
+                "start_sec": 12.36,
+                "end_sec": 12.36,
+                "probability": 0.9966189861297607
+              },
+              {
+                "word": " A,",
+                "start_sec": 12.36,
+                "end_sec": 12.36,
+                "probability": 0.9961323738098145
+              },
+              {
+                "word": " A,",
+                "start_sec": 12.36,
+                "end_sec": 12.36,
+                "probability": 0.9965992569923401
+              },
+              {
+                "word": " A,",
+                "start_sec": 12.36,
+                "end_sec": 12.36,
+                "probability": 0.9966345429420471
+              },
+              {
+                "word": " A,",
+                "start_sec": 12.36,
+                "end_sec": 12.36,
+                "probability": 0.9963386058807373
+              },
+              {
+                "word": " A,",
+                "start_sec": 12.36,
+                "end_sec": 12.36,
+                "probability": 0.9969605803489685
+              },
+              {
+                "word": " A,",
+                "start_sec": 12.36,
+                "end_sec": 12.36,
+                "probability": 0.9970002770423889
+              },
+              {
+                "word": " A,",
+                "start_sec": 12.36,
+                "end_sec": 13.76,
+                "probability": 0.996591329574585
+              },
+              {
+                "word": " A,",
+                "start_sec": 13.76,
+                "end_sec": 13.76,
+                "probability": 0.9970877766609192
+              },
+              {
+                "word": " A,",
+                "start_sec": 13.76,
+                "end_sec": 13.76,
+                "probability": 0.9972856044769287
+              },
+              {
+                "word": " A,",
+                "start_sec": 13.76,
+                "end_sec": 13.76,
+                "probability": 0.9973171353340149
+              },
+              {
+                "word": " A,",
+                "start_sec": 13.76,
+                "end_sec": 13.76,
+                "probability": 0.997014045715332
+              },
+              {
+                "word": " A,",
+                "start_sec": 13.76,
+                "end_sec": 13.76,
+                "probability": 0.997250497341156
+              },
+              {
+                "word": " A,",
+                "start_sec": 13.76,
+                "end_sec": 13.76,
+                "probability": 0.9972672462463379
+              },
+              {
+                "word": " A,",
+                "start_sec": 13.76,
+                "end_sec": 13.76,
+                "probability": 0.997222900390625
+              },
+              {
+                "word": " A,",
+                "start_sec": 13.76,
+                "end_sec": 13.76,
+                "probability": 0.996647298336029
+              },
+              {
+                "word": " A,",
+                "start_sec": 13.76,
+                "end_sec": 13.76,
+                "probability": 0.9971358776092529
+              },
+              {
+                "word": " A,",
+                "start_sec": 13.76,
+                "end_sec": 13.86,
+                "probability": 0.9973661303520203
+              },
+              {
+                "word": " A,",
+                "start_sec": 13.86,
+                "end_sec": 13.86,
+                "probability": 0.9971785545349121
+              },
+              {
+                "word": " A,",
+                "start_sec": 13.86,
+                "end_sec": 13.86,
+                "probability": 0.9973201155662537
+              },
+              {
+                "word": " A,",
+                "start_sec": 13.86,
+                "end_sec": 13.86,
+                "probability": 0.9971151351928711
+              },
+              {
+                "word": " A,",
+                "start_sec": 13.86,
+                "end_sec": 13.86,
+                "probability": 0.9968854784965515
+              },
+              {
+                "word": " A,",
+                "start_sec": 13.86,
+                "end_sec": 13.86,
+                "probability": 0.996313750743866
+              },
+              {
+                "word": " A,",
+                "start_sec": 13.86,
+                "end_sec": 13.86,
+                "probability": 0.996972918510437
+              },
+              {
+                "word": " A,",
+                "start_sec": 13.86,
+                "end_sec": 13.86,
+                "probability": 0.996304988861084
+              },
+              {
+                "word": " A,",
+                "start_sec": 13.86,
+                "end_sec": 13.86,
+                "probability": 0.9958693385124207
+              },
+              {
+                "word": " A,",
+                "start_sec": 13.86,
+                "end_sec": 14.32,
+                "probability": 0.9967936873435974
+              },
+              {
+                "word": " A,",
+                "start_sec": 14.32,
+                "end_sec": 14.32,
+                "probability": 0.9972956776618958
+              },
+              {
+                "word": " A,",
+                "start_sec": 14.32,
+                "end_sec": 14.32,
+                "probability": 0.9965404272079468
+              },
+              {
+                "word": " A,",
+                "start_sec": 14.32,
+                "end_sec": 14.32,
+                "probability": 0.9968706965446472
+              },
+              {
+                "word": " A,",
+                "start_sec": 14.32,
+                "end_sec": 14.32,
+                "probability": 0.9965857267379761
+              },
+              {
+                "word": " A,",
+                "start_sec": 14.32,
+                "end_sec": 14.32,
+                "probability": 0.9968543648719788
+              },
+              {
+                "word": " A,",
+                "start_sec": 14.32,
+                "end_sec": 14.32,
+                "probability": 0.9965997338294983
+              },
+              {
+                "word": " A,",
+                "start_sec": 14.32,
+                "end_sec": 14.86,
+                "probability": 0.9973873496055603
+              },
+              {
+                "word": " A,",
+                "start_sec": 14.86,
+                "end_sec": 14.86,
+                "probability": 0.997439980506897
+              },
+              {
+                "word": " A,",
+                "start_sec": 15.6,
+                "end_sec": 15.6,
+                "probability": 0.9974236488342285
+              },
+              {
+                "word": " A,",
+                "start_sec": 15.62,
+                "end_sec": 15.62,
+                "probability": 0.9970695376396179
+              },
+              {
+                "word": " A,",
+                "start_sec": 16.26,
+                "end_sec": 16.26,
+                "probability": 0.996886670589447
+              },
+              {
+                "word": " A,",
+                "start_sec": 16.26,
+                "end_sec": 16.26,
+                "probability": 0.9968655705451965
+              },
+              {
+                "word": " A,",
+                "start_sec": 16.26,
+                "end_sec": 16.26,
+                "probability": 0.9973229765892029
+              },
+              {
+                "word": " A,",
+                "start_sec": 16.26,
+                "end_sec": 16.26,
+                "probability": 0.9976814985275269
+              },
+              {
+                "word": " A,",
+                "start_sec": 16.26,
+                "end_sec": 16.26,
+                "probability": 0.997141420841217
+              },
+              {
+                "word": " A,",
+                "start_sec": 16.26,
+                "end_sec": 16.26,
+                "probability": 0.997140645980835
+              },
+              {
+                "word": " A,",
+                "start_sec": 16.26,
+                "end_sec": 16.26,
+                "probability": 0.9974850416183472
+              },
+              {
+                "word": " A,",
+                "start_sec": 16.3,
+                "end_sec": 17.44,
+                "probability": 0.9967591166496277
+              }
+            ],
+            "avg_logprob": -0.08746997409396702,
+            "no_speech_prob": 0.7008594870567322,
+            "alternatives": [],
+            "normalization_changes": [
+              {
+                "old": " On dirait A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A,",
+                "new": "On dirait A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A,",
+                "rule_id": "nfc_whitespace",
+                "source_span": [
+                  0,
+                  340
+                ],
+                "justification": "Unicode NFC and whitespace formatting only",
+                "version": "display_normalizer_v1"
+              }
+            ],
+            "risk_level": "medium",
+            "risk_reasons": [
+              "uncalibrated_asr_confidence",
+              "unknown_speaker",
+              "unvalidated_language"
+            ]
+          },
+          {
+            "segment_id": "ch0-chunk0-1",
+            "start_sec": 17.44,
+            "end_sec": 29.98,
+            "raw_asr_text": " A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A,",
+            "display_text": "A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A,",
+            "reviewed_text": null,
+            "channel": 0,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "language": "fr",
+            "words": [
+              {
+                "word": " A,",
+                "start_sec": 17.44,
+                "end_sec": 18.54,
+                "probability": 0.0021564331836998463
+              },
+              {
+                "word": " A,",
+                "start_sec": 18.66,
+                "end_sec": 19.46,
+                "probability": 0.06301381438970566
+              },
+              {
+                "word": " A,",
+                "start_sec": 19.7,
+                "end_sec": 19.7,
+                "probability": 0.2376803308725357
+              },
+              {
+                "word": " A,",
+                "start_sec": 19.7,
+                "end_sec": 19.7,
+                "probability": 0.5177502036094666
+              },
+              {
+                "word": " A,",
+                "start_sec": 19.7,
+                "end_sec": 19.7,
+                "probability": 0.7887173891067505
+              },
+              {
+                "word": " A,",
+                "start_sec": 19.7,
+                "end_sec": 20.88,
+                "probability": 0.8391128778457642
+              },
+              {
+                "word": " A,",
+                "start_sec": 20.88,
+                "end_sec": 20.94,
+                "probability": 0.8898057341575623
+              },
+              {
+                "word": " A,",
+                "start_sec": 20.94,
+                "end_sec": 20.94,
+                "probability": 0.919622004032135
+              },
+              {
+                "word": " A,",
+                "start_sec": 20.94,
+                "end_sec": 20.94,
+                "probability": 0.9275449514389038
+              },
+              {
+                "word": " A,",
+                "start_sec": 20.94,
+                "end_sec": 21.02,
+                "probability": 0.9513814449310303
+              },
+              {
+                "word": " A,",
+                "start_sec": 21.02,
+                "end_sec": 21.02,
+                "probability": 0.959551215171814
+              },
+              {
+                "word": " A,",
+                "start_sec": 21.02,
+                "end_sec": 21.02,
+                "probability": 0.9645399451255798
+              },
+              {
+                "word": " A,",
+                "start_sec": 21.02,
+                "end_sec": 21.44,
+                "probability": 0.9780845642089844
+              },
+              {
+                "word": " A,",
+                "start_sec": 21.44,
+                "end_sec": 21.44,
+                "probability": 0.9802175760269165
+              },
+              {
+                "word": " A,",
+                "start_sec": 21.44,
+                "end_sec": 22.6,
+                "probability": 0.9812968373298645
+              },
+              {
+                "word": " A,",
+                "start_sec": 22.6,
+                "end_sec": 22.62,
+                "probability": 0.9847709536552429
+              },
+              {
+                "word": " A,",
+                "start_sec": 22.62,
+                "end_sec": 22.62,
+                "probability": 0.984372615814209
+              },
+              {
+                "word": " A,",
+                "start_sec": 22.62,
+                "end_sec": 22.62,
+                "probability": 0.98812335729599
+              },
+              {
+                "word": " A,",
+                "start_sec": 23.54,
+                "end_sec": 24.34,
+                "probability": 0.989176332950592
+              },
+              {
+                "word": " A,",
+                "start_sec": 24.42,
+                "end_sec": 24.5,
+                "probability": 0.9901695847511292
+              },
+              {
+                "word": " A,",
+                "start_sec": 24.5,
+                "end_sec": 24.5,
+                "probability": 0.9908190369606018
+              },
+              {
+                "word": " A,",
+                "start_sec": 24.5,
+                "end_sec": 24.5,
+                "probability": 0.990272581577301
+              },
+              {
+                "word": " A,",
+                "start_sec": 24.5,
+                "end_sec": 24.5,
+                "probability": 0.9913733601570129
+              },
+              {
+                "word": " A,",
+                "start_sec": 24.5,
+                "end_sec": 24.5,
+                "probability": 0.9922255277633667
+              },
+              {
+                "word": " A,",
+                "start_sec": 24.5,
+                "end_sec": 24.5,
+                "probability": 0.9904631972312927
+              },
+              {
+                "word": " A,",
+                "start_sec": 24.5,
+                "end_sec": 24.5,
+                "probability": 0.9926798343658447
+              },
+              {
+                "word": " A,",
+                "start_sec": 24.5,
+                "end_sec": 24.5,
+                "probability": 0.9902672171592712
+              },
+              {
+                "word": " A,",
+                "start_sec": 24.5,
+                "end_sec": 26.0,
+                "probability": 0.9916563034057617
+              },
+              {
+                "word": " A,",
+                "start_sec": 26.0,
+                "end_sec": 26.0,
+                "probability": 0.9911531805992126
+              },
+              {
+                "word": " A,",
+                "start_sec": 26.0,
+                "end_sec": 26.0,
+                "probability": 0.9939663410186768
+              },
+              {
+                "word": " A,",
+                "start_sec": 26.0,
+                "end_sec": 26.0,
+                "probability": 0.9931461811065674
+              },
+              {
+                "word": " A,",
+                "start_sec": 26.0,
+                "end_sec": 26.0,
+                "probability": 0.9936912059783936
+              },
+              {
+                "word": " A,",
+                "start_sec": 26.0,
+                "end_sec": 26.0,
+                "probability": 0.9921545386314392
+              },
+              {
+                "word": " A,",
+                "start_sec": 26.0,
+                "end_sec": 26.0,
+                "probability": 0.9923595786094666
+              },
+              {
+                "word": " A,",
+                "start_sec": 26.0,
+                "end_sec": 26.0,
+                "probability": 0.9930421113967896
+              },
+              {
+                "word": " A,",
+                "start_sec": 26.0,
+                "end_sec": 26.0,
+                "probability": 0.9934743046760559
+              },
+              {
+                "word": " A,",
+                "start_sec": 26.0,
+                "end_sec": 26.0,
+                "probability": 0.9940882921218872
+              },
+              {
+                "word": " A,",
+                "start_sec": 26.0,
+                "end_sec": 26.32,
+                "probability": 0.9927579164505005
+              },
+              {
+                "word": " A,",
+                "start_sec": 26.32,
+                "end_sec": 27.04,
+                "probability": 0.991929292678833
+              },
+              {
+                "word": " A,",
+                "start_sec": 27.04,
+                "end_sec": 27.12,
+                "probability": 0.9936874508857727
+              },
+              {
+                "word": " A,",
+                "start_sec": 27.12,
+                "end_sec": 27.12,
+                "probability": 0.9936569333076477
+              },
+              {
+                "word": " A,",
+                "start_sec": 27.12,
+                "end_sec": 27.12,
+                "probability": 0.9951600432395935
+              },
+              {
+                "word": " A,",
+                "start_sec": 27.12,
+                "end_sec": 27.12,
+                "probability": 0.9947654008865356
+              },
+              {
+                "word": " A,",
+                "start_sec": 27.12,
+                "end_sec": 27.72,
+                "probability": 0.9950506091117859
+              },
+              {
+                "word": " A,",
+                "start_sec": 27.72,
+                "end_sec": 28.42,
+                "probability": 0.9934671521186829
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.42,
+                "end_sec": 28.46,
+                "probability": 0.994831383228302
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.46,
+                "end_sec": 28.46,
+                "probability": 0.9951436519622803
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.46,
+                "end_sec": 28.46,
+                "probability": 0.9953334927558899
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.46,
+                "end_sec": 28.46,
+                "probability": 0.994343638420105
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.46,
+                "end_sec": 28.46,
+                "probability": 0.9945818781852722
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.46,
+                "end_sec": 28.46,
+                "probability": 0.9928066730499268
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.46,
+                "end_sec": 28.46,
+                "probability": 0.9932032823562622
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.46,
+                "end_sec": 28.46,
+                "probability": 0.9927250146865845
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.46,
+                "end_sec": 28.46,
+                "probability": 0.9933657050132751
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.46,
+                "end_sec": 28.46,
+                "probability": 0.9928896427154541
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.46,
+                "end_sec": 28.46,
+                "probability": 0.9941995143890381
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.46,
+                "end_sec": 28.46,
+                "probability": 0.9951537847518921
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.46,
+                "end_sec": 28.46,
+                "probability": 0.9942291975021362
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.46,
+                "end_sec": 28.46,
+                "probability": 0.9946151375770569
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.46,
+                "end_sec": 28.46,
+                "probability": 0.9944416880607605
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.46,
+                "end_sec": 28.46,
+                "probability": 0.9944331049919128
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.46,
+                "end_sec": 28.46,
+                "probability": 0.9947668313980103
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.46,
+                "end_sec": 28.46,
+                "probability": 0.9944871068000793
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.46,
+                "end_sec": 28.46,
+                "probability": 0.9947035908699036
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.46,
+                "end_sec": 28.46,
+                "probability": 0.9938514232635498
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.46,
+                "end_sec": 28.46,
+                "probability": 0.9943722486495972
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.46,
+                "end_sec": 28.46,
+                "probability": 0.9939824938774109
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.46,
+                "end_sec": 28.46,
+                "probability": 0.9949113726615906
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.46,
+                "end_sec": 28.46,
+                "probability": 0.9937507510185242
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.46,
+                "end_sec": 28.46,
+                "probability": 0.9945447444915771
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.46,
+                "end_sec": 28.46,
+                "probability": 0.9938738346099854
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.46,
+                "end_sec": 28.46,
+                "probability": 0.9951658248901367
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.46,
+                "end_sec": 28.46,
+                "probability": 0.9954726099967957
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.46,
+                "end_sec": 28.46,
+                "probability": 0.9953649044036865
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.46,
+                "end_sec": 28.46,
+                "probability": 0.9950165152549744
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.46,
+                "end_sec": 28.46,
+                "probability": 0.9948686361312866
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.46,
+                "end_sec": 28.46,
+                "probability": 0.9962894916534424
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.46,
+                "end_sec": 28.46,
+                "probability": 0.9957326054573059
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.46,
+                "end_sec": 28.82,
+                "probability": 0.9958367347717285
+              },
+              {
+                "word": " A,",
+                "start_sec": 28.82,
+                "end_sec": 29.1,
+                "probability": 0.9947415590286255
+              },
+              {
+                "word": " A,",
+                "start_sec": 29.1,
+                "end_sec": 29.1,
+                "probability": 0.9948457479476929
+              },
+              {
+                "word": " A,",
+                "start_sec": 29.1,
+                "end_sec": 29.1,
+                "probability": 0.995121419429779
+              },
+              {
+                "word": " A,",
+                "start_sec": 29.1,
+                "end_sec": 29.1,
+                "probability": 0.9945641756057739
+              },
+              {
+                "word": " A,",
+                "start_sec": 29.1,
+                "end_sec": 29.1,
+                "probability": 0.9942599534988403
+              },
+              {
+                "word": " A,",
+                "start_sec": 29.1,
+                "end_sec": 29.48,
+                "probability": 0.9943860769271851
+              },
+              {
+                "word": " A,",
+                "start_sec": 29.76,
+                "end_sec": 29.76,
+                "probability": 0.9951280355453491
+              },
+              {
+                "word": " A,",
+                "start_sec": 29.82,
+                "end_sec": 29.98,
+                "probability": 0.9945895671844482
+              },
+              {
+                "word": " A,",
+                "start_sec": 29.98,
+                "end_sec": 29.98,
+                "probability": 0.9944027066230774
+              }
+            ],
+            "avg_logprob": -0.08990151715579997,
+            "no_speech_prob": 0.13820597529411316,
+            "alternatives": [],
+            "normalization_changes": [
+              {
+                "old": " A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A,",
+                "new": "A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A,",
+                "rule_id": "nfc_whitespace",
+                "source_span": [
+                  0,
+                  264
+                ],
+                "justification": "Unicode NFC and whitespace formatting only",
+                "version": "display_normalizer_v1"
+              }
+            ],
+            "risk_level": "medium",
+            "risk_reasons": [
+              "uncalibrated_asr_confidence",
+              "unknown_speaker",
+              "unvalidated_language"
+            ]
+          }
+        ],
+        "events": [
+          {
+            "event_id": "event-0",
+            "start_sec": 0.0,
+            "end_sec": 17.44,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "classifier_version": "rules_v1",
+            "ontology_version": "1.0",
+            "labels": [
+              "OTHER"
+            ],
+            "label_scores": {},
+            "score_kind": "heuristic_uncalibrated",
+            "speech_act": "unknown",
+            "salient_for_review": "unknown",
+            "evidence_segment_ids": [
+              "ch0-chunk0-0"
+            ],
+            "evidence_quote": "On dirait A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A,",
+            "reviewed_evidence_quote": null,
+            "assertion_kind": "spoken_mention",
+            "aircraft_state_verified": false,
+            "flight_phase": "unknown",
+            "phase_source": "unknown",
+            "entities": [],
+            "needs_review": true,
+            "review_status": "draft",
+            "risk_reasons": [
+              "uncalibrated_asr_confidence",
+              "unknown_speaker",
+              "unvalidated_language"
+            ]
+          },
+          {
+            "event_id": "event-1",
+            "start_sec": 17.44,
+            "end_sec": 29.98,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "classifier_version": "rules_v1",
+            "ontology_version": "1.0",
+            "labels": [
+              "OTHER"
+            ],
+            "label_scores": {},
+            "score_kind": "heuristic_uncalibrated",
+            "speech_act": "unknown",
+            "salient_for_review": "unknown",
+            "evidence_segment_ids": [
+              "ch0-chunk0-1"
+            ],
+            "evidence_quote": "A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A,",
+            "reviewed_evidence_quote": null,
+            "assertion_kind": "spoken_mention",
+            "aircraft_state_verified": false,
+            "flight_phase": "unknown",
+            "phase_source": "unknown",
+            "entities": [],
+            "needs_review": true,
+            "review_status": "draft",
+            "risk_reasons": [
+              "uncalibrated_asr_confidence",
+              "unknown_speaker",
+              "unvalidated_language"
+            ]
+          }
+        ],
+        "audio": {
+          "sample_rate": 48000,
+          "channels": 1,
+          "duration_sec": 30.0,
+          "container": "wav",
+          "sha256": "9a8d59f82272f9868fecac32e74a44ec5b9d7685327509fb385af169267a07e5",
+          "channel_diagnostics": [
+            {
+              "channel": 0,
+              "peak": 0.5965042114257812,
+              "rms": 0.06434400708763148,
+              "clipping_fraction": 0.0,
+              "prepared_rate": 16000,
+              "prepared_samples": 480000,
+              "original_offset_sec": 0,
+              "timeline_mapping": "original_sample = prepared_sample * original_rate / 16000"
+            }
+          ]
+        },
+        "timeline": [
+          {
+            "channel": 0,
+            "start_sample_16k": 0,
+            "end_sample_16k": 480000,
+            "original_start_sec": 0.0,
+            "original_end_sec": 30.0,
+            "original_sample_rate": 48000
+          }
+        ],
+        "crosstalk": [],
+        "effective_config": {
+          "schema_version": "1.0",
+          "name": "baseline",
+          "model": "small",
+          "compute_type": "int8",
+          "device": "cpu",
+          "task": "transcribe",
+          "beam_size": 5,
+          "temperature": 0.0,
+          "best_of": 5,
+          "patience": 1.0,
+          "length_penalty": 1.0,
+          "repetition_penalty": 1.0,
+          "no_repeat_ngram_size": 0,
+          "condition_on_previous_text": true,
+          "compression_ratio_threshold": 2.4,
+          "log_prob_threshold": -1.0,
+          "no_speech_threshold": 0.6,
+          "suppress_blank": true,
+          "suppress_tokens": [
+            -1
+          ],
+          "max_initial_timestamp": 1.0,
+          "word_timestamps": true,
+          "language_detection_threshold": 0.5,
+          "language_detection_segments": 1,
+          "vad": {
+            "enabled": false,
+            "threshold": 0.5,
+            "min_speech_duration_ms": 100,
+            "min_silence_duration_ms": 400,
+            "speech_pad_ms": 200,
+            "max_speech_duration_s": 30.0
+          },
+          "denoise": {
+            "enabled": false,
+            "strength": 0.5,
+            "floor": 0.3,
+            "noise_percentile": 10.0
+          },
+          "hotwords": null,
+          "glossary_version": null,
+          "redecode": false,
+          "max_redecode_passes": 1,
+          "redecode_logprob_threshold": -0.8,
+          "episode_gap_sec": 2.0,
+          "episode_max_sec": 30.0,
+          "episode_max_tokens": 100,
+          "classifier": "rules_v1",
+          "classifier_artifact": null
+        },
+        "effective_asr_options": {
+          "task": "transcribe",
+          "beam_size": 5,
+          "temperature": 0.0,
+          "best_of": 5,
+          "patience": 1.0,
+          "length_penalty": 1.0,
+          "repetition_penalty": 1.0,
+          "no_repeat_ngram_size": 0,
+          "condition_on_previous_text": true,
+          "compression_ratio_threshold": 2.4,
+          "log_prob_threshold": -1.0,
+          "no_speech_threshold": 0.6,
+          "suppress_blank": true,
+          "suppress_tokens": [
+            -1
+          ],
+          "max_initial_timestamp": 1.0,
+          "word_timestamps": true,
+          "language_detection_threshold": 0.5,
+          "language_detection_segments": 1,
+          "language": null,
+          "vad_filter": false,
+          "initial_prompt": null,
+          "hotwords": null,
+          "prompt_reset_on_temperature": 0.5,
+          "prefix": null,
+          "without_timestamps": false,
+          "prepend_punctuations": "\"'“¿([{-",
+          "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+          "max_new_tokens": null,
+          "chunk_length": null,
+          "clip_timestamps": "0",
+          "hallucination_silence_threshold": null,
+          "multilingual": false
+        },
+        "model_manifest": {
+          "model": "small",
+          "repo": "Systran/faster-whisper-small",
+          "revision": "536b0662742c02347bc0e980a01041f333bce120",
+          "files": {
+            "model.bin": "3e305921506d8872816023e4c273e75d2419fb89b24da97b4fe7bce14170d671",
+            "tokenizer.json": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab",
+            "README.md": "329373481008c7c38654aff8ecdcf0163c211557cc7ba8e2ef6f2f84b4f75ec8",
+            "config.json": "b55496ac7940a7ae47d2c01eab40edfd8701feec1229d9cce3b40014383fb828",
+            "vocabulary.txt": "34ce3fe1c5041027b3f8d42912270993f986dbc4bb34cf27f951e34a1e453913"
+          },
+          "license": "MIT",
+          "acquired_at": "2026-09-13T14:51:11Z",
+          "faster_whisper_version": "1.2.1",
+          "silero": {
+            "path": "/opt/venv/lib/python3.11/site-packages/faster_whisper/assets/silero_vad_v6.onnx",
+            "sha256": "4cbf549b8326f60f80f2536d9eefeb450a9abe83365a098031c89719f1be17d2",
+            "distribution": "bundled_with_faster_whisper"
+          }
+        },
+        "component_hashes": {
+          "audio.py": "ecc3906671382cc66d5ba7a46774d23f70de2a68b95ebf2791157b8d301217ce",
+          "asr.py": "4fa5c621e4d506ba41b531f7cbec46a59a0e26871c7a423c3bc398a5818c0da1",
+          "nlp.py": "e3dcc378ea66f6be96c81d7a4c884acaad4a930036abda5f0077e916d1dcbbf5",
+          "diarization.py": "ebde8a8e87af0099a6ee78971f74c802991a65d196a12c9f3db30c64ebf1decc",
+          "pipeline.py": "ca339e5c106aa25a103d3f9034d9ffd50eba7d4220718fe45189e1ac16d22b70",
+          "training.py": "2cb7b518d953f96501771a0b50af494d8498968468478b7b71d3b73eb11e369e",
+          "schemas.py": "3af2ad6dde74662b938f1c9eb7b20e0f6bf7af37535db5d4633da24811a7c343"
+        },
+        "cache_key": "2b0162958b9af185bcf09821611a25d1364817964cf893b3acf6807761e4e6ce",
+        "cache_hit": false,
+        "timing": {
+          "end_to_end_sec": 23.43054266800027,
+          "asr_sec": 23.320080739000332,
+          "model_initialization_sec": 4.2915999074466527e-05,
+          "initialization_mode": "warm",
+          "end_to_end_rtf": 0.7810180889333423,
+          "asr_rtf": 0.7773360246333444
+        },
+        "environment": {
+          "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+          "processor": "",
+          "device": "cpu",
+          "precision": "int8",
+          "rss_bytes": 1064628224,
+          "peak_rss_bytes": 1172701184,
+          "hardware": {
+            "cpu_count": 20,
+            "memory_total_bytes": 33526280192,
+            "cpu_model": "Intel(R) Core(TM) i5-14600K"
+          }
+        },
+        "summary": "2 draft speech episodes; human review required."
+      }
+    },
+    {
+      "sample_id": "bleriot-c:CVR_DGA_checklist-PC7_sp104 ",
+      "split": "dev",
+      "pipeline": "vad",
+      "source_audio_sha256": "1bb2703a821159b60a826d0d723578a978ac1c7ad2d40d61e7857c01790e6705",
+      "clip_sha256": "9a8d59f82272f9868fecac32e74a44ec5b9d7685327509fb385af169267a07e5",
+      "original_start_sec": 30.0,
+      "original_end_sec": 60.0,
+      "timestamp_mapping": "original seconds = clip seconds + original_start_sec",
+      "transcript_status": "machine",
+      "human_verified": false,
+      "result": {
+        "schema_version": "1.0",
+        "sample_id": "9699d9d6a42dff71a2ca6efdc950bdb5ba44e53fc3e0c4d4eeacf3954118ec65",
+        "pipeline_version": "0.1.0",
+        "config_hash": "8547b188b3b8d980daaf8e132c683b030a7de71ebb05d4dc04cfa82425cbc53f",
+        "quality_gate_status": "NOT_RUN",
+        "deployment_candidate": "baseline",
+        "validated_scope": [],
+        "revision": 0,
+        "component_statuses": {
+          "asr": {
+            "status": "completed"
+          },
+          "diarization": {
+            "status": "not_requested",
+            "der": null,
+            "jer": null
+          },
+          "nlp": {
+            "status": "baseline",
+            "version": "rules_v1",
+            "trained": false,
+            "reason": "missing_event_labels_or_trained_artifact"
+          }
+        },
+        "segments": [
+          {
+            "segment_id": "ch0-chunk0-0",
+            "start_sec": 4.056,
+            "end_sec": 4.276,
+            "raw_asr_text": " All right.",
+            "display_text": "All right.",
+            "reviewed_text": null,
+            "channel": 0,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "language": "en",
+            "words": [
+              {
+                "word": " All",
+                "start_sec": 4.056,
+                "end_sec": 4.256,
+                "probability": 0.024503223598003387
+              },
+              {
+                "word": " right.",
+                "start_sec": 4.256,
+                "end_sec": 4.276,
+                "probability": 0.6863940358161926
+              }
+            ],
+            "avg_logprob": -1.1441161235173543,
+            "no_speech_prob": 0.34744763374328613,
+            "alternatives": [],
+            "normalization_changes": [
+              {
+                "old": " All right.",
+                "new": "All right.",
+                "rule_id": "nfc_whitespace",
+                "source_span": [
+                  0,
+                  11
+                ],
+                "justification": "Unicode NFC and whitespace formatting only",
+                "version": "display_normalizer_v1"
+              }
+            ],
+            "risk_level": "medium",
+            "risk_reasons": [
+              "low_asr_logprob",
+              "uncalibrated_asr_confidence",
+              "unknown_speaker"
+            ]
+          }
+        ],
+        "events": [
+          {
+            "event_id": "event-0",
+            "start_sec": 4.056,
+            "end_sec": 4.276,
+            "speaker_id": null,
+            "role": "unknown",
+            "role_provenance": null,
+            "classifier_version": "rules_v1",
+            "ontology_version": "1.0",
+            "labels": [
+              "OTHER"
+            ],
+            "label_scores": {},
+            "score_kind": "heuristic_uncalibrated",
+            "speech_act": "unknown",
+            "salient_for_review": "unknown",
+            "evidence_segment_ids": [
+              "ch0-chunk0-0"
+            ],
+            "evidence_quote": "All right.",
+            "reviewed_evidence_quote": null,
+            "assertion_kind": "spoken_mention",
+            "aircraft_state_verified": false,
+            "flight_phase": "unknown",
+            "phase_source": "unknown",
+            "entities": [],
+            "needs_review": true,
+            "review_status": "draft",
+            "risk_reasons": [
+              "low_asr_logprob",
+              "uncalibrated_asr_confidence",
+              "unknown_speaker"
+            ]
+          }
+        ],
+        "audio": {
+          "sample_rate": 48000,
+          "channels": 1,
+          "duration_sec": 30.0,
+          "container": "wav",
+          "sha256": "9a8d59f82272f9868fecac32e74a44ec5b9d7685327509fb385af169267a07e5",
+          "channel_diagnostics": [
+            {
+              "channel": 0,
+              "peak": 0.5965042114257812,
+              "rms": 0.06434400708763148,
+              "clipping_fraction": 0.0,
+              "prepared_rate": 16000,
+              "prepared_samples": 480000,
+              "original_offset_sec": 0,
+              "timeline_mapping": "original_sample = prepared_sample * original_rate / 16000"
+            }
+          ]
+        },
+        "timeline": [
+          {
+            "channel": 0,
+            "start_sample_16k": 64896,
+            "end_sample_16k": 73856,
+            "original_start_sec": 4.056,
+            "original_end_sec": 4.616,
+            "original_sample_rate": 48000
+          }
+        ],
+        "crosstalk": [],
+        "effective_config": {
+          "schema_version": "1.0",
+          "name": "baseline",
+          "model": "small",
+          "compute_type": "int8",
+          "device": "cpu",
+          "task": "transcribe",
+          "beam_size": 5,
+          "temperature": 0.0,
+          "best_of": 5,
+          "patience": 1.0,
+          "length_penalty": 1.0,
+          "repetition_penalty": 1.0,
+          "no_repeat_ngram_size": 0,
+          "condition_on_previous_text": true,
+          "compression_ratio_threshold": 2.4,
+          "log_prob_threshold": -1.0,
+          "no_speech_threshold": 0.6,
+          "suppress_blank": true,
+          "suppress_tokens": [
+            -1
+          ],
+          "max_initial_timestamp": 1.0,
+          "word_timestamps": true,
+          "language_detection_threshold": 0.5,
+          "language_detection_segments": 1,
+          "vad": {
+            "enabled": true,
+            "threshold": 0.5,
+            "min_speech_duration_ms": 100,
+            "min_silence_duration_ms": 400,
+            "speech_pad_ms": 200,
+            "max_speech_duration_s": 30.0
+          },
+          "denoise": {
+            "enabled": false,
+            "strength": 0.5,
+            "floor": 0.3,
+            "noise_percentile": 10.0
+          },
+          "hotwords": null,
+          "glossary_version": null,
+          "redecode": false,
+          "max_redecode_passes": 1,
+          "redecode_logprob_threshold": -0.8,
+          "episode_gap_sec": 2.0,
+          "episode_max_sec": 30.0,
+          "episode_max_tokens": 100,
+          "classifier": "rules_v1",
+          "classifier_artifact": null
+        },
+        "effective_asr_options": {
+          "task": "transcribe",
+          "beam_size": 5,
+          "temperature": 0.0,
+          "best_of": 5,
+          "patience": 1.0,
+          "length_penalty": 1.0,
+          "repetition_penalty": 1.0,
+          "no_repeat_ngram_size": 0,
+          "condition_on_previous_text": true,
+          "compression_ratio_threshold": 2.4,
+          "log_prob_threshold": -1.0,
+          "no_speech_threshold": 0.6,
+          "suppress_blank": true,
+          "suppress_tokens": [
+            -1
+          ],
+          "max_initial_timestamp": 1.0,
+          "word_timestamps": true,
+          "language_detection_threshold": 0.5,
+          "language_detection_segments": 1,
+          "language": null,
+          "vad_filter": false,
+          "initial_prompt": null,
+          "hotwords": null,
+          "prompt_reset_on_temperature": 0.5,
+          "prefix": null,
+          "without_timestamps": false,
+          "prepend_punctuations": "\"'“¿([{-",
+          "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+          "max_new_tokens": null,
+          "chunk_length": null,
+          "clip_timestamps": "0",
+          "hallucination_silence_threshold": null,
+          "multilingual": false
+        },
+        "model_manifest": {
+          "model": "small",
+          "repo": "Systran/faster-whisper-small",
+          "revision": "536b0662742c02347bc0e980a01041f333bce120",
+          "files": {
+            "model.bin": "3e305921506d8872816023e4c273e75d2419fb89b24da97b4fe7bce14170d671",
+            "tokenizer.json": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab",
+            "README.md": "329373481008c7c38654aff8ecdcf0163c211557cc7ba8e2ef6f2f84b4f75ec8",
+            "config.json": "b55496ac7940a7ae47d2c01eab40edfd8701feec1229d9cce3b40014383fb828",
+            "vocabulary.txt": "34ce3fe1c5041027b3f8d42912270993f986dbc4bb34cf27f951e34a1e453913"
+          },
+          "license": "MIT",
+          "acquired_at": "2026-09-13T14:51:11Z",
+          "faster_whisper_version": "1.2.1",
+          "silero": {
+            "path": "/opt/venv/lib/python3.11/site-packages/faster_whisper/assets/silero_vad_v6.onnx",
+            "sha256": "4cbf549b8326f60f80f2536d9eefeb450a9abe83365a098031c89719f1be17d2",
+            "distribution": "bundled_with_faster_whisper"
+          }
+        },
+        "component_hashes": {
+          "audio.py": "ecc3906671382cc66d5ba7a46774d23f70de2a68b95ebf2791157b8d301217ce",
+          "asr.py": "4fa5c621e4d506ba41b531f7cbec46a59a0e26871c7a423c3bc398a5818c0da1",
+          "nlp.py": "e3dcc378ea66f6be96c81d7a4c884acaad4a930036abda5f0077e916d1dcbbf5",
+          "diarization.py": "ebde8a8e87af0099a6ee78971f74c802991a65d196a12c9f3db30c64ebf1decc",
+          "pipeline.py": "ca339e5c106aa25a103d3f9034d9ffd50eba7d4220718fe45189e1ac16d22b70",
+          "training.py": "2cb7b518d953f96501771a0b50af494d8498968468478b7b71d3b73eb11e369e",
+          "schemas.py": "3af2ad6dde74662b938f1c9eb7b20e0f6bf7af37535db5d4633da24811a7c343"
+        },
+        "cache_key": "b9129c59c7a2f19af4da85fbb91b510f151f223791da88e0a1d8b0f29db864e0",
+        "cache_hit": false,
+        "timing": {
+          "end_to_end_sec": 1.9773986300006072,
+          "asr_sec": 1.8416751980003028,
+          "model_initialization_sec": 3.908100006810855e-05,
+          "initialization_mode": "warm",
+          "end_to_end_rtf": 0.0659132876666869,
+          "asr_rtf": 0.06138917326667676
+        },
+        "environment": {
+          "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+          "processor": "",
+          "device": "cpu",
+          "precision": "int8",
+          "rss_bytes": 1064452096,
+          "peak_rss_bytes": 1172746240,
+          "hardware": {
+            "cpu_count": 20,
+            "memory_total_bytes": 33526280192,
+            "cpu_model": "Intel(R) Core(TM) i5-14600K"
+          }
+        },
+        "summary": "1 draft speech episodes; human review required."
+      }
+    }
+  ],
+  "human_verified_annotations": 0,
+  "wer": null,
+  "relative_wer_improvement": null,
+  "quality_gate": "NEEDS_MORE_DATA",
+  "candidate_selected": false,
+  "release_promoted": false
+}

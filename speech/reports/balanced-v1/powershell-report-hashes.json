@@ -1,0 +1,8 @@
+{
+  "report.md": "b0a4921d9c008a71cc0620704b1df2778702efaaea294343d77924c52bc30728",
+  "verification.json": "aab6d64d0b29729abcf9a7545690bc40f28c4e22a140a239a4de095594eabcab",
+  "status.json": "894be6f6da208b2b71af7f76c2a52e04644735fecdecc769708b02e16a0e7255",
+  "evaluation/comparison.json": "420936a9d861e5e35b9979899a9b2df65960919b13a100158d7e805dbd2ab7b5",
+  "evaluation/scored-counts.json": "9d775fa3b104a699e40fb790b67ff17ce651cc59d06fc7aeac96d5ed72926480",
+  "evaluation/human-error-counts.json": "5845ad51ed4a84c9789b6c50c0c4e0f9af592fbea8015d4ce1813de81c10c138"
+}

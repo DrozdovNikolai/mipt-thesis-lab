@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "train_pairs": 247,
+  "hard_rules_replayed": 377,
+  "hard_targets_unmodified": 25,
+  "retained_targets_unmodified": 206,
+  "training_original_intervals_nonoverlapping": true,
+  "exact_original_crop_checks": 58,
+  "review_train": 60,
+  "blind_dev": 42,
+  "blind_dev_speakers_disjoint": true,
+  "human_references_fabricated": 0,
+  "train_sha256": "1be9a9a5a8e4f8cd591c0333f70163c82d6cd953c3533b5967976caaa76eab88",
+  "test_accessed": false,
+  "quality_evidence": false
+}

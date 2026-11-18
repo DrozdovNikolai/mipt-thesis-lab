@@ -1,0 +1,39 @@
+{
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+  "python": "3.11.14",
+  "checks": {
+    "migration": "0001",
+    "broker": "available",
+    "ffmpeg": "ffmpeg version 5.1.9-0+deb12u1 Copyright (c) 2000-2026 the FFmpeg developers",
+    "volumes": {
+      "/audio": {
+        "exists": true,
+        "free_bytes": 927092273152
+      },
+      "/models": {
+        "exists": true,
+        "free_bytes": 927092273152
+      },
+      "/artifacts": {
+        "exists": true,
+        "free_bytes": 927092273152
+      }
+    },
+    "model": {
+      "status": "available",
+      "revision": "536b0662742c02347bc0e980a01041f333bce120",
+      "files_verified": true
+    }
+  },
+  "gpu_inference_verified": false,
+  "versions": {
+    "fastapi": "0.141.1",
+    "celery": "5.6.3",
+    "sqlalchemy": "2.0.52",
+    "faster-whisper": "1.2.1",
+    "ctranslate2": "4.8.2",
+    "jiwer": "4.0.0"
+  },
+  "gpu_visible_count": 0,
+  "offline_ready": true
+}

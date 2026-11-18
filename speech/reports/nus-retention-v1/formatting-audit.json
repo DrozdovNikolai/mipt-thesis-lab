@@ -1,0 +1,15 @@
+{
+  "reason": "Two import-formatting Ruff I001 warnings fixed in current files after freeze; frozen executable retained unchanged. Preflight Ruff cache attempt on read-only mount failed; rerun uses --no-cache. No training/scoring behavior changed.",
+  "files": {
+    "scripts/nus_retention.py": {
+      "current_sha256": "ec0daee5aa317b32fa5bb27f60de829054e62ddbeb306cba6bf61fe3a657665b",
+      "frozen_sha256": "d3d3d4bb86d535a7984537674f6c1e5541f31dea3356016c186eed80155b0405",
+      "AST_identical": true
+    },
+    "tests/test_retention.py": {
+      "current_sha256": "eb9e71fca35e622df415d26cf060a6f3f510d64430fa61b8c3ea00fe6e1e6109",
+      "frozen_sha256": "bdf86c1069520a941f3e812408aeec08fd0fdd4c89bc8b480c7ea1e1909bb9c0",
+      "AST_identical": true
+    }
+  }
+}

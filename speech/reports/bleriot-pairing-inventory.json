@@ -1,0 +1,142 @@
+[
+  {
+    "c": "CVR_BEA_cvr_sp01.wav",
+    "a": "BEA_cvr_sp001.wav",
+    "delta_sec": 8.786848098907285e-06
+  },
+  {
+    "c": "CVR_BEA_cvr_sp02.wav",
+    "a": "BEA_cvr_sp002.wav",
+    "delta_sec": 1.459750566823459e-05
+  },
+  {
+    "c": "CVR_BEA_cvr_sp03.wav",
+    "a": "BEA_cvr_sp003.wav",
+    "delta_sec": 5.243764178430865e-06
+  },
+  {
+    "c": "CVR_BEA_cvr_sp03_.wav",
+    "a": null,
+    "delta_sec": null
+  },
+  {
+    "c": "CVR_BEA_cvr_sp04.wav",
+    "a": "BEA_cvr_sp004.wav",
+    "delta_sec": 8.219954651167427e-06
+  },
+  {
+    "c": "CVR_BEA_cvr_sp06.wav",
+    "a": "BEA_cvr_sp006.wav",
+    "delta_sec": 2.0266439918259493e-05
+  },
+  {
+    "c": "CVR_BEA_cvr_sp07.wav",
+    "a": "BEA_cvr_sp007.wav",
+    "delta_sec": 8.928571446631395e-06
+  },
+  {
+    "c": "CVR_BEA_cvr_sp08.wav",
+    "a": "BEA_cvr_sp008.wav",
+    "delta_sec": 2.8344669544821954e-07
+  },
+  {
+    "c": "CVR_BEA_cvr_sp09.wav",
+    "a": "BEA_cvr_sp009.wav",
+    "delta_sec": 1.5731292506870886e-05
+  },
+  {
+    "c": "CVR_BEA_cvr_sp10.wav",
+    "a": "BEA_cvr_sp010.wav",
+    "delta_sec": 1.6298185954610744e-05
+  },
+  {
+    "c": "CVR_BEA_cvr_sp11.wav",
+    "a": "BEA_cvr_sp011.wav",
+    "delta_sec": 1.9132653108044906e-05
+  },
+  {
+    "c": "CVR_BEA_cvr_sp12.wav",
+    "a": "BEA_cvr_sp012.wav",
+    "delta_sec": 2.0124716570535384e-05
+  },
+  {
+    "c": "CVR_DGA_CVR1_track1_sp102.wav",
+    "a": "DGA_CVR1_track1_sp102.wav",
+    "delta_sec": 0.0
+  },
+  {
+    "c": "CVR_DGA_CVR1_track2_sp105.wav",
+    "a": "DGA_CVR1_track2_sp105.wav",
+    "delta_sec": 0.0
+  },
+  {
+    "c": "CVR_DGA_CVR2_track1_sp103.wav",
+    "a": "DGA_CVR2_track1_sp103.wav",
+    "delta_sec": 0.0
+  },
+  {
+    "c": "CVR_DGA_CVR2_track2_sp104.wav",
+    "a": "DGA_CVR2_track2_sp104.wav",
+    "delta_sec": 0.0
+  },
+  {
+    "c": "CVR_DGA_CVR3_track1_sp106.wav",
+    "a": "DGA_CVR3_track1_sp106.wav",
+    "delta_sec": 9.637188206568226e-06
+  },
+  {
+    "c": "CVR_DGA_CVR3_track2_sp101.wav",
+    "a": "DGA_CVR3_track2_sp101.wav",
+    "delta_sec": 0.0
+  },
+  {
+    "c": "CVR_DGA_CVR4_track1_sp103.wav",
+    "a": "DGA_CVR4_track1_sp103.wav",
+    "delta_sec": 0.0
+  },
+  {
+    "c": "CVR_DGA_CVR4_track2_sp104 .wav",
+    "a": "DGA_CVR4_track2_sp104 .wav",
+    "delta_sec": 0.0
+  },
+  {
+    "c": "CVR_DGA_CVR5_track1_sp101.wav",
+    "a": "DGA_CVR5_track1_sp101.wav",
+    "delta_sec": 1.4030612248916441e-05
+  },
+  {
+    "c": "CVR_DGA_CVR5_track2_sp102.wav",
+    "a": "DGA_CVR5_track2_sp102.wav",
+    "delta_sec": 0.0
+  },
+  {
+    "c": "CVR_DGA_checklist-Beech_sp101.wav",
+    "a": "DGA_checklist-Beech_sp101.wav",
+    "delta_sec": 8.503401375037356e-06
+  },
+  {
+    "c": "CVR_DGA_checklist-PC7_sp104 .wav",
+    "a": "DGA_checklist-PC7_sp104 .wav",
+    "delta_sec": 7.653061231849279e-06
+  },
+  {
+    "c": "CVR_DGA_checklist-Puma-1_sp105.wav",
+    "a": "DGA_checklist-Puma-1_sp105.wav",
+    "delta_sec": 8.361677998891537e-06
+  },
+  {
+    "c": "CVR_DGA_checklist-Puma-2_sp103.wav",
+    "a": "DGA_checklist-Puma-2_sp103.wav",
+    "delta_sec": 2.5510204295642325e-06
+  },
+  {
+    "c": "CVR_DGA_checklist-TBM940_sp102.wav",
+    "a": "DGA_checklist-TBM940_sp102.wav",
+    "delta_sec": 1.8707482993818303e-05
+  },
+  {
+    "c": "CVR_DGA_checklist-unknown_sp102.wav",
+    "a": "DGA_checklist-unknown_sp102.wav",
+    "delta_sec": 2.5510204082479504e-06
+  }
+]

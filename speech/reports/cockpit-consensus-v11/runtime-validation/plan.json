@@ -1,0 +1,24 @@
+{
+  "purpose": "Validate the already fixed v11 edit-consensus rule in local batch-one Parakeet mode",
+  "inputs_sha256": "c09f690634c83723f427f55187a305ac6b5f1abf08d4246a3754aa71b2ad8961",
+  "canary_execution_sha256": "c2895d6d892babb6bd9ed3e75e36774cc90b32b030c28fb7940120f7dfbc214b",
+  "script_sha256": "844a7759f9f825801cef37f2ab968880c84d91f5f4f370425e260c8a7756f5c3",
+  "implementation_sha256": {
+    "cockpit_consensus_v11.py": "8a253e20326cbe85a3374e7c9997fa743862fc9e56ef38c7d0940d6821b5d0f4",
+    "cockpit_candidates_v10.py": "57441048818c1cb594b09c58c751ec738edf0b5a1e29d12ed9e2c8d4718f656e",
+    "acoustic_noise_router.py": "b0d518b6fd32b2dc22d8535191a1daf057ffc3368114ce316cfdf17bda90891c",
+    "metrics.py": "03876483b34afa31243136a5a3f9b52b17d2a2c15e8435fccfbf23986344792a"
+  },
+  "training_sha256": "6c645f891a177255602dcca040416cfb30512d0cf8b30ba4def1c2ad24e8ef0a",
+  "threshold": 0.8,
+  "batch_size": 1,
+  "parakeet_dtype": "float32",
+  "strategy": "greedy_batch",
+  "timestamps": true,
+  "seed": 55,
+  "planned_new_ASR_calls": 491,
+  "reference_access_for_inference": false,
+  "blind_dev_accessed": false,
+  "test_accessed": false,
+  "selection_policy_changed": false
+}

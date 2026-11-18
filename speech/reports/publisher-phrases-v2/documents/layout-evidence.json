@@ -1,0 +1,80 @@
+[
+  {
+    "document": "BEA_checklist_A320_pilote.json",
+    "page": 1,
+    "image_sha256": "3d4226b77ac66c7b7fd77edc4f21d7c62d4fa815a36446b8642a91c0ad264c96",
+    "crop_pixels": [
+      100,
+      190,
+      575,
+      1615
+    ],
+    "crop_sha256": "bd649d23c80fd18ee8a792f2eb3c32a2b5e239185960621de387896ed67ad365",
+    "method": "tesseract_eng_psm6_separate_content_regions"
+  },
+  {
+    "document": "BEA_checklist_A320_pilote.json",
+    "page": 1,
+    "image_sha256": "3d4226b77ac66c7b7fd77edc4f21d7c62d4fa815a36446b8642a91c0ad264c96",
+    "crop_pixels": [
+      775,
+      190,
+      610,
+      1390
+    ],
+    "crop_sha256": "c39519c1d3b3b3bba7d5730278087273971c19cc51ee5935c08460126ef33aa0",
+    "method": "tesseract_eng_psm6_separate_content_regions"
+  },
+  {
+    "document": "DGA_checklist-PC7.json",
+    "page": 1,
+    "image_sha256": "15932bb09a0ed9ab42974747d735a2b280e372ffac76c0d8d112c561cc70534e",
+    "crop_pixels": [
+      480,
+      425,
+      690,
+      1190
+    ],
+    "crop_sha256": "0cad7eda22d781c2cf12c2b20e3ee5033b3b911706d596c9818df0674c54ddd5",
+    "method": "tesseract_eng_psm6_separate_content_regions"
+  },
+  {
+    "document": "DGA_checklist-PC7.json",
+    "page": 2,
+    "image_sha256": "683a76e81cc42eee5c8b526e344f484ad02a028c266aead220471d0dd132bd5e",
+    "crop_pixels": [
+      480,
+      425,
+      690,
+      1190
+    ],
+    "crop_sha256": "b605a80693eb4eb6202e51f518f0143da18e2e6dd51476ae34bf3595ebbaced7",
+    "method": "tesseract_eng_psm6_separate_content_regions"
+  },
+  {
+    "document": "DGA_checklist-PC7.json",
+    "page": 3,
+    "image_sha256": "f5202ad0db5abb4205a849f927a58c041078dee9065c3538bdf743b3fdb3ab94",
+    "crop_pixels": [
+      480,
+      425,
+      690,
+      1190
+    ],
+    "crop_sha256": "9b7439b671ca8697af760172e38af2953c95555835ac7c289e8cb4c59b5881dc",
+    "method": "tesseract_eng_psm6_separate_content_regions"
+  },
+  {
+    "document": "DGA_checklist-PC7.json",
+    "page": 4,
+    "image_sha256": "d9dcee65a520b08746c0cd70f5da967444e4781882b59bdba805459b3fbb6fd5",
+    "crop_pixels": [
+      480,
+      425,
+      690,
+      1190
+    ],
+    "crop_sha256": "9dbbbc87e2193a6e3f494acd9b7de44efa6410e45a5bea2fc84ed77f3a81f814",
+    "method": "tesseract_eng_psm6_separate_content_regions"
+  }
+]

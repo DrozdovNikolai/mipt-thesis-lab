@@ -1,0 +1,42 @@
+{
+  "status": "READY_WEAK_TRAINING_PAIRS",
+  "proposed_candidates": 514,
+  "passed_recheck": 143,
+  "added_pairs": 125,
+  "added_minutes": 10.250999999999987,
+  "train_pairs": 221,
+  "train_minutes": 25.435798958333336,
+  "dev_pairs": 35,
+  "dev_byte_identical": true,
+  "added_modes": {
+    "literal": 94,
+    "alias_whole": 20,
+    "spoken_heading": 7,
+    "numeric_slot": 2,
+    "repeated_response": 2
+  },
+  "added_sources": {
+    "bleriot-a:BEA_checklists_sp001": 21,
+    "bleriot-a:BEA_checklists_sp004": 16,
+    "bleriot-a:BEA_checklists_sp006": 5,
+    "bleriot-a:BEA_checklists_sp008": 16,
+    "bleriot-a:BEA_checklists_sp009": 18,
+    "bleriot-a:BEA_checklists_sp010": 23,
+    "bleriot-a:BEA_checklists_sp011": 14,
+    "bleriot-a:DGA_checklist-Beech_sp101": 11,
+    "bleriot-a:DGA_checklist-TBM940_sp102": 1
+  },
+  "recheck_reasons": {
+    "medium_text_or_critical_disagreement": 329,
+    "large_text_or_critical_disagreement": 276,
+    "medium_word_quality": 47,
+    "large_word_quality": 27
+  },
+  "new_asr_calls": 1028,
+  "runtime_errors": 0,
+  "training_steps": 0,
+  "human_verified_added": 0,
+  "quality_improvement": "NOT_MEASURED",
+  "train_sha256": "21f28a23ba7f8ef66afaa03e2dc472d7b25aa31c635e53458f161b1104135d0e",
+  "dev_sha256": "76fbf9ba6c29f31aeeff27d0cf0013638a76ab95e3d6a21b2d62f88a4e5384f6"
+}

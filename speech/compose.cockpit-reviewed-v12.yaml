@@ -1,0 +1,43 @@
+name: north55-cockpit-reviewed-v12
+services:
+  baseline:
+    image: north55-speech-train:publisher-v2
+    network_mode: none
+    entrypoint: [python, -u, -m, scripts.evaluate_reviewed_cockpit_v12]
+    command: [baseline, --output, /output/baseline.json]
+    working_dir: /code
+    environment:
+      PYTHONPATH: /code/src:/code
+      HF_HUB_OFFLINE: '1'
+      TRANSFORMERS_OFFLINE: '1'
+      CUDA_VISIBLE_DEVICES: '0'
+      LD_LIBRARY_PATH: /opt/venv/lib/python3.11/site-packages/nvidia/cublas/lib:/opt/venv/lib/python3.11/site-packages/nvidia/cudnn/lib
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['0']
+              capabilities: [gpu]
+    volumes:
+      - ./reports/cockpit-reviewed-v12/frozen:/code:ro
+      - ./reports/cockpit-reviewed-v12/plan.json:/study/plan.json:ro
+      - ./reports/cockpit-reviewed-v12/inputs.json:/study/inputs.json:ro
+      - ./reports/cockpit-reviewed-v12/audio:/audio:ro
+      - ./reports/cockpit-reviewed-v12/io:/output
+      - models:/models:ro
+  score:
+    image: north55-speech-train:publisher-v2
+    network_mode: none
+    entrypoint: [python, -u, -m, scripts.evaluate_reviewed_cockpit_v12]
+    command: [score]
+    working_dir: /code
+    environment:
+      PYTHONPATH: /code/src:/code
+    volumes:
+      - ./reports/cockpit-reviewed-v12/frozen:/code:ro
+      - ./reports/cockpit-reviewed-v12:/study
+volumes:
+  models:
+    external: true
+    name: north55-speech_model_cache

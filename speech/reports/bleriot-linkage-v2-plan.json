@@ -1,0 +1,12 @@
+{
+  "source_archive_sha256": {
+    "a": "00fdf051aa4f8b5b80ed33db6ea76aa342fb13d2857cd85646d2f501a80d0579",
+    "c": "58bdd35cf72426571e44e3925f854952ca66d11ff65959189be5233a280ae620"
+  },
+  "reference_text_access": false,
+  "asr_access": false,
+  "signal": "first at most 90 seconds, mono channel 0, polyphase resampling to 8 kHz",
+  "metric": "mean magnitude-squared Welch coherence, 300-3000 Hz, nperseg 2048, overlap 1024",
+  "decision": "metadata-name match (or explicitly audited filename anomaly), mean coherence >= 0.20 and >= 3x highest other-source coherence",
+  "retention": "unconfirmed audio stays quarantined; never select source pairs using ASR performance"
+}

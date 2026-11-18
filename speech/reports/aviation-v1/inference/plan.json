@@ -1,0 +1,368 @@
+{
+  "created_at": "2026-09-14T19:46:03.266956+00:00",
+  "code": {
+    "src/north55_speech/__init__.py": "f1cd82ffbdc2435df77df6fda53e5d3eaee8c29d3cb60b0ae2a610112ff8fda0",
+    "src/north55_speech/api.py": "a319f23b78063e6d93b469902bc64a63267e1b78c9ab87ae9402a2d79b753a72",
+    "src/north55_speech/asr.py": "028dcdab204ea383d4dd423e4f3707e02f6c5788dcb27dc51689d7d50a585f3b",
+    "src/north55_speech/assets.py": "3a06517744d3fd320730986592f7894cfc22a37e1d5050c4d1d66c3afcec57fc",
+    "src/north55_speech/audio.py": "d26f2cba52864677bc217d3238cb562a40aec0cc191fde65de9bf3de2a58af2f",
+    "src/north55_speech/augmentation.py": "9a6d3f6db05b9827d85a4f31a02425daf1555bf0fc85f600bd026af89c7527d9",
+    "src/north55_speech/benchmark.py": "ff30df29ccb1f4412a1d2a55fc2400080a9d4434e76964bc1f8e8c436bf0a2db",
+    "src/north55_speech/cli.py": "82aa77d10880b6003a2bef1aa791e6aea18b7e48735482e7521b5c686e3563c3",
+    "src/north55_speech/continuation.py": "a3850f974c555d5303cb76f4a69aac5be60b977f0d101ef13ce1e41a60877bf5",
+    "src/north55_speech/convergence.py": "c9def67c3e158c40dca7850e35dd8d031e1463fcdae93b14d6f2f9a9a6bec108",
+    "src/north55_speech/core.py": "111df2551edaa60b744e60c2e482b6a4fd99850d88047bf64cbffebb882c9656",
+    "src/north55_speech/datasets.py": "52b0049324fb55d5c632b6ec70698295a6490aa1bb7a6cce4547f231fe019f18",
+    "src/north55_speech/db.py": "8a1dce17699713d19c37b4acdf7d1ec4ea71b0e85c9db7257941b695f38c552b",
+    "src/north55_speech/decoder_adaptation.py": "d9ae3345a7b6099e0b1282b9da14b1d4a9ef09f4340c37bcdaf4e2a6b2f96444",
+    "src/north55_speech/diarization.py": "ebde8a8e87af0099a6ee78971f74c802991a65d196a12c9f3db30c64ebf1decc",
+    "src/north55_speech/gates.py": "a1be6fbc78476c86b83de727b950e0d17bcaa22b320f9619bc520d7c27275476",
+    "src/north55_speech/jobs.py": "a677f63b031d1dfd361988a4b3144c407272e77eb8ab1fbcf79bd431b6f4e3de",
+    "src/north55_speech/journal.py": "b8ffa787b69444133800bfc5e4288bb7fee5a24014d7cbca05222c0060b5079f",
+    "src/north55_speech/local_transcription.py": "f06d2202194302581e4aadcaae756c67b1588569c2b82eb9bc27702b920ce528",
+    "src/north55_speech/lora.py": "76f267b6a1d90a316dedb5a264c72792d1f9ac3a9bf88819ae9e422160a89a28",
+    "src/north55_speech/lora_ablation.py": "cec9f25e099bed79fedab40f32729fea14097c076bd89ef1162f59672443d080",
+    "src/north55_speech/metrics.py": "03876483b34afa31243136a5a3f9b52b17d2a2c15e8435fccfbf23986344792a",
+    "src/north55_speech/nlp.py": "e3dcc378ea66f6be96c81d7a4c884acaad4a930036abda5f0077e916d1dcbbf5",
+    "src/north55_speech/nus_training.py": "c593bb116093427922e8a7b7090e5522810e6e5a0cd7a5dcd534dd010b57183a",
+    "src/north55_speech/pipeline.py": "ca339e5c106aa25a103d3f9034d9ffd50eba7d4220718fe45189e1ac16d22b70",
+    "src/north55_speech/release.py": "317216d47a924ad29ed4069d7ebd10c3dea36661706a6ae75a5af7580110c8ed",
+    "src/north55_speech/reporting.py": "6dbb8df7111b017a91cf9e2bdc5b25bea9b43b535819b9347a1980691af8575e",
+    "src/north55_speech/retention.py": "ea02456b98e5005a6bc26e727da0c605761b071f205c60e163d7ce27c0bb1b8b",
+    "src/north55_speech/retraining.py": "cf93e2366ef873f189ca200f7f36ae370be0cd3c2a8d0dd007d1ac94965d5045",
+    "src/north55_speech/sampling.py": "34eaa07aa3b3edb66968581cf4b16470180ed06e329005fe73e16c6ff6bc73a3",
+    "src/north55_speech/schemas.py": "0745770b96bfbc34e2bff6395d2d390ffd3440eb899188743681eca0367f3fa0",
+    "src/north55_speech/selftest.py": "2f5dd462295bd1134b8db6823bc07257a749227505515733a7805e6bf2413aa3",
+    "src/north55_speech/text_windows.py": "ee7e13796f885ff1c47f4d94e95cff4d0760d4f89c92d0ae348bbbbb88d64305",
+    "src/north55_speech/training.py": "2cb7b518d953f96501771a0b50af494d8498968468478b7b71d3b73eb11e369e",
+    "src/north55_speech/vendor/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/north55_speech/vendor/faster_whisper_loop.py": "ababbefc5575b11d234b8f77b8d424840e80cdf6ef089a5075a53b4f987566b2",
+    "scripts/aviation_experiment.py": "fbeb513da15867e191141366cc383f5880d43bdcca922a9d937a644bfe6e2317",
+    "scripts/improvement_experiment.py": "142a2503b53efe13a99a5ff1ecd3699e139f1d95c3904a3a4678c47924634ba2"
+  },
+  "configs": {
+    "small": {
+      "schema_version": "1.0",
+      "name": "aviation_small_v1",
+      "model": "whisper-small-publisher-base-ct2",
+      "compute_type": "float16",
+      "device": "cuda",
+      "task": "transcribe",
+      "beam_size": 5,
+      "temperature": 0.0,
+      "best_of": 5,
+      "patience": 1.0,
+      "length_penalty": 1.0,
+      "repetition_penalty": 1.0,
+      "no_repeat_ngram_size": 0,
+      "condition_on_previous_text": true,
+      "compression_ratio_threshold": 2.4,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        -1
+      ],
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "language_detection_threshold": 0.5,
+      "language_detection_segments": 1,
+      "vad": {
+        "enabled": false,
+        "mode": "segments",
+        "threshold": 0.5,
+        "min_speech_duration_ms": 100,
+        "min_silence_duration_ms": 400,
+        "speech_pad_ms": 200,
+        "max_speech_duration_s": 30.0
+      },
+      "denoise": {
+        "enabled": false,
+        "strength": 0.5,
+        "floor": 0.3,
+        "noise_percentile": 10.0
+      },
+      "hotwords": null,
+      "glossary_version": null,
+      "redecode": false,
+      "max_redecode_passes": 1,
+      "redecode_logprob_threshold": -0.8,
+      "episode_gap_sec": 2.0,
+      "episode_max_sec": 30.0,
+      "episode_max_tokens": 100,
+      "classifier": "rules_v1",
+      "classifier_artifact": null
+    },
+    "medium": {
+      "schema_version": "1.0",
+      "name": "aviation_medium_v1",
+      "model": "whisper-medium-en-ct2",
+      "compute_type": "float16",
+      "device": "cuda",
+      "task": "transcribe",
+      "beam_size": 5,
+      "temperature": 0.0,
+      "best_of": 5,
+      "patience": 1.0,
+      "length_penalty": 1.0,
+      "repetition_penalty": 1.0,
+      "no_repeat_ngram_size": 0,
+      "condition_on_previous_text": true,
+      "compression_ratio_threshold": 2.4,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        -1
+      ],
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "language_detection_threshold": 0.5,
+      "language_detection_segments": 1,
+      "vad": {
+        "enabled": false,
+        "mode": "segments",
+        "threshold": 0.5,
+        "min_speech_duration_ms": 100,
+        "min_silence_duration_ms": 400,
+        "speech_pad_ms": 200,
+        "max_speech_duration_s": 30.0
+      },
+      "denoise": {
+        "enabled": false,
+        "strength": 0.5,
+        "floor": 0.3,
+        "noise_percentile": 10.0
+      },
+      "hotwords": null,
+      "glossary_version": null,
+      "redecode": false,
+      "max_redecode_passes": 1,
+      "redecode_logprob_threshold": -0.8,
+      "episode_gap_sec": 2.0,
+      "episode_max_sec": 30.0,
+      "episode_max_tokens": 100,
+      "classifier": "rules_v1",
+      "classifier_artifact": null
+    },
+    "atc": {
+      "schema_version": "1.0",
+      "name": "aviation_atc_v1",
+      "model": "whisper-medium-en-atc-jacktol-ct2",
+      "compute_type": "float16",
+      "device": "cuda",
+      "task": "transcribe",
+      "beam_size": 5,
+      "temperature": 0.0,
+      "best_of": 5,
+      "patience": 1.0,
+      "length_penalty": 1.0,
+      "repetition_penalty": 1.0,
+      "no_repeat_ngram_size": 0,
+      "condition_on_previous_text": true,
+      "compression_ratio_threshold": 2.4,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        -1
+      ],
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "language_detection_threshold": 0.5,
+      "language_detection_segments": 1,
+      "vad": {
+        "enabled": false,
+        "mode": "segments",
+        "threshold": 0.5,
+        "min_speech_duration_ms": 100,
+        "min_silence_duration_ms": 400,
+        "speech_pad_ms": 200,
+        "max_speech_duration_s": 30.0
+      },
+      "denoise": {
+        "enabled": false,
+        "strength": 0.5,
+        "floor": 0.3,
+        "noise_percentile": 10.0
+      },
+      "hotwords": null,
+      "glossary_version": null,
+      "redecode": false,
+      "max_redecode_passes": 1,
+      "redecode_logprob_threshold": -0.8,
+      "episode_gap_sec": 2.0,
+      "episode_max_sec": 30.0,
+      "episode_max_tokens": 100,
+      "classifier": "rules_v1",
+      "classifier_artifact": null
+    }
+  },
+  "models": {
+    "small": {
+      "model": "whisper-small-publisher-base-ct2",
+      "repo": "local_unadapted_conversion",
+      "revision": "973afd24965f72e36ca33b3055d56a652f456b4d",
+      "source_manifest_sha256": "b92a7c691f46da8afd9b3d4ec859e7941584784dac32d1e1f4fe78d27279a83a",
+      "license": "apache-2.0",
+      "files": {
+        "model.bin": "eef2cbde70d256f29b6e3432c85b92becd26f804650e855cc4ff7e66f12122b0",
+        "tokenizer.json": "27fc476bfe7f17299480be2273fc0608e4d5a99aba2ab5dec5374b4482d1a566",
+        "vocabulary.json": "5ad28279db5e546349708b9a74736e2c018737ac5a600f1048f1f26c99b85b47",
+        "preprocessor_config.json": "9b5cd03a36fbb8a627c64d98a5b5b126ead95a77720723944487311f0110b666",
+        "config.json": "b55496ac7940a7ae47d2c01eab40edfd8701feec1229d9cce3b40014383fb828"
+      },
+      "purpose": "same source weights and CT2 float16 conversion control for A5"
+    },
+    "medium": {
+      "model": "whisper-medium-en-ct2",
+      "repo": "Systran/faster-whisper-medium.en",
+      "revision": "a29b04bd15381511a9af671baec01072039215e3",
+      "license": "MIT",
+      "selected_files": [
+        "README.md",
+        "config.json",
+        "model.bin",
+        "tokenizer.json",
+        "vocabulary.txt"
+      ],
+      "declared_bytes": 1530459085,
+      "acquired_at": "2026-09-14T19:28:36.011576+00:00",
+      "files": {
+        "README.md": "ab3ddd3b6af4ea0ef353cb80004f26613ba33217f81652fc13738d3b098c7675",
+        "config.json": "4a1848ebabe7938d9797c15a2e8e4ce1d36e6fd4a43d096ae5955257c67c7962",
+        "model.bin": "11b220779aea4c6f3ce9d2549c8a95ea869ed84066864b999531ef53e594fe5b",
+        "tokenizer.json": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df",
+        "vocabulary.txt": "ff77588746d3a2595d32ab5b69ffd7b95ce2441ac57533cb66fc3eb575a115cf"
+      }
+    },
+    "atc": {
+      "model": "whisper-medium-en-atc-jacktol-ct2",
+      "repo": "jacktol/whisper-medium.en-fine-tuned-for-ATC-faster-whisper",
+      "revision": "f243e13340c9bc0c34b971f0df4af80b70811895",
+      "license": "MIT",
+      "files": {
+        "README.md": "2071baa3bdab64c797426691ecb6aa40d3be06d7954d07ae9d26325669f55d49",
+        "config.json": "245d600f500b886d159711a1b16e5893be0c6300a803076d9e3166c1cd251c28",
+        "model.bin": "f1001512e660aaf27f82200384e5badb23e7bf1eedd9c1e3a4a721921e7ee064",
+        "preprocessor_config.json": "a6a76d28c93edb273669eb9e0b0636a2bddbb1272c3261e47b7ca6dfdbac1b8d",
+        "vocabulary.json": "561cc18c4b9a8b41a2ecfc3b5092b62a24d1bb6e79998ca1bb45326353647874",
+        "tokenizer.json": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df"
+      },
+      "tokenizer_source": {
+        "repo": "Systran/faster-whisper-medium.en",
+        "revision": "a29b04bd15381511a9af671baec01072039215e3",
+        "vocabulary_mapping_verified_tokens": 51864,
+        "verified_files": {
+          "tokenizer.json": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df"
+        }
+      },
+      "acquisition": {
+        "repo": "jacktol/whisper-medium.en-fine-tuned-for-ATC-faster-whisper",
+        "repo_type": "model",
+        "revision": "f243e13340c9bc0c34b971f0df4af80b70811895",
+        "files": {
+          "README.md": {
+            "size": 4508,
+            "blob_id": "6240b123d14ba329c7e05c8dfde8aca1a779ef56",
+            "lfs": null
+          },
+          "config.json": {
+            "size": 1959,
+            "blob_id": "4f0674b26346d06e53c55a548e64eb272161aebe",
+            "lfs": null
+          },
+          "model.bin": {
+            "size": 3055765653,
+            "blob_id": "480a0ae616e8bb0d9022424e3db00178a8d1881c",
+            "lfs": "f1001512e660aaf27f82200384e5badb23e7bf1eedd9c1e3a4a721921e7ee064"
+          },
+          "preprocessor_config.json": {
+            "size": 339,
+            "blob_id": "91876762a536a746d268353c5cba57286e76b058",
+            "lfs": null
+          },
+          "vocabulary.json": {
+            "size": 877345,
+            "blob_id": "eac876515b5710955ba87726353487973af64f3a",
+            "lfs": null
+          }
+        },
+        "verified_files": {
+          "README.md": "2071baa3bdab64c797426691ecb6aa40d3be06d7954d07ae9d26325669f55d49",
+          "config.json": "245d600f500b886d159711a1b16e5893be0c6300a803076d9e3166c1cd251c28",
+          "model.bin": "f1001512e660aaf27f82200384e5badb23e7bf1eedd9c1e3a4a721921e7ee064",
+          "preprocessor_config.json": "a6a76d28c93edb273669eb9e0b0636a2bddbb1272c3261e47b7ca6dfdbac1b8d",
+          "vocabulary.json": "561cc18c4b9a8b41a2ecfc3b5092b62a24d1bb6e79998ca1bb45326353647874"
+        },
+        "acquired_at": "2026-09-14T19:43:05.495811+00:00"
+      },
+      "declared_finetuning_sources": [
+        "ATCO2 1h subset",
+        "UWB-ATCC"
+      ],
+      "external_training_manifest_available": false
+    }
+  },
+  "protocol_sha256": "ad955d8885a2f4cd8196669ac9bc0f343bf9003ceca6cfe5adea1daa5f2b7fe3",
+  "acquisition": {
+    "repo": "Jzuluaga/atcosim_corpus",
+    "repo_type": "dataset",
+    "revision": "7d09ef7987036af7b3c83a9375e4ee030891c616",
+    "files": {
+      "README.md": {
+        "size": 6026,
+        "blob_id": "ba0df9660204d4b9dd4b4e1ec2403fea306d58d2",
+        "lfs": null
+      },
+      "data/test-00000-of-00001-01544bdf54b4ccf3.parquet": {
+        "size": 470060009,
+        "blob_id": "53d4364c0d3a8b09b6e17bb269a09802b2025e5e",
+        "lfs": "52ad36731ede5f6cc528e95aa69e32c0f7be101646615590e86e7d84539c4653"
+      }
+    },
+    "verified_files": {
+      "README.md": "d0d687a6475b5cfa3ec29e1952853fadc8218ae5a7403103c52298b7089e0640",
+      "data/test-00000-of-00001-01544bdf54b4ccf3.parquet": "52ad36731ede5f6cc528e95aa69e32c0f7be101646615590e86e7d84539c4653"
+    },
+    "acquired_at": "2026-09-14T19:36:59.411448+00:00",
+    "original_metadata": {
+      "license.txt": {
+        "url": "https://www2.spsc.tugraz.at/databases/ATCOSIM/DOC/license.txt",
+        "sha256": "6040aa7fae0eb8db247c535e0476cc1d0c0a4f9cd8a49e8cd2a1ced209167015"
+      },
+      "fulldata.csv": {
+        "url": "https://www2.spsc.tugraz.at/databases/ATCOSIM/TXTdata/fulldata.csv",
+        "sha256": "e4dffacf8ddab03c6c0dfa7f80bc6d3e711b75ba6d473ae89437d0ab5d0418b9"
+      }
+    }
+  },
+  "inputs_sha256": "b8235baf830c26db347b6f9e80ed8507323f5aade0dc91918614a834e5a94c45",
+  "references_sha256": "a164dd021a5b7dd75c6d458609c6dda44c312f30e7f6425431a87dbe5a453ad1",
+  "cohorts": {
+    "general_clean": 50,
+    "partial_human_dev": 5,
+    "quiet_general_clean": 9,
+    "quiet_partial_human_dev": 5,
+    "noise_only": 15,
+    "bleriot_b_noise": 25,
+    "publisher_weak_dev": 35,
+    "atcosim": 1901
+  },
+  "atcosim_speakers": {
+    "zf1": 641,
+    "zf2": 675,
+    "zf3": 383,
+    "sm2": 202
+  },
+  "gate": {
+    "threshold": 0.5,
+    "min_speech_duration_ms": 100
+  },
+  "local_train_pcm_exclusions": 708,
+  "source_metadata_rows": 10078,
+  "local_training_steps": 0,
+  "max_configurations": 6,
+  "old_cockpit_closed_test_accessed": false,
+  "full_spec_gate": "NEEDS_MORE_DATA"
+}

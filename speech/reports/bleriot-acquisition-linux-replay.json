@@ -1,0 +1,92 @@
+{
+  "status": "ACQUIRED_AND_CHECKSUM_VERIFIED",
+  "sources": [
+    {
+      "corpus": "BLeRIOT-A",
+      "doi": "10.57745/EWXJLT",
+      "version": "1.0",
+      "metadata_url": "https://entrepot.recherche.data.gouv.fr/api/datasets/:persistentId/?persistentId=doi:10.57745/EWXJLT",
+      "license_id": "CC-BY-NC-4.0",
+      "use_scope": "local noncommercial diploma research; no product redistribution",
+      "citation": "BLeRIOT-A corpus: raw cockpit speech © 2026 by Mathieu Edon, Lionel Feugère, Anonymous Author doi.org/10.57745/EWXJLT is licensed under CC BY-NC 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc/4.0/ ",
+      "terms_of_use": "This work is licensed under <a href=\"https://creativecommons.org/licenses/by-nc/4.0/\">CC BY-NC 4.0</a><img src=\"https://mirrors.creativecommons.org/presskit/icons/cc.svg\" alt=\"\" style=\"max-width: 1em;max-height:1em;margin-left: .2em;\"><img src=\"https://mirrors.creativecommons.org/presskit/icons/by.svg\" alt=\"\" style=\"max-width: 1em;max-height:1em;margin-left: .2em;\"><img src=\"https://mirrors.creativecommons.org/presskit/icons/nc.svg\" alt=\"\" style=\"max-width: 1em;max-height:1em;margin-left: .2em;\">",
+      "files": [
+        {
+          "filename": "readme.txt",
+          "datafile_id": 739512,
+          "url": "https://entrepot.recherche.data.gouv.fr/api/access/datafile/739512",
+          "bytes": 3938,
+          "publisher_md5": "6e17b64bcdee4f0ddcc500ad969c8992",
+          "md5": "6e17b64bcdee4f0ddcc500ad969c8992",
+          "sha256": "64958fe29cf7e020848a8ba098ed9255095ff8b05fcd2d21b5aa48a2e94d696c",
+          "verified": true,
+          "elapsed_sec": 0.01
+        },
+        {
+          "filename": "raw-speech_metadata.csv",
+          "datafile_id": 739511,
+          "url": "https://entrepot.recherche.data.gouv.fr/api/access/datafile/739511?format=original",
+          "bytes": 4634,
+          "publisher_md5": "a3b92652fa72971ddc51f7eb71d978bc",
+          "md5": "a3b92652fa72971ddc51f7eb71d978bc",
+          "sha256": "f32f31bb37bac47f4ae9f4d2872f1bcf3bac5bf46d27fbe2fae490e9fefe05a2",
+          "verified": true,
+          "elapsed_sec": 0.01
+        },
+        {
+          "filename": "BLeRIOT-A_raw-speech.rar",
+          "datafile_id": 739009,
+          "url": "https://entrepot.recherche.data.gouv.fr/api/access/datafile/739009",
+          "bytes": 1710792035,
+          "publisher_md5": "a32cadbb46925e434b38263405dc0d0d",
+          "md5": "a32cadbb46925e434b38263405dc0d0d",
+          "sha256": "00fdf051aa4f8b5b80ed33db6ea76aa342fb13d2857cd85646d2f501a80d0579",
+          "verified": true,
+          "elapsed_sec": 7.76
+        }
+      ],
+      "quality_admission": "NOT_ADMITTED_PENDING_SCOPE_ALIGNMENT_AND_ANNOTATION_REVIEW",
+      "metadata_sha256": "3ac4d14afd254f224bc7ef4ba1209e4482ea787c9945faf0c81ce9413e009522",
+      "completed_at": "2026-09-13T17:14:37.347827+00:00"
+    },
+    {
+      "corpus": "BLeRIOT-C",
+      "doi": "10.57745/ASYVFP",
+      "version": "1.0",
+      "metadata_url": "https://entrepot.recherche.data.gouv.fr/api/datasets/:persistentId/?persistentId=doi:10.57745/ASYVFP",
+      "license_id": "CC-BY-NC-4.0",
+      "use_scope": "local noncommercial diploma research; no product redistribution",
+      "citation": "CVR-like speech from an IR-based model of aircraft audio transmissions  © 2026 by Mathieu Edon, Lionel Feugère doi:10.57745/ASYVFP is licensed under CC BY-NC 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc/4.0/. \n\nMaterial used: BLeRIOT-A corpus: raw cockpit speech © 2026 by Mathieu Edon, Lionel Feugère, Anonymous Author (CC BY-NC 4.0) doi.org/10.57745/NODS6L",
+      "terms_of_use": "This work is licensed under <a href=\"https://creativecommons.org/licenses/by-nc/4.0/\">CC BY-NC 4.0</a><img src=\"https://mirrors.creativecommons.org/presskit/icons/cc.svg\" alt=\"\" style=\"max-width: 1em;max-height:1em;margin-left: .2em;\"><img src=\"https://mirrors.creativecommons.org/presskit/icons/by.svg\" alt=\"\" style=\"max-width: 1em;max-height:1em;margin-left: .2em;\"><img src=\"https://mirrors.creativecommons.org/presskit/icons/nc.svg\" alt=\"\" style=\"max-width: 1em;max-height:1em;margin-left: .2em;\">",
+      "files": [
+        {
+          "filename": "readme.txt",
+          "datafile_id": 739408,
+          "url": "https://entrepot.recherche.data.gouv.fr/api/access/datafile/739408",
+          "bytes": 3542,
+          "publisher_md5": "13b9f687f5bf4b85e292173ce7a65e7b",
+          "md5": "13b9f687f5bf4b85e292173ce7a65e7b",
+          "sha256": "8cabf1d353816638919424856bea8532ee8a156ab2db26c723ef4de5cdfa73ae",
+          "verified": true,
+          "elapsed_sec": 0.01
+        },
+        {
+          "filename": "CVR-like-speech.zip",
+          "datafile_id": 739008,
+          "url": "https://entrepot.recherche.data.gouv.fr/api/access/datafile/739008",
+          "bytes": 863744696,
+          "publisher_md5": "60aab54b76c7209b7554ffdcf23233e5",
+          "md5": "60aab54b76c7209b7554ffdcf23233e5",
+          "sha256": "58bdd35cf72426571e44e3925f854952ca66d11ff65959189be5233a280ae620",
+          "verified": true,
+          "elapsed_sec": 4.0
+        }
+      ],
+      "quality_admission": "NOT_ADMITTED_PENDING_SCOPE_ALIGNMENT_AND_ANNOTATION_REVIEW",
+      "metadata_sha256": "40d20dc97735168b141ddef458113340d8ef9ff7cf60a8a0754e90745fda8f6b",
+      "completed_at": "2026-09-13T17:14:33.582910+00:00"
+    }
+  ],
+  "benchmark_status": "NOT_RUN",
+  "human_review_status": "PENDING"
+}

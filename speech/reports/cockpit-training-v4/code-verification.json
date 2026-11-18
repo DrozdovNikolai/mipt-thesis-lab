@@ -1,0 +1,27 @@
+{
+  "full_suite": {
+    "passed": 494,
+    "deselected": 9,
+    "warnings": 8,
+    "seconds": 74.37
+  },
+  "targeted_preparation": {
+    "passed": 12,
+    "seconds": 4.12
+  },
+  "frozen_regime_suite": {
+    "passed": 29,
+    "seconds": 15.26
+  },
+  "ruff": "PASS",
+  "annotation_after_blind_ui_fix": {
+    "passed": 21,
+    "warnings": 2,
+    "seconds": 7.70,
+    "full_suite_preceded_this_ui_only_change": true,
+    "ruff_no_cache": "PASS",
+    "live_verification": "reports/cockpit-hard-v4/blind-review-verification.json"
+  },
+  "mypy": "PASS: 3 source files",
+  "real_data_replay": "reports/cockpit-hard-v4/verification.json"
+}

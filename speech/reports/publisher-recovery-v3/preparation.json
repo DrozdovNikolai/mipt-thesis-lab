@@ -1,0 +1,12 @@
+{
+  "candidates": 514,
+  "kind_counts": {
+    "literal": 471,
+    "spoken_heading": 15,
+    "alias_whole": 21,
+    "numeric_slot": 3,
+    "repeated_response": 4
+  },
+  "parent_clips": 361,
+  "asr_calls_planned": 1028
+}

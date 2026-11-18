@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "checks": {
+    "frozen_manifests": true,
+    "source_revisions_unchanged": true,
+    "source_predictions_unchanged": true,
+    "scoring_and_export_source": true,
+    "all_reviewed_dev_scored_equally": true,
+    "boundary_held": true,
+    "a5_exact_resampled_audio": true,
+    "tests_pass": true,
+    "quality_and_release_refused": true,
+    "plan_identity": true,
+    "counts_A0_A4_fixed_small_int8_cpu_A0": true,
+    "counts_A0_A4_fixed_small_int8_cpu_A1": true,
+    "counts_A0_A4_fixed_small_int8_cpu_A2": true,
+    "counts_A0_A4_fixed_small_int8_cpu_A3": true,
+    "counts_A0_A4_fixed_small_int8_cpu_A4": true,
+    "counts_A0_A4_fixed_small_int8_cpu_VAD_SHORT": true,
+    "counts_A0_A4_fixed_small_int8_cpu_HINTS_ONLY": true,
+    "counts_A0_A4_fixed_small_int8_cpu_DENOISE_ONLY": true,
+    "counts_A5_parent_vs_lora_float16_gpu_parent": true,
+    "counts_A5_parent_vs_lora_float16_gpu_adapted": true
+  },
+  "annotation_writes": 0,
+  "tests": 20,
+  "ASR_QUALITY_GATE": "NEEDS_MORE_DATA",
+  "NLP_QUALITY_GATE": "NEEDS_MORE_DATA",
+  "release_promoted": false,
+  "artifacts": {
+    "comparison.json": "a68901d7a59105c1d8f79f69d4f60241df9472fe1fed4fb494d7ec8a0e31e1cc",
+    "predictions.csv": "ceb4f2927664762133005b0c57d75ae5ae0e873ab2776f83a415f35c5328b56f",
+    "report.md": "62cedd7148c99a72ddde533f5e47e271ef6cf5e3959d35782fde1b0825799872",
+    "summary.csv": "1eb801d430963c733e971f98c4de48cb230df6144a8d9a49b3a2943c4c433b49"
+  }
+}

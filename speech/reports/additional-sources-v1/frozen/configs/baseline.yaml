@@ -1,0 +1,46 @@
+schema_version: "1.0"
+name: baseline
+model: small
+device: cpu
+compute_type: int8
+task: transcribe
+beam_size: 5
+temperature: 0.0
+best_of: 5
+patience: 1.0
+length_penalty: 1.0
+repetition_penalty: 1.0
+no_repeat_ngram_size: 0
+condition_on_previous_text: true
+compression_ratio_threshold: 2.4
+log_prob_threshold: -1.0
+no_speech_threshold: 0.6
+suppress_blank: true
+suppress_tokens: [-1]
+max_initial_timestamp: 1.0
+word_timestamps: true
+language_detection_threshold: 0.5
+language_detection_segments: 1
+vad:
+  enabled: false
+  threshold: 0.5
+  min_speech_duration_ms: 100
+  min_silence_duration_ms: 400
+  speech_pad_ms: 200
+  max_speech_duration_s: 30
+denoise:
+  enabled: false
+  strength: 0.5
+  floor: 0.3
+  noise_percentile: 10
+hotwords: null
+glossary_version: null
+redecode: false
+max_redecode_passes: 1
+redecode_logprob_threshold: -0.8
+episode_gap_sec: 2.0
+episode_max_sec: 30.0
+episode_max_tokens: 100
+classifier: rules_v1
+classifier_artifact: null
+

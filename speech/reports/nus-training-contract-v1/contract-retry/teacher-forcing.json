@@ -1,0 +1,386 @@
+[
+  {
+    "id": "nus-clip07_0057",
+    "system": "parent",
+    "matching_audio": 2.359375,
+    "different_audio": 5.42578125
+  },
+  {
+    "id": "nus-clip01_0012",
+    "system": "parent",
+    "matching_audio": 2.75,
+    "different_audio": 5.76953125
+  },
+  {
+    "id": "nus-clip02_0017",
+    "system": "parent",
+    "matching_audio": 1.6435546875,
+    "different_audio": 4.73046875
+  },
+  {
+    "id": "nus-clip02_0038",
+    "system": "parent",
+    "matching_audio": 2.685546875,
+    "different_audio": 4.9921875
+  },
+  {
+    "id": "nus-clip05_0026",
+    "system": "parent",
+    "matching_audio": 2.908203125,
+    "different_audio": 5.7109375
+  },
+  {
+    "id": "nus-clip05_0040",
+    "system": "parent",
+    "matching_audio": 1.5546875,
+    "different_audio": 5.5625
+  },
+  {
+    "id": "nus-clip04_0018",
+    "system": "parent",
+    "matching_audio": 1.884765625,
+    "different_audio": 5.828125
+  },
+  {
+    "id": "nus-clip02_0027",
+    "system": "parent",
+    "matching_audio": 2.25,
+    "different_audio": 5.2734375
+  },
+  {
+    "id": "nus-clip04_0033",
+    "system": "parent",
+    "matching_audio": 1.439453125,
+    "different_audio": 2.8046875
+  },
+  {
+    "id": "nus-clip04_0013",
+    "system": "parent",
+    "matching_audio": 1.498046875,
+    "different_audio": 5.42578125
+  },
+  {
+    "id": "nus-clip02_0024",
+    "system": "parent",
+    "matching_audio": 1.73828125,
+    "different_audio": 5.3984375
+  },
+  {
+    "id": "nus-clip02_0033",
+    "system": "parent",
+    "matching_audio": 2.27734375,
+    "different_audio": 5.5390625
+  },
+  {
+    "id": "nus-clip02_0008",
+    "system": "parent",
+    "matching_audio": 2.591796875,
+    "different_audio": 5.4375
+  },
+  {
+    "id": "nus-clip04_0035",
+    "system": "parent",
+    "matching_audio": 2.1171875,
+    "different_audio": 6.47265625
+  },
+  {
+    "id": "nus-clip06_0020",
+    "system": "parent",
+    "matching_audio": 1.3037109375,
+    "different_audio": 4.1015625
+  },
+  {
+    "id": "nus-clip05_0019",
+    "system": "parent",
+    "matching_audio": 1.3857421875,
+    "different_audio": 5.44140625
+  },
+  {
+    "id": "nus-clip07_0053",
+    "system": "parent",
+    "matching_audio": 1.2587890625,
+    "different_audio": 5.05859375
+  },
+  {
+    "id": "nus-clip02_0016",
+    "system": "parent",
+    "matching_audio": 2.962890625,
+    "different_audio": 5.171875
+  },
+  {
+    "id": "nus-clip05_0020",
+    "system": "parent",
+    "matching_audio": 1.96875,
+    "different_audio": 5.8515625
+  },
+  {
+    "id": "nus-clip01_0015",
+    "system": "parent",
+    "matching_audio": 2.232421875,
+    "different_audio": 2.193359375
+  },
+  {
+    "id": "nus-clip02_0043",
+    "system": "parent",
+    "matching_audio": 2.220703125,
+    "different_audio": 5.8828125
+  },
+  {
+    "id": "nus-clip05_0034",
+    "system": "parent",
+    "matching_audio": 1.896484375,
+    "different_audio": 4.30859375
+  },
+  {
+    "id": "nus-clip04_0017",
+    "system": "parent",
+    "matching_audio": 1.3662109375,
+    "different_audio": 4.8984375
+  },
+  {
+    "id": "nus-clip06_0026",
+    "system": "parent",
+    "matching_audio": 3.11328125,
+    "different_audio": 4.8203125
+  },
+  {
+    "id": "nus-clip05_0022",
+    "system": "parent",
+    "matching_audio": 1.6650390625,
+    "different_audio": 4.2578125
+  },
+  {
+    "id": "nus-clip07_0047",
+    "system": "parent",
+    "matching_audio": 1.97265625,
+    "different_audio": 4.7890625
+  },
+  {
+    "id": "nus-clip07_0029",
+    "system": "parent",
+    "matching_audio": 1.189453125,
+    "different_audio": 4.10546875
+  },
+  {
+    "id": "nus-clip03_0032",
+    "system": "parent",
+    "matching_audio": 1.869140625,
+    "different_audio": 3.865234375
+  },
+  {
+    "id": "nus-clip07_0026",
+    "system": "parent",
+    "matching_audio": 0.8369140625,
+    "different_audio": 3.775390625
+  },
+  {
+    "id": "nus-clip07_0015",
+    "system": "parent",
+    "matching_audio": 1.419921875,
+    "different_audio": 2.79296875
+  },
+  {
+    "id": "nus-clip02_0005",
+    "system": "parent",
+    "matching_audio": 1.546875,
+    "different_audio": 4.55078125
+  },
+  {
+    "id": "nus-clip03_0015",
+    "system": "parent",
+    "matching_audio": 1.5126953125,
+    "different_audio": 5.24609375
+  },
+  {
+    "id": "nus-clip07_0057",
+    "system": "nus",
+    "matching_audio": 2.041015625,
+    "different_audio": 5.1796875
+  },
+  {
+    "id": "nus-clip01_0012",
+    "system": "nus",
+    "matching_audio": 2.01171875,
+    "different_audio": 5.4140625
+  },
+  {
+    "id": "nus-clip02_0017",
+    "system": "nus",
+    "matching_audio": 1.265625,
+    "different_audio": 4.44921875
+  },
+  {
+    "id": "nus-clip02_0038",
+    "system": "nus",
+    "matching_audio": 1.7392578125,
+    "different_audio": 4.578125
+  },
+  {
+    "id": "nus-clip05_0026",
+    "system": "nus",
+    "matching_audio": 2.263671875,
+    "different_audio": 5.18359375
+  },
+  {
+    "id": "nus-clip05_0040",
+    "system": "nus",
+    "matching_audio": 1.25,
+    "different_audio": 5.23046875
+  },
+  {
+    "id": "nus-clip04_0018",
+    "system": "nus",
+    "matching_audio": 1.26953125,
+    "different_audio": 5.30078125
+  },
+  {
+    "id": "nus-clip02_0027",
+    "system": "nus",
+    "matching_audio": 1.61328125,
+    "different_audio": 4.75
+  },
+  {
+    "id": "nus-clip04_0033",
+    "system": "nus",
+    "matching_audio": 0.96875,
+    "different_audio": 2.47265625
+  },
+  {
+    "id": "nus-clip04_0013",
+    "system": "nus",
+    "matching_audio": 1.154296875,
+    "different_audio": 5.015625
+  },
+  {
+    "id": "nus-clip02_0024",
+    "system": "nus",
+    "matching_audio": 1.322265625,
+    "different_audio": 5.06640625
+  },
+  {
+    "id": "nus-clip02_0033",
+    "system": "nus",
+    "matching_audio": 1.8232421875,
+    "different_audio": 5.25390625
+  },
+  {
+    "id": "nus-clip02_0008",
+    "system": "nus",
+    "matching_audio": 1.9169921875,
+    "different_audio": 5.1171875
+  },
+  {
+    "id": "nus-clip04_0035",
+    "system": "nus",
+    "matching_audio": 1.70703125,
+    "different_audio": 6.12890625
+  },
+  {
+    "id": "nus-clip06_0020",
+    "system": "nus",
+    "matching_audio": 1.123046875,
+    "different_audio": 4.04296875
+  },
+  {
+    "id": "nus-clip05_0019",
+    "system": "nus",
+    "matching_audio": 0.87939453125,
+    "different_audio": 4.8828125
+  },
+  {
+    "id": "nus-clip07_0053",
+    "system": "nus",
+    "matching_audio": 0.86767578125,
+    "different_audio": 4.94140625
+  },
+  {
+    "id": "nus-clip02_0016",
+    "system": "nus",
+    "matching_audio": 2.029296875,
+    "different_audio": 4.6328125
+  },
+  {
+    "id": "nus-clip05_0020",
+    "system": "nus",
+    "matching_audio": 1.380859375,
+    "different_audio": 5.3359375
+  },
+  {
+    "id": "nus-clip01_0015",
+    "system": "nus",
+    "matching_audio": 1.478515625,
+    "different_audio": 1.388671875
+  },
+  {
+    "id": "nus-clip02_0043",
+    "system": "nus",
+    "matching_audio": 1.3857421875,
+    "different_audio": 5.12109375
+  },
+  {
+    "id": "nus-clip05_0034",
+    "system": "nus",
+    "matching_audio": 1.419921875,
+    "different_audio": 3.880859375
+  },
+  {
+    "id": "nus-clip04_0017",
+    "system": "nus",
+    "matching_audio": 1.197265625,
+    "different_audio": 4.6015625
+  },
+  {
+    "id": "nus-clip06_0026",
+    "system": "nus",
+    "matching_audio": 2.443359375,
+    "different_audio": 4.2109375
+  },
+  {
+    "id": "nus-clip05_0022",
+    "system": "nus",
+    "matching_audio": 1.0458984375,
+    "different_audio": 3.9921875
+  },
+  {
+    "id": "nus-clip07_0047",
+    "system": "nus",
+    "matching_audio": 1.552734375,
+    "different_audio": 4.5546875
+  },
+  {
+    "id": "nus-clip07_0029",
+    "system": "nus",
+    "matching_audio": 0.78173828125,
+    "different_audio": 3.751953125
+  },
+  {
+    "id": "nus-clip03_0032",
+    "system": "nus",
+    "matching_audio": 1.08203125,
+    "different_audio": 3.421875
+  },
+  {
+    "id": "nus-clip07_0026",
+    "system": "nus",
+    "matching_audio": 0.68115234375,
+    "different_audio": 3.51171875
+  },
+  {
+    "id": "nus-clip07_0015",
+    "system": "nus",
+    "matching_audio": 1.1552734375,
+    "different_audio": 2.6875
+  },
+  {
+    "id": "nus-clip02_0005",
+    "system": "nus",
+    "matching_audio": 1.283203125,
+    "different_audio": 4.34375
+  },
+  {
+    "id": "nus-clip03_0015",
+    "system": "nus",
+    "matching_audio": 1.2666015625,
+    "different_audio": 5.2578125
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "byte_identical": {
+    "comparison.json": true,
+    "scored-counts.json": true,
+    "legacy-waveform-evidence.json": true
+  },
+  "hashes": {
+    "comparison.json": "f55ebfa4ab33f6c541309815e810179fe22477e3d7b86ff906e4bee1e1022f51",
+    "scored-counts.json": "fc6adf4ebcf8269c55987fd13387d50c0d1d6da0e1e9ea75e5d162e42c8a1393",
+    "legacy-waveform-evidence.json": "0460fd4f60ca60a1d611a24283ba98968ae638dafef14f87862edaee59e53b13"
+  },
+  "resumed_ASR_records": 275,
+  "new_ASR_calls": 0,
+  "new_training_steps": 0,
+  "linux_scoring": {
+    "image": "sha256:34ed3eca5f649c8d1b3fc1b021bae236a3030829d9c9347368a32ba4fa6b347c",
+    "state": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-09-14T17:47:37.092541661Z",
+      "FinishedAt": "2026-09-14T17:48:04.868356408Z"
+    },
+    "network": "none",
+    "command": [
+      "-m",
+      "scripts.nus_decoder",
+      "score-transfer"
+    ]
+  }
+}

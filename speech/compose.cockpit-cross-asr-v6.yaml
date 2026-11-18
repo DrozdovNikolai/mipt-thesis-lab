@@ -1,0 +1,81 @@
+name: north55-cockpit-cross-asr-v6
+x-common: &common
+  image: north55-speech-parakeet:v6
+  network_mode: none
+  entrypoint: [python, -u, /code/scripts/cockpit_cross_asr_v6.py]
+  environment:
+    PYTHONPATH: /code/src:/code
+    HF_HUB_OFFLINE: '1'
+    TRANSFORMERS_OFFLINE: '1'
+    CUDA_VISIBLE_DEVICES: '0'
+    MPLCONFIGDIR: /tmp/matplotlib
+    NUMBA_CACHE_DIR: /tmp/numba
+    LD_LIBRARY_PATH: /opt/venv/lib/python3.11/site-packages/nvidia/cublas/lib:/opt/venv/lib/python3.11/site-packages/nvidia/cudnn/lib
+services:
+  runtime:
+    image: north55-speech-parakeet:v6
+    build:
+      context: .
+      dockerfile: scripts/Dockerfile.cockpit-parakeet
+    entrypoint: [python, -c, 'import nemo.collections.asr; print("NeMo import OK")']
+    network_mode: none
+  acquire:
+    image: north55-speech-train:publisher-v2
+    environment:
+      HF_HUB_OFFLINE: '0'
+      TRANSFORMERS_OFFLINE: '0'
+      HF_HUB_DOWNLOAD_TIMEOUT: '120'
+    user: '0:0'
+    entrypoint: [python, -u, /code/scripts/acquire_cockpit_parakeet_v6.py]
+    volumes:
+      - ./scripts:/code/scripts:ro
+      - ./reports/cockpit-cross-asr-v6:/output
+      - experiment:/experiment
+  prepare:
+    <<: *common
+    image: north55-speech-train:publisher-v2
+    command: [prepare]
+    volumes:
+      - .:/workspace:ro
+      - ./src:/code/src:ro
+      - ./scripts:/code/scripts:ro
+      - ./reports/cockpit-cross-asr-v6:/study
+      - experiment:/experiment
+      - audio:/audio:ro
+      - robust:/robust:ro
+  infer:
+    <<: *common
+    entrypoint: [python, -u, /amendment/run_parakeet_v6.py]
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['0']
+              capabilities: [gpu]
+    volumes:
+      - ./reports/cockpit-cross-asr-v6/runtime-amendment-r2:/amendment:ro
+      - ./reports/cockpit-cross-asr-v6/frozen/src:/code/src:ro
+      - ./reports/cockpit-cross-asr-v6/frozen/scripts:/code/scripts:ro
+      - ./reports/cockpit-cross-asr-v6/inference:/study:ro
+      - ./reports/cockpit-cross-asr-v6/predictions:/output
+      - experiment:/experiment:ro
+  score:
+    <<: *common
+    image: north55-speech-train:publisher-v2
+    command: [score]
+    volumes:
+      - .:/workspace:ro
+      - ./src:/code/src:ro
+      - ./scripts:/code/scripts:ro
+      - ./reports/cockpit-cross-asr-v6:/study
+      - experiment:/experiment:ro
+volumes:
+  experiment:
+    name: north55-speech_cockpit_cross_asr_v6
+  audio:
+    external: true
+    name: north55-speech_audio_data
+  robust:
+    external: true
+    name: north55-speech_cockpit_robust_v5

@@ -1,0 +1,81 @@
+{
+  "implemented": true,
+  "executed": true,
+  "artifact_verification": "PASS",
+  "checks": {
+    "two_1200_actual_optimizer_trajectories": true,
+    "both_LR_2e_5": true,
+    "identical_initial_adapters": true,
+    "identical_schedule": true,
+    "same_675_train_pairs_4800_visits_each": true,
+    "training_language_prefixes": true,
+    "no_truncation": true,
+    "frozen_base_encoder": true,
+    "teacher_probe_immutable": true,
+    "teacher_probe_same_between_arms": true,
+    "merged_encoders_unchanged": true,
+    "51_tests_passed": true,
+    "all_six_ASR_stages": true,
+    "exact_ASR_budget": true,
+    "zero_ASR_runtime_failures": true,
+    "GPU_float16": true,
+    "both_CPU_languages": true,
+    "offline": true,
+    "train_has_no_scoring": true,
+    "inference_has_no_references": true,
+    "source_volumes_readonly": true,
+    "Linux_replay": true,
+    "tampered_prediction_rejected": true,
+    "fixed_candidate_no_promotion": true
+  },
+  "release": "FAIL",
+  "independent_quality": "NEEDS_MORE_DATA",
+  "test_accessed": false,
+  "release_promoted": false,
+  "tests": {
+    "results": {
+      "tests": 11,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "backcompat": {
+      "tests": 40,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "optimizer_audit": {
+    "1": {
+      "sha256": "c0a81fb4ccd37417d860daaead75759a0f9d5137501797fe3189ec947954591b",
+      "actual_updates": [
+        1200
+      ],
+      "tensors": 96,
+      "learning_rates": [
+        2e-05
+      ]
+    },
+    "2": {
+      "sha256": "c69c43b905f77ba5b967ee3e0294bab6311bb4b85b9befd22dab52244fd1d196",
+      "actual_updates": [
+        1200
+      ],
+      "tensors": 96,
+      "learning_rates": [
+        2e-05
+      ]
+    }
+  },
+  "new_GPU_ASR_calls": 868,
+  "new_CPU_ASR_calls": 4,
+  "training_seconds": {
+    "1": 359.8969548690002,
+    "2": 608.9466046480011
+  },
+  "comparison_sha256": "4a4e2571b7be872f91bbf4ba8fcd8461b4948f41db5e8244b4c66a61fee4308f",
+  "plan_sha256": "0c28ce0c765699f26414c8ea3ffed62eb475b4c84ce7c60f06d7cb9081dee908",
+  "training_sha256": "767dbfaa6b36d47c654cb3532b142dd0a0d6906894077d5efb731d1c6a39ed03",
+  "report_script_sha256": "068f0c1eeb06bc77f728b54ddb2d8a6cb331f29f910de9444fb58429f4fb146d"
+}

@@ -1,0 +1,42 @@
+{
+  "implemented": true,
+  "executed": true,
+  "verified_artifacts": "PASS",
+  "GPU_training_runs": 1,
+  "GPU_predictions": 675,
+  "failed_GPU_attempts_preserved": 675,
+  "CPU_smokes": 4,
+  "tests_passed": 43,
+  "source_rights_basis": "explicit_user_confirmation",
+  "public_license_found": false,
+  "diagnostic_gates": {
+    "parent": {
+      "human_dev_point_target": "FAIL",
+      "clean_EN_guard": "PASS",
+      "general_RU_guard": "PASS",
+      "noise_guard": "FAIL",
+      "runtime_guard": "PASS",
+      "statistical_confirmation": "INCONCLUSIVE",
+      "independent_ASR": "NEEDS_MORE_DATA",
+      "critical_entities": "NEEDS_MORE_DATA",
+      "release": "FAIL"
+    },
+    "balanced": {
+      "human_dev_point_target": "FAIL",
+      "clean_EN_guard": "PASS",
+      "general_RU_guard": "PASS",
+      "noise_guard": "PASS",
+      "runtime_guard": "PASS",
+      "statistical_confirmation": "INCONCLUSIVE",
+      "independent_ASR": "NEEDS_MORE_DATA",
+      "critical_entities": "NEEDS_MORE_DATA",
+      "release": "FAIL"
+    }
+  },
+  "independent_ASR": "NEEDS_MORE_DATA",
+  "critical_entities": "NEEDS_MORE_DATA",
+  "NLP": "NEEDS_MORE_DATA",
+  "temporal_detection": "NEEDS_MORE_DATA",
+  "release_gate": "FAIL",
+  "release_promoted": false
+}

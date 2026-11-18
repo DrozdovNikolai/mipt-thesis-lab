@@ -1,0 +1,4483 @@
+{
+  "status": "READY_FOR_EXPLORATORY_TRAINING",
+  "finished_at": "2026-09-14T00:27:43.112700+00:00",
+  "plan_sha256": "42e95c58acb9351b8fd0ad46f2d8b1937fdb32f9853c33be455bdbe1f8b57d97",
+  "groups": {
+    "independent_groups": 12,
+    "split_groups": {
+      "train": 9,
+      "dev": 3,
+      "test": 0
+    },
+    "unknown_speakers": 0,
+    "script_overlap": {
+      "bleriot:BEA:Checklists": [
+        "dev",
+        "train"
+      ]
+    },
+    "claim_limitation": null
+  },
+  "total_rows": 476,
+  "eligible_train": 33,
+  "eligible_dev": 35,
+  "items": [
+    {
+      "id": "aaabed86621516e13a1d72690f36c65a",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "03b32606496d3919d3ab169b1c7589e4",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "e404bd4082635b065ff2d3d664c6a6d8",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "8cf9943a98cc4c46b96551c766172766",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "1b0a233051b2955b6f047976f79f39f1",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "152aaba78f9cc0a4982a087330db866b",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "c0dd11b55768ee20e8244bf143e2e79e",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "a6e129f73b0a9d4399932ce45863f8a1",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "31eef21aee4992b722fd202c8a3b0034",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "d7e8b96607ce046754868ee703a07cc0",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "6cbef9c5794f4f2ca49aaa9f0770e666",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "d12d9e3050aaa830de737f7344cb9d4f",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "0b1becf6bc4954c5011e9627e72bbcab",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "fede0cc1b6acb5bc691037a22b9c18db",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "collapsed_word_times",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "f445be58a12cf745d03c13b706ad821a",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "f3e25e0af6b7b7af79a1199eabea7f2a",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "192f5d49312a8a9c6005665439aaa86b",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "16807708b6d1d6e6916b05008b151283",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "6d82175021cfff7f37daaaee8e193717",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "collapsed_word_times",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "0d877ee9d37aa2be0998f2215fa96a2a",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "007cd391a02a420d0ab9f096dd3a5c80",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "86dede69cde93da913613c8c316a3ecd",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "1c305cbf6bacd71d35104056fdde15d9",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "4866587edab35bb3023ff4f41323b58d",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "ca3abc1ebd7ff9c90bd43e8af8075e59",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "collapsed_word_times",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "e4fbfb79403ebdb3a96ff3ecc61ad34e",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "0bb7e3b580a3081feaa1bb94827c5246",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "ba25453d31628a82b03328c6165d7d48",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "14149498977d6ec57fd880aca3e0678c",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "b663c2ed0b035d30f00a0a73a209a36f",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "306ce4f483aea9743b8c21784c267dc7",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "8dce9d4e156bc4697332db922f4b15c6",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "f4a522b6c6f58110e8b9d2db2cb6b3a8",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "87f4425150c31acee2aca3e13c6b25d5",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "aadc3f62a7f07cf0006f6dc904818d3f",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "f4ceef70dcfa668e99384d3a67fd6798",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "d8663f273d98477c26c2585ce2733e70",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "3e6cccd7995d5222cd3778f6930d66b5",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "03b22a84db0659373a727491196e4b84",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "847b71b7a8afc9f3e9d4d59a59459053",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "6551c79cb970bc8004ef816d767970bd",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "a57ed12f11f78690eb3b16dfda9c273f",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "f1caf14d558d855f8daf2cc71864c3b2",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "0dc9c29264b4e9f8af4e5c33d8d7cd51",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "a85858ce9f650c3442a4d243e539b88a",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "19c9c4c98131e15f467429c711442ba2",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "65cf6030831c6aa047f8c03ae66d8e09",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "5e18d8d99da82c0163936267cbfe7a6c",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "6fff658092132cee1f5911315fd49e45",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "1c4c58f217d814665abe440bf6a4aed9",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "07e2c97211e9ce9df29d0d8678f5f52c",
+      "source": "bleriot-a:BEA_checklists_sp001",
+      "split": "train",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "9ea17861e329254d245963df2d3a1209",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "c825a8c00a27333f791153608d45e9fd",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "8e101fefbf67f07ff7e03a53595c5a12",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "7b09d374fc11435ef826237dc9c2cdcd",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "66de14be7aa11833d9a1fab81de147de",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "c654f0df7592d8463878571d7d0a157a",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "collapsed_word_times",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "1d6630eb5a8b2cb8d0e228855fe680e7",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "937c38e1f9cb2a59e60caf870546db5c",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "f706a81a41a9e4596c10b60e063d430e",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "70af1ee845fad8de344598eec8f74c69",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "c45be8bb3f49d7d76ba5f715b51b67c7",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "8b041bc50e6cf5fb1c92139b027507e9",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "cdec35cb6b26ef428a15d19a5cff1b3d",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "dbb16ed6ab0564d0be17f202fdc255b2",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "414bd04ef027b0a1277fe7ab61f2670e",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "3daa349bb07b63a67857e1c2b6809aa3",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "10c9abcee31af4819142dc3a45632ccd",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "collapsed_word_times",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "f15d1d04cb5107de74ac5d48a82ae3b1",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "3a0041daba48d3a2f7ec6528f366237e",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "a0010ae431899b12781555edb326fa1f",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "49d176d575935e5264a93d8ee8532204",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "1af40e23104a87656b4b539d2672c69b",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "65935e5f736f9912c361cdfcf3b89254",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "ca83e9e1428a5c790fd998f4d59f805e",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "fc6bbaecf5aec3f57ea59c0eaf53f611",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "collapsed_word_times",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "e09674a5730cccb52f4904ad0a2598e2",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "2242d1a20fa97074f02df07cc7a29cc3",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "6d0153935ed61d85a9e336f493823d72",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "15771e0fa1196b199e71d88c133f0d91",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "c09de347b0630a8f9de774e7b080e16c",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors"
+      ]
+    },
+    {
+      "id": "1b32267baf83eea73e26e5bcef3c347e",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "f68665a0dd41c932c531529b1bba91d3",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "f2713a4241211a0c383a622ab79685f2",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "b8ac594dfcd77536807a82ae58dbc955",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "dce71bcbb59d97e07b32aad0681a5ca1",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "50d7793bdbcb7574d898ad12a07eecc9",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "9625969d551908b49dab87b67c425724",
+      "source": "bleriot-a:BEA_checklists_sp004",
+      "split": "train",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "137e1c6ec79fe026c9725fc05c42720c",
+      "source": "bleriot-a:BEA_checklists_sp006",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "1a276c3d4c357f195ef7ad47ea5a4a1f",
+      "source": "bleriot-a:BEA_checklists_sp006",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "9f1d927a892f88f3aec2f17a0f6bf81a",
+      "source": "bleriot-a:BEA_checklists_sp006",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "248ef9fa3c1e38d2ff2b1238d3ff26e9",
+      "source": "bleriot-a:BEA_checklists_sp006",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "3217488f22ed05717289e5f4432e1a10",
+      "source": "bleriot-a:BEA_checklists_sp006",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "abd824ecd252007332452aa9896f9e02",
+      "source": "bleriot-a:BEA_checklists_sp006",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "2c4063607c28ad2437d1a91c3ec385ce",
+      "source": "bleriot-a:BEA_checklists_sp006",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "dd0b954daea755d14aed10d2a7fda0dd",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "collapsed_word_times",
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "19a8404594b9bbce02ab8154201b3dbf",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors"
+      ]
+    },
+    {
+      "id": "cff1aac969348ff088bcc6a9f809d543",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors"
+      ]
+    },
+    {
+      "id": "5fd9ca38dff31eb6c383a3ed3553c2f2",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors"
+      ]
+    },
+    {
+      "id": "23a846636786b82f05cd5901a3059b23",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors"
+      ]
+    },
+    {
+      "id": "695b5feefc8376c4f20a39015ac53508",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors"
+      ]
+    },
+    {
+      "id": "b0ce12f12f4029b7e67f634009453d74",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors"
+      ]
+    },
+    {
+      "id": "9be9d7bf4c3df506b96f129687d9a003",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "collapsed_word_times",
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "b0a2482acb6226778338d3da0ca22599",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "4249896ae8b1757adb6028576fdd2e1f",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "bb54a8e0775a06cf396cf38e0bb3689c",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "631554caa8c577c963c090708eba56eb",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score"
+      ]
+    },
+    {
+      "id": "744cbbc48380f0c6402ac78bde0f376f",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "d3c078b3b4c81a457b21ad4b9aa2c6cb",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "3a078bb2c55b7936d19a71effe17d6d4",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "f74be777722fad77409e07756a4c0d54",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "f69e7fd1d0296d917d910e536c021686",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "4a821c0ea63f36f61f18fd4aab772924",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "286f2d5472200d3e7519be4b23da0960",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score"
+      ]
+    },
+    {
+      "id": "062f7287c0c01bf0ecc43f7a5a081065",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "566067bdd550312123260490e69551d3",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "00d7c622a6a267463fb40b5cd2d9d7d8",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "555b127bfa3d5c7ff7d68a0b2416c158",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "e8cfac5a7ec59c56181e27b442093239",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "8bb0b22423aabfacd11a7058bc3d93a7",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score"
+      ]
+    },
+    {
+      "id": "64f4304538510a7b9a333c69442a49c6",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "2075c223fb44a2f0676f7b511d9f799c",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "f5751f87db5924eac62bb665e1055b2d",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score"
+      ]
+    },
+    {
+      "id": "85b5945e0e156c1c5104fe358aed7742",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score"
+      ]
+    },
+    {
+      "id": "937cd9bd73fa003416abdcdba3c2e839",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "cb6a26060bf70b18fba84f8edabb3f81",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "4f2981feb7dc1e726b5571fc0c3a4e9b",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "a41d7014408a81a716ae799fa3c055e5",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "4c0fb0e159d65e7f8ac37f2cff18713a",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "9e850bdf66b67c8f58fb2a781fbb91de",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "9c0c0b5e3ccaa1079dce6cf1d1b9b4c2",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "e6b03f13abc12a9b4db0b0aa26d89d20",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "604d0ee92d7083320899e09d1b58a7ee",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "28a78bf5073884439b87db2f9235e77d",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors"
+      ]
+    },
+    {
+      "id": "2f105a7ec177e900527879a2c69f507e",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors"
+      ]
+    },
+    {
+      "id": "09b9efb9c94d444dea6fb4231368b767",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors"
+      ]
+    },
+    {
+      "id": "fa434ee64c5286189cc98c38fc27fbc0",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "a4cb50f4c1a2c601b3495ce37fad07e4",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "f2e7ad5aa963c715edfd44548ff97a32",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "3bc1a8bcc4dc254c715655a2b9bc6cd7",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "c686bc89f217275e8843986c7ec4bf99",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "764e2442e3888bb336cf94ad26e0543a",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "340db40da6082d04580581334b7b3da2",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "dde4545085cff7d4fd6032b6dae22955",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "collapsed_word_times",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "9c01a2b1d389bbbdf721d8d5ec86ce8a",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "42653b984c6f4cda1a4c312026b91fac",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "093029ac6ac7f90a13470149644b7d86",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "7a2a81c5595d6c857a4fbddc68140391",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors"
+      ]
+    },
+    {
+      "id": "67396fc21797ebef010850af820bcd65",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "1752c7ebaba35d1a35f6ee32a4703e55",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors"
+      ]
+    },
+    {
+      "id": "0459c3b7bc8280c29b15321011b29db6",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "24a685443032a2495c66dbfc36c01087",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "573571cd0e30841b17d1f326d2186759",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "a9ff72e122814e1cf4478fabe47c6348",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "a1eacc26ee888827a837263c1a8e001a",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "ffe9f0099eec8881cb81ed28d3a23c8b",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "collapsed_word_times",
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "fb864757d41012625e014de4238b7b5e",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "c079e0f3d07681dd577df34eae4f5924",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "d73568d824cc7648efe2b1b1c8e1a95a",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "fd0d782ae649f07452ecbe87f4bec1ea",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "1b3057f7413b3f5106d103a8a9351e9b",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors"
+      ]
+    },
+    {
+      "id": "bb24263169c25348e9ede30a23cbd9e0",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "005dee92045cdd7d5e88d45de2198e68",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "9e83e233b91b484d480c77121e18bd4f",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "c9f83d086b43bc7783915f99ab323d66",
+      "source": "bleriot-a:BEA_checklists_sp008",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "3c51175bd6deb9cbceb9f2cd7f213d4b",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "1c6906c92684904c1d37368ca3ace9c4",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "7cb1448773efdb9dae2cb622954fa6ac",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "c751dc2b6f78c66df2d0abbfc72e5a99",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "e85bc385bea64c34576b57e1f2291409",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "1ed1ed6004eb9e06aefbfbf068fce82e",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "4241dd607c587d935a6a69a71f844877",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "d345ab0c42a190772a4e9c01379b9fc6",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "f87bca2d92817a1714f6d4cb716788b8",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "cd91e20ae6f0f43d70b607c6293bab94",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "600782827c0e2cdf6544aa305bf05e49",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "b796e4edcf692cdeadd8094b2c4e5f79",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "f446db0a51d9c9d762f0415217178844",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "ea3d2764557000dca9d6c1c44a8cccd5",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "4e42b0c1713be6cfeafaf9285b4b78a3",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "ca2395cd554ffda75ba2519b068da98d",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "75cff4a38cf6d4518f0844336a819fd4",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "e0a87155f2f731a5aca6af7658d3ca94",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "b7585571e73cbde471fe294f46eecf45",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "f41a3ee89f0c70f21f4afe462201ebc1",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "745c7489182cb29820d557969d8da45e",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "1ac7b7c7264b45cd09aa9475a89d1945",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "2ccddcd057b36f61365322211195f370",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "6311f106c2ec25f2c2b6135173f16889",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "8d0e400cf028f1258deeba381d0348ad",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "7e008add5daf3a30c2312ba2c6569ed7",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "0daa0adbf1bfff536fcffd1848c7cecc",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "ecca6f2810ed0de6fd356cd824aca4c0",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "32cf9d3caec2e3fac3a2bb084eb97a1a",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "06db24aabf7d3b681be77f4e08620a34",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "946568bf1217e74d270d5d640df2dff7",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "aa98d958e3d0917135bd069607f66155",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "5d810c5242d8d120c83acca9a850624f",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "e45773434fe54e1715a27078c21ca32f",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "a255fdbf98134f075b52b54fcbaf9a93",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "5bbb6f038dffb0a38cd0e0b1ef55f43f",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "4d9f0fc560cc4f2ecfa5f32704c7ae9c",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "def26eecdfe0423f6737da518cac3fef",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "d9486f6510ee17365f5664c962216f81",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "39446b6466c4477a9331dbe2e2d4b1e1",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "dc1b6183a64f769d27f0479659c1e5a5",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "9742f4557e96d367e9e00fb4f62161e2",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "collapsed_word_times",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "6cf423e22daba3eeccab33c887b48e02",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "5e496fce42c6e260caaa50b47a7b079d",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "d151023a1fb0f814e90af10b65309698",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "3b3bc3b41d03939b53e3bffcb0732814",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "5053209acd2c534b63b2e3eeb7e9b53a",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "54d8e85fb312e67523946cc5080fa107",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "collapsed_word_times",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "b71c61b8b3683fa589ee276456265b6e",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "collapsed_word_times",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "aed7cfa188c526c2d7a472e6e9949ad8",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "9066c9ddb28399da4b8322c9905369bd",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "collapsed_word_times",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "589d71b15b1752036e41ea05365e7a9e",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "4a484e771415433e5be9f344130d0bac",
+      "source": "bleriot-a:BEA_checklists_sp009",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "5ee619ab5d462b2bd0f46393ea73d8d6",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "47e17e3fe83e601395f5082c4770fee7",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "collapsed_word_times",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "8c386c67416d4a1ede6de65e22019d44",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "5b433b5fcf47c925c3b335605e570d90",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "db2dea319e312d95848469e51e685585",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "4c0df83f59f8fcf00bdc688095f1604d",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "8e95cd2b1104156172f38bd43a4c5742",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "ae05660346e2f040a2c5f07294ff66da",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "438671a8176731d2fc362d44d7e8641f",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "260eb7e86aaf89e835fb88cb0ba24718",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "8be0c87dd65528c5497d76ce9d5fba34",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "e68ec4af42c900872c8596ac68b0b728",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "066c282973b81ad6d450b548ca12d806",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "300d4824b4883bfe1a5667abb7393651",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "9182fb26b24b0ecbf54ebb67d0039c79",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "8f3a81cbe3a9af429b291d10555fbe1b",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "58a5bdde1f14e21fd5e129d46cb0e0bf",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "5189bc42829ae97cbdff4c06848d090d",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "9f120ceb17d09df8e9a783184f9c417d",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "d569c34915b8ffaab21453dc2c7a7efe",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "1bf0d18d170839445ad86ec4e43d7177",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "d5bdafb03ce7b933514addd008c5e10d",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "a657b98d1fd0e8d6521ac00bcebc9289",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "a0151f804f67af142981ccd71f073279",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "3a6620b0f3acf91396266c43165706ff",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "0a1f4115b0fbe59f338900fc0cbb4d57",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "2abdfe7ce93c00cbad4a1d4a5d467d78",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "4f5f64572dabe1dcf9aa2bcae06d7907",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "ac4e82068761c75a8b675329b7106ceb",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "79a83032af0103321c0efce72d3fb73c",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "f2d9e25a685156bc5e13679f16bfceb6",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "8a06a09bf694a5a44540729af9a59805",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "2ca5e340bc3352297796d6e911adf9ef",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "70468d1169a0c9c70f80f47f5ba31548",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "59ea032df0de44448134d376cf8adcdd",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "286a94c414095aab78f4f3d2c21e0bdd",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "36adfc94b0820e10d0648463de8d7f77",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "367afcf5d665cc0ec63855f1dad20b26",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "7ee8b48d244109af772c229c87aa94fb",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "6d2204baefe5cfab809274b22fa21b94",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "217e1554b3909f18d1e745df90bb6b94",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "db61df5c52239d2aac73ca3052fde48f",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "3e5b5e1b9472d6024fb1262df3487138",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "eccb216c0e93ec7a59c25e71ffa1598a",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "a54ac52bf372d3fd4beea7e057f5c785",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "4266d66af504dd08e1f01a831f78f437",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "fb8570a5536870231523393ae7fe5da6",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "3064439b991338b115864d71068dbf75",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "a82d86c7e8407fce1b5ce6c5765cbcb1",
+      "source": "bleriot-a:BEA_checklists_sp010",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "collapsed_word_times",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "f919f1ba29a9b6b3e42196d1d2f9074c",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "8390421a06dd8a506d91364f1b7987f1",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "f963dad81e0c1dfedcfbf22d9cc82ea7",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "0074c536706b79c542477861d2b0ac7a",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "b4fc822f5c4c1ea45b0427fe4940e6ad",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "cbbcb2cbc930a10e86de1e33738d369e",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "8b2f293b630c130335be7b41433a4000",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors"
+      ]
+    },
+    {
+      "id": "ba8beb861e93e405715a323cf7d7e04e",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "ea0e11a12131ed18931b6f829e5db9f8",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "4a94fa230c76a8d908c02c8444727c13",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "081785d23135bc14d1f076bc04d9057f",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "71287b7b9296fb0918959f0b4a7023ee",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "7841892bc4177f932c4b801d726b9a95",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "e4d9f8f409ca3f77d913d322145ecdee",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "f3b90100ac51ad718b8a57337160d0b9",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "5a903c9eca325c5abb492576e1e2fafc",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "4c3b4405484d2b00d73c47bdf46b6e50",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "26ab84934b7c41861a5ad9fd9becb179",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "9898403aa4b12aed01456cd69869c503",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "8a02b3d0b7c3d709cecc3af4cca0a945",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "09f19d6b873db636f1e6ec76f287eaef",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "4e3dc46c1e9092fcda0fa4811a6a392f",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "8e6203ffbaea155f3aff834b8b888d4b",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "91ccaaf8a1b692bf2f2c00bb63bcbcdd",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "aa99bd2ffc80c44fac9d7aac4f14c319",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "c531c09f37ca99d73471f9fe9a111944",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "24e369231e69f678538a225b31a151dd",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "01fff9e58af5c22fd4e46520cd795de5",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "collapsed_word_times",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "b5b9f1952398fb2bdf342d9432628b3f",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "6090f9f0615ebab41a50890f92d20503",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "b2802bdbe151bcf28ee1937049fdb65f",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "968259173d4a40c639cb71590e8474b9",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors"
+      ]
+    },
+    {
+      "id": "2ff52fe3a10e0a888bf20790f7edbafd",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "7e46719b95151642e46cefe1ba7bba31",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "8845dcca9898e5abd3b039278615a027",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "45582827dc1fb214133e2979ed7f59be",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "4b5b51cd5295f365054d2dc450f4df8b",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "c9aa346d613b9b344d880b8ea6dc3f36",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "8097f70742010df358ed701db34a9eb2",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "38bf6f8a69a75b5cdb0dcf8265f8ea42",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "123acb4c28dd926124cd07fa769e88b3",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "f2680d55663f924e8f1d068ae217f9d3",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "909ccbe8cf84cd7b0b2349554b45b45d",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "c6908d0dcb3fae612fe8c9521609e919",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "b3f69c2ceef7d837d2dacf96d5098e0d",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "3ee20a8643225e8757bfe3c72561f828",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors"
+      ]
+    },
+    {
+      "id": "214c757e2d81c32f3030e3018a76915b",
+      "source": "bleriot-a:BEA_checklists_sp011",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "fed622e8be2af3f91ee2326f59c05e5f",
+      "source": "bleriot-a:DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "collapsed_word_times",
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "a1b166394114fe26eb0fdd263b7390f4",
+      "source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "collapsed_word_times",
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "58cae5d3e5a7311c392a32363d257cd8",
+      "source": "bleriot-a:DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "collapsed_word_times",
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "f567b22f055ae44d3fccb0c19a4762d0",
+      "source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "collapsed_word_times",
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "182ba3d64966896851e1f1ef419220d8",
+      "source": "bleriot-a:DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "0f062bf74e8c552377882a6e1b041e40",
+      "source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "8b63269b2c2c1565a889955e5d2ee759",
+      "source": "bleriot-a:DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "collapsed_word_times",
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "5fa09bb99f28500649dca07685cf96f5",
+      "source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "collapsed_word_times",
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "048b89eeaac4fa6e6fd186bb45501d95",
+      "source": "bleriot-a:DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score"
+      ]
+    },
+    {
+      "id": "c44fdfd6ba0998757e072d02c5a0be84",
+      "source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score"
+      ]
+    },
+    {
+      "id": "611f4a5edc12c855afa6bdb05f064b7c",
+      "source": "bleriot-a:DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "collapsed_word_times",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "fa67d62bbab8a568c87b7d354eb23048",
+      "source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "collapsed_word_times",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "d079cbd587b2305898966ee605b83911",
+      "source": "bleriot-a:DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "3cf0811e036674c9b149ba96a2ded7d7",
+      "source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "161f8ed9d070efafe7af0eced98374a4",
+      "source": "bleriot-a:DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "86c089f85698f21f5227fa2020eb05d8",
+      "source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "5564832d2cd990515f53db34cd659936",
+      "source": "bleriot-a:DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "dd2a87cd6649d70b400e411cfaed4cf0",
+      "source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "e1a748450f125789ead58f35f73a92f8",
+      "source": "bleriot-a:DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "collapsed_word_times",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "7d48a8606826d48ce4fb6ec7840b002c",
+      "source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "collapsed_word_times",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "9ce4a332522213716fc7b765f2ebdb4c",
+      "source": "bleriot-a:DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "3da3ccdf50de414d9e38cea62f9ab372",
+      "source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "d4ab9c1dc908f13a27131b08a34a9c85",
+      "source": "bleriot-a:DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "09b84a70bd565f4257d22462e9196117",
+      "source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "8c97dedc5f700d82960c9ff67a71d4f0",
+      "source": "bleriot-a:DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "collapsed_word_times"
+      ]
+    },
+    {
+      "id": "cb8585b4e8b05641334b5dc33811cce7",
+      "source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "collapsed_word_times"
+      ]
+    },
+    {
+      "id": "625064a6973d774e2edd77fa8bdef1aa",
+      "source": "bleriot-a:DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "1f76a9f4ff2192a5ee2f56c8e90c4f09",
+      "source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "b02bdd25296fc8c50b19448f00bff0d0",
+      "source": "bleriot-a:DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors"
+      ]
+    },
+    {
+      "id": "03283f31ccaf15e65fa4fc32e294699d",
+      "source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors"
+      ]
+    },
+    {
+      "id": "48801f180866c24015057f866d08ca65",
+      "source": "bleriot-a:DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "39bc44fa1179ed4bc1846e66086db732",
+      "source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "e1211855d89bcb58775e9223fac468c7",
+      "source": "bleriot-a:DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "e52f6d4f32767111980345f5f7267e57",
+      "source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "547523e052c9d735a8899fb8cc74b3ee",
+      "source": "bleriot-a:DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "c8262de2583b3c135fda4386944fbe78",
+      "source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "12394a57b8ebeaaf3848a5ece4b5cd24",
+      "source": "bleriot-a:DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "collapsed_word_times",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "97f82c1a733c7a440693a1014e3dc9fd",
+      "source": "bleriot-c:CVR_DGA_checklist-Beech_sp101",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "collapsed_word_times",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "d1616a62e73e7c157256df088bcc3ca0",
+      "source": "bleriot-a:DGA_checklist-TBM940_sp102",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "1b58cbe2045ee5211a1d1599728234f1",
+      "source": "bleriot-c:CVR_DGA_checklist-TBM940_sp102",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "3eba86c6d9dc76a555eb555831ef6896",
+      "source": "bleriot-a:DGA_checklist-TBM940_sp102",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "b94ea1029a2b629b0685a9ee57bb795f",
+      "source": "bleriot-c:CVR_DGA_checklist-TBM940_sp102",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "286895ef7714f8ec91243fa935a782a6",
+      "source": "bleriot-a:DGA_checklist-TBM940_sp102",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "6a47c073ae55b7ee73c441c91c1d8001",
+      "source": "bleriot-c:CVR_DGA_checklist-TBM940_sp102",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "24f40dd33b12d9fc821cb6294fde6017",
+      "source": "bleriot-a:DGA_checklist-TBM940_sp102",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "6bedee7554969b2c0ad0401961bbd3cc",
+      "source": "bleriot-c:CVR_DGA_checklist-TBM940_sp102",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "0bff6d53d2f0e2767fea0f06a6c2b758",
+      "source": "bleriot-a:DGA_checklist-TBM940_sp102",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "3bf103e60a9ac95f4cd3ebe4fb725569",
+      "source": "bleriot-c:CVR_DGA_checklist-TBM940_sp102",
+      "split": "train",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "5a868d4b3a20f564774fb063d09487e0",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "23ea2296feefeb0680eef954d904bc9b",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "a06b9924e7d0741de4db89b6a1f4e105",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "a85fefc534566bf64db14fb0246a8415",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "bed123c1d3b711a38b44a46016daea27",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "fb6dd7f2dbd7d76666dc0db7b6ff1b4a",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "6bb164b837f4efe64e6ccc16290fdddc",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "81f58aad65958b13b882d42757233210",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "1647cd852af454d89cca344de88a1bab",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "269a9febb50ad7ce236b1e8ffbc7ae80",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "c882e23d7f73d1b5bcbc00f97dd8ce74",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "a5a397bc24e1264fc4acd03305aa9fcb",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "4e05c01863cb85affffec23452e77e17",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "bb7eac140b31abac5a5fe9e9d516c7dc",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score"
+      ]
+    },
+    {
+      "id": "21eb4086cbff5113a751d9f1eb7bf246",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors"
+      ]
+    },
+    {
+      "id": "e7fa1e4e4a714628850465421746ac7f",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "7288261464d8bcf3f9632b3a864e510b",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "e16abaa0650adc505e7f9667e07901cc",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors"
+      ]
+    },
+    {
+      "id": "22886f5a0204aa48841336c521c28ebb",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "a645d0f7e7d255ea1fc254ca3ef8f5d6",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "f8c4c2b77b01364338225f799cef09be",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "13554a75e7f1bd55dc14597d745a929e",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "c09fe47d620d90cdca2be61f2e499cb4",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "c6b8f3b67fb1d4faf08194b35bb656ff",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "a1e4f7db2ced9f0e58d2f7adbc4231bb",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "d4b8229cd8b305a974371cac5335108a",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "52538b9c7eab1afec7d121e03ee5ff4b",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "0d4fc636ce0c278d2133f98bda5c35d7",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "626b780ceb77e66e6e0f44ca437703e5",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "37a8dc67bd3d71c23ff88afd3404b1fe",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "1b59f8eaae7a3d8f9c7e5dbcd48060ab",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "a766fa3a293e6f349a4fecc41d2fe865",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "ade646da12c6f1dbe1eedcc9b43751b9",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "f6561a681421a672e13d60c09bf41ad1",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "ee20f78ccbdbd02dea26d0301eb71848",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "653bc7350c19ee41f1828a305a8b1516",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "82f551b652f97522629d5abfea71eb17",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "e5f0a03f147ebcff83ad4c342b659fee",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "7e9a4fe128c4ff1a87f674becea11349",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "312f944dec0ee98034a367f32ba1b7f0",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "cdd564a474d210272c886ea6c7a45129",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "d2e854479f0084a58b81426508b2ccee",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "23fcb5295a422864cb0e6fefbe7eb2b0",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "1bdc78dcdcdce09c57350e7a66cb1184",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "28fb0c78fda570ba80959f15d71e0c00",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "2fcb02b6b9d950ca8f849294a3228ba7",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "49e690adae1feb3292ab8d4ba1d81881",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "32c59a243db9e6b1281cfb996d04410f",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "c5d4421a0c084eab9c1bb886586d76df",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "bd1c3a2e88828a44d11278593f7c8c50",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "a62a85ae067c6d1c179482cd98c08b04",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "d2cdb7af8da98c7c497c2ebdc0d25f21",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "894d6e74e6110b6e1720f65dc5349bd5",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "edac317bbef4017bb34545517ebb920d",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors"
+      ]
+    },
+    {
+      "id": "b454082dec8e75a5157aebab2755e946",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "05f5f1bd8505c4f2775fcb20dbe604c6",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "bc1c75f4c793a30181349ef51b655892",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "8c50323624ed3177da636aae607bf67e",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "b3cb8612a40aafcde40abad4a102d914",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "aa0e70e5f570155b95f7f77affa82a48",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "1f6cc2bc44e88d0db5d429837def81d6",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "a2c208ad678028d30f320885ca6a29f7",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "8cae7363e93c6e2c442768373437dd88",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors"
+      ]
+    },
+    {
+      "id": "1f32b92aed2bc1640cc83a86370de0cd",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "809260d5b04681ec68e1df2c2be638f8",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "2fa0b31ee2662bb7bc0109efda47ad1e",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "0c07ff778709cb121d29436f18962e93",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "7146a2f9a1dbf44c7137f88cf2cd164b",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "24cbc2da31471ef0b71fe77c77af7b89",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "3ffd2737e1477796441c179086ad861e",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors"
+      ]
+    },
+    {
+      "id": "233166b6ceeceb5e65be89de686df678",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "3a84ede1d3ae58b84c2a73a5a64a0f71",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "6449be1703ddf2293e5378a5ee132576",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "0fadb6886926639bd7b938331a600ae4",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "74d6314fa07bcad068068350ed8e50a0",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "b1b1cb30976c6071913729e0895d1d10",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "6a2b115206912219cc16cbc9f412b820",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "800749f95dc4e40b0c4fec2588892b56",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review"
+      ]
+    },
+    {
+      "id": "c74696d4e22c5e10c29354310a8d685e",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "b6d9fc6495870cb1027db8057eecf030",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "4ecfc92b5aeeb6d4f6f6c7b85c27f514",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "9a732ce98ecc111630cb9ae2e6e15155",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "dce2aeaf246ee720911133299010d415",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "e860d2a73693e5ae1836b789ac28f9e8",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "f14eecc0dac17b0fafa561e322fa10b9",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors"
+      ]
+    },
+    {
+      "id": "2eaade544d652711429df6109071d5ac",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "3e6ece5937eeb47f9addf938eb1065be",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "9b763307971ce1ae173158d91cca5534",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors"
+      ]
+    },
+    {
+      "id": "1eea92858db79d93f701ee74def89922",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "72771feaf6de1403cb044d22e6bfa259",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "split": "dev",
+      "eligible": true,
+      "reasons": []
+    },
+    {
+      "id": "74cde63fef457513c86be0bc9057ba37",
+      "source": "bleriot-a:DGA_checklist-PC7_sp104 ",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "c7148dc531bb84fecb0d5e75497c9889",
+      "source": "bleriot-c:CVR_DGA_checklist-PC7_sp104 ",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "d6ebeeee96f6acd1b944e64f3d829a29",
+      "source": "bleriot-a:DGA_checklist-PC7_sp104 ",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "93908a6864baf370b7523dd61ed99ecb",
+      "source": "bleriot-c:CVR_DGA_checklist-PC7_sp104 ",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "c198acc074cffafb15beaf95c5f57c67",
+      "source": "bleriot-a:DGA_checklist-PC7_sp104 ",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "83855c7e504a0434ae74cb3ca033bd8a",
+      "source": "bleriot-c:CVR_DGA_checklist-PC7_sp104 ",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "d536455d3fb826d944a6bea56dcb9708",
+      "source": "bleriot-a:DGA_checklist-PC7_sp104 ",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "92e743e50dedcbf2be9908ed46d91cf4",
+      "source": "bleriot-c:CVR_DGA_checklist-PC7_sp104 ",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "bf47811b9a969db1e8a1209c576c8773",
+      "source": "bleriot-a:DGA_checklist-PC7_sp104 ",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "61386c908d3c14def6e14d02a60abd20",
+      "source": "bleriot-c:CVR_DGA_checklist-PC7_sp104 ",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "6ba1c869928e75085c95eba0f7bf78b2",
+      "source": "bleriot-a:DGA_checklist-PC7_sp104 ",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "099e06540612e37a80d45484b663028e",
+      "source": "bleriot-c:CVR_DGA_checklist-PC7_sp104 ",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "45e77a82c048105b8018617c4766d9ce",
+      "source": "bleriot-a:DGA_checklist-PC7_sp104 ",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "0957a5ab0e1deaff1cc3c264ad378b20",
+      "source": "bleriot-c:CVR_DGA_checklist-PC7_sp104 ",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "72880b7b0cf465365a784467ca95d71e",
+      "source": "bleriot-a:DGA_checklist-PC7_sp104 ",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "0595591647e2dcaf31b5e075a6ab0c35",
+      "source": "bleriot-c:CVR_DGA_checklist-PC7_sp104 ",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "ce731fb95aaf301ac84dd8ec47a65f5c",
+      "source": "bleriot-a:DGA_checklist-PC7_sp104 ",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "0565aedbb700832cefb6de2f03820edf",
+      "source": "bleriot-c:CVR_DGA_checklist-PC7_sp104 ",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "insufficient_script_anchors",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "03325e6adaf1053dad7e0e6b9df10fe8",
+      "source": "bleriot-a:DGA_checklist-PC7_sp104 ",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "a979473a2945acad1f81e4f6193bb2de",
+      "source": "bleriot-c:CVR_DGA_checklist-PC7_sp104 ",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "f0d2bd5de540f91fc604e0fab86202d2",
+      "source": "bleriot-a:DGA_checklist-PC7_sp104 ",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "802b6bc3070b80034946dc9c99ba3734",
+      "source": "bleriot-c:CVR_DGA_checklist-PC7_sp104 ",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "47477eb381163f757c7e634891146e0c",
+      "source": "bleriot-a:DGA_checklist-PC7_sp104 ",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    },
+    {
+      "id": "964a4aef129edb6cb6ba5f1fd4b6b873",
+      "source": "bleriot-c:CVR_DGA_checklist-PC7_sp104 ",
+      "split": "dev",
+      "eligible": false,
+      "reasons": [
+        "low_forced_alignment_score",
+        "numeric_disagreement_requires_review",
+        "non_English_or_uncertain_detected_language"
+      ]
+    }
+  ],
+  "human_verified": 0,
+  "quality_evidence": false,
+  "test_accessed": false,
+  "limitations": [
+    "Automatic alignment is not independent evaluation gold",
+    "Numeric disagreement remains rejected",
+    "Original train/dev assignment unchanged; repeated scripts are not script-disjoint",
+    "Final tails under 20 seconds are held, not padded or given invented words"
+  ]
+}

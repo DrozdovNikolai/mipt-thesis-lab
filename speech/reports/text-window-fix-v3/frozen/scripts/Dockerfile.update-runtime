@@ -1,0 +1,16 @@
+# Reuse already installed optional packages, but reconcile all dependencies with uv.lock.
+# Unlike Dockerfile.refresh this supports an explicit dependency amendment.
+ARG BASE_IMAGE=north55-speech:0.1.0
+FROM ${BASE_IMAGE}
+USER root
+ARG RUNTIME_EXTRA=gpu
+COPY pyproject.toml uv.lock /app/
+COPY src /app/src
+COPY configs /app/configs
+COPY tests /app/tests
+COPY migrations /app/migrations
+COPY scripts /app/scripts
+COPY alembic.ini ACCEPTANCE.yaml SPEC.md SOURCES.md /app/
+RUN --mount=type=cache,target=/root/.cache/uv uv sync --frozen --extra "${RUNTIME_EXTRA}" \
+    && chown -R app:app /app
+USER 10001:10001

@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "audio_token_pairs": 675,
+  "waveforms_exactly_equal": true,
+  "maximum_mel_difference": 5.1856040954589844e-05,
+  "teacher_forcing_cases": 32,
+  "teacher_forcing_forward_passes": 128,
+  "human_audio_verification": false,
+  "quality_evidence": false,
+  "new_training_steps": 0,
+  "plan_sha256": "9bece47a4984b5a4446c7dc02345a02007c107ed1dfcf718b93a3033f16b856b"
+}

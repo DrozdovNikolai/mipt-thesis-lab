@@ -1,0 +1,14 @@
+{
+  "SPEC.md": "9191d785add8109b4a3edd75171fab81987aac5df34036cb34daecbbe4de644f",
+  "SOURCES.md": "74e70ac86c48d423f9a3da3d3d6bd8a13ee32cab6e537502ba0f12c3a939f114",
+  "ACCEPTANCE.yaml": "32d35b1e80b64f38e6adcc9895515b37f224a9e51dcf5ff95389e1f9ecc45071",
+  "configs/baseline.yaml": "419accafb0874a51c11bd4865117a4daf761345a48242e36269c71e88a73e1d1",
+  "data/curated/retraining-v1/augmented/train.jsonl": "8fe6112701bd1921aaa0c44f97b64105b31550358a3ff986592c885131008933",
+  "data/curated/retraining-v1/dev.jsonl": "76fbf9ba6c29f31aeeff27d0cf0013638a76ab95e3d6a21b2d62f88a4e5384f6",
+  "data/curated/training-support-v1/train.jsonl": "1f5726dee1572a3970b84afbd9914a9f5135ca8325005e6a756ef8b6284259ad",
+  "data/curated/reviewed-pilot-v2/dev.jsonl": "f0e0dcabfba85f8d291d6b4052117b3e389ae8f149530782d0b7feaa6d63a7e7",
+  "reports/retraining-v1/evaluation/comparison.json": "f72aeb20a3cc4164e02db79835b0e02691512cd82e8f6c609b98a6c7284884cc",
+  "reports/retraining-v1/verification.json": "42ef497bd56bc1d43788d69f1c7a47ff6406c82efc807c174dce1b62f39f6579",
+  "reports/text-window-fix-v4/comparison.json": "365ffe7835e78e7b88f577b0ad9a63d0631891ef0a8fcfa44b74c4ffa8b272b0",
+  "reports/text-window-fix-v4/verification.json": "9ab0702955dd4cba1c6956b7d0a0b7d5373c80a494f79244af79b2586d75c60e"
+}

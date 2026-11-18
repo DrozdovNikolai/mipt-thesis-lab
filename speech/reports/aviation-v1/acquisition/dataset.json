@@ -1,0 +1,32 @@
+{
+  "repo": "Jzuluaga/atcosim_corpus",
+  "repo_type": "dataset",
+  "revision": "7d09ef7987036af7b3c83a9375e4ee030891c616",
+  "files": {
+    "README.md": {
+      "size": 6026,
+      "blob_id": "ba0df9660204d4b9dd4b4e1ec2403fea306d58d2",
+      "lfs": null
+    },
+    "data/test-00000-of-00001-01544bdf54b4ccf3.parquet": {
+      "size": 470060009,
+      "blob_id": "53d4364c0d3a8b09b6e17bb269a09802b2025e5e",
+      "lfs": "52ad36731ede5f6cc528e95aa69e32c0f7be101646615590e86e7d84539c4653"
+    }
+  },
+  "verified_files": {
+    "README.md": "d0d687a6475b5cfa3ec29e1952853fadc8218ae5a7403103c52298b7089e0640",
+    "data/test-00000-of-00001-01544bdf54b4ccf3.parquet": "52ad36731ede5f6cc528e95aa69e32c0f7be101646615590e86e7d84539c4653"
+  },
+  "acquired_at": "2026-09-14T19:36:59.411448+00:00",
+  "original_metadata": {
+    "license.txt": {
+      "url": "https://www2.spsc.tugraz.at/databases/ATCOSIM/DOC/license.txt",
+      "sha256": "6040aa7fae0eb8db247c535e0476cc1d0c0a4f9cd8a49e8cd2a1ced209167015"
+    },
+    "fulldata.csv": {
+      "url": "https://www2.spsc.tugraz.at/databases/ATCOSIM/TXTdata/fulldata.csv",
+      "sha256": "e4dffacf8ddab03c6c0dfa7f80bc6d3e711b75ba6d473ae89437d0ab5d0418b9"
+    }
+  }
+}

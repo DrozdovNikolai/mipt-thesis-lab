@@ -1,0 +1,875 @@
+{
+  "records": {
+    "1272-128104-0007": {
+      "source_audio_sha256": "84998a43cb534e09801f5522b9ed0aa58e88035c9727bc8e4d362a7bc158d0b6",
+      "reconstructed_declared_pcm_sha256": "d7ec1ef44a0e0144c2916f649cf5ff6f505ccfb6273d581a49afe6a85c14c8eb",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "6319-64726-0010": {
+      "source_audio_sha256": "9608de6284baf405f5d1ac08922143658f8777261190d60c987c531570488ef6",
+      "reconstructed_declared_pcm_sha256": "5f0ccb74ca2e8c194ba5e3ad9b09560ae563a378f3c2df89b27b669e0acbfb6d",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "5536-43359-0013": {
+      "source_audio_sha256": "cb01de76f996d885c414a12bf41f7be3d03ae3912ea7c5a001951eccca417e3a",
+      "reconstructed_declared_pcm_sha256": "ed53e79a4ac660558b5757c8a430db2f088ce86efb0f405241c7d87f7095aedb",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "3081-166546-0061": {
+      "source_audio_sha256": "23209a9742c5d1b8fc567964ad7f57b404166ea3a0cba7ee17fbe6ef4e5f377d",
+      "reconstructed_declared_pcm_sha256": "d603c4a4408845cd2abe8719f35ac0152a070903efb74d95d3cc1b550283e121",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "3000-15664-0008": {
+      "source_audio_sha256": "7165b5846b376e95d7bd686b287676b85b6c32e9f6263b27677b6ea9f2194455",
+      "reconstructed_declared_pcm_sha256": "8aef2565633b09281b3273b4f7b591fc5bdfca25cd934839cadbd3cfd3d3978a",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "84-121550-0013": {
+      "source_audio_sha256": "ff8810a7734945876fe44ccf8e7b80bb44ca2a13e5a20e92019f3321a7d819ee",
+      "reconstructed_declared_pcm_sha256": "c479fc7f906f956049d12e76c5fedcbd5a55fa0bb816f73bf7d66c57d2b8adfb",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "3536-8226-0027": {
+      "source_audio_sha256": "060fefc08e80e21b91930d8238996f11ec5dacf3b1fc00bdf4e73653b712347d",
+      "reconstructed_declared_pcm_sha256": "8d089df230c9be05b7b22bf53a3ff50e1fedbcb07006dd059d692fb0ba941603",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "5338-284437-0014": {
+      "source_audio_sha256": "0622ec8ba40a435919f69a93681d7f8ea36129f559da26e7b6ebc343fdf9ce55",
+      "reconstructed_declared_pcm_sha256": "152e064f305ef9105605883366c35bff863677e3bf3fc7333e1d65b0735d6a6d",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "3853-163249-0053": {
+      "source_audio_sha256": "2bae1d47f47ae77bbaf098d85be14ec453c7d8e5640653137bbec01fa2c18ebf",
+      "reconstructed_declared_pcm_sha256": "d751296b2676dff94475f44cf9117bc2507b9890daaadcbc50032f04345809be",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "7976-105575-0022": {
+      "source_audio_sha256": "661e856d6b1e616672856525cade1cb7454386558968315d4939bf310539e518",
+      "reconstructed_declared_pcm_sha256": "4306764f5123b8c47293fea63cf3d94894dfdafe0a1fdfca0dc34c0ecfe282c6",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "2086-149220-0002": {
+      "source_audio_sha256": "91337e2ee718351ee47371accd2e360200443d88322ae5a1e9e5117e40d7f565",
+      "reconstructed_declared_pcm_sha256": "c551a6ccd23bd777d7808bd1a86bb0bc46da68d96d592cc59708a108a01c22f3",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "1988-147956-0027": {
+      "source_audio_sha256": "4f5a62cfc4df6b8baead1a31ef811810b6aa4e557d5f7989eb39ccbf5282d1a9",
+      "reconstructed_declared_pcm_sha256": "06596682d78fa238dbba0c66f236b4c0ff40078c3a058147c68b96ccf5d9e362",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "1673-143396-0001": {
+      "source_audio_sha256": "091b5ee61b4d2b5e8eca03750395195525e751813d8582e9d74534c8dbbb5db9",
+      "reconstructed_declared_pcm_sha256": "9836c344fa6cd6c4cc374a7ffb093a1e4ae6711ce6b3342bfd31a6582f88ddba",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "2412-153954-0007": {
+      "source_audio_sha256": "b515633c7cd7cbc79afa0e02a72ebe2a522dcc86655a8e87bff3d2b2f9bcaeae",
+      "reconstructed_declared_pcm_sha256": "75f88900b50b8d7aefdd0523611574518ba94c79413d87c4e809e918e3e5eee2",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "6313-76958-0026": {
+      "source_audio_sha256": "082a02de708737faa4760d43a1ac29924b098e924ab8c5d0973987a91fbb1735",
+      "reconstructed_declared_pcm_sha256": "f9e637a3acfe5a23ba72a5dcda25a7bcad5ef13c131eff0c791ded3db8091638",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "652-130737-0002": {
+      "source_audio_sha256": "8bcdbac735f60c08782395b9b08607440fc0bbc482ec1af5db443e6438da24c7",
+      "reconstructed_declared_pcm_sha256": "5d272377a02046e5fccb316ef0f35636178dad737df85f7f435d4cb350a66adf",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "8842-302196-0006": {
+      "source_audio_sha256": "023166f1a419d9a0fe60c1a15bf9360830eef06cc37c9a60c65495783392eebe",
+      "reconstructed_declared_pcm_sha256": "e87dc52664a32558f9f890f7732c3cac24a538e0e3e1d256f414b0763e9cfc50",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "1919-142785-0022": {
+      "source_audio_sha256": "e8f1c17ac9dd8957e0181cd2fbc2d44442655587f2ff95d8839124f9992826e8",
+      "reconstructed_declared_pcm_sha256": "4a29be9e9ef81b08c6d3485cd30537e9ef0a51d153ffb8516ea083f5285858b5",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "3752-4944-0012": {
+      "source_audio_sha256": "f98ca34ea53cb95cf5565e4e89a225ca209562aa80d90bc03f60a5fdb502001a",
+      "reconstructed_declared_pcm_sha256": "e11277bd6fb58d701a61ca2ec3bb0fae15e2dd2a9cabd19092a1831bbf437f88",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "1993-147149-0029": {
+      "source_audio_sha256": "3d51cbc853fa47e37819b400c4d7657739d43b538e848596e0d5b79c3d46f7a9",
+      "reconstructed_declared_pcm_sha256": "e9bc2b0220d42d088464ca0d219073967b8e00bece5c9796408af56101432c63",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "3170-137482-0038": {
+      "source_audio_sha256": "a0477614070a0ea3f09f257a3b75bbc0cbe10292b03c9951adafacf85934d53a",
+      "reconstructed_declared_pcm_sha256": "1b40f7557b57a6ee4558c396e186f0eaf2236147764f8914a6ab69e9e8bc4c4c",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "6345-93306-0003": {
+      "source_audio_sha256": "0bc9682a9fc58dacc1b1e5412aa17c3f59e505d76405fafa657e150b19ed7a95",
+      "reconstructed_declared_pcm_sha256": "87a54457047c3d04a00b1c0adab81be2ea4056a269380a9fe153391d137663c6",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "2803-154320-0008": {
+      "source_audio_sha256": "f23ff4b509a2c6888519391df82c885a9a58d9a374f7264d24d266107b6b3b2c",
+      "reconstructed_declared_pcm_sha256": "5f6663719ebe6fdb1a274c939a5a34a4e90b548a951586d451357d152bba32dd",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "2078-142845-0020": {
+      "source_audio_sha256": "9851d1bb0603e037423a2550efa9b7738b257343f20288dd11a7245d4db5a20d",
+      "reconstructed_declared_pcm_sha256": "f5a66835546effea98588080d9d6bb89f755cf92905bc3c3abe5263e917ec56d",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "174-168635-0002": {
+      "source_audio_sha256": "9c6364899ed0575aa99d76a8a1834b7b7405acb3abcb6a4e263ed5803a2e7db2",
+      "reconstructed_declared_pcm_sha256": "890eb78707656267d6a4a503f45d279355e0dd152348501224b28b4a7f1f3cbc",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "251-137823-0026": {
+      "source_audio_sha256": "a2b60ace534478dbaf6a0004a5727bda4eeb4ded76394419dadd524a20560991",
+      "reconstructed_declared_pcm_sha256": "e69a2dcfc2fa6478c2c05900289a462101f7e76e2c4bc891051feea90c60809e",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "6295-64301-0001": {
+      "source_audio_sha256": "3e8623cd0f8e802b0c61aae4946cf63778b2f456110cf6a02288c92d7a6bf41a",
+      "reconstructed_declared_pcm_sha256": "3c5642dffae2f38f81f2286a911b42091e857a21f9d92857b8d01966274dfb26",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "2035-152373-0001": {
+      "source_audio_sha256": "4f94c76e44eafe0ed97eb3002c1b708729de9ca3f6adce3dce4a31ed9650264b",
+      "reconstructed_declared_pcm_sha256": "f5dede45ced428927c619d4e053ff389dfe3e41558e0e57dbb0e2d7495789f7e",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "2902-9008-0012": {
+      "source_audio_sha256": "fa10aba7d3a697200979b00ff31846a99425a442905990b6eb5ea188ecc602d9",
+      "reconstructed_declared_pcm_sha256": "2875e7234622e3f73f9a16dec8e58d7bf8fcd18b30f944f15077a1aa61ae2f2e",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "1462-170145-0012": {
+      "source_audio_sha256": "492098ad45837ac07b8647dc5b501c411ff9bbb48e9ebb44acb93f1138f67ffb",
+      "reconstructed_declared_pcm_sha256": "1177c4631b0780b36db229ca5b7352f47368788823c945c4c86a75c714fd69c9",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "777-126732-0010": {
+      "source_audio_sha256": "1c5682eb4e038ceeb157b2ddb67d3579bdb0d0a54967295b914b71293ecc6d62",
+      "reconstructed_declared_pcm_sha256": "005083a3eb40a845d941176c61fc3eabcd91eeef290b6bfeb84df6ec5e15087d",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "5694-64029-0003": {
+      "source_audio_sha256": "d5717e140a485182e05f3cbb03565350975d828dba603b8f7c6bd871aed83e52",
+      "reconstructed_declared_pcm_sha256": "3bf10e04ce557f86114bbe3ab7a76c27e2358d1047cf0c3ce3b290de1510f0f5",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "5895-34629-0023": {
+      "source_audio_sha256": "a19232ee5266ce74936a4fe5d01009e781599a4b22cbcffcdb42d0951453c122",
+      "reconstructed_declared_pcm_sha256": "955e728cd912102fca9dfba362bbd6918c78329643a8154df727ea79c901e813",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "3576-138058-0020": {
+      "source_audio_sha256": "fbd73a08c8a7c0a5346f3e9ccdc15c4b3260bcc900c5b0fe263a0e96a586b7dd",
+      "reconstructed_declared_pcm_sha256": "4eb48c693d9c7aa254f32b9c184810151572c6316a6c5075762ea8cbb294a8e8",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "6241-61946-0013": {
+      "source_audio_sha256": "5e8416ea29b89f2924b3c4ef635e4eb2c1067b6fdc4476e7eabc06031b244c03",
+      "reconstructed_declared_pcm_sha256": "6c8d2916736c005012781808b6d61a1021534ac3468be061e88ad3010c8e881c",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "2428-83705-0001": {
+      "source_audio_sha256": "a7cfd2d49bd00d7ade17541a2abf885e295ba9155efcf9e800d65afab9a8c5ca",
+      "reconstructed_declared_pcm_sha256": "a38c81a8498d68b05610655c05d54c1e34f7d7e23cec2f5367249ecf948bd76d",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "8297-275155-0011": {
+      "source_audio_sha256": "04d0a8259af1dfa04d9f35f00ee3e34751fe5fcaa3d2dd6610814af3de738135",
+      "reconstructed_declared_pcm_sha256": "1101321a3470e3ed779ec54909cfbad172d52aa33633c4baa095fca64a80fd38",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "7850-73752-0010": {
+      "source_audio_sha256": "7fd51b3497051195de0df98909b1d4d88ae6b20f112f50694bd525a57c6004ae",
+      "reconstructed_declared_pcm_sha256": "ef416a3a08cdf08dd820433aedd6f9b2d5e4bfd92de2c19489657d0bda61b67a",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "422-122949-0019": {
+      "source_audio_sha256": "1963f77dde874ac31ed2e1b918a189b8cd90fb5e42911f30856e3599b38c6bda",
+      "reconstructed_declared_pcm_sha256": "e1ab004f1f4ac945f3169ea5022c0d778fb7e3f3689618c6510ee95a1af9a2ea",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "1272-141231-0006": {
+      "source_audio_sha256": "c3e32102b9faeb6dc3ec5203440d4e2a365cc0ea44fa6aeaefe5e3668a9a8585",
+      "reconstructed_declared_pcm_sha256": "e6a3fc832bff134ab71f69f56e53c6bebe2d16b73a4385dcb7e611ca2d6106e3",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "6319-57405-0005": {
+      "source_audio_sha256": "877eed9666b4fae87fd4c4147c35f426d4b41e5731e7b3dd4cce731233b7134f",
+      "reconstructed_declared_pcm_sha256": "026678dc07ae9de614b0fcc8e4ad95ece248bdf32864a4e32a10668627603245",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "5536-43358-0007": {
+      "source_audio_sha256": "b8a3160cbb9ffba51e10397baea6e24032f3a7fe080a88fa281d45959c958094",
+      "reconstructed_declared_pcm_sha256": "99d55dc48fffe11fb13d3265ead76289ff717c30da1b15c2dbdf8edd48057cfd",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "3081-166546-0067": {
+      "source_audio_sha256": "64f993788d2b652803a23cef2645de1c35ce1f6b92c00102b41f026b15cb5176",
+      "reconstructed_declared_pcm_sha256": "92756e63197a1e1ecb51e752ea1950c430e2a15fef5b43d96359dbf84b302981",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "3000-15664-0012": {
+      "source_audio_sha256": "b74ba7efe8e5cf0f0ffc69c9697933d691c29742b8408bef04beb3f3f8553efc",
+      "reconstructed_declared_pcm_sha256": "412402f691efc260687912cd7af9db97594cd0d83968cae5996dee456140bff8",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "84-121123-0020": {
+      "source_audio_sha256": "9a05f1936ff7399e3b2e43166f5e12fee51635c26f7595afe05188fd200dc3d9",
+      "reconstructed_declared_pcm_sha256": "ba758514c4de79e7b94a98fe2a60206d2df50ec9713a929cefd1013931495fb8",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "3536-8226-0001": {
+      "source_audio_sha256": "8aff414ea7c8f908d88e99409597fcac7abe036e46663f6ad5e8b989f38bb087",
+      "reconstructed_declared_pcm_sha256": "f426ea4cd89a265617ef1b694bfedb11c06d33a9f9cbe3ded70812f7f3fdd08c",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "5338-24615-0011": {
+      "source_audio_sha256": "2bdf4c0a317754460915d071c349c85fb3a0a529b8814f856c2c95f987ffe650",
+      "reconstructed_declared_pcm_sha256": "b644116190f4fccfbe2d15c23ebece6fb8e66858e668a14fd396d5548bd215d3",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "3853-163249-0019": {
+      "source_audio_sha256": "c1db54beabb7522c20723596921d85c5500b9e2642af4dedca5e5a0d353c8626",
+      "reconstructed_declared_pcm_sha256": "c6b7060f6c6c63b17e8193e8d75ee7fdfe4bf483a57011e084f65186f4ebe7b0",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "7976-110523-0017": {
+      "source_audio_sha256": "6f4d807a74740e3ca847ff3dd90923f8e95721ba777c4f53064c64d4da335ed0",
+      "reconstructed_declared_pcm_sha256": "94d1ca056c099f6923defa0a57b82df671e87514dd1692163bd4af357fb72860",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "2086-149220-0043": {
+      "source_audio_sha256": "b01fdf7b8efd053d3ef518df03c64f5126b6523cae241e8293a79a0d1a6f63d2",
+      "reconstructed_declared_pcm_sha256": "321d32887bd87628a4a917830ae764c14a5f635820d2fb9025d1198d6b5acf31",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "reviewed-dc84f2b77565d804f16ea31f42380abb": {
+      "source_audio_sha256": "b43f839d2a2e31ad85b9b26ea7c80d72b54a6baf1e2f1ca52a05204c51cfb3a8",
+      "reconstructed_declared_pcm_sha256": "6616a90a3e82f6257934b1a12acedb4c478a74e39661399052e4b8a1e22cb4a6",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "reviewed-767df23c7c14166f8579da284d5a4219": {
+      "source_audio_sha256": "0542bf9f778e9f474fa85412e2e45510c8cd0fa9eade7e09edbeeda23ec3b553",
+      "reconstructed_declared_pcm_sha256": "0e480f9abfcbf2d5147c4d619cc82d9c0f5170682c3928edd73f801882731b5d",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "reviewed-c55f9c7708704c548f503aa642c2288d": {
+      "source_audio_sha256": "49d542966770cb4895f838b46e23d124c8ff1c622b5a512e7f320f8f13f165ff",
+      "reconstructed_declared_pcm_sha256": "2840ede91b9989082db7aa7a6a2d7a9298989a1bc83d44aba269662aaab71d16",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "reviewed-291ebb141aa4e7a7ba94ccf8d18002fb": {
+      "source_audio_sha256": "8a7a9552c6e2dd231c47a401fa86ca8c24ac3f3c6f1044958791082a67c4d041",
+      "reconstructed_declared_pcm_sha256": "76ab2713c720cb108c619819fa1e8d6ff94063d0caddbe7b40823e10464b9630",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "reviewed-b8d2fc3fc1893f19ae7fb8d7c2722a4d": {
+      "source_audio_sha256": "d625c3386567aceb1901b7ec91bbbd6bf99a1b45650d1bb2cfcbba48277a1d09",
+      "reconstructed_declared_pcm_sha256": "164edd5e6e55d4af4de6844329b00c7d9738c55725f0edb7cbf6133f1f44154b",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1651": {
+      "source_audio_sha256": "18ddf3cabf0735c56c8e5e9beeea1658960d5ab63b2d12f63cd472bcd3a4b2b0",
+      "reconstructed_declared_pcm_sha256": "062fd2c7e37f1c7ac90c2d0d8a8e33e869bf686f019acc8e095582c4da10ba12",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1635": {
+      "source_audio_sha256": "e918b9fb32fd54918b811ce5cb8e841b425801a9fd8c095a1b058989c0257d58",
+      "reconstructed_declared_pcm_sha256": "838d24a4fca887bca53f1aea4332bf6b70788b9f07aadaa2445ac7f7a5f7d72b",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1659": {
+      "source_audio_sha256": "8d19ecff67e7dba80378fc61bd32484bcaa202e49b32df6601701d1cf28be012",
+      "reconstructed_declared_pcm_sha256": "273fd6bc7325fbb1896fb63bd9218550e6fe56b80f69da84533aab49d8a89941",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1526": {
+      "source_audio_sha256": "489d3104b7775641c167b6c5ae530f53f13d6b8af03e485d0f281a32d0fb4643",
+      "reconstructed_declared_pcm_sha256": "7e1cca85cb4358c1e388e5e5d03af0aca6de5bcdcc6d1ade23f87a70832a193b",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1521": {
+      "source_audio_sha256": "65dec2f647e6961f11e70ab71b8b67cb3a0f3dca0f728460f9e1ba5a2acdbee7",
+      "reconstructed_declared_pcm_sha256": "35eb3a23d1b8c223e2468c885b80eedb3bd41ff47d47be8dea9b2cd171440357",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1546": {
+      "source_audio_sha256": "052ac767bd9005ec1ae670d532395c4abbe94a5bf0901724d6c2da7e46acf904",
+      "reconstructed_declared_pcm_sha256": "5c7d031a7c1fcc27048ddfd315959bb1dfb5a74f3d416ad2759bb0c06a75b8fa",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1586": {
+      "source_audio_sha256": "5e7604bd0b1eed03957b33c67cb0beb235d3110557a150639a2e430327bd61d5",
+      "reconstructed_declared_pcm_sha256": "4b46535d1380297550990646344503cef722a682d17565d6919ced395362b9cd",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1621": {
+      "source_audio_sha256": "d43281ba5138716608ee95d04ec8408c92f84ba5ce3ed680876a72a8e6f5b2e0",
+      "reconstructed_declared_pcm_sha256": "09e460b44069ff62a54886ad12c3311d8ca146c8ca1f14d93ee60cea7bcf6710",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1594": {
+      "source_audio_sha256": "e723852ba1b54dfe431f25677296f61911e93ecf619c05bb45fef600984993e6",
+      "reconstructed_declared_pcm_sha256": "1d41a50c62d4678f08312e5d6a08e09cfbd97874ee06f009f1b5315077b565bb",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1536": {
+      "source_audio_sha256": "f3b239e54a182ba9d738beea26a8626582249ade4cb8d141bd4039bb492addc7",
+      "reconstructed_declared_pcm_sha256": "0398180ba07e50592f066a003e1aa33eedfc956f8768c7e256417e9d4f65902b",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1655": {
+      "source_audio_sha256": "7bc372fb70c70502e5f613372068ace19308b450e0fc0805de5ba2f5e98ff059",
+      "reconstructed_declared_pcm_sha256": "9d3581ad7818930b78efb213a035169e8df7fefec35fe3eee49ccf56b68247dc",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1549": {
+      "source_audio_sha256": "d3970182e45c611f9183cacfd1e5ac35b8db4b5f02cfa8260d5c4370fb10ae99",
+      "reconstructed_declared_pcm_sha256": "1e3a2089c7797915bd82db447eb45c6ec4b9651c0fa953ee47109799bbef0b3e",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1636": {
+      "source_audio_sha256": "d6d1ea6a33cc305461ddf6d7099a889d8312d221f738a3aea7d2af9c593991b5",
+      "reconstructed_declared_pcm_sha256": "2f74f53f74819fb372fae00bf029f15007180c5cadaaa44fa6adc94e028ac464",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1561": {
+      "source_audio_sha256": "53f0710ed245fc11b7e08f0eff027063e0039a9aa55286cbbf049e0f0f27ec93",
+      "reconstructed_declared_pcm_sha256": "555da3a6f591404c64ba6b27b517d9ea2410b5d3be768c79b85962162d16f32f",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1628": {
+      "source_audio_sha256": "c17c4672ffd79f9665ad542af9121d412072f4fd090eba77677fa485ee1f5403",
+      "reconstructed_declared_pcm_sha256": "5a606cfc8a4f785dd4b6f05518aa30331425afc1e171c58f88f86c550fbe2be6",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1525": {
+      "source_audio_sha256": "a6aa2658c06d1262880b8303e6dcf7abcc765f97694e47f8f9c5d2a543d3401c",
+      "reconstructed_declared_pcm_sha256": "90142db9295ccdd27cfe6e3b39317a7df15a2214f679aa3f46c7b43b7633e99a",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1599": {
+      "source_audio_sha256": "171bcaf46f724a0161a77da6b0d86821741cebe782729b8811114fae2ef032b1",
+      "reconstructed_declared_pcm_sha256": "42fd5d3f909c95fcbd2c8079b1e60e25a948c40bcf800faf8879f1880000f9c9",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1578": {
+      "source_audio_sha256": "fb2ae5ac455aa7854b30908f2e4c4826f15377077dbc03b04bab38ffb844b0f6",
+      "reconstructed_declared_pcm_sha256": "f6bc97373fbaa24e1aab67ee7f102c1c02f2add2a9b6e6167e192adeaf4d27fa",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1596": {
+      "source_audio_sha256": "f55b2a70fa341cdabb9956383b5afd569a7580b70c217007de5228c5e1fba10b",
+      "reconstructed_declared_pcm_sha256": "ffdc46c977af97bb09a8ce60ae68396f681b2b00fca85be4aef1ce572ca2c2f3",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1627": {
+      "source_audio_sha256": "d53732b2f0c4762ca0d907dbec46a0ef51fb85e45ea9abc49163f7efb2517b22",
+      "reconstructed_declared_pcm_sha256": "8069580e3b5df1d8c770cd3474b1f896cdf9d7fe5ce6b67a03c0a2c3bf6ea5af",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1539": {
+      "source_audio_sha256": "3f30af880273fc57b2d75d25c45e8f045f3faad05bf9f6ba7191e3f04136eb2f",
+      "reconstructed_declared_pcm_sha256": "d2bebcfe895716690160c2f45ba54d5fed61afec697a5f54a1f256b40c6506d0",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1626": {
+      "source_audio_sha256": "2266f937320e8efd0da38810fd18f5313ad8c7b795383587183e08d1299d99c5",
+      "reconstructed_declared_pcm_sha256": "b85ed92252dcfcd17fe0c707d33eca5daf69e666bc5b68baad700c49d34833e6",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1531": {
+      "source_audio_sha256": "448e2427c550f2c8cde69e31f139d7b94252db09e2b65ebf06005956c2ed8f06",
+      "reconstructed_declared_pcm_sha256": "733b75ddb9a72e3810b8b4d59eb6d186157dd31f642edbe525950c3586dec020",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1625": {
+      "source_audio_sha256": "1ebcedcfc284cc88caa3930ec770066234ed6791db13b8c4bf3f96893de10be1",
+      "reconstructed_declared_pcm_sha256": "289ff3b54ea6ee7fe2a3b70ac75631afcb42f4536e200058c615292a41efcaaa",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1611": {
+      "source_audio_sha256": "a0bb15f900eec4d3b5c141717d7fea64af9e932d44a016ba0f3ab1196005ec74",
+      "reconstructed_declared_pcm_sha256": "0cc9700d1521771668390c00c5c8f6132c5e133765bc5c7f9091d469087253fa",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1609": {
+      "source_audio_sha256": "089abcf675573217fa7573c73fb14cb2f26679b944278681293fce274aa9afd6",
+      "reconstructed_declared_pcm_sha256": "9e1456da05f31a087ab8f55df4ea961ff7ff9a78657768f191499743528052a4",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1569": {
+      "source_audio_sha256": "965dcbe5fcc62d659c93e82c52c6689c47d621f005c55ddfca1f323f3feabcd8",
+      "reconstructed_declared_pcm_sha256": "27c9450263e60f14bcf8e0c069300fa1a4d16941396b92e883a49abb7fe2569f",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1582": {
+      "source_audio_sha256": "a895af3a9f298dd92e21ed4468cdc3d3df16db6a6c304c4799f6d089cc5842ea",
+      "reconstructed_declared_pcm_sha256": "99c222ea38e42c2d2a93c84ef297e8315ee049aa6f255dfee31b3daec89583a7",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1514": {
+      "source_audio_sha256": "03f584fa67316b489d79365dae4de0f03e4fe3132494d5a425e4097e321a2084",
+      "reconstructed_declared_pcm_sha256": "5eee9455ae9bf74eb0a7dbd5d67455291f8c4d06283ddfc05b59e9a98f4e9f29",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1617": {
+      "source_audio_sha256": "07a52259fa225158acd020f80a459d0a327594cbd4e445b9462873aa385464a9",
+      "reconstructed_declared_pcm_sha256": "fff37c29e1399d3ac0100cc25fb3f19ce46062362d55ffef85f4b85898f63481",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1657": {
+      "source_audio_sha256": "90f09bfd27a871f151d599a716fc7927d9f38eaa9b1d3f8d907296f1278c4915",
+      "reconstructed_declared_pcm_sha256": "9697d6ad5d58126f01f8ee6b16d417c014f694d14738adf566cca6b1addf556c",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1524": {
+      "source_audio_sha256": "766219b21bfb9716af8a7c480ed01d33bf36ab9bffaf887c6e3cceb2381035e3",
+      "reconstructed_declared_pcm_sha256": "4e1dc184e0a2aaea63eae2ca9bdfe1e26a46a8f58d183aa8ce63f1559051915f",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1518": {
+      "source_audio_sha256": "2fd1ecbf816a0d17b9232e42d727623edd255fd213d72b73beda7417f1be7eb6",
+      "reconstructed_declared_pcm_sha256": "cf47df54b3b479e5b06debcca4a8464de3b853638ba78e66a829809268b634a4",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1643": {
+      "source_audio_sha256": "ef498d53bf82163e8c771e11f102b3a6a59fefdd66cf227f661e1680fe90e5ab",
+      "reconstructed_declared_pcm_sha256": "953fcbbb8e17cd8eabcce084d671d09fbef945a642e299d738d5ff3f03fdf54b",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1605": {
+      "source_audio_sha256": "992a0a3359007870c9627b1147ee69a816adb410bb81f90532bf44e9e9ce4fde",
+      "reconstructed_declared_pcm_sha256": "0a76a4b843fdcef81e91b8d422d590543f440e6506750bd33d7f749b6ed586f5",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1537": {
+      "source_audio_sha256": "ca9b4190a41cf9a106c599cc842f8050f8a6492bcac4e533f522f55a625c5020",
+      "reconstructed_declared_pcm_sha256": "c05a0317a51a76fd772b92cea09cb517e63202420438f2145941e99485d9c7bd",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1558": {
+      "source_audio_sha256": "25af0a2b332ccd27f888b15238e9f48d3bda85c34de4cb018494a595ebdda6d8",
+      "reconstructed_declared_pcm_sha256": "b5a05c94079cc9fc198b1a335e0b78db27fccc4f8bcc3b8c76b4c178e5634e46",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1632": {
+      "source_audio_sha256": "84d01e6ed580ef00758be189575c67c88c2d81c4b7be55623579ee17ec206e77",
+      "reconstructed_declared_pcm_sha256": "62a3320cc62a2745614b8f3c1c814175b28f7a97a57af80243b278a250955458",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1633": {
+      "source_audio_sha256": "aea8838d20f8083b5576e592a86bb14e868f6fc2eff27f07911c4aa3fdac9c0a",
+      "reconstructed_declared_pcm_sha256": "e9980d9f4bd63f7e4f93021957f92f4150336eadf56a344fe551863f186c93e6",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1641": {
+      "source_audio_sha256": "e75d1e1c01b1b163ee6fffd7806b3a498facca982ed96370ea4a600db4bf249d",
+      "reconstructed_declared_pcm_sha256": "5770eb3f057bfa8103bc9f459e7f0f9fdf1c9155761cfd223cf714f56639eaeb",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1587": {
+      "source_audio_sha256": "73c36484e33d2995e35d2dd0172ea5d1cb73c6239869a477452b32a6dd0bd880",
+      "reconstructed_declared_pcm_sha256": "9a2a1fb4df5cef71770424113e3dbd8ec6e6784c21cd57bddc243c441506c407",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1529": {
+      "source_audio_sha256": "a0659f1558a9f755568733d949326bdec3d4d73b68a787fdbf222b2f12ff507e",
+      "reconstructed_declared_pcm_sha256": "c66fa8149c989b3bf8367dce3f9489cd1d1e67235e0273c6e277640efe8456f6",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1585": {
+      "source_audio_sha256": "5430c4669e607dbf171a9c18e143a220d6f24b4d8c98187646fec166f898d4e3",
+      "reconstructed_declared_pcm_sha256": "ff86e0b5dfc315a6b3fef064ad1a78a4441fc5dd4fb4853268b8940e5e9786c6",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1516": {
+      "source_audio_sha256": "a467219bc074a13a9faa11b8e2ee164342b2b86b178f13bf2c4533b3746d588e",
+      "reconstructed_declared_pcm_sha256": "570aebba6378bd1e22c6cb979603529a31111a35a3bb5f4f718059483c7f39be",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1615": {
+      "source_audio_sha256": "0084cc42e2981778008d75087051b0e47ee07bf553f5508e8d1365b3c83ae1db",
+      "reconstructed_declared_pcm_sha256": "dec704d6cd560550a669eb0ccda014f0fec0488b0e5df5d9c015addfcd9b9528",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1533": {
+      "source_audio_sha256": "f291c05cbc25b335eb76dc9b0f8fb19247a14f42dd239e416e83911fae9f4085",
+      "reconstructed_declared_pcm_sha256": "f20379f0b31a0204d29ada0e8d3138023b2ea959aa2e8fda8b067457da5e624a",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1577": {
+      "source_audio_sha256": "118b3891f58734620196a4fa8295112ab2ed904fa0e8341cbde315fe79c97f4d",
+      "reconstructed_declared_pcm_sha256": "72b08da977a7cf26c0f62f4a3f4f40e6441d7639d151b4ddfe44c1ae45d341eb",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1623": {
+      "source_audio_sha256": "0e3129c08956966c19f649ece90e8686fe873ed285c300abfcbf3ca6369afa93",
+      "reconstructed_declared_pcm_sha256": "31f8845f76d643efb2c3465c38932e9584d0bf1b2304710ec458a80f40e6e6d0",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1642": {
+      "source_audio_sha256": "708a6f622db1700f266416637e6b84ec74dd0fdec54269ad0ea33523884531a2",
+      "reconstructed_declared_pcm_sha256": "3a7d2c95fd08bb4fad54a37b77bb0a68dc6bbbf2b409c1fb381b17eb1d10a366",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "fleurs-ru-1645": {
+      "source_audio_sha256": "b1b06105c7589b543466a491f0ab837cd9987f2ff4b8123c2216d2437a0f6362",
+      "reconstructed_declared_pcm_sha256": "ec35c7d05034179d6255a371ab52a64d07b70cf408b1af7bdb9504195850fc72",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "voici-2660112-2360": {
+      "source_audio_sha256": "015e6f203fc3f3e7211bde76dda9f51fc9a13da16563ed9735d2121e1d7b3ea2",
+      "reconstructed_declared_pcm_sha256": "ab5efb7b00e2ae19acf62954c6da921c4815c1614b51112d136b8db27ca56d88",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "voici-2660112-2060": {
+      "source_audio_sha256": "03fe3c0c38c744cc7564b12c700ddc1fdc2a4ed934eb4ed1034fbcce9e97ab03",
+      "reconstructed_declared_pcm_sha256": "2a2dbe0231df5d4afaab4e662469598e60c61b85fbe9fff6a58eb7bdaab2772b",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "voici-2660112-2300": {
+      "source_audio_sha256": "04ce0790da310a40f527a830dc54045c3f7305d1f8d4ea1eefb650169fbced96",
+      "reconstructed_declared_pcm_sha256": "a44e748f98cd7f2e13498956cf39c687d767a2baf61e6398ebf5978ad1cc0408",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "voici-2660112-2500": {
+      "source_audio_sha256": "06df21a9c47f35cd11ac14e95cc5f32d202939738bce63f35309287bfbeeaad3",
+      "reconstructed_declared_pcm_sha256": "45eeb98d1c69f4feef84e434e659f70f97a0e4369c2929d2464801e22ff64e7a",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "voici-2660112-0740": {
+      "source_audio_sha256": "07b9b85d53c051fff2368f98f031754fe9a87887d4d0ffb98a4d3c0e5b627ba6",
+      "reconstructed_declared_pcm_sha256": "2e115ca456e97035fa6695dc8d021b7ae0c174cd0baa25b3f62dec56637628c3",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "voici-2660112-0720": {
+      "source_audio_sha256": "08f2a70c569f0a56f003f2ce5b1b40dbdf8d0a1c201ad52528dd4bd72055272e",
+      "reconstructed_declared_pcm_sha256": "4881f5f42d3582a08cd72d33dec48544ac160e71ebf54aeba9313e81ff4ca7b5",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "voici-2660112-2440": {
+      "source_audio_sha256": "0a7e6906dd1dcab01feb6c1432c018eb6b6646f5c6bd04be218422ecb88b9b79",
+      "reconstructed_declared_pcm_sha256": "be24f0601ca339878bde53a65141bd0ec22a0bef49a10575c24530b6e6897bec",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "voici-2660112-2340": {
+      "source_audio_sha256": "0cfda2338c37465a38753356b9bdbf55975865c6ae2d4473a09f5c13d5d2691d",
+      "reconstructed_declared_pcm_sha256": "0a7e7368a3641a940c0576d797f271bf6177dfa3f9bf9e36ecd323eea5980f37",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "voici-2660112-1620": {
+      "source_audio_sha256": "0e521af62daf7d7f8067fb7f4e60cf3c5ffec566c40ae9578d51c3df85ef8a49",
+      "reconstructed_declared_pcm_sha256": "42a372808f4375bdb40d973806ed1943db306c22d7331cf3c40775892de05a4b",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "voici-2660112-1820": {
+      "source_audio_sha256": "0eb8e0de9e55578fd87a0c41495c8495503a7d158fac9a96f97e6f8a79a20d37",
+      "reconstructed_declared_pcm_sha256": "7c87bb25b4b65146e0229748b28296239be73ee499cb7c9942dfc16d7d7f5fd7",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "voici-2660112-0420": {
+      "source_audio_sha256": "12813ddb63314cfa9894c6ba80248a99f01c2e2a4575e122af1c2f7f7eb9075d",
+      "reconstructed_declared_pcm_sha256": "47ae75ad7d542777462b816b69bcd2eae11c797b9c3ba7743a4caee66703b2ba",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "voici-2660112-1200": {
+      "source_audio_sha256": "1389d70d1f71d12d2f9681fd03a5d85a6f72290964d7c49a05285a9952f67f3d",
+      "reconstructed_declared_pcm_sha256": "90261b2440e0090cebc36d9989b36c4fdf5f91b0589f67c2d721f31e8dd9e546",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "voici-2660112-1240": {
+      "source_audio_sha256": "1618702fb383ad578c89e730e6085e9f59a62ad5cd7756ce09e92237164c708e",
+      "reconstructed_declared_pcm_sha256": "8ea007f6e30b5f0c0ed50d3a7a30d81a0908bab3d0381991879a5110c74d4a11",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "voici-2660112-0240": {
+      "source_audio_sha256": "18b7242a282db290385ac7c8a801c9bdc51a7ec1ee306deef3f38fba8fb77b87",
+      "reconstructed_declared_pcm_sha256": "4563fc458af722852509bd6ca648edd808ecf628b1765c5f72df6670e2b08dc4",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "voici-2660112-1140": {
+      "source_audio_sha256": "19656a0a7f96c2ac971e2026929d42272884ed9435363e958ae684dfb591f3d2",
+      "reconstructed_declared_pcm_sha256": "fc56c1b8821d887a1ec7b180697c7229ef8a98db2a295eacc6f05c3e56c886b7",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "bnoise-TBM940_E4_CAM-MeasMic-ch1": {
+      "source_audio_sha256": "01a61b01680633b04aba1555b26dc827c8fec38574674d5ae9beb11d804014aa",
+      "reconstructed_declared_pcm_sha256": "8a61e78ae8d25925e3380cc2e897f5a9beac69d6f3a48eb33b9da9731a980f92",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "bnoise-A330-743_E2_CAM-MeasMic-ch0": {
+      "source_audio_sha256": "023816a791ffb94a9a89aa830008b9504733efba082d52cb2a9d2dbc800b9434",
+      "reconstructed_declared_pcm_sha256": "df2ae3fe22a9319c3cd0263e529c1d624c3314320f1cb45fad03bce92824859f",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "bnoise-TBM940_E0_2_Pil-MeasMic-ch0": {
+      "source_audio_sha256": "0596602bdf996bd9bb2eb6ccf05851e0323f9fc3eb1821db8965ed3d289a6fe1",
+      "reconstructed_declared_pcm_sha256": "aab03c4d5b6726a558861078ed5cc42fede35d280934f08d19d62c5ea12c2301",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "bnoise-TBM940_E0_3_Pil-MeasMic-ch1": {
+      "source_audio_sha256": "05ac641da8b26559059b1c5d86dcb09d81d324448d177fcb9a665e84801135e8",
+      "reconstructed_declared_pcm_sha256": "ae5ead0effb9fdc6ae6d09b5edb48fab408586d1f5e96f27577d1bb3055473f1",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "bnoise-TBM940_E2_Pil-MeasMic-ch1": {
+      "source_audio_sha256": "0cb5e816d35d0a265fdb1626de11f33b7275aba97c1f61750ea04e78f8b685cc",
+      "reconstructed_declared_pcm_sha256": "a0b0604855a6d8782ab0378ac6d31d22767869e690ae136eb75fce2c07c19962",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "bnoise-TBM940_E3_Pil-MeasMic-ch1": {
+      "source_audio_sha256": "10ba90c0d5335d4f314ea83fd6bed9647e36ddc7592fad814f67403f668ff68c",
+      "reconstructed_declared_pcm_sha256": "659d2a5df374076b63563e28f8f763718e53261c19b4dfe4b484e394247562ff",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "bnoise-A330-743_E6_CAM-MeasMic-ch0": {
+      "source_audio_sha256": "118ee731e3bbb146ebaafdac93344221a65b9adcc4d1aeb4b17bd9bdad5c96c0",
+      "reconstructed_declared_pcm_sha256": "570443296bd02b0d1fb134b39d4f6f548f41c37a5084bc30d127c287d3e41f54",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "bnoise-TBM940_E7_Pil-MeasMic-ch1": {
+      "source_audio_sha256": "1697d8802a0131982dd1ab841507bc846e51476c88163995783cbe7386f4cbc0",
+      "reconstructed_declared_pcm_sha256": "60984d717d03f7fa4fbc70707bb1c620883896f42af2b2f81b8d3868c11024ee",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "bnoise-A330-743_E51_CAM-MeasMic-ch0": {
+      "source_audio_sha256": "16adbe02f1bcf1afd606ecd0c90199bf3b838dee1865272063698121d9fa3c1f",
+      "reconstructed_declared_pcm_sha256": "d34f75554f305f7abc63c33922bf7848c65e07c5bf5f47f3440dc7a94bf08cd4",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "bnoise-TBM940_E6_CAM-MeasMic-ch0": {
+      "source_audio_sha256": "189c25bb6cefb99270b4b318b23f0e82f268fbc00417bbd449c5b8adc9c4481b",
+      "reconstructed_declared_pcm_sha256": "32f7a3abb4439b0e8727e2d0128551f101f664a014a07bfbf048aee81f69a44a",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "bnoise-A330-743_E4_CoP-MeasMic-ch0": {
+      "source_audio_sha256": "1ae0b68d7e913b919fc4d8f7b31071f5ba0f1a73113d64dc8837cbfb3b4b1071",
+      "reconstructed_declared_pcm_sha256": "773a70c4e0cd4f465708504cbe384b3edaa0c56278a95d1c7707090065eecdf1",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "bnoise-A330-743_E3_CAM-MeasMic-ch0": {
+      "source_audio_sha256": "1f2e69f291e84b16d98cf2bf045277118c3d38c97784d33710aac487f9846086",
+      "reconstructed_declared_pcm_sha256": "767bd2dc65edca20a949b9582890340a4c6ec9987d61f7011e60c98ab9b1ee35",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "bnoise-TBM940_E0_2_CoP-MeasMic-ch1": {
+      "source_audio_sha256": "2bce12c0ae15c50c6521003c2caf81c50d4618eafd6d96b4d2ec182dee4e2f4f",
+      "reconstructed_declared_pcm_sha256": "81fb45528ee5fca335a540f5ab48c4c2ac188afc7881159c1312f7b3804cc962",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "bnoise-TBM940_E1_Pil-MeasMic-ch1": {
+      "source_audio_sha256": "2bf18488949c4f653859d34f5c32c2f39572d053ffd5055db1adb548d6b34260",
+      "reconstructed_declared_pcm_sha256": "e69c033964cb45b32438a8b43eb9e391c5125b639971b0c49370b9bcbc879bf7",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "bnoise-TBM940_E0_3_Pil-MeasMic-ch0": {
+      "source_audio_sha256": "3360d9f909aff2d3fd7d8734312d819b90241dacf9171d0e7ff07610cd8bafe4",
+      "reconstructed_declared_pcm_sha256": "25acddb3dbf827e08d66d6648e4344f2b897641e03b6f95538924d3649aa33b5",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "bnoise-TBM940_E4_Pil-MeasMic-ch0": {
+      "source_audio_sha256": "38db9e25dca0d8ecbfc6ff33f61e6d3c3c33e2e1704a6a05176b3cd992ba85c1",
+      "reconstructed_declared_pcm_sha256": "b639f092629ea892838318d7196d28bcccff2e71552bd56d714b9fac7dbc7e28",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "bnoise-A330-743_E4_Pil-MeasMic-ch0": {
+      "source_audio_sha256": "3b420e7011e1cf5e0e6beb3f898d8375f1c8d066716582ceba8e9625aab4dfef",
+      "reconstructed_declared_pcm_sha256": "d5e9850521b7742e45643f57528d58835b59686afcd7e5531fa673a4760d913b",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "bnoise-TBM940_E2_CAM-MeasMic-ch0": {
+      "source_audio_sha256": "3e62cff4f8c7942236a0515f4317ebc8225e4c9de53dd269ddfdef4ae42ae735",
+      "reconstructed_declared_pcm_sha256": "5c78710bbca9ce6b73dea3b2bb169e2e60d0d52e0361a82a692465f699bb15be",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "bnoise-A330-743_E3_CoP-MeasMic-ch0": {
+      "source_audio_sha256": "3f423d9543a78e32220c3f48c936d2bc5f1a3b98b578fe22a89ea605b48c6651",
+      "reconstructed_declared_pcm_sha256": "077ed0462bbfe1523152179924aeaa3a2ca50ccc720e14426b1918aeb31bdff6",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "bnoise-TBM940_E0_CoP-MeasMic-ch0": {
+      "source_audio_sha256": "412613c55a72c21c786388b640d1ea47b7d91f1eaf6d64528cb4fdf6dea1d975",
+      "reconstructed_declared_pcm_sha256": "208b5c7e0bb6cda7c7abd64a9a235164eb5ffeff945e0c95b29d0a229f56b8d1",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "bnoise-TBM940_E3_CoP-MeasMic-ch1": {
+      "source_audio_sha256": "440bf8475c19095b36b5bb1998aa7d8de9051a6907b6b8396a4ad35b31701455",
+      "reconstructed_declared_pcm_sha256": "cc791724bfeb5059806c9954abee3e9bcb20bd4cd8d2ee0c1e1f433655d85be0",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "bnoise-A330-743_E6_CoP-MeasMic-ch0": {
+      "source_audio_sha256": "48e74d4a65a98090522ec0f9b063a139fca59d77297e6220c765bf2a6210f6c8",
+      "reconstructed_declared_pcm_sha256": "ae822230db2c1c7d7f330d15a4240682e26a944424de18d379dad81a99476d2b",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "bnoise-A330-743_E52_CAM-MeasMic-ch0": {
+      "source_audio_sha256": "4cd047a6e91d20a41102d39539ca1ca1fd0ec66128caea45679fb20b88136e81",
+      "reconstructed_declared_pcm_sha256": "050ef89288963947a97880c4024059087a65f8d09d17fd78464838c5aa8dd6ab",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "bnoise-TBM940_E6_CAM-MeasMic-ch1": {
+      "source_audio_sha256": "4dab7e04e984726735238e030825f5cb33c42a5467cb5341691abed8b03f8f37",
+      "reconstructed_declared_pcm_sha256": "9674746b0b74f0d093c634354f51393e3840c11a374f5998609d31db8d67709f",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    },
+    "bnoise-A330-743_E4_CAM-MeasMic-ch0": {
+      "source_audio_sha256": "4dd3cc0f4e993797a913aa15693a29ce2d72b59d499add043fc3345a20ed4194",
+      "reconstructed_declared_pcm_sha256": "0ad1bd51aa187536139e3d9422505092467eeeb498bf83ebb88a0558bd0468b2",
+      "historical_runtime_pcm_recorded": false,
+      "evidence": "Frozen source file identity and declared zero-gain preparation; reconstructed at scoring."
+    }
+  },
+  "historical_predictions_modified": false
+}

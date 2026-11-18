@@ -1,0 +1,185 @@
+{
+  "policy": {
+    "id": "speaker_round_robin_hash55_v1",
+    "count": 200,
+    "seed": 55,
+    "duration_seconds": [
+      1,
+      30
+    ],
+    "split": "train",
+    "audio_selection_by_ASR": false
+  },
+  "driver_sha256": "a65d9d119f5c918ce32124b03bfaa2a79f16f63f241eb918e68d15364d493662",
+  "code_sha256": "f7e354751e1f3f08fe3b371cf4bf8abf65d199c6f283687ad7c722a983183b61",
+  "scorer_sha256": "12d299fc3407caf6f82a2e4c3c3e0d1443b5d065a95ffbf0b5fcc01731421084",
+  "vad_weights_sha256": "4cbf549b8326f60f80f2536d9eefeb450a9abe83365a098031c89719f1be17d2",
+  "acceptance_sha256": "32d35b1e80b64f38e6adcc9895515b37f224a9e51dcf5ff95389e1f9ecc45071",
+  "baseline_sha256": "419accafb0874a51c11bd4865117a4daf761345a48242e36269c71e88a73e1d1",
+  "uv_lock_sha256": "55a8e553c1ae4894347e17a16957bc5a7ea7bbcd06f33e0bd74fa85a440e062b",
+  "protocol_sha256": "db814a2a53d2816b8d418fdc10834603e13aae861e7e869df77e39267b97727c",
+  "experiment_driver_sha256": "c1e295e540431dfe9881357f0fea12523404ea128caa48a4493ff81862227a5c",
+  "training_implementation_sha256": "568294dd7060f659f219fcec15ce342fa5e41a7b3bb452e29ffa3952b80b74ba",
+  "prior_plan_sha256": "b5a5934484e5f7911c15b507bbc147fe3297bfe0180743924d57aa26383261dc",
+  "source_sha256": "3098c6e44d1d49f8c62bd123775f1c492bda2cabd80f3ee70fe7800572371401",
+  "test_accessed": false,
+  "data_selection_uses_reference_answers": false,
+  "frozen_at": "2026-09-14T12:14:26.105318+00:00",
+  "config": {
+    "train_manifest": "/dataset/train.jsonl",
+    "dev_manifest": "/dataset/dev.jsonl",
+    "base_model": "whisper-small-transformers",
+    "output": "whisper-small-balanced-v1",
+    "reference_policy": "mixed_sources_exploratory_v1",
+    "quality_evidence": false,
+    "selection_allowed": false,
+    "rank": 8,
+    "max_steps": 120,
+    "eval_steps": 120,
+    "learning_rate": 0.0001
+  },
+  "train_sha256": "e60840bc72fba9107fec2783ab67aa2e4684f8ed43c6622a68dba9c3e857f86d",
+  "dev_sha256": "76fbf9ba6c29f31aeeff27d0cf0013638a76ab95e3d6a21b2d62f88a4e5384f6",
+  "inputs_sha256": "81336ad032a25eb85071f712f1b44f6260f709b4061b80cb9f59198539a70877",
+  "references_sha256": "804a18e60747e3e9b6620f8e03fd95214a70eef95dd826c28e29f883a342fa12",
+  "base_manifest": {
+    "repo": "openai/whisper-small",
+    "revision": "973afd24965f72e36ca33b3055d56a652f456b4d",
+    "license": "apache-2.0",
+    "files": {
+      "README.md": "967fa44eefe5d3436e040b0f171fc54da67aad96923bae10af37dac9be5bb6b0",
+      "added_tokens.json": "9715fd2243b6f06a5858b5e32950d2853f73dd5bc201aafcf76f5082a2d8acd1",
+      "config.json": "e6a2b489da1b5aed65a8eb8d1e7466fa867ad5643a8bc138ba708bd56b2875c4",
+      "generation_config.json": "71565b8ef50d0bf7a1193ed4bbed195b94e70c18894d81bba2f1233dcec3ab53",
+      "merges.txt": "2df2990a395e35e8dfbc7511e08c12d56018d8d04691e0133e5d63b21e154dc6",
+      "model.safetensors": "1d7734884874f1a1513ed9aa760a4f8e97aaa02fd6d93a3a85d27b2ae9ca596b",
+      "normalizer.json": "bf1c507dc8724ca9cf9903640dacfb69dae2f00edee4f21ceba106a7392f26dd",
+      "preprocessor_config.json": "9b5cd03a36fbb8a627c64d98a5b5b126ead95a77720723944487311f0110b666",
+      "special_tokens_map.json": "e67ae3a0aaa99abcd9f187138e12db1f65c16a14761c50ef10eef2c174a7a691",
+      "tokenizer.json": "27fc476bfe7f17299480be2273fc0608e4d5a99aba2ab5dec5374b4482d1a566",
+      "tokenizer_config.json": "2a4c4281cf9f51ac6ccc406fdc711a087afe6530f671fa7b80953edc498275ce",
+      "vocab.json": "8f680bba319e01a653d2e8a5dbc17a9157179e0576e6ce74ce0c06356c6e24f9"
+    },
+    "purpose": "optional supervised ASR LoRA after verified training annotations",
+    "excluded_formats": [
+      "pytorch_model.bin",
+      "flax_model.msgpack",
+      "tf_model.h5"
+    ],
+    "training_executed": false
+  },
+  "inference_template": {
+    "schema_version": "1.0",
+    "name": "baseline",
+    "model": "whisper-small-publisher-base-ct2",
+    "compute_type": "float16",
+    "device": "cuda",
+    "task": "transcribe",
+    "beam_size": 5,
+    "temperature": 0.0,
+    "best_of": 5,
+    "patience": 1.0,
+    "length_penalty": 1.0,
+    "repetition_penalty": 1.0,
+    "no_repeat_ngram_size": 0,
+    "condition_on_previous_text": true,
+    "compression_ratio_threshold": 2.4,
+    "log_prob_threshold": -1.0,
+    "no_speech_threshold": 0.6,
+    "suppress_blank": true,
+    "suppress_tokens": [
+      -1
+    ],
+    "max_initial_timestamp": 1.0,
+    "word_timestamps": true,
+    "language_detection_threshold": 0.5,
+    "language_detection_segments": 1,
+    "vad": {
+      "enabled": false,
+      "threshold": 0.5,
+      "min_speech_duration_ms": 100,
+      "min_silence_duration_ms": 400,
+      "speech_pad_ms": 200,
+      "max_speech_duration_s": 30.0
+    },
+    "denoise": {
+      "enabled": false,
+      "strength": 0.5,
+      "floor": 0.3,
+      "noise_percentile": 10.0
+    },
+    "hotwords": null,
+    "glossary_version": null,
+    "redecode": false,
+    "max_redecode_passes": 1,
+    "redecode_logprob_threshold": -0.8,
+    "episode_gap_sec": 2.0,
+    "episode_max_sec": 30.0,
+    "episode_max_tokens": 100,
+    "classifier": "rules_v1",
+    "classifier_artifact": null
+  },
+  "preparation_sha256": "a9e1505723e8c97da2589f6c60981cffed1355f3bd635e54b1d145b77457ffc3",
+  "data": {
+    "eligible_EN": 2039,
+    "selected_EN": 200,
+    "known_EN_speakers": 19,
+    "speaker_counts": {
+      "1088": 11,
+      "1246": 11,
+      "1263": 10,
+      "1743": 11,
+      "226": 10,
+      "2514": 11,
+      "307": 8,
+      "3240": 10,
+      "374": 11,
+      "4214": 10,
+      "5390": 10,
+      "5456": 10,
+      "5750": 11,
+      "5789": 11,
+      "587": 11,
+      "7505": 11,
+      "7635": 11,
+      "7800": 11,
+      "8238": 11
+    },
+    "exclusions": {},
+    "pairs": 433,
+    "minutes": 91.49932708333333,
+    "EN_support_minutes": 42.70232708333334,
+    "old_EN_support_minutes": 44.29633541666666,
+    "groups": {
+      "independent_groups": 27,
+      "split_groups": {
+        "train": 25,
+        "dev": 2,
+        "test": 0
+      },
+      "unknown_speakers": 200,
+      "script_overlap": {
+        "bleriot:BEA:Checklists": [
+          "dev",
+          "train"
+        ]
+      },
+      "claim_limitation": "unknown speakers cannot establish speaker-disjoint generalization"
+    },
+    "protected_233_records_unchanged": true,
+    "new_EN_overlap_with_old_selection": 18,
+    "test_accessed": false,
+    "local_manual_verification": false
+  },
+  "budget": {
+    "prior_configurations_conservative": 30,
+    "new_training_arms": 1,
+    "cumulative": 31,
+    "steps": 120,
+    "seed": 55,
+    "authorization": "user: делай, following speaker-balanced one-arm proposal"
+  },
+  "selection_allowed": false,
+  "quality_evidence": false,
+  "release_promoted": false
+}

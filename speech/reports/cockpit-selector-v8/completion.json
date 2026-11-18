@@ -1,0 +1,15 @@
+{
+  "status": "completed",
+  "diagnostic_status": "FAIL",
+  "quality_confirmed": false,
+  "production_replaced": false,
+  "artifact_sha256": {
+    "protocol.md": "795bbd4d87f4b6072971fadfa49d6e6dc328f7cfb8e485962d59271002466f48",
+    "plan.json": "ece170ad4203f0576e3854292b74f15445a465c4e77cb7d19a63230ded19f128",
+    "comparison.json": "04cdd640c14a65f57abff4a6360390bb30b500ddb4176555bf09d7172ca99e79",
+    "verification.json": "e7e819b04ba5bc09274946603d01e2098f46f9704c5de761d65e3b5a3326ebf4",
+    "decision.md": "c3352c3c65bd4a84247f1d2fbbf2efb96768a43a5c79c95e00a51d39204ee715",
+    "report.md": "b571633ec7b094f0ce6a61332355b61833a2006221d386e369739e22a7f436f4",
+    "test-results.xml": "cce43893b2d7ddc5e32945bc79c30efa876af619e990e28b5837ab20f1f51c11"
+  }
+}

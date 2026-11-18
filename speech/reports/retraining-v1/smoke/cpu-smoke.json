@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "id": "reviewed-dc84f2b77565d804f16ea31f42380abb",
+      "cohort": "partial_human_dev",
+      "hypothesis": "gas cockpit preparation parking brake set chocks set engine masters of engine mode selector norm landing gear level check down flaps lever"
+    },
+    {
+      "id": "fleurs-ru-1651",
+      "cohort": "general_ru",
+      "hypothesis": "Вариант, становящийся всё более популярным для тех, кто планирует взять академический год это путешествовать и учиться."
+    },
+    {
+      "id": "bnoise-TBM940_E0_1_Pil-MeasMic-ch0",
+      "cohort": "bleriot_b_noise",
+      "hypothesis": "ᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒ� ᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒᄒ�"
+    }
+  ],
+  "actual_device": "cpu",
+  "actual_precision": "int8_float32",
+  "plan_sha256": "164153f9c0fb72df977fa71e56ce892381e6c67b21b2140701da8e1a0e21870b",
+  "purpose": "offline_engineering_smoke_not_accuracy_gate"
+}

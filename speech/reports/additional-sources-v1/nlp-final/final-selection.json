@@ -1,0 +1,91 @@
+{
+  "frozen_at": "2026-09-14T06:46:39.496364+00:00",
+  "chosen": "context",
+  "threshold": 0.5,
+  "model_sha256": "3fff35c424cbc324642090c6e733a51c79a55de3b2162291b23efc5cd959f526",
+  "code_sha256": {
+    "/app/scripts/evaluate_cvr_selection.py": "635d3869e71c9e9493a015e05867a82bf8035a3fb1a7085c56bb9ee16c900865",
+    "/app/scripts/cvr_native_experiment.py": "8523a245dd8a5f16be90d712260344e422642627c4d07430178cd180be041628",
+    "/app/scripts/cvr_context_experiment.py": "4231f8a855925ca0f8a6facec9a75d823e09ba923cef2ece6a124b75a2a9294d",
+    "/app/src/north55_speech/nlp.py": "e3dcc378ea66f6be96c81d7a4c884acaad4a930036abda5f0077e916d1dcbbf5"
+  },
+  "source_selection_sha256": {
+    "original": "77dfabf37fafc9141d5193674f9c4c493039de89558ab68fb7ec29cc2f5bb493",
+    "context": "ebbe9e9b1899a0b94fada15eb259234f6bbb1b35dc3a1c6d64c5385b96f53e90"
+  },
+  "source_dev_scores": {
+    "original": {
+      "negative": {
+        "precision": 0.9484848484848485,
+        "recall": 0.8598901098901099,
+        "f1": 0.9020172910662824,
+        "support": 364
+      },
+      "safety_voice": {
+        "precision": 0.203125,
+        "recall": 0.43333333333333335,
+        "f1": 0.2765957446808511,
+        "support": 30
+      },
+      "macro_f1": 0.5893065178735667,
+      "accuracy": 0.8274111675126904
+    },
+    "context": {
+      "negative": {
+        "precision": 0.9452449567723343,
+        "recall": 0.9010989010989011,
+        "f1": 0.9226441631504922,
+        "support": 364
+      },
+      "safety_voice": {
+        "precision": 0.23404255319148937,
+        "recall": 0.36666666666666664,
+        "f1": 0.2857142857142857,
+        "support": 30
+      },
+      "macro_f1": 0.6041792244323889,
+      "accuracy": 0.8604060913705583
+    },
+    "project_hazard_rules": {
+      "negative": {
+        "precision": 0.9300518134715026,
+        "recall": 0.9862637362637363,
+        "f1": 0.9573333333333334,
+        "support": 364
+      },
+      "safety_voice": {
+        "precision": 0.375,
+        "recall": 0.1,
+        "f1": 0.15789473684210525,
+        "support": 30
+      },
+      "macro_f1": 0.5576140350877193,
+      "accuracy": 0.9187817258883249
+    },
+    "broad_hazard_rules": {
+      "negative": {
+        "precision": 0.9353099730458221,
+        "recall": 0.9532967032967034,
+        "f1": 0.9442176870748299,
+        "support": 364
+      },
+      "safety_voice": {
+        "precision": 0.2608695652173913,
+        "recall": 0.2,
+        "f1": 0.22641509433962265,
+        "support": 30
+      },
+      "macro_f1": 0.5853163907072263,
+      "accuracy": 0.8959390862944162
+    }
+  },
+  "test_inputs_sha256": "754f11209c81bf2724b5812e254f595a3f25f24f8ce648fe80bf2b5d4b3941d6",
+  "test_references_sha256": "ff055b65059edbb9cbbc9f0bd346880f1d3bff079bab2d03419fb448329e50ca",
+  "source_native_only": true,
+  "candidate_trials": 12,
+  "rule_baselines": 2,
+  "project_event_gate": "NEEDS_MORE_DATA",
+  "release_promoted": false,
+  "known_holdout_cases_before_access": 1,
+  "holdout_purpose": "descriptive execution check only; insufficient independent cases for generalization"
+}

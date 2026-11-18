@@ -1,0 +1,43 @@
+{
+  "status": "COMPLETE",
+  "diagnostic_status": "PASS_ON_REUSED_DEV",
+  "independent_acceptance": "INCONCLUSIVE",
+  "artifacts_sha256": {
+    "plan.json": "2326ef45fb73bd19b3e44d9ae1a3670c4688adfedd7b0b4527411b7b13fc6499",
+    "protocol.md": "78b7d56881821389e669d5dd25fdc315d3faed0267231657bf41198edd0df697",
+    "comparison.json": "1c13a1ba8cd9c4d6675868071669c433844c9791b7d3d2a619c4373aabbd25f7",
+    "scored-counts.json": "2925bce0e9803ed0cf93d373d5b331111ad02d36d262c80c2f832207995218b4",
+    "verification.json": "6141a7457db09a47995f35b02b63ece129569a1f0b0229ce9600516483c2e3e5",
+    "io-infer/execution.json": "d510ca9149937b740847452b23c4c20667a5805d3cb42634923ce3676c009941",
+    "report.md": "89c010cbbed3082636e8f010bf6b71a195c0eb74f206dd1a03c2ef8147e07297",
+    "decision.md": "aa668ad6f56d5417d16a76254d5afe79d04bbbe8b67dd2254420077dc792b109",
+    "local-runtime/runtime.json": "776b3cf5bda17f43de7c5254e5ccc3413808689d4ea9f1b580e38bae20d82431",
+    "local-runtime/verification.json": "e8f07949fb4320d0efafe2d5ebce7739201d1a2811eee66c1e7539ecede12aa4",
+    "runtime-validation/plan.json": "6e9ff1f0c526a1cd4f3419923c652ae88b951cbe8c8465499ddb9ae35852b05a",
+    "runtime-validation/execution.json": "23fd7473d404920bde95c31e970356ef37729ec5c236be335426ae3e1dce5094",
+    "runtime-validation/comparison.json": "9ffd7bd9c347f154b97a8c882968edad39ffc74d86e33d3e44a6eebf6c7f4a7b",
+    "runtime-validation/verification.json": "c223309b51f258954ada423b3cbb50339064f9d355a450cf063932c286f60415",
+    "runtime-validation/artifact-audit.json": "9620ea1c87ecde5a0f2a824e02efce1f60ed908ac40bc94ff97bf73205aba524",
+    "runtime-validation/frozen-runner.py": "844a7759f9f825801cef37f2ab968880c84d91f5f4f370425e260c8a7756f5c3"
+  },
+  "new_GPU_ASR_calls": {
+    "local_six_file_smoke": 14,
+    "full_batch_one_parakeet": 491
+  },
+  "GPU_ASR_calls_v10_and_v11": 1065,
+  "tests": {
+    "passed": 16,
+    "files": [
+      "tests/test_cockpit_candidates_v10.py",
+      "tests/test_cockpit_consensus_v11.py",
+      "tests/test_cockpit_hybrid_audio.py"
+    ],
+    "ruff": "PASS"
+  },
+  "references_changed": false,
+  "blind_dev_accessed": false,
+  "test_accessed": false,
+  "release_promoted": false,
+  "runtime_command_sha256": "afe9e83858798dd0956554e77bfbeaf9c6d05e987677af3ce5f4bfae9f2890f7",
+  "docs_sha256": "c66deb6a18cc09139ff45f236414015110f9b6bd6389013128e84063f10efbae"
+}

@@ -1,0 +1,413 @@
+{
+  "frozen_at": "2026-09-14T10:18:41.997015+00:00",
+  "driver_sha256": "de1aab45651e7190b1dbc02c04afdb19bc3ea41953892f41b1779b951837edfa",
+  "code_sha256": "b7465f6230eb41734a4775583cf8e688bf010c1d5e55c8d672a7c1a455df6034",
+  "scorer_sha256": "12d299fc3407caf6f82a2e4c3c3e0d1443b5d065a95ffbf0b5fcc01731421084",
+  "vad_weights_sha256": "4cbf549b8326f60f80f2536d9eefeb450a9abe83365a098031c89719f1be17d2",
+  "acceptance_sha256": "32d35b1e80b64f38e6adcc9895515b37f224a9e51dcf5ff95389e1f9ecc45071",
+  "baseline_sha256": "419accafb0874a51c11bd4865117a4daf761345a48242e36269c71e88a73e1d1",
+  "uv_lock_sha256": "55a8e553c1ae4894347e17a16957bc5a7ea7bbcd06f33e0bd74fa85a440e062b",
+  "protocol_sha256": "43d61cd19d288c209e2ea5c892e1ac1f5a9e9d45ba3d4fad752bfd994ccf2dc1",
+  "previous_plan_sha256": "164153f9c0fb72df977fa71e56ce892381e6c67b21b2140701da8e1a0e21870b",
+  "references_sha256": "804a18e60747e3e9b6620f8e03fd95214a70eef95dd826c28e29f883a342fa12",
+  "inputs_sha256": "aad869489b2b21e9b2fc5da8e8fab705e2a0acdcae9d99be76cb4c4400c604e0",
+  "input_count": 264,
+  "configs": {
+    "parent_baseline": {
+      "schema_version": "1.0",
+      "name": "baseline",
+      "model": "whisper-small-publisher-base-ct2",
+      "compute_type": "float16",
+      "device": "cuda",
+      "task": "transcribe",
+      "beam_size": 5,
+      "temperature": 0.0,
+      "best_of": 5,
+      "patience": 1.0,
+      "length_penalty": 1.0,
+      "repetition_penalty": 1.0,
+      "no_repeat_ngram_size": 0,
+      "condition_on_previous_text": true,
+      "compression_ratio_threshold": 2.4,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        -1
+      ],
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "language_detection_threshold": 0.5,
+      "language_detection_segments": 1,
+      "vad": {
+        "enabled": false,
+        "threshold": 0.5,
+        "min_speech_duration_ms": 100,
+        "min_silence_duration_ms": 400,
+        "speech_pad_ms": 200,
+        "max_speech_duration_s": 30.0
+      },
+      "denoise": {
+        "enabled": false,
+        "strength": 0.5,
+        "floor": 0.3,
+        "noise_percentile": 10.0
+      },
+      "hotwords": null,
+      "glossary_version": null,
+      "redecode": false,
+      "max_redecode_passes": 1,
+      "redecode_logprob_threshold": -0.8,
+      "episode_gap_sec": 2.0,
+      "episode_max_sec": 30.0,
+      "episode_max_tokens": 100,
+      "classifier": "rules_v1",
+      "classifier_artifact": null
+    },
+    "parent_text": {
+      "schema_version": "1.0",
+      "name": "baseline",
+      "model": "whisper-small-publisher-base-ct2",
+      "compute_type": "float16",
+      "device": "cuda",
+      "task": "transcribe",
+      "beam_size": 5,
+      "temperature": 0.0,
+      "best_of": 5,
+      "patience": 1.0,
+      "length_penalty": 1.0,
+      "repetition_penalty": 1.0,
+      "no_repeat_ngram_size": 0,
+      "condition_on_previous_text": true,
+      "compression_ratio_threshold": 2.4,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        -1
+      ],
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "language_detection_threshold": 0.5,
+      "language_detection_segments": 1,
+      "vad": {
+        "enabled": false,
+        "threshold": 0.5,
+        "min_speech_duration_ms": 100,
+        "min_silence_duration_ms": 400,
+        "speech_pad_ms": 200,
+        "max_speech_duration_s": 30.0
+      },
+      "denoise": {
+        "enabled": false,
+        "strength": 0.5,
+        "floor": 0.3,
+        "noise_percentile": 10.0
+      },
+      "hotwords": null,
+      "glossary_version": null,
+      "redecode": false,
+      "max_redecode_passes": 1,
+      "redecode_logprob_threshold": -0.8,
+      "episode_gap_sec": 2.0,
+      "episode_max_sec": 30.0,
+      "episode_max_tokens": 100,
+      "classifier": "rules_v1",
+      "classifier_artifact": null
+    },
+    "parent_vad": {
+      "schema_version": "1.0",
+      "name": "diagnostic-vad",
+      "model": "whisper-small-publisher-base-ct2",
+      "compute_type": "float16",
+      "device": "cuda",
+      "task": "transcribe",
+      "beam_size": 5,
+      "temperature": 0.0,
+      "best_of": 5,
+      "patience": 1.0,
+      "length_penalty": 1.0,
+      "repetition_penalty": 1.0,
+      "no_repeat_ngram_size": 0,
+      "condition_on_previous_text": true,
+      "compression_ratio_threshold": 2.4,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        -1
+      ],
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "language_detection_threshold": 0.5,
+      "language_detection_segments": 1,
+      "vad": {
+        "enabled": true,
+        "threshold": 0.4,
+        "min_speech_duration_ms": 50,
+        "min_silence_duration_ms": 400,
+        "speech_pad_ms": 250,
+        "max_speech_duration_s": 30.0
+      },
+      "denoise": {
+        "enabled": false,
+        "strength": 0.5,
+        "floor": 0.3,
+        "noise_percentile": 10.0
+      },
+      "hotwords": null,
+      "glossary_version": null,
+      "redecode": false,
+      "max_redecode_passes": 1,
+      "redecode_logprob_threshold": -0.8,
+      "episode_gap_sec": 2.0,
+      "episode_max_sec": 30.0,
+      "episode_max_tokens": 100,
+      "classifier": "rules_v1",
+      "classifier_artifact": null
+    },
+    "augmented_baseline": {
+      "schema_version": "1.0",
+      "name": "baseline",
+      "model": "whisper-small-retraining-v1-augmented-ct2",
+      "compute_type": "float16",
+      "device": "cuda",
+      "task": "transcribe",
+      "beam_size": 5,
+      "temperature": 0.0,
+      "best_of": 5,
+      "patience": 1.0,
+      "length_penalty": 1.0,
+      "repetition_penalty": 1.0,
+      "no_repeat_ngram_size": 0,
+      "condition_on_previous_text": true,
+      "compression_ratio_threshold": 2.4,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        -1
+      ],
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "language_detection_threshold": 0.5,
+      "language_detection_segments": 1,
+      "vad": {
+        "enabled": false,
+        "threshold": 0.5,
+        "min_speech_duration_ms": 100,
+        "min_silence_duration_ms": 400,
+        "speech_pad_ms": 200,
+        "max_speech_duration_s": 30.0
+      },
+      "denoise": {
+        "enabled": false,
+        "strength": 0.5,
+        "floor": 0.3,
+        "noise_percentile": 10.0
+      },
+      "hotwords": null,
+      "glossary_version": null,
+      "redecode": false,
+      "max_redecode_passes": 1,
+      "redecode_logprob_threshold": -0.8,
+      "episode_gap_sec": 2.0,
+      "episode_max_sec": 30.0,
+      "episode_max_tokens": 100,
+      "classifier": "rules_v1",
+      "classifier_artifact": null
+    },
+    "augmented_text": {
+      "schema_version": "1.0",
+      "name": "baseline",
+      "model": "whisper-small-retraining-v1-augmented-ct2",
+      "compute_type": "float16",
+      "device": "cuda",
+      "task": "transcribe",
+      "beam_size": 5,
+      "temperature": 0.0,
+      "best_of": 5,
+      "patience": 1.0,
+      "length_penalty": 1.0,
+      "repetition_penalty": 1.0,
+      "no_repeat_ngram_size": 0,
+      "condition_on_previous_text": true,
+      "compression_ratio_threshold": 2.4,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        -1
+      ],
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "language_detection_threshold": 0.5,
+      "language_detection_segments": 1,
+      "vad": {
+        "enabled": false,
+        "threshold": 0.5,
+        "min_speech_duration_ms": 100,
+        "min_silence_duration_ms": 400,
+        "speech_pad_ms": 200,
+        "max_speech_duration_s": 30.0
+      },
+      "denoise": {
+        "enabled": false,
+        "strength": 0.5,
+        "floor": 0.3,
+        "noise_percentile": 10.0
+      },
+      "hotwords": null,
+      "glossary_version": null,
+      "redecode": false,
+      "max_redecode_passes": 1,
+      "redecode_logprob_threshold": -0.8,
+      "episode_gap_sec": 2.0,
+      "episode_max_sec": 30.0,
+      "episode_max_tokens": 100,
+      "classifier": "rules_v1",
+      "classifier_artifact": null
+    },
+    "augmented_vad": {
+      "schema_version": "1.0",
+      "name": "diagnostic-vad",
+      "model": "whisper-small-retraining-v1-augmented-ct2",
+      "compute_type": "float16",
+      "device": "cuda",
+      "task": "transcribe",
+      "beam_size": 5,
+      "temperature": 0.0,
+      "best_of": 5,
+      "patience": 1.0,
+      "length_penalty": 1.0,
+      "repetition_penalty": 1.0,
+      "no_repeat_ngram_size": 0,
+      "condition_on_previous_text": true,
+      "compression_ratio_threshold": 2.4,
+      "log_prob_threshold": -1.0,
+      "no_speech_threshold": 0.6,
+      "suppress_blank": true,
+      "suppress_tokens": [
+        -1
+      ],
+      "max_initial_timestamp": 1.0,
+      "word_timestamps": true,
+      "language_detection_threshold": 0.5,
+      "language_detection_segments": 1,
+      "vad": {
+        "enabled": true,
+        "threshold": 0.4,
+        "min_speech_duration_ms": 50,
+        "min_silence_duration_ms": 400,
+        "speech_pad_ms": 250,
+        "max_speech_duration_s": 30.0
+      },
+      "denoise": {
+        "enabled": false,
+        "strength": 0.5,
+        "floor": 0.3,
+        "noise_percentile": 10.0
+      },
+      "hotwords": null,
+      "glossary_version": null,
+      "redecode": false,
+      "max_redecode_passes": 1,
+      "redecode_logprob_threshold": -0.8,
+      "episode_gap_sec": 2.0,
+      "episode_max_sec": 30.0,
+      "episode_max_tokens": 100,
+      "classifier": "rules_v1",
+      "classifier_artifact": null
+    }
+  },
+  "models": {
+    "parent": {
+      "name": "whisper-small-publisher-base-ct2",
+      "manifest": {
+        "model": "whisper-small-publisher-base-ct2",
+        "repo": "local_unadapted_conversion",
+        "revision": "973afd24965f72e36ca33b3055d56a652f456b4d",
+        "source_manifest_sha256": "b92a7c691f46da8afd9b3d4ec859e7941584784dac32d1e1f4fe78d27279a83a",
+        "license": "apache-2.0",
+        "files": {
+          "model.bin": "eef2cbde70d256f29b6e3432c85b92becd26f804650e855cc4ff7e66f12122b0",
+          "tokenizer.json": "27fc476bfe7f17299480be2273fc0608e4d5a99aba2ab5dec5374b4482d1a566",
+          "vocabulary.json": "5ad28279db5e546349708b9a74736e2c018737ac5a600f1048f1f26c99b85b47",
+          "preprocessor_config.json": "9b5cd03a36fbb8a627c64d98a5b5b126ead95a77720723944487311f0110b666",
+          "config.json": "b55496ac7940a7ae47d2c01eab40edfd8701feec1229d9cce3b40014383fb828"
+        },
+        "purpose": "same source weights and CT2 float16 conversion control for A5"
+      },
+      "manifest_sha256": "51d9aee1e6faddc26a8fecf114e3d716dd7965e7169250dfd4f0d939657a4f90"
+    },
+    "augmented": {
+      "name": "whisper-small-retraining-v1-augmented-ct2",
+      "manifest": {
+        "model": "whisper-small-retraining-v1-augmented-ct2",
+        "repo": "local_lora_adaptation",
+        "revision": "b1aa049fbc11e1d9377305ec384049e27495afc23f7c8925777d7f9b62dc864f",
+        "source_train_manifest_sha256": "8fe6112701bd1921aaa0c44f97b64105b31550358a3ff986592c885131008933",
+        "files": {
+          "model.bin": "efc633c665c092df7f43e384fc4eed71dee68419b3a6b2e0f2119b0cb33801b9",
+          "tokenizer.json": "7b469ff15eb7816315aa45eec391f5943d639b9d73d110f5c003df5192fd54e3",
+          "vocabulary.json": "5ad28279db5e546349708b9a74736e2c018737ac5a600f1048f1f26c99b85b47",
+          "preprocessor_config.json": "994838f1fa6462c8b9b3c90edada831f11f3dd8b4664634e18f4694d005c9dbf",
+          "config.json": "707bcfea9f540464f702957e4c974a262cd378df563f25c96da0778e3b9f7b84"
+        },
+        "license": "inherited_base_model_and_training_data_restrictions",
+        "model_comparison": "A5_separate_checkpoint",
+        "reference_policy": "mixed_sources_exploratory_v1",
+        "quality_evidence": false
+      },
+      "manifest_sha256": "2fef46a1d543fcb0b248e338dad7ed43bcb3bb9779fc1af86e32ed1e7f2e7014"
+    }
+  },
+  "systems": [
+    "parent_baseline",
+    "parent_text",
+    "parent_vad",
+    "augmented_baseline",
+    "augmented_text",
+    "augmented_vad"
+  ],
+  "controls_sha256": {
+    "parent": "d8302e389ca76a265f12a65e47dee7e2353daeaf568f31a5b29fdf3628ebab15",
+    "augmented": "deb0c1a828d5ebe1b66bc76d312a0f3a665381d41ca8af89287f82f5eece7898"
+  },
+  "options_overrides": {
+    "parent_baseline": {
+      "without_timestamps": false
+    },
+    "parent_text": {
+      "without_timestamps": true
+    },
+    "parent_vad": {
+      "without_timestamps": false
+    },
+    "augmented_baseline": {
+      "without_timestamps": false
+    },
+    "augmented_text": {
+      "without_timestamps": true
+    },
+    "augmented_vad": {
+      "without_timestamps": false
+    }
+  },
+  "new_configuration_budget": 4,
+  "previous_configurations": 18,
+  "cumulative_configurations": 22,
+  "additional_budget_authorization": "User approved two fixed diagnostics on both saved checkpoints; SPEC section 362; ACCEPTANCE unchanged.",
+  "test_accessed": false,
+  "release_promoted": false,
+  "selection_policy": "Two separate effects; no combination, tuning, retraining or release selection.",
+  "limitations": [
+    "All originals are exposed dev/diagnostic data, never final test.",
+    "Only five partially reviewed cockpit utterances; weak publisher alignments stay weak.",
+    "Quiet variants inherit references and groups; they are not independent observations.",
+    "Short general EN utterances are not gold cockpit commands. Human word boundaries and critical entity labels are insufficient.",
+    "Reused baseline outputs are hash-verified historical results; timing is not a fresh speed comparison.",
+    "Noise references rely on publisher declarations, not independent local listening.",
+    "Two weights are assessed separately; adaptation is not a same-checkpoint comparison."
+  ]
+}

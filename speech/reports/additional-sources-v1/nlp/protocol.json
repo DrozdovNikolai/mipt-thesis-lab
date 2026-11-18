@@ -1,0 +1,24 @@
+{
+  "created_at": "2026-09-14T06:37:56.971286+00:00",
+  "c_values": [
+    0.25,
+    1.0,
+    4.0
+  ],
+  "thresholds": [
+    0.35,
+    0.5,
+    0.65
+  ],
+  "maximum_trials": 9,
+  "selection": "dev macro F1, then smaller C, then threshold nearest .5",
+  "script_sha256": "8523a245dd8a5f16be90d712260344e422642627c4d07430178cd180be041628",
+  "project_rules_sha256": "e3dcc378ea66f6be96c81d7a4c884acaad4a930036abda5f0077e916d1dcbbf5",
+  "preparation_sha256": "16201188c95e90ecb445acad9a6b8ddd1f6a11ac4ca5b236a8c371be5f075747",
+  "features": "train-only word 1-2 + char_wb 3-5 TF-IDF, min_df2, max_features 30000+50000",
+  "test_inputs_sha256": "754f11209c81bf2724b5812e254f595a3f25f24f8ce648fe80bf2b5d4b3941d6",
+  "test_references_sha256": "ff055b65059edbb9cbbc9f0bd346880f1d3bff079bab2d03419fb448329e50ca",
+  "label": "source_native_safety_voice",
+  "project_label_mapping": null,
+  "release_promoted": false
+}

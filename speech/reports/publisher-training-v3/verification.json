@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "plan_sha256": "562f6ebcbfcf7525df3eda59cbeba389fb7fc2e882522d335fb1ae23e0e246f0",
+  "actual_updates": 240,
+  "unique_train_examples": 221,
+  "training_presentations": 960,
+  "frozen_encoder_and_base_unchanged": true,
+  "teacher_unchanged": true,
+  "executions": {
+    "baseline": {
+      "records": 415,
+      "new_ASR_calls": 415,
+      "actual_device": "cuda",
+      "actual_precision": "float16"
+    },
+    "candidate": {
+      "records": 415,
+      "new_ASR_calls": 415,
+      "actual_device": "cuda",
+      "actual_precision": "float16"
+    },
+    "cpu": {
+      "records": 2,
+      "new_ASR_calls": 2,
+      "actual_device": "cpu",
+      "actual_precision": "int8_float32"
+    }
+  },
+  "historical_baseline_compared": 159,
+  "historical_baseline_hypothesis_differences": [],
+  "source_after_freeze": "type annotations only; runtime AST equal after removing typing",
+  "measured_worker_sha256": "06eff5ca485ff2284fa28a7934b02b6c740c0ab4e651fd730390b846aa4deab4",
+  "current_worker_sha256": "f4a2fbb1afb7ae19f45cd0b286373aba1e16ca50ed56d7b3430c8959ea1c5644",
+  "quality_evidence": false,
+  "test_accessed": false,
+  "release_promoted": false
+}

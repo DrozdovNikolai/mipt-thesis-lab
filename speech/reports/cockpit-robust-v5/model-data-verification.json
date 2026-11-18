@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "waveforms_and_labels_reproduced": 907,
+  "variants": {
+    "original": 247,
+    "augmented": 420,
+    "negative": 240
+  },
+  "initial_adapters_identical": true,
+  "balanced_speech_schedules_identical": true,
+  "arms": {
+    "uniform": {
+      "actual_updates": 240,
+      "speech_presentations": 960,
+      "negative_presentations": 0,
+      "encoder_unchanged": true,
+      "frozen_base_unchanged": true
+    },
+    "balanced": {
+      "actual_updates": 240,
+      "speech_presentations": 960,
+      "negative_presentations": 0,
+      "encoder_unchanged": true,
+      "frozen_base_unchanged": true
+    },
+    "balanced-silence": {
+      "actual_updates": 240,
+      "speech_presentations": 960,
+      "negative_presentations": 240,
+      "encoder_unchanged": true,
+      "frozen_base_unchanged": true
+    }
+  },
+  "plan_sha256": "dc229a8fd3cc0de1786c33df02b1e2c0c80f61cb9afb0f88e266ea7eabcbdebd"
+}

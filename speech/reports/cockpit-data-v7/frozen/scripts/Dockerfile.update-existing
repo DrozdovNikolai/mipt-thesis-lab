@@ -1,0 +1,14 @@
+# Reconcile a previously built optional runtime with the current frozen project.
+ARG BASE_IMAGE
+FROM ${BASE_IMAGE}
+USER root
+COPY pyproject.toml uv.lock /app/
+COPY src /app/src
+COPY configs /app/configs
+COPY tests /app/tests
+COPY migrations /app/migrations
+COPY scripts /app/scripts
+COPY alembic.ini ACCEPTANCE.yaml SPEC.md SOURCES.md /app/
+ARG OPTIONAL_EXTRA
+RUN uv sync --frozen --extra "$OPTIONAL_EXTRA" && chown -R app:app /app
+USER 10001:10001

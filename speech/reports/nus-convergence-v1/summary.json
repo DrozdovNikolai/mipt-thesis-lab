@@ -1,0 +1,100 @@
+{
+  "implemented": true,
+  "executed": true,
+  "artifact_verification": "PASS",
+  "checks": {
+    "240_optimizer_steps": true,
+    "exact_32_originals": true,
+    "all_milestones_saved": true,
+    "all_milestones_converted": true,
+    "unit_tests_passed": true,
+    "inference_recorded": true,
+    "inference_offline": true,
+    "no_references_in_generation": true,
+    "source_models_audio_readonly": true,
+    "zero_ASR_runtime_failures": true,
+    "CPU_smoke_completed": true,
+    "correct_conditional_transfer": true,
+    "linux_replay": true
+  },
+  "train_fit": "FAIL",
+  "learning_curve": {
+    "0": {
+      "S": 47,
+      "D": 4,
+      "I": 45,
+      "N": 145,
+      "H": 94,
+      "character_errors": 299,
+      "reference_characters": 841,
+      "wer_lexical_corpus": 0.6620689655172414,
+      "cer": 0.3555291319857313,
+      "runtime_failures": 0
+    },
+    "40": {
+      "S": 44,
+      "D": 3,
+      "I": 35,
+      "N": 145,
+      "H": 98,
+      "character_errors": 248,
+      "reference_characters": 841,
+      "wer_lexical_corpus": 0.5655172413793104,
+      "cer": 0.29488703923900117,
+      "runtime_failures": 0
+    },
+    "120": {
+      "S": 24,
+      "D": 3,
+      "I": 11,
+      "N": 145,
+      "H": 118,
+      "character_errors": 94,
+      "reference_characters": 841,
+      "wer_lexical_corpus": 0.2620689655172414,
+      "cer": 0.1117717003567182,
+      "runtime_failures": 0
+    },
+    "240": {
+      "S": 19,
+      "D": 2,
+      "I": 5,
+      "N": 145,
+      "H": 124,
+      "character_errors": 51,
+      "reference_characters": 841,
+      "wer_lexical_corpus": 0.1793103448275862,
+      "cer": 0.06064209274673008,
+      "runtime_failures": 0
+    }
+  },
+  "training_steps": 240,
+  "training_originals": 32,
+  "training_minutes": 2.045,
+  "training_words": 145,
+  "loader_positions": 960,
+  "test_accessed": false,
+  "transfer_status": "NOT_RUN_BY_FROZEN_CONDITION",
+  "remaining_NUS_text_overlap": {
+    "same_normalized_text_as_fit": 52,
+    "remaining_total": 243,
+    "independent_validation": false,
+    "speaker_ids_known": false,
+    "original_source_groups": 1
+  },
+  "new_GPU_ASR_calls": 96,
+  "new_CPU_ASR_calls": 1,
+  "release": "NEEDS_MORE_DATA",
+  "release_promoted": false,
+  "independent_quality": "NEEDS_MORE_DATA",
+  "tests": {
+    "tests": 8,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "plan_sha256": "33ab2e0dc6a3f9b2d7a3253ca9f493ae766bbf3d2aca7a225f010180e3e97634",
+  "training_sha256": "ef8206e4c2e638164b3e512dc022d5cc7c915adc22e10ccea6e825b8b86ddb7b",
+  "fit_comparison_sha256": "e80024602571465b941f57c51deeabd61986d2aa4c229fa84ba9bb5ecb9a5fcb",
+  "report_script_sha256": "93d126a7f17574ffe666cdd30e8aeae14837c9330927d0e289e8ae123e374fcd"
+}

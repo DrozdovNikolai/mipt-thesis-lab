@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "unchanged_reference_and_audio_rows": 49,
+  "retained_old_train": 33,
+  "added_train": 16,
+  "exact_decoded_hash_duplicates": 0,
+  "dev_byte_identical": true,
+  "human_verified_added": 0,
+  "completed_asr_calls": 91,
+  "asr_failures": 0,
+  "completed_resume": "PASS: verified without new calls",
+  "execution_sha256": "7fa32c046555033e9b358c27adeaeaee3aa503f6760d7f867f7ea366d610cd5a"
+}

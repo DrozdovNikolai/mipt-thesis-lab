@@ -1,0 +1,48 @@
+{
+  "method": "assistant_visual_transcription_of_publisher_pages",
+  "audio_listened": false,
+  "human_verified": false,
+  "documents": {
+    "BEA_checklist_A320_pilote.json": {
+      "source_sha256": "4da2527a6ca0bc4a6804595c9fb572f24ba4f01f84bb3789e73a71d66243f068",
+      "pages": {
+        "1": [
+          "COCKPIT PREPARATION", "GEAR PINS & COVERS REMOVED", "FUEL QUANTITY KG/LB", "SEAT BELTS ON", "ADIRS NAV", "BARO REF (BOTH)",
+          "BEFORE START", "PARKING BRAKE", "T.O SPEEDS & THRUST (BOTH)", "WINDOWS CLOSED (BOTH)", "BEACON ON",
+          "AFTER START", "ANTI ICE", "ECAM STATUS CHECKED", "PITCH TRIM %", "RUDDER TRIM NEUTRAL",
+          "TAXI", "FLIGHT CONTROL CHECKED (BOTH)", "FLAPS SETTING CONF (BOTH)", "RADAR & PRED W/S ON & AUTO", "ENG MODE SEL", "ECAM MEMO TO NO BLUE", "AUTO BRK MAX", "SIGNS ON", "CABIN READY", "SPLRS ARM", "FLAPS TO", "TO CONFIG NORM",
+          "LINE-UP", "T.O RWY (BOTH)", "TCAS", "PACKS 1 & 2", "DEPARTURE CHANGE", "RWY & SID", "FLAP SETTING CONF (BOTH)", "T.O SPEEDS & THRUST (BOTH)", "FCU ALT",
+          "APPROACH", "BARO REF SET (BOTH)", "SEAT BELTS ON", "MINIMUM", "AUTO BRAKE", "ENG MODE SEL",
+          "LANDING", "ECAM MEMO LDG NO BLUE", "LDG GEAR DN", "SIGNS ON", "CABIN READY", "SPLRS ARM", "FLAPS SET",
+          "AFTER LANDING", "RADAR & PRED W/S OFF", "PARKING", "PARK BRK or CHOCKS SET", "ENGINES OFF", "WING LIGHTS OFF", "FUEL PUMPS OFF",
+          "SECURING THE AIRCRAFT", "OXYGEN OFF", "EMER EXIT LT OFF", "EFBs OFF", "BATTERIES OFF"
+        ]
+      }
+    },
+    "DGA_checklist-PC7.json": {
+      "source_sha256": "3d6938183f5f0891a1d74998d179a5935798748c939fa76b372ca589d61212ab",
+      "pages": {
+        "1": [
+          "TAXIING CHECKS", "LANDING LIGHTS ON (or as required)", "PARK BRAKE Release", "Wheel brakes Check", "Flight instruments Check",
+          "BEFORE TAKE-OFF CHECKS", "Torque Calculated", "RPM lever MAX RPM", "FLAPS TO", "Trims Green marks", "LANDING LIGHTS ON", "XPDR ALT", "BOOST PUMPS ON", "Fuel QTY Check", "ANTI ICE As required", "(on if OAT < 4°C)", "HEAT PROP BLADES As required", "Air conditioning HEAT / COOL OFF", "for max performance T/O", "Annunciator panel No amber or red", "Oxygen As required", "Harness, helmet Secure", "Flight controls Full and free movement", "When aligned on the runway", "Altimeter Check", "Heading Check",
+          "AFTER TAKEOFF CHECKS", "Landing gear handle LG UP", "FLAPS UP (recommended not below 90 KIAS)", "BOOST PUMPS NORMAL", "LANDING LIGHTS OFF"
+        ],
+        "2": [
+          "CLIMB CHECKS", "Altimeter Set", "ANTI ICE As required", "HEAT PROP BLADES As required", "Air conditioning As required", "RPM, PCL As required", "TORQUE, NG, ITT Monitor",
+          "CRUISE CHECKS", "Engine instruments Check", "Oxygen Check, set as required", "Fuel balance Check", "External fuel Check transfer as required",
+          "AEROBATICS", "BOOST PUMPS ON", "No loose items in the cockpit"
+        ],
+        "3": [
+          "DESCENT / REJOIN CHECKS", "Flight instruments Check, erect and synchronized", "Altimeter Set", "ANTI ICE Check", "HEAT PROP BLADES Check", "Fuel QTY / balance Check",
+          "APPROACH CHECKS", "Below 132 KIAS", "Landing gear handle LG DN, check 3 greens", "FLAPS As required", "Wheel brakes Positive feel", "BOOST PUMPS ON", "LANDING LIGHTS ON", "Air conditioning OFF", "Harness, helmet Secure",
+          "NOTE", "Landing with FLAPS UP increases landing roll by 60% compared to FLAPS LAND",
+          "FINAL CHECKS", "Landing gear handle LG DN, check 3 greens", "FLAPS As required", "AOA indexer Green donut", "Airspeed Check",
+          "AFTER LANDING CHECKS", "FLAPS UP", "Trims Center", "BOOST PUMPS NORMAL", "ANTI ICE OFF", "HEAT PROP BLADES OFF", "LANDING LIGHTS As required", "Air conditioning As required"
+        ],
+        "4": [
+          "SHUTDOWN CHECKS", "PCL IDLE", "Allow ITT to stabilize below 660°C for 1 minute before shutdown", "PARK BRAKE Set", "LANDING LIGHTS OFF", "COOL / FAN OFF", "RADIO / INSTR MASTER OFF", "GYRO COMP OFF", "GEN OFF", "RPM lever FEATHER", "PCL OFF", "External lights OFF", "Cockpit lights OFF", "Canopy Open", "BATT OFF", "Oxygen OFF / 100% / OFF", "Flight controls Lock", "Harness Secure on hooks", "PARK BRAKE As required"
+        ]
+      }
+    }
+  }
+}

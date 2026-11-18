@@ -1,0 +1,19 @@
+{
+  "powershell_hashes": {
+    "verification.json": "42ef497bd56bc1d43788d69f1c7a47ff6406c82efc807c174dce1b62f39f6579",
+    "report.md": "cf8d85d92dc962dbe14e2aa9072472a5b8cf62cff2d7f7bc288b5f093f06405b",
+    "status.json": "19188c368c58457c50de70c80a72519cf7e561376189f78e98f4c39af9f3505c"
+  },
+  "scripts": [
+    "run_retraining.ps1",
+    "run_retraining.sh",
+    "report_retraining.py"
+  ],
+  "note": "Both full artifact verification and completed-inference resume executed; each resume reused 661 records and made zero ASR calls",
+  "status": "PASS",
+  "linux_hashes": {
+    "verification.json": "42ef497bd56bc1d43788d69f1c7a47ff6406c82efc807c174dce1b62f39f6579",
+    "report.md": "cf8d85d92dc962dbe14e2aa9072472a5b8cf62cff2d7f7bc288b5f093f06405b",
+    "status.json": "19188c368c58457c50de70c80a72519cf7e561376189f78e98f4c39af9f3505c"
+  }
+}

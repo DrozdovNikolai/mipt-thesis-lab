@@ -1,0 +1,58 @@
+name: north55-publisher-recovery-v3
+x-common: &common
+  image: north55-speech-gpu:0.1.0
+  network_mode: none
+  entrypoint: [python, -u, /code/scripts/recover_publisher_v3.py]
+  environment:
+    PYTHONPATH: /code/src:/code
+    HF_HUB_OFFLINE: '1'
+    TRANSFORMERS_OFFLINE: '1'
+    CUDA_VISIBLE_DEVICES: '0'
+services:
+  prepare:
+    <<: *common
+    command: [prepare]
+    volumes:
+      - ./src:/code/src:ro
+      - ./scripts:/code/scripts:ro
+      - ./configs:/code/configs:ro
+      - .:/workspace:ro
+      - ./reports/publisher-recovery-v3:/output
+      - audio:/audio
+      - models:/models:ro
+  infer:
+    <<: *common
+    command: [infer, --system, medium]
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['0']
+              capabilities: [gpu]
+    volumes:
+      - ./src:/code/src:ro
+      - ./scripts:/code/scripts:ro
+      - ./configs:/code/configs:ro
+      - ./reports/publisher-recovery-v3/inference:/study:ro
+      - ./reports/publisher-recovery-v3/predictions:/predictions
+      - audio:/audio:ro
+      - models:/models:ro
+  assemble:
+    <<: *common
+    command: [assemble]
+    volumes:
+      - ./src:/code/src:ro
+      - ./scripts:/code/scripts:ro
+      - ./configs:/code/configs:ro
+      - .:/workspace:ro
+      - ./reports/publisher-recovery-v3:/output
+      - ./data/curated/publisher-recovery-v3:/dataset
+      - audio:/audio:ro
+volumes:
+  audio:
+    external: true
+    name: north55-speech_audio_data
+  models:
+    external: true
+    name: north55-speech_model_cache

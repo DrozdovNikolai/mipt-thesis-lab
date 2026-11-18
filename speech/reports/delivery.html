@@ -1,0 +1,217 @@
+<!doctype html><meta charset='utf-8'><title>north55 delivery</title><pre># north55_speech: actual delivery assessment
+
+| Gate | Status |
+|---|---|
+| engineering_gate | PASS |
+| asr_quality_gate | NEEDS_MORE_DATA |
+| nlp_quality_gate | NEEDS_MORE_DATA |
+| temporal_event_gate | NEEDS_MORE_DATA |
+
+Executed code tests: 78; integration cases: 9. See final-tests.xml.
+
+No primary cockpit benchmark was executed. WER/F1/CI are unmeasured, not zero. Candidate is not selected; baseline remains active; release is not promoted. No EN/RU/mixed cockpit quality is validated.
+
+The two lawful human LibriSpeech controls, generated unit fixtures, repeated long audio and GPU/CPU smoke timings are engineering evidence only. They do not satisfy the scientific gate.
+
+```json
+{
+  &quot;gates&quot;: {
+    &quot;engineering_gate&quot;: {
+      &quot;status&quot;: &quot;PASS&quot;,
+      &quot;reasons&quot;: [],
+      &quot;checks&quot;: {
+        &quot;require_valid_cpu_compose&quot;: &quot;PASS&quot;,
+        &quot;require_gpu_override_config_validation&quot;: &quot;PASS&quot;,
+        &quot;require_cpu_integration_execution&quot;: &quot;PASS&quot;,
+        &quot;require_real_asr_smoke_execution&quot;: &quot;PASS&quot;,
+        &quot;require_migrations_and_queue_recovery_tests&quot;: &quot;PASS&quot;,
+        &quot;require_review_audit_and_original_audio_preservation&quot;: &quot;PASS&quot;,
+        &quot;require_privacy_and_unsafe_correction_tests&quot;: &quot;PASS&quot;,
+        &quot;require_offline_inference_after_prefetch&quot;: &quot;PASS&quot;
+      },
+      &quot;code_hash&quot;: &quot;3ebe06c6b5e3d924e96623be9a6829076844c701b9692cb02eed154824ea749f&quot;,
+      &quot;test_cases&quot;: 78,
+      &quot;integration_cases&quot;: 9
+    },
+    &quot;asr_quality_gate&quot;: {
+      &quot;status&quot;: &quot;NEEDS_MORE_DATA&quot;,
+      &quot;reasons&quot;: [
+        &quot;independent_groups: 0 &lt; 20&quot;,
+        &quot;distinct_original_human_utterances: 0 &lt; 300&quot;,
+        &quot;reference_words: 0 &lt; 3000&quot;,
+        &quot;human_verified_critical_entity_occurrences: 0 &lt; 100&quot;,
+        &quot;clean_control_utterances: 0 &lt; 50&quot;,
+        &quot;non_speech_control_minutes: 0 &lt; 5&quot;
+      ]
+    },
+    &quot;nlp_quality_gate&quot;: {
+      &quot;status&quot;: &quot;NEEDS_MORE_DATA&quot;,
+      &quot;reasons&quot;: [
+        &quot;insufficient_evidence:independent_groups&quot;,
+        &quot;insufficient_evidence:human_verified_episodes_or_utterances&quot;,
+        &quot;insufficient_positive_support:CHECKLIST&quot;,
+        &quot;insufficient_positive_support:CONFIGURATION_MENTION&quot;,
+        &quot;insufficient_positive_support:CREW_COORDINATION&quot;,
+        &quot;insufficient_evidence:salience_positives&quot;,
+        &quot;insufficient_evidence:salience_negatives&quot;,
+        &quot;missing_human_event_labels&quot;
+      ]
+    },
+    &quot;temporal_event_gate&quot;: {
+      &quot;status&quot;: &quot;NEEDS_MORE_DATA&quot;,
+      &quot;reasons&quot;: [
+        &quot;missing_human_temporal_annotations_on_continuous_recordings&quot;
+      ]
+    }
+  },
+  &quot;benchmark_executed&quot;: false,
+  &quot;benchmark_execution_status&quot;: &quot;NOT_RUN&quot;,
+  &quot;validated_scope&quot;: [],
+  &quot;supported_input_modes&quot;: [
+    &quot;en&quot;,
+    &quot;ru&quot;,
+    &quot;mixed&quot;,
+    &quot;auto&quot;
+  ],
+  &quot;deployment_candidate&quot;: &quot;baseline&quot;,
+  &quot;release_promoted&quot;: false,
+  &quot;baseline&quot;: {
+    &quot;schema_version&quot;: &quot;1.0&quot;,
+    &quot;name&quot;: &quot;baseline&quot;,
+    &quot;model&quot;: &quot;small&quot;,
+    &quot;compute_type&quot;: &quot;int8&quot;,
+    &quot;device&quot;: &quot;cpu&quot;,
+    &quot;task&quot;: &quot;transcribe&quot;,
+    &quot;beam_size&quot;: 5,
+    &quot;temperature&quot;: 0.0,
+    &quot;best_of&quot;: 5,
+    &quot;patience&quot;: 1.0,
+    &quot;length_penalty&quot;: 1.0,
+    &quot;repetition_penalty&quot;: 1.0,
+    &quot;no_repeat_ngram_size&quot;: 0,
+    &quot;condition_on_previous_text&quot;: true,
+    &quot;compression_ratio_threshold&quot;: 2.4,
+    &quot;log_prob_threshold&quot;: -1.0,
+    &quot;no_speech_threshold&quot;: 0.6,
+    &quot;suppress_blank&quot;: true,
+    &quot;suppress_tokens&quot;: [
+      -1
+    ],
+    &quot;max_initial_timestamp&quot;: 1.0,
+    &quot;word_timestamps&quot;: true,
+    &quot;language_detection_threshold&quot;: 0.5,
+    &quot;language_detection_segments&quot;: 1,
+    &quot;vad&quot;: {
+      &quot;enabled&quot;: false,
+      &quot;threshold&quot;: 0.5,
+      &quot;min_speech_duration_ms&quot;: 100,
+      &quot;min_silence_duration_ms&quot;: 400,
+      &quot;speech_pad_ms&quot;: 200,
+      &quot;max_speech_duration_s&quot;: 30.0
+    },
+    &quot;denoise&quot;: {
+      &quot;enabled&quot;: false,
+      &quot;strength&quot;: 0.5,
+      &quot;floor&quot;: 0.3,
+      &quot;noise_percentile&quot;: 10.0
+    },
+    &quot;hotwords&quot;: null,
+    &quot;glossary_version&quot;: null,
+    &quot;redecode&quot;: false,
+    &quot;max_redecode_passes&quot;: 1,
+    &quot;redecode_logprob_threshold&quot;: -0.8,
+    &quot;episode_gap_sec&quot;: 2.0,
+    &quot;episode_max_sec&quot;: 30.0,
+    &quot;episode_max_tokens&quot;: 100,
+    &quot;classifier&quot;: &quot;rules_v1&quot;,
+    &quot;classifier_artifact&quot;: null
+  },
+  &quot;candidate&quot;: null,
+  &quot;measurements&quot;: {
+    &quot;baseline_lexical_wer&quot;: null,
+    &quot;candidate_lexical_wer&quot;: null,
+    &quot;relative_wer_reduction&quot;: null,
+    &quot;paired_cluster_ci&quot;: null,
+    &quot;critical_entity_f1&quot;: null,
+    &quot;clean_control_wer&quot;: null,
+    &quot;nlp_rules_f1&quot;: null,
+    &quot;nlp_trained_f1&quot;: null,
+    &quot;temporal_precision&quot;: null,
+    &quot;temporal_recall&quot;: null
+  },
+  &quot;admitted_primary_test_evidence&quot;: {
+    &quot;independent_groups&quot;: 0,
+    &quot;distinct_original_human_utterances&quot;: 0,
+    &quot;reference_words&quot;: 0,
+    &quot;human_verified_critical_entity_occurrences&quot;: 0,
+    &quot;clean_control_utterances&quot;: 0,
+    &quot;non_speech_control_minutes&quot;: 0
+  },
+  &quot;engineering_controls&quot;: {
+    &quot;source&quot;: &quot;LibriSpeech dev-clean CC-BY-4.0&quot;,
+    &quot;original_human_utterances&quot;: 2,
+    &quot;independent_groups&quot;: 1,
+    &quot;not_quality_evidence&quot;: true
+  },
+  &quot;optional_execution&quot;: {
+    &quot;gpu&quot;: &quot;PASS&quot;,
+    &quot;lora_dependencies&quot;: {
+      &quot;status&quot;: &quot;PASS&quot;,
+      &quot;executed&quot;: true,
+      &quot;gpu&quot;: &quot;NVIDIA GeForce RTX 5070 Ti&quot;,
+      &quot;torch&quot;: &quot;2.8.0+cu128&quot;,
+      &quot;transformers&quot;: &quot;4.57.1&quot;,
+      &quot;peft&quot;: &quot;0.17.1&quot;,
+      &quot;trainer_import&quot;: &quot;Seq2SeqTrainer&quot;,
+      &quot;finite_loss&quot;: true,
+      &quot;gradient_update&quot;: true,
+      &quot;adapter_save_merge&quot;: true,
+      &quot;fixture&quot;: &quot;random_tiny_model_and_tensors&quot;,
+      &quot;real_asr_adaptation_executed&quot;: false,
+      &quot;quality_evidence&quot;: false
+    },
+    &quot;lora_training&quot;: {
+      &quot;status&quot;: &quot;BLOCKED&quot;,
+      &quot;error&quot;: {
+        &quot;code&quot;: &quot;MISSING_TRAIN_DEV_DATA&quot;,
+        &quot;message&quot;: &quot;Supply permitted train/dev audio-transcript data&quot;,
+        &quot;retryable&quot;: false
+      },
+      &quot;executed&quot;: false
+    },
+    &quot;pyannote&quot;: {
+      &quot;status&quot;: &quot;BLOCKED&quot;,
+      &quot;reason&quot;: &quot;accepted_terms_and_local_weights_not_supplied&quot;,
+      &quot;der&quot;: null,
+      &quot;jer&quot;: null
+    }
+  },
+  &quot;code_hash&quot;: &quot;3ebe06c6b5e3d924e96623be9a6829076844c701b9692cb02eed154824ea749f&quot;,
+  &quot;scorer_hash&quot;: &quot;987cf5b3f4f9c189b5ea31b43fb2125185918646e1b1633f1b6aee824e6ad79b&quot;,
+  &quot;acceptance_sha256&quot;: &quot;32d35b1e80b64f38e6adcc9895515b37f224a9e51dcf5ff95389e1f9ecc45071&quot;,
+  &quot;evidence_files&quot;: {
+    &quot;final-tests.xml&quot;: &quot;5ac913bf4c4b058818dfbc1002caca9b2dc7cea119bf47876b50d1aacc804fc0&quot;,
+    &quot;final-static.log&quot;: &quot;137dbe7ba11e30423fef2c5077462765893deff350e8aec2bce6847321bc8934&quot;,
+    &quot;migration-tests.json&quot;: &quot;757b85379c2acc603aa11d70a9afffa8d6bbc96fa31fd767b1c93dee7f7c390f&quot;,
+    &quot;selftest-short-result.json&quot;: &quot;a784b4af7d24cb7ecfa37ca5e9e899bb8d789727b75de437fde73e6896fb2312&quot;,
+    &quot;selftest-long-result.json&quot;: &quot;f8a3b716f243743adabbed09291fa115841583b46be834e4a2b4ad81ed7dc12f&quot;,
+    &quot;offline-asr-smoke.json&quot;: &quot;99787d12dfe4a1550ac5cb16b743854673f35937cdf30ff40d63b9783c0a74e4&quot;,
+    &quot;real-asr-smoke-gpu-final.json&quot;: &quot;941dfb174ad92b9149144fc3f45dab51ce939f1d2312b39be208245d68e8ae2e&quot;,
+    &quot;compose-validation.json&quot;: &quot;ff8d38677abd73ca819a246c4b0eaed138dc4edbf58e24aefe971fd92f139d06&quot;,
+    &quot;cli-verification.json&quot;: &quot;22fecaed5cd1333e78bd237c5e899431a76a199f09484d0a90d2debfc7d08497&quot;,
+    &quot;data-workflow.json&quot;: &quot;332883a9ad7beb2fde87585ba63c6f88734a477e650f60d5697b10bdf5b2b632&quot;,
+    &quot;lora-runtime.json&quot;: &quot;b6caca361a6e3791ecfda201dbcdf50e449a4af3541d8b839c9bd79e4a216662&quot;,
+    &quot;asr-training-status.json&quot;: &quot;2a8d619d511221e292502f397c033e2528ca6182c0389cab3f785a07b2b880fa&quot;,
+    &quot;dev-search-status.json&quot;: &quot;5946cc0f117ebf921faf789edffd39f11aa70f606fbc7e1e53659970cd982c30&quot;,
+    &quot;baseline.lock.json&quot;: &quot;6505e7a5004b59a0aa8ce8e7ee435363b904cd38252e10f71ce30a9823d30581&quot;
+  },
+  &quot;limitations&quot;: [
+    &quot;No independent admitted cockpit train/dev/test or human event/entity labels&quot;,
+    &quot;No final test answers opened and no dev candidate selected&quot;,
+    &quot;RU mode on English control does not validate RU ASR; no cockpit language is validated&quot;,
+    &quot;LoRA adaptation and trained NLP product quality remain unverified&quot;,
+    &quot;Browser login page inspected; authenticated workflows covered by API integration tests&quot;
+  ]
+}
+```
+</pre>

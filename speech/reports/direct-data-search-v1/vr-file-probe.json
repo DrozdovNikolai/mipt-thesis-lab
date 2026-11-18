@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-09-14T12:57:08.203660+00:00",
+  "url": "https://raw.githubusercontent.com/wangyubo013-blip/CDE4301-VR-401-Final-Report/0c520edbcd345cb9005cc77c3345eedbfef7147b/faster_whisper/whisper_training/Sample01.parquet",
+  "http_status": 206,
+  "content_range": "bytes 0-3/1705625",
+  "prefix_hex": "50415231",
+  "parquet_magic_verified": true,
+  "bytes_read": 4,
+  "published_file_bytes": 1705625,
+  "published_git_blob": "9c13bb04d9e9c632f9edd67b3c1c65a72f02363d",
+  "full_download": false,
+  "audio_decoded": false,
+  "reuse_license_found": false,
+  "benchmark_admitted": false
+}

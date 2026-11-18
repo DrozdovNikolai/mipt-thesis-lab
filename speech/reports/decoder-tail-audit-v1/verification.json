@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "checks": {
+    "same_baseline_hypothesis": true,
+    "same_text_hypothesis": true,
+    "offline": true,
+    "exit_zero": true,
+    "same_float16": true
+  },
+  "trace_sha256": "af3e4571149e87a6f763e1c58a1e25d19fcd3177581ada66dd8a235aa101bab1"
+}

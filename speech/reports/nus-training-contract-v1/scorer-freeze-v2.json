@@ -1,0 +1,7 @@
+{
+  "frozen_at": "2026-09-14T16:23:08.804146+00:00",
+  "script_sha256": "386b33053513d93cda96857b74be5f2fac3114b7b9d0333b16f48bfe75a35a17",
+  "metrics_sha256": "03876483b34afa31243136a5a3f9b52b17d2a2c15e8435fccfbf23986344792a",
+  "reference_policy": "train only; unchanged lexical_normalizer_v1",
+  "amendment": "Read independently audited contract-retry outputs; no metric or ASR change. Frozen before new ASR."
+}

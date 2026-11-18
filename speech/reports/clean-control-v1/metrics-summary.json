@@ -1,0 +1,77 @@
+{
+  "source_report": "reports/clean-control-v1/comparison.json",
+  "source_sha256": "8298537a64b49e2ac81deb04d1fa1abc8a186f6fc9ee6d54d8b64923d2ffb492",
+  "omitted_payload_key": "rows",
+  "omitted_record_count": 100,
+  "note": "Aggregate values copied unchanged; no evaluation or gate rerun.",
+  "metrics": {
+    "status": "EXECUTED",
+    "clean_control_measured_guardrail": "PASS",
+    "scope": "general_English_diagnostic_A5_only",
+    "formal_release_evidence": false,
+    "asr_quality_gate": "NEEDS_MORE_DATA",
+    "nlp_quality_gate": "NEEDS_MORE_DATA",
+    "candidate_selected": false,
+    "release_promoted": false,
+    "cockpit_test_accessed": false,
+    "plan_sha256": "7f32520d0a6d6adf575e8e0a2ba72e0857284272fc5112dd2b0ea0b7597a9695",
+    "samples": 50,
+    "groups": 39,
+    "duration_sec": 441.33500000000004,
+    "runs": 100,
+    "runtime_failures": 0,
+    "scores": {
+      "parent": {
+        "S": 37,
+        "D": 2,
+        "I": 5,
+        "N": 1214,
+        "H": 1175,
+        "character_errors": 97,
+        "reference_characters": 6552,
+        "wer_lexical_corpus": 0.036243822075782535,
+        "cer": 0.014804639804639804
+      },
+      "adapted": {
+        "S": 37,
+        "D": 2,
+        "I": 5,
+        "N": 1214,
+        "H": 1175,
+        "character_errors": 97,
+        "reference_characters": 6552,
+        "wer_lexical_corpus": 0.036243822075782535,
+        "cer": 0.014804639804639804
+      }
+    },
+    "clean_wer_delta": 0.0,
+    "maximum_clean_wer_delta": 0.01,
+    "paired_cluster_bootstrap": {
+      "lower": 0.0,
+      "upper": 0.0,
+      "method": "paired_cluster_bootstrap",
+      "seed": 55,
+      "resamples": 2000,
+      "confidence_level": 0.95,
+      "independent_groups": 39,
+      "delta_definition": "candidate - baseline",
+      "valid_resamples": 2000,
+      "system_intervals": {
+        "baseline": {
+          "lower": 0.02344292628353604,
+          "upper": 0.050285237091163656
+        },
+        "candidate": {
+          "lower": 0.02344292628353604,
+          "upper": 0.050285237091163656
+        }
+      }
+    },
+    "limitations": [
+      "General English audiobook speech; no cockpit, RU or mixed-language claim.",
+      "Publisher-aligned references; no new independent human listening audit.",
+      "Frozen diagnostic cohort after adaptation; no tuning on these controls.",
+      "Whisper pretraining overlap is unknown; this is not a novel-data accuracy claim."
+    ]
+  }
+}

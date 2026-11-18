@@ -1,0 +1,2026 @@
+{
+  "cohorts": {
+    "acoustic_15_partial_human_dev": {
+      "samples": 5,
+      "scores": {
+        "v9-raw": {
+          "S": 18,
+          "D": 0,
+          "I": 12,
+          "N": 115,
+          "H": 97,
+          "character_errors": 105,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.2608695652173913,
+          "cer": 0.15578635014836795
+        },
+        "v9-gate": {
+          "S": 18,
+          "D": 0,
+          "I": 12,
+          "N": 115,
+          "H": 97,
+          "character_errors": 105,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.2608695652173913,
+          "cer": 0.15578635014836795
+        },
+        "guarded_v9-raw": {
+          "S": 18,
+          "D": 0,
+          "I": 12,
+          "N": 115,
+          "H": 97,
+          "character_errors": 105,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.2608695652173913,
+          "cer": 0.15578635014836795
+        },
+        "guarded_v9-gate": {
+          "S": 18,
+          "D": 0,
+          "I": 12,
+          "N": 115,
+          "H": 97,
+          "character_errors": 105,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.2608695652173913,
+          "cer": 0.15578635014836795
+        },
+        "v11_cached-raw": {
+          "S": 15,
+          "D": 0,
+          "I": 12,
+          "N": 115,
+          "H": 100,
+          "character_errors": 95,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.23478260869565218,
+          "cer": 0.14094955489614244
+        },
+        "v11_cached-gate": {
+          "S": 15,
+          "D": 0,
+          "I": 12,
+          "N": 115,
+          "H": 100,
+          "character_errors": 95,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.23478260869565218,
+          "cer": 0.14094955489614244
+        },
+        "fresh_base-raw": {
+          "S": 18,
+          "D": 0,
+          "I": 12,
+          "N": 115,
+          "H": 97,
+          "character_errors": 105,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.2608695652173913,
+          "cer": 0.15578635014836795
+        },
+        "fresh_base-gate": {
+          "S": 18,
+          "D": 0,
+          "I": 12,
+          "N": 115,
+          "H": 97,
+          "character_errors": 105,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.2608695652173913,
+          "cer": 0.15578635014836795
+        },
+        "v11_fresh-raw": {
+          "S": 15,
+          "D": 0,
+          "I": 12,
+          "N": 115,
+          "H": 100,
+          "character_errors": 95,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.23478260869565218,
+          "cer": 0.14094955489614244
+        },
+        "v11_fresh-gate": {
+          "S": 15,
+          "D": 0,
+          "I": 12,
+          "N": 115,
+          "H": 100,
+          "character_errors": 95,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.23478260869565218,
+          "cer": 0.14094955489614244
+        }
+      },
+      "vs_v9_CI": {
+        "lower": -0.043478260869565216,
+        "upper": -0.021739130434782608,
+        "method": "paired_cluster_bootstrap",
+        "seed": 55,
+        "resamples": 2000,
+        "confidence_level": 0.95,
+        "independent_groups": 3,
+        "delta_definition": "candidate - baseline",
+        "valid_resamples": 2000,
+        "system_intervals": {
+          "baseline": {
+            "lower": 0.21739130434782608,
+            "upper": 0.34782608695652173
+          },
+          "candidate": {
+            "lower": 0.1956521739130435,
+            "upper": 0.30434782608695654
+          }
+        }
+      },
+      "nonempty_fresh": 5
+    },
+    "acoustic_15_publisher_weak_dev": {
+      "samples": 35,
+      "scores": {
+        "v9-raw": {
+          "S": 188,
+          "D": 24,
+          "I": 64,
+          "N": 879,
+          "H": 667,
+          "character_errors": 851,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.31399317406143346,
+          "cer": 0.16540330417881438
+        },
+        "v9-gate": {
+          "S": 188,
+          "D": 24,
+          "I": 64,
+          "N": 879,
+          "H": 667,
+          "character_errors": 851,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.31399317406143346,
+          "cer": 0.16540330417881438
+        },
+        "guarded_v9-raw": {
+          "S": 188,
+          "D": 24,
+          "I": 64,
+          "N": 879,
+          "H": 667,
+          "character_errors": 851,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.31399317406143346,
+          "cer": 0.16540330417881438
+        },
+        "guarded_v9-gate": {
+          "S": 188,
+          "D": 24,
+          "I": 64,
+          "N": 879,
+          "H": 667,
+          "character_errors": 851,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.31399317406143346,
+          "cer": 0.16540330417881438
+        },
+        "v11_cached-raw": {
+          "S": 170,
+          "D": 25,
+          "I": 56,
+          "N": 879,
+          "H": 684,
+          "character_errors": 797,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.285551763367463,
+          "cer": 0.15490767735665695
+        },
+        "v11_cached-gate": {
+          "S": 170,
+          "D": 25,
+          "I": 56,
+          "N": 879,
+          "H": 684,
+          "character_errors": 797,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.285551763367463,
+          "cer": 0.15490767735665695
+        },
+        "fresh_base-raw": {
+          "S": 188,
+          "D": 24,
+          "I": 64,
+          "N": 879,
+          "H": 667,
+          "character_errors": 851,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.31399317406143346,
+          "cer": 0.16540330417881438
+        },
+        "fresh_base-gate": {
+          "S": 188,
+          "D": 24,
+          "I": 64,
+          "N": 879,
+          "H": 667,
+          "character_errors": 851,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.31399317406143346,
+          "cer": 0.16540330417881438
+        },
+        "v11_fresh-raw": {
+          "S": 170,
+          "D": 25,
+          "I": 56,
+          "N": 879,
+          "H": 684,
+          "character_errors": 797,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.285551763367463,
+          "cer": 0.15490767735665695
+        },
+        "v11_fresh-gate": {
+          "S": 170,
+          "D": 25,
+          "I": 56,
+          "N": 879,
+          "H": 684,
+          "character_errors": 797,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.285551763367463,
+          "cer": 0.15490767735665695
+        }
+      },
+      "vs_v9_CI": {
+        "lower": -0.04316546762589928,
+        "upper": -0.025675675675675677,
+        "method": "paired_cluster_bootstrap",
+        "seed": 55,
+        "resamples": 2000,
+        "confidence_level": 0.95,
+        "independent_groups": 2,
+        "delta_definition": "candidate - baseline",
+        "valid_resamples": 2000,
+        "system_intervals": {
+          "baseline": {
+            "lower": 0.2891891891891892,
+            "upper": 0.4460431654676259
+          },
+          "candidate": {
+            "lower": 0.2635135135135135,
+            "upper": 0.4028776978417266
+          }
+        }
+      },
+      "nonempty_fresh": 35
+    },
+    "acoustic_5_partial_human_dev": {
+      "samples": 5,
+      "scores": {
+        "v9-raw": {
+          "S": 37,
+          "D": 4,
+          "I": 15,
+          "N": 115,
+          "H": 74,
+          "character_errors": 190,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.48695652173913045,
+          "cer": 0.2818991097922849
+        },
+        "v9-gate": {
+          "S": 37,
+          "D": 4,
+          "I": 15,
+          "N": 115,
+          "H": 74,
+          "character_errors": 190,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.48695652173913045,
+          "cer": 0.2818991097922849
+        },
+        "guarded_v9-raw": {
+          "S": 37,
+          "D": 4,
+          "I": 15,
+          "N": 115,
+          "H": 74,
+          "character_errors": 190,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.48695652173913045,
+          "cer": 0.2818991097922849
+        },
+        "guarded_v9-gate": {
+          "S": 37,
+          "D": 4,
+          "I": 15,
+          "N": 115,
+          "H": 74,
+          "character_errors": 190,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.48695652173913045,
+          "cer": 0.2818991097922849
+        },
+        "v11_cached-raw": {
+          "S": 37,
+          "D": 4,
+          "I": 15,
+          "N": 115,
+          "H": 74,
+          "character_errors": 190,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.48695652173913045,
+          "cer": 0.2818991097922849
+        },
+        "v11_cached-gate": {
+          "S": 37,
+          "D": 4,
+          "I": 15,
+          "N": 115,
+          "H": 74,
+          "character_errors": 190,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.48695652173913045,
+          "cer": 0.2818991097922849
+        },
+        "fresh_base-raw": {
+          "S": 37,
+          "D": 4,
+          "I": 15,
+          "N": 115,
+          "H": 74,
+          "character_errors": 190,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.48695652173913045,
+          "cer": 0.2818991097922849
+        },
+        "fresh_base-gate": {
+          "S": 37,
+          "D": 4,
+          "I": 15,
+          "N": 115,
+          "H": 74,
+          "character_errors": 190,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.48695652173913045,
+          "cer": 0.2818991097922849
+        },
+        "v11_fresh-raw": {
+          "S": 37,
+          "D": 4,
+          "I": 15,
+          "N": 115,
+          "H": 74,
+          "character_errors": 190,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.48695652173913045,
+          "cer": 0.2818991097922849
+        },
+        "v11_fresh-gate": {
+          "S": 37,
+          "D": 4,
+          "I": 15,
+          "N": 115,
+          "H": 74,
+          "character_errors": 190,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.48695652173913045,
+          "cer": 0.2818991097922849
+        }
+      },
+      "vs_v9_CI": {
+        "lower": 0.0,
+        "upper": 0.0,
+        "method": "paired_cluster_bootstrap",
+        "seed": 55,
+        "resamples": 2000,
+        "confidence_level": 0.95,
+        "independent_groups": 3,
+        "delta_definition": "candidate - baseline",
+        "valid_resamples": 2000,
+        "system_intervals": {
+          "baseline": {
+            "lower": 0.3695652173913043,
+            "upper": 0.8260869565217391
+          },
+          "candidate": {
+            "lower": 0.3695652173913043,
+            "upper": 0.8260869565217391
+          }
+        }
+      },
+      "nonempty_fresh": 5
+    },
+    "acoustic_5_publisher_weak_dev": {
+      "samples": 35,
+      "scores": {
+        "v9-raw": {
+          "S": 347,
+          "D": 52,
+          "I": 55,
+          "N": 879,
+          "H": 480,
+          "character_errors": 1545,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.5164960182025028,
+          "cer": 0.30029154518950435
+        },
+        "v9-gate": {
+          "S": 347,
+          "D": 52,
+          "I": 55,
+          "N": 879,
+          "H": 480,
+          "character_errors": 1545,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.5164960182025028,
+          "cer": 0.30029154518950435
+        },
+        "guarded_v9-raw": {
+          "S": 347,
+          "D": 52,
+          "I": 55,
+          "N": 879,
+          "H": 480,
+          "character_errors": 1545,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.5164960182025028,
+          "cer": 0.30029154518950435
+        },
+        "guarded_v9-gate": {
+          "S": 347,
+          "D": 52,
+          "I": 55,
+          "N": 879,
+          "H": 480,
+          "character_errors": 1545,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.5164960182025028,
+          "cer": 0.30029154518950435
+        },
+        "v11_cached-raw": {
+          "S": 347,
+          "D": 52,
+          "I": 55,
+          "N": 879,
+          "H": 480,
+          "character_errors": 1545,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.5164960182025028,
+          "cer": 0.30029154518950435
+        },
+        "v11_cached-gate": {
+          "S": 347,
+          "D": 52,
+          "I": 55,
+          "N": 879,
+          "H": 480,
+          "character_errors": 1545,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.5164960182025028,
+          "cer": 0.30029154518950435
+        },
+        "fresh_base-raw": {
+          "S": 347,
+          "D": 52,
+          "I": 55,
+          "N": 879,
+          "H": 480,
+          "character_errors": 1545,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.5164960182025028,
+          "cer": 0.30029154518950435
+        },
+        "fresh_base-gate": {
+          "S": 347,
+          "D": 52,
+          "I": 55,
+          "N": 879,
+          "H": 480,
+          "character_errors": 1545,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.5164960182025028,
+          "cer": 0.30029154518950435
+        },
+        "v11_fresh-raw": {
+          "S": 347,
+          "D": 52,
+          "I": 55,
+          "N": 879,
+          "H": 480,
+          "character_errors": 1545,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.5164960182025028,
+          "cer": 0.30029154518950435
+        },
+        "v11_fresh-gate": {
+          "S": 347,
+          "D": 52,
+          "I": 55,
+          "N": 879,
+          "H": 480,
+          "character_errors": 1545,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.5164960182025028,
+          "cer": 0.30029154518950435
+        }
+      },
+      "vs_v9_CI": {
+        "lower": 0.0,
+        "upper": 0.0,
+        "method": "paired_cluster_bootstrap",
+        "seed": 55,
+        "resamples": 2000,
+        "confidence_level": 0.95,
+        "independent_groups": 2,
+        "delta_definition": "candidate - baseline",
+        "valid_resamples": 2000,
+        "system_intervals": {
+          "baseline": {
+            "lower": 0.48243243243243245,
+            "upper": 0.697841726618705
+          },
+          "candidate": {
+            "lower": 0.48243243243243245,
+            "upper": 0.697841726618705
+          }
+        }
+      },
+      "nonempty_fresh": 35
+    },
+    "bleriot_b_noise": {
+      "samples": 25,
+      "scores": {
+        "v9-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "v9-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "guarded_v9-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "guarded_v9-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "v11_cached-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "v11_cached-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "fresh_base-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "fresh_base-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "v11_fresh-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "v11_fresh-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        }
+      },
+      "vs_v9_CI": null,
+      "nonempty_fresh": 0
+    },
+    "general_clean": {
+      "samples": 50,
+      "scores": {
+        "v9-raw": {
+          "S": 37,
+          "D": 2,
+          "I": 5,
+          "N": 1214,
+          "H": 1175,
+          "character_errors": 95,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.036243822075782535,
+          "cer": 0.0144993894993895
+        },
+        "v9-gate": {
+          "S": 37,
+          "D": 2,
+          "I": 5,
+          "N": 1214,
+          "H": 1175,
+          "character_errors": 95,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.036243822075782535,
+          "cer": 0.0144993894993895
+        },
+        "guarded_v9-raw": {
+          "S": 37,
+          "D": 2,
+          "I": 5,
+          "N": 1214,
+          "H": 1175,
+          "character_errors": 95,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.036243822075782535,
+          "cer": 0.0144993894993895
+        },
+        "guarded_v9-gate": {
+          "S": 37,
+          "D": 2,
+          "I": 5,
+          "N": 1214,
+          "H": 1175,
+          "character_errors": 95,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.036243822075782535,
+          "cer": 0.0144993894993895
+        },
+        "v11_cached-raw": {
+          "S": 17,
+          "D": 0,
+          "I": 2,
+          "N": 1214,
+          "H": 1197,
+          "character_errors": 32,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.015650741350906095,
+          "cer": 0.004884004884004884
+        },
+        "v11_cached-gate": {
+          "S": 17,
+          "D": 0,
+          "I": 2,
+          "N": 1214,
+          "H": 1197,
+          "character_errors": 32,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.015650741350906095,
+          "cer": 0.004884004884004884
+        },
+        "fresh_base-raw": {
+          "S": 37,
+          "D": 2,
+          "I": 5,
+          "N": 1214,
+          "H": 1175,
+          "character_errors": 95,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.036243822075782535,
+          "cer": 0.0144993894993895
+        },
+        "fresh_base-gate": {
+          "S": 37,
+          "D": 2,
+          "I": 5,
+          "N": 1214,
+          "H": 1175,
+          "character_errors": 95,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.036243822075782535,
+          "cer": 0.0144993894993895
+        },
+        "v11_fresh-raw": {
+          "S": 17,
+          "D": 0,
+          "I": 2,
+          "N": 1214,
+          "H": 1197,
+          "character_errors": 32,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.015650741350906095,
+          "cer": 0.004884004884004884
+        },
+        "v11_fresh-gate": {
+          "S": 17,
+          "D": 0,
+          "I": 2,
+          "N": 1214,
+          "H": 1197,
+          "character_errors": 32,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.015650741350906095,
+          "cer": 0.004884004884004884
+        }
+      },
+      "vs_v9_CI": null,
+      "nonempty_fresh": 50
+    },
+    "general_ru": {
+      "samples": 50,
+      "scores": {
+        "v9-raw": {
+          "S": 70,
+          "D": 6,
+          "I": 7,
+          "N": 921,
+          "H": 845,
+          "character_errors": 155,
+          "reference_characters": 6406,
+          "wer_lexical_corpus": 0.09011943539630836,
+          "cer": 0.024196066187948798
+        },
+        "v9-gate": {
+          "S": 70,
+          "D": 6,
+          "I": 7,
+          "N": 921,
+          "H": 845,
+          "character_errors": 155,
+          "reference_characters": 6406,
+          "wer_lexical_corpus": 0.09011943539630836,
+          "cer": 0.024196066187948798
+        },
+        "guarded_v9-raw": {
+          "S": 70,
+          "D": 6,
+          "I": 7,
+          "N": 921,
+          "H": 845,
+          "character_errors": 155,
+          "reference_characters": 6406,
+          "wer_lexical_corpus": 0.09011943539630836,
+          "cer": 0.024196066187948798
+        },
+        "guarded_v9-gate": {
+          "S": 70,
+          "D": 6,
+          "I": 7,
+          "N": 921,
+          "H": 845,
+          "character_errors": 155,
+          "reference_characters": 6406,
+          "wer_lexical_corpus": 0.09011943539630836,
+          "cer": 0.024196066187948798
+        },
+        "v11_cached-raw": {
+          "S": 70,
+          "D": 6,
+          "I": 7,
+          "N": 921,
+          "H": 845,
+          "character_errors": 155,
+          "reference_characters": 6406,
+          "wer_lexical_corpus": 0.09011943539630836,
+          "cer": 0.024196066187948798
+        },
+        "v11_cached-gate": {
+          "S": 70,
+          "D": 6,
+          "I": 7,
+          "N": 921,
+          "H": 845,
+          "character_errors": 155,
+          "reference_characters": 6406,
+          "wer_lexical_corpus": 0.09011943539630836,
+          "cer": 0.024196066187948798
+        },
+        "fresh_base-raw": {
+          "S": 70,
+          "D": 6,
+          "I": 7,
+          "N": 921,
+          "H": 845,
+          "character_errors": 155,
+          "reference_characters": 6406,
+          "wer_lexical_corpus": 0.09011943539630836,
+          "cer": 0.024196066187948798
+        },
+        "fresh_base-gate": {
+          "S": 70,
+          "D": 6,
+          "I": 7,
+          "N": 921,
+          "H": 845,
+          "character_errors": 155,
+          "reference_characters": 6406,
+          "wer_lexical_corpus": 0.09011943539630836,
+          "cer": 0.024196066187948798
+        },
+        "v11_fresh-raw": {
+          "S": 70,
+          "D": 6,
+          "I": 7,
+          "N": 921,
+          "H": 845,
+          "character_errors": 155,
+          "reference_characters": 6406,
+          "wer_lexical_corpus": 0.09011943539630836,
+          "cer": 0.024196066187948798
+        },
+        "v11_fresh-gate": {
+          "S": 70,
+          "D": 6,
+          "I": 7,
+          "N": 921,
+          "H": 845,
+          "character_errors": 155,
+          "reference_characters": 6406,
+          "wer_lexical_corpus": 0.09011943539630836,
+          "cer": 0.024196066187948798
+        }
+      },
+      "vs_v9_CI": null,
+      "nonempty_fresh": 50
+    },
+    "noise_only": {
+      "samples": 15,
+      "scores": {
+        "v9-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "v9-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "guarded_v9-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "guarded_v9-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "v11_cached-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "v11_cached-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "fresh_base-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "fresh_base-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "v11_fresh-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "v11_fresh-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        }
+      },
+      "vs_v9_CI": null,
+      "nonempty_fresh": 0
+    },
+    "partial_human_dev": {
+      "samples": 5,
+      "scores": {
+        "v9-raw": {
+          "S": 8,
+          "D": 1,
+          "I": 6,
+          "N": 115,
+          "H": 106,
+          "character_errors": 50,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.13043478260869565,
+          "cer": 0.07418397626112759
+        },
+        "v9-gate": {
+          "S": 8,
+          "D": 1,
+          "I": 6,
+          "N": 115,
+          "H": 106,
+          "character_errors": 50,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.13043478260869565,
+          "cer": 0.07418397626112759
+        },
+        "guarded_v9-raw": {
+          "S": 8,
+          "D": 1,
+          "I": 6,
+          "N": 115,
+          "H": 106,
+          "character_errors": 50,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.13043478260869565,
+          "cer": 0.07418397626112759
+        },
+        "guarded_v9-gate": {
+          "S": 8,
+          "D": 1,
+          "I": 6,
+          "N": 115,
+          "H": 106,
+          "character_errors": 50,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.13043478260869565,
+          "cer": 0.07418397626112759
+        },
+        "v11_cached-raw": {
+          "S": 7,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 107,
+          "character_errors": 41,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.11304347826086956,
+          "cer": 0.06083086053412463
+        },
+        "v11_cached-gate": {
+          "S": 7,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 107,
+          "character_errors": 41,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.11304347826086956,
+          "cer": 0.06083086053412463
+        },
+        "fresh_base-raw": {
+          "S": 8,
+          "D": 1,
+          "I": 6,
+          "N": 115,
+          "H": 106,
+          "character_errors": 50,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.13043478260869565,
+          "cer": 0.07418397626112759
+        },
+        "fresh_base-gate": {
+          "S": 8,
+          "D": 1,
+          "I": 6,
+          "N": 115,
+          "H": 106,
+          "character_errors": 50,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.13043478260869565,
+          "cer": 0.07418397626112759
+        },
+        "v11_fresh-raw": {
+          "S": 7,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 107,
+          "character_errors": 41,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.11304347826086956,
+          "cer": 0.06083086053412463
+        },
+        "v11_fresh-gate": {
+          "S": 7,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 107,
+          "character_errors": 41,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.11304347826086956,
+          "cer": 0.06083086053412463
+        }
+      },
+      "vs_v9_CI": {
+        "lower": -0.043478260869565216,
+        "upper": 0.0,
+        "method": "paired_cluster_bootstrap",
+        "seed": 55,
+        "resamples": 2000,
+        "confidence_level": 0.95,
+        "independent_groups": 3,
+        "delta_definition": "candidate - baseline",
+        "valid_resamples": 2000,
+        "system_intervals": {
+          "baseline": {
+            "lower": 0.08695652173913043,
+            "upper": 0.30434782608695654
+          },
+          "candidate": {
+            "lower": 0.06521739130434782,
+            "upper": 0.2608695652173913
+          }
+        }
+      },
+      "nonempty_fresh": 5
+    },
+    "publisher_weak_dev": {
+      "samples": 35,
+      "scores": {
+        "v9-raw": {
+          "S": 130,
+          "D": 15,
+          "I": 48,
+          "N": 879,
+          "H": 734,
+          "character_errors": 633,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.21956769055745165,
+          "cer": 0.12303206997084548
+        },
+        "v9-gate": {
+          "S": 130,
+          "D": 15,
+          "I": 48,
+          "N": 879,
+          "H": 734,
+          "character_errors": 633,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.21956769055745165,
+          "cer": 0.12303206997084548
+        },
+        "guarded_v9-raw": {
+          "S": 130,
+          "D": 15,
+          "I": 48,
+          "N": 879,
+          "H": 734,
+          "character_errors": 633,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.21956769055745165,
+          "cer": 0.12303206997084548
+        },
+        "guarded_v9-gate": {
+          "S": 130,
+          "D": 15,
+          "I": 48,
+          "N": 879,
+          "H": 734,
+          "character_errors": 633,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.21956769055745165,
+          "cer": 0.12303206997084548
+        },
+        "v11_cached-raw": {
+          "S": 125,
+          "D": 13,
+          "I": 51,
+          "N": 879,
+          "H": 741,
+          "character_errors": 621,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.2150170648464164,
+          "cer": 0.1206997084548105
+        },
+        "v11_cached-gate": {
+          "S": 125,
+          "D": 13,
+          "I": 51,
+          "N": 879,
+          "H": 741,
+          "character_errors": 621,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.2150170648464164,
+          "cer": 0.1206997084548105
+        },
+        "fresh_base-raw": {
+          "S": 130,
+          "D": 15,
+          "I": 48,
+          "N": 879,
+          "H": 734,
+          "character_errors": 633,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.21956769055745165,
+          "cer": 0.12303206997084548
+        },
+        "fresh_base-gate": {
+          "S": 130,
+          "D": 15,
+          "I": 48,
+          "N": 879,
+          "H": 734,
+          "character_errors": 633,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.21956769055745165,
+          "cer": 0.12303206997084548
+        },
+        "v11_fresh-raw": {
+          "S": 125,
+          "D": 13,
+          "I": 51,
+          "N": 879,
+          "H": 741,
+          "character_errors": 621,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.2150170648464164,
+          "cer": 0.1206997084548105
+        },
+        "v11_fresh-gate": {
+          "S": 125,
+          "D": 13,
+          "I": 51,
+          "N": 879,
+          "H": 741,
+          "character_errors": 621,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.2150170648464164,
+          "cer": 0.1206997084548105
+        }
+      },
+      "vs_v9_CI": {
+        "lower": -0.014388489208633094,
+        "upper": -0.002702702702702703,
+        "method": "paired_cluster_bootstrap",
+        "seed": 55,
+        "resamples": 2000,
+        "confidence_level": 0.95,
+        "independent_groups": 2,
+        "delta_definition": "candidate - baseline",
+        "valid_resamples": 2000,
+        "system_intervals": {
+          "baseline": {
+            "lower": 0.19864864864864865,
+            "upper": 0.33093525179856115
+          },
+          "candidate": {
+            "lower": 0.19594594594594594,
+            "upper": 0.31654676258992803
+          }
+        }
+      },
+      "nonempty_fresh": 35
+    },
+    "quiet_general_clean": {
+      "samples": 9,
+      "scores": {
+        "v9-raw": {
+          "S": 1,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 68,
+          "character_errors": 4,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.014492753623188406,
+          "cer": 0.011627906976744186
+        },
+        "v9-gate": {
+          "S": 1,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 68,
+          "character_errors": 4,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.014492753623188406,
+          "cer": 0.011627906976744186
+        },
+        "guarded_v9-raw": {
+          "S": 1,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 68,
+          "character_errors": 4,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.014492753623188406,
+          "cer": 0.011627906976744186
+        },
+        "guarded_v9-gate": {
+          "S": 1,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 68,
+          "character_errors": 4,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.014492753623188406,
+          "cer": 0.011627906976744186
+        },
+        "v11_cached-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 69,
+          "character_errors": 0,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.0,
+          "cer": 0.0
+        },
+        "v11_cached-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 69,
+          "character_errors": 0,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.0,
+          "cer": 0.0
+        },
+        "fresh_base-raw": {
+          "S": 1,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 68,
+          "character_errors": 4,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.014492753623188406,
+          "cer": 0.011627906976744186
+        },
+        "fresh_base-gate": {
+          "S": 1,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 68,
+          "character_errors": 4,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.014492753623188406,
+          "cer": 0.011627906976744186
+        },
+        "v11_fresh-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 69,
+          "character_errors": 0,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.0,
+          "cer": 0.0
+        },
+        "v11_fresh-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 69,
+          "character_errors": 0,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.0,
+          "cer": 0.0
+        }
+      },
+      "vs_v9_CI": null,
+      "nonempty_fresh": 9
+    },
+    "quiet_partial_human_dev": {
+      "samples": 5,
+      "scores": {
+        "v9-raw": {
+          "S": 10,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 104,
+          "character_errors": 52,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.1391304347826087,
+          "cer": 0.0771513353115727
+        },
+        "v9-gate": {
+          "S": 10,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 104,
+          "character_errors": 52,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.1391304347826087,
+          "cer": 0.0771513353115727
+        },
+        "guarded_v9-raw": {
+          "S": 10,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 104,
+          "character_errors": 52,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.1391304347826087,
+          "cer": 0.0771513353115727
+        },
+        "guarded_v9-gate": {
+          "S": 10,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 104,
+          "character_errors": 52,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.1391304347826087,
+          "cer": 0.0771513353115727
+        },
+        "v11_cached-raw": {
+          "S": 8,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 106,
+          "character_errors": 43,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.12173913043478261,
+          "cer": 0.06379821958456973
+        },
+        "v11_cached-gate": {
+          "S": 8,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 106,
+          "character_errors": 43,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.12173913043478261,
+          "cer": 0.06379821958456973
+        },
+        "fresh_base-raw": {
+          "S": 10,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 104,
+          "character_errors": 52,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.1391304347826087,
+          "cer": 0.0771513353115727
+        },
+        "fresh_base-gate": {
+          "S": 10,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 104,
+          "character_errors": 52,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.1391304347826087,
+          "cer": 0.0771513353115727
+        },
+        "v11_fresh-raw": {
+          "S": 8,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 106,
+          "character_errors": 43,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.12173913043478261,
+          "cer": 0.06379821958456973
+        },
+        "v11_fresh-gate": {
+          "S": 8,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 106,
+          "character_errors": 43,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.12173913043478261,
+          "cer": 0.06379821958456973
+        }
+      },
+      "vs_v9_CI": {
+        "lower": -0.043478260869565216,
+        "upper": 0.0,
+        "method": "paired_cluster_bootstrap",
+        "seed": 55,
+        "resamples": 2000,
+        "confidence_level": 0.95,
+        "independent_groups": 3,
+        "delta_definition": "candidate - baseline",
+        "valid_resamples": 2000,
+        "system_intervals": {
+          "baseline": {
+            "lower": 0.08695652173913043,
+            "upper": 0.30434782608695654
+          },
+          "candidate": {
+            "lower": 0.06521739130434782,
+            "upper": 0.2608695652173913
+          }
+        }
+      },
+      "nonempty_fresh": 5
+    },
+    "synthetic_nonspeech": {
+      "samples": 20,
+      "scores": {
+        "v9-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "v9-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "guarded_v9-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "guarded_v9-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "v11_cached-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "v11_cached-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "fresh_base-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "fresh_base-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "v11_fresh-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "v11_fresh-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        }
+      },
+      "vs_v9_CI": null,
+      "nonempty_fresh": 0
+    },
+    "train_hard_fit": {
+      "samples": 25,
+      "scores": {
+        "v9-raw": {
+          "S": 25,
+          "D": 2,
+          "I": 8,
+          "N": 363,
+          "H": 336,
+          "character_errors": 79,
+          "reference_characters": 2214,
+          "wer_lexical_corpus": 0.09641873278236915,
+          "cer": 0.03568202348690153
+        },
+        "v9-gate": {
+          "S": 25,
+          "D": 2,
+          "I": 8,
+          "N": 363,
+          "H": 336,
+          "character_errors": 79,
+          "reference_characters": 2214,
+          "wer_lexical_corpus": 0.09641873278236915,
+          "cer": 0.03568202348690153
+        },
+        "guarded_v9-raw": {
+          "S": 25,
+          "D": 2,
+          "I": 8,
+          "N": 363,
+          "H": 336,
+          "character_errors": 79,
+          "reference_characters": 2214,
+          "wer_lexical_corpus": 0.09641873278236915,
+          "cer": 0.03568202348690153
+        },
+        "guarded_v9-gate": {
+          "S": 25,
+          "D": 2,
+          "I": 8,
+          "N": 363,
+          "H": 336,
+          "character_errors": 79,
+          "reference_characters": 2214,
+          "wer_lexical_corpus": 0.09641873278236915,
+          "cer": 0.03568202348690153
+        },
+        "v11_cached-raw": {
+          "S": 21,
+          "D": 1,
+          "I": 7,
+          "N": 363,
+          "H": 341,
+          "character_errors": 66,
+          "reference_characters": 2214,
+          "wer_lexical_corpus": 0.07988980716253444,
+          "cer": 0.02981029810298103
+        },
+        "v11_cached-gate": {
+          "S": 21,
+          "D": 1,
+          "I": 7,
+          "N": 363,
+          "H": 341,
+          "character_errors": 66,
+          "reference_characters": 2214,
+          "wer_lexical_corpus": 0.07988980716253444,
+          "cer": 0.02981029810298103
+        },
+        "fresh_base-raw": {
+          "S": 25,
+          "D": 2,
+          "I": 8,
+          "N": 363,
+          "H": 336,
+          "character_errors": 79,
+          "reference_characters": 2214,
+          "wer_lexical_corpus": 0.09641873278236915,
+          "cer": 0.03568202348690153
+        },
+        "fresh_base-gate": {
+          "S": 25,
+          "D": 2,
+          "I": 8,
+          "N": 363,
+          "H": 336,
+          "character_errors": 79,
+          "reference_characters": 2214,
+          "wer_lexical_corpus": 0.09641873278236915,
+          "cer": 0.03568202348690153
+        },
+        "v11_fresh-raw": {
+          "S": 21,
+          "D": 1,
+          "I": 7,
+          "N": 363,
+          "H": 341,
+          "character_errors": 66,
+          "reference_characters": 2214,
+          "wer_lexical_corpus": 0.07988980716253444,
+          "cer": 0.02981029810298103
+        },
+        "v11_fresh-gate": {
+          "S": 21,
+          "D": 1,
+          "I": 7,
+          "N": 363,
+          "H": 341,
+          "character_errors": 66,
+          "reference_characters": 2214,
+          "wer_lexical_corpus": 0.07988980716253444,
+          "cer": 0.02981029810298103
+        }
+      },
+      "vs_v9_CI": null,
+      "nonempty_fresh": 25
+    },
+    "train_noisy_fit": {
+      "samples": 16,
+      "scores": {
+        "v9-raw": {
+          "S": 93,
+          "D": 5,
+          "I": 17,
+          "N": 127,
+          "H": 29,
+          "character_errors": 427,
+          "reference_characters": 793,
+          "wer_lexical_corpus": 0.905511811023622,
+          "cer": 0.5384615384615384
+        },
+        "v9-gate": {
+          "S": 36,
+          "D": 76,
+          "I": 8,
+          "N": 127,
+          "H": 15,
+          "character_errors": 632,
+          "reference_characters": 793,
+          "wer_lexical_corpus": 0.9448818897637795,
+          "cer": 0.7969735182849937
+        },
+        "guarded_v9-raw": {
+          "S": 93,
+          "D": 5,
+          "I": 17,
+          "N": 127,
+          "H": 29,
+          "character_errors": 427,
+          "reference_characters": 793,
+          "wer_lexical_corpus": 0.905511811023622,
+          "cer": 0.5384615384615384
+        },
+        "guarded_v9-gate": {
+          "S": 36,
+          "D": 76,
+          "I": 8,
+          "N": 127,
+          "H": 15,
+          "character_errors": 632,
+          "reference_characters": 793,
+          "wer_lexical_corpus": 0.9448818897637795,
+          "cer": 0.7969735182849937
+        },
+        "v11_cached-raw": {
+          "S": 93,
+          "D": 5,
+          "I": 17,
+          "N": 127,
+          "H": 29,
+          "character_errors": 427,
+          "reference_characters": 793,
+          "wer_lexical_corpus": 0.905511811023622,
+          "cer": 0.5384615384615384
+        },
+        "v11_cached-gate": {
+          "S": 36,
+          "D": 76,
+          "I": 8,
+          "N": 127,
+          "H": 15,
+          "character_errors": 632,
+          "reference_characters": 793,
+          "wer_lexical_corpus": 0.9448818897637795,
+          "cer": 0.7969735182849937
+        },
+        "fresh_base-raw": {
+          "S": 88,
+          "D": 9,
+          "I": 18,
+          "N": 127,
+          "H": 30,
+          "character_errors": 434,
+          "reference_characters": 793,
+          "wer_lexical_corpus": 0.905511811023622,
+          "cer": 0.5472887767969735
+        },
+        "fresh_base-gate": {
+          "S": 35,
+          "D": 76,
+          "I": 8,
+          "N": 127,
+          "H": 16,
+          "character_errors": 630,
+          "reference_characters": 793,
+          "wer_lexical_corpus": 0.937007874015748,
+          "cer": 0.7944514501891551
+        },
+        "v11_fresh-raw": {
+          "S": 88,
+          "D": 9,
+          "I": 18,
+          "N": 127,
+          "H": 30,
+          "character_errors": 434,
+          "reference_characters": 793,
+          "wer_lexical_corpus": 0.905511811023622,
+          "cer": 0.5472887767969735
+        },
+        "v11_fresh-gate": {
+          "S": 35,
+          "D": 76,
+          "I": 8,
+          "N": 127,
+          "H": 16,
+          "character_errors": 630,
+          "reference_characters": 793,
+          "wer_lexical_corpus": 0.937007874015748,
+          "cer": 0.7944514501891551
+        }
+      },
+      "vs_v9_CI": null,
+      "nonempty_fresh": 15
+    },
+    "train_retained_fit": {
+      "samples": 206,
+      "scores": {
+        "v9-raw": {
+          "S": 80,
+          "D": 21,
+          "I": 19,
+          "N": 2212,
+          "H": 2111,
+          "character_errors": 240,
+          "reference_characters": 13326,
+          "wer_lexical_corpus": 0.054249547920433995,
+          "cer": 0.018009905447996397
+        },
+        "v9-gate": {
+          "S": 80,
+          "D": 21,
+          "I": 19,
+          "N": 2212,
+          "H": 2111,
+          "character_errors": 240,
+          "reference_characters": 13326,
+          "wer_lexical_corpus": 0.054249547920433995,
+          "cer": 0.018009905447996397
+        },
+        "guarded_v9-raw": {
+          "S": 80,
+          "D": 16,
+          "I": 19,
+          "N": 2212,
+          "H": 2116,
+          "character_errors": 209,
+          "reference_characters": 13326,
+          "wer_lexical_corpus": 0.051989150090415916,
+          "cer": 0.015683625994296863
+        },
+        "guarded_v9-gate": {
+          "S": 80,
+          "D": 16,
+          "I": 19,
+          "N": 2212,
+          "H": 2116,
+          "character_errors": 209,
+          "reference_characters": 13326,
+          "wer_lexical_corpus": 0.051989150090415916,
+          "cer": 0.015683625994296863
+        },
+        "v11_cached-raw": {
+          "S": 87,
+          "D": 11,
+          "I": 28,
+          "N": 2212,
+          "H": 2114,
+          "character_errors": 327,
+          "reference_characters": 13326,
+          "wer_lexical_corpus": 0.056962025316455694,
+          "cer": 0.024538496172895094
+        },
+        "v11_cached-gate": {
+          "S": 87,
+          "D": 11,
+          "I": 28,
+          "N": 2212,
+          "H": 2114,
+          "character_errors": 327,
+          "reference_characters": 13326,
+          "wer_lexical_corpus": 0.056962025316455694,
+          "cer": 0.024538496172895094
+        },
+        "fresh_base-raw": {
+          "S": 80,
+          "D": 16,
+          "I": 19,
+          "N": 2212,
+          "H": 2116,
+          "character_errors": 209,
+          "reference_characters": 13326,
+          "wer_lexical_corpus": 0.051989150090415916,
+          "cer": 0.015683625994296863
+        },
+        "fresh_base-gate": {
+          "S": 80,
+          "D": 16,
+          "I": 19,
+          "N": 2212,
+          "H": 2116,
+          "character_errors": 209,
+          "reference_characters": 13326,
+          "wer_lexical_corpus": 0.051989150090415916,
+          "cer": 0.015683625994296863
+        },
+        "v11_fresh-raw": {
+          "S": 87,
+          "D": 11,
+          "I": 27,
+          "N": 2212,
+          "H": 2114,
+          "character_errors": 325,
+          "reference_characters": 13326,
+          "wer_lexical_corpus": 0.05650994575045208,
+          "cer": 0.024388413627495123
+        },
+        "v11_fresh-gate": {
+          "S": 87,
+          "D": 11,
+          "I": 27,
+          "N": 2212,
+          "H": 2114,
+          "character_errors": 325,
+          "reference_characters": 13326,
+          "wer_lexical_corpus": 0.05650994575045208,
+          "cer": 0.024388413627495123
+        }
+      },
+      "vs_v9_CI": null,
+      "nonempty_fresh": 206
+    }
+  },
+  "checks": {
+    "cockpit_preserved_vs_v9": true,
+    "cockpit_improved": true,
+    "EN_control": true,
+    "RU_control": true,
+    "nonspeech_empty": true
+  },
+  "diagnostic_pass": true,
+  "independent_quality_acceptance": false,
+  "plan_sha256": "6e9ff1f0c526a1cd4f3419923c652ae88b951cbe8c8465499ddb9ae35852b05a"
+}

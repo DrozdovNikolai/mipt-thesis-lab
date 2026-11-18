@@ -1,0 +1,45 @@
+{
+  "implementation": "implemented",
+  "GPU_diagnostics": "executed",
+  "CPU_smokes": "executed",
+  "artifact_verification": "verified",
+  "new_GPU_predictions": 2808,
+  "new_CPU_predictions": 6,
+  "quality_fix": "FAIL",
+  "independent_quality": "NEEDS_MORE_DATA",
+  "release_promoted": false,
+  "new_training_steps": 0,
+  "test_accessed": false,
+  "component_gates": {
+    "encoder": {
+      "human_dev_point": "FAIL",
+      "clean_EN": "PASS",
+      "clean_RU": "PASS",
+      "noise": "FAIL",
+      "runtime": "PASS",
+      "statistical_confirmation": "INCONCLUSIVE",
+      "independent_ASR": "NEEDS_MORE_DATA",
+      "critical_entities": "NEEDS_MORE_DATA",
+      "release": "FAIL"
+    },
+    "decoder": {
+      "human_dev_point": "FAIL",
+      "clean_EN": "PASS",
+      "clean_RU": "PASS",
+      "noise": "FAIL",
+      "runtime": "PASS",
+      "statistical_confirmation": "INCONCLUSIVE",
+      "independent_ASR": "NEEDS_MORE_DATA",
+      "critical_entities": "NEEDS_MORE_DATA",
+      "release": "FAIL"
+    }
+  },
+  "runtime_selection": {
+    "model": "small",
+    "device": "cpu",
+    "compute_type": "int8",
+    "deployment_candidate": "baseline",
+    "quality_gate_status": "NOT_RUN",
+    "validated_scope": []
+  }
+}

@@ -1,0 +1,3163 @@
+[
+  {
+    "id": "3a71374a4a37e0330562a3cc84df8631",
+    "source": "bleriot-a:BEA_checklists_sp001",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "2 on external power as required",
+        "words": 6,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "b8150e8838d326f361c7d9f6efcb6ca2",
+    "source": "bleriot-a:BEA_checklists_sp001",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "state_or_negation_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "on flight director on emergency lights",
+        "words": 6,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "64128bbae09b3e9e9c448b6ffb317fa3",
+    "source": "bleriot-a:BEA_checklists_sp001",
+    "whole_clip_reasons": [
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "signs on no ped signs off antiice off",
+        "words": 8,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "2757e1585d8fe672a29971e04f29d476",
+    "source": "bleriot-a:BEA_checklists_sp001",
+    "whole_clip_reasons": [
+      "asr_disagreement"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "on engine generators on",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "7b0cd201dad0c9d83dddd6a9fdff8b81",
+    "source": "bleriot-a:BEA_checklists_sp001",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "on parking brake set",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "51422d47468cf172027723bcdbdd6e09",
+    "source": "bleriot-a:BEA_checklists_sp001",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "engine antiice as required wing antiice as required",
+        "words": 8,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "a52edfd259b459aa97dc6e1c7dd4639c",
+    "source": "bleriot-a:BEA_checklists_sp001",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "information received altimeters set",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "3a631fbc886c294dde5c3f05b48780f4",
+    "source": "bleriot-a:BEA_checklists_sp001",
+    "whole_clip_reasons": [
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "antiice as required apu start",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json",
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "c7dbc8967d541997e52801d7eb843a10",
+    "source": "bleriot-a:BEA_checklists_sp001",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "gen on check volts",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "f5407f1817f49261abddd03411457f03",
+    "source": "bleriot-a:BEA_checklists_sp001",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "lights test performed oxygen",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "89178c5b186d50d10e93bdf890d36cae",
+    "source": "bleriot-a:BEA_checklists_sp001",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "on position lights steady",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      },
+      {
+        "text": "exit lights guard closed",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "fcac38ef69c7dc5b892055eb7375b378",
+    "source": "bleriot-a:BEA_checklists_sp001",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support",
+      "small_low_score",
+      "medium_low_score"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "passenger signs on packs",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "c1cd97dfa6bf26e77d74560594c4f240",
+    "source": "bleriot-a:BEA_checklists_sp001",
+    "whole_clip_reasons": [
+      "insufficient_publisher_support",
+      "critical_token_not_supported_by_publisher"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "engine apu bleed on",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "bfa76f8e9afea3f7f389965ca02f5909",
+    "source": "bleriot-a:BEA_checklists_sp001",
+    "whole_clip_reasons": [
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "off engine start switches",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "5e4133ee5d3a3b1190c304aece519c76",
+    "source": "bleriot-a:BEA_checklists_sp001",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "off center fuel pumps as required",
+        "words": 6,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "9bcdf5dd9234c589d18e64d656c4c703",
+    "source": "bleriot-a:BEA_checklists_sp001",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "go around altitude set runway",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      },
+      {
+        "text": "down autopilot as required",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json",
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "2cca185e22c9f65d7e187e4b576b472e",
+    "source": "bleriot-a:BEA_checklists_sp001",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "checklist thrust reverse engage autopilot off",
+        "words": 6,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "1b48a2049597d7c1d6dd7b5273006df3",
+    "source": "bleriot-a:BEA_checklists_sp001",
+    "whole_clip_reasons": [
+      "asr_disagreement"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "landing lights off position lights steady taxi lights on",
+        "words": 9,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "9301babf443cd10b405d97b2814f066e",
+    "source": "bleriot-a:BEA_checklists_sp001",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "state_or_negation_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "on taxi lights off",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "ed087beb7449e829cd1a997b6e85e909",
+    "source": "bleriot-a:BEA_checklists_sp001",
+    "whole_clip_reasons": [
+      "state_or_negation_disagreement"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "ground power establish doors open securing aircraft",
+        "words": 7,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "fee5d32d5873f2a233030965af595dc4",
+    "source": "bleriot-a:BEA_checklists_sp004",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "state_or_negation_disagreement",
+      "insufficient_publisher_support",
+      "critical_token_not_supported_by_publisher"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "on flight director on emergency lights",
+        "words": 6,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      },
+      {
+        "text": "signs off antiice off",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "2729187f84050ec452a6adfd19c5d20a",
+    "source": "bleriot-a:BEA_checklists_sp004",
+    "whole_clip_reasons": [
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "signs on external power off",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "5523ebef284cb41c5531168725953728",
+    "source": "bleriot-a:BEA_checklists_sp004",
+    "whole_clip_reasons": [
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "idle engine area clear engine mode selector",
+        "words": 7,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "f5224cf911bec7c17b2af02111ba4a6f",
+    "source": "bleriot-a:BEA_checklists_sp004",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "state_or_negation_disagreement",
+      "insufficient_publisher_support",
+      "critical_token_not_supported_by_publisher"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "engine mode selector norm",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "00976c379db40b4991765e06e54aaa7d",
+    "source": "bleriot-a:BEA_checklists_sp004",
+    "whole_clip_reasons": [
+      "state_or_negation_disagreement",
+      "insufficient_publisher_support",
+      "critical_token_not_supported_by_publisher"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "idle braking test check autobrake max fcu check",
+        "words": 8,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "a9414336d9e48f4f079149aee255b1ac",
+    "source": "bleriot-a:BEA_checklists_sp004",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "state_or_negation_disagreement",
+      "insufficient_publisher_support",
+      "critical_token_not_supported_by_publisher"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "flaps up gear up nose",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "2d5fa0e19bff49600f136f614ed1a94d",
+    "source": "bleriot-a:BEA_checklists_sp004",
+    "whole_clip_reasons": [
+      "asr_disagreement"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "flight progress check weather check",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "7dea007b0a0dfb6acd573a4eda2d4b1a",
+    "source": "bleriot-a:BEA_checklists_sp004",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "state_or_negation_disagreement",
+      "insufficient_publisher_support",
+      "critical_token_not_supported_by_publisher"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "lights check on taxi lights on ground spoilers",
+        "words": 8,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      },
+      {
+        "text": "set flaps set 1 speed",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "f72e7233180d5833b7fcee9425e25278",
+    "source": "bleriot-a:BEA_checklists_sp004",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "numeric_disagreement",
+      "critical_token_not_supported_by_publisher"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "set flaps 2 speed managed",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      },
+      {
+        "text": "gear 3 green set flaps 3",
+        "words": 6,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "782636f093ac9ff52793d75aa19a5cc5",
+    "source": "bleriot-a:BEA_checklists_sp004",
+    "whole_clip_reasons": [
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "retract engine mode selector norm landing lights off strobe lights off",
+        "words": 11,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      },
+      {
+        "text": "as required apu start",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json",
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "417923a52b62e391acfcbf8c37b3677d",
+    "source": "bleriot-a:BEA_checklists_sp004",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support",
+      "critical_token_not_supported_by_publisher"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "levers idle engine master",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "2c548aa7386c928782cf11d079a1116e",
+    "source": "bleriot-a:BEA_checklists_sp004",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "off avionics off no smoking off",
+        "words": 6,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      },
+      {
+        "text": "as required batteries as required",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "671309a4a4054465d321683ad32b5ef0",
+    "source": "bleriot-a:BEA_checklists_sp004",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "as required minimums ref",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      },
+      {
+        "text": "ref in or hpa",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "7585bb0ba79fc77c980cb408dad52b99",
+    "source": "bleriot-a:BEA_checklists_sp004",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "state_or_negation_disagreement"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "center fuel pumps as required",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      },
+      {
+        "text": "as required flight instruments check",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "81b02ea88b1c7a9c7c11dfe0998a76db",
+    "source": "bleriot-a:BEA_checklists_sp004",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "tfc push on clock",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      },
+      {
+        "text": "positive rate of climb gear up autobrake off engine start switches",
+        "words": 11,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "d2e9466c4383d174f112dda48722af3c",
+    "source": "bleriot-a:BEA_checklists_sp004",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support",
+      "critical_token_not_supported_by_publisher"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "airport info check altimeter check",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "ea7e69d00119c5fc94570897d073e175",
+    "source": "bleriot-a:BEA_checklists_sp004",
+    "whole_clip_reasons": [
+      "numeric_disagreement",
+      "insufficient_publisher_support",
+      "critical_token_not_supported_by_publisher"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "as required landing altitude check recall check radio alt",
+        "words": 9,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "ef05e9290470a20c7b43d7022f973fda",
+    "source": "bleriot-a:BEA_checklists_sp008",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "landing lights on strobe",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      },
+      {
+        "text": "on taxi lights off transponder",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "b71e38dd573799dd18a9f88d290993d1",
+    "source": "bleriot-a:BEA_checklists_sp008",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "positive rate of climb gear up",
+        "words": 6,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "81ef5d9fd56aaa751d232e789e098350",
+    "source": "bleriot-a:BEA_checklists_sp008",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support",
+      "critical_token_not_supported_by_publisher"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "landing lights off fasten seat belts off",
+        "words": 7,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "b18fcd228b0bc3a7a28d75ce52eff926",
+    "source": "bleriot-a:BEA_checklists_sp008",
+    "whole_clip_reasons": [
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "airport info check altimeter check",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "e2c611721140c4d028dbd597a2258dc0",
+    "source": "bleriot-a:BEA_checklists_sp008",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "set reset mcp altitude check",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "7f6e7b8375f58f4c08d0ce3125f9800a",
+    "source": "bleriot-a:BEA_checklists_sp008",
+    "whole_clip_reasons": [
+      "state_or_negation_disagreement"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "landing lights off position lights steady taxi lights on",
+        "words": 9,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "3230451dc2015da1d0eb7b637333120d",
+    "source": "bleriot-a:BEA_checklists_sp008",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support",
+      "critical_token_not_supported_by_publisher"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "switches off autobrake off",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "5fb9e1617f9e1a6a78c8f154cad23935",
+    "source": "bleriot-a:BEA_checklists_sp008",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support",
+      "critical_token_not_supported_by_publisher"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "on external power as",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "b64d8b6b3a55822a16f38345a9525a14",
+    "source": "bleriot-a:BEA_checklists_sp008",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "generators on fuel pumps",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "5e29a8c1ce8b22aa47c5631e5181167a",
+    "source": "bleriot-a:BEA_checklists_sp008",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "on hydraulic electric pumps on",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "5c8a9bb6ad33740dc3e879ddb4b7d4de",
+    "source": "bleriot-a:BEA_checklists_sp008",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "reference check qnh beacon",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "f3c723243e275df6705b8d9f9a276442",
+    "source": "bleriot-a:BEA_checklists_sp008",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "numeric_disagreement"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "20 fuel flow check on",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "33385036835432b00844d4e477863638",
+    "source": "bleriot-a:BEA_checklists_sp008",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "trim set pitch trim set flight",
+        "words": 6,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      },
+      {
+        "text": "check flaps set for takeoff",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "c5d1d1a42a54b3f0b6c8b5684f077fbc",
+    "source": "bleriot-a:BEA_checklists_sp008",
+    "whole_clip_reasons": [
+      "insufficient_publisher_support",
+      "critical_token_not_supported_by_publisher"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "no blue landing speed managed",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "ad5c9a1eadd039b6b4605677432f6cf3",
+    "source": "bleriot-a:BEA_checklists_sp008",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "state_or_negation_disagreement"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "after takeoff engine mode selector",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      },
+      {
+        "text": "spoilers disarmed flaps up gear up nose",
+        "words": 7,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "e5ad1441515ce8685ad4c0523a99e672",
+    "source": "bleriot-a:BEA_checklists_sp008",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "state_or_negation_disagreement",
+      "insufficient_publisher_support",
+      "critical_token_not_supported_by_publisher"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "turn off lights off",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "f7ec9ba0a052684bbd5d2fe3c5a87a8a",
+    "source": "bleriot-a:BEA_checklists_sp008",
+    "whole_clip_reasons": [
+      "asr_disagreement"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "flight progress check weather check ecam check ecam pages check",
+        "words": 10,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "be135b999102488b1bfd1e149745e6c4",
+    "source": "bleriot-a:BEA_checklists_sp008",
+    "whole_clip_reasons": [
+      "small_low_score"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "descent push fcu altitude",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "7c6c43c19a58c7b5b0d252d36805acad",
+    "source": "bleriot-a:BEA_checklists_sp008",
+    "whole_clip_reasons": [
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "balance check flaps landing gear check up",
+        "words": 7,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "39e760226049f23e2692385b57469865",
+    "source": "bleriot-a:BEA_checklists_sp008",
+    "whole_clip_reasons": [
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "as required nav lights on",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "f96af3e4f2885d5869bc9d84b848298f",
+    "source": "bleriot-a:BEA_checklists_sp008",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support",
+      "critical_token_not_supported_by_publisher"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "selector open after start procedures apply",
+        "words": 6,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "4c36fb937342c23a95d2d1ad1b359fa9",
+    "source": "bleriot-a:BEA_checklists_sp009",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "set battery guard closed",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "45292dd737d40711398ca116323462a7",
+    "source": "bleriot-a:BEA_checklists_sp009",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "gen on position lights steady logo light as required",
+        "words": 9,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      },
+      {
+        "text": "exit lights guard closed",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "9f72e782f1778f0f25694a48c2c0120e",
+    "source": "bleriot-a:BEA_checklists_sp009",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "state_or_negation_disagreement",
+      "insufficient_publisher_support",
+      "critical_token_not_supported_by_publisher"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "auto high isolation valve open engine",
+        "words": 6,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "864401ed47ee28e3aab24c4dae4721da",
+    "source": "bleriot-a:BEA_checklists_sp009",
+    "whole_clip_reasons": [
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "2 on probe heat on wing",
+        "words": 6,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "fec74fcc52d6ebb4f39483c8496df89f",
+    "source": "bleriot-a:BEA_checklists_sp009",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "reset mcp altitude check",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      },
+      {
+        "text": "landing altitude check recall check",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "fc3415cd9ee215badbbb5e773aa4a052",
+    "source": "bleriot-a:BEA_checklists_sp009",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "alive gear down flaps 15",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "5ac0bbc092bdcd38891610dd51d0082c",
+    "source": "bleriot-a:BEA_checklists_sp009",
+    "whole_clip_reasons": [
+      "asr_disagreement"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "after landing checklist transponder as required flaps",
+        "words": 7,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      },
+      {
+        "text": "down landing lights off position lights steady",
+        "words": 7,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "652086c21c344225f8c6b4cd930a9318",
+    "source": "bleriot-a:BEA_checklists_sp009",
+    "whole_clip_reasons": [
+      "asr_disagreement"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "taxi lights on antiice as required apu start probe",
+        "words": 9,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "f85291ede8758bae97d6e0e7e019e3fa",
+    "source": "bleriot-a:BEA_checklists_sp009",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "set engines off wing lights off fuel pumps off",
+        "words": 9,
+        "documents": [
+          "BEA_checklist_A320_pilote.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "b7cfd70587525162cda13c309888a6d4",
+    "source": "bleriot-a:BEA_checklists_sp009",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "state_or_negation_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "check anti skid on",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      },
+      {
+        "text": "director on emergency lights",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "88134d436e9f76d05b097a723e5e95f6",
+    "source": "bleriot-a:BEA_checklists_sp009",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "state_or_negation_disagreement",
+      "insufficient_publisher_support",
+      "critical_token_not_supported_by_publisher"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "signs off antiice off",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "b89a1de5b592b30487f41aff44f25ce0",
+    "source": "bleriot-a:BEA_checklists_sp009",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "state_or_negation_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "on fuel pumps all on hydraulic electric pumps on",
+        "words": 9,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "1ba6f247b7bfd560eb5b2b9182ac3837",
+    "source": "bleriot-a:BEA_checklists_sp009",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "all on fcs all on",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "bd9223030cca15852bb651b7dcf2c7d0",
+    "source": "bleriot-a:BEA_checklists_sp009",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "state_or_negation_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "on external power off",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "061990c4c521c779790a94eeb94f6db0",
+    "source": "bleriot-a:BEA_checklists_sp009",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "numeric_disagreement"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "20 fuel flow check on",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "9dfd599b59b221b739ad5b05bb429ef4",
+    "source": "bleriot-a:BEA_checklists_sp009",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "numeric_disagreement"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "20 fuel flow check on",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "e3dc63c182b581224a379cbf65b661fc",
+    "source": "bleriot-a:BEA_checklists_sp009",
+    "whole_clip_reasons": [
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "engine mode selector norm apu bleed off apu off spoilers arm",
+        "words": 11,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      },
+      {
+        "text": "trim set pitch trim set",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "7721ebb67da78c3d26af4f7c66f896b9",
+    "source": "bleriot-a:BEA_checklists_sp009",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "director on transponder set",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "ca07e891bc5dacf867cd1ee1f9a0d5fe",
+    "source": "bleriot-a:BEA_checklists_sp009",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "progress check weather check ecam check",
+        "words": 6,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      },
+      {
+        "text": "preparation landing information received altimeters set",
+        "words": 6,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "fa64b0bd129da2009e673fc4dce80a16",
+    "source": "bleriot-a:BEA_checklists_sp009",
+    "whole_clip_reasons": [
+      "asr_disagreement"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "signs on landing lights on landing system on fuel",
+        "words": 9,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      },
+      {
+        "text": "balance check flaps landing gear check up",
+        "words": 7,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "abc4d64382f27996b04deb38a30d1130",
+    "source": "bleriot-a:BEA_checklists_sp009",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "landing lights check on",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "785733d44ffbc384b2ac007ae37cc83e",
+    "source": "bleriot-a:BEA_checklists_sp009",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "taxi lights on ground",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      },
+      {
+        "text": "set flaps set 1 speed",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "2d5ec07b3d48fa8802d71e5047dfb444",
+    "source": "bleriot-a:BEA_checklists_sp009",
+    "whole_clip_reasons": [
+      "insufficient_publisher_support",
+      "critical_token_not_supported_by_publisher"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "taxi lights off parking parking",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "77faa2a36c1c337f8882780c0f57110c",
+    "source": "bleriot-a:BEA_checklists_sp009",
+    "whole_clip_reasons": [
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "off passenger signs off doors open flight director off",
+        "words": 9,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "48ba85dc00bddfdd811223bc00a294fd",
+    "source": "bleriot-a:BEA_checklists_sp009",
+    "whole_clip_reasons": [
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "if evacuation required evacuation",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      },
+      {
+        "text": "if evacuation not required cabin crew and passengers",
+        "words": 8,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "5090cfc3456ea30d7525fb7deef4e155",
+    "source": "bleriot-a:BEA_checklists_sp009",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "numeric_disagreement",
+      "insufficient_publisher_support",
+      "critical_token_not_supported_by_publisher"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "engine taxi in before engine",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "443f61186f3e14f4d662627380e7fb77",
+    "source": "bleriot-a:BEA_checklists_sp010",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "on after start antiice",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320_pilote.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "c1fe8f8b9ecee09eff85d8948d16d45f",
+    "source": "bleriot-a:BEA_checklists_sp010",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "state_or_negation_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "max signs on cabin ready",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_A320_pilote.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "b26f9002ce67108e1a83ccfe53fc9eed",
+    "source": "bleriot-a:BEA_checklists_sp010",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "memo landing no blue landing gear",
+        "words": 6,
+        "documents": [
+          "BEA_checklist_A320_pilote.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "5745ef93bf8f2715e063d3b041562c77",
+    "source": "bleriot-a:BEA_checklists_sp010",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "state_or_negation_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "securing the aircraft oxygen",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320_pilote.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "7f7ce1ba893976a3f15072e38637d05f",
+    "source": "bleriot-a:BEA_checklists_sp010",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "numeric_disagreement",
+      "insufficient_publisher_support",
+      "critical_token_not_supported_by_publisher"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "checklist parking brake set battery guard closed",
+        "words": 7,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "aedf194d575b4083871e63b1b082e503",
+    "source": "bleriot-a:BEA_checklists_sp010",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "radios set doors closed before start checklist",
+        "words": 7,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "abb4f1534850cfbc2c510a07ffe23003",
+    "source": "bleriot-a:BEA_checklists_sp010",
+    "whole_clip_reasons": [
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "arm fuel pumps on",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "f6c75158a42e32460d8a4a72adf67874",
+    "source": "bleriot-a:BEA_checklists_sp010",
+    "whole_clip_reasons": [
+      "asr_disagreement"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "as required flight instruments check engine instruments check takeoff data v1",
+        "words": 11,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "fb2e7fca8d7ae447dc9105225af55e79",
+    "source": "bleriot-a:BEA_checklists_sp010",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "reverse engage autopilot off",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "b4ef4d7e04cdf28b00cb88bf22914ca0",
+    "source": "bleriot-a:BEA_checklists_sp010",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "required apu start probe heat off engine start switches off",
+        "words": 10,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "adb092689cbdb4c498b01cdb5f9e52be",
+    "source": "bleriot-a:BEA_checklists_sp010",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "state_or_negation_disagreement"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "taxi to gate runway",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      },
+      {
+        "text": "gen on taxi lights off parking",
+        "words": 6,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      },
+      {
+        "text": "checklist parking brakes set",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "a440bcdfa820a654b5d2d763d79e1cd5",
+    "source": "bleriot-a:BEA_checklists_sp010",
+    "whole_clip_reasons": [
+      "asr_disagreement"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "set to nav nav lights on primary flight display bright navigation display bright",
+        "words": 13,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "cbb2c041c51cf90299c0300725802303",
+    "source": "bleriot-a:BEA_checklists_sp010",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "cockpit preparation parking brake set",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      },
+      {
+        "text": "set engine masters off",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "8f4ebcef52cc88aaca6e6208aaf34657",
+    "source": "bleriot-a:BEA_checklists_sp010",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "state_or_negation_disagreement"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "signs off antiice off probe window",
+        "words": 6,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      },
+      {
+        "text": "as required packs on",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "b858d042a1cf6be2755f2daa425521b6",
+    "source": "bleriot-a:BEA_checklists_sp010",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "state_or_negation_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "remove all ground services and request pushback clearance",
+        "words": 8,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "12e1948d59853d00096cae320777527a",
+    "source": "bleriot-a:BEA_checklists_sp010",
+    "whole_clip_reasons": [
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "flight controls check flaps set for takeoff engine antiice",
+        "words": 9,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "660f9b36b7e7837376a3f858bbfb1cf9",
+    "source": "bleriot-a:BEA_checklists_sp010",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support",
+      "critical_token_not_supported_by_publisher"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "taxi nose light on parking brake off",
+        "words": 7,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "72ddbce60da03d603035db5a4a2a9cff",
+    "source": "bleriot-a:BEA_checklists_sp010",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "numeric_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "up anti skid on",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "04911043a1b19c3331adada6a3df6975",
+    "source": "bleriot-a:BEA_checklists_sp010",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "numeric_disagreement",
+      "insufficient_publisher_support",
+      "critical_token_not_supported_by_publisher"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "flight progress check weather check",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "871633ea4cce0c3feebc900a85610157",
+    "source": "bleriot-a:BEA_checklists_sp010",
+    "whole_clip_reasons": [
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "signs on radios set speed",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "a14cdf0862c152f6889c6b3c22ef3711",
+    "source": "bleriot-a:BEA_checklists_sp010",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "required landing landing gear",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "7de40ac8b50c77350097054fe0d73b9d",
+    "source": "bleriot-a:BEA_checklists_sp010",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "lights off strobe lights off",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      },
+      {
+        "text": "as required apu start",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json",
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "5da95bf155451a5377dee379b9efbe00",
+    "source": "bleriot-a:BEA_checklists_sp010",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "if evacuation required evacuation",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      },
+      {
+        "text": "if evacuation not required cabin crew and",
+        "words": 7,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      },
+      {
+        "text": "as required nav lights on",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "26515feb17dea7e3eecbfcb1c644e75e",
+    "source": "bleriot-a:BEA_checklists_sp010",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "state_or_negation_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "fuel pumps all off beacon lights off",
+        "words": 7,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      },
+      {
+        "text": "off avionics off no smoking off apu as required batteries as required",
+        "words": 12,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "8663de9d16aa2fc0cd469775d17d2fda",
+    "source": "bleriot-a:BEA_checklists_sp010",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "single engine taxi out when",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      },
+      {
+        "text": "to start engine brake",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "8aaaaf1943e086d38a423470af2c46b6",
+    "source": "bleriot-a:BEA_checklists_sp011",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "lights test performed oxygen mask checked",
+        "words": 6,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "b46627cef5671ee0997e6d2bf2bc6b20",
+    "source": "bleriot-a:BEA_checklists_sp011",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "state_or_negation_disagreement",
+      "insufficient_publisher_support",
+      "critical_token_not_supported_by_publisher"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "bleed on irs mode selectors",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "578d4814ffc994dae60ccd5233ca9e51",
+    "source": "bleriot-a:BEA_checklists_sp011",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "mcp initial alt set",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "74f2e295437cfb562f771c16c10b5089",
+    "source": "bleriot-a:BEA_checklists_sp011",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "arm fuel pumps on",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "afd90ebaac5df7ff6e81499d1032e562",
+    "source": "bleriot-a:BEA_checklists_sp011",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "state_or_negation_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "on anti collision light on",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      },
+      {
+        "text": "equipment removed engine area clear",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "36d1bcb1e6a0f57abc5dd44512b70c58",
+    "source": "bleriot-a:BEA_checklists_sp011",
+    "whole_clip_reasons": [
+      "numeric_disagreement",
+      "state_or_negation_disagreement",
+      "insufficient_publisher_support",
+      "critical_token_not_supported_by_publisher"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "flight instruments check engine instruments check takeoff data v1",
+        "words": 9,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      },
+      {
+        "text": "light on taxi lights off transponder",
+        "words": 6,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "dcda389cfa39ee7c709ffd3d9ce4000e",
+    "source": "bleriot-a:BEA_checklists_sp011",
+    "whole_clip_reasons": [
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "antiice as required landing altitude check",
+        "words": 6,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      },
+      {
+        "text": "set autobrake as required",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "5a0bde6649aaa1ea3d97bc09561d401a",
+    "source": "bleriot-a:BEA_checklists_sp011",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "alive gear down flaps 15",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "f3e6c10f9612f394a513eed7564bf814",
+    "source": "bleriot-a:BEA_checklists_sp011",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "state_or_negation_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "altitude set runway turn off lights on landing gear check down",
+        "words": 11,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "11e0587371017238c717bca39c400786",
+    "source": "bleriot-a:BEA_checklists_sp011",
+    "whole_clip_reasons": [
+      "asr_disagreement"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "down landing lights off position lights",
+        "words": 6,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "e5f2db9c5a9ad9809062a8f762bf2f1a",
+    "source": "bleriot-a:BEA_checklists_sp011",
+    "whole_clip_reasons": [
+      "asr_disagreement"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "on antiice as required apu start probe heat off",
+        "words": 9,
+        "documents": [
+          "BEA_checklist_B737_NORMAL_CHECKLIST.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "427a90cc17f7d4318b73ebf24d7a607a",
+    "source": "bleriot-a:BEA_checklists_sp011",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "numeric_disagreement",
+      "state_or_negation_disagreement",
+      "insufficient_publisher_support",
+      "critical_token_not_supported_by_publisher"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "on external power as required",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "507f66b9bdc75c3649ed99baa471f2cb",
+    "source": "bleriot-a:BEA_checklists_sp011",
+    "whole_clip_reasons": [
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "set to nav nav lights on",
+        "words": 6,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "c8b9998aa621f8b99bc397aee5b0ad05",
+    "source": "bleriot-a:BEA_checklists_sp011",
+    "whole_clip_reasons": [
+      "state_or_negation_disagreement"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "cockpit preparation parking brake set chocks set engine",
+        "words": 8,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      },
+      {
+        "text": "off engine mode selector",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "ff81c8e762033420416f164e5b161a82",
+    "source": "bleriot-a:BEA_checklists_sp011",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "landing gear lever check down flaps lever up spoilers retracted",
+        "words": 10,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "3a9a4d67fa28bcbc52010bbb4e8a8323",
+    "source": "bleriot-a:BEA_checklists_sp011",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "on flight director on emergency lights arm",
+        "words": 7,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "6bbb881b2ea7037dd0374c9b5c49b25e",
+    "source": "bleriot-a:BEA_checklists_sp011",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "hydraulic electric pumps on",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "e7aa088303b1bac158daccc2a093eaf0",
+    "source": "bleriot-a:BEA_checklists_sp011",
+    "whole_clip_reasons": [
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "signs on external power off",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "e58851d2973f13c08420e82b592e8b05",
+    "source": "bleriot-a:BEA_checklists_sp011",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "numeric_disagreement",
+      "insufficient_publisher_support",
+      "critical_token_not_supported_by_publisher"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "20 fuel flow check on",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "585abd822c983acae91978bcea7266b4",
+    "source": "bleriot-a:BEA_checklists_sp011",
+    "whole_clip_reasons": [
+      "asr_disagreement"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "preparation landing information received",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "4ceff85929949cb003febd80c2ada424",
+    "source": "bleriot-a:BEA_checklists_sp011",
+    "whole_clip_reasons": [
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "landing elevation set descent push",
+        "words": 5,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "39a6f48adbb0f8c37a03ff490074e51a",
+    "source": "bleriot-a:BEA_checklists_sp011",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "speed managed parking brake verify off deice",
+        "words": 7,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "5345d6f9bf427825463d691c49ef0913",
+    "source": "bleriot-a:BEA_checklists_sp011",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "landing landing gear check down autopilot",
+        "words": 6,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "ba096dfe1055e5d70aae29bae995b364",
+    "source": "bleriot-a:BEA_checklists_sp011",
+    "whole_clip_reasons": [
+      "insufficient_publisher_support",
+      "critical_token_not_supported_by_publisher"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "cancel reverse thrust at",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "3af4dc9984c97163064e417098b3f997",
+    "source": "bleriot-a:BEA_checklists_sp011",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "off avionics off no smoking off apu as",
+        "words": 8,
+        "documents": [
+          "BEA_checklist_A320-NormalChecklist.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "3bdb0d082eb06f490675dbc2b5450d72",
+    "source": "bleriot-a:BEA_checklists_sp011",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "taxi flight control checked",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320_pilote.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "e24d56d264720c25dc58c11c51f62018",
+    "source": "bleriot-a:BEA_checklists_sp011",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "on minimum autobrake engine",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320_pilote.json"
+        ]
+      },
+      {
+        "text": "memo landing no blue",
+        "words": 4,
+        "documents": [
+          "BEA_checklist_A320_pilote.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "cfe479ced4b62b1452163bd2a3bcaa55",
+    "source": "bleriot-a:DGA_checklist-Beech_sp101",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "state_or_negation_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "right itt and n1 monitor",
+        "words": 5,
+        "documents": [
+          "DGA_checklist-Beech.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "ada505ad90baa74f14e229585af9a443",
+    "source": "bleriot-a:DGA_checklist-Beech_sp101",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "off right condition lever",
+        "words": 4,
+        "documents": [
+          "DGA_checklist-Beech.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "b5154f9400f7278acdca2e50b3712052",
+    "source": "bleriot-a:DGA_checklist-Beech_sp101",
+    "whole_clip_reasons": [
+      "insufficient_publisher_support",
+      "critical_token_not_supported_by_publisher"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "left and right prop",
+        "words": 4,
+        "documents": [
+          "DGA_checklist-Beech.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "40a67c63153b9c8b34c510e5ddad564a",
+    "source": "bleriot-a:DGA_checklist-Beech_sp101",
+    "whole_clip_reasons": [
+      "state_or_negation_disagreement",
+      "insufficient_publisher_support",
+      "critical_token_not_supported_by_publisher"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "ignition and engine start",
+        "words": 4,
+        "documents": [
+          "DGA_checklist-Beech.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "9308efd40c67551747bced97c8b1b794",
+    "source": "bleriot-a:DGA_checklist-Beech_sp101",
+    "whole_clip_reasons": [
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "master on interior master switch",
+        "words": 5,
+        "documents": [
+          "DGA_checklist-Beech.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "75e73b572a2477d6bd5124b733389bc9",
+    "source": "bleriot-a:DGA_checklist-Beech_sp101",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "preflight flight and engine instruments check",
+        "words": 6,
+        "documents": [
+          "DGA_checklist-Beech.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "58412fda01f021db035ef20e85b263f3",
+    "source": "bleriot-a:DGA_checklist-Beech_sp101",
+    "whole_clip_reasons": [
+      "asr_disagreement",
+      "insufficient_publisher_support",
+      "critical_token_not_supported_by_publisher"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "maintain v35 until clear of",
+        "words": 5,
+        "documents": [
+          "DGA_checklist-Beech.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  },
+  {
+    "id": "61f1fb444458b05f8de12444f83d37fe",
+    "source": "bleriot-a:DGA_checklist-Beech_sp101",
+    "whole_clip_reasons": [
+      "insufficient_publisher_support"
+    ],
+    "supported_common_runs": [
+      {
+        "text": "cabin sign as required",
+        "words": 4,
+        "documents": [
+          "DGA_checklist-Beech.json"
+        ]
+      },
+      {
+        "text": "check lights as required",
+        "words": 4,
+        "documents": [
+          "DGA_checklist-Beech.json"
+        ]
+      }
+    ],
+    "time_alignment_done": false,
+    "automatic_training_eligible": false,
+    "candidate_only": true
+  }
+]

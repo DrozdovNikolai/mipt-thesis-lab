@@ -1,0 +1,31 @@
+{
+  "command": [
+    "docker",
+    "run",
+    "--rm",
+    "--network",
+    "none",
+    "--entrypoint",
+    "north55",
+    "--gpus",
+    "device=0",
+    "-e",
+    "CUDA_VISIBLE_DEVICES=0",
+    "-v",
+    "C:\\DEV\\MIPT\\Diploma\\Speech\\data\\curated\\annotation-packet-v1:/data/train-dev:ro",
+    "-v",
+    "north55-speech_model_cache:/models:ro",
+    "-v",
+    "north55-speech_audio_data:/audio:ro",
+    "north55-speech-train:0.1.0",
+    "train",
+    "asr",
+    "--config",
+    "configs/asr_lora.yaml"
+  ],
+  "exit_code": 5,
+  "stdout": "{\n  \"status\": \"BLOCKED\",\n  \"error\": {\n    \"code\": \"MISSING_VERIFIED_TRANSCRIPTS\",\n    \"message\": \"ASR adaptation requires verified transcripts\",\n    \"retryable\": false\n  },\n  \"executed\": false\n}\n",
+  "stderr": "",
+  "adaptation_executed": false,
+  "human_annotations_created": 0
+}

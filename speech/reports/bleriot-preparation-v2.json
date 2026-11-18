@@ -1,0 +1,88 @@
+{
+  "status": "ALL_UNIQUE_RECORDINGS_PREPARED_FOR_REVIEW",
+  "recordings": 67,
+  "raw": 40,
+  "unique_noisy": 27,
+  "duplicates": [
+    {
+      "excluded_alias": "CVR_BEA_cvr_sp03_.wav",
+      "retained": "CVR_DGA_CVR4_track2_sp104 .wav",
+      "sha256": "4d9afc7476ef0bd519a7374c54332dcb313a94e69903ace3fa109b73ede6d9c5",
+      "reason": "exact_byte_duplicate_with_misleading_filename"
+    }
+  ],
+  "parent_acoustic_review_pending": [
+    "CVR_BEA_cvr_sp07.wav",
+    "CVR_DGA_CVR4_track1_sp103.wav"
+  ],
+  "no_noise_difficulty_exclusions": true,
+  "existing_groups_unchanged": true,
+  "import": {
+    "independent_groups": 18,
+    "split_groups": {
+      "train": 12,
+      "dev": 3,
+      "test": 3
+    },
+    "unknown_speakers": 0,
+    "script_overlap": {
+      "bleriot:BEA:Checklists": [
+        "dev",
+        "test",
+        "train"
+      ],
+      "bleriot:BEA:CVR": [
+        "dev",
+        "test",
+        "train"
+      ],
+      "bleriot:DGA:CVR2": [
+        "dev",
+        "train"
+      ],
+      "bleriot:DGA:CVR4": [
+        "dev",
+        "train"
+      ]
+    },
+    "claim_limitation": null
+  },
+  "partitions": {
+    "independent_groups": 18,
+    "split_groups": {
+      "train": 12,
+      "dev": 3,
+      "test": 3
+    },
+    "unknown_speakers": 0,
+    "script_overlap": {
+      "bleriot:BEA:Checklists": [
+        "dev",
+        "test",
+        "train"
+      ],
+      "bleriot:BEA:CVR": [
+        "dev",
+        "test",
+        "train"
+      ],
+      "bleriot:DGA:CVR2": [
+        "dev",
+        "train"
+      ],
+      "bleriot:DGA:CVR4": [
+        "dev",
+        "train"
+      ]
+    },
+    "claim_limitation": null
+  },
+  "test_gold_opened": false,
+  "human_verified_annotations": 0,
+  "benchmark_admitted": false,
+  "counts": {
+    "train": 47,
+    "dev": 12,
+    "test": 8
+  }
+}

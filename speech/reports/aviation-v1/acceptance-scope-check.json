@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "verification": "test_aviation_contract_changes_scope_without_relaxing_targets and rejection test, included in 450-test suite",
+  "changed_only": "protocol ID, creation date, aviation scope",
+  "all_numeric_and_integrity_requirements_preserved": true,
+  "prospective_contract_not_pass_claim": true
+}

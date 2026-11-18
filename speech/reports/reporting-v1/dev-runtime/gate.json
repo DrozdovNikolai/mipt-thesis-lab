@@ -1,0 +1,15 @@
+{
+  "asr_quality_gate": {
+    "status": "NEEDS_MORE_DATA"
+  },
+  "nlp_quality_gate": {
+    "status": "NEEDS_MORE_DATA"
+  },
+  "temporal_event_gate": {
+    "status": "NEEDS_MORE_DATA"
+  },
+  "selection": {
+    "status": "NOT_RUN"
+  },
+  "release_promoted": false
+}

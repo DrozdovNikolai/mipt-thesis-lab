@@ -1,0 +1,6 @@
+FROM north55-speech:0.1.0
+USER root
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    poppler-utils tesseract-ocr tesseract-ocr-eng tesseract-ocr-fra \
+    && rm -rf /var/lib/apt/lists/*
+USER 10001:10001

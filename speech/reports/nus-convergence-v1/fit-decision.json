@@ -1,0 +1,7 @@
+{
+  "train_fit": "FAIL",
+  "run_transfer": false,
+  "reason": "fixed_final_train_WER_above_0.10",
+  "evaluated_step": 240,
+  "release_allowed": false
+}

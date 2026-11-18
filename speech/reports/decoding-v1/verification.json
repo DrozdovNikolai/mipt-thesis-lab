@@ -1,0 +1,125 @@
+{
+  "status": "PASS",
+  "checks": {
+    "frozen_source_files": true,
+    "unchanged_acceptance": true,
+    "unchanged_baseline": true,
+    "unchanged_SPEC": true,
+    "unchanged_SOURCES": true,
+    "unchanged_retraining_plan": true,
+    "same_scorer": true,
+    "unchanged_references": true,
+    "same_checkpoints": true,
+    "frozen_inputs": true,
+    "frozen_protocol": true,
+    "result_plan": true,
+    "all_results_and_counts": true,
+    "no_release_or_final_test_claim": true,
+    "exact_additional_budget": true,
+    "quiet_groups_and_reference_links": true,
+    "noise_at_least_five_minutes_each": true,
+    "parent_control_hashes": true,
+    "augmented_control_hashes": true,
+    "parent_baseline_complete_hashes": true,
+    "parent_baseline_runtime_hashes": true,
+    "parent_baseline_plan_and_options": true,
+    "parent_baseline_no_runtime_failure": true,
+    "parent_baseline_actual_cuda_float16": true,
+    "parent_baseline_freeze_before_inference": true,
+    "parent_text_complete_hashes": true,
+    "parent_text_runtime_hashes": true,
+    "parent_text_plan_and_options": true,
+    "parent_text_no_runtime_failure": true,
+    "parent_text_actual_cuda_float16": true,
+    "parent_text_freeze_before_inference": true,
+    "parent_vad_complete_hashes": true,
+    "parent_vad_runtime_hashes": true,
+    "parent_vad_plan_and_options": true,
+    "parent_vad_no_runtime_failure": true,
+    "parent_vad_actual_cuda_float16": true,
+    "parent_vad_freeze_before_inference": true,
+    "augmented_baseline_complete_hashes": true,
+    "augmented_baseline_runtime_hashes": true,
+    "augmented_baseline_plan_and_options": true,
+    "augmented_baseline_no_runtime_failure": true,
+    "augmented_baseline_actual_cuda_float16": true,
+    "augmented_baseline_freeze_before_inference": true,
+    "augmented_text_complete_hashes": true,
+    "augmented_text_runtime_hashes": true,
+    "augmented_text_plan_and_options": true,
+    "augmented_text_no_runtime_failure": true,
+    "augmented_text_actual_cuda_float16": true,
+    "augmented_text_freeze_before_inference": true,
+    "augmented_vad_complete_hashes": true,
+    "augmented_vad_runtime_hashes": true,
+    "augmented_vad_plan_and_options": true,
+    "augmented_vad_no_runtime_failure": true,
+    "augmented_vad_actual_cuda_float16": true,
+    "augmented_vad_freeze_before_inference": true,
+    "parent_text_only_declared_options_changed": true,
+    "parent_text_CPU_hashes": true,
+    "parent_text_CPU_execution": true,
+    "parent_vad_only_declared_options_changed": true,
+    "parent_vad_CPU_hashes": true,
+    "parent_vad_CPU_execution": true,
+    "augmented_text_only_declared_options_changed": true,
+    "augmented_text_CPU_hashes": true,
+    "augmented_text_CPU_execution": true,
+    "augmented_vad_only_declared_options_changed": true,
+    "augmented_vad_CPU_hashes": true,
+    "augmented_vad_CPU_execution": true,
+    "resume_parent_vad": true,
+    "all_inference_offline_exit_zero": true,
+    "inference_mounts_exclude_refs_controls_train": true,
+    "only_own_prediction_output_writable": true,
+    "contract_tests_pass": true,
+    "serving_baseline_unchanged": true
+  },
+  "failed": [],
+  "cpu_smoke": {
+    "parent_text": {
+      "records": 4,
+      "actual_precisions": [
+        "int8_float32"
+      ],
+      "runtime_failures": 0,
+      "quality_status": "NOT_EVALUATED_CPU_SMOKE"
+    },
+    "parent_vad": {
+      "records": 4,
+      "actual_precisions": [
+        "int8_float32"
+      ],
+      "runtime_failures": 0,
+      "quality_status": "NOT_EVALUATED_CPU_SMOKE"
+    },
+    "augmented_text": {
+      "records": 4,
+      "actual_precisions": [
+        "int8_float32"
+      ],
+      "runtime_failures": 0,
+      "quality_status": "NOT_EVALUATED_CPU_SMOKE"
+    },
+    "augmented_vad": {
+      "records": 4,
+      "actual_precisions": [
+        "int8_float32"
+      ],
+      "runtime_failures": 0,
+      "quality_status": "NOT_EVALUATED_CPU_SMOKE"
+    }
+  },
+  "resume_counts": {
+    "parent_baseline": [],
+    "parent_text": [],
+    "parent_vad": [
+      264,
+      264
+    ],
+    "augmented_baseline": [],
+    "augmented_text": [],
+    "augmented_vad": []
+  },
+  "scope": "Artifact/execution verification, not ML quality PASS."
+}

@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-09-15T15:44:50.159498+00:00",
+  "original_plan_sha256": "d557c4ccfedefc59fb39bae46f03c30f0879f59370667e761022a28694fa2a74",
+  "guard_driver_sha256": "2aa2d0f67ff5902c5434c5de3f71c577631c0aa9220bb9cd263002c101fece55",
+  "original_run_status": "FAILED_ON_GENERATION_LIMIT",
+  "original_completed_clips": 6,
+  "original_failed_id": "atcosim_zf1_05_152_000000_000303",
+  "original_failure_log_sha256": "099766f0c28122f3a6d944bd1b481cdc932d84ebc09b3c8754c09855c0b78f3b",
+  "prior_successful_checkpoints": {
+    "atcosim_zf1_05_146_000000_000350": "6e0e3e9f86b2a09300d97c4aba47e337f14a1977041716b96acd04e3b10ea50e",
+    "atcosim_zf1_05_147_000000_000263": "89f66c16c8cc08479c1834bbb3edfb20b9026015ae7276505e4cfb3f61c51ccc",
+    "atcosim_zf1_05_148_000000_000273": "c2d4c525a685062fd498d6ecc55e205ff3acd8859f70f3a0de1fb2371c07bbce",
+    "atcosim_zf1_05_149_000000_000270": "588ef5b7f6c1111143ebcf4e1f585fb2cf176bf696e891bf5c38874206d72f12",
+    "atcosim_zf1_05_150_000000_000301": "5c9197cb413d9fbd54a9b3e1efb18e529fcb03c048cb9a9df95797dd42b0af4d",
+    "atcosim_zf1_05_151_000000_000308": "cb1ac3706dcb4e86c4832187f274301c76998aac1eea3bd90c4d3fa4fea3b00d"
+  },
+  "policy": "Only the existing 256-token generation-limit error falls back to the unchanged v9 hypothesis. Preserve the rejected generation and mark each failure. All successful v11 calculations remain unchanged. Other exceptions still abort.",
+  "new_candidate": "v11 with generation-failure fallback (v13)",
+  "references_used_to_design_guard": false,
+  "training": false,
+  "thresholds_changed": false,
+  "additional_discarded_ASR_calls": 1
+}

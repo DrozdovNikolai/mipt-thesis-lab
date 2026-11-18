@@ -1,0 +1,7 @@
+# Optional CPU worker with local pyannote dependencies. Weights are acquired separately.
+services:
+  worker:
+    image: north55-speech-diarization:0.1.0
+    build:
+      context: .
+      dockerfile: Dockerfile.diarization

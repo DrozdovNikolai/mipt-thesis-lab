@@ -1,0 +1,27 @@
+{
+  "command": [
+    "docker",
+    "run",
+    "--rm",
+    "--network",
+    "none",
+    "--entrypoint",
+    "north55",
+    "-v",
+    "C:\\DEV\\MIPT\\Diploma\\Speech\\data\\curated\\annotation-packet-v1:/data/train-dev:ro",
+    "-v",
+    "north55-speech_model_cache:/models:ro",
+    "-v",
+    "north55-speech_audio_data:/audio:ro",
+    "north55-speech:0.1.0",
+    "train",
+    "events",
+    "--config",
+    "configs/events_train.yaml"
+  ],
+  "exit_code": 5,
+  "stdout": "{\n  \"status\": \"BLOCKED\",\n  \"error\": {\n    \"code\": \"MISSING_EVENT_LABELS\",\n    \"message\": \"Training needs texts, explicit event labels and separate salience labels\",\n    \"retryable\": false\n  },\n  \"executed\": false\n}\n",
+  "stderr": "",
+  "adaptation_executed": false,
+  "human_annotations_created": 0
+}

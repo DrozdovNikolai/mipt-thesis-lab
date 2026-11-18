@@ -1,0 +1,40 @@
+[
+  {
+    "id": "atcosim_sm2_09_001_000000_000507",
+    "original_id": "sm2_09_001",
+    "speaker_id": "sm2",
+    "group_id": "atcosim-speaker-sm2",
+    "source_sample_rate": 32000,
+    "source_pcm_sha256": "eabcd6364c07adf08e5ebeee1025ef3976f8e77fc93aa556a4f1eeb49f055b36",
+    "recording_id": "111_0606",
+    "audio_path": "/new-audio/atcosim_sm2_09_001_000000_000507.wav",
+    "audio_sha256": "e54abdba217ad1bfc1ba3ce93c4f349cdce67657eb02d99118d40fd5f59cd920",
+    "pcm_sha256": "6a02adf5a0aa8922a1c8f37f861e1edcbe5478aabf5a029ed37b441f75f45337",
+    "duration_sec": 5.0778125,
+    "input_language": "en",
+    "cohort": "atcosim",
+    "scope": "atc_simulated_controller",
+    "source_split": "test",
+    "reference_kind": "publisher_transcript_normalized_by_mirror",
+    "local_human_verified": false
+  },
+  {
+    "id": "atcosim_zf1_05_146_000000_000350",
+    "original_id": "zf1_05_146",
+    "speaker_id": "zf1",
+    "group_id": "atcosim-speaker-zf1",
+    "source_sample_rate": 32000,
+    "source_pcm_sha256": "613ce6de11b80b712a12c5db182341fef6a8c61fae296dcf41bdb24788771976",
+    "recording_id": "092_0286",
+    "audio_path": "/new-audio/atcosim_zf1_05_146_000000_000350.wav",
+    "audio_sha256": "8f6532529dc5843e3443a91905fd80f1a1c46f36ab808f3fba54939df66e240f",
+    "pcm_sha256": "dff5dee4bec24c11bace3c422de7b56834da3d5d1fe06c8fd7f6285f2a736b28",
+    "duration_sec": 3.5,
+    "input_language": "en",
+    "cohort": "atcosim",
+    "scope": "atc_simulated_controller",
+    "source_split": "test",
+    "reference_kind": "publisher_transcript_normalized_by_mirror",
+    "local_human_verified": false
+  }
+]

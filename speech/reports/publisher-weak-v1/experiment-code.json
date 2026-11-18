@@ -1,0 +1,8 @@
+{
+  "lora_code_sha256": "03f03f003b528bdefdf4c2a0d8f9ee1053588b9e71235bd5c189f12237f0fe8c",
+  "first_attempt_optimizer_steps": 0,
+  "second_attempt_optimizer_steps": 40,
+  "single_gpu": "CUDA_VISIBLE_DEVICES=0",
+  "network": "none",
+  "human_labels_created": false
+}

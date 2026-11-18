@@ -1,0 +1,37 @@
+{
+  "status": "READY_WEAK_TRAINING_PAIRS",
+  "considered_pause_clips": 675,
+  "accepted_pairs": 96,
+  "accepted_minutes": 15.184798958333337,
+  "speakers": 7,
+  "short_pairs_under_eight_words": 6,
+  "all_input_minutes": 107.64469583333332,
+  "per_source": {
+    "bleriot-a:BEA_checklists_sp001": 24,
+    "bleriot-a:BEA_checklists_sp004": 5,
+    "bleriot-a:BEA_checklists_sp008": 15,
+    "bleriot-a:BEA_checklists_sp009": 15,
+    "bleriot-a:BEA_checklists_sp010": 23,
+    "bleriot-a:BEA_checklists_sp011": 10,
+    "bleriot-a:DGA_checklist-Beech_sp101": 4
+  },
+  "rejection_reasons": {
+    "asr_disagreement": 344,
+    "insufficient_publisher_support": 534,
+    "medium_low_score": 30,
+    "state_or_negation_disagreement": 85,
+    "critical_token_not_supported_by_publisher": 218,
+    "too_short": 7,
+    "small_low_score": 31,
+    "numeric_disagreement": 67,
+    "medium_collapsed_times": 1
+  },
+  "train_sha256": "eb343994b8791f0065228ebecff2d6bf79c34c6411e968ca2c8e8070d09b9ab1",
+  "dev_sha256": "76fbf9ba6c29f31aeeff27d0cf0013638a76ab95e3d6a21b2d62f88a4e5384f6",
+  "dev_byte_identical": true,
+  "new_asr_calls": 675,
+  "runtime_failures": 0,
+  "human_verified_added": 0,
+  "training_steps": 0,
+  "asr_quality_improvement": "NOT_MEASURED"
+}

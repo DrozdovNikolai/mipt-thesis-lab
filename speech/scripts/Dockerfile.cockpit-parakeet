@@ -1,0 +1,8 @@
+FROM north55-speech-train:publisher-v2
+USER root
+RUN apt-get update && apt-get install -y --no-install-recommends g++ && rm -rf /var/lib/apt/lists/*
+RUN --mount=type=cache,target=/root/.cache/uv uv pip install \
+    'nemo_toolkit[asr]==2.4.0' 'torch==2.8.0' 'torchaudio==2.8.0' \
+    'transformers==4.51.3' 'peft==0.15.2' 'huggingface-hub==0.34.4'
+USER 10001:10001
+ENTRYPOINT ["python", "-u"]

@@ -1,0 +1,27 @@
+{
+  "policy": {
+    "id": "speaker_round_robin_hash55_v1",
+    "count": 200,
+    "seed": 55,
+    "duration_seconds": [
+      1,
+      30
+    ],
+    "split": "train",
+    "audio_selection_by_ASR": false
+  },
+  "driver_sha256": "a65d9d119f5c918ce32124b03bfaa2a79f16f63f241eb918e68d15364d493662",
+  "code_sha256": "f7e354751e1f3f08fe3b371cf4bf8abf65d199c6f283687ad7c722a983183b61",
+  "scorer_sha256": "12d299fc3407caf6f82a2e4c3c3e0d1443b5d065a95ffbf0b5fcc01731421084",
+  "vad_weights_sha256": "4cbf549b8326f60f80f2536d9eefeb450a9abe83365a098031c89719f1be17d2",
+  "acceptance_sha256": "32d35b1e80b64f38e6adcc9895515b37f224a9e51dcf5ff95389e1f9ecc45071",
+  "baseline_sha256": "419accafb0874a51c11bd4865117a4daf761345a48242e36269c71e88a73e1d1",
+  "uv_lock_sha256": "55a8e553c1ae4894347e17a16957bc5a7ea7bbcd06f33e0bd74fa85a440e062b",
+  "protocol_sha256": "db814a2a53d2816b8d418fdc10834603e13aae861e7e869df77e39267b97727c",
+  "experiment_driver_sha256": "c1e295e540431dfe9881357f0fea12523404ea128caa48a4493ff81862227a5c",
+  "training_implementation_sha256": "568294dd7060f659f219fcec15ce342fa5e41a7b3bb452e29ffa3952b80b74ba",
+  "prior_plan_sha256": "b5a5934484e5f7911c15b507bbc147fe3297bfe0180743924d57aa26383261dc",
+  "source_sha256": "3098c6e44d1d49f8c62bd123775f1c492bda2cabd80f3ee70fe7800572371401",
+  "test_accessed": false,
+  "data_selection_uses_reference_answers": false
+}

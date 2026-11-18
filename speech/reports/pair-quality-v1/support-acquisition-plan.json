@@ -1,0 +1,53 @@
+{
+  "sources": {
+    "librispeech": {
+      "repo": "openslr/librispeech_asr",
+      "revision": "71cacbfb7e2354c4226d01e70d77d5fca3d04ba1",
+      "files": [
+        "clean/train.100/0000.parquet"
+      ]
+    },
+    "fleurs": {
+      "repo": "google/fleurs",
+      "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+      "files": [
+        "data/ru_ru/train.tsv",
+        "data/ru_ru/audio/train.tar.gz"
+      ]
+    }
+  },
+  "scope": "general_speech_training_only",
+  "limit_per_language": 200,
+  "selection": "publisher order, 1-30 sec, nonempty text; no ASR-based selection",
+  "manual_audio_verification": false,
+  "test_downloaded": false,
+  "files": [
+    {
+      "source": "librispeech",
+      "filename": "clean/train.100/0000.parquet",
+      "size": 469629285,
+      "checksum": "3098c6e44d1d49f8c62bd123775f1c492bda2cabd80f3ee70fe7800572371401",
+      "algorithm": "sha256",
+      "local": "librispeech-0000.parquet",
+      "url": "https://huggingface.co/datasets/openslr/librispeech_asr/resolve/71cacbfb7e2354c4226d01e70d77d5fca3d04ba1/clean/train.100/0000.parquet"
+    },
+    {
+      "source": "fleurs",
+      "filename": "data/ru_ru/train.tsv",
+      "size": 2358557,
+      "checksum": "ad3fbc79df6727f4a168b5bd71ed14eb92cc264d",
+      "algorithm": "git_blob_sha1",
+      "local": "fleurs-train.tsv",
+      "url": "https://huggingface.co/datasets/google/fleurs/resolve/70bb2e84b976b7e960aa89f1c648e09c59f894dd/data/ru_ru/train.tsv"
+    },
+    {
+      "source": "fleurs",
+      "filename": "data/ru_ru/audio/train.tar.gz",
+      "size": 1427743798,
+      "checksum": "1966e34c17d612317f03916fb45159c793947de77e1988fe76b3b53cf6c40b44",
+      "algorithm": "sha256",
+      "local": "fleurs-train.tar.gz",
+      "url": "https://huggingface.co/datasets/google/fleurs/resolve/70bb2e84b976b7e960aa89f1c648e09c59f894dd/data/ru_ru/audio/train.tar.gz"
+    }
+  ]
+}

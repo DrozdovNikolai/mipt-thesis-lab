@@ -1,0 +1,1529 @@
+{
+  "pairs": [
+    {
+      "id": "fit-d4ee5ee545de8a2dfc913b81ece4097a",
+      "clean_id": "fit-92cf95f45fa02c633d0cf6af211a805b",
+      "duration_sec": 9.392,
+      "same_weak_text": true,
+      "clean": {
+        "rms_dbfs": -54.88853877246732,
+        "peak": 0.012885884381830692,
+        "clip_fraction": 0.0,
+        "power_below_300Hz": 0.7292373776435852,
+        "power_300_to_3400Hz": 0.26183587312698364
+      },
+      "noisy": {
+        "rms_dbfs": -18.900635155531866,
+        "peak": 0.9555909633636475,
+        "clip_fraction": 0.0,
+        "power_below_300Hz": 0.5088912844657898,
+        "power_300_to_3400Hz": 0.49104514718055725
+      },
+      "correlation_zero_lag": -0.05157329776313578,
+      "best_lag_sec_within_250ms": 0.0048125,
+      "best_abs_correlation_within_250ms": 0.11741958255881695,
+      "prior_coherence": 0.4543899893760681,
+      "vad_keep": true,
+      "reference": "Check. Left ignition and engine start. Off. Right condition lever. Reduce to low idle.",
+      "hypotheses": {
+        "baseline": "check, depth in position, engine stop, off, by condition level, reduce to cloud idle.",
+        "uniform": "check, depth in position, engine open, off. By condition level, reduce to cloud idle.",
+        "balanced": "check, depth in position, engine open, off. By condition level, reduce to cloud idle.",
+        "balanced-silence": "check, depth in position, engine open, off. By condition level, reduce to cloud idle.",
+        "parakeet": "Checked. Left condition. Engine toe. Off. High condition level. Reduced to low height."
+      },
+      "clean_hypotheses": {
+        "baseline": "Check. Left ignition and engine start. Off. Right condition lever. Reduce to low idle.",
+        "uniform": "Check. Left ignition and engine start. Off. Right condition lever. Reduce to low idle.",
+        "balanced": "Check. Left ignition and engine start. Off. Right condition lever. Reduce to low idle.",
+        "balanced-silence": "Check. Left ignition and engine start. Off. Right condition lever. Reduce to low idle.",
+        "parakeet": "Check. Left ignition and engine start. Off. Right condition level. Reduce to low idle."
+      }
+    },
+    {
+      "id": "fit-bb394900f74faa98f92a1239dbf9133a",
+      "clean_id": "fit-d3a5e3eaf2053634acf4495db888d62b",
+      "duration_sec": 9.552,
+      "same_weak_text": true,
+      "clean": {
+        "rms_dbfs": -56.89083926912936,
+        "peak": 0.011980943381786346,
+        "clip_fraction": 0.0,
+        "power_below_300Hz": 0.623127818107605,
+        "power_300_to_3400Hz": 0.35603007674217224
+      },
+      "noisy": {
+        "rms_dbfs": -19.109906013594774,
+        "peak": 0.6436999440193176,
+        "clip_fraction": 0.0,
+        "power_below_300Hz": 0.5237770676612854,
+        "power_300_to_3400Hz": 0.4761616885662079
+      },
+      "correlation_zero_lag": -0.011139752489955279,
+      "best_lag_sec_within_250ms": 0.00475,
+      "best_abs_correlation_within_250ms": 0.12128948264013183,
+      "prior_coherence": 0.3384861946105957,
+      "vad_keep": true,
+      "reference": "as required. Master panel and cockpit lights as required. Mic switch normal. Cabin lights as required.",
+      "hypotheses": {
+        "baseline": "That's required. That's all for now. Have a great night. That's required. Like, switch, hold on. Have a good night. That's required.",
+        "uniform": "That's required. That's our panel and cockpit light. Required. Light switch. Can be light. That's required.",
+        "balanced": "That's required. That's doorbell and cockpit light. Required. Lights switch on. Can be light. That's required.",
+        "balanced-silence": "That's required. That's doorbell and cockpit light. Required. Lights switch on. Can be light. That's required.",
+        "parakeet": "That's required. Pass our buttons and go clients. That's required. Light switch or can be light and three graphs."
+      },
+      "clean_hypotheses": {
+        "baseline": "as required. Master panel and cockpit lights as required. Mic switch normal. Cabin lights as required.",
+        "uniform": "as required, master panel and cockpit lights as required, mic switch normal, cabin lights as required",
+        "balanced": "as required, master panel and cockpit lights as required, mic switch normal, cabin lights as required.",
+        "balanced-silence": "as required, master panel and cockpit lights as required, mic switch normal, cabin lights as required.",
+        "parakeet": "as required. Master panel and cockpit lights, as required. Mic switch, normal. Cabin lights as required."
+      }
+    },
+    {
+      "id": "fit-f6c81eb1ea547dbc0ba4ce7e556957c9",
+      "clean_id": "fit-48f5d59484d25d6b6022b76144fa32d7",
+      "duration_sec": 9.008,
+      "same_weak_text": true,
+      "clean": {
+        "rms_dbfs": -57.974032132868956,
+        "peak": 0.010230565443634987,
+        "clip_fraction": 0.0,
+        "power_below_300Hz": 0.7557028532028198,
+        "power_300_to_3400Hz": 0.22121645510196686
+      },
+      "noisy": {
+        "rms_dbfs": -19.37532164646232,
+        "peak": 0.5156830549240112,
+        "clip_fraction": 0.0,
+        "power_below_300Hz": 0.5606303215026855,
+        "power_300_to_3400Hz": 0.43930140137672424
+      },
+      "correlation_zero_lag": -0.03504887179672229,
+      "best_lag_sec_within_250ms": 0.0059375,
+      "best_abs_correlation_within_250ms": 0.09770376035762209,
+      "prior_coherence": 0.2974148690700531,
+      "vad_keep": false,
+      "reference": "check, ice protection equipment, check, full quantity, flight and engine instruments, check, static",
+      "hypotheses": {
+        "baseline": "Check. As a projection, we point, check, we point it to the right, as a change of direction, check, that's it.",
+        "uniform": "Check. As a projection, rebound. Check. Rebound at 2.5. As a turning turn, check. Done.",
+        "balanced": "Check. As a projection, rebound. Check. Rebound at 25. As a turning turn, check. Done.",
+        "balanced-silence": "Check. As a projection, rebound. Check. Rebound at 25. As a turning turn, check. Done.",
+        "parakeet": "Change is the prediction we want to change quantity light and the genetic change. That's equal to"
+      },
+      "clean_hypotheses": {
+        "baseline": "check, ice protection equipment, check, full quantity, flight and engine instruments, check, static",
+        "uniform": "check, ice protection equipment, check, full quantity, flight and engine instruments, check, static",
+        "balanced": "check, ice protection equipment, check, full quantity, flight and engine instruments, check, static",
+        "balanced-silence": "check, ice protection equipment, check, full quantity, flight and engine instruments, check, static",
+        "parakeet": "Check. Ice protection equipment. Check. Full quantity. Flight. And engine instruments. Check. Static."
+      }
+    },
+    {
+      "id": "fit-4c8ec0152511020ec030229642e7e21d",
+      "clean_id": "fit-015ee35de80d03489ebb517c7b4ee4bf",
+      "duration_sec": 8.72,
+      "same_weak_text": true,
+      "clean": {
+        "rms_dbfs": -56.4142318179978,
+        "peak": 0.016191616654396057,
+        "clip_fraction": 0.0,
+        "power_below_300Hz": 0.6739921569824219,
+        "power_300_to_3400Hz": 0.3229011297225952
+      },
+      "noisy": {
+        "rms_dbfs": -19.122566038328454,
+        "peak": 1.1214277744293213,
+        "clip_fraction": 1.4334862385321102e-05,
+        "power_below_300Hz": 0.5281485915184021,
+        "power_300_to_3400Hz": 0.47180449962615967
+      },
+      "correlation_zero_lag": 0.0070567657743733445,
+      "best_lag_sec_within_250ms": 0.0048125,
+      "best_abs_correlation_within_250ms": 0.11052207499359447,
+      "prior_coherence": 0.31566122174263,
+      "vad_keep": false,
+      "reference": "cockpit cabin blower as required, cockpit cabin temp as required, interior lights as required.",
+      "hypotheses": {
+        "baseline": "We can be loved as we are. We can be loved as we are. We can be loved as we are. We are.",
+        "uniform": "Please come in loud as we rock. Please come in sound as we rise. Interior light. Rise.",
+        "balanced": "Please come in loud as we rock. Please come in sound as we rise. Interior light. Rise.",
+        "balanced-silence": "Please come in loud as we rock. Please come in sound as we rise. Interior light. Rise.",
+        "parakeet": "Could be coming love, I think. She's coming to something quiet. Interior life, nothing quiet."
+      },
+      "clean_hypotheses": {
+        "baseline": "cockpit cabin blower as required cockpit cabin tamp as required interior lights as required",
+        "uniform": "cockpit cabin blower as required cockpit cabin tamp as required interior lights as required",
+        "balanced": "cockpit cabin blower as required cockpit cabin tamp as required interior lights as required",
+        "balanced-silence": "cockpit cabin blower as required cockpit cabin tamp as required interior lights as required",
+        "parakeet": "Cockpit cabin blower, as required. Cockpit cabin tamp, as required, interiorized, as required."
+      }
+    },
+    {
+      "id": "fit-6422342ad3dd0c1f6434600c9f62126c",
+      "clean_id": "fit-c8336825452d4b7d96ed284ddd19c5ed",
+      "duration_sec": 3.26,
+      "same_weak_text": true,
+      "clean": {
+        "rms_dbfs": -55.410188975902315,
+        "peak": 0.011184285394847393,
+        "clip_fraction": 0.0,
+        "power_below_300Hz": 0.6328653693199158,
+        "power_300_to_3400Hz": 0.35924622416496277
+      },
+      "noisy": {
+        "rms_dbfs": -18.9845841233505,
+        "peak": 0.5679985880851746,
+        "clip_fraction": 0.0,
+        "power_below_300Hz": 0.520501971244812,
+        "power_300_to_3400Hz": 0.479428768157959
+      },
+      "correlation_zero_lag": -0.05360077782948606,
+      "best_lag_sec_within_250ms": 0.0058125,
+      "best_abs_correlation_within_250ms": 0.15337332309519508,
+      "prior_coherence": 0.40033969283103943,
+      "vad_keep": true,
+      "reference": "Off. Right condition lever.",
+      "hypotheses": {
+        "baseline": "Ah, white condition level.",
+        "uniform": "Ah, bike condition level.",
+        "balanced": "Ah, bike condition level.",
+        "balanced-silence": "Ah, bike condition level.",
+        "parakeet": "Okay. White condition level."
+      },
+      "clean_hypotheses": {
+        "baseline": "of right-condition lever.",
+        "uniform": "of right-condition lever",
+        "balanced": "of right-condition lever.",
+        "balanced-silence": "of right-condition lever.",
+        "parakeet": "Of right condition lever."
+      }
+    },
+    {
+      "id": "fit-b097cb3b45a17f024aa8ae0ff0003f9c",
+      "clean_id": "fit-9ab8abd6e7a045d61962a2b8078e6d2f",
+      "duration_sec": 3.48,
+      "same_weak_text": true,
+      "clean": {
+        "rms_dbfs": -55.6124952817438,
+        "peak": 0.011016510426998138,
+        "clip_fraction": 0.0,
+        "power_below_300Hz": 0.7092495560646057,
+        "power_300_to_3400Hz": 0.2674552798271179
+      },
+      "noisy": {
+        "rms_dbfs": -19.00398561204611,
+        "peak": 0.5229688882827759,
+        "clip_fraction": 0.0,
+        "power_below_300Hz": 0.519350528717041,
+        "power_300_to_3400Hz": 0.4805842339992523
+      },
+      "correlation_zero_lag": -0.008773182068992314,
+      "best_lag_sec_within_250ms": 0.005875,
+      "best_abs_correlation_within_250ms": 0.11868107903194038,
+      "prior_coherence": 0.3758608400821686,
+      "vad_keep": true,
+      "reference": "left generator, reset, then on,",
+      "hypotheses": {
+        "baseline": "Dept. Hirotsu. Reset.",
+        "uniform": "Depth in order. Reset.",
+        "balanced": "Depth in order, reset, ready.",
+        "balanced-silence": "Depth in order, reset, ready.",
+        "parakeet": "Abginerat recess management."
+      },
+      "clean_hypotheses": {
+        "baseline": "Left generator. Reset. Then on.",
+        "uniform": "Left generator, reset, then on.",
+        "balanced": "Left generator, reset, then on.",
+        "balanced-silence": "Left generator, reset, then on.",
+        "parakeet": "Left generator, reset, then on."
+      }
+    },
+    {
+      "id": "fit-993564eb7564cc7f8664f669b57b8e19",
+      "clean_id": "fit-a88dac0cf65c8f89fcc1d29f563ca997",
+      "duration_sec": 5.83,
+      "same_weak_text": true,
+      "clean": {
+        "rms_dbfs": -54.260737893341464,
+        "peak": 0.012552383355796337,
+        "clip_fraction": 0.0,
+        "power_below_300Hz": 0.7182415723800659,
+        "power_300_to_3400Hz": 0.2714430093765259
+      },
+      "noisy": {
+        "rms_dbfs": -18.876194215071894,
+        "peak": 0.7925272583961487,
+        "clip_fraction": 0.0,
+        "power_below_300Hz": 0.5175788402557373,
+        "power_300_to_3400Hz": 0.4823584258556366
+      },
+      "correlation_zero_lag": -0.04532546652090491,
+      "best_lag_sec_within_250ms": 0.0048125,
+      "best_abs_correlation_within_250ms": 0.15906678424243997,
+      "prior_coherence": 0.43383973836898804,
+      "vad_keep": false,
+      "reference": "ignition and engine start starter only ITT below",
+      "hypotheses": {
+        "baseline": "and engine start. Starts are only IGTBO.",
+        "uniform": "and engine start, start only, I keep you all.",
+        "balanced": "ignition and engine start, starter only, ITG below.",
+        "balanced-silence": "ignition and engine start, starter only, ITG below.",
+        "parakeet": "Signation and seng. Power running. I C D below."
+      },
+      "clean_hypotheses": {
+        "baseline": "Ignition and engine start, starter only, ITT below",
+        "uniform": "Ignition and engine start, starter only, ITT below",
+        "balanced": "Ignition and engine start, starter only, ITT below",
+        "balanced-silence": "Ignition and engine start, starter only, ITT below",
+        "parakeet": "Ignition and engine start. Starter only. ITT below."
+      }
+    },
+    {
+      "id": "fit-395f06925b6feb74bc6232b0cc436042",
+      "clean_id": "fit-c5930dd8e5865b3a7c04f92a74f5fda6",
+      "duration_sec": 3.39,
+      "same_weak_text": true,
+      "clean": {
+        "rms_dbfs": -53.391895080774475,
+        "peak": 0.014251451008021832,
+        "clip_fraction": 0.0,
+        "power_below_300Hz": 0.8637296557426453,
+        "power_300_to_3400Hz": 0.12032852321863174
+      },
+      "noisy": {
+        "rms_dbfs": -19.05240752450975,
+        "peak": 0.6322827935218811,
+        "clip_fraction": 0.0,
+        "power_below_300Hz": 0.5359041094779968,
+        "power_300_to_3400Hz": 0.4640132486820221
+      },
+      "correlation_zero_lag": -0.045810614156808364,
+      "best_lag_sec_within_250ms": 0.0105625,
+      "best_abs_correlation_within_250ms": 0.13708561945576972,
+      "prior_coherence": 0.447830468416214,
+      "vad_keep": false,
+      "reference": "ignition and engine start off",
+      "hypotheses": {
+        "baseline": "It's near Schoen, in Bändchen, Germany.",
+        "uniform": "It's near Schoen, in Bändchen, Germany.",
+        "balanced": "It's near Schoen, in Bändchen, Germany.",
+        "balanced-silence": "It's near Schoen, in Bändchen, Germany.",
+        "parakeet": "technicians and engine storage."
+      },
+      "clean_hypotheses": {
+        "baseline": "Ignition and engine start off.",
+        "uniform": "Ignition and engine start off.",
+        "balanced": "ignition and engine start off.",
+        "balanced-silence": "ignition and engine start off.",
+        "parakeet": "Ignition and engine start off."
+      }
+    },
+    {
+      "id": "fit-656a68176d1a94495f878e474127ffc1",
+      "clean_id": "fit-7f5d9f4d552e845110cd9f91c6f12816",
+      "duration_sec": 4.46,
+      "same_weak_text": true,
+      "clean": {
+        "rms_dbfs": -54.573915582099495,
+        "peak": 0.009569939225912094,
+        "clip_fraction": 0.0,
+        "power_below_300Hz": 0.7788650989532471,
+        "power_300_to_3400Hz": 0.20872299373149872
+      },
+      "noisy": {
+        "rms_dbfs": -18.979063993123976,
+        "peak": 0.672792375087738,
+        "clip_fraction": 0.0,
+        "power_below_300Hz": 0.5270333290100098,
+        "power_300_to_3400Hz": 0.4728989601135254
+      },
+      "correlation_zero_lag": -0.074016253622951,
+      "best_lag_sec_within_250ms": 0.010625,
+      "best_abs_correlation_within_250ms": 0.1407116384313179,
+      "prior_coherence": 0.3903922438621521,
+      "vad_keep": false,
+      "reference": "ignition and engine start, starter only,",
+      "hypotheses": {
+        "baseline": "ignition, and engine start, after a run.",
+        "uniform": "ignition, and engine start, off the run.",
+        "balanced": "ignition and engine start, off the run.",
+        "balanced-silence": "ignition and engine start, off the run.",
+        "parakeet": "Ignition and engine start out or running."
+      },
+      "clean_hypotheses": {
+        "baseline": "Ignition and engine start. Start or only.",
+        "uniform": "Ignition and engine start. Start or only.",
+        "balanced": "ignition and engine start, starter only.",
+        "balanced-silence": "ignition and engine start, starter only.",
+        "parakeet": "ignition and engine start. Starter only."
+      }
+    },
+    {
+      "id": "fit-8751d3b0c3e7d893eeb64ce734a6ea2d",
+      "clean_id": "fit-825eaa444bea106df9738d700c4a909d",
+      "duration_sec": 3.88,
+      "same_weak_text": true,
+      "clean": {
+        "rms_dbfs": -55.38109649429729,
+        "peak": 0.009924669750034809,
+        "clip_fraction": 0.0,
+        "power_below_300Hz": 0.5651421546936035,
+        "power_300_to_3400Hz": 0.4229404330253601
+      },
+      "noisy": {
+        "rms_dbfs": -19.003420405222002,
+        "peak": 0.5909598469734192,
+        "clip_fraction": 0.0,
+        "power_below_300Hz": 0.5228712558746338,
+        "power_300_to_3400Hz": 0.47704771161079407
+      },
+      "correlation_zero_lag": 0.012862217066066998,
+      "best_lag_sec_within_250ms": 0.0048125,
+      "best_abs_correlation_within_250ms": 0.16731383937419986,
+      "prior_coherence": 0.3981275260448456,
+      "vad_keep": false,
+      "reference": "complete, exterior lights as required,",
+      "hypotheses": {
+        "baseline": "You should go through your life on 3-4-1.",
+        "uniform": "You should go through your lines on 3-4-1.",
+        "balanced": "Thank you, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir",
+        "balanced-silence": "Thank you, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir",
+        "parakeet": "They should relate otherwise."
+      },
+      "clean_hypotheses": {
+        "baseline": "complete. Exit your lights as required.",
+        "uniform": "complete. Exit your lights as required.",
+        "balanced": "complete, exterior lights as required.",
+        "balanced-silence": "complete, exterior lights as required.",
+        "parakeet": "Exterior lights as required."
+      }
+    },
+    {
+      "id": "fit-ed94928e9d0dcd58307ae59e92ab3acc",
+      "clean_id": "fit-c870953e8a4e201d9dd683e503751264",
+      "duration_sec": 3.31,
+      "same_weak_text": true,
+      "clean": {
+        "rms_dbfs": -60.576596692916816,
+        "peak": 0.00916230771690607,
+        "clip_fraction": 0.0,
+        "power_below_300Hz": 0.5993466377258301,
+        "power_300_to_3400Hz": 0.2981940507888794
+      },
+      "noisy": {
+        "rms_dbfs": -19.342102684462667,
+        "peak": 0.47746542096138,
+        "clip_fraction": 0.0,
+        "power_below_300Hz": 0.545835554599762,
+        "power_300_to_3400Hz": 0.4540892243385315
+      },
+      "correlation_zero_lag": -0.007716907500819805,
+      "best_lag_sec_within_250ms": 0.0029375,
+      "best_abs_correlation_within_250ms": 0.0718094164593487,
+      "prior_coherence": 0.2553235590457916,
+      "vad_keep": false,
+      "reference": "set flaps check and set",
+      "hypotheses": {
+        "baseline": "One, two, three, four, five, six, seven, eight.",
+        "uniform": "One, two, three, four, five, six, seven, eight.",
+        "balanced": "One, two, three, four, check, that's it.",
+        "balanced-silence": "One, two, three, four, check, that's it.",
+        "parakeet": "Eight five check and then"
+      },
+      "clean_hypotheses": {
+        "baseline": "set, flaps, check and set.",
+        "uniform": "set, flaps, check and set.",
+        "balanced": "set, flaps, check and set.",
+        "balanced-silence": "set, flaps, check and set.",
+        "parakeet": "Set. Flaps. Check and set."
+      }
+    },
+    {
+      "id": "fit-06ed1de2b4cad106264f7563cc0c97d4",
+      "clean_id": "fit-43fa02c872aa0d9e39a2178fe325fc58",
+      "duration_sec": 4.74,
+      "same_weak_text": true,
+      "clean": {
+        "rms_dbfs": -58.039745588376945,
+        "peak": 0.008366428315639496,
+        "clip_fraction": 0.0,
+        "power_below_300Hz": 0.6227121353149414,
+        "power_300_to_3400Hz": 0.361509770154953
+      },
+      "noisy": {
+        "rms_dbfs": -19.266204051346545,
+        "peak": 0.4791356325149536,
+        "clip_fraction": 0.0,
+        "power_below_300Hz": 0.5508853197097778,
+        "power_300_to_3400Hz": 0.44907400012016296
+      },
+      "correlation_zero_lag": -0.026511243140591893,
+      "best_lag_sec_within_250ms": 0.00475,
+      "best_abs_correlation_within_250ms": 0.1169272168668367,
+      "prior_coherence": 0.2901833951473236,
+      "vad_keep": false,
+      "reference": "lights as required. Ice protection as required.",
+      "hypotheses": {
+        "baseline": "We are in time. That's good to hear. That's good to hear.",
+        "uniform": "We're in time. That's good. Nice. Protection. That's good. All right.",
+        "balanced": "We're in time. That's good. Nice. Protection. That's good. All right.",
+        "balanced-silence": "We're in time. That's good. Nice. Protection. That's good. All right.",
+        "parakeet": "As we do, light projection as we try."
+      },
+      "clean_hypotheses": {
+        "baseline": "light as required ice protection as required",
+        "uniform": "light as required, ice protection as required,",
+        "balanced": "oil lights as required, ice protection as required,",
+        "balanced-silence": "oil lights as required, ice protection as required,",
+        "parakeet": "Lights as required. Eyes protection as required."
+      }
+    },
+    {
+      "id": "fit-75440ac7a487bb8c8c4e6480b4f625b0",
+      "clean_id": "fit-5239686dfe0fcf887aeeddd9adbc6f65",
+      "duration_sec": 4.07,
+      "same_weak_text": true,
+      "clean": {
+        "rms_dbfs": -54.17126731114202,
+        "peak": 0.012032713741064072,
+        "clip_fraction": 0.0,
+        "power_below_300Hz": 0.6231354475021362,
+        "power_300_to_3400Hz": 0.3682098090648651
+      },
+      "noisy": {
+        "rms_dbfs": -18.88134285566633,
+        "peak": 0.5628179907798767,
+        "clip_fraction": 0.0,
+        "power_below_300Hz": 0.5149359703063965,
+        "power_300_to_3400Hz": 0.4850130081176758
+      },
+      "correlation_zero_lag": -0.048299547311333596,
+      "best_lag_sec_within_250ms": 0.0048125,
+      "best_abs_correlation_within_250ms": 0.15612216936985746,
+      "prior_coherence": 0.34107622504234314,
+      "vad_keep": false,
+      "reference": "confirm full forward, trim, confirm set,",
+      "hypotheses": {
+        "baseline": "Don't fear, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for, for",
+        "uniform": "Don't pierce forward, forward, treasurer, clear for takeoff.",
+        "balanced": "Don't pierce forward, forward, treasurer, clear for takeoff.",
+        "balanced-silence": "Don't pierce forward, forward, treasurer, clear for takeoff.",
+        "parakeet": "Compare four or one three computer six."
+      },
+      "clean_hypotheses": {
+        "baseline": "Confirm full forward, trim, confirm set.",
+        "uniform": "Confirm full forward, trim, confirm set.",
+        "balanced": "Confirm full forward, trim, confirm set.",
+        "balanced-silence": "Confirm full forward, trim, confirm set.",
+        "parakeet": "Confirm full forward. Trim. Confirm set."
+      }
+    },
+    {
+      "id": "fit-0f6d58572884c2d9b76cf9268e7fdf3d",
+      "clean_id": "fit-6cf7b6e727c8f5e4b6b3d13d29fbf68b",
+      "duration_sec": 3.28,
+      "same_weak_text": true,
+      "clean": {
+        "rms_dbfs": -59.5211482944553,
+        "peak": 0.012440045364201069,
+        "clip_fraction": 0.0,
+        "power_below_300Hz": 0.5137744545936584,
+        "power_300_to_3400Hz": 0.4295278787612915
+      },
+      "noisy": {
+        "rms_dbfs": -19.368812651240138,
+        "peak": 0.5073097944259644,
+        "clip_fraction": 0.0,
+        "power_below_300Hz": 0.537761390209198,
+        "power_300_to_3400Hz": 0.4621914327144623
+      },
+      "correlation_zero_lag": 0.019874972687760013,
+      "best_lag_sec_within_250ms": 0.003125,
+      "best_abs_correlation_within_250ms": 0.11719620588906363,
+      "prior_coherence": 0.34239819645881653,
+      "vad_keep": false,
+      "reference": "check, lights as required.",
+      "hypotheses": {
+        "baseline": "Check. Right. Good. Good. Good. Good.",
+        "uniform": "Check. Right. Good. Good. Good. Good.",
+        "balanced": "Check. Light. Cross.",
+        "balanced-silence": "Check. Light. Cross.",
+        "parakeet": "Jack, light, free graph."
+      },
+      "clean_hypotheses": {
+        "baseline": "check lights as required",
+        "uniform": "check lights as required",
+        "balanced": "check lights as required",
+        "balanced-silence": "check lights as required",
+        "parakeet": "Check lights as required."
+      }
+    },
+    {
+      "id": "fit-01b6f820b5fa18cc180d49414d775d83",
+      "clean_id": "fit-69458f0bb5de5603b51510e33cbe38e4",
+      "duration_sec": 1.92,
+      "same_weak_text": true,
+      "clean": {
+        "rms_dbfs": -57.07441838987319,
+        "peak": 0.0163076501339674,
+        "clip_fraction": 0.0,
+        "power_below_300Hz": 0.6967064738273621,
+        "power_300_to_3400Hz": 0.28363651037216187
+      },
+      "noisy": {
+        "rms_dbfs": -20.3960192819852,
+        "peak": 0.6097211241722107,
+        "clip_fraction": 0.0,
+        "power_below_300Hz": 0.5290089845657349,
+        "power_300_to_3400Hz": 0.47093772888183594
+      },
+      "correlation_zero_lag": -0.002933363039894766,
+      "best_lag_sec_within_250ms": 0.0060625,
+      "best_abs_correlation_within_250ms": 0.09544806727394191,
+      "prior_coherence": 0.3975887894630432,
+      "vad_keep": true,
+      "reference": "disconnect, end of procedure.",
+      "hypotheses": {
+        "baseline": "It's pretty, and it's worth it.",
+        "uniform": "It's pretty, and of course it is.",
+        "balanced": "It's pretty, and of course it is.",
+        "balanced-silence": "It's pretty, and of course it is.",
+        "parakeet": "He's good. And of course."
+      },
+      "clean_hypotheses": {
+        "baseline": "disconnect and proceed.",
+        "uniform": "Disconnect, end of procedure.",
+        "balanced": "disconnect, end of procedure.",
+        "balanced-silence": "disconnect, end of procedure.",
+        "parakeet": "Disconnect. End of procedure."
+      }
+    },
+    {
+      "id": "fit-9b3a0e6088957aaeff23de5acfd3ac2a",
+      "clean_id": "fit-62138ea13bb607a7a5b90c0dea94aa50",
+      "duration_sec": 9.048,
+      "same_weak_text": true,
+      "clean": {
+        "rms_dbfs": -55.84014591727042,
+        "peak": 0.014149203896522522,
+        "clip_fraction": 0.0,
+        "power_below_300Hz": 0.6091189980506897,
+        "power_300_to_3400Hz": 0.37348228693008423
+      },
+      "noisy": {
+        "rms_dbfs": -18.92007966037055,
+        "peak": 0.7606700658798218,
+        "clip_fraction": 0.0,
+        "power_below_300Hz": 0.5130455493927002,
+        "power_300_to_3400Hz": 0.4868752658367157
+      },
+      "correlation_zero_lag": -0.026414228515159947,
+      "best_lag_sec_within_250ms": 0.00475,
+      "best_abs_correlation_within_250ms": 0.13327142508907477,
+      "prior_coherence": 0.43498900532722473,
+      "vad_keep": true,
+      "reference": "airspeed, maintain V35 until clear of obstacles, flaps, up, brakes, release",
+      "hypotheses": {
+        "baseline": "Third beam, fifth beam, three, five, until clear, contact, left, south, green, green.",
+        "uniform": "Third beam, fifth beam, three, five, until clear, contact, left, south, green, green.",
+        "balanced": "Third beam, fifth beam, three, five, until clear, contact, left, south, green, green.",
+        "balanced-silence": "Third beam, fifth beam, three, five, until clear, contact, left, south, green, green.",
+        "parakeet": "Just be dead feet, three, five until clear of the action. Fast, fast, great, really."
+      },
+      "clean_hypotheses": {
+        "baseline": "health speed, maintain V35 until clear of obstacles, flaps, up, brakes, release",
+        "uniform": "health speed, maintain V35 until clear of obstacles, flaps, up, brakes, release",
+        "balanced": "health speed, maintain V35 until clear of obstacles, flaps, up, brakes, release.",
+        "balanced-silence": "health speed, maintain V35 until clear of obstacles, flaps, up, brakes, release.",
+        "parakeet": "Airspeed. Maintain V three five until clear of obstacles. Flaps. Up. Brakes. Release."
+      }
+    }
+  ],
+  "emitted_segment_override": {
+    "baseline": {
+      "general_clean": {
+        "records": 50,
+        "emitted_segments": 96,
+        "high_nospeech_overridden_segments": 0,
+        "overridden_words": 0,
+        "total_words": 1208,
+        "examples": []
+      },
+      "partial_human_dev": {
+        "records": 5,
+        "emitted_segments": 13,
+        "high_nospeech_overridden_segments": 0,
+        "overridden_words": 0,
+        "total_words": 118,
+        "examples": []
+      },
+      "quiet_general_clean": {
+        "records": 9,
+        "emitted_segments": 10,
+        "high_nospeech_overridden_segments": 0,
+        "overridden_words": 0,
+        "total_words": 69,
+        "examples": []
+      },
+      "quiet_partial_human_dev": {
+        "records": 5,
+        "emitted_segments": 12,
+        "high_nospeech_overridden_segments": 0,
+        "overridden_words": 0,
+        "total_words": 118,
+        "examples": []
+      },
+      "noise_only": {
+        "records": 15,
+        "emitted_segments": 28,
+        "high_nospeech_overridden_segments": 25,
+        "overridden_words": 197,
+        "total_words": 200,
+        "examples": [
+          {
+            "id": "voici-2660112-2360",
+            "text": " ლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლ�",
+            "no_speech_prob": 0.7333984375,
+            "avg_logprob": -0.14805556191338434
+          },
+          {
+            "id": "voici-2660112-2360",
+            "text": " ლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლ�",
+            "no_speech_prob": 0.91748046875,
+            "avg_logprob": -0.10285874613197395
+          },
+          {
+            "id": "voici-2660112-2060",
+            "text": " ლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლ�",
+            "no_speech_prob": 0.91845703125,
+            "avg_logprob": -0.10426008687960192
+          }
+        ]
+      },
+      "bleriot_b_noise": {
+        "records": 25,
+        "emitted_segments": 22,
+        "high_nospeech_overridden_segments": 22,
+        "overridden_words": 23,
+        "total_words": 23,
+        "examples": [
+          {
+            "id": "bnoise-TBM940_E4_CAM-MeasMic-ch1",
+            "text": " You",
+            "no_speech_prob": 0.7578125,
+            "avg_logprob": -0.9531250298023224
+          },
+          {
+            "id": "bnoise-A330-743_E2_CAM-MeasMic-ch0",
+            "text": " ლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლ�",
+            "no_speech_prob": 0.8701171875,
+            "avg_logprob": -0.11305555449591742
+          },
+          {
+            "id": "bnoise-A330-743_E2_CAM-MeasMic-ch0",
+            "text": " ლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლ�",
+            "no_speech_prob": 0.93603515625,
+            "avg_logprob": -0.09403026678637004
+          }
+        ]
+      },
+      "publisher_weak_dev": {
+        "records": 35,
+        "emitted_segments": 105,
+        "high_nospeech_overridden_segments": 4,
+        "overridden_words": 29,
+        "total_words": 892,
+        "examples": [
+          {
+            "id": "weak-5a868d4b3a20f564774fb063d09487e0",
+            "text": " adders, set to nav, nav lights, on, primary flight display, bright, light,",
+            "no_speech_prob": 0.82568359375,
+            "avg_logprob": -0.648097820903944
+          },
+          {
+            "id": "weak-ee20f78ccbdbd02dea26d0301eb71848",
+            "text": " Barrow or radio minimums",
+            "no_speech_prob": 0.744140625,
+            "avg_logprob": -0.80078125
+          },
+          {
+            "id": "weak-cdd564a474d210272c886ea6c7a45129",
+            "text": " center fuel pumps, as required, NTIs, as required.",
+            "no_speech_prob": 0.69677734375,
+            "avg_logprob": -0.4977022058823529
+          }
+        ]
+      },
+      "train_retained_fit": {
+        "records": 206,
+        "emitted_segments": 285,
+        "high_nospeech_overridden_segments": 2,
+        "overridden_words": 13,
+        "total_words": 2187,
+        "examples": [
+          {
+            "id": "fit-215926ef38ce7db4e5f511d3f6231926",
+            "text": " checklist. Thrust reverse, engage, autopilot off.",
+            "no_speech_prob": 0.69580078125,
+            "avg_logprob": -0.5442708571751912
+          },
+          {
+            "id": "fit-43fa02c872aa0d9e39a2178fe325fc58",
+            "text": " light as required ice protection as required",
+            "no_speech_prob": 0.62841796875,
+            "avg_logprob": -0.7281250119209289
+          }
+        ]
+      },
+      "train_hard_fit": {
+        "records": 25,
+        "emitted_segments": 48,
+        "high_nospeech_overridden_segments": 0,
+        "overridden_words": 0,
+        "total_words": 358,
+        "examples": []
+      },
+      "train_noisy_fit": {
+        "records": 16,
+        "emitted_segments": 33,
+        "high_nospeech_overridden_segments": 3,
+        "overridden_words": 12,
+        "total_words": 272,
+        "examples": [
+          {
+            "id": "fit-06ed1de2b4cad106264f7563cc0c97d4",
+            "text": " We are in time.",
+            "no_speech_prob": 0.607421875,
+            "avg_logprob": -0.9388020808498064
+          },
+          {
+            "id": "fit-06ed1de2b4cad106264f7563cc0c97d4",
+            "text": " That's good to hear.",
+            "no_speech_prob": 0.607421875,
+            "avg_logprob": -0.9388020808498064
+          },
+          {
+            "id": "fit-06ed1de2b4cad106264f7563cc0c97d4",
+            "text": " That's good to hear.",
+            "no_speech_prob": 0.607421875,
+            "avg_logprob": -0.9388020808498064
+          }
+        ]
+      },
+      "acoustic_15_partial_human_dev": {
+        "records": 5,
+        "emitted_segments": 23,
+        "high_nospeech_overridden_segments": 1,
+        "overridden_words": 1,
+        "total_words": 107,
+        "examples": [
+          {
+            "id": "acoustic-15-reviewed-767df23c7c14166f8579da284d5a4219",
+            "text": " VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV",
+            "no_speech_prob": 0.794921875,
+            "avg_logprob": -0.09170484441425164
+          }
+        ]
+      },
+      "acoustic_5_partial_human_dev": {
+        "records": 5,
+        "emitted_segments": 11,
+        "high_nospeech_overridden_segments": 0,
+        "overridden_words": 0,
+        "total_words": 321,
+        "examples": []
+      },
+      "acoustic_15_publisher_weak_dev": {
+        "records": 35,
+        "emitted_segments": 108,
+        "high_nospeech_overridden_segments": 3,
+        "overridden_words": 15,
+        "total_words": 904,
+        "examples": [
+          {
+            "id": "acoustic-15-weak-5a868d4b3a20f564774fb063d09487e0",
+            "text": " Adidas, Setuna, Napalights, on, primary flight display, bright, light,",
+            "no_speech_prob": 0.81396484375,
+            "avg_logprob": -0.9381793581921122
+          },
+          {
+            "id": "acoustic-15-weak-d4b8229cd8b305a974371cac5335108a",
+            "text": " to a blind, off, anti-eye.",
+            "no_speech_prob": 0.75634765625,
+            "avg_logprob": -0.8774038278139554
+          },
+          {
+            "id": "acoustic-15-weak-0fadb6886926639bd7b938331a600ae4",
+            "text": " So.",
+            "no_speech_prob": 0.8515625,
+            "avg_logprob": -0.56484375
+          }
+        ]
+      },
+      "acoustic_5_publisher_weak_dev": {
+        "records": 35,
+        "emitted_segments": 136,
+        "high_nospeech_overridden_segments": 1,
+        "overridden_words": 196,
+        "total_words": 1165,
+        "examples": [
+          {
+            "id": "acoustic-5-weak-809260d5b04681ec68e1df2c2be638f8",
+            "text": " and you can see it is light, you have to press the same button, you have to press the same button, you have to press the same button, you have to press the same button, you have to press the same button, you have to press the same button, you have to press the same button, you have to press the same button, you have to press the same button, you have to press the same button, you have to press the same button, you have to press the same button, you have to press the same button, you have to press the same button, you have to press the same button, you have to press the same button, you have to press the same button, you have to press the same button, you have to press the same button, you have to press the same button, you have to press the same button, you have to press the same button, you have to press the same button, you have to press the same button, you have to press the same button, you have to press the same button, you have to press the same button",
+            "no_speech_prob": 0.9775390625,
+            "avg_logprob": -0.11895833015441895
+          }
+        ]
+      },
+      "synthetic_nonspeech": {
+        "records": 20,
+        "emitted_segments": 36,
+        "high_nospeech_overridden_segments": 36,
+        "overridden_words": 36,
+        "total_words": 36,
+        "examples": [
+          {
+            "id": "synthetic-empty-0",
+            "text": " You",
+            "no_speech_prob": 0.84814453125,
+            "avg_logprob": -0.7861328423023224
+          },
+          {
+            "id": "synthetic-empty-1",
+            "text": " ლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლ�",
+            "no_speech_prob": 0.76025390625,
+            "avg_logprob": -0.10909722328186035
+          },
+          {
+            "id": "synthetic-empty-1",
+            "text": " ლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლ�",
+            "no_speech_prob": 0.92724609375,
+            "avg_logprob": -0.10440022688810066
+          }
+        ]
+      }
+    },
+    "uniform": {
+      "general_clean": {
+        "records": 50,
+        "emitted_segments": 96,
+        "high_nospeech_overridden_segments": 0,
+        "overridden_words": 0,
+        "total_words": 1209,
+        "examples": []
+      },
+      "partial_human_dev": {
+        "records": 5,
+        "emitted_segments": 11,
+        "high_nospeech_overridden_segments": 0,
+        "overridden_words": 0,
+        "total_words": 119,
+        "examples": []
+      },
+      "quiet_general_clean": {
+        "records": 9,
+        "emitted_segments": 10,
+        "high_nospeech_overridden_segments": 0,
+        "overridden_words": 0,
+        "total_words": 69,
+        "examples": []
+      },
+      "quiet_partial_human_dev": {
+        "records": 5,
+        "emitted_segments": 12,
+        "high_nospeech_overridden_segments": 0,
+        "overridden_words": 0,
+        "total_words": 122,
+        "examples": []
+      },
+      "noise_only": {
+        "records": 15,
+        "emitted_segments": 23,
+        "high_nospeech_overridden_segments": 13,
+        "overridden_words": 99,
+        "total_words": 122,
+        "examples": [
+          {
+            "id": "voici-2660112-2360",
+            "text": " ლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლ�",
+            "no_speech_prob": 0.6767578125,
+            "avg_logprob": -0.16305554919772677
+          },
+          {
+            "id": "voici-2660112-2300",
+            "text": " ※※※※※※※",
+            "no_speech_prob": 0.60986328125,
+            "avg_logprob": -0.7306985294117647
+          },
+          {
+            "id": "voici-2660112-0720",
+            "text": " ʕ ʕ ʕ ʔ",
+            "no_speech_prob": 0.69384765625,
+            "avg_logprob": -0.8432291905085246
+          }
+        ]
+      },
+      "bleriot_b_noise": {
+        "records": 25,
+        "emitted_segments": 20,
+        "high_nospeech_overridden_segments": 20,
+        "overridden_words": 21,
+        "total_words": 21,
+        "examples": [
+          {
+            "id": "bnoise-TBM940_E4_CAM-MeasMic-ch1",
+            "text": " You",
+            "no_speech_prob": 0.6767578125,
+            "avg_logprob": -0.9511718451976776
+          },
+          {
+            "id": "bnoise-A330-743_E2_CAM-MeasMic-ch0",
+            "text": " ლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლ�",
+            "no_speech_prob": 0.84521484375,
+            "avg_logprob": -0.1143055534362793
+          },
+          {
+            "id": "bnoise-TBM940_E0_3_Pil-MeasMic-ch1",
+            "text": " You",
+            "no_speech_prob": 0.74267578125,
+            "avg_logprob": -0.8579101860523224
+          }
+        ]
+      },
+      "publisher_weak_dev": {
+        "records": 35,
+        "emitted_segments": 81,
+        "high_nospeech_overridden_segments": 1,
+        "overridden_words": 12,
+        "total_words": 897,
+        "examples": [
+          {
+            "id": "weak-5a868d4b3a20f564774fb063d09487e0",
+            "text": " adders, set to nav, nav lights, on, primary flight display, bright, left,",
+            "no_speech_prob": 0.71826171875,
+            "avg_logprob": -0.5682744668877643
+          }
+        ]
+      },
+      "train_retained_fit": {
+        "records": 206,
+        "emitted_segments": 248,
+        "high_nospeech_overridden_segments": 0,
+        "overridden_words": 0,
+        "total_words": 2191,
+        "examples": []
+      },
+      "train_hard_fit": {
+        "records": 25,
+        "emitted_segments": 31,
+        "high_nospeech_overridden_segments": 0,
+        "overridden_words": 0,
+        "total_words": 363,
+        "examples": []
+      },
+      "train_noisy_fit": {
+        "records": 16,
+        "emitted_segments": 34,
+        "high_nospeech_overridden_segments": 0,
+        "overridden_words": 0,
+        "total_words": 153,
+        "examples": []
+      },
+      "acoustic_15_partial_human_dev": {
+        "records": 5,
+        "emitted_segments": 11,
+        "high_nospeech_overridden_segments": 0,
+        "overridden_words": 0,
+        "total_words": 124,
+        "examples": []
+      },
+      "acoustic_5_partial_human_dev": {
+        "records": 5,
+        "emitted_segments": 10,
+        "high_nospeech_overridden_segments": 0,
+        "overridden_words": 0,
+        "total_words": 327,
+        "examples": []
+      },
+      "acoustic_15_publisher_weak_dev": {
+        "records": 35,
+        "emitted_segments": 70,
+        "high_nospeech_overridden_segments": 1,
+        "overridden_words": 12,
+        "total_words": 973,
+        "examples": [
+          {
+            "id": "acoustic-15-weak-5a868d4b3a20f564774fb063d09487e0",
+            "text": " Adios, set to nap, nap lights, on, primary flight display, right, left.",
+            "no_speech_prob": 0.650390625,
+            "avg_logprob": -0.806385848833167
+          }
+        ]
+      },
+      "acoustic_5_publisher_weak_dev": {
+        "records": 35,
+        "emitted_segments": 81,
+        "high_nospeech_overridden_segments": 1,
+        "overridden_words": 4,
+        "total_words": 980,
+        "examples": [
+          {
+            "id": "acoustic-5-weak-82f551b652f97522629d5abfea71eb17",
+            "text": " remove engine area clear.",
+            "no_speech_prob": 0.63134765625,
+            "avg_logprob": -0.5864257737994194
+          }
+        ]
+      },
+      "synthetic_nonspeech": {
+        "records": 20,
+        "emitted_segments": 28,
+        "high_nospeech_overridden_segments": 24,
+        "overridden_words": 24,
+        "total_words": 28,
+        "examples": [
+          {
+            "id": "synthetic-empty-0",
+            "text": " You",
+            "no_speech_prob": 0.79150390625,
+            "avg_logprob": -0.76318359375
+          },
+          {
+            "id": "synthetic-empty-1",
+            "text": " ვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვ�",
+            "no_speech_prob": 0.71533203125,
+            "avg_logprob": -0.10395833545260959
+          },
+          {
+            "id": "synthetic-empty-2",
+            "text": " ლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლ�",
+            "no_speech_prob": 0.740234375,
+            "avg_logprob": -0.13763888676961264
+          }
+        ]
+      }
+    },
+    "balanced": {
+      "general_clean": {
+        "records": 50,
+        "emitted_segments": 95,
+        "high_nospeech_overridden_segments": 0,
+        "overridden_words": 0,
+        "total_words": 1209,
+        "examples": []
+      },
+      "partial_human_dev": {
+        "records": 5,
+        "emitted_segments": 11,
+        "high_nospeech_overridden_segments": 0,
+        "overridden_words": 0,
+        "total_words": 119,
+        "examples": []
+      },
+      "quiet_general_clean": {
+        "records": 9,
+        "emitted_segments": 10,
+        "high_nospeech_overridden_segments": 0,
+        "overridden_words": 0,
+        "total_words": 69,
+        "examples": []
+      },
+      "quiet_partial_human_dev": {
+        "records": 5,
+        "emitted_segments": 11,
+        "high_nospeech_overridden_segments": 0,
+        "overridden_words": 0,
+        "total_words": 118,
+        "examples": []
+      },
+      "noise_only": {
+        "records": 15,
+        "emitted_segments": 14,
+        "high_nospeech_overridden_segments": 9,
+        "overridden_words": 163,
+        "total_words": 320,
+        "examples": [
+          {
+            "id": "voici-2660112-2360",
+            "text": " ლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლ�",
+            "no_speech_prob": 0.68359375,
+            "avg_logprob": -0.15666666242811414
+          },
+          {
+            "id": "voici-2660112-2300",
+            "text": " ※※※※※※※※※",
+            "no_speech_prob": 0.62109375,
+            "avg_logprob": -0.5818452153887067
+          },
+          {
+            "id": "voici-2660112-0740",
+            "text": " ʕ ʕ ʔ",
+            "no_speech_prob": 0.6591796875,
+            "avg_logprob": -0.9947916467984518
+          }
+        ]
+      },
+      "bleriot_b_noise": {
+        "records": 25,
+        "emitted_segments": 24,
+        "high_nospeech_overridden_segments": 24,
+        "overridden_words": 25,
+        "total_words": 25,
+        "examples": [
+          {
+            "id": "bnoise-TBM940_E4_CAM-MeasMic-ch1",
+            "text": " You",
+            "no_speech_prob": 0.68505859375,
+            "avg_logprob": -0.9736328423023224
+          },
+          {
+            "id": "bnoise-A330-743_E2_CAM-MeasMic-ch0",
+            "text": " ლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლ�",
+            "no_speech_prob": 0.85009765625,
+            "avg_logprob": -0.1148611142900255
+          },
+          {
+            "id": "bnoise-A330-743_E2_CAM-MeasMic-ch0",
+            "text": " ლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლ�",
+            "no_speech_prob": 0.92431640625,
+            "avg_logprob": -0.098444506459172
+          }
+        ]
+      },
+      "publisher_weak_dev": {
+        "records": 35,
+        "emitted_segments": 81,
+        "high_nospeech_overridden_segments": 2,
+        "overridden_words": 14,
+        "total_words": 896,
+        "examples": [
+          {
+            "id": "weak-5a868d4b3a20f564774fb063d09487e0",
+            "text": " adders, set to nav, nav lights, on, primary flight display, bright, left,",
+            "no_speech_prob": 0.70849609375,
+            "avg_logprob": -0.6012228157209314
+          },
+          {
+            "id": "weak-49e690adae1feb3292ab8d4ba1d81881",
+            "text": " to local.",
+            "no_speech_prob": 0.72509765625,
+            "avg_logprob": -0.9479167064030966
+          }
+        ]
+      },
+      "train_retained_fit": {
+        "records": 206,
+        "emitted_segments": 235,
+        "high_nospeech_overridden_segments": 0,
+        "overridden_words": 0,
+        "total_words": 2185,
+        "examples": []
+      },
+      "train_hard_fit": {
+        "records": 25,
+        "emitted_segments": 29,
+        "high_nospeech_overridden_segments": 0,
+        "overridden_words": 0,
+        "total_words": 364,
+        "examples": []
+      },
+      "train_noisy_fit": {
+        "records": 16,
+        "emitted_segments": 32,
+        "high_nospeech_overridden_segments": 1,
+        "overridden_words": 111,
+        "total_words": 364,
+        "examples": [
+          {
+            "id": "fit-8751d3b0c3e7d893eeb64ce734a6ea2d",
+            "text": " sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir",
+            "no_speech_prob": 0.6689453125,
+            "avg_logprob": -0.032493694280295096
+          }
+        ]
+      },
+      "acoustic_15_partial_human_dev": {
+        "records": 5,
+        "emitted_segments": 11,
+        "high_nospeech_overridden_segments": 0,
+        "overridden_words": 0,
+        "total_words": 126,
+        "examples": []
+      },
+      "acoustic_5_partial_human_dev": {
+        "records": 5,
+        "emitted_segments": 9,
+        "high_nospeech_overridden_segments": 0,
+        "overridden_words": 0,
+        "total_words": 211,
+        "examples": []
+      },
+      "acoustic_15_publisher_weak_dev": {
+        "records": 35,
+        "emitted_segments": 65,
+        "high_nospeech_overridden_segments": 1,
+        "overridden_words": 14,
+        "total_words": 899,
+        "examples": [
+          {
+            "id": "acoustic-15-weak-5a868d4b3a20f564774fb063d09487e0",
+            "text": " and the areas set to nav, nav lights, on, primary flight display, right, left.",
+            "no_speech_prob": 0.61767578125,
+            "avg_logprob": -0.7751358643822048
+          }
+        ]
+      },
+      "acoustic_5_publisher_weak_dev": {
+        "records": 35,
+        "emitted_segments": 57,
+        "high_nospeech_overridden_segments": 0,
+        "overridden_words": 0,
+        "total_words": 968,
+        "examples": []
+      },
+      "synthetic_nonspeech": {
+        "records": 20,
+        "emitted_segments": 24,
+        "high_nospeech_overridden_segments": 24,
+        "overridden_words": 25,
+        "total_words": 25,
+        "examples": [
+          {
+            "id": "synthetic-empty-0",
+            "text": " You",
+            "no_speech_prob": 0.7958984375,
+            "avg_logprob": -0.7773437798023224
+          },
+          {
+            "id": "synthetic-empty-1",
+            "text": " ვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვვ�",
+            "no_speech_prob": 0.7275390625,
+            "avg_logprob": -0.10090277671813964
+          },
+          {
+            "id": "synthetic-empty-2",
+            "text": " ლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლ�",
+            "no_speech_prob": 0.75,
+            "avg_logprob": -0.1366666645473904
+          }
+        ]
+      }
+    },
+    "balanced-silence": {
+      "general_clean": {
+        "records": 50,
+        "emitted_segments": 95,
+        "high_nospeech_overridden_segments": 0,
+        "overridden_words": 0,
+        "total_words": 1209,
+        "examples": []
+      },
+      "partial_human_dev": {
+        "records": 5,
+        "emitted_segments": 11,
+        "high_nospeech_overridden_segments": 0,
+        "overridden_words": 0,
+        "total_words": 119,
+        "examples": []
+      },
+      "quiet_general_clean": {
+        "records": 9,
+        "emitted_segments": 10,
+        "high_nospeech_overridden_segments": 0,
+        "overridden_words": 0,
+        "total_words": 69,
+        "examples": []
+      },
+      "quiet_partial_human_dev": {
+        "records": 5,
+        "emitted_segments": 11,
+        "high_nospeech_overridden_segments": 1,
+        "overridden_words": 8,
+        "total_words": 118,
+        "examples": [
+          {
+            "id": "reviewed-291ebb141aa4e7a7ba94ccf8d18002fb--quiet12",
+            "text": " annunciator panel, november in red, oxygen as required,",
+            "no_speech_prob": 0.6044921875,
+            "avg_logprob": -0.8060661764705882
+          }
+        ]
+      },
+      "noise_only": {
+        "records": 15,
+        "emitted_segments": 12,
+        "high_nospeech_overridden_segments": 9,
+        "overridden_words": 163,
+        "total_words": 314,
+        "examples": [
+          {
+            "id": "voici-2660112-2360",
+            "text": " ლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლ�",
+            "no_speech_prob": 0.72607421875,
+            "avg_logprob": -0.1559722243414985
+          },
+          {
+            "id": "voici-2660112-2300",
+            "text": " ※※※※※※※※※",
+            "no_speech_prob": 0.66357421875,
+            "avg_logprob": -0.5799850963410877
+          },
+          {
+            "id": "voici-2660112-0740",
+            "text": " ʕ ʕ ʔ",
+            "no_speech_prob": 0.7021484375,
+            "avg_logprob": -0.9902343253294627
+          }
+        ]
+      },
+      "bleriot_b_noise": {
+        "records": 25,
+        "emitted_segments": 25,
+        "high_nospeech_overridden_segments": 25,
+        "overridden_words": 26,
+        "total_words": 26,
+        "examples": [
+          {
+            "id": "bnoise-TBM940_E4_CAM-MeasMic-ch1",
+            "text": " You",
+            "no_speech_prob": 0.72314453125,
+            "avg_logprob": -0.9736328423023224
+          },
+          {
+            "id": "bnoise-A330-743_E2_CAM-MeasMic-ch0",
+            "text": " ლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლ�",
+            "no_speech_prob": 0.8779296875,
+            "avg_logprob": -0.11458333015441895
+          },
+          {
+            "id": "bnoise-A330-743_E2_CAM-MeasMic-ch0",
+            "text": " ლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლ�",
+            "no_speech_prob": 0.931640625,
+            "avg_logprob": -0.09781389867243745
+          }
+        ]
+      },
+      "publisher_weak_dev": {
+        "records": 35,
+        "emitted_segments": 81,
+        "high_nospeech_overridden_segments": 2,
+        "overridden_words": 14,
+        "total_words": 896,
+        "examples": [
+          {
+            "id": "weak-5a868d4b3a20f564774fb063d09487e0",
+            "text": " adders, set to nav, nav lights, on, primary flight display, bright, left,",
+            "no_speech_prob": 0.734375,
+            "avg_logprob": -0.6008831314418627
+          },
+          {
+            "id": "weak-49e690adae1feb3292ab8d4ba1d81881",
+            "text": " to local.",
+            "no_speech_prob": 0.74462890625,
+            "avg_logprob": -0.947265625
+          }
+        ]
+      },
+      "train_retained_fit": {
+        "records": 206,
+        "emitted_segments": 236,
+        "high_nospeech_overridden_segments": 0,
+        "overridden_words": 0,
+        "total_words": 2186,
+        "examples": []
+      },
+      "train_hard_fit": {
+        "records": 25,
+        "emitted_segments": 29,
+        "high_nospeech_overridden_segments": 0,
+        "overridden_words": 0,
+        "total_words": 361,
+        "examples": []
+      },
+      "train_noisy_fit": {
+        "records": 16,
+        "emitted_segments": 32,
+        "high_nospeech_overridden_segments": 1,
+        "overridden_words": 111,
+        "total_words": 364,
+        "examples": [
+          {
+            "id": "fit-8751d3b0c3e7d893eeb64ce734a6ea2d",
+            "text": " sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir, sir",
+            "no_speech_prob": 0.6865234375,
+            "avg_logprob": -0.03254624492918964
+          }
+        ]
+      },
+      "acoustic_15_partial_human_dev": {
+        "records": 5,
+        "emitted_segments": 11,
+        "high_nospeech_overridden_segments": 0,
+        "overridden_words": 0,
+        "total_words": 126,
+        "examples": []
+      },
+      "acoustic_5_partial_human_dev": {
+        "records": 5,
+        "emitted_segments": 9,
+        "high_nospeech_overridden_segments": 0,
+        "overridden_words": 0,
+        "total_words": 210,
+        "examples": []
+      },
+      "acoustic_15_publisher_weak_dev": {
+        "records": 35,
+        "emitted_segments": 65,
+        "high_nospeech_overridden_segments": 1,
+        "overridden_words": 14,
+        "total_words": 899,
+        "examples": [
+          {
+            "id": "acoustic-15-weak-5a868d4b3a20f564774fb063d09487e0",
+            "text": " and the areas set to nav, nav lights, on, primary flight display, right, left.",
+            "no_speech_prob": 0.64208984375,
+            "avg_logprob": -0.7744564958240675
+          }
+        ]
+      },
+      "acoustic_5_publisher_weak_dev": {
+        "records": 35,
+        "emitted_segments": 57,
+        "high_nospeech_overridden_segments": 0,
+        "overridden_words": 0,
+        "total_words": 968,
+        "examples": []
+      },
+      "synthetic_nonspeech": {
+        "records": 20,
+        "emitted_segments": 24,
+        "high_nospeech_overridden_segments": 24,
+        "overridden_words": 25,
+        "total_words": 25,
+        "examples": [
+          {
+            "id": "synthetic-empty-0",
+            "text": " You",
+            "no_speech_prob": 0.82373046875,
+            "avg_logprob": -0.77490234375
+          },
+          {
+            "id": "synthetic-empty-1",
+            "text": " ლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლ�",
+            "no_speech_prob": 0.76611328125,
+            "avg_logprob": -0.11111111005147298
+          },
+          {
+            "id": "synthetic-empty-2",
+            "text": " ლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლლ�",
+            "no_speech_prob": 0.7880859375,
+            "avg_logprob": -0.13652777989705403
+          }
+        ]
+      }
+    }
+  },
+  "interpretation": "Correlation and VAD rejection are diagnostics, not proof of absent speech. Override counts describe emitted segments only."
+}

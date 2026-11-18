@@ -1,0 +1,30 @@
+{
+  "image": "sha256:34ed3eca5f649c8d1b3fc1b021bae236a3030829d9c9347368a32ba4fa6b347c",
+  "state": {
+    "Status": "exited",
+    "Running": false,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 0,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-09-14T17:02:39.269118357Z",
+    "FinishedAt": "2026-09-14T17:02:39.612088655Z"
+  },
+  "network": "none",
+  "mounts": [
+    {
+      "Type": "volume",
+      "Name": "north55-speech_nus_continuation_v1",
+      "Source": "/var/lib/docker/volumes/north55-speech_nus_continuation_v1/_data",
+      "Destination": "/experiment",
+      "Driver": "local",
+      "Mode": "z",
+      "RW": true,
+      "Propagation": ""
+    }
+  ],
+  "volume": "north55-speech_nus_continuation_v1"
+}

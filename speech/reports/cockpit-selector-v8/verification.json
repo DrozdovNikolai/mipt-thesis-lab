@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "plan_sha256": "ece170ad4203f0576e3854292b74f15445a465c4e77cb7d19a63230ded19f128",
+  "waveforms_verified": 491,
+  "selection_decisions_replayed": 541,
+  "independent_edit_totals": 2114,
+  "token_probabilities_reaggregated": 12598,
+  "replays": {
+    "cpu": {
+      "records": 2,
+      "same_selections": true,
+      "max_mean_log_probability_difference": 3.343231585800632e-05,
+      "device": "cpu",
+      "compute_type": "float32",
+      "calls": {
+        "encoder_calls": 2,
+        "alignment_calls": 4,
+        "acoustic_score": 2
+      }
+    },
+    "replay": {
+      "records": 2,
+      "same_selections": true,
+      "max_mean_log_probability_difference": 0.0,
+      "device": "cuda",
+      "compute_type": "float32",
+      "calls": {
+        "encoder_calls": 2,
+        "alignment_calls": 4,
+        "acoustic_score": 2
+      }
+    }
+  },
+  "new_ASR": 0,
+  "new_training_updates": 0,
+  "verifier_sha256": "6c818d067cc272a65204e843e3a936d00fca4b78b7b8600805fa2d608eaf248c"
+}

@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "executed": true,
+  "isolated_database": true,
+  "steps": [
+    {
+      "operation": "upgrade",
+      "revision": "head",
+      "application_tables": 11
+    },
+    {
+      "operation": "upgrade",
+      "revision": "head",
+      "application_tables": 11
+    },
+    {
+      "operation": "downgrade",
+      "revision": "base",
+      "application_tables": 0
+    },
+    {
+      "operation": "upgrade",
+      "revision": "head",
+      "application_tables": 11
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "implementation_sha256": {
+    "scripts/transcribe_cockpit_consensus_v11.py": "28fb0697d13c5aea25164a3c8db79f3fdff215afe0a900f8e82312b07467b208",
+    "scripts/transcribe_cockpit_hybrid_v10.py": "ef8a8945d9f7a3e7edbf2c8c2722ea11cb8d4a6ecbc53cfbc24123f478dc77e6",
+    "scripts/transcribe_cockpit_hybrid_v9.py": "fd61aecfd87b8468868badb21ab91ec4d1e484c6b94a266b4eddb4579b0f8fe7",
+    "src/north55_speech/__init__.py": "f1cd82ffbdc2435df77df6fda53e5d3eaee8c29d3cb60b0ae2a610112ff8fda0",
+    "src/north55_speech/acoustic_noise_router.py": "b0d518b6fd32b2dc22d8535191a1daf057ffc3368114ce316cfdf17bda90891c",
+    "src/north55_speech/api.py": "a319f23b78063e6d93b469902bc64a63267e1b78c9ab87ae9402a2d79b753a72",
+    "src/north55_speech/asr.py": "028dcdab204ea383d4dd423e4f3707e02f6c5788dcb27dc51689d7d50a585f3b",
+    "src/north55_speech/assets.py": "3a06517744d3fd320730986592f7894cfc22a37e1d5050c4d1d66c3afcec57fc",
+    "src/north55_speech/audio.py": "d26f2cba52864677bc217d3238cb562a40aec0cc191fde65de9bf3de2a58af2f",
+    "src/north55_speech/augmentation.py": "9a6d3f6db05b9827d85a4f31a02425daf1555bf0fc85f600bd026af89c7527d9",
+    "src/north55_speech/benchmark.py": "ff30df29ccb1f4412a1d2a55fc2400080a9d4434e76964bc1f8e8c436bf0a2db",
+    "src/north55_speech/cli.py": "82aa77d10880b6003a2bef1aa791e6aea18b7e48735482e7521b5c686e3563c3",
+    "src/north55_speech/cockpit_candidates_v10.py": "57441048818c1cb594b09c58c751ec738edf0b5a1e29d12ed9e2c8d4718f656e",
+    "src/north55_speech/cockpit_consensus_v11.py": "8a253e20326cbe85a3374e7c9997fa743862fc9e56ef38c7d0940d6821b5d0f4",
+    "src/north55_speech/continuation.py": "a3850f974c555d5303cb76f4a69aac5be60b977f0d101ef13ce1e41a60877bf5",
+    "src/north55_speech/convergence.py": "c9def67c3e158c40dca7850e35dd8d031e1463fcdae93b14d6f2f9a9a6bec108",
+    "src/north55_speech/core.py": "111df2551edaa60b744e60c2e482b6a4fd99850d88047bf64cbffebb882c9656",
+    "src/north55_speech/cross_asr_selection.py": "6642f8a72b6001d6a02801da23977b606da49707e12034503987b25aca754861",
+    "src/north55_speech/cross_data_adaptation.py": "197efd07b3e4de692247fd2421034239ce727e80618c43ae40d6f8dbbb05943f",
+    "src/north55_speech/datasets.py": "52b0049324fb55d5c632b6ec70698295a6490aa1bb7a6cce4547f231fe019f18",
+    "src/north55_speech/db.py": "8a1dce17699713d19c37b4acdf7d1ec4ea71b0e85c9db7257941b695f38c552b",
+    "src/north55_speech/decoder_adaptation.py": "d9ae3345a7b6099e0b1282b9da14b1d4a9ef09f4340c37bcdaf4e2a6b2f96444",
+    "src/north55_speech/diarization.py": "ebde8a8e87af0099a6ee78971f74c802991a65d196a12c9f3db30c64ebf1decc",
+    "src/north55_speech/gates.py": "7eb1ce63366048e15cbead23cc438826380ce899cd90414b9a91093e67c28b33",
+    "src/north55_speech/hard_adaptation.py": "3f1e427bc25bf8bc9dfda8678040731f67a2ced2715865a2732eef8a84167653",
+    "src/north55_speech/jobs.py": "a677f63b031d1dfd361988a4b3144c407272e77eb8ab1fbcf79bd431b6f4e3de",
+    "src/north55_speech/journal.py": "b8ffa787b69444133800bfc5e4288bb7fee5a24014d7cbca05222c0060b5079f",
+    "src/north55_speech/local_transcription.py": "f06d2202194302581e4aadcaae756c67b1588569c2b82eb9bc27702b920ce528",
+    "src/north55_speech/lora.py": "7a64eed7740f50d707d820f60c182b5055a95ff48ca69afd0fad2a213f5ad23f",
+    "src/north55_speech/lora_ablation.py": "cec9f25e099bed79fedab40f32729fea14097c076bd89ef1162f59672443d080",
+    "src/north55_speech/metrics.py": "03876483b34afa31243136a5a3f9b52b17d2a2c15e8435fccfbf23986344792a",
+    "src/north55_speech/nlp.py": "e3dcc378ea66f6be96c81d7a4c884acaad4a930036abda5f0077e916d1dcbbf5",
+    "src/north55_speech/nus_training.py": "c593bb116093427922e8a7b7090e5522810e6e5a0cd7a5dcd534dd010b57183a",
+    "src/north55_speech/pipeline.py": "ca339e5c106aa25a103d3f9034d9ffd50eba7d4220718fe45189e1ac16d22b70",
+    "src/north55_speech/publisher_pairs.py": "0f26fd6cb5278d02de60e1969ab3da73d76da37496f54f040d42a5417de02f58",
+    "src/north55_speech/release.py": "317216d47a924ad29ed4069d7ebd10c3dea36661706a6ae75a5af7580110c8ed",
+    "src/north55_speech/reporting.py": "6dbb8df7111b017a91cf9e2bdc5b25bea9b43b535819b9347a1980691af8575e",
+    "src/north55_speech/retention.py": "ea02456b98e5005a6bc26e727da0c605761b071f205c60e163d7ce27c0bb1b8b",
+    "src/north55_speech/retraining.py": "cf93e2366ef873f189ca200f7f36ae370be0cd3c2a8d0dd007d1ac94965d5045",
+    "src/north55_speech/robust_adaptation.py": "dff60a7dd6de8b9d8abae8400b30b044927b4bf9fe113fdf66f54930593ccab0",
+    "src/north55_speech/sampling.py": "34eaa07aa3b3edb66968581cf4b16470180ed06e329005fe73e16c6ff6bc73a3",
+    "src/north55_speech/schemas.py": "0745770b96bfbc34e2bff6395d2d390ffd3440eb899188743681eca0367f3fa0",
+    "src/north55_speech/selftest.py": "2f5dd462295bd1134b8db6823bc07257a749227505515733a7805e6bf2413aa3",
+    "src/north55_speech/text_windows.py": "ee7e13796f885ff1c47f4d94e95cff4d0760d4f89c92d0ae348bbbbb88d64305",
+    "src/north55_speech/training.py": "2cb7b518d953f96501771a0b50af494d8498968468478b7b71d3b73eb11e369e",
+    "src/north55_speech/vendor/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/north55_speech/vendor/faster_whisper_loop.py": "ababbefc5575b11d234b8f77b8d424840e80cdf6ef089a5075a53b4f987566b2"
+  },
+  "base_runtime_sha256": "9fe80d43f203f0d7a11adaec6fab8b6574b31acc6de18c4319b797368558d692",
+  "v11_plan_sha256": "2326ef45fb73bd19b3e44d9ae1a3670c4688adfedd7b0b4527411b7b13fc6499",
+  "comparison_sha256": "1c13a1ba8cd9c4d6675868071669c433844c9791b7d3d2a619c4373aabbd25f7",
+  "models": {
+    "models": [
+      {
+        "repo": "nvidia/canary-qwen-2.5b",
+        "revision": "b1469e1bba1cfe140205529c79c434ca47180960",
+        "snapshot": "/models/hf/models--nvidia--canary-qwen-2.5b/snapshots/b1469e1bba1cfe140205529c79c434ca47180960",
+        "files": {
+          "README.md": {
+            "sha256": "0f5d9e5066ecc9a5a8b110f4c225b835f72d931630f2c38cac06d6837767ba8d",
+            "bytes": 18967
+          },
+          "LICENSES": {
+            "sha256": "64036e6306bdad699fda41984bfead9a648b0d2e7c0987cf29f301fb85a97ef4",
+            "bytes": 13649
+          },
+          "config.json": {
+            "sha256": "37d15b0445fade873944c9b0cda7221953ec2207169cb6488a3a57d90e629d52",
+            "bytes": 2382
+          },
+          "model.safetensors": {
+            "sha256": "800cb0d099cf655a8887d8b741c3a4afa9891e2b2949870251c4d58c72b59175",
+            "bytes": 5119120624
+          }
+        }
+      },
+      {
+        "repo": "Qwen/Qwen3-1.7B",
+        "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+        "snapshot": "/models/hf/models--Qwen--Qwen3-1.7B/snapshots/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+        "files": {
+          "tokenizer.json": {
+            "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+            "bytes": 11422654
+          },
+          "README.md": {
+            "sha256": "257e52c419dac2258852643f18af6c974f21f8c6c1b6f371b6cca6201cf29091",
+            "bytes": 13963
+          },
+          "generation_config.json": {
+            "sha256": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2",
+            "bytes": 239
+          },
+          "LICENSE": {
+            "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+            "bytes": 11343
+          },
+          "merges.txt": {
+            "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+            "bytes": 1671853
+          },
+          "config.json": {
+            "sha256": "1ddb5b89ebc90dcb417a45c213d818577e65976454d29385c8f6140771d95197",
+            "bytes": 726
+          },
+          "tokenizer_config.json": {
+            "sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+            "bytes": 9732
+          },
+          "vocab.json": {
+            "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+            "bytes": 2776833
+          }
+        }
+      }
+    ],
+    "deep_filter_binary": {
+      "url": "https://github.com/Rikorose/DeepFilterNet/releases/download/v0.5.6/deep-filter-0.5.6-x86_64-unknown-linux-musl",
+      "version": "0.5.6",
+      "sha256": "70775e251eee44c0f2451a1e833326cf8bcbbe304d3e7cd12851e6fce72ef7da",
+      "bytes": 36417296
+    },
+    "audio_uploaded": false,
+    "source_audio_mounted": false
+  },
+  "experimental": true,
+  "smoke_rule": "v10 five cases plus first sorted train id with accepted consensus edit, irrespective of correctness"
+}

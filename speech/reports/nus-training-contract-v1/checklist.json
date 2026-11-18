@@ -1,0 +1,15 @@
+{
+  "audio_contract_675": "PASS",
+  "labels_and_features_675": "PASS",
+  "saved_merge_479_tensors": "PASS",
+  "teacher_forcing_128_passes": "EXECUTED",
+  "ASR_generation_550": "EXECUTED",
+  "ASR_runtime_failures": 0,
+  "guard_tests_4": "PASS",
+  "linux_score_replay": "PASS",
+  "timestamp_quality_fix": "FAIL",
+  "human_pair_verification": "NOT_RUN",
+  "next_convergence_training": "NOT_RUN",
+  "independent_quality": "NEEDS_MORE_DATA",
+  "release_promoted": false
+}

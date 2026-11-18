@@ -1,0 +1,72 @@
+name: north55-aviation-v1
+x-common: &common
+  image: north55-speech-gpu:0.1.0
+  entrypoint: [python, -u, /code/scripts/aviation_experiment.py]
+  network_mode: none
+  environment:
+    PYTHONPATH: /code/src:/code
+    HF_HUB_OFFLINE: '1'
+    TRANSFORMERS_OFFLINE: '1'
+    CUDA_VISIBLE_DEVICES: '0'
+  volumes:
+    - ./reports/aviation-v1/frozen/src:/code/src:ro
+    - ./reports/aviation-v1/frozen/scripts:/code/scripts:ro
+    - audio:/audio:ro
+    - models:/models:ro
+    - ./reports/aviation-v1/inference:/study:ro
+    - ./data/curated/aviation-v1/audio:/new-audio:ro
+services:
+  acquire:
+    image: north55-speech-gpu:0.1.0
+    entrypoint: [python, -u, /code/scripts/acquire_aviation.py]
+    environment:
+      PYTHONPATH: /code/src:/code
+    volumes:
+      - ./src:/code/src:ro
+      - ./scripts/acquire_aviation.py:/code/scripts/acquire_aviation.py:ro
+      - models:/models
+      - ./data/input/atcosim-v1:/source
+      - ./reports/aviation-v1:/output
+  prepare:
+    <<: *common
+    image: north55-speech-train:publisher-v2
+    command: [prepare]
+    volumes:
+      - ./reports/aviation-v1/frozen/src:/code/src:ro
+      - ./reports/aviation-v1/frozen/scripts:/code/scripts:ro
+      - .:/workspace:ro
+      - audio:/audio:ro
+      - models:/models:ro
+      - ./reports/aviation-v1:/output
+      - ./data/curated/aviation-v1/audio:/new-audio
+  infer:
+    <<: *common
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['0']
+              capabilities: [gpu]
+    volumes:
+      - ./reports/aviation-v1/frozen/src:/code/src:ro
+      - ./reports/aviation-v1/frozen/scripts:/code/scripts:ro
+      - audio:/audio:ro
+      - models:/models:ro
+      - ./reports/aviation-v1/inference:/study:ro
+      - ./data/curated/aviation-v1/audio:/new-audio:ro
+      - ./reports/aviation-v1/predictions:/predictions
+  score:
+    <<: *common
+    command: [score]
+    volumes:
+      - ./reports/aviation-v1/frozen/src:/code/src:ro
+      - ./reports/aviation-v1/frozen/scripts:/code/scripts:ro
+      - ./reports/aviation-v1:/output
+volumes:
+  audio:
+    external: true
+    name: north55-speech_audio_data
+  models:
+    external: true
+    name: north55-speech_model_cache

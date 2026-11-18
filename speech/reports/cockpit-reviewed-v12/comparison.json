@@ -1,0 +1,501 @@
+{
+  "status": "DIAGNOSTIC_ONLY",
+  "plan_sha256": "18eeb5c9529618bc32de399637728e8e4b88fc3c2b780e4d953324a8be3a695b",
+  "cohorts": {
+    "all_transcript_verified": {
+      "clips": 16,
+      "models": {
+        "whisper_small": {
+          "S": 28,
+          "D": 18,
+          "I": 10,
+          "N": 203,
+          "errors": 56,
+          "wer": 0.27586206896551724
+        },
+        "guarded_v9": {
+          "S": 22,
+          "D": 2,
+          "I": 7,
+          "N": 203,
+          "errors": 31,
+          "wer": 0.15270935960591134
+        },
+        "consensus_v11": {
+          "S": 25,
+          "D": 2,
+          "I": 8,
+          "N": 203,
+          "errors": 35,
+          "wer": 0.1724137931034483
+        }
+      }
+    },
+    "scope_and_transcript_verified": {
+      "clips": 10,
+      "models": {
+        "whisper_small": {
+          "S": 20,
+          "D": 8,
+          "I": 8,
+          "N": 127,
+          "errors": 36,
+          "wer": 0.28346456692913385
+        },
+        "guarded_v9": {
+          "S": 17,
+          "D": 1,
+          "I": 4,
+          "N": 127,
+          "errors": 22,
+          "wer": 0.1732283464566929
+        },
+        "consensus_v11": {
+          "S": 20,
+          "D": 1,
+          "I": 5,
+          "N": 127,
+          "errors": 26,
+          "wer": 0.2047244094488189
+        }
+      }
+    }
+  },
+  "speakers": 3,
+  "recordings": 5,
+  "reference_methods": {
+    "human_corrected_machine_draft": 16
+  },
+  "new_ASR_calls": 64,
+  "prediction_sha256": {
+    "baseline": "9ad579a03cf28ad4ef83f40d3b2146436e160fc97caf5ac154fd5d69a8a7667f",
+    "hybrid": "cdef5e68d64a2a459c0abf40b2fd6ef1ddb05c045ae9af68c986c8b47b549579",
+    "consensus": "9f3d4565645a912b391e60a9acc62a5001c83b0eccec3f6c18f17f518c4809e9"
+  },
+  "independent_edit_distance_checks": 48,
+  "per_clip": [
+    {
+      "id": "1adcaf07144ecec26885317491eaaf89",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "strict": false,
+      "group": "c78d406f53fb3ec94d8c7b77",
+      "metrics": {
+        "whisper_small": {
+          "S": 0,
+          "D": 2,
+          "I": 0,
+          "N": 12
+        },
+        "guarded_v9": {
+          "S": 0,
+          "D": 1,
+          "I": 0,
+          "N": 12
+        },
+        "consensus_v11": {
+          "S": 0,
+          "D": 1,
+          "I": 0,
+          "N": 12
+        }
+      }
+    },
+    {
+      "id": "a451a40719957efeda4921760e503b0e",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "strict": false,
+      "group": "c78d406f53fb3ec94d8c7b77",
+      "metrics": {
+        "whisper_small": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 17
+        },
+        "guarded_v9": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 17
+        },
+        "consensus_v11": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 17
+        }
+      }
+    },
+    {
+      "id": "730375ae3bced1cca710c5d411207a62",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "strict": false,
+      "group": "c78d406f53fb3ec94d8c7b77",
+      "metrics": {
+        "whisper_small": {
+          "S": 2,
+          "D": 0,
+          "I": 0,
+          "N": 14
+        },
+        "guarded_v9": {
+          "S": 2,
+          "D": 0,
+          "I": 0,
+          "N": 14
+        },
+        "consensus_v11": {
+          "S": 2,
+          "D": 0,
+          "I": 0,
+          "N": 14
+        }
+      }
+    },
+    {
+      "id": "b62884d2c8624983768c9d9376ac7299",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "strict": false,
+      "group": "c78d406f53fb3ec94d8c7b77",
+      "metrics": {
+        "whisper_small": {
+          "S": 4,
+          "D": 0,
+          "I": 2,
+          "N": 9
+        },
+        "guarded_v9": {
+          "S": 3,
+          "D": 0,
+          "I": 2,
+          "N": 9
+        },
+        "consensus_v11": {
+          "S": 3,
+          "D": 0,
+          "I": 2,
+          "N": 9
+        }
+      }
+    },
+    {
+      "id": "0193ef559a1d007c98c708be9ec060cb",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "strict": true,
+      "group": "c78d406f53fb3ec94d8c7b77",
+      "metrics": {
+        "whisper_small": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 12
+        },
+        "guarded_v9": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 12
+        },
+        "consensus_v11": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 12
+        }
+      }
+    },
+    {
+      "id": "455c47ed8f2e3568db981b8a35a07a8d",
+      "source": "bleriot-a:BEA_checklists_sp002",
+      "strict": true,
+      "group": "c78d406f53fb3ec94d8c7b77",
+      "metrics": {
+        "whisper_small": {
+          "S": 1,
+          "D": 0,
+          "I": 0,
+          "N": 15
+        },
+        "guarded_v9": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 15
+        },
+        "consensus_v11": {
+          "S": 3,
+          "D": 0,
+          "I": 0,
+          "N": 15
+        }
+      }
+    },
+    {
+      "id": "809afd7909b97310c9a68a832daaa70a",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "strict": true,
+      "group": "2a8d44a7b6d39717d755107e",
+      "metrics": {
+        "whisper_small": {
+          "S": 5,
+          "D": 0,
+          "I": 5,
+          "N": 11
+        },
+        "guarded_v9": {
+          "S": 6,
+          "D": 0,
+          "I": 1,
+          "N": 11
+        },
+        "consensus_v11": {
+          "S": 6,
+          "D": 0,
+          "I": 2,
+          "N": 11
+        }
+      }
+    },
+    {
+      "id": "fd53a0010c36d64598d50b5dc2d03144",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "strict": true,
+      "group": "2a8d44a7b6d39717d755107e",
+      "metrics": {
+        "whisper_small": {
+          "S": 1,
+          "D": 0,
+          "I": 0,
+          "N": 14
+        },
+        "guarded_v9": {
+          "S": 2,
+          "D": 0,
+          "I": 0,
+          "N": 14
+        },
+        "consensus_v11": {
+          "S": 2,
+          "D": 0,
+          "I": 0,
+          "N": 14
+        }
+      }
+    },
+    {
+      "id": "86862d0a0f2c38424c749538ad898b97",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "strict": true,
+      "group": "2a8d44a7b6d39717d755107e",
+      "metrics": {
+        "whisper_small": {
+          "S": 4,
+          "D": 4,
+          "I": 0,
+          "N": 16
+        },
+        "guarded_v9": {
+          "S": 2,
+          "D": 0,
+          "I": 0,
+          "N": 16
+        },
+        "consensus_v11": {
+          "S": 2,
+          "D": 0,
+          "I": 0,
+          "N": 16
+        }
+      }
+    },
+    {
+      "id": "c0d20c6d6cd4148dd97691452603a4d7",
+      "source": "bleriot-a:BEA_checklists_sp012",
+      "strict": true,
+      "group": "2a8d44a7b6d39717d755107e",
+      "metrics": {
+        "whisper_small": {
+          "S": 2,
+          "D": 0,
+          "I": 0,
+          "N": 13
+        },
+        "guarded_v9": {
+          "S": 2,
+          "D": 0,
+          "I": 0,
+          "N": 13
+        },
+        "consensus_v11": {
+          "S": 2,
+          "D": 0,
+          "I": 0,
+          "N": 13
+        }
+      }
+    },
+    {
+      "id": "3868827f982828ab2d37b1e405894ca1",
+      "source": "bleriot-a:BEA_cvr_sp002",
+      "strict": true,
+      "group": "c78d406f53fb3ec94d8c7b77",
+      "metrics": {
+        "whisper_small": {
+          "S": 3,
+          "D": 2,
+          "I": 1,
+          "N": 11
+        },
+        "guarded_v9": {
+          "S": 2,
+          "D": 0,
+          "I": 1,
+          "N": 11
+        },
+        "consensus_v11": {
+          "S": 2,
+          "D": 0,
+          "I": 1,
+          "N": 11
+        }
+      }
+    },
+    {
+      "id": "2bfec39502ca469c1f1c18d0a408ba45",
+      "source": "bleriot-a:BEA_cvr_sp012",
+      "strict": true,
+      "group": "2a8d44a7b6d39717d755107e",
+      "metrics": {
+        "whisper_small": {
+          "S": 3,
+          "D": 2,
+          "I": 1,
+          "N": 11
+        },
+        "guarded_v9": {
+          "S": 2,
+          "D": 1,
+          "I": 1,
+          "N": 11
+        },
+        "consensus_v11": {
+          "S": 2,
+          "D": 1,
+          "I": 1,
+          "N": 11
+        }
+      }
+    },
+    {
+      "id": "c1acffbf5c2957b10e31fcbe49335ebe",
+      "source": "bleriot-a:DGA_checklist-PC7_sp104 ",
+      "strict": true,
+      "group": "26e708efc3bfb36f0284f683",
+      "metrics": {
+        "whisper_small": {
+          "S": 0,
+          "D": 0,
+          "I": 1,
+          "N": 10
+        },
+        "guarded_v9": {
+          "S": 0,
+          "D": 0,
+          "I": 1,
+          "N": 10
+        },
+        "consensus_v11": {
+          "S": 0,
+          "D": 0,
+          "I": 1,
+          "N": 10
+        }
+      }
+    },
+    {
+      "id": "abecc5e274cf54252c289305a111513a",
+      "source": "bleriot-a:DGA_checklist-PC7_sp104 ",
+      "strict": true,
+      "group": "26e708efc3bfb36f0284f683",
+      "metrics": {
+        "whisper_small": {
+          "S": 1,
+          "D": 0,
+          "I": 0,
+          "N": 14
+        },
+        "guarded_v9": {
+          "S": 1,
+          "D": 0,
+          "I": 0,
+          "N": 14
+        },
+        "consensus_v11": {
+          "S": 1,
+          "D": 0,
+          "I": 0,
+          "N": 14
+        }
+      }
+    },
+    {
+      "id": "af438f5fce37f5644b554eb9c3ef3e42",
+      "source": "bleriot-a:DGA_checklist-PC7_sp104 ",
+      "strict": false,
+      "group": "26e708efc3bfb36f0284f683",
+      "metrics": {
+        "whisper_small": {
+          "S": 0,
+          "D": 8,
+          "I": 0,
+          "N": 14
+        },
+        "guarded_v9": {
+          "S": 0,
+          "D": 0,
+          "I": 1,
+          "N": 14
+        },
+        "consensus_v11": {
+          "S": 0,
+          "D": 0,
+          "I": 1,
+          "N": 14
+        }
+      }
+    },
+    {
+      "id": "7dcbef2bb6ef1150d862ab1e596d7c89",
+      "source": "bleriot-a:DGA_checklist-PC7_sp104 ",
+      "strict": false,
+      "group": "26e708efc3bfb36f0284f683",
+      "metrics": {
+        "whisper_small": {
+          "S": 2,
+          "D": 0,
+          "I": 0,
+          "N": 10
+        },
+        "guarded_v9": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 10
+        },
+        "consensus_v11": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 10
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Machine-assisted human references, not blind independent transcription",
+    "User-selected intelligible English subset; cannot generalize to skipped clips",
+    "6 missing scope confirmations remain unchanged; report strict subset separately",
+    "Read cockpit scripts and few shared dev speakers; not operational cockpit acceptance"
+  ],
+  "test_accessed": false
+}

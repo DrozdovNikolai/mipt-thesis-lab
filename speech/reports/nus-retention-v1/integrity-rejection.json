@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "test": "Copied first saved prediction edited, scorer refused hash mismatch before scoring. Original preserved.",
+  "exit_code": 1,
+  "expected_error": "ValueError: Prediction changed",
+  "original_prediction_sha256": "b810a9eca38f56b52ba79a5c35e2a684a9210699ed42896cba35e737e816cc52",
+  "new_ASR_calls": 0,
+  "command": [
+    "docker",
+    "run",
+    "--name",
+    "north55-nus-retention-integrity-rejection-v1",
+    "--network",
+    "none",
+    "-e",
+    "PYTHONPATH=/app:/app/src",
+    "-v",
+    "C:/DEV/MIPT/Diploma/Speech/reports/nus-retention-v1/frozen:/app:ro",
+    "-v",
+    "C:/DEV/MIPT/Diploma/Speech/reports/nus-retention-v1/integrity-rejection:/study:ro",
+    "-v",
+    "north55-speech_audio_data:/audio:ro",
+    "--entrypoint",
+    "python",
+    "north55-speech-train:publisher-v2",
+    "-c",
+    "from scripts import nus_convergence as w; w.scored('fit', 1)"
+  ]
+}

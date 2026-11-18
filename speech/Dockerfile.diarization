@@ -1,0 +1,6 @@
+FROM north55-speech:0.1.0
+USER root
+RUN --mount=type=cache,target=/root/.cache/uv uv sync --frozen --extra diarization
+COPY src ./src
+RUN --mount=type=cache,target=/root/.cache/uv uv sync --frozen --extra diarization
+USER 10001:10001

@@ -1,0 +1,23 @@
+{
+  "completed_at": "2026-09-15T07:44:49.170966+00:00",
+  "status": "COMPLETE",
+  "new_GPU_ASR": 843,
+  "new_training_runs": 0,
+  "production_changed": false,
+  "artifact_sha256": {
+    "inference/plan.json": "9de4a69dc93f01285d77e6494ddc3eed10b40de20d3557fc8f26f27e466c7282",
+    "predictions/execution.json": "4d23f779c2e48426b814b5b5639df09146a82d5cef7653a12dd4727b40a74f8e",
+    "comparison.json": "7d273d73394ea340f44f6ec2774105ce9e43b30302077f037bf31b3a27cc8288",
+    "verification.json": "4afeb30979ee2e9913a2481c6e39571b323f4496b548efb1146d56d49d537693",
+    "decision.md": "7d24e184c44fc2e103e488d81bc742be53ee2cd135fa8c99710cc4206208efc2",
+    "report.md": "2989e93ae76a4a179b055b121074ef2bfaa6e293cf328d1e267b62444895a1f4",
+    "recovery-summary.json": "b4dda3cdb2e679f18e42a458dcb17bc9757669a537d8f6dd8269ae5990e39d0f",
+    "noise-audit.json": "64a7d4fa6fc217f5936581c2c2028aa9e20f0c6f03dae2f52e932a43f1ffc2ca",
+    "nonspeech-raw-audit.json": "408d68b969a6466412af15cabafb02693cf1173f9f97d6354bc7a523f80ec203",
+    "datasets/supplemental-weak-train.jsonl": "85761f1f4d238b86aaaa2344caa1f297136a6d3fa9dd89b8d0df742d671d380e",
+    "datasets/combined-weak-train.jsonl": "487139c6adfc6e8b7c4b35d4b6f4659107f3d96fac5bc3dde8b9287546835e48",
+    "test-results-final.xml": "14d71938e25edf5892b46eb89158a1ab52dde88d66f39cfd3dfeb1bf947c7ab2",
+    "runtime-image-id.json": "99bdd8493f8b7cebd4746eaba91efa727668e94e70f71348568d80c6f6ed6578",
+    "runtime-packages.txt": "b50325e691ad53c381fe687848fdf65f2135ff149a36451d2c43211e4893e41a"
+  }
+}

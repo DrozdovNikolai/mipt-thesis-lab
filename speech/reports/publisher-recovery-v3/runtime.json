@@ -1,0 +1,126 @@
+{
+  "medium": {
+    "image": "sha256:b5d7218f10baaa6b4bda2ac5da03462d4029f6249f2a93168e4352c47ebb2285",
+    "state": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-09-14T22:05:59.851706952Z",
+      "FinishedAt": "2026-09-14T22:08:21.274510412Z"
+    },
+    "network": "none",
+    "devices": [
+      {
+        "Driver": "nvidia",
+        "Count": 0,
+        "DeviceIDs": [
+          "0"
+        ],
+        "Capabilities": [
+          [
+            "gpu"
+          ]
+        ],
+        "Options": null
+      }
+    ],
+    "mounts": [
+      {
+        "path": "/code/src",
+        "read_write": false
+      },
+      {
+        "path": "/code/scripts",
+        "read_write": false
+      },
+      {
+        "path": "/code/configs",
+        "read_write": false
+      },
+      {
+        "path": "/study",
+        "read_write": false
+      },
+      {
+        "path": "/predictions",
+        "read_write": true
+      },
+      {
+        "path": "/audio",
+        "read_write": false
+      },
+      {
+        "path": "/models",
+        "read_write": false
+      }
+    ]
+  },
+  "large": {
+    "image": "sha256:b5d7218f10baaa6b4bda2ac5da03462d4029f6249f2a93168e4352c47ebb2285",
+    "state": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-09-14T22:09:04.981928829Z",
+      "FinishedAt": "2026-09-14T22:12:55.476197375Z"
+    },
+    "network": "none",
+    "devices": [
+      {
+        "Driver": "nvidia",
+        "Count": 0,
+        "DeviceIDs": [
+          "0"
+        ],
+        "Capabilities": [
+          [
+            "gpu"
+          ]
+        ],
+        "Options": null
+      }
+    ],
+    "mounts": [
+      {
+        "path": "/code/configs",
+        "read_write": false
+      },
+      {
+        "path": "/study",
+        "read_write": false
+      },
+      {
+        "path": "/predictions",
+        "read_write": true
+      },
+      {
+        "path": "/audio",
+        "read_write": false
+      },
+      {
+        "path": "/models",
+        "read_write": false
+      },
+      {
+        "path": "/code/src",
+        "read_write": false
+      },
+      {
+        "path": "/code/scripts",
+        "read_write": false
+      }
+    ]
+  }
+}

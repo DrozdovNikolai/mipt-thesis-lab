@@ -1,0 +1,91 @@
+{
+  "created_at": "2026-09-13 21:09:29.951885+00:00",
+  "status": "PASS",
+  "checks": {
+    "expected_source_change_only": true,
+    "tests_and_integration_pass": true,
+    "static_dependencies_compose": true,
+    "locked_dependency_versions_unchanged": true,
+    "baseline_unchanged_new_code_frozen": true,
+    "current_cpu_gpu_offline": true,
+    "running_api_worker_current": true,
+    "prior_recovery_evidence_preserved": true,
+    "annotation_preserved": true,
+    "all_64_historical_runs_retained": true,
+    "only_runtime_plotted_without_gold": true,
+    "no_final_test_access": true
+  },
+  "changed_existing_files": [
+    "pyproject.toml",
+    "src/north55_speech/benchmark.py",
+    "src/north55_speech/metrics.py",
+    "uv.lock"
+  ],
+  "added_core_files": [
+    "src/north55_speech/reporting.py"
+  ],
+  "code_hash": "4c6456fd47e6d271fa2dc7af5806aec9bf70a9aabaaf2fae81228f69533e7281",
+  "scorer_hash": "12d299fc3407caf6f82a2e4c3c3e0d1443b5d065a95ffbf0b5fcc01731421084",
+  "tests_passed": 228,
+  "engineering_gate": {
+    "status": "PASS",
+    "code_hash": "4c6456fd47e6d271fa2dc7af5806aec9bf70a9aabaaf2fae81228f69533e7281",
+    "scorer_hash": "12d299fc3407caf6f82a2e4c3c3e0d1443b5d065a95ffbf0b5fcc01731421084",
+    "test_cases": 228,
+    "integration_cases": 9,
+    "reasons": [],
+    "evidence_directory": "reporting-v1",
+    "prior_recovery_evidence": "gate-hardening/verification.json"
+  },
+  "asr_quality_gate": {
+    "status": "NEEDS_MORE_DATA",
+    "reasons": [
+      "independent_groups: 0 < 20",
+      "distinct_original_human_utterances: 0 < 300",
+      "reference_words: 0 < 3000",
+      "human_verified_critical_entity_occurrences: 0 < 100",
+      "clean_control_utterances: 0 < 50",
+      "non_speech_control_minutes: 0 < 5"
+    ]
+  },
+  "nlp_quality_gate": {
+    "status": "NEEDS_MORE_DATA",
+    "reasons": [
+      "insufficient_evidence:independent_groups",
+      "insufficient_evidence:human_verified_episodes_or_utterances",
+      "insufficient_positive_support:CHECKLIST",
+      "insufficient_positive_support:CONFIGURATION_MENTION",
+      "insufficient_positive_support:CREW_COORDINATION",
+      "insufficient_evidence:salience_positives",
+      "insufficient_evidence:salience_negatives",
+      "missing_human_event_labels"
+    ]
+  },
+  "temporal_event_gate": {
+    "status": "NEEDS_MORE_DATA",
+    "reasons": [
+      "missing_human_temporal_annotations_on_continuous_recordings"
+    ]
+  },
+  "candidate_selected": false,
+  "release_promoted": false,
+  "validated_scope": [],
+  "research_objective_achieved": false,
+  "review_needed": "18 clips / 6 minutes; zero human revisions at this verification",
+  "browser_check": "Report header and runtime figure visually inspected; temporary local preview stopped",
+  "recovery_check": "Prior executed broker outage/worker SIGKILL evidence reused: recovery source bytes and locked dependency versions unchanged",
+  "gpu_check": "gpu-current is the new-image smoke; gpu is an earlier smoke before the image update and is not counted",
+  "build_note": "CPU full Dockerfile build; active optional runtimes updated from verified prior images with uv sync --frozen. A redundant GPU BuildKit build completed after its parent CLI stopped; redundant fresh training build cancelled. Active image identities are in runtime.json.",
+  "evidence_sha256": {
+    "reporting-v1/all-tests.xml": "c8b916fb534edae92eae6c18fbb91f09ac863908c723f865a062cfd4e55d4a94",
+    "reporting-v1/checks.json": "fe40d6f01d787e0413d1ddab0960a71a229db95aed6c5423108a4554a6d226bb",
+    "reporting-v1/runtime.json": "3dd8067f34d1156fd655100a4f925b720823da8205c2fc0348e839390f600e29",
+    "reporting-v1/source-after.json": "e619c9c5979863eba1a936792d2884ef94d9584c132135d2416472434d11e9dc",
+    "reporting-v1/source-before.json": "6c41f339208a1a893e8a64b5ebeabc3c6394bb8b997e5b397756380ca9df49f5",
+    "reporting-v1/baseline.lock.json": "ade48af6f1c0a8a196a1fb2bfb00a1bfee75b371e56509409434be4349007a36",
+    "reporting-v1/cpu/offline-asr-smoke.json": "a2150f0fd37081fa8abc80df129cbf13ec9046aaa8f222e419bfb335baf5afb2",
+    "reporting-v1/gpu-current/offline-asr-smoke.json": "f82c6f417d485356e769b315f80c1629b7bda0f156cf2c110721d7a268162585",
+    "reporting-v1/dev-runtime/metrics.json": "ae79ec7eb234dd9481848a756042520a6a0965f61d4480707689617c97ecc19e",
+    "gate-hardening/verification.json": "e3f3d04fadfa5949ed06b9ae228571f949daebe8124c0d47bdf91b1497e93bdd"
+  }
+}

@@ -1,0 +1,50 @@
+# Speech-aware tail repair — second fixed implementation
+
+The first repair consumed the entire window after text generation. Its frozen
+mechanical regression FAILED: a real utterance repeated twice was emitted once.
+The proper baseline emitted both. That failed implementation and its264-input
+comparison remain in text-window-fix-v1. They are never overwritten or promoted.
+
+This second implementation follows the same explicit user request to repair the
+tail bug and preserve spoken repeats. Two repaired checkpoints add2 to24 (26
+cumulative including the failed first repair); proper baselines are replays.
+No training or parameter search. Development choices use the engineered repeat
+failure and source-code trace, not WER-driven tuning or final-test answers.
+
+Use all264 unchanged decoding-v1 inputs. Same weights, CUDA float16, source/scorer
+references and baseline options. Freshly run parent/augmented proper baseline
+and repaired text mode. Reuse broken-text outputs only for separate comparison.
+Never advertise repair gains versus broken text as gains versus proper baseline.
+
+Change exactly the upstream seek-after-word-alignment condition. Reopen the tail
+only if Silero detects remaining speech within the current window. VAD analyzes
+the prepared input once and never crops, concatenates, or changes the audio sent
+to ASR. The initial window is always decoded with unchanged no-speech thresholds.
+Fixed tail detector: threshold.4, minimum speech50ms, minimum silence400ms, pad0ms,
+max speech30s. No padding because it would call trailing silence new speech.
+No confidence calibration or guaranteed quiet-command recall is claimed.
+VAD false negatives remain an explicit risk measured on quiet/short controls.
+
+Word alignment remains unchanged; no word/token deduplication, numeric repair,
+role inference or telemetry inference. Input intervals are scoped per generator
+iteration, not stored as mutable shared model state. The MIT upstream loop is
+vendored readably with one conditional change and original license. Source/version
+guard fails closed on an unreviewed backend upgrade.
+
+Mechanical acceptance: original2.27s clip needs1 decoder invocation; two real
+copies with1s pause need2, with both utterances retained; empty input needs0;
+word times stay in the engineered +30s coordinate system. Source3536-8226-0027
+is general EN, not cockpit-command gold. Extra examples are not quality evidence.
+
+Quality protocol stays unchanged: lexical S/D/I/N, WER/CER; paired cluster
+bootstrap2000 seed55 95%CI; target>=10%relative, clean/RU delta<=.01, noise
+insertions/minute delta<=0, no runtime failures. All counts and failed gates stay.
+Five exposed cockpit dev clips/115words/3groups cannot establish independent
+ASR/critical-entity/NLP/temporal quality; no release promotion or final-test access.
+
+Checklist completion is recorded separately, preserving this frozen protocol:
+- [ ] Mechanical tests, original audio, two actual copies, empty input and offsets.
+- [ ] Freeze identities before quality inference;1056 GPU records and8 CPU smokes.
+- [ ] All528 proper-baseline replies replay historical hypotheses and word times.
+- [ ] PowerShell/Linux resume and byte-identical scorer/report replay.
+- [ ] Preserve original plans/results/data; report unresolved gates honestly.

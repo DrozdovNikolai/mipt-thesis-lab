@@ -1,0 +1,16 @@
+{
+  "status": "NEEDS_BOUNDARY_REVIEW",
+  "source_sample_id": "bleriot-a:BEA_checklists_sp001",
+  "candidate_clip_id": "13a76ec2e985e283e00d1420fc528f63",
+  "candidate_original_window_sec": [
+    90,
+    110
+  ],
+  "clip_identification": "Matched from the existing publisher proposal ending in seatbelt; user named the source recording only.",
+  "user_report": "Final word seatbelt is cut after seat.",
+  "heard_prefix_reported_by_user": "seat",
+  "word_start_sec": null,
+  "scoring_mask": null,
+  "annotation_revision_written": false,
+  "action": "Keep an unverified draft until the clipped interval has a human-established time/token mask, or create a separately versioned complete audio window. Apply any scoring mask symmetrically to both systems; never infer the missing suffix."
+}

@@ -1,0 +1,20 @@
+{
+  "manifest_sha256": "0e5a475d0b79f9f6db347e3e647dfb6d881c04121528470c3c6f9e7ee4bf1e2f",
+  "samples": 1901,
+  "groups": {
+    "independent_groups": 4,
+    "split_groups": {
+      "train": 0,
+      "dev": 4,
+      "test": 0
+    },
+    "unknown_speakers": 0,
+    "script_overlap": {},
+    "claim_limitation": null
+  },
+  "scope": "atc",
+  "local_split": "dev",
+  "source_split": "test",
+  "human_reference_scope": "publisher",
+  "local_audio_review": false
+}

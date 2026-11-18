@@ -1,0 +1,92 @@
+{
+  "policy": {
+    "version": "publisher_template_recovery_v3",
+    "minimum_literal_words": 4,
+    "minimum_seconds": 1.2,
+    "maximum_seconds": 25,
+    "maximum_boundary_disagreement_sec": 0.45,
+    "padding_sec": 0.15,
+    "median_word_probability": 0.6,
+    "maximum_zero_duration_fraction": 0.25,
+    "fresh_medium_exact": true,
+    "large_disagreement": 0.1,
+    "short_exact_below_words": 8,
+    "numeric_and_state_agreement": "exact",
+    "human_verified": false,
+    "training_steps": 0
+  },
+  "models": {
+    "medium": {
+      "id": "whisper-medium-en-ct2",
+      "manifest": {
+        "model": "whisper-medium-en-ct2",
+        "repo": "Systran/faster-whisper-medium.en",
+        "revision": "a29b04bd15381511a9af671baec01072039215e3",
+        "license": "MIT",
+        "selected_files": [
+          "README.md",
+          "config.json",
+          "model.bin",
+          "tokenizer.json",
+          "vocabulary.txt"
+        ],
+        "declared_bytes": 1530459085,
+        "acquired_at": "2026-09-14T19:28:36.011576+00:00",
+        "files": {
+          "README.md": "ab3ddd3b6af4ea0ef353cb80004f26613ba33217f81652fc13738d3b098c7675",
+          "config.json": "4a1848ebabe7938d9797c15a2e8e4ce1d36e6fd4a43d096ae5955257c67c7962",
+          "model.bin": "11b220779aea4c6f3ce9d2549c8a95ea869ed84066864b999531ef53e594fe5b",
+          "tokenizer.json": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df",
+          "vocabulary.txt": "ff77588746d3a2595d32ab5b69ffd7b95ce2441ac57533cb66fc3eb575a115cf"
+        }
+      }
+    },
+    "large": {
+      "id": "whisper-large-v3-systran-ct2",
+      "manifest": {
+        "model": "whisper-large-v3-systran-ct2",
+        "repo": "Systran/faster-whisper-large-v3",
+        "revision": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+        "license": "MIT",
+        "upstream": "openai/whisper-large-v3",
+        "format": "CTranslate2 FP16 conversion by SYSTRAN",
+        "files": {
+          "README.md": "39e96252229f5a3d0141dc81afb65a36fd205461ac21e5b70f2cd1248ef0082c",
+          "config.json": "a9306624f5ec14270a014b647e5c316b6e03a662c369758d1b90697a7b0655b9",
+          "model.bin": "69f74147e3334731bc3a76048724833325d2ec74642fb52620eda87352e3d4f1",
+          "preprocessor_config.json": "7ccc62c6f2765af1f3b46c00c9b5894426835a05021c8b9c01eecb6dfb542711",
+          "tokenizer.json": "6d8cbd7cd0d8d5815e478dac67b85a26bbe77c1f5e0c6d76d1ce2abc0e5f21ca",
+          "vocabulary.json": "c69260f2ab26d659b7c398f9a2b2b48ed0df16c3b47d7326782fd9cba71690c1"
+        },
+        "acquired_at": "2026-09-14T07:32:40.284608+00:00",
+        "source_metadata_sha256": "28260f2c86f4f87a7534a48d4e255bffbf18aa0f2aee2c64980a29c2876c49c3"
+      }
+    }
+  },
+  "code_sha256": {
+    "scripts/recover_publisher_v3.py": "ba39484abe24650e607d0404b06a1aa58a06dc78999a0cadc01a6523ddd0a219",
+    "scripts/publisher_recovery_rules_v3.py": "4063d4ea1b8fa0fc8e32c1c343fa6f4ede08b79bcb52f7c09134428735516d5a",
+    "scripts/audit_bleriot_remaining.py": "9b4066b0f9938d5498a440659e3773a35ddf846a16f732568e56567a25847dfd",
+    "scripts/expand_publisher_pairs.py": "47cc9de201b3b481401ce9de9d7570bba6ce776f3f0ca418ba78bef1444db804",
+    "scripts/build_publisher_pairs.py": "e0c66739aa4aa37164768c4400aaa1e1e4f937a0e03e3e3dad3c3675b519b0c0",
+    "scripts/publisher_phrase_support.py": "c0a42ac34651bd553a3ee969b45e6c6b3c98a0847b0d1e340e5f9a94cd77e720",
+    "scripts/publisher_alignment.py": "f866ff85fe9e7634594370d90243509de1100b7a219a8469a945e21eb89fa614",
+    "configs/publisher_slots_v3.json": "3502228caf5a5fced218fd2e393fb7f1934ccdcaa2795f77dc7031396ab10a22",
+    "src/north55_speech/asr.py": "028dcdab204ea383d4dd423e4f3707e02f6c5788dcb27dc51689d7d50a585f3b",
+    "src/north55_speech/schemas.py": "0745770b96bfbc34e2bff6395d2d390ffd3440eb899188743681eca0367f3fa0",
+    "src/north55_speech/metrics.py": "03876483b34afa31243136a5a3f9b52b17d2a2c15e8435fccfbf23986344792a"
+  },
+  "candidates_sha256": "d764a96e6cbf811585a5d139e10edce292c94c86602c477e7c15cea55e56954d",
+  "inputs_sha256": "cb0ad43a5c881fb7a87eac772e560130a1d706f34612225079e79dbd120b03b4",
+  "documents_sha256": "ff4bd0370569da478da41824a6276833d8a4cb982d98aa61801c2ab0dbc73bd8",
+  "sources_sha256": "52db952fd4aeb2cad103d6b8bcaf29a20b43c36d4e7cbec01e744ee2071c0e03",
+  "old_train_sha256": "eb343994b8791f0065228ebecff2d6bf79c34c6411e968ca2c8e8070d09b9ab1",
+  "old_dev_sha256": "76fbf9ba6c29f31aeeff27d0cf0013638a76ab95e3d6a21b2d62f88a4e5384f6",
+  "old_49_train_sha256": "45956603b37c1edc2c8d881de69dee7fe8210842aba63af963387a027c3cebc3",
+  "previous_decisions_sha256": "011f0f15d0ad9df23899fff085879b3f1d58ad1ba20b92997202709425bbc451",
+  "candidates": 514,
+  "asr_calls_planned": 1028,
+  "test_accessed": false,
+  "dev_used_for_selection": false,
+  "training_steps": 0
+}

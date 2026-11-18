@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "new_GPU_ASR_calls": 491,
+  "parakeet_differences": 29,
+  "final_text_differences": 8,
+  "independent_edit_totals": 5410,
+  "records": 541,
+  "diagnostic_checks": {
+    "cockpit_preserved_vs_v9": true,
+    "cockpit_improved": true,
+    "EN_control": true,
+    "RU_control": true,
+    "nonspeech_empty": true
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "version": "a320_printed_slots_v1",
+  "document": "BEA_checklist_A320_pilote.json",
+  "source_sha256": "4da2527a6ca0bc4a6804595c9fb572f24ba4f01f84bb3789e73a71d66243f068",
+  "page": 1,
+  "human_verified": false,
+  "value_source": "audio_only; never filled from aircraft plausibility",
+  "slots": [
+    {"id": "fuel_quantity", "source_line": "FUEL QUANTITY KG/LB", "pattern": "fuel quantity (?P<value>{NUMBER})(?: kilos| kilograms| pounds| kg| lb)?"},
+    {"id": "baro_reference", "source_line": "BARO REF (BOTH)", "pattern": "baro ref(?:erence)? (?P<value>{NUMBER})(?: set)?(?: (?P=value)(?: set)?)?", "repeat_same_response": true},
+    {"id": "takeoff_speeds_thrust", "source_line": "T.O SPEEDS & THRUST (BOTH)", "pattern": "takeoff speeds? and thrust (?P<value>{NUMBER})", "repeat_same_response": true},
+    {"id": "pitch_trim", "source_line": "PITCH TRIM %", "pattern": "pitch trim (?P<value>{NUMBER})(?: %| percent)?"},
+    {"id": "flaps_configuration", "source_line": "FLAPS SETTING CONF (BOTH)", "pattern": "flaps? setting conf (?P<value>{NUMBER})(?: conf (?P=value))?", "repeat_same_response": true},
+    {"id": "fcu_altitude", "source_line": "FCU ALT", "pattern": "fcu altitude (?P<value>{NUMBER})(?: feet)?"},
+    {"id": "minimum", "source_line": "MINIMUM", "pattern": "minimum (?P<value>{NUMBER})(?: feet)?"}
+  ],
+  "fixed_repeats": [
+    {"id": "windows_both", "source_line": "WINDOWS CLOSED (BOTH)", "pattern": "windows closed(?: closed)?"},
+    {"id": "controls_both", "source_line": "FLIGHT CONTROL CHECKED (BOTH)", "pattern": "flight controls? checked(?: checked)?"}
+  ],
+  "spoken_heading_forms": ["COCKPIT PREPARATION", "BEFORE START", "AFTER START", "TAXI", "LINE-UP", "DEPARTURE CHANGE", "APPROACH", "LANDING", "AFTER LANDING", "PARKING", "SECURING THE AIRCRAFT"]
+}

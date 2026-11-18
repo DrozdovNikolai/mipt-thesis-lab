@@ -1,0 +1,99 @@
+[
+  {
+    "id": "bleriot-b",
+    "url": "https://entrepot.recherche.data.gouv.fr/api/datasets/:persistentId/?persistentId=doi:10.57745/NODS6L",
+    "checked_at": "2026-09-14T06:25:21.654671+00:00",
+    "status": 200,
+    "bytes": 21549,
+    "sha256": "4d04a0939c711f50b3d4ffa9a22c4c4011b8ebc2a51c53b2f9c697fc74a30bea",
+    "final_url": "https://entrepot.recherche.data.gouv.fr/api/datasets/:persistentId/?persistentId=doi:10.57745/NODS6L"
+  },
+  {
+    "id": "cvr-data-xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8627982/fullTextXML",
+    "checked_at": "2026-09-14T06:25:21.655232+00:00",
+    "status": 200,
+    "bytes": 26823,
+    "sha256": "e1c5e56d24ffa1f51e65db1fb855bb71e7f31a10ab179968f0a5e3a8e215f732",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8627982/fullTextXML"
+  },
+  {
+    "id": "ears-data-xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12560795/fullTextXML",
+    "checked_at": "2026-09-14T06:25:21.655578+00:00",
+    "status": 200,
+    "bytes": 185877,
+    "sha256": "e2e737b7dfddc42a939adb0e48ae1cf686b816cd20e7a87cb4e51afb5e5848b1",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12560795/fullTextXML"
+  },
+  {
+    "id": "dlr-new-page",
+    "url": "https://elib.dlr.de/219140/",
+    "checked_at": "2026-09-14T06:25:21.656007+00:00",
+    "status": 200,
+    "bytes": 37720,
+    "sha256": "32db72ed3b638cdd54f70f3a3171438dc2e80f1c2b2fb90ae34194463a55054c",
+    "final_url": "https://elib.dlr.de/219140/"
+  },
+  {
+    "id": "dlr-new-paper",
+    "url": "https://elib.dlr.de/219140/1/650258.pdf",
+    "checked_at": "2026-09-14T06:25:22.217079+00:00",
+    "status": 200,
+    "bytes": 418208,
+    "sha256": "5a4b092faaab002917be8340812004c792794d64f5c76ff077be013f6f6bea35",
+    "final_url": "https://elib.dlr.de/219140/1/650258.pdf"
+  },
+  {
+    "id": "pilot-false-positive",
+    "url": "https://huggingface.co/datasets/Oye12/A_Pilot_Speech_Corpus/raw/main/README.md",
+    "checked_at": "2026-09-14T06:25:22.321909+00:00",
+    "status": 200,
+    "bytes": 4352,
+    "sha256": "8aebc12aa497d3178c9391a4a83c04391eb22def4ce2739da62ba208f18a1347",
+    "final_url": "https://huggingface.co/datasets/Oye12/A_Pilot_Speech_Corpus/raw/main/README.md"
+  },
+  {
+    "id": "golos-card",
+    "url": "https://raw.githubusercontent.com/sberdevices/golos/master/README.md",
+    "checked_at": "2026-09-14T06:25:22.699022+00:00",
+    "status": 200,
+    "bytes": 5601,
+    "sha256": "f66aa091b502e0635e9cb930eaa14df5c8101eec9a03c24de14a49045a6425bd",
+    "final_url": "https://raw.githubusercontent.com/sberdevices/golos/master/README.md"
+  },
+  {
+    "id": "golos-license",
+    "url": "https://raw.githubusercontent.com/sberdevices/golos/master/license/en_us.pdf",
+    "checked_at": "2026-09-14T06:25:22.700356+00:00",
+    "status": 200,
+    "bytes": 157632,
+    "sha256": "14f4845e9c8d3de875cbac4139491da368ab1040a7f565e02894477279134d22",
+    "final_url": "https://raw.githubusercontent.com/sberdevices/golos/master/license/en_us.pdf"
+  },
+  {
+    "id": "fleurs-api",
+    "url": "https://huggingface.co/api/datasets/google/fleurs",
+    "checked_at": "2026-09-14T06:25:22.738313+00:00",
+    "status": 200,
+    "bytes": 317372,
+    "sha256": "8520335600641c7bd14c33995991363376a1aeb16e442d5319f87d68becae65b",
+    "final_url": "https://huggingface.co/api/datasets/google/fleurs"
+  },
+  {
+    "id": "fleurs-card",
+    "url": "https://huggingface.co/datasets/google/fleurs/raw/main/README.md",
+    "checked_at": "2026-09-14T06:25:22.855472+00:00",
+    "status": 200,
+    "bytes": 385614,
+    "sha256": "688f79f2a5c731af3796e9f683eb02f9b3f09d040decd8c5625d0f37098e71c6",
+    "final_url": "https://huggingface.co/datasets/google/fleurs/raw/main/README.md"
+  },
+  {
+    "id": "mdpi-crew-commands",
+    "url": "https://www.mdpi.com/2076-3417/16/7/3461",
+    "checked_at": "2026-09-14T06:25:23.102808+00:00",
+    "status": 403,
+    "error": "HTTPError: HTTP Error 403: Forbidden"
+  }
+]

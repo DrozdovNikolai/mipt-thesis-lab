@@ -1,0 +1,24 @@
+name: north55-cockpit-consensus-v11
+x-base: &base
+  image: north55-speech-train:publisher-v2
+  network_mode: none
+  entrypoint: [python, -u, /app/scripts/cockpit_consensus_v11.py]
+  working_dir: /app
+  environment:
+    PYTHONPATH: /app:/app/src
+services:
+  infer:
+    <<: *base
+    command: [infer]
+    volumes:
+      - ./reports/cockpit-consensus-v11/frozen:/app:ro
+      - ./reports/cockpit-consensus-v11/plan.json:/study/plan.json:ro
+      - ./reports/cockpit-consensus-v11/protocol.md:/study/protocol.md:ro
+      - ./reports/cockpit-consensus-v11/inputs.json:/study/inputs.json:ro
+      - ./reports/cockpit-consensus-v11/io-infer:/output
+  report:
+    <<: *base
+    command: [score]
+    volumes:
+      - ./reports/cockpit-consensus-v11/frozen:/app:ro
+      - ./reports/cockpit-consensus-v11:/study

@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "reasons": [],
+  "checks": {
+    "require_valid_cpu_compose": "PASS",
+    "require_gpu_override_config_validation": "PASS",
+    "require_cpu_integration_execution": "PASS",
+    "require_real_asr_smoke_execution": "PASS",
+    "require_migrations_and_queue_recovery_tests": "PASS",
+    "require_review_audit_and_original_audio_preservation": "PASS",
+    "require_privacy_and_unsafe_correction_tests": "PASS",
+    "require_offline_inference_after_prefetch": "PASS"
+  },
+  "code_hash": "3ebe06c6b5e3d924e96623be9a6829076844c701b9692cb02eed154824ea749f",
+  "test_cases": 78,
+  "integration_cases": 9
+}

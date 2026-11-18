@@ -1,0 +1,14 @@
+{
+  "clips": 1901,
+  "reference_words": 22642,
+  "unique_normalized_texts": 1757,
+  "minutes": 122.73774583333334,
+  "speakers": {
+    "zf1": 641,
+    "zf2": 675,
+    "zf3": 383,
+    "sm2": 202
+  },
+  "max_duration_sec": 14.02,
+  "clips_over_30sec": 0
+}

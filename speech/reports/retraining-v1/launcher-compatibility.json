@@ -1,0 +1,7 @@
+{
+  "first_WSL_inference_launch": "FAILED_BEFORE_CONTAINER_START",
+  "reason": "Output parent created by container UID 10001; WSL UID 1000 could not mkdir",
+  "fix": "Only output leaf created by the same image UID in an offline helper; no chmod or ownership changes",
+  "model_data_config_scorer_changed": false,
+  "inference_retries_from_this_fix": 0
+}

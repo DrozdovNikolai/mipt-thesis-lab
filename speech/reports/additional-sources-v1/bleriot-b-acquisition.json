@@ -1,0 +1,753 @@
+{
+  "acquisition": {
+    "corpus": "BLeRIOT-B",
+    "doi": "10.57745/NODS6L",
+    "version": "1.0",
+    "metadata_url": "https://entrepot.recherche.data.gouv.fr/api/datasets/:persistentId/?persistentId=doi:10.57745/NODS6L",
+    "license_id": "CC-BY-NC-4.0",
+    "use_scope": "local noncommercial diploma research; no product redistribution",
+    "citation": "BLeRIOT-B corpus: in-flight cockpit noises, acoustic impulse responses of cockpits, and electronic responses of aircraft audio processors and CVRs \u00a9 2026 by Edon, M., Feug\u00e8re, L., Anonymous Author, Stefan Bleiholder, Silvia Poschen and Frederic Palpacuer is licensed under CC BY-NC 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc/4.0/ ",
+    "terms_of_use": "This work is licensed under <a href=\"https://creativecommons.org/licenses/by-nc/4.0/\">CC BY-NC 4.0</a><img src=\"https://mirrors.creativecommons.org/presskit/icons/cc.svg\" alt=\"\" style=\"max-width: 1em;max-height:1em;margin-left: .2em;\"><img src=\"https://mirrors.creativecommons.org/presskit/icons/by.svg\" alt=\"\" style=\"max-width: 1em;max-height:1em;margin-left: .2em;\"><img src=\"https://mirrors.creativecommons.org/presskit/icons/nc.svg\" alt=\"\" style=\"max-width: 1em;max-height:1em;margin-left: .2em;\">",
+    "files": [
+      {
+        "filename": "readme.txt",
+        "datafile_id": 739706,
+        "url": "https://entrepot.recherche.data.gouv.fr/api/access/datafile/739706",
+        "bytes": 2887,
+        "publisher_md5": "ed30eb8ce0e35a38cfff49d706b5440f",
+        "md5": "ed30eb8ce0e35a38cfff49d706b5440f",
+        "sha256": "5d19e9e7afa7eed73fad02adf9a907d38e9ca92748910543cc9581c1aeeff06b",
+        "verified": true,
+        "elapsed_sec": 0.0
+      },
+      {
+        "filename": "recorded-systems_metadata.csv",
+        "datafile_id": 739707,
+        "url": "https://entrepot.recherche.data.gouv.fr/api/access/datafile/739707?format=original",
+        "bytes": 15429,
+        "publisher_md5": "24d34c50ddcc95420168bc9941545cfd",
+        "md5": "24d34c50ddcc95420168bc9941545cfd",
+        "sha256": "b8c18837aedd1f88f996d020e59d8ca2a78bd84c277d18958ebd8103f0bcebf4",
+        "verified": true,
+        "elapsed_sec": 0.0
+      },
+      {
+        "filename": "IR_headset-mic.rar",
+        "datafile_id": 738999,
+        "url": "https://entrepot.recherche.data.gouv.fr/api/access/datafile/738999",
+        "bytes": 443217,
+        "publisher_md5": "f9040a470ff2457f7647ee857dab264b",
+        "md5": "f9040a470ff2457f7647ee857dab264b",
+        "sha256": "89d3f442f9a444e42f321588110e8e30367c8affa101139a32a2c5d7d4bb0ddd",
+        "verified": true,
+        "elapsed_sec": 0.0
+      },
+      {
+        "filename": "IR_cockpit_cam-and-headset-mic.rar",
+        "datafile_id": 739003,
+        "url": "https://entrepot.recherche.data.gouv.fr/api/access/datafile/739003",
+        "bytes": 2530606,
+        "publisher_md5": "6468c0ab4e760d967c8bc611d97e4624",
+        "md5": "6468c0ab4e760d967c8bc611d97e4624",
+        "sha256": "69c1e9c754458f0d132c0be1a4bd167e699e9176d7abb8f4a6d00c5200535c58",
+        "verified": true,
+        "elapsed_sec": 0.01
+      },
+      {
+        "filename": "IR_CVR.rar",
+        "datafile_id": 739000,
+        "url": "https://entrepot.recherche.data.gouv.fr/api/access/datafile/739000",
+        "bytes": 3547842,
+        "publisher_md5": "d3139558068606b83041967aceb49992",
+        "md5": "d3139558068606b83041967aceb49992",
+        "sha256": "146d67deaad06ea43f49c226a24c285a8ddbdf79a26a41b1a3a08a2f43a93828",
+        "verified": true,
+        "elapsed_sec": 0.01
+      },
+      {
+        "filename": "IR_AMU.rar",
+        "datafile_id": 739001,
+        "url": "https://entrepot.recherche.data.gouv.fr/api/access/datafile/739001",
+        "bytes": 16328170,
+        "publisher_md5": "015dace60ce28a3c421c96824a5e6379",
+        "md5": "015dace60ce28a3c421c96824a5e6379",
+        "sha256": "a699eaa4a633d9b5d1f68fe2333f16755af9d49af2fc9768160e54c48bb5b49b",
+        "verified": true,
+        "elapsed_sec": 0.03
+      },
+      {
+        "filename": "flight-noise.rar",
+        "datafile_id": 738998,
+        "url": "https://entrepot.recherche.data.gouv.fr/api/access/datafile/738998",
+        "bytes": 47053587,
+        "publisher_md5": "0f2a3f1ef2550df3ae9a6f62b26db9c4",
+        "md5": "0f2a3f1ef2550df3ae9a6f62b26db9c4",
+        "sha256": "65b796eafe2dc2f4644da265c8aad1b05bfb1d18ddae15ae1d2ed72ea4d15eb8",
+        "verified": true,
+        "elapsed_sec": 0.09
+      }
+    ],
+    "quality_admission": "NOT_ADMITTED_PENDING_SCOPE_ALIGNMENT_AND_ANNOTATION_REVIEW",
+    "metadata_sha256": "4d04a0939c711f50b3d4ffa9a22c4c4011b8ebc2a51c53b2f9c697fc74a30bea",
+    "completed_at": "2026-09-14T06:27:52.133535+00:00"
+  },
+  "extractions": [
+    {
+      "archive_sha256": "89d3f442f9a444e42f321588110e8e30367c8affa101139a32a2c5d7d4bb0ddd",
+      "archive": "IR_headset-mic.rar",
+      "entries": [
+        {
+          "path": "IR_headset-mic/IR_headset_Bose_noise_to_pil.wav",
+          "bytes": 262198,
+          "md5": "03ba2e98de06f277440e13729ad2123b",
+          "sha256": "2bc459bce41e8f2c99af6117ae2ab7e85635f9c3cab5d31a7bfbf3f80083d912"
+        },
+        {
+          "path": "IR_headset-mic/IR_headset_Holmberg_noise_to_Pil.wav",
+          "bytes": 262198,
+          "md5": "8ceba63e802c69c61d8911720324d63d",
+          "sha256": "98fb6e5171a2b2c5095b960643ed7171c046f53b6b94677eb226181db0ca5403"
+        }
+      ],
+      "license": "CC-BY-NC-4.0",
+      "human_scope_verified": false,
+      "primary_quality_admitted": false
+    },
+    {
+      "archive_sha256": "69c1e9c754458f0d132c0be1a4bd167e699e9176d7abb8f4a6d00c5200535c58",
+      "archive": "IR_cockpit_cam-and-headset-mic.rar",
+      "entries": [
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/light-aircraft/LightAirplane_IR_source=addSpk-L_SMD170_I1_1-Pil-Mic.wav",
+          "bytes": 262184,
+          "md5": "5e7cccba21a071a2d65f350758a93460",
+          "sha256": "b899599a3ee060067ba0ef60ebf29586f6b9f29a63ff1aa055c19f43e8e7969b"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/light-aircraft/LightAirplane_IR_source=addSpk-L_SMD170_I1_2-CoP-Mic.wav",
+          "bytes": 262184,
+          "md5": "41ec077fe6c3739fe4ba4c81cfc3461d",
+          "sha256": "c488f864fbc8a61547afe9ac363b82ca3a6d669311006ba7a3daab5736e9a912"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/light-aircraft/LightAirplane_IR_source=addSpk-L_SMD170_I1_3-CAM Mic.wav",
+          "bytes": 262184,
+          "md5": "db4a8bb92c9ddff0f452b279f652ddd5",
+          "sha256": "73ec2f4c8454d17c0a3570dbad2d347d8630633c71116ed06fc00998d30d70f1"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/light-aircraft/LightAirplane_IR_source=addSpk-L_SMD170_I1_4-Pil-MeasMic.wav",
+          "bytes": 262184,
+          "md5": "374b5e2f9299f5be1f3cc75a5bd01d6a",
+          "sha256": "13d9205c67606f3891cc1504e5efa8ee813017a1788255bd1efc5ac1f918a037"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/light-aircraft/LightAirplane_IR_source=addSpk-L_SMD170_I1_5-CoP-MeasMic.wav",
+          "bytes": 262184,
+          "md5": "77ed0c6366a44beba6db0e431b2f8d12",
+          "sha256": "1557782136620bfe0cdfbe4a4abc06653a085fb082c0722e3b7f61afd1db1cf7"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/light-aircraft/LightAirplane_IR_source=addSpk-L_SMD170_I1_6-CAM MeasMic.wav",
+          "bytes": 262184,
+          "md5": "2d1acac50b933f249f86a96e2391534f",
+          "sha256": "5f08b48f49c1cb8b49bde8c8426870103f3ec628ee5b19ad47f6a7948d615e10"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/light-aircraft/LightAirplane_IR_source=cop_SMD114_I1_1-Pil-Mic.wav",
+          "bytes": 262184,
+          "md5": "20cf88c91fea144aadf913c0c62117ed",
+          "sha256": "0fc20d10e41b646aa8235ad7d2ca85fe93ada660466ed83ff280431e962e6d92"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/light-aircraft/LightAirplane_IR_source=cop_SMD114_I1_2-CoP-Mic.wav",
+          "bytes": 262184,
+          "md5": "15049503b980aea1a034d3a5d1eb4e3f",
+          "sha256": "d93a68822ae6d708eb2352bfab069e8ab464250582d165a60f6f66d3bec92019"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/light-aircraft/LightAirplane_IR_source=cop_SMD114_I1_3-CAM Mic.wav",
+          "bytes": 262184,
+          "md5": "7b8e6b86f1fb653385c2a871921e5431",
+          "sha256": "0d258ecad9d288cca5ae24b49a6890a8117256edffedf6b9d27b80c4aaeb97f7"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/light-aircraft/LightAirplane_IR_source=cop_SMD114_I1_4-Pil-MeasMic.wav",
+          "bytes": 262184,
+          "md5": "d4a4e1b017a5895db11c362ed87c2403",
+          "sha256": "7a52500e1b12b053aece0bdc2834356f6acadb4134ce819962f43ed36ad407d3"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/light-aircraft/LightAirplane_IR_source=cop_SMD114_I1_5-CoP-MeasMic.wav",
+          "bytes": 262184,
+          "md5": "9b75fb91d41644522469667c4455a7dc",
+          "sha256": "d8ab34ee0951dde5ab98f1b09e441e1bda7215715d5159d70251e8c75b364bbf"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/light-aircraft/LightAirplane_IR_source=cop_SMD114_I1_6-CAM MeasMic.wav",
+          "bytes": 262184,
+          "md5": "535d93edbcd76d6aff9674df4fcabfac",
+          "sha256": "5c6a75bbe5380465ba6e63992cc534cf8832d765d751963d9f3b4267907a3956"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/light-aircraft/LightAirplane_IR_source=pilot_SMD27_I1_1-Pil-Mic.wav",
+          "bytes": 262184,
+          "md5": "02aa7cbd37172fb0f71e65217fe0a0a4",
+          "sha256": "76c6a46116c4b66db29094ddb85cc95dd6e0548b63e4545ad9cbd4443237af02"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/light-aircraft/LightAirplane_IR_source=pilot_SMD27_I1_2-CoP-Mic.wav",
+          "bytes": 262184,
+          "md5": "6034f0705cd094d06f2cdfcfceda0219",
+          "sha256": "9afb4886c61793edaf05ff4c1d906623e3a20fd9480a99d58371f01af804ddd8"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/light-aircraft/LightAirplane_IR_source=pilot_SMD27_I1_3-CAM Mic.wav",
+          "bytes": 262184,
+          "md5": "abc0d6950894b2a6b892e9924ca95058",
+          "sha256": "83a99aad02588418a02056642017c5f526647738dafdcef291a204aeb632972b"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/light-aircraft/LightAirplane_IR_source=pilot_SMD27_I1_4-Pil-MeasMic.wav",
+          "bytes": 262184,
+          "md5": "2e1fe01e0ea1624395ebcc823cf53d03",
+          "sha256": "ff538a09101a32ec5896a2780950f232234b443c921a1890b9339a2e0383f38a"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/light-aircraft/LightAirplane_IR_source=pilot_SMD27_I1_5-CoP-MeasMic.wav",
+          "bytes": 262184,
+          "md5": "f4624ca6cb2bb87883f98585e43e9448",
+          "sha256": "9b262c7d47ad73daaea21ac3599486669d635d108f5196eb748a1212d5116798"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/light-aircraft/LightAirplane_IR_source=pilot_SMD27_I1_6-CAM MeasMic.wav",
+          "bytes": 262184,
+          "md5": "fd0dacc6b711fa03ca84ec3ab7dfc358",
+          "sha256": "2e0a6cfc7f25b7cd5bcbe4738d1f91c43244fe7110dfe030ebbe2828b593ee65"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/heavy-aircraft_ATR72-600/ATR72_IR_source=addSpk-L_SMD170_I2_1-Pil-Mic.wav",
+          "bytes": 262184,
+          "md5": "5212cd7ca93b8088845ea83dc25048dd",
+          "sha256": "c08a30e9e1156fb09b813becdccc3ca1d29d87ba607744c4b4b804ae52a9a271"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/heavy-aircraft_ATR72-600/ATR72_IR_source=addSpk-L_SMD170_I2_2-CoP-Mic.wav",
+          "bytes": 262184,
+          "md5": "4d14e36bacb9f08d886d4f9ce0d66d1d",
+          "sha256": "2db4f0bd39eff7871057aaec68cbefb4dbff55d6dce86248094b0de393c25159"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/heavy-aircraft_ATR72-600/ATR72_IR_source=addSpk-L_SMD170_I2_3-CAM Mic.wav",
+          "bytes": 262184,
+          "md5": "c01a5d38c27d68f070dd0b931b1d59a6",
+          "sha256": "6dcb180b496b7e3cac60af10a0b14d6d892f89842dcc157b4b9906051678eb1e"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/heavy-aircraft_ATR72-600/ATR72_IR_source=addSpk-L_SMD170_I2_4-Pil-MeasMic.wav",
+          "bytes": 262184,
+          "md5": "1e4f7b33d61cc444c80eb3f6ab2ac903",
+          "sha256": "03301933ce23e758c75f173ec30cb663f27875cb6015b00971e7f136bc2c5a74"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/heavy-aircraft_ATR72-600/ATR72_IR_source=addSpk-L_SMD170_I2_5-CoP-MeasMic.wav",
+          "bytes": 262184,
+          "md5": "1a6bfbe56e1eef1a009bd92f2d2f2c94",
+          "sha256": "acef5638ddade561c738b186409b88bb81b1cc371170d2418dcb1274b623b4a5"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/heavy-aircraft_ATR72-600/ATR72_IR_source=addSpk-L_SMD170_I2_6-CAM MeasMic.wav",
+          "bytes": 262184,
+          "md5": "9d77efe516c5d0c828d16e0661d096ec",
+          "sha256": "a86d2e3487452a75a517f5836d5b15d60d76231c0a5c06c690c7e8755844afef"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/heavy-aircraft_ATR72-600/ATR72_IR_source=addSpk-R_SMD229_I2_1-Pil-Mic.wav",
+          "bytes": 262184,
+          "md5": "c3536c2277e449decff2aee29a884280",
+          "sha256": "202de6806deb100932059101863c634864fcf1293c0dd336c79a298f60d90ad9"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/heavy-aircraft_ATR72-600/ATR72_IR_source=addSpk-R_SMD229_I2_2-CoP-Mic.wav",
+          "bytes": 262184,
+          "md5": "bd587023646b94cf259cc6632d478d5d",
+          "sha256": "d11dd96db96cc3aa5b17560feb50f722e0ad1795d601d5ba445cc5bf2e38da13"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/heavy-aircraft_ATR72-600/ATR72_IR_source=addSpk-R_SMD229_I2_3-CAM Mic.wav",
+          "bytes": 262184,
+          "md5": "d848681b02f5bd0e41724fff35c2080f",
+          "sha256": "ac7b27cfc808bb086799dbbb5f41db0b3801b255c57f5e9370af8fa989cdcf1a"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/heavy-aircraft_ATR72-600/ATR72_IR_source=addSpk-R_SMD229_I2_4-Pil-MeasMic.wav",
+          "bytes": 262184,
+          "md5": "9dbdb1d0e2f9bdd7851f3375ef1626c0",
+          "sha256": "503c33c5f4fc1f6e266f813088a764b900fb5711bed6d7bf579cb4ccdfbde1d0"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/heavy-aircraft_ATR72-600/ATR72_IR_source=addSpk-R_SMD229_I2_5-CoP-MeasMic.wav",
+          "bytes": 262184,
+          "md5": "95809a8f6669610394564aa8080ac705",
+          "sha256": "3e88dbab1d966276471d3af7dc97542425b4dbfd58e7e19775d582b4a97a7ab4"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/heavy-aircraft_ATR72-600/ATR72_IR_source=addSpk-R_SMD229_I2_6-CAM MeasMic.wav",
+          "bytes": 262184,
+          "md5": "59656eb66a46b71f9a0c651644cf13f8",
+          "sha256": "813fca136d332a6f0e6fa5c058ae76b34491cee96d531615ad6d7ba0971478c9"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/heavy-aircraft_ATR72-600/ATR72_IR_source=cop_SMD114_I2_1-Pil-Mic.wav",
+          "bytes": 262184,
+          "md5": "f6293715488bc7988dd951a82bd17ea6",
+          "sha256": "b88666ac3b121dae1eb6b2f9ea95e52ed1ab650afb4a06aeb57586ad2ad542f9"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/heavy-aircraft_ATR72-600/ATR72_IR_source=cop_SMD114_I2_2-CoP-Mic.wav",
+          "bytes": 262184,
+          "md5": "eba5d998d638e524dba650f46974a02e",
+          "sha256": "fd9440ea0ca1cf413d77c49fa876434957efc3bb1e66a5c0d5d6738110eca918"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/heavy-aircraft_ATR72-600/ATR72_IR_source=cop_SMD114_I2_3-CAM Mic.wav",
+          "bytes": 262184,
+          "md5": "3ae2ae8eb7177504e6d85568f8c360e6",
+          "sha256": "41703864bc7a3dd1b3e4ba9fe72a5ae5525c1470284d6fad0e31958ba12265c2"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/heavy-aircraft_ATR72-600/ATR72_IR_source=cop_SMD114_I2_4-Pil-MeasMic.wav",
+          "bytes": 262184,
+          "md5": "b313b6852f9191db11cede167b684c17",
+          "sha256": "07b9915d0c841619df133b268141b5b952e76ce14c9512d60f85e5f2a09d4215"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/heavy-aircraft_ATR72-600/ATR72_IR_source=cop_SMD114_I2_5-CoP-MeasMic.wav",
+          "bytes": 262184,
+          "md5": "3a25181161b0830e19d6878099846025",
+          "sha256": "6c8ef34c3674b380f2cd3dfaab3ccb1b2b0db4c915812bec927e0dd05246de95"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/heavy-aircraft_ATR72-600/ATR72_IR_source=cop_SMD114_I2_6-CAM MeasMic.wav",
+          "bytes": 262184,
+          "md5": "29fd7f6058b3710a279230af7eb15abb",
+          "sha256": "31edbe5b884b5aff895dc2c594d11c4653b02822ea3ba83ea6a992a943010503"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/heavy-aircraft_ATR72-600/ATR72_IR_source=pilot_SMD27_I3_1-Pil-Mic.wav",
+          "bytes": 262184,
+          "md5": "ea27868d1f72a19a5f1a0626016faee1",
+          "sha256": "f1433771bcef23eab01dd40c78649aaa4bb3e8c4c22e602a0c3fb94d09d6a8cb"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/heavy-aircraft_ATR72-600/ATR72_IR_source=pilot_SMD27_I3_2-CoP-Mic.wav",
+          "bytes": 262184,
+          "md5": "9a92fd1bcf6152659be345a1d97d6d45",
+          "sha256": "8f4551c007fe75f8b136c6e5eb29cd74348213e80b98a7a865cfb72c364db48a"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/heavy-aircraft_ATR72-600/ATR72_IR_source=pilot_SMD27_I3_3-CAM Mic.wav",
+          "bytes": 262184,
+          "md5": "c2435127dd95d99bc3dce3f7e6f35052",
+          "sha256": "bdd0320fec25646c05cc5d6e181a2712531f77b775763329722bafd50e2b0c12"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/heavy-aircraft_ATR72-600/ATR72_IR_source=pilot_SMD27_I3_4-Pil-MeasMic.wav",
+          "bytes": 262184,
+          "md5": "d749d0ec8d75a58a11e43f3e186efaf7",
+          "sha256": "e996a67a4bf14b95dc1a7ef4a975d3f3bab0f6acb7fc4004f163c97d987d740e"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/heavy-aircraft_ATR72-600/ATR72_IR_source=pilot_SMD27_I3_5-CoP-MeasMic.wav",
+          "bytes": 262184,
+          "md5": "b2950001e630b82f8e884fee09475cae",
+          "sha256": "6034ca897269bc082750922384a06f8495cf475058dd3df00f8bc6f8aa174d20"
+        },
+        {
+          "path": "IR_cockpit_cam-and-headset-mic/heavy-aircraft_ATR72-600/ATR72_IR_source=pilot_SMD27_I3_6-CAM MeasMic.wav",
+          "bytes": 262184,
+          "md5": "83cf2d3a4b83aaf05d15e280df812c37",
+          "sha256": "699ae291d7abc6496409960a3362197770414ab630dce26d4101a58e08b40aac"
+        }
+      ],
+      "license": "CC-BY-NC-4.0",
+      "human_scope_verified": false,
+      "primary_quality_admitted": false
+    },
+    {
+      "archive_sha256": "146d67deaad06ea43f49c226a24c285a8ddbdf79a26a41b1a3a08a2f43a93828",
+      "archive": "IR_CVR.rar",
+      "entries": [
+        {
+          "path": "IR_CVR/FA2100_H5_filter_Fs8000_N24156.npy",
+          "bytes": 966448,
+          "md5": "b232a84dbd4d05eebf0337f11609edad",
+          "sha256": "b5c1e00e3d655548c23caff34c39b2498eedf0d16674f09974fdc73ef10e40c7"
+        },
+        {
+          "path": "IR_CVR/LDR1000_H5_filter_Fs48000_N72246.npy",
+          "bytes": 2890048,
+          "md5": "3797b7605ac3ac3fe31bf95306af3b61",
+          "sha256": "42c330d2e18e62b2853949cb5a107f58d7e9f2fb0cb24d98f5f1d2f24270735f"
+        }
+      ],
+      "license": "CC-BY-NC-4.0",
+      "human_scope_verified": false,
+      "primary_quality_admitted": false
+    },
+    {
+      "archive_sha256": "a699eaa4a633d9b5d1f68fe2333f16755af9d49af2fc9768160e54c48bb5b49b",
+      "archive": "IR_AMU.rar",
+      "entries": [
+        {
+          "path": "IR_AMU/GARMIN_H5_filter_Fs192000_N288988.npy",
+          "bytes": 11559728,
+          "md5": "8dbbf4a1ec1070794485a32233c638d2",
+          "sha256": "f9000e6b52ccbf0fc7427bb05c685c0292acd5aa8b8347dadaf744954f7fd922"
+        },
+        {
+          "path": "IR_AMU/Airbus_AMU_H5_filter_Fs48000_N144942.npy",
+          "bytes": 5797888,
+          "md5": "c7757d7502e97b40cb74e64a9c4289a9",
+          "sha256": "fb54a3e2f763e4f5b6b23c7ba59ae0588dddfda1afbe5c792476fea76e50653b"
+        }
+      ],
+      "license": "CC-BY-NC-4.0",
+      "human_scope_verified": false,
+      "primary_quality_admitted": false
+    },
+    {
+      "archive_sha256": "65b796eafe2dc2f4644da265c8aad1b05bfb1d18ddae15ae1d2ed72ea4d15eb8",
+      "archive": "flight-noise.rar",
+      "entries": [
+        {
+          "path": "flight-noise/TBM940/TBM940_E0_1_Pil-MeasMic.wav",
+          "bytes": 1933006,
+          "md5": "2cbb063ae883e05c4e9e5fbf0b5acb9e",
+          "sha256": "e62c7decf0b0a7f4e1b78eb736069770ce7cb586a0afd3f439a59f813e17818b"
+        },
+        {
+          "path": "flight-noise/TBM940/TBM940_E0_2_Pil-MeasMic.wav",
+          "bytes": 1845682,
+          "md5": "6a26d01e6bf399d1a6c3f0d5501ddceb",
+          "sha256": "b9e771ef406d71b6b2b6f790b805a419a6d6292a6cb8488077641fa91f5cee53"
+        },
+        {
+          "path": "flight-noise/TBM940/TBM940_E0_3_Pil-MeasMic.wav",
+          "bytes": 1663322,
+          "md5": "b5d0e5611e96daac773a219d9403231b",
+          "sha256": "8797783ceaf9d9bf5c324e3ed64728d0d203a3719b0af58acf000bae527e923f"
+        },
+        {
+          "path": "flight-noise/TBM940/TBM940_E0_Pil-MeasMic.wav",
+          "bytes": 636424,
+          "md5": "95de65bf6e59062ef7f2505b957dd034",
+          "sha256": "f9ab1da89dab1f64cf836ee566843af8f849ea7b55d2d48251c6d0bcd60cca69"
+        },
+        {
+          "path": "flight-noise/TBM940/TBM940_E1_Pil-MeasMic.wav",
+          "bytes": 2461556,
+          "md5": "fd660928e490c8351ff7b4ea24fb221b",
+          "sha256": "18c6a7d4ae39132e3df099cbeab2f2c27310b075c6e62a62ab6418a9e63c3174"
+        },
+        {
+          "path": "flight-noise/TBM940/TBM940_E2_Pil-MeasMic.wav",
+          "bytes": 3382408,
+          "md5": "f2f1c845ef5245b0d943e2df4860c140",
+          "sha256": "6201e0ed63b872cad3975b9cc01d41b2cc1fe1f2916725931a684ed4c507b3dd"
+        },
+        {
+          "path": "flight-noise/TBM940/TBM940_E3_Pil-MeasMic.wav",
+          "bytes": 5489596,
+          "md5": "ff4e36ddeac587ce1111efbd155edd54",
+          "sha256": "8e722a1a69d56f2d71eb34c24c625e71e302bbc58c5a29d9b9df3a03fd34823b"
+        },
+        {
+          "path": "flight-noise/TBM940/TBM940_E4_Pil-MeasMic.wav",
+          "bytes": 3853892,
+          "md5": "47be9a254b9e2d0f57c4d6c5ad30b310",
+          "sha256": "695c6f85aef863112c09f57febe85a5ea23ed367d61a00211e3d65d3446a79e7"
+        },
+        {
+          "path": "flight-noise/TBM940/TBM940_E5_Pil-MeasMic.wav",
+          "bytes": 5185300,
+          "md5": "bb4304c023908fa18605125c7233abd6",
+          "sha256": "d98b5eac29cc8e146f0fa2a98a2abfdbf15afce93c5338729df2a241420c2fdb"
+        },
+        {
+          "path": "flight-noise/TBM940/TBM940_E6_Pil-MeasMic.wav",
+          "bytes": 1165892,
+          "md5": "8aae3b16d449ae9579339d26a099bf76",
+          "sha256": "a5cc79319356957f8619faeaf62b7f996f3820b95e3801de63f26975760afc6b"
+        },
+        {
+          "path": "flight-noise/TBM940/TBM940_E7_Pil-MeasMic.wav",
+          "bytes": 840716,
+          "md5": "4133c8ac43a415461b8ef8bf7a729ab3",
+          "sha256": "28b2ab828cd60139405955c1a755ee3e72eafed3f8615b18ac898c0dd8f31601"
+        },
+        {
+          "path": "flight-noise/TBM940/TBM940_E0_1_CoP-MeasMic.wav",
+          "bytes": 1933006,
+          "md5": "7ddce609ec8b45b3b933398e9d392d6b",
+          "sha256": "94e1b2dd59a766dd803c4af78b469dece0cd0a98ae704f2f54d5490bfac56ade"
+        },
+        {
+          "path": "flight-noise/TBM940/TBM940_E0_2_CoP-MeasMic.wav",
+          "bytes": 1845682,
+          "md5": "1af0c12b4cc4529741cf30d03bfe88b1",
+          "sha256": "b7bbcb47bfca88cba3fe62bd9a23fcedb211d4d4c77bf2d502f925a2f2cc10fc"
+        },
+        {
+          "path": "flight-noise/TBM940/TBM940_E0_3_CoP-MeasMic.wav",
+          "bytes": 1663322,
+          "md5": "4a16c207a6f37b5991d2ba4f4a3dca59",
+          "sha256": "374fe8aeb2ff8bedc25db0e0eca2abe59d990994c0a4dade16f9b0dc9d84bc3f"
+        },
+        {
+          "path": "flight-noise/TBM940/TBM940_E0_CoP-MeasMic.wav",
+          "bytes": 636424,
+          "md5": "e45a7be5ccd1cb3fa0ab0b37cc6ce4d9",
+          "sha256": "4c11283d1ecd5c6757af9d236318d046364797fb395e2364cb4f88e4d758910e"
+        },
+        {
+          "path": "flight-noise/TBM940/TBM940_E1_CoP-MeasMic.wav",
+          "bytes": 2461556,
+          "md5": "c05445c2f8944cfb9d55a2eb6aa800cf",
+          "sha256": "f301b6d3cb0c04ff02a750623f6696ebc12e3e3d09ff3308a1b77c2abb129327"
+        },
+        {
+          "path": "flight-noise/TBM940/TBM940_E2_CoP-MeasMic.wav",
+          "bytes": 3382408,
+          "md5": "d5c6c2e5414e661c21a618547b84cab0",
+          "sha256": "696b23d92a21ba773832b76a9ee2902435b8580a6159a080770153a76d06c2fc"
+        },
+        {
+          "path": "flight-noise/TBM940/TBM940_E3_CoP-MeasMic.wav",
+          "bytes": 5489596,
+          "md5": "12821e304b2aa80fde25cfee90ad292d",
+          "sha256": "4d2cb04e676845eb51c6cc6f8020bc4bd60c2c5bb69be3622f02601795e4b671"
+        },
+        {
+          "path": "flight-noise/TBM940/TBM940_E4_CoP-MeasMic.wav",
+          "bytes": 3853892,
+          "md5": "719af2d4f02662a40ecab5cb96d4f99c",
+          "sha256": "2284d1653b7d8ccf7355d3dfc2585deab52d57b63a88e2130ec47d087bdaad24"
+        },
+        {
+          "path": "flight-noise/TBM940/TBM940_E5_CoP-MeasMic.wav",
+          "bytes": 5185300,
+          "md5": "ef8cf53c00e64f55e60d92031c6d1911",
+          "sha256": "1eefaa7f7382fc6cad4dfa12305d1246e16773dfb908dcb98e5142539db5ea62"
+        },
+        {
+          "path": "flight-noise/TBM940/TBM940_E6_CoP-MeasMic.wav",
+          "bytes": 1165892,
+          "md5": "b1f489b603fc9dfdd2f2647bb2e6d0e3",
+          "sha256": "a359e7cec7bc0184af9eb3499bc2c643072f6e063a9d9bbad996513bf4eb35e3"
+        },
+        {
+          "path": "flight-noise/TBM940/TBM940_E7_CoP-MeasMic.wav",
+          "bytes": 840716,
+          "md5": "c22b294198ea9422d28ef5866d2e5466",
+          "sha256": "098b1cd7491494101d174891650680975c1b12b3dd057fcc27534ad318de15c2"
+        },
+        {
+          "path": "flight-noise/TBM940/TBM940_E0_1_CAM-MeasMic.wav",
+          "bytes": 1933006,
+          "md5": "22d5e6d08275e7ab70f7527b5db7df15",
+          "sha256": "d15fed354e8bb85b90a8278e065ab7717249fc69289bea523474b3c2178e022d"
+        },
+        {
+          "path": "flight-noise/TBM940/TBM940_E0_2_CAM-MeasMic.wav",
+          "bytes": 1845682,
+          "md5": "81021e2065a9828852e51c0d28561d06",
+          "sha256": "8d7db9e3b0115ef9c4711539a856c8f0d4bc5acdd34e76c0a828623d436e2e31"
+        },
+        {
+          "path": "flight-noise/TBM940/TBM940_E0_3_CAM-MeasMic.wav",
+          "bytes": 1663322,
+          "md5": "d119dc824bc1edd4e8316569ff903285",
+          "sha256": "211c0ae7b9c63e4f96c76298e2d708b5f2a6f7d85472249ee6b0b2d9d1a0eef8"
+        },
+        {
+          "path": "flight-noise/TBM940/TBM940_E0_CAM-MeasMic.wav",
+          "bytes": 636424,
+          "md5": "c00d42b5928c9874cfa0051cc24ca148",
+          "sha256": "5bdd9d17a3e7602fda2515710f915b062d11fe6215bcc67ecc8bcfa29d9973c8"
+        },
+        {
+          "path": "flight-noise/TBM940/TBM940_E1_CAM-MeasMic.wav",
+          "bytes": 2461556,
+          "md5": "58bf0ed7b69a729569d3f90a225dece1",
+          "sha256": "318ff644ab93d7676550bc4ca9570d6b71f2e73f708d56a9c7cd7942a480e220"
+        },
+        {
+          "path": "flight-noise/TBM940/TBM940_E2_CAM-MeasMic.wav",
+          "bytes": 3382408,
+          "md5": "597baa7a010ae8ea8272dea879c04189",
+          "sha256": "8c2fc95952fe01ad5dc1b6ce3eda2c99361a6b2438ddab49797f2c278606b9a0"
+        },
+        {
+          "path": "flight-noise/TBM940/TBM940_E3_CAM-MeasMic.wav",
+          "bytes": 5476632,
+          "md5": "92f0c1d078e643e5215aa0459c98f811",
+          "sha256": "30a4a58640799d3ecfdee19e4ca53ca3fcab3c699dcd80a5c68978f4bbf4af00"
+        },
+        {
+          "path": "flight-noise/TBM940/TBM940_E4_CAM-MeasMic.wav",
+          "bytes": 3853892,
+          "md5": "72bfa8f884a1bc38aa8ffaa0f9059e9f",
+          "sha256": "54ea41d05adc5029abce55165bf8efaa88e297016c764d6d095ff9bb7e79dec9"
+        },
+        {
+          "path": "flight-noise/TBM940/TBM940_E5_CAM-MeasMic.wav",
+          "bytes": 5185300,
+          "md5": "263f9e26fc733c42541e3df27ecf46e1",
+          "sha256": "5fc1660f3d5f8823e48cf087c469a1b271078eddc4e91c522858a73d65eccf8b"
+        },
+        {
+          "path": "flight-noise/TBM940/TBM940_E6_CAM-MeasMic.wav",
+          "bytes": 1165892,
+          "md5": "ae3f4744f6a7c2934b8377fa692a8c42",
+          "sha256": "53fa1602343df60e169ead50013acb1d1dd8baf142a8970c4069927246b142c6"
+        },
+        {
+          "path": "flight-noise/TBM940/TBM940_E7_CAM-MeasMic.wav",
+          "bytes": 840716,
+          "md5": "d40c7087c62ab14b630dc0e0f9289e89",
+          "sha256": "dac6b570dd682e6f6f4385671e8317b5b80c502392d9af47d326cbc73115ca6e"
+        },
+        {
+          "path": "flight-noise/A330-743/A330-743_E1_CAM-MeasMic.wav",
+          "bytes": 2889840,
+          "md5": "74faf7da861ced07266471fb4786736e",
+          "sha256": "41fb33a14614431264d6d663c3a6d81459086eb3f9fd7e9c7dfb80e0e4b00eec"
+        },
+        {
+          "path": "flight-noise/A330-743/A330-743_E1_CoP-MeasMic.wav",
+          "bytes": 2889840,
+          "md5": "d6d7f8b1fc1a13ee7ff5a0fc3da271ec",
+          "sha256": "99238463e0ef899f0a5dd3e22149862500e8fff2ed378be50369fd81b05358a7"
+        },
+        {
+          "path": "flight-noise/A330-743/A330-743_E1_Pil-MeasMic.wav",
+          "bytes": 2889840,
+          "md5": "1a66406be28ff8676225a6ee7c6e3955",
+          "sha256": "2efd17c700999fdb74b274ab449164b87c4656808a60faf31e2f58ebd44244e3"
+        },
+        {
+          "path": "flight-noise/A330-743/A330-743_E2_CAM-MeasMic.wav",
+          "bytes": 1932266,
+          "md5": "c8ddcca7a538ca17e4756958aeeb276f",
+          "sha256": "fffc0a569a32a22937496e3055ec04a8ebd59f1d01190786f8400629635f0b79"
+        },
+        {
+          "path": "flight-noise/A330-743/A330-743_E2_CoP-MeasMic.wav",
+          "bytes": 1932266,
+          "md5": "c8a9b21c468b6ba47ba22cac80b2edcc",
+          "sha256": "9504b109901974057f54d0a22e0119abd890b04ba5da9687de479a69daecd6f1"
+        },
+        {
+          "path": "flight-noise/A330-743/A330-743_E2_Pil-MeasMic.wav",
+          "bytes": 1932266,
+          "md5": "75689da35fb74688ef7e7bdb082b1e3c",
+          "sha256": "1bb875aa2a8de7cd0436e2989a3deb7c88772e9fc6278a41af3151a565482d06"
+        },
+        {
+          "path": "flight-noise/A330-743/A330-743_E3_CAM-MeasMic.wav",
+          "bytes": 1931172,
+          "md5": "68d0722cca2623e6aae8ad5e7c953941",
+          "sha256": "3a57cb7b98aca0a6523625610232a4ed27ecee714e8fe61eef35bc3a424c9e9a"
+        },
+        {
+          "path": "flight-noise/A330-743/A330-743_E3_CoP-MeasMic.wav",
+          "bytes": 1932266,
+          "md5": "9728db5a95cfb672d9615dc9554b965d",
+          "sha256": "2ce2deb41b99dc905a3084a3d4faafb36ce38d2925b0afe455338525c20a76f0"
+        },
+        {
+          "path": "flight-noise/A330-743/A330-743_E3_Pil-MeasMic.wav",
+          "bytes": 1932266,
+          "md5": "5c32e120c80623ecfa14b5cce866db63",
+          "sha256": "949ea9a4fe17918a79d62cf969c2871a9b3e97db5ebf069418ee48fffae59b88"
+        },
+        {
+          "path": "flight-noise/A330-743/A330-743_E4_CAM-MeasMic.wav",
+          "bytes": 1932266,
+          "md5": "3612e5ca0c19953186c9d6c2b2f1d2b7",
+          "sha256": "086c3339e416c4a3f256d205f6841a6deb1ef2e6f4ac2c35eb530647580f730f"
+        },
+        {
+          "path": "flight-noise/A330-743/A330-743_E4_CoP-MeasMic.wav",
+          "bytes": 1932266,
+          "md5": "bd2549a63886be26d1a958d101abfa7e",
+          "sha256": "6f74e4330459b4172684b2d40295a09cca50d94fa8b35aa79bc58c1c2cd5a257"
+        },
+        {
+          "path": "flight-noise/A330-743/A330-743_E4_Pil-MeasMic.wav",
+          "bytes": 1932266,
+          "md5": "32308a69c010cac0017237313837b584",
+          "sha256": "afb143613d61e1315f0c4825381965bfb21d405a65e3fa345238ad762e06412f"
+        },
+        {
+          "path": "flight-noise/A330-743/A330-743_E6_CAM-MeasMic.wav",
+          "bytes": 1932266,
+          "md5": "dc571cdcc9f07326e00caed8da20eb01",
+          "sha256": "34c7275f803b62523230f41e64a78de1d83dc4471808498373aa3cf63a4d31fa"
+        },
+        {
+          "path": "flight-noise/A330-743/A330-743_E6_CoP-MeasMic.wav",
+          "bytes": 1932266,
+          "md5": "f95f708319558db7ad2ba151bfd5dc66",
+          "sha256": "6c16d1a123e71ca5894a9e07ba35e6cb35109a3decf8cd37dbb641b2c7e7a5ef"
+        },
+        {
+          "path": "flight-noise/A330-743/A330-743_E6_Pil-MeasMic.wav",
+          "bytes": 1932266,
+          "md5": "ce271c5b5b1f3335ab750123f4738334",
+          "sha256": "906f62f5055098b6ba44851014fdc3c0fd51d9c644317abfa879217327a7e7c1"
+        },
+        {
+          "path": "flight-noise/A330-743/A330-743_E51_CAM-MeasMic.wav",
+          "bytes": 1932266,
+          "md5": "1ecc34bb92c0a04286899ec50e58a4ac",
+          "sha256": "e602593b25106a0fa3601a08937e317c4143cb900a6f9f6aed8aad6e9ac4ebce"
+        },
+        {
+          "path": "flight-noise/A330-743/A330-743_E51_CoP-MeasMic.wav",
+          "bytes": 1932266,
+          "md5": "58885b88da4e538fb146762d5e9b64ca",
+          "sha256": "ce26a3fbfb417b536e3510b2e92c38eeb59e25456198cdd69dbf2c7c125e2d43"
+        },
+        {
+          "path": "flight-noise/A330-743/A330-743_E51_Pil-MeasMic.wav",
+          "bytes": 1932266,
+          "md5": "e58118e0915594a1351c48b41bf69741",
+          "sha256": "767d052870b734e433063a45c4b4911afb40fada789a56551b14fb767f01f2a3"
+        },
+        {
+          "path": "flight-noise/A330-743/A330-743_E52_CAM-MeasMic.wav",
+          "bytes": 1933206,
+          "md5": "4b71ea69bd35362da76d127b27831b59",
+          "sha256": "39057e7ddf68f6e910faccc4cd80cf325e5a81788aa59db1f4a7ccc2fe52f928"
+        },
+        {
+          "path": "flight-noise/A330-743/A330-743_E52_CoP-MeasMic.wav",
+          "bytes": 1933206,
+          "md5": "d3acde6ababb43a4cab3db6375c108fc",
+          "sha256": "827751b784793522da7d4700289f09917c591bbdcfde2749b72757fb1f02e9d8"
+        },
+        {
+          "path": "flight-noise/A330-743/A330-743_E52_Pil-MeasMic.wav",
+          "bytes": 1933206,
+          "md5": "9e5373fcce472891d379eaa37ba08505",
+          "sha256": "b3518b362a3e6d6869ae7a868fa3b355c79dae33d60f6879fd54114a41b71309"
+        }
+      ],
+      "license": "CC-BY-NC-4.0",
+      "human_scope_verified": false,
+      "primary_quality_admitted": false
+    }
+  ]
+}

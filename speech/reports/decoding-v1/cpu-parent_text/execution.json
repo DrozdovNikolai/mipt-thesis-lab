@@ -1,0 +1,12 @@
+{
+  "plan_sha256": "23095d0f5d7df2f448fae04f7d77b81a367af8d9fcdbee1deef04998e80df659",
+  "prediction_sha256": {
+    "1462-170145-0012--quiet12.json": "e715e73f3ed037fa96b9709ebcd4b5f4cbdcec0748c824c454c780f1afc8d473",
+    "fleurs-ru-1514.json": "a8ac44e1532b279c1eb353ee0efe1752ca0cb150ae58cfee1d5e031026bea2ed",
+    "reviewed-291ebb141aa4e7a7ba94ccf8d18002fb.json": "b713484a25e33f576ef35b7718873fcb1a469dde8a9a05012e87b7c1a3e528d0",
+    "voici-2660112-0240.json": "5ba7677b3d226e49989aadabde8b123d9af437c9f02163e1f983ff74862f1dd0"
+  },
+  "runtime_sha256": {
+    "runtime-20260914T102035232937Z.json": "bab9353876c5a37e41867ade21504ad52063b0613dde0a324a0fd510f2b1194e"
+  }
+}

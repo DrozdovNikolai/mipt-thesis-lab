@@ -1,0 +1,37 @@
+{
+  "status": "COMPLETE",
+  "diagnostic_pass": {
+    "guarded_v9": false,
+    "canary": false,
+    "canary_guarded": false,
+    "canary_router": false,
+    "dfn_parakeet": false
+  },
+  "artifacts_sha256": {
+    "plan.json": "3412cf06a3916ca5f6be201a273d00865c477d9748e0e00c7c22ba52db9a310f",
+    "protocol.md": "ca00e9a8c8fe6990f66f9305cd2f52be37098c3b816423e284b019ebd6c59c61",
+    "model-manifest.json": "c398102b5f53915e7054e1438b5f1bc522a8e086ab5a87631fc651be7f4cee03",
+    "comparison.json": "3d2976bedba1635cd48a09bfffaa4675613613ddffd9bb3124586cfccb4205f6",
+    "scored-counts.json": "a34b888104ff3aa21293fe80decb7057bf54a0b7278eed4a031e157478167368",
+    "verification.json": "bbce4b232cc599c67311075763fcf1d83bb34d72733e3abc0386e3349b794b51",
+    "io-canary/execution.json": "c2895d6d892babb6bd9ed3e75e36774cc90b32b030c28fb7940120f7dfbc214b",
+    "io-dfn/execution.json": "344bd601d9dc055091306cef458b8ed0354144f597352844f2b36e18adc6df7c",
+    "io-replay/canary-replay.json": "8f89ec58d6db0ad26cbc1a1bd90e2592f0a168fc1e4e9d2f13abe981afa7ebf0",
+    "local-runtime/runtime.json": "9fe80d43f203f0d7a11adaec6fab8b6574b31acc6de18c4319b797368558d692",
+    "local-runtime/verification.json": "9e1a6f0261deb5b2a79f5a5da2e4a4f9994f276853031f45aa9b474688ecab29",
+    "decision.md": "7f6254f1ad4288f96fc76bc390557a21c7a2a4c1291a8f3201f9d5e520e037a9",
+    "report.md": "6f3b0b2d82e7cf480a621c32c7b423f3c823a2215d595ed39580c22b4aa9e9f7",
+    "scoring-runtime-amendment.md": "bcca61ec92381f52bad1164ea2684f824c82b9e552d4f6b4137e300689eeab5b"
+  },
+  "new_GPU_ASR_calls": {
+    "main_canary": 491,
+    "main_dfn_parakeet": 56,
+    "technical_train_canary_smokes": 3,
+    "canary_replay": 2,
+    "local_guarded_smoke": 8
+  },
+  "references_changed": false,
+  "blind_dev_accessed": false,
+  "test_accessed": false,
+  "release_promoted": false
+}

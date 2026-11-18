@@ -1,0 +1,1473 @@
+{
+  "plan_sha256": "f3ca9c8e6da4362a6ea688367f43dad0d8b0ef6ff2324fb842819bd8f5a87c0a",
+  "cohorts": {
+    "bleriot_b_noise": {
+      "samples": 25,
+      "groups": 2,
+      "scores": {
+        "baseline": {
+          "S": 0,
+          "D": 0,
+          "I": 23,
+          "N": 0,
+          "H": 0,
+          "character_errors": 1260,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "decoder-kl": {
+          "S": 0,
+          "D": 0,
+          "I": 28,
+          "N": 0,
+          "H": 0,
+          "character_errors": 1455,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "decoder-ce": {
+          "S": 0,
+          "D": 0,
+          "I": 21,
+          "N": 0,
+          "H": 0,
+          "character_errors": 786,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "full-ce": {
+          "S": 0,
+          "D": 0,
+          "I": 21,
+          "N": 0,
+          "H": 0,
+          "character_errors": 786,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        }
+      },
+      "comparisons": {
+        "decoder-kl_vs_baseline": {
+          "wer_delta": null,
+          "relative_reduction": null
+        },
+        "decoder-ce_vs_baseline": {
+          "wer_delta": null,
+          "relative_reduction": null
+        },
+        "full-ce_vs_baseline": {
+          "wer_delta": null,
+          "relative_reduction": null
+        },
+        "decoder-ce_vs_decoder-kl": {
+          "wer_delta": null,
+          "relative_reduction": null
+        },
+        "full-ce_vs_decoder-ce": {
+          "wer_delta": null,
+          "relative_reduction": null
+        }
+      },
+      "inserted_words_per_minute": {
+        "baseline": 4.5887823391733615,
+        "decoder-kl": 5.586343717254527,
+        "decoder-ce": 4.189757787940896,
+        "full-ce": 4.189757787940896
+      }
+    },
+    "general_clean": {
+      "samples": 50,
+      "groups": 39,
+      "scores": {
+        "baseline": {
+          "S": 37,
+          "D": 2,
+          "I": 5,
+          "N": 1214,
+          "H": 1175,
+          "character_errors": 97,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.036243822075782535,
+          "cer": 0.014804639804639804
+        },
+        "decoder-kl": {
+          "S": 35,
+          "D": 2,
+          "I": 5,
+          "N": 1214,
+          "H": 1177,
+          "character_errors": 92,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.03459637561779242,
+          "cer": 0.014041514041514042
+        },
+        "decoder-ce": {
+          "S": 35,
+          "D": 2,
+          "I": 4,
+          "N": 1214,
+          "H": 1177,
+          "character_errors": 92,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.03377265238879736,
+          "cer": 0.014041514041514042
+        },
+        "full-ce": {
+          "S": 35,
+          "D": 2,
+          "I": 4,
+          "N": 1214,
+          "H": 1177,
+          "character_errors": 92,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.03377265238879736,
+          "cer": 0.014041514041514042
+        }
+      },
+      "comparisons": {
+        "decoder-kl_vs_baseline": {
+          "wer_delta": -0.001647446457990115,
+          "relative_reduction": 0.04545454545454545,
+          "bootstrap": {
+            "lower": -0.004332943686212208,
+            "upper": 0.0,
+            "method": "paired_cluster_bootstrap",
+            "seed": 55,
+            "resamples": 2000,
+            "confidence_level": 0.95,
+            "independent_groups": 39,
+            "delta_definition": "candidate - baseline",
+            "valid_resamples": 2000,
+            "system_intervals": {
+              "baseline": {
+                "lower": 0.02344292628353604,
+                "upper": 0.050285237091163656
+              },
+              "candidate": {
+                "lower": 0.02168996466613365,
+                "upper": 0.048455119346847576
+              }
+            }
+          }
+        },
+        "decoder-ce_vs_baseline": {
+          "wer_delta": -0.0024711696869851724,
+          "relative_reduction": 0.06818181818181816,
+          "bootstrap": {
+            "lower": -0.006831767719897523,
+            "upper": 0.0,
+            "method": "paired_cluster_bootstrap",
+            "seed": 55,
+            "resamples": 2000,
+            "confidence_level": 0.95,
+            "independent_groups": 39,
+            "delta_definition": "candidate - baseline",
+            "valid_resamples": 2000,
+            "system_intervals": {
+              "baseline": {
+                "lower": 0.02344292628353604,
+                "upper": 0.050285237091163656
+              },
+              "candidate": {
+                "lower": 0.021411525055868748,
+                "upper": 0.0470680698772074
+              }
+            }
+          }
+        },
+        "full-ce_vs_baseline": {
+          "wer_delta": -0.0024711696869851724,
+          "relative_reduction": 0.06818181818181816,
+          "bootstrap": {
+            "lower": -0.006831767719897523,
+            "upper": 0.0,
+            "method": "paired_cluster_bootstrap",
+            "seed": 55,
+            "resamples": 2000,
+            "confidence_level": 0.95,
+            "independent_groups": 39,
+            "delta_definition": "candidate - baseline",
+            "valid_resamples": 2000,
+            "system_intervals": {
+              "baseline": {
+                "lower": 0.02344292628353604,
+                "upper": 0.050285237091163656
+              },
+              "candidate": {
+                "lower": 0.021411525055868748,
+                "upper": 0.0470680698772074
+              }
+            }
+          }
+        },
+        "decoder-ce_vs_decoder-kl": {
+          "wer_delta": -0.0008237232289950575,
+          "relative_reduction": 0.023809523809523805,
+          "bootstrap": {
+            "lower": -0.005071958498354437,
+            "upper": 0.0023364941251884817,
+            "method": "paired_cluster_bootstrap",
+            "seed": 55,
+            "resamples": 2000,
+            "confidence_level": 0.95,
+            "independent_groups": 39,
+            "delta_definition": "candidate - baseline",
+            "valid_resamples": 2000,
+            "system_intervals": {
+              "baseline": {
+                "lower": 0.02168996466613365,
+                "upper": 0.048455119346847576
+              },
+              "candidate": {
+                "lower": 0.021411525055868748,
+                "upper": 0.0470680698772074
+              }
+            }
+          }
+        },
+        "full-ce_vs_decoder-ce": {
+          "wer_delta": 0.0,
+          "relative_reduction": 0.0,
+          "bootstrap": {
+            "lower": 0.0,
+            "upper": 0.0,
+            "method": "paired_cluster_bootstrap",
+            "seed": 55,
+            "resamples": 2000,
+            "confidence_level": 0.95,
+            "independent_groups": 39,
+            "delta_definition": "candidate - baseline",
+            "valid_resamples": 2000,
+            "system_intervals": {
+              "baseline": {
+                "lower": 0.021411525055868748,
+                "upper": 0.0470680698772074
+              },
+              "candidate": {
+                "lower": 0.021411525055868748,
+                "upper": 0.0470680698772074
+              }
+            }
+          }
+        }
+      }
+    },
+    "general_ru": {
+      "samples": 50,
+      "groups": 1,
+      "scores": {
+        "baseline": {
+          "S": 75,
+          "D": 6,
+          "I": 7,
+          "N": 921,
+          "H": 840,
+          "character_errors": 166,
+          "reference_characters": 6406,
+          "wer_lexical_corpus": 0.09554831704668838,
+          "cer": 0.025913206369029034
+        },
+        "decoder-kl": {
+          "S": 75,
+          "D": 6,
+          "I": 6,
+          "N": 921,
+          "H": 840,
+          "character_errors": 162,
+          "reference_characters": 6406,
+          "wer_lexical_corpus": 0.09446254071661238,
+          "cer": 0.025288791757727132
+        },
+        "decoder-ce": {
+          "S": 73,
+          "D": 5,
+          "I": 6,
+          "N": 921,
+          "H": 843,
+          "character_errors": 160,
+          "reference_characters": 6406,
+          "wer_lexical_corpus": 0.09120521172638436,
+          "cer": 0.024976584452076178
+        },
+        "full-ce": {
+          "S": 73,
+          "D": 6,
+          "I": 7,
+          "N": 921,
+          "H": 842,
+          "character_errors": 156,
+          "reference_characters": 6406,
+          "wer_lexical_corpus": 0.09337676438653637,
+          "cer": 0.024352169840774273
+        }
+      },
+      "comparisons": {
+        "decoder-kl_vs_baseline": {
+          "wer_delta": -0.0010857763300760048,
+          "relative_reduction": 0.01136363636363637,
+          "bootstrap": {
+            "lower": -0.0010857763300760044,
+            "upper": -0.0010857763300760044,
+            "method": "paired_cluster_bootstrap",
+            "seed": 55,
+            "resamples": 2000,
+            "confidence_level": 0.95,
+            "independent_groups": 1,
+            "delta_definition": "candidate - baseline",
+            "valid_resamples": 2000,
+            "system_intervals": {
+              "baseline": {
+                "lower": 0.09554831704668838,
+                "upper": 0.09554831704668838
+              },
+              "candidate": {
+                "lower": 0.09446254071661238,
+                "upper": 0.09446254071661238
+              }
+            }
+          }
+        },
+        "decoder-ce_vs_baseline": {
+          "wer_delta": -0.004343105320304019,
+          "relative_reduction": 0.04545454545454548,
+          "bootstrap": {
+            "lower": -0.004343105320304018,
+            "upper": -0.004343105320304018,
+            "method": "paired_cluster_bootstrap",
+            "seed": 55,
+            "resamples": 2000,
+            "confidence_level": 0.95,
+            "independent_groups": 1,
+            "delta_definition": "candidate - baseline",
+            "valid_resamples": 2000,
+            "system_intervals": {
+              "baseline": {
+                "lower": 0.09554831704668838,
+                "upper": 0.09554831704668838
+              },
+              "candidate": {
+                "lower": 0.09120521172638436,
+                "upper": 0.09120521172638436
+              }
+            }
+          }
+        },
+        "full-ce_vs_baseline": {
+          "wer_delta": -0.0021715526601520097,
+          "relative_reduction": 0.02272727272727274,
+          "bootstrap": {
+            "lower": -0.002171552660152009,
+            "upper": -0.002171552660152009,
+            "method": "paired_cluster_bootstrap",
+            "seed": 55,
+            "resamples": 2000,
+            "confidence_level": 0.95,
+            "independent_groups": 1,
+            "delta_definition": "candidate - baseline",
+            "valid_resamples": 2000,
+            "system_intervals": {
+              "baseline": {
+                "lower": 0.09554831704668838,
+                "upper": 0.09554831704668838
+              },
+              "candidate": {
+                "lower": 0.09337676438653637,
+                "upper": 0.09337676438653637
+              }
+            }
+          }
+        },
+        "decoder-ce_vs_decoder-kl": {
+          "wer_delta": -0.0032573289902280145,
+          "relative_reduction": 0.03448275862068967,
+          "bootstrap": {
+            "lower": -0.003257328990228013,
+            "upper": -0.003257328990228013,
+            "method": "paired_cluster_bootstrap",
+            "seed": 55,
+            "resamples": 2000,
+            "confidence_level": 0.95,
+            "independent_groups": 1,
+            "delta_definition": "candidate - baseline",
+            "valid_resamples": 2000,
+            "system_intervals": {
+              "baseline": {
+                "lower": 0.09446254071661238,
+                "upper": 0.09446254071661238
+              },
+              "candidate": {
+                "lower": 0.09120521172638436,
+                "upper": 0.09120521172638436
+              }
+            }
+          }
+        },
+        "full-ce_vs_decoder-ce": {
+          "wer_delta": 0.0021715526601520097,
+          "relative_reduction": -0.023809523809523822,
+          "bootstrap": {
+            "lower": 0.002171552660152009,
+            "upper": 0.002171552660152009,
+            "method": "paired_cluster_bootstrap",
+            "seed": 55,
+            "resamples": 2000,
+            "confidence_level": 0.95,
+            "independent_groups": 1,
+            "delta_definition": "candidate - baseline",
+            "valid_resamples": 2000,
+            "system_intervals": {
+              "baseline": {
+                "lower": 0.09120521172638436,
+                "upper": 0.09120521172638436
+              },
+              "candidate": {
+                "lower": 0.09337676438653637,
+                "upper": 0.09337676438653637
+              }
+            }
+          }
+        }
+      }
+    },
+    "noise_only": {
+      "samples": 15,
+      "groups": 1,
+      "scores": {
+        "baseline": {
+          "S": 0,
+          "D": 0,
+          "I": 34,
+          "N": 0,
+          "H": 0,
+          "character_errors": 1250,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "decoder-kl": {
+          "S": 0,
+          "D": 0,
+          "I": 184,
+          "N": 0,
+          "H": 0,
+          "character_errors": 977,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "decoder-ce": {
+          "S": 0,
+          "D": 0,
+          "I": 120,
+          "N": 0,
+          "H": 0,
+          "character_errors": 428,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        },
+        "full-ce": {
+          "S": 0,
+          "D": 0,
+          "I": 122,
+          "N": 0,
+          "H": 0,
+          "character_errors": 578,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null
+        }
+      },
+      "comparisons": {
+        "decoder-kl_vs_baseline": {
+          "wer_delta": null,
+          "relative_reduction": null
+        },
+        "decoder-ce_vs_baseline": {
+          "wer_delta": null,
+          "relative_reduction": null
+        },
+        "full-ce_vs_baseline": {
+          "wer_delta": null,
+          "relative_reduction": null
+        },
+        "decoder-ce_vs_decoder-kl": {
+          "wer_delta": null,
+          "relative_reduction": null
+        },
+        "full-ce_vs_decoder-ce": {
+          "wer_delta": null,
+          "relative_reduction": null
+        }
+      },
+      "inserted_words_per_minute": {
+        "baseline": 6.8,
+        "decoder-kl": 36.8,
+        "decoder-ce": 24.0,
+        "full-ce": 24.4
+      }
+    },
+    "partial_human_dev": {
+      "samples": 5,
+      "groups": 3,
+      "scores": {
+        "baseline": {
+          "S": 10,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 104,
+          "character_errors": 50,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.1391304347826087,
+          "cer": 0.07418397626112759
+        },
+        "decoder-kl": {
+          "S": 9,
+          "D": 1,
+          "I": 6,
+          "N": 115,
+          "H": 105,
+          "character_errors": 54,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.1391304347826087,
+          "cer": 0.08011869436201781
+        },
+        "decoder-ce": {
+          "S": 8,
+          "D": 1,
+          "I": 6,
+          "N": 115,
+          "H": 106,
+          "character_errors": 50,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.13043478260869565,
+          "cer": 0.07418397626112759
+        },
+        "full-ce": {
+          "S": 8,
+          "D": 1,
+          "I": 6,
+          "N": 115,
+          "H": 106,
+          "character_errors": 50,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.13043478260869565,
+          "cer": 0.07418397626112759
+        }
+      },
+      "comparisons": {
+        "decoder-kl_vs_baseline": {
+          "wer_delta": 0.0,
+          "relative_reduction": 0.0,
+          "bootstrap": {
+            "lower": 0.0,
+            "upper": 0.0,
+            "method": "paired_cluster_bootstrap",
+            "seed": 55,
+            "resamples": 2000,
+            "confidence_level": 0.95,
+            "independent_groups": 3,
+            "delta_definition": "candidate - baseline",
+            "valid_resamples": 2000,
+            "system_intervals": {
+              "baseline": {
+                "lower": 0.08695652173913043,
+                "upper": 0.34782608695652173
+              },
+              "candidate": {
+                "lower": 0.08695652173913043,
+                "upper": 0.34782608695652173
+              }
+            }
+          }
+        },
+        "decoder-ce_vs_baseline": {
+          "wer_delta": -0.008695652173913049,
+          "relative_reduction": 0.06250000000000004,
+          "bootstrap": {
+            "lower": -0.043478260869565216,
+            "upper": 0.0,
+            "method": "paired_cluster_bootstrap",
+            "seed": 55,
+            "resamples": 2000,
+            "confidence_level": 0.95,
+            "independent_groups": 3,
+            "delta_definition": "candidate - baseline",
+            "valid_resamples": 2000,
+            "system_intervals": {
+              "baseline": {
+                "lower": 0.08695652173913043,
+                "upper": 0.34782608695652173
+              },
+              "candidate": {
+                "lower": 0.08695652173913043,
+                "upper": 0.30434782608695654
+              }
+            }
+          }
+        },
+        "full-ce_vs_baseline": {
+          "wer_delta": -0.008695652173913049,
+          "relative_reduction": 0.06250000000000004,
+          "bootstrap": {
+            "lower": -0.043478260869565216,
+            "upper": 0.0,
+            "method": "paired_cluster_bootstrap",
+            "seed": 55,
+            "resamples": 2000,
+            "confidence_level": 0.95,
+            "independent_groups": 3,
+            "delta_definition": "candidate - baseline",
+            "valid_resamples": 2000,
+            "system_intervals": {
+              "baseline": {
+                "lower": 0.08695652173913043,
+                "upper": 0.34782608695652173
+              },
+              "candidate": {
+                "lower": 0.08695652173913043,
+                "upper": 0.30434782608695654
+              }
+            }
+          }
+        },
+        "decoder-ce_vs_decoder-kl": {
+          "wer_delta": -0.008695652173913049,
+          "relative_reduction": 0.06250000000000004,
+          "bootstrap": {
+            "lower": -0.043478260869565216,
+            "upper": 0.0,
+            "method": "paired_cluster_bootstrap",
+            "seed": 55,
+            "resamples": 2000,
+            "confidence_level": 0.95,
+            "independent_groups": 3,
+            "delta_definition": "candidate - baseline",
+            "valid_resamples": 2000,
+            "system_intervals": {
+              "baseline": {
+                "lower": 0.08695652173913043,
+                "upper": 0.34782608695652173
+              },
+              "candidate": {
+                "lower": 0.08695652173913043,
+                "upper": 0.30434782608695654
+              }
+            }
+          }
+        },
+        "full-ce_vs_decoder-ce": {
+          "wer_delta": 0.0,
+          "relative_reduction": 0.0,
+          "bootstrap": {
+            "lower": 0.0,
+            "upper": 0.0,
+            "method": "paired_cluster_bootstrap",
+            "seed": 55,
+            "resamples": 2000,
+            "confidence_level": 0.95,
+            "independent_groups": 3,
+            "delta_definition": "candidate - baseline",
+            "valid_resamples": 2000,
+            "system_intervals": {
+              "baseline": {
+                "lower": 0.08695652173913043,
+                "upper": 0.30434782608695654
+              },
+              "candidate": {
+                "lower": 0.08695652173913043,
+                "upper": 0.30434782608695654
+              }
+            }
+          }
+        }
+      }
+    },
+    "publisher_weak_dev": {
+      "samples": 35,
+      "groups": 2,
+      "scores": {
+        "baseline": {
+          "S": 149,
+          "D": 13,
+          "I": 39,
+          "N": 879,
+          "H": 717,
+          "character_errors": 593,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.22866894197952217,
+          "cer": 0.1152575315840622
+        },
+        "decoder-kl": {
+          "S": 135,
+          "D": 16,
+          "I": 42,
+          "N": 879,
+          "H": 728,
+          "character_errors": 580,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.21956769055745165,
+          "cer": 0.11273080660835763
+        },
+        "decoder-ce": {
+          "S": 130,
+          "D": 13,
+          "I": 48,
+          "N": 879,
+          "H": 736,
+          "character_errors": 612,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.21729237770193402,
+          "cer": 0.11895043731778426
+        },
+        "full-ce": {
+          "S": 130,
+          "D": 13,
+          "I": 47,
+          "N": 879,
+          "H": 736,
+          "character_errors": 605,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.2161547212741752,
+          "cer": 0.11758989310009718
+        }
+      },
+      "comparisons": {
+        "decoder-kl_vs_baseline": {
+          "wer_delta": -0.009101251422070522,
+          "relative_reduction": 0.039800995024875566,
+          "bootstrap": {
+            "lower": -0.012162162162162163,
+            "upper": 0.007194244604316547,
+            "method": "paired_cluster_bootstrap",
+            "seed": 55,
+            "resamples": 2000,
+            "confidence_level": 0.95,
+            "independent_groups": 2,
+            "delta_definition": "candidate - baseline",
+            "valid_resamples": 2000,
+            "system_intervals": {
+              "baseline": {
+                "lower": 0.21216216216216216,
+                "upper": 0.31654676258992803
+              },
+              "candidate": {
+                "lower": 0.2,
+                "upper": 0.3237410071942446
+              }
+            }
+          }
+        },
+        "decoder-ce_vs_baseline": {
+          "wer_delta": -0.011376564277588153,
+          "relative_reduction": 0.04975124378109446,
+          "bootstrap": {
+            "lower": -0.014864864864864866,
+            "upper": 0.007194244604316547,
+            "method": "paired_cluster_bootstrap",
+            "seed": 55,
+            "resamples": 2000,
+            "confidence_level": 0.95,
+            "independent_groups": 2,
+            "delta_definition": "candidate - baseline",
+            "valid_resamples": 2000,
+            "system_intervals": {
+              "baseline": {
+                "lower": 0.21216216216216216,
+                "upper": 0.31654676258992803
+              },
+              "candidate": {
+                "lower": 0.1972972972972973,
+                "upper": 0.3237410071942446
+              }
+            }
+          }
+        },
+        "full-ce_vs_baseline": {
+          "wer_delta": -0.012514220705346968,
+          "relative_reduction": 0.054726368159203904,
+          "bootstrap": {
+            "lower": -0.016216216216216217,
+            "upper": 0.007194244604316547,
+            "method": "paired_cluster_bootstrap",
+            "seed": 55,
+            "resamples": 2000,
+            "confidence_level": 0.95,
+            "independent_groups": 2,
+            "delta_definition": "candidate - baseline",
+            "valid_resamples": 2000,
+            "system_intervals": {
+              "baseline": {
+                "lower": 0.21216216216216216,
+                "upper": 0.31654676258992803
+              },
+              "candidate": {
+                "lower": 0.19594594594594594,
+                "upper": 0.3237410071942446
+              }
+            }
+          }
+        },
+        "decoder-ce_vs_decoder-kl": {
+          "wer_delta": -0.0022753128555176305,
+          "relative_reduction": 0.01036269430051812,
+          "bootstrap": {
+            "lower": -0.002702702702702703,
+            "upper": 0.0,
+            "method": "paired_cluster_bootstrap",
+            "seed": 55,
+            "resamples": 2000,
+            "confidence_level": 0.95,
+            "independent_groups": 2,
+            "delta_definition": "candidate - baseline",
+            "valid_resamples": 2000,
+            "system_intervals": {
+              "baseline": {
+                "lower": 0.2,
+                "upper": 0.3237410071942446
+              },
+              "candidate": {
+                "lower": 0.1972972972972973,
+                "upper": 0.3237410071942446
+              }
+            }
+          }
+        },
+        "full-ce_vs_decoder-ce": {
+          "wer_delta": -0.0011376564277588153,
+          "relative_reduction": 0.00523560209424083,
+          "bootstrap": {
+            "lower": -0.0013513513513513514,
+            "upper": 0.0,
+            "method": "paired_cluster_bootstrap",
+            "seed": 55,
+            "resamples": 2000,
+            "confidence_level": 0.95,
+            "independent_groups": 2,
+            "delta_definition": "candidate - baseline",
+            "valid_resamples": 2000,
+            "system_intervals": {
+              "baseline": {
+                "lower": 0.1972972972972973,
+                "upper": 0.3237410071942446
+              },
+              "candidate": {
+                "lower": 0.19594594594594594,
+                "upper": 0.3237410071942446
+              }
+            }
+          }
+        }
+      }
+    },
+    "quiet_general_clean": {
+      "samples": 9,
+      "groups": 9,
+      "scores": {
+        "baseline": {
+          "S": 1,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 68,
+          "character_errors": 4,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.014492753623188406,
+          "cer": 0.011627906976744186
+        },
+        "decoder-kl": {
+          "S": 1,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 68,
+          "character_errors": 4,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.014492753623188406,
+          "cer": 0.011627906976744186
+        },
+        "decoder-ce": {
+          "S": 1,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 68,
+          "character_errors": 4,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.014492753623188406,
+          "cer": 0.011627906976744186
+        },
+        "full-ce": {
+          "S": 1,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 68,
+          "character_errors": 4,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.014492753623188406,
+          "cer": 0.011627906976744186
+        }
+      },
+      "comparisons": {
+        "decoder-kl_vs_baseline": {
+          "wer_delta": 0.0,
+          "relative_reduction": 0.0,
+          "bootstrap": {
+            "lower": 0.0,
+            "upper": 0.0,
+            "method": "paired_cluster_bootstrap",
+            "seed": 55,
+            "resamples": 2000,
+            "confidence_level": 0.95,
+            "independent_groups": 9,
+            "delta_definition": "candidate - baseline",
+            "valid_resamples": 2000,
+            "system_intervals": {
+              "baseline": {
+                "lower": 0.0,
+                "upper": 0.05555555555555555
+              },
+              "candidate": {
+                "lower": 0.0,
+                "upper": 0.05555555555555555
+              }
+            }
+          }
+        },
+        "decoder-ce_vs_baseline": {
+          "wer_delta": 0.0,
+          "relative_reduction": 0.0,
+          "bootstrap": {
+            "lower": 0.0,
+            "upper": 0.0,
+            "method": "paired_cluster_bootstrap",
+            "seed": 55,
+            "resamples": 2000,
+            "confidence_level": 0.95,
+            "independent_groups": 9,
+            "delta_definition": "candidate - baseline",
+            "valid_resamples": 2000,
+            "system_intervals": {
+              "baseline": {
+                "lower": 0.0,
+                "upper": 0.05555555555555555
+              },
+              "candidate": {
+                "lower": 0.0,
+                "upper": 0.05555555555555555
+              }
+            }
+          }
+        },
+        "full-ce_vs_baseline": {
+          "wer_delta": 0.0,
+          "relative_reduction": 0.0,
+          "bootstrap": {
+            "lower": 0.0,
+            "upper": 0.0,
+            "method": "paired_cluster_bootstrap",
+            "seed": 55,
+            "resamples": 2000,
+            "confidence_level": 0.95,
+            "independent_groups": 9,
+            "delta_definition": "candidate - baseline",
+            "valid_resamples": 2000,
+            "system_intervals": {
+              "baseline": {
+                "lower": 0.0,
+                "upper": 0.05555555555555555
+              },
+              "candidate": {
+                "lower": 0.0,
+                "upper": 0.05555555555555555
+              }
+            }
+          }
+        },
+        "decoder-ce_vs_decoder-kl": {
+          "wer_delta": 0.0,
+          "relative_reduction": 0.0,
+          "bootstrap": {
+            "lower": 0.0,
+            "upper": 0.0,
+            "method": "paired_cluster_bootstrap",
+            "seed": 55,
+            "resamples": 2000,
+            "confidence_level": 0.95,
+            "independent_groups": 9,
+            "delta_definition": "candidate - baseline",
+            "valid_resamples": 2000,
+            "system_intervals": {
+              "baseline": {
+                "lower": 0.0,
+                "upper": 0.05555555555555555
+              },
+              "candidate": {
+                "lower": 0.0,
+                "upper": 0.05555555555555555
+              }
+            }
+          }
+        },
+        "full-ce_vs_decoder-ce": {
+          "wer_delta": 0.0,
+          "relative_reduction": 0.0,
+          "bootstrap": {
+            "lower": 0.0,
+            "upper": 0.0,
+            "method": "paired_cluster_bootstrap",
+            "seed": 55,
+            "resamples": 2000,
+            "confidence_level": 0.95,
+            "independent_groups": 9,
+            "delta_definition": "candidate - baseline",
+            "valid_resamples": 2000,
+            "system_intervals": {
+              "baseline": {
+                "lower": 0.0,
+                "upper": 0.05555555555555555
+              },
+              "candidate": {
+                "lower": 0.0,
+                "upper": 0.05555555555555555
+              }
+            }
+          }
+        }
+      }
+    },
+    "quiet_partial_human_dev": {
+      "samples": 5,
+      "groups": 3,
+      "scores": {
+        "baseline": {
+          "S": 11,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 103,
+          "character_errors": 56,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.14782608695652175,
+          "cer": 0.0830860534124629
+        },
+        "decoder-kl": {
+          "S": 10,
+          "D": 2,
+          "I": 5,
+          "N": 115,
+          "H": 103,
+          "character_errors": 46,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.14782608695652175,
+          "cer": 0.06824925816023739
+        },
+        "decoder-ce": {
+          "S": 10,
+          "D": 2,
+          "I": 5,
+          "N": 115,
+          "H": 103,
+          "character_errors": 47,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.14782608695652175,
+          "cer": 0.06973293768545995
+        },
+        "full-ce": {
+          "S": 10,
+          "D": 1,
+          "I": 9,
+          "N": 115,
+          "H": 104,
+          "character_errors": 77,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.17391304347826086,
+          "cer": 0.1142433234421365
+        }
+      },
+      "comparisons": {
+        "decoder-kl_vs_baseline": {
+          "wer_delta": 0.0,
+          "relative_reduction": 0.0,
+          "bootstrap": {
+            "lower": -0.021739130434782608,
+            "upper": 0.08695652173913043,
+            "method": "paired_cluster_bootstrap",
+            "seed": 55,
+            "resamples": 2000,
+            "confidence_level": 0.95,
+            "independent_groups": 3,
+            "delta_definition": "candidate - baseline",
+            "valid_resamples": 2000,
+            "system_intervals": {
+              "baseline": {
+                "lower": 0.08695652173913043,
+                "upper": 0.34782608695652173
+              },
+              "candidate": {
+                "lower": 0.06521739130434782,
+                "upper": 0.43478260869565216
+              }
+            }
+          }
+        },
+        "decoder-ce_vs_baseline": {
+          "wer_delta": 0.0,
+          "relative_reduction": 0.0,
+          "bootstrap": {
+            "lower": -0.021739130434782608,
+            "upper": 0.043478260869565216,
+            "method": "paired_cluster_bootstrap",
+            "seed": 55,
+            "resamples": 2000,
+            "confidence_level": 0.95,
+            "independent_groups": 3,
+            "delta_definition": "candidate - baseline",
+            "valid_resamples": 2000,
+            "system_intervals": {
+              "baseline": {
+                "lower": 0.08695652173913043,
+                "upper": 0.34782608695652173
+              },
+              "candidate": {
+                "lower": 0.08695652173913043,
+                "upper": 0.391304347826087
+              }
+            }
+          }
+        },
+        "full-ce_vs_baseline": {
+          "wer_delta": 0.02608695652173912,
+          "relative_reduction": -0.17647058823529402,
+          "bootstrap": {
+            "lower": -0.021739130434782608,
+            "upper": 0.06521739130434782,
+            "method": "paired_cluster_bootstrap",
+            "seed": 55,
+            "resamples": 2000,
+            "confidence_level": 0.95,
+            "independent_groups": 3,
+            "delta_definition": "candidate - baseline",
+            "valid_resamples": 2000,
+            "system_intervals": {
+              "baseline": {
+                "lower": 0.08695652173913043,
+                "upper": 0.34782608695652173
+              },
+              "candidate": {
+                "lower": 0.06521739130434782,
+                "upper": 0.391304347826087
+              }
+            }
+          }
+        },
+        "decoder-ce_vs_decoder-kl": {
+          "wer_delta": 0.0,
+          "relative_reduction": 0.0,
+          "bootstrap": {
+            "lower": -0.043478260869565216,
+            "upper": 0.021739130434782608,
+            "method": "paired_cluster_bootstrap",
+            "seed": 55,
+            "resamples": 2000,
+            "confidence_level": 0.95,
+            "independent_groups": 3,
+            "delta_definition": "candidate - baseline",
+            "valid_resamples": 2000,
+            "system_intervals": {
+              "baseline": {
+                "lower": 0.06521739130434782,
+                "upper": 0.43478260869565216
+              },
+              "candidate": {
+                "lower": 0.08695652173913043,
+                "upper": 0.391304347826087
+              }
+            }
+          }
+        },
+        "full-ce_vs_decoder-ce": {
+          "wer_delta": 0.02608695652173912,
+          "relative_reduction": -0.17647058823529402,
+          "bootstrap": {
+            "lower": -0.021739130434782608,
+            "upper": 0.08695652173913043,
+            "method": "paired_cluster_bootstrap",
+            "seed": 55,
+            "resamples": 2000,
+            "confidence_level": 0.95,
+            "independent_groups": 3,
+            "delta_definition": "candidate - baseline",
+            "valid_resamples": 2000,
+            "system_intervals": {
+              "baseline": {
+                "lower": 0.08695652173913043,
+                "upper": 0.391304347826087
+              },
+              "candidate": {
+                "lower": 0.06521739130434782,
+                "upper": 0.391304347826087
+              }
+            }
+          }
+        }
+      }
+    },
+    "train_hard_fit": {
+      "samples": 25,
+      "groups": 7,
+      "scores": {
+        "baseline": {
+          "S": 59,
+          "D": 9,
+          "I": 13,
+          "N": 363,
+          "H": 295,
+          "character_errors": 158,
+          "reference_characters": 2214,
+          "wer_lexical_corpus": 0.2231404958677686,
+          "cer": 0.07136404697380307
+        },
+        "decoder-kl": {
+          "S": 31,
+          "D": 2,
+          "I": 11,
+          "N": 363,
+          "H": 330,
+          "character_errors": 89,
+          "reference_characters": 2214,
+          "wer_lexical_corpus": 0.12121212121212122,
+          "cer": 0.04019873532068654
+        },
+        "decoder-ce": {
+          "S": 30,
+          "D": 2,
+          "I": 11,
+          "N": 363,
+          "H": 331,
+          "character_errors": 89,
+          "reference_characters": 2214,
+          "wer_lexical_corpus": 0.1184573002754821,
+          "cer": 0.04019873532068654
+        },
+        "full-ce": {
+          "S": 31,
+          "D": 2,
+          "I": 10,
+          "N": 363,
+          "H": 330,
+          "character_errors": 90,
+          "reference_characters": 2214,
+          "wer_lexical_corpus": 0.1184573002754821,
+          "cer": 0.04065040650406504
+        }
+      },
+      "comparisons": {
+        "decoder-kl_vs_baseline": {
+          "wer_delta": -0.10192837465564739,
+          "relative_reduction": 0.4567901234567901
+        },
+        "decoder-ce_vs_baseline": {
+          "wer_delta": -0.1046831955922865,
+          "relative_reduction": 0.4691358024691358
+        },
+        "full-ce_vs_baseline": {
+          "wer_delta": -0.1046831955922865,
+          "relative_reduction": 0.4691358024691358
+        },
+        "decoder-ce_vs_decoder-kl": {
+          "wer_delta": -0.0027548209366391185,
+          "relative_reduction": 0.022727272727272728
+        },
+        "full-ce_vs_decoder-ce": {
+          "wer_delta": 0.0,
+          "relative_reduction": 0.0
+        }
+      }
+    },
+    "train_noisy_fit": {
+      "samples": 16,
+      "groups": 2,
+      "scores": {
+        "baseline": {
+          "S": 92,
+          "D": 5,
+          "I": 152,
+          "N": 127,
+          "H": 30,
+          "character_errors": 907,
+          "reference_characters": 793,
+          "wer_lexical_corpus": 1.9606299212598426,
+          "cer": 1.1437578814627996
+        },
+        "decoder-kl": {
+          "S": 91,
+          "D": 5,
+          "I": 163,
+          "N": 127,
+          "H": 31,
+          "character_errors": 961,
+          "reference_characters": 793,
+          "wer_lexical_corpus": 2.0393700787401574,
+          "cer": 1.2118537200504413
+        },
+        "decoder-ce": {
+          "S": 84,
+          "D": 6,
+          "I": 35,
+          "N": 127,
+          "H": 37,
+          "character_errors": 471,
+          "reference_characters": 793,
+          "wer_lexical_corpus": 0.984251968503937,
+          "cer": 0.5939470365699874
+        },
+        "full-ce": {
+          "S": 83,
+          "D": 5,
+          "I": 30,
+          "N": 127,
+          "H": 39,
+          "character_errors": 442,
+          "reference_characters": 793,
+          "wer_lexical_corpus": 0.9291338582677166,
+          "cer": 0.5573770491803278
+        }
+      },
+      "comparisons": {
+        "decoder-kl_vs_baseline": {
+          "wer_delta": 0.07874015748031482,
+          "relative_reduction": -0.040160642570281055
+        },
+        "decoder-ce_vs_baseline": {
+          "wer_delta": -0.9763779527559056,
+          "relative_reduction": 0.497991967871486
+        },
+        "full-ce_vs_baseline": {
+          "wer_delta": -1.031496062992126,
+          "relative_reduction": 0.5261044176706827
+        },
+        "decoder-ce_vs_decoder-kl": {
+          "wer_delta": -1.0551181102362204,
+          "relative_reduction": 0.5173745173745173
+        },
+        "full-ce_vs_decoder-ce": {
+          "wer_delta": -0.055118110236220486,
+          "relative_reduction": 0.056000000000000015
+        }
+      }
+    },
+    "train_retained_fit": {
+      "samples": 206,
+      "groups": 9,
+      "scores": {
+        "baseline": {
+          "S": 93,
+          "D": 20,
+          "I": 23,
+          "N": 2212,
+          "H": 2099,
+          "character_errors": 269,
+          "reference_characters": 13326,
+          "wer_lexical_corpus": 0.06148282097649186,
+          "cer": 0.020186102356295962
+        },
+        "decoder-kl": {
+          "S": 92,
+          "D": 14,
+          "I": 19,
+          "N": 2212,
+          "H": 2106,
+          "character_errors": 211,
+          "reference_characters": 13326,
+          "wer_lexical_corpus": 0.05650994575045208,
+          "cer": 0.015833708539696834
+        },
+        "decoder-ce": {
+          "S": 88,
+          "D": 17,
+          "I": 20,
+          "N": 2212,
+          "H": 2107,
+          "character_errors": 204,
+          "reference_characters": 13326,
+          "wer_lexical_corpus": 0.05650994575045208,
+          "cer": 0.01530841963079694
+        },
+        "full-ce": {
+          "S": 79,
+          "D": 16,
+          "I": 29,
+          "N": 2212,
+          "H": 2117,
+          "character_errors": 260,
+          "reference_characters": 13326,
+          "wer_lexical_corpus": 0.05605786618444846,
+          "cer": 0.019510730901996096
+        }
+      },
+      "comparisons": {
+        "decoder-kl_vs_baseline": {
+          "wer_delta": -0.004972875226039779,
+          "relative_reduction": 0.0808823529411764
+        },
+        "decoder-ce_vs_baseline": {
+          "wer_delta": -0.004972875226039779,
+          "relative_reduction": 0.0808823529411764
+        },
+        "full-ce_vs_baseline": {
+          "wer_delta": -0.005424954792043399,
+          "relative_reduction": 0.08823529411764705
+        },
+        "decoder-ce_vs_decoder-kl": {
+          "wer_delta": 0.0,
+          "relative_reduction": 0.0
+        },
+        "full-ce_vs_decoder-ce": {
+          "wer_delta": -0.00045207956600362004,
+          "relative_reduction": 0.00800000000000006
+        }
+      }
+    }
+  },
+  "checks": {
+    "decoder-kl": {
+      "human_point": false,
+      "human_CI": false,
+      "general_EN": true,
+      "general_RU": true,
+      "noise": false,
+      "runtime": true
+    },
+    "decoder-ce": {
+      "human_point": false,
+      "human_CI": false,
+      "general_EN": true,
+      "general_RU": true,
+      "noise": false,
+      "runtime": true
+    },
+    "full-ce": {
+      "human_point": false,
+      "human_CI": false,
+      "general_EN": true,
+      "general_RU": true,
+      "noise": false,
+      "runtime": true
+    }
+  },
+  "fixed_candidate": "full-ce",
+  "diagnostic_status": "FAIL",
+  "new_GPU_ASR": 1764,
+  "new_blind_dev_scored": false,
+  "quality_evidence": false,
+  "selection_allowed": false,
+  "test_accessed": false,
+  "release_promoted": false
+}

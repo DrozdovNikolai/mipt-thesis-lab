@@ -1,0 +1,46 @@
+{
+  "vad_segments": {
+    "clean": "PASS",
+    "noise_publisher_assumptions": {
+      "noise_only": "PASS",
+      "bleriot_b_noise": "PASS"
+    },
+    "weak_point_target": "FAIL",
+    "human_point_target": "FAIL",
+    "human_CI_upper": 0.6956521739130435,
+    "formal_quality_gate": "NEEDS_MORE_DATA"
+  },
+  "vad_gate": {
+    "clean": "PASS",
+    "noise_publisher_assumptions": {
+      "noise_only": "PASS",
+      "bleriot_b_noise": "PASS"
+    },
+    "weak_point_target": "FAIL",
+    "human_point_target": "FAIL",
+    "human_CI_upper": 0.0,
+    "formal_quality_gate": "NEEDS_MORE_DATA"
+  },
+  "vad_span": {
+    "clean": "PASS",
+    "noise_publisher_assumptions": {
+      "noise_only": "PASS",
+      "bleriot_b_noise": "PASS"
+    },
+    "weak_point_target": "FAIL",
+    "human_point_target": "FAIL",
+    "human_CI_upper": 0.0,
+    "formal_quality_gate": "NEEDS_MORE_DATA"
+  },
+  "vad_gate_denoise": {
+    "clean": "PASS",
+    "noise_publisher_assumptions": {
+      "noise_only": "PASS",
+      "bleriot_b_noise": "PASS"
+    },
+    "weak_point_target": "FAIL",
+    "human_point_target": "FAIL",
+    "human_CI_upper": 0.0,
+    "formal_quality_gate": "NEEDS_MORE_DATA"
+  }
+}

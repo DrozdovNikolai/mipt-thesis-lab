@@ -1,0 +1,14 @@
+{
+  "plan_sha256": "7f32520d0a6d6adf575e8e0a2ba72e0857284272fc5112dd2b0ea0b7597a9695",
+  "python": "3.11.14",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+  "packages": {
+    "faster-whisper": "1.2.1",
+    "ctranslate2": "4.8.2",
+    "numpy": "2.2.6",
+    "soundfile": "0.13.1",
+    "jiwer": "4.0.0"
+  },
+  "gpu_inventory": "0, NVIDIA GeForce RTX 5070 Ti, 581.80, 16303 MiB\n1, NVIDIA GeForce GTX 1080 Ti, 581.80, 11264 MiB",
+  "cuda_visible_devices": "0"
+}

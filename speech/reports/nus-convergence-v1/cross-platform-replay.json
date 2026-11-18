@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "byte_identical": {
+    "fit-comparison.json": true,
+    "fit-decision.json": true
+  },
+  "hashes": {
+    "fit-comparison.json": "e80024602571465b941f57c51deeabd61986d2aa4c229fa84ba9bb5ecb9a5fcb",
+    "fit-decision.json": "7199bcd44b8d55a959ee24fe99ef211b78073d394d5d9fd8cae15d07e102ccaa"
+  },
+  "resumed_ASR_records": 32,
+  "new_ASR_calls": 0,
+  "new_training_steps": 0
+}

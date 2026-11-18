@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "real_updates_each": 240,
+  "optimizer_tensors_each": 96,
+  "training_waveforms_and_labels_replayed": 1098,
+  "ASR_comparisons_replayed": 1118,
+  "old_rows": 247,
+  "expanded_rows": 259,
+  "contained_old_rows_replaced": 6,
+  "plan_sha256": "06da3a07d208969c933ec7b8f961a60eef218c3580957340bed361dd0baecd22",
+  "verifier_sha256": "31451cd254a196c87434e29f4441b28d18a0e13527d39b13a05fb054241f90de"
+}

@@ -1,0 +1,10 @@
+FROM north55-speech:0.1.0 AS training
+USER root
+RUN --mount=type=cache,target=/root/.cache/uv uv sync --frozen --extra train
+COPY src ./src
+COPY configs ./configs
+COPY tests ./tests
+COPY pyproject.toml uv.lock ./
+RUN --mount=type=cache,target=/root/.cache/uv uv sync --frozen --extra train
+USER 10001:10001
+ENTRYPOINT ["north55"]

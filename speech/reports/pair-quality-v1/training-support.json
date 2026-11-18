@@ -1,0 +1,47 @@
+{
+  "status": "PREPARED_PUBLISHER_REFERENCES",
+  "languages": {
+    "ru": 200,
+    "en": 200
+  },
+  "minutes": {
+    "en": 44.29633541666666,
+    "ru": 37.79700000000003
+  },
+  "known_en_speakers": 2,
+  "groups": {
+    "independent_groups": 3,
+    "split_groups": {
+      "train": 3,
+      "dev": 0,
+      "test": 0
+    },
+    "unknown_speakers": 200,
+    "script_overlap": {},
+    "claim_limitation": "unknown speakers cannot establish speaker-disjoint generalization"
+  },
+  "source_rows_examined_by_model": 0,
+  "exclusions": {
+    "RU_repeated_sentence_or_duration": 7
+  },
+  "manifest_sha256": "1f5726dee1572a3970b84afbd9914a9f5135ca8325005e6a756ef8b6284259ad",
+  "script_sha256": "0f78baabf1ee7fa9294ea962ae26ca3f218619722cef3caa8e929d8b065c42c0",
+  "acquisition_sha256": "39b63218252d4d49f52f88d50c10a4927142a8ce7a3dd7ae4ab8e67aab491f24",
+  "dev_speakers_ids_and_waveform_duplicates_checked": true,
+  "source_transcripts_imported_without_rewriting": true,
+  "local_human_audio_review": false,
+  "primary_cockpit_evidence": false,
+  "training_executed": false,
+  "test_accessed": false,
+  "release_promoted": false,
+  "attribution": [
+    "Panayotov et al., LibriSpeech, ICASSP 2015; OpenSLR 12.",
+    "Conneau et al., FLEURS, 2022, arXiv:2205.12446."
+  ],
+  "limitations": [
+    "Publisher annotation quality is inherited, not locally verified.",
+    "General read speech is supplementary training, not a cabin quality test.",
+    "FLEURS IDs do not identify speakers; conservative single RU train group.",
+    "Mixed EN/RU is not represented by separate monolingual recordings."
+  ]
+}

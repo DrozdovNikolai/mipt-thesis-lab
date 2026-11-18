@@ -1,0 +1,22 @@
+{
+  "unit_and_contract_tests": {
+    "command": "docker compose -f compose.improvement.yaml run --rm checks -q -p no:cacheprovider -m 'not integration and not real_asr' tests",
+    "passed": 443,
+    "deselected": 9,
+    "duration_sec": 60.55,
+    "image": "north55-speech-train:publisher-v2"
+  },
+  "static_types": {
+    "files": [
+      "local_transcription.py",
+      "audio.py",
+      "schemas.py"
+    ],
+    "result": "PASS"
+  },
+  "lint": "PASS",
+  "earlier_attempts": [
+    "Initial preparation stopped before freeze because attenuated controls reference their original transcript ID; resolved before inference.",
+    "Full tests could not collect in inference image without torch/pyarrow; completed in the existing training image."
+  ]
+}

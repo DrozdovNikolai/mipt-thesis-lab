@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "files": {
+    "comparison.json": {
+      "Windows_sha256": "4a4e2571b7be872f91bbf4ba8fcd8461b4948f41db5e8244b4c66a61fee4308f",
+      "Linux_sha256": "4a4e2571b7be872f91bbf4ba8fcd8461b4948f41db5e8244b4c66a61fee4308f",
+      "byte_identical": true
+    },
+    "scored-counts.json": {
+      "Windows_sha256": "77c19bd4ffefc12ee6a9e6c00b2d560c81eebd4ec72abd0523f8d358c8d4fd60",
+      "Linux_sha256": "77c19bd4ffefc12ee6a9e6c00b2d560c81eebd4ec72abd0523f8d358c8d4fd60",
+      "byte_identical": true
+    },
+    "legacy-waveform-evidence.json": {
+      "Windows_sha256": "0460fd4f60ca60a1d611a24283ba98968ae638dafef14f87862edaee59e53b13",
+      "Linux_sha256": "0460fd4f60ca60a1d611a24283ba98968ae638dafef14f87862edaee59e53b13",
+      "byte_identical": true
+    }
+  },
+  "ASR_replay": {
+    "file": "reports\\nus-retention-v1\\fit-2\\replay-1789410776293807658.json",
+    "new_ASR_calls": 0,
+    "resumed": 275
+  },
+  "scope": "WSL Ubuntu command execution, verified inference resumption, independent recomputation from saved predictions; not repeat training.",
+  "Linux_scorer": {
+    "image": "sha256:34ed3eca5f649c8d1b3fc1b021bae236a3030829d9c9347368a32ba4fa6b347c",
+    "state": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-09-14T18:32:44.139016756Z",
+      "FinishedAt": "2026-09-14T18:33:08.457957723Z"
+    },
+    "mounts": [
+      {
+        "Type": "bind",
+        "Source": "/mnt/c/DEV/MIPT/Diploma/Speech/reports/nus-retention-v1/linux-replay",
+        "Destination": "/study",
+        "Mode": "",
+        "RW": true,
+        "Propagation": "rprivate"
+      },
+      {
+        "Type": "volume",
+        "Name": "north55-speech_audio_data",
+        "Source": "/var/lib/docker/volumes/north55-speech_audio_data/_data",
+        "Destination": "/audio",
+        "Driver": "local",
+        "Mode": "ro",
+        "RW": false,
+        "Propagation": ""
+      },
+      {
+        "Type": "bind",
+        "Source": "/mnt/c/DEV/MIPT/Diploma/Speech/reports/nus-retention-v1/frozen",
+        "Destination": "/app",
+        "Mode": "ro",
+        "RW": false,
+        "Propagation": "rprivate"
+      }
+    ],
+    "command": [
+      "-m",
+      "scripts.nus_retention",
+      "score-transfer"
+    ],
+    "network": "none"
+  }
+}

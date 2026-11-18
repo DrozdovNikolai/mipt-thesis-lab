@@ -1,0 +1,24 @@
+{
+  "records": 2,
+  "plan_sha256": "ece170ad4203f0576e3854292b74f15445a465c4e77cb7d19a63230ded19f128",
+  "device": "cuda",
+  "compute_type": "float32",
+  "prediction_sha256": {
+    "fit-000c93d063a0c47c8acf885f2adb762b.json": "362262bd23795a8c68b46fd1a0157011df8d39aee1f126ec6d006dc3c57bd420",
+    "fit-015ee35de80d03489ebb517c7b4ee4bf.json": "6f7221ac3023cb72464ff784f5af4dd321106103b36d47af846e67d68410e648"
+  },
+  "totals": {
+    "encoder_calls": 2,
+    "alignment_calls": 4,
+    "acoustic_score": 2
+  },
+  "seconds": 13.277561084998524,
+  "runtime_failures": [],
+  "new_ASR_calls": 0,
+  "replay": true,
+  "packages": {
+    "faster-whisper": "1.2.1",
+    "ctranslate2": "4.8.2",
+    "numpy": "2.2.6"
+  }
+}

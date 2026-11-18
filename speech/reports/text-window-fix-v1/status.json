@@ -1,0 +1,42 @@
+{
+  "implementation": "v1",
+  "functional_regression": "FAIL",
+  "checks": {
+    "original_decoded_once": true,
+    "repeated_decoded_once": true,
+    "empty_does_not_decode": true,
+    "both_utterances_retained": false,
+    "nonempty_original_alignment": true,
+    "translated_word_times_in_range": true
+  },
+  "quality_inference_executed": true,
+  "GPU_quality_predictions": 1056,
+  "CPU_smokes": 8,
+  "quality_gates": {
+    "parent": {
+      "human_dev_point_target": "FAIL",
+      "clean_guard": "PASS",
+      "ru_guard": "PASS",
+      "noise_guard": "FAIL",
+      "runtime_guard": "PASS",
+      "paired_ci_excludes_zero": false,
+      "statistical_confirmation": "INCONCLUSIVE",
+      "critical_entities": "NEEDS_MORE_DATA",
+      "release": "FAIL"
+    },
+    "augmented": {
+      "human_dev_point_target": "FAIL",
+      "clean_guard": "PASS",
+      "ru_guard": "PASS",
+      "noise_guard": "FAIL",
+      "runtime_guard": "PASS",
+      "paired_ci_excludes_zero": false,
+      "statistical_confirmation": "INCONCLUSIVE",
+      "critical_entities": "NEEDS_MORE_DATA",
+      "release": "FAIL"
+    }
+  },
+  "release_gate": "FAIL",
+  "release_promoted": false,
+  "reason": "Prototype failed the predeclared real-audio regression; retained for audit."
+}

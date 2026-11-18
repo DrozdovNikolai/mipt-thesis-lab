@@ -1,0 +1,12 @@
+{
+  "reason": "PowerShell JSON round trip coerced an ISO date string in model provenance; restored exact source JSON before any ASR response",
+  "changed_model_fields": {
+    "acquired_at": {
+      "original": "2026-09-14T19:28:36.011576+00:00",
+      "converted": "2026-09-14T22:28:36.011576+03:00"
+    }
+  },
+  "policy_changed": false,
+  "asr_calls_before_retry": 0,
+  "final_plan_sha256": "3b9bf43029154a239b86b8dc7c1a1c0e5a699a30ac03508257e84d88a95246f7"
+}

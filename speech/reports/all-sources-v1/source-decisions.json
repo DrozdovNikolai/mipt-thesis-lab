@@ -1,0 +1,118 @@
+{
+  "checked_date_local": "2026-09-14",
+  "scope": "Local noncommercial research; cockpit/instructor speech. No pilot-ATC primary data.",
+  "local_audio_corpus_directories_found": [
+    "data/input/bleriot",
+    "data/input/voici",
+    "Docker audio volume: LibriSpeech dev-clean"
+  ],
+  "sources": [
+    {
+      "source": "BLeRIOT-A",
+      "status": "EXECUTED_EXPANDED_WEAK_PREPARATION",
+      "license": "CC-BY-NC-4.0",
+      "role": "All full train/dev windows in documented English checklist families, including previously omitted TBM940",
+      "source_url": "https://entrepot.recherche.data.gouv.fr/dataset.xhtml?persistentId=doi%3A10.57745%2FEWXJLT",
+      "human_verified_by_automation": false
+    },
+    {
+      "source": "BLeRIOT-C",
+      "status": "EXECUTED_EXPANDED_PAIRED_PREPARATION",
+      "license": "CC-BY-NC-4.0",
+      "role": "Existing supplied noisy variants stay in their original parent split",
+      "source_url": "https://entrepot.recherche.data.gouv.fr/dataset.xhtml?persistentId=doi%3A10.57745%2FASYVFP",
+      "independent_from_A": false
+    },
+    {
+      "source": "VOICI 2660112",
+      "status": "EXECUTED_COMPLETE_NOISE_AND_DEV_MIXTURE_DIAGNOSTIC",
+      "license": "CC-BY-SA-4.0",
+      "role": "Complete 50.28-minute source and fixed 0/10 dB mixtures; one source allocated to dev only",
+      "source_url": "https://zenodo.org/records/2660112",
+      "local_human_noise_audit": false,
+      "formal_training_augmentation_admitted": false
+    },
+    {
+      "source": "LibriSpeech dev-clean",
+      "status": "REUSED_FROZEN_GENERAL_CONTROL",
+      "license": "CC-BY-4.0",
+      "role": "50 recorded-human general-English controls, regression only",
+      "source_url": "https://www.openslr.org/12/",
+      "cockpit_quality_evidence": false
+    },
+    {
+      "source": "HIWIRE / ELRA-S0293",
+      "status": "BLOCKED",
+      "reason": "Catalogue source exists, but no licensed delivery/archive is present; direct catalogue request timed out. No purchase or author contact authorized or performed.",
+      "source_url": "https://live.european-language-grid.eu/catalogue/corpus/2059",
+      "audio_acquired": false
+    },
+    {
+      "source": "NLPVladimir/aviation-command-dataset-ru",
+      "status": "NOT_ADMITTED",
+      "reason": "Current API and full README still declare no license or human-recording provenance. Repository contains README, gitattributes and one parquet shard; no license file. Only discussion is a converter-bot message. Voice names are not proof of human or synthetic origin.",
+      "source_url": "https://huggingface.co/datasets/NLPVladimir/aviation-command-dataset-ru",
+      "revision": "9860fb2d9507dc36ebe5201427495e2011e97d07",
+      "reported_rows": 1182,
+      "audio_acquired": false
+    },
+    {
+      "source": "IEM Pilot Speech Database",
+      "status": "BLOCKED",
+      "reason": "The original technical report was retrieved successfully and inspected. It documents eight speakers/four sessions, but a permitted audio/transcript delivery was not found. A publication is not the dataset or its license.",
+      "source_url": "https://iem.kug.ac.at/fileadmin/03_Microsites/01_Kuenstlerisch_wissenschaftliche_Einheiten/01_Institute/Institut_17_Elektronische_Musik_und_Akustik/Projekte/2011/report45_11.pdf",
+      "audio_acquired": false
+    },
+    {
+      "source": "DLR pilot speech / 214890",
+      "status": "BLOCKED",
+      "reason": "Official publication page and paper retrieved; described German/English simulator and interview audio is not accompanied by a located licensed WAV/transcript delivery. No claim that the data does not exist or cannot ever be obtained.",
+      "source_url": "https://elib.dlr.de/214890/",
+      "paper_url": "https://arxiv.org/html/2506.21990v1",
+      "audio_acquired": false
+    },
+    {
+      "source": "CVR publisher text-only documents",
+      "status": "SCREENED_NOT_ADMITTED_FOR_HUMAN_NLP_LABELS",
+      "reason": "Known BLeRIOT CVR families include ATC or unverified mixed scope; scripts have no independent project event/salience labels. No labels are generated from rules and passed off as human ground truth."
+    },
+    {
+      "source": "ATCOSIM / ATCO2 / UWB-ATCC / ATC mixtures",
+      "status": "EXCLUDED_BY_TASK_SCOPE",
+      "reason": "Pilot-ATC radio exchange is excluded from the primary cockpit task."
+    }
+  ],
+  "assumptions": [
+    "Use lawful available sources within the original speaker/session/original partitions.",
+    "Publisher scripts can supply explicitly weak exploratory targets; they do not become human gold.",
+    "The new training budget is fixed at 40 optimizer steps, rank 8, learning rate 0.0001, seed 55; no sweep or test-based selection.",
+    "Entire VOICI original is dev-only. Mixture references remain weak; source licenses retained, redistribution not admitted.",
+    "Existing general controls and five human dev reviews remain development diagnostics; they cannot select a release.",
+    "Short terminal tails under 20 seconds are recorded as held, not padded or supplied with guessed words."
+  ],
+  "checklist": [
+    "Recheck all listed candidate sources",
+    "Verify cached licensed audio hashes",
+    "Freeze expanded train/dev preparation",
+    "Run bounded LoRA and save weights/history",
+    "Freeze comparison before its inference",
+    "Keep all model answers and runtime failures",
+    "Score reference types separately",
+    "Verify results and document actual commands"
+  ],
+  "test_accessed": false,
+  "messages_sent_to_others": false,
+  "purchases_made": false,
+  "execution": {
+    "status": "EXECUTED_EXPLORATORY",
+    "training_steps": 40,
+    "train_weak_pairs": 33,
+    "dev_weak_pairs": 35,
+    "saved_asr_predictions": 1048,
+    "infrastructure_interruptions": 1,
+    "final_per_sample_asr_failures": 0,
+    "asr_quality_gate": "NEEDS_MORE_DATA",
+    "candidate_selected": false,
+    "release_promoted": false
+  }
+}

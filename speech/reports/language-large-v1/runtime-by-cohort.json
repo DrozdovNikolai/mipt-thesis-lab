@@ -1,0 +1,98 @@
+{
+  "bleriot_b_noise": {
+    "small_known": {
+      "audio_seconds": 1109.7255,
+      "asr_seconds": 62.04814665699905,
+      "asr_rtf": 0.05591305837074038
+    },
+    "large_known": {
+      "audio_seconds": 1109.7255,
+      "asr_seconds": 33.48170360399945,
+      "asr_rtf": 0.030171158186415872
+    }
+  },
+  "general_clean": {
+    "small_known": {
+      "audio_seconds": 441.33500000000004,
+      "asr_seconds": 12.08432429399636,
+      "asr_rtf": 0.027381296054009675
+    },
+    "large_known": {
+      "audio_seconds": 441.33500000000004,
+      "asr_seconds": 32.47431481199692,
+      "asr_rtf": 0.07358200643954574
+    }
+  },
+  "general_ru": {
+    "small_known": {
+      "audio_seconds": 534.36,
+      "asr_seconds": 16.194270977002816,
+      "asr_rtf": 0.03030591918744445
+    },
+    "large_known": {
+      "audio_seconds": 534.36,
+      "asr_seconds": 35.457961278002585,
+      "asr_rtf": 0.0663559422075054
+    }
+  },
+  "noise_only": {
+    "small_known": {
+      "audio_seconds": 3016.836,
+      "asr_seconds": 278.78014467500634,
+      "asr_rtf": 0.0924081205193144
+    },
+    "large_known": {
+      "audio_seconds": 3016.836,
+      "asr_seconds": 114.96859694399609,
+      "asr_rtf": 0.03810899795149491
+    }
+  },
+  "partial_human_dev": {
+    "small_known": {
+      "audio_seconds": 100.0,
+      "asr_seconds": 1.393424062000122,
+      "asr_rtf": 0.01393424062000122
+    },
+    "large_known": {
+      "audio_seconds": 100.0,
+      "asr_seconds": 4.045610880000822,
+      "asr_rtf": 0.040456108800008224
+    }
+  },
+  "publisher_weak_dev": {
+    "small_known": {
+      "audio_seconds": 2280.0,
+      "asr_seconds": 69.75016481299008,
+      "asr_rtf": 0.03059217754955705
+    },
+    "large_known": {
+      "audio_seconds": 2280.0,
+      "asr_seconds": 116.21285592999993,
+      "asr_rtf": 0.0509705508464912
+    }
+  },
+  "voici_mix_0dB": {
+    "small_known": {
+      "audio_seconds": 2040.0,
+      "asr_seconds": 63.625048298000365,
+      "asr_rtf": 0.031188749165686452
+    },
+    "large_known": {
+      "audio_seconds": 2040.0,
+      "asr_seconds": 107.23893696300183,
+      "asr_rtf": 0.05256810635441266
+    }
+  },
+  "voici_mix_10dB": {
+    "small_known": {
+      "audio_seconds": 2040.0,
+      "asr_seconds": 52.51281723199645,
+      "asr_rtf": 0.025741577074508065
+    },
+    "large_known": {
+      "audio_seconds": 2040.0,
+      "asr_seconds": 98.72241443500207,
+      "asr_rtf": 0.048393340409314735
+    }
+  }
+}

@@ -1,0 +1,10 @@
+services:
+  trainer:
+    image: north55-speech-train:publisher-v2
+    network_mode: none
+    networks: !reset []
+    volumes:
+      - audio_data:/audio:ro
+      - model_cache:/models
+      - ./data/curated/publisher-weak-v1:/publisher:ro
+      - ./reports:/reports

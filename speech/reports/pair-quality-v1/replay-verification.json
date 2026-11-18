@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "powershell_sha256": "1f7c45bbb5cb1f2ad641fb41ea5e77babea8b2da12551d14787345c05ef014bb",
+  "linux_wsl_sha256": "1f7c45bbb5cb1f2ad641fb41ea5e77babea8b2da12551d14787345c05ef014bb",
+  "byte_identical": true,
+  "scope": "artifact verification repeated in existing no-network Docker container from PowerShell and WSL Ubuntu"
+}

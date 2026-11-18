@@ -1,0 +1,198 @@
+{
+  "kind": "post_run_failure_diagnosis_not_new_quality_trial",
+  "scored_rows_sha256": "45fe7ae2d67254173d4627af0aff7d43c425094deb3f768ccc6de16afe0add9f",
+  "human_dev_totals": {
+    "parent": {
+      "S": 10,
+      "D": 1,
+      "I": 5,
+      "N": 115
+    },
+    "control": {
+      "S": 10,
+      "D": 1,
+      "I": 12,
+      "N": 115
+    },
+    "augmented": {
+      "S": 9,
+      "D": 0,
+      "I": 17,
+      "N": 115
+    }
+  },
+  "human_dev_fragments": [
+    {
+      "id": "reviewed-291ebb141aa4e7a7ba94ccf8d18002fb",
+      "baseline": {
+        "S": 2,
+        "D": 1,
+        "I": 0,
+        "N": 23,
+        "H": 20,
+        "wer": 0.13043478260869565,
+        "character_errors": 4,
+        "reference_characters": 133,
+        "cer": 0.03007518796992481
+      },
+      "augmented": {
+        "S": 0,
+        "D": 0,
+        "I": 10,
+        "N": 23,
+        "H": 23,
+        "wer": 0.43478260869565216,
+        "character_errors": 50,
+        "reference_characters": 133,
+        "cer": 0.37593984962406013
+      },
+      "error_delta": 7
+    },
+    {
+      "id": "reviewed-767df23c7c14166f8579da284d5a4219",
+      "baseline": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 25,
+        "H": 24,
+        "wer": 0.04,
+        "character_errors": 3,
+        "reference_characters": 139,
+        "cer": 0.02158273381294964
+      },
+      "augmented": {
+        "S": 2,
+        "D": 0,
+        "I": 2,
+        "N": 25,
+        "H": 23,
+        "wer": 0.16,
+        "character_errors": 8,
+        "reference_characters": 139,
+        "cer": 0.05755395683453238
+      },
+      "error_delta": 3
+    },
+    {
+      "id": "reviewed-b8d2fc3fc1893f19ae7fb8d7c2722a4d",
+      "baseline": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 23,
+        "H": 22,
+        "wer": 0.043478260869565216,
+        "character_errors": 4,
+        "reference_characters": 143,
+        "cer": 0.027972027972027972
+      },
+      "augmented": {
+        "S": 1,
+        "D": 0,
+        "I": 0,
+        "N": 23,
+        "H": 22,
+        "wer": 0.043478260869565216,
+        "character_errors": 4,
+        "reference_characters": 143,
+        "cer": 0.027972027972027972
+      },
+      "error_delta": 0
+    },
+    {
+      "id": "reviewed-c55f9c7708704c548f503aa642c2288d",
+      "baseline": {
+        "S": 4,
+        "D": 0,
+        "I": 4,
+        "N": 23,
+        "H": 19,
+        "wer": 0.34782608695652173,
+        "character_errors": 33,
+        "reference_characters": 124,
+        "cer": 0.2661290322580645
+      },
+      "augmented": {
+        "S": 4,
+        "D": 0,
+        "I": 4,
+        "N": 23,
+        "H": 19,
+        "wer": 0.34782608695652173,
+        "character_errors": 33,
+        "reference_characters": 124,
+        "cer": 0.2661290322580645
+      },
+      "error_delta": 0
+    },
+    {
+      "id": "reviewed-dc84f2b77565d804f16ea31f42380abb",
+      "baseline": {
+        "S": 2,
+        "D": 0,
+        "I": 1,
+        "N": 21,
+        "H": 19,
+        "wer": 0.14285714285714285,
+        "character_errors": 6,
+        "reference_characters": 135,
+        "cer": 0.044444444444444446
+      },
+      "augmented": {
+        "S": 2,
+        "D": 0,
+        "I": 1,
+        "N": 21,
+        "H": 19,
+        "wer": 0.14285714285714285,
+        "character_errors": 6,
+        "reference_characters": 135,
+        "cer": 0.044444444444444446
+      },
+      "error_delta": 0
+    }
+  ],
+  "training_composition": {
+    "sources": {
+      "BLeRIOT-A": 32,
+      "BLeRIOT-C": 1,
+      "google/fleurs": 200,
+      "openslr/librispeech_asr": 200
+    },
+    "conditions": {
+      "original": 432,
+      "publisher_CVR_simulation_single_chain": 1
+    },
+    "empty_transcript_examples": 0,
+    "weak_cockpit_pairs": 33,
+    "publisher_general_pairs": 400
+  },
+  "verified_training_tokenizer_prefix": [
+    "<|startoftranscript|>",
+    "<|en|>",
+    "<|transcribe|>",
+    "<|notimestamps|>"
+  ],
+  "tokenizer_check": "Actual local WhisperTokenizerFast from the training image; offline, no ASR calls.",
+  "inference_without_timestamps": false,
+  "hypotheses_not_established_causes": [
+    "Text-only training versus timestamp-generating inference can be tested as a decoding-format mismatch.",
+    "Additional words may include generation loops, real spoken repetitions missing in references, or fragment-boundary words.",
+    "Almost all training examples are unaugmented speech; this does not establish adaptation to cabin acoustics or non-speech rejection."
+  ],
+  "next_experiment_proposal": [
+    "Compare timestamp decoding modes on the same frozen parent and augmented weights; preserve word/original timing through alignment.",
+    "Separately compare conservative speech segmentation, measuring short-command deletions as well as noise insertions.",
+    "Only then define a new acoustic-adaptation training experiment with train-only noise, unchanged source transcripts and clean replay."
+  ],
+  "new_ASR_calls": 0,
+  "new_training_runs": 0,
+  "reference_edits": 0,
+  "release_promoted": false,
+  "existing_quality_gate_unchanged": "NEEDS_MORE_DATA",
+  "sources": [
+    "https://huggingface.co/docs/transformers/en/model_doc/whisper",
+    "https://github.com/SYSTRAN/faster-whisper/blob/master/faster_whisper/transcribe.py"
+  ]
+}

@@ -1,0 +1,1880 @@
+{
+  "tensors": [
+    {
+      "tensor": "model.decoder.layers.0.encoder_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.001245780847966671,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 7.120407735650147e-11,
+          "unequal_values": 20675,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 4.6938657760620117e-07,
+          "rms_difference": 4.3695550289157836e-08,
+          "unequal_values": 581331,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.0.encoder_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0015684757381677628,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 3.725290298461914e-09,
+          "rms_difference": 7.192845624670596e-11,
+          "unequal_values": 12849,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 5.832407623529434e-07,
+          "rms_difference": 5.4190330445180734e-08,
+          "unequal_values": 583539,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.0.self_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0008745226077735424,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 1.4901161193847656e-08,
+          "rms_difference": 7.995998307919194e-11,
+          "unequal_values": 5223,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 3.4295953810214996e-07,
+          "rms_difference": 3.329684972186442e-08,
+          "unequal_values": 569863,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.0.self_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.001152506796643138,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 3.725290298461914e-09,
+          "rms_difference": 7.193814294259582e-11,
+          "unequal_values": 11267,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 3.952300176024437e-07,
+          "rms_difference": 4.494991046044561e-08,
+          "unequal_values": 581973,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.1.encoder_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.00127502903342247,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 8.591523326106909e-11,
+          "unequal_values": 13663,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 5.513429641723633e-07,
+          "rms_difference": 5.796935198532083e-08,
+          "unequal_values": 582776,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.1.encoder_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0015100613236427307,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 3.725290298461914e-09,
+          "rms_difference": 7.297000503836415e-11,
+          "unequal_values": 13424,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 4.386529326438904e-07,
+          "rms_difference": 5.5422244571445844e-08,
+          "unequal_values": 584034,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.1.self_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0011229331139475107,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 7.135333296437452e-11,
+          "unequal_values": 18747,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 4.2997999116778374e-07,
+          "rms_difference": 4.998614144824387e-08,
+          "unequal_values": 584182,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.1.self_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0017984509468078613,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 3.725290298461914e-09,
+          "rms_difference": 6.924999462754045e-11,
+          "unequal_values": 23103,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 6.067566573619843e-07,
+          "rms_difference": 5.950526471565354e-08,
+          "unequal_values": 585053,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.10.encoder_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0010344013571739197,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 1.4901161193847656e-08,
+          "rms_difference": 7.59756563217806e-11,
+          "unequal_values": 7156,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 3.6368146538734436e-07,
+          "rms_difference": 3.8572594007746375e-08,
+          "unequal_values": 577185,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.10.encoder_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.002085872692987323,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 9.491008673423451e-11,
+          "unequal_values": 9258,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 5.913898348808289e-07,
+          "rms_difference": 5.5512664687284996e-08,
+          "unequal_values": 579166,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.10.self_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.002448529005050659,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 9.41963382294908e-11,
+          "unequal_values": 11611,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 8.577480912208557e-07,
+          "rms_difference": 6.957396436746421e-08,
+          "unequal_values": 580968,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.10.self_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0019849995151162148,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 3.725290298461914e-09,
+          "rms_difference": 1.0469235200982752e-10,
+          "unequal_values": 14330,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 6.183981895446777e-07,
+          "rms_difference": 7.74269395265037e-08,
+          "unequal_values": 584243,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.11.encoder_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.002738798037171364,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 1.0294053803816539e-10,
+          "unequal_values": 12970,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 7.925555109977722e-07,
+          "rms_difference": 8.145462970787776e-08,
+          "unequal_values": 581992,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.11.encoder_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.003085751086473465,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 1.165772617328642e-10,
+          "unequal_values": 11375,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 1.0086223483085632e-06,
+          "rms_difference": 8.030229992073146e-08,
+          "unequal_values": 581508,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.11.self_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0012483447790145874,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 8.545852220320782e-11,
+          "unequal_values": 9929,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 5.271285772323608e-07,
+          "rms_difference": 5.525595625499591e-08,
+          "unequal_values": 581694,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.11.self_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.001794218085706234,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 3.725290298461914e-09,
+          "rms_difference": 9.941070883145997e-11,
+          "unequal_values": 13617,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 6.48200511932373e-07,
+          "rms_difference": 7.470718088598005e-08,
+          "unequal_values": 584359,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.2.encoder_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.001011008396744728,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 6.968264160134297e-11,
+          "unequal_values": 30012,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 3.3277319744229317e-07,
+          "rms_difference": 4.5300716067231406e-08,
+          "unequal_values": 583245,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.2.encoder_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.001795392483472824,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 3.725290298461914e-09,
+          "rms_difference": 7.382498085073408e-11,
+          "unequal_values": 15026,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 5.681067705154419e-07,
+          "rms_difference": 5.758567311886509e-08,
+          "unequal_values": 584308,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.2.self_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.001028798520565033,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 3.725290298461914e-09,
+          "rms_difference": 4.384440727145389e-11,
+          "unequal_values": 84387,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 3.6894925870001316e-07,
+          "rms_difference": 4.029758571277853e-08,
+          "unequal_values": 586166,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.2.self_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0017273849807679653,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 4.97969235291329e-11,
+          "unequal_values": 91166,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 5.662441253662109e-07,
+          "rms_difference": 5.189158258644966e-08,
+          "unequal_values": 586935,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.3.encoder_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0012788092717528343,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 6.637970728640141e-11,
+          "unequal_values": 9224,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 5.345791578292847e-07,
+          "rms_difference": 4.013343257724955e-08,
+          "unequal_values": 579658,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.3.encoder_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0014984942972660065,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 7.440167926198171e-11,
+          "unequal_values": 13083,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 6.129266694188118e-07,
+          "rms_difference": 5.353285459364088e-08,
+          "unequal_values": 583415,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.3.self_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0015671532601118088,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 7.614212038653534e-11,
+          "unequal_values": 11263,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 5.385954864323139e-07,
+          "rms_difference": 4.721264801332836e-08,
+          "unequal_values": 575232,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.3.self_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0015839594416320324,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 3.725290298461914e-09,
+          "rms_difference": 7.165877613513061e-11,
+          "unequal_values": 14191,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 5.057081580162048e-07,
+          "rms_difference": 5.22578318395972e-08,
+          "unequal_values": 583028,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.4.encoder_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0008836351335048676,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 3.725290298461914e-09,
+          "rms_difference": 6.684240660970175e-11,
+          "unequal_values": 9199,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 3.343448042869568e-07,
+          "rms_difference": 3.707560125576492e-08,
+          "unequal_values": 579906,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.4.encoder_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0014306646771728992,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 7.505344262748181e-11,
+          "unequal_values": 12741,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 5.699694156646729e-07,
+          "rms_difference": 5.437404126951151e-08,
+          "unequal_values": 583074,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.4.self_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0010076742619276047,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 7.17177289777382e-11,
+          "unequal_values": 7210,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 3.818422555923462e-07,
+          "rms_difference": 3.54951801284642e-08,
+          "unequal_values": 574932,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.4.self_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0014295843429863453,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 3.725290298461914e-09,
+          "rms_difference": 6.822710452158987e-11,
+          "unequal_values": 11667,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 4.647299647331238e-07,
+          "rms_difference": 4.82271325097372e-08,
+          "unequal_values": 582264,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.5.encoder_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0016473717987537384,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 8.195085582363149e-11,
+          "unequal_values": 9602,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 5.397014319896698e-07,
+          "rms_difference": 5.077655984564444e-08,
+          "unequal_values": 580335,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.5.encoder_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0015605306252837181,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 3.725290298461914e-09,
+          "rms_difference": 7.682752350968158e-11,
+          "unequal_values": 12218,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 5.19677996635437e-07,
+          "rms_difference": 5.5038093194070825e-08,
+          "unequal_values": 583148,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.5.self_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.001487706322222948,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 7.746249475193423e-11,
+          "unequal_values": 7109,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 5.010515451431274e-07,
+          "rms_difference": 4.246911089467176e-08,
+          "unequal_values": 576163,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.5.self_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0016878475435078144,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 7.95859073088323e-11,
+          "unequal_values": 11986,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 6.197660695761442e-07,
+          "rms_difference": 5.4360725698643364e-08,
+          "unequal_values": 582973,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.6.encoder_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0013046842068433762,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 8.316291405519038e-11,
+          "unequal_values": 9120,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 5.139736458659172e-07,
+          "rms_difference": 4.984981671896094e-08,
+          "unequal_values": 580286,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.6.encoder_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0016843238845467567,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 9.435770914612007e-11,
+          "unequal_values": 12794,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 6.51925802230835e-07,
+          "rms_difference": 6.429817034359075e-08,
+          "unequal_values": 583264,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.6.self_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0011205244809389114,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 7.763165804641758e-11,
+          "unequal_values": 7442,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 3.9581209421157837e-07,
+          "rms_difference": 4.180135704245913e-08,
+          "unequal_values": 576829,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.6.self_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.001855260692536831,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 8.649045368791519e-11,
+          "unequal_values": 12850,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 5.476176738739014e-07,
+          "rms_difference": 6.028442101069231e-08,
+          "unequal_values": 583303,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.7.encoder_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0008541313000023365,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 3.725290298461914e-09,
+          "rms_difference": 7.029922477475026e-11,
+          "unequal_values": 7353,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 3.203749656677246e-07,
+          "rms_difference": 3.519215141523091e-08,
+          "unequal_values": 577581,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.7.encoder_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.001459767110645771,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 7.982715877208335e-11,
+          "unequal_values": 11676,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 6.249174475669861e-07,
+          "rms_difference": 5.4146049421888165e-08,
+          "unequal_values": 582653,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.7.self_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.001329861581325531,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 7.568856652540035e-11,
+          "unequal_values": 7129,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 3.6065466701984406e-07,
+          "rms_difference": 3.8776040156562885e-08,
+          "unequal_values": 576991,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.7.self_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0020914170891046524,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 3.725290298461914e-09,
+          "rms_difference": 8.934548934025344e-11,
+          "unequal_values": 12697,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 5.401670932769775e-07,
+          "rms_difference": 6.277677044863594e-08,
+          "unequal_values": 583255,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.8.encoder_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.001224614679813385,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 7.415257990972535e-11,
+          "unequal_values": 7062,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 4.3492764234542847e-07,
+          "rms_difference": 3.896132128033969e-08,
+          "unequal_values": 577249,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.8.encoder_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0015012770891189575,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 8.707437548771679e-11,
+          "unequal_values": 11101,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 5.075708031654358e-07,
+          "rms_difference": 5.441454575816351e-08,
+          "unequal_values": 581988,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.8.self_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0014742780476808548,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 7.985427596945982e-11,
+          "unequal_values": 7971,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 4.827743396162987e-07,
+          "rms_difference": 4.435837652749797e-08,
+          "unequal_values": 578917,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.8.self_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0015280358493328094,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 9.443611170834032e-11,
+          "unequal_values": 12861,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 6.277114152908325e-07,
+          "rms_difference": 6.830062915241797e-08,
+          "unequal_values": 583693,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.9.encoder_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0010633664205670357,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 7.483378500205973e-11,
+          "unequal_values": 7259,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 3.948807716369629e-07,
+          "rms_difference": 3.981377005857212e-08,
+          "unequal_values": 576989,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.9.encoder_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0017758719623088837,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 8.015735297739468e-11,
+          "unequal_values": 9983,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 5.956972017884254e-07,
+          "rms_difference": 5.251206047773849e-08,
+          "unequal_values": 580252,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.9.self_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0013552960008382797,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 7.607591639979816e-11,
+          "unequal_values": 7955,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 4.936009645462036e-07,
+          "rms_difference": 4.311490542363572e-08,
+          "unequal_values": 578439,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.decoder.layers.9.self_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0019120126962661743,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 9.186466171096086e-11,
+          "unequal_values": 12517,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 5.662441253662109e-07,
+          "rms_difference": 6.455826451201574e-08,
+          "unequal_values": 583003,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.encoder.layers.0.self_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.000501951202750206,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 1.4901161193847656e-08,
+          "rms_difference": 4.503642250797135e-11,
+          "unequal_values": 35061,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 2.551823854446411e-07,
+          "rms_difference": 1.9926037708728472e-08,
+          "unequal_values": 577465,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.encoder.layers.0.self_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0006936565041542053,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 3.725290298461914e-09,
+          "rms_difference": 4.137793579994664e-11,
+          "unequal_values": 23770,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 2.430751919746399e-07,
+          "rms_difference": 2.2647324016134007e-08,
+          "unequal_values": 576888,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.encoder.layers.1.self_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0003666486591100693,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 5.073277561939982e-11,
+          "unequal_values": 10218,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 1.7881393432617188e-07,
+          "rms_difference": 1.9565138842381202e-08,
+          "unequal_values": 571278,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.encoder.layers.1.self_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0006920620799064636,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 3.725290298461914e-09,
+          "rms_difference": 5.3320434872938804e-11,
+          "unequal_values": 12479,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 2.4493783712387085e-07,
+          "rms_difference": 2.568443946415755e-08,
+          "unequal_values": 578626,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.encoder.layers.10.self_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.001284778118133545,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 6.710563354994648e-11,
+          "unequal_values": 7191,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 3.8743019104003906e-07,
+          "rms_difference": 3.438359996721374e-08,
+          "unequal_values": 577241,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.encoder.layers.10.self_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0016009751707315445,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 8.760938502438975e-11,
+          "unequal_values": 8358,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 5.00120222568512e-07,
+          "rms_difference": 4.884849857944573e-08,
+          "unequal_values": 579502,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.encoder.layers.11.self_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0012336857616901398,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 7.252604072860436e-11,
+          "unequal_values": 8232,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 4.0157465264201164e-07,
+          "rms_difference": 4.252554930417318e-08,
+          "unequal_values": 579331,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.encoder.layers.11.self_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0017465241253376007,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 9.488245605870915e-11,
+          "unequal_values": 9306,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 5.438923835754395e-07,
+          "rms_difference": 5.514239020953937e-08,
+          "unequal_values": 580497,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.encoder.layers.2.self_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0004952587187290192,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 5.407651756939025e-11,
+          "unequal_values": 9251,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 2.0983861759305e-07,
+          "rms_difference": 2.1677564632227586e-08,
+          "unequal_values": 572601,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.encoder.layers.2.self_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0006646406836807728,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 5.321702106764192e-11,
+          "unequal_values": 9761,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 2.705492079257965e-07,
+          "rms_difference": 2.5857639585069592e-08,
+          "unequal_values": 576508,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.encoder.layers.3.self_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.00047051673755049706,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 5.5344923088895825e-11,
+          "unequal_values": 6997,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 2.2025778889656067e-07,
+          "rms_difference": 2.0721717675087348e-08,
+          "unequal_values": 571670,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.encoder.layers.3.self_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0007397234439849854,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 5.66332085394361e-11,
+          "unequal_values": 8777,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 2.4121254682540894e-07,
+          "rms_difference": 2.7107011746352327e-08,
+          "unequal_values": 576967,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.encoder.layers.4.self_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.00040745269507169724,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 5.6048308355594045e-11,
+          "unequal_values": 5262,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 1.6298145055770874e-07,
+          "rms_difference": 2.0756436569513426e-08,
+          "unequal_values": 570880,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.encoder.layers.4.self_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0007609231397509575,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 3.725290298461914e-09,
+          "rms_difference": 5.472623743063565e-11,
+          "unequal_values": 7132,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 2.5704503059387207e-07,
+          "rms_difference": 2.8798513795891267e-08,
+          "unequal_values": 577640,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.encoder.layers.5.self_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.000442074378952384,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 1.4901161193847656e-08,
+          "rms_difference": 5.597264665646584e-11,
+          "unequal_values": 5031,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 2.0302832126617432e-07,
+          "rms_difference": 2.105864815860059e-08,
+          "unequal_values": 570638,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.encoder.layers.5.self_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0006571928970515728,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 3.725290298461914e-09,
+          "rms_difference": 5.858925150592498e-11,
+          "unequal_values": 6600,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 2.5890767574310303e-07,
+          "rms_difference": 2.7354074561003472e-08,
+          "unequal_values": 575684,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.encoder.layers.6.self_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0008505543228238821,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 5.7367704336952485e-11,
+          "unequal_values": 5272,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 2.4586915969848633e-07,
+          "rms_difference": 2.506639162902502e-08,
+          "unequal_values": 573981,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.encoder.layers.6.self_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0008778604678809643,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 3.725290298461914e-09,
+          "rms_difference": 6.766502635979776e-11,
+          "unequal_values": 7693,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 3.8743019104003906e-07,
+          "rms_difference": 3.5380040230847953e-08,
+          "unequal_values": 578289,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.encoder.layers.7.self_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.00043983757495880127,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 5.612986464509362e-11,
+          "unequal_values": 4819,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 1.7229467630386353e-07,
+          "rms_difference": 2.197310955409648e-08,
+          "unequal_values": 571490,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.encoder.layers.7.self_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0009188279509544373,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 6.353501058597999e-11,
+          "unequal_values": 7464,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 3.7479912862181664e-07,
+          "rms_difference": 3.358190170388298e-08,
+          "unequal_values": 577991,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.encoder.layers.8.self_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0010071881115436554,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 7.450580596923828e-09,
+          "rms_difference": 6.74356404051224e-11,
+          "unequal_values": 6094,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 3.3155083656311035e-07,
+          "rms_difference": 3.0962940655854254e-08,
+          "unequal_values": 574970,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.encoder.layers.8.self_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0009754952043294907,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 3.725290298461914e-09,
+          "rms_difference": 7.053882478125217e-11,
+          "unequal_values": 8227,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 3.166496753692627e-07,
+          "rms_difference": 3.86364895632596e-08,
+          "unequal_values": 579634,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.encoder.layers.9.self_attn.q_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0006645867833867669,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 3.725290298461914e-09,
+          "rms_difference": 5.843982242570434e-11,
+          "unequal_values": 5444,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 2.915039658546448e-07,
+          "rms_difference": 2.615311878173543e-08,
+          "unequal_values": 574067,
+          "exactly_equal": false
+        }
+      }
+    },
+    {
+      "tensor": "model.encoder.layers.9.self_attn.v_proj.weight",
+      "dtype": "torch.float32",
+      "numel": 589824,
+      "adaptation_max_abs": 0.0012168344110250473,
+      "arithmetic": {
+        "cpu_fp32": {
+          "max_abs_difference": 3.725290298461914e-09,
+          "rms_difference": 7.593398826388764e-11,
+          "unequal_values": 8228,
+          "exactly_equal": false
+        },
+        "cuda_fp32": {
+          "max_abs_difference": 0.0,
+          "rms_difference": 0.0,
+          "unequal_values": 0,
+          "exactly_equal": true
+        },
+        "cuda_tf32": {
+          "max_abs_difference": 3.711320459842682e-07,
+          "rms_difference": 4.151311827627069e-08,
+          "unequal_values": 579261,
+          "exactly_equal": false
+        }
+      }
+    }
+  ],
+  "torch_version": "2.8.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "scale": 2.0,
+  "sources_modified": false
+}

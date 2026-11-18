@@ -1,0 +1,44 @@
+{
+  "status": "READY_WEAK_TRAINING_PAIRS",
+  "old_train_pairs": 33,
+  "checked_language_only_train": 91,
+  "added_pairs": 16,
+  "new_train_pairs": 49,
+  "added_minutes": 5.333333333333333,
+  "total_train_minutes": 16.333333333333332,
+  "added_clean": 16,
+  "added_noisy": 0,
+  "new_train_speakers": 6,
+  "groups": {
+    "independent_groups": 8,
+    "split_groups": {
+      "train": 6,
+      "dev": 2,
+      "test": 0
+    },
+    "unknown_speakers": 0,
+    "script_overlap": {
+      "bleriot:BEA:Checklists": [
+        "dev",
+        "train"
+      ]
+    },
+    "claim_limitation": null
+  },
+  "source_preservation": true,
+  "unchanged_dev_pairs": 35,
+  "dev_byte_identical": true,
+  "train_sha256": "45956603b37c1edc2c8d881de69dee7fe8210842aba63af963387a027c3cebc3",
+  "dev_sha256": "76fbf9ba6c29f31aeeff27d0cf0013638a76ab95e3d6a21b2d62f88a4e5384f6",
+  "selection_plan_sha256": "662cdcec7b749adbd5d15ae0c3b055f41040ee7ea79785e3308e6ab9506066c3",
+  "training_loader_contract": "PASS",
+  "human_verified_added": 0,
+  "new_training_steps": 0,
+  "new_test_access": false,
+  "quality_improvement": "NOT_MEASURED",
+  "rejection_reasons": {
+    "second_model_lexical_disagreement": 75,
+    "numeric_disagreement": 9,
+    "negation_disagreement": 2
+  }
+}

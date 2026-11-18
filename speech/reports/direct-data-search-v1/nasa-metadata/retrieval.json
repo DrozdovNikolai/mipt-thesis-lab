@@ -1,0 +1,49 @@
+{
+  "checked_at": "2026-09-14T12:51:10.448051+00:00",
+  "purpose": "metadata_discovery",
+  "audio_imported": false,
+  "messages_sent": false,
+  "purchases_made": false,
+  "records": [
+    {
+      "id": "soteria-registry",
+      "url": "https://registry.opendata.aws/nasa-soteria-data/",
+      "checked_at": "2026-09-14T12:51:08.830354+00:00",
+      "status": 200,
+      "bytes": 6453,
+      "final_url": "https://registry.opendata.aws/nasa-soteria-data/",
+      "content_type": "text/html",
+      "sha256": "765e6fd40e7593b10e13521b6fa18d777d666cee4447ccb8691da443d83c62fb"
+    },
+    {
+      "id": "soteria-root",
+      "url": "https://nasa-soteria-data.s3.us-west-2.amazonaws.com/?list-type=2&delimiter=%2F",
+      "checked_at": "2026-09-14T12:51:08.830853+00:00",
+      "status": 200,
+      "bytes": 1580,
+      "final_url": "https://nasa-soteria-data.s3.us-west-2.amazonaws.com/?list-type=2&delimiter=%2F",
+      "content_type": "application/xml",
+      "sha256": "ee0389297c7efe1e2ee4baa07d4a460079cd250ab5d9b3c6271c39ae29e6ce44"
+    },
+    {
+      "id": "soteria-list-first",
+      "url": "https://nasa-soteria-data.s3.us-west-2.amazonaws.com/?list-type=2&max-keys=1000",
+      "checked_at": "2026-09-14T12:51:08.831150+00:00",
+      "status": 200,
+      "bytes": 264838,
+      "final_url": "https://nasa-soteria-data.s3.us-west-2.amazonaws.com/?list-type=2&max-keys=1000",
+      "content_type": "application/xml",
+      "sha256": "00d6ce31e9ef49292e86133e87ba90ec639eddb639f507c2df56e65edc699ad0"
+    },
+    {
+      "id": "soteria-paper",
+      "url": "https://www.nature.com/articles/s41597-025-05336-7",
+      "checked_at": "2026-09-14T12:51:08.831370+00:00",
+      "status": 200,
+      "bytes": 3038,
+      "final_url": "https://www.nature.com/articles/s41597-025-05336-7",
+      "content_type": "text/html; charset=utf-8",
+      "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea"
+    }
+  ]
+}

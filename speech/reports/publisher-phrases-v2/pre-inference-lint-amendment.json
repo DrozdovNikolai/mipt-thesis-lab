@@ -1,0 +1,8 @@
+{
+  "reason": "Lint-only local variable renaming and import formatting before the first ASR call",
+  "policy_changed": false,
+  "asr_calls_before_amendment": 0,
+  "before_sha256": "313167cf6d4edb883060e4fe8751cc339d16df7da47536206ffc727efe3c03a6",
+  "final_sha256": "80554c525724e4a90d08c7f18bf5682025637409ba3ac9ccfe50f54cf221bb12",
+  "recorded_at": "2026-09-15T00:08:02.4056144+03:00"
+}

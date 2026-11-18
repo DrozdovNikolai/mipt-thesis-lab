@@ -1,0 +1,16 @@
+{
+  "repo": "nvidia/parakeet-tdt-0.6b-v2",
+  "revision": "ae9ad07059c7c739ffaf932226a8fe64ae2620b0",
+  "files": {
+    "parakeet-tdt-0.6b-v2.nemo": {
+      "sha256": "d99e39955c9d3d0350d8fb7c75e40c64a2b2eaeb003883d7c941fd2e8747b28c",
+      "bytes": 2472222720
+    },
+    "README.md": {
+      "sha256": "e2d10f955eb14a871092de134d2e82a59f494f001a181111fb95c74805763c65",
+      "bytes": 23599
+    }
+  },
+  "source": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2",
+  "audio_uploaded": false
+}

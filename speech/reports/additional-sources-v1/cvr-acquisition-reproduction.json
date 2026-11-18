@@ -1,0 +1,13 @@
+{
+  "status": "VERIFIED",
+  "downloaded_now": false,
+  "cases": 172,
+  "supplement_sha256": "d5f88a3c0c0148945be81310f79be3f95c6b28e1b12defc1db804eca7dfd67ac",
+  "partition_sha256": "b43467e683a946cb24bd6cd928260f32fafd713755df8868bc2595237c262c08",
+  "acquisition_sha256": "81ded2080e1f33bdd0468c68802cb1914e02c6baf2e12965c78a78ddcfe37faf",
+  "script_sha256": "475f16881a68b14b330989ac335486c2d5524bc2abeaf5174eb56bdc9e2d08e8",
+  "attribution": "Noort, Reader & Gillespie (2021), doi:10.1016/j.dib.2021.107602",
+  "license": "CC-BY-4.0",
+  "labels_created": false,
+  "project_labels_inferred": false
+}

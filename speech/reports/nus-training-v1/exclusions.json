@@ -1,0 +1,390 @@
+[
+  {
+    "pcm_sha256": "011ca76494abfdf8cbc579aa39189cb4782d9cce91e4c1e4a5ae0b3f2e1bddbb",
+    "rows": [
+      "CombinedSamples_01_03_04_05_06_07.parquet:180",
+      "Sample06.parquet:23"
+    ],
+    "reasons": [
+      "explicit_radio_reference_indicator"
+    ]
+  },
+  {
+    "pcm_sha256": "0c93ec5e0c6a092e559dac4f912901a760a62b8706d50d8ed4e9105484ed21a5",
+    "rows": [
+      "Sample02(1).parquet:14",
+      "Sample02.parquet:14"
+    ],
+    "reasons": [
+      "explicit_radio_reference_indicator"
+    ]
+  },
+  {
+    "pcm_sha256": "0cb03373eb71f599607c4f38a10c491eed6064a3695cf2187ff8716672dc7a53",
+    "rows": [
+      "CombinedSamples_01_03_04_05_06_07.parquet:8",
+      "Sample01(1).parquet:8",
+      "Sample01.parquet:8"
+    ],
+    "reasons": [
+      "explicit_radio_reference_indicator"
+    ]
+  },
+  {
+    "pcm_sha256": "0dba57dbcc0261dea9e0581e8a09f8d27d1b0cb6c6e22caceac3f5fbc2efe4fa",
+    "rows": [
+      "CombinedSamples_01_03_04_05_06_07.parquet:102",
+      "Sample05.parquet:6"
+    ],
+    "reasons": [
+      "explicit_radio_reference_indicator"
+    ]
+  },
+  {
+    "pcm_sha256": "12a01e83a4b724222ad0c21d0dbe1281773068c85e63766e3a35beb45b5e6ea5",
+    "rows": [
+      "CombinedSamples_01_03_04_05_06_07.parquet:50",
+      "Sample03.parquet:34"
+    ],
+    "reasons": [
+      "conflicting_source_references"
+    ]
+  },
+  {
+    "pcm_sha256": "158517fc1f8cbcd56ce4406d5864d34627757f04da7a0ab7e464752f5d237421",
+    "rows": [
+      "CombinedSamples_01_03_04_05_06_07.parquet:35",
+      "Sample03.parquet:19"
+    ],
+    "reasons": [
+      "explicit_radio_reference_indicator"
+    ]
+  },
+  {
+    "pcm_sha256": "2119004a6846448194f18e7d134d9d66ef731acd8e005ffb4037b7a46b2d64e6",
+    "rows": [
+      "CombinedSamples_01_03_04_05_06_07.parquet:2",
+      "Sample01(1).parquet:2",
+      "Sample01.parquet:2"
+    ],
+    "reasons": [
+      "conflicting_source_references"
+    ]
+  },
+  {
+    "pcm_sha256": "267e562ee7989e925829f64d079167901fe1c07b2f68461320ab763110cf46ea",
+    "rows": [
+      "CombinedSamples_01_03_04_05_06_07.parquet:237",
+      "Sample07.parquet:32"
+    ],
+    "reasons": [
+      "explicit_radio_reference_indicator"
+    ]
+  },
+  {
+    "pcm_sha256": "269074eff74ccf94de7ddca43e6fd3cde08859ca04dada50924d87daa37ab512",
+    "rows": [
+      "CombinedSamples_01_03_04_05_06_07.parquet:49",
+      "Sample03.parquet:33"
+    ],
+    "reasons": [
+      "explicit_radio_reference_indicator"
+    ]
+  },
+  {
+    "pcm_sha256": "2b41a30d8e7f7f22a8a06752b6a3055b46ce660e260b27a7fc0920c9da918638",
+    "rows": [
+      "CombinedSamples_01_03_04_05_06_07.parquet:226",
+      "Sample07.parquet:21"
+    ],
+    "reasons": [
+      "explicit_radio_reference_indicator"
+    ]
+  },
+  {
+    "pcm_sha256": "2c1b552dca39426001cbd50ef0f8072665b29d2c083d33be984e55231e22a9d2",
+    "rows": [
+      "CombinedSamples_01_03_04_05_06_07.parquet:4",
+      "Sample01(1).parquet:4",
+      "Sample01.parquet:4"
+    ],
+    "reasons": [
+      "conflicting_source_references"
+    ]
+  },
+  {
+    "pcm_sha256": "33379d6ff069a0e9f013bf3c7ffb1bfe2c654e5a5f3c979873f06194502db050",
+    "rows": [
+      "CombinedSamples_01_03_04_05_06_07.parquet:0",
+      "Sample01(1).parquet:0",
+      "Sample01.parquet:0"
+    ],
+    "reasons": [
+      "explicit_radio_reference_indicator"
+    ]
+  },
+  {
+    "pcm_sha256": "38db847f1aa1b54db946c10d5cc65136fadbfc32c4444268e70d885dad363dd6",
+    "rows": [
+      "Sample02(1).parquet:41",
+      "Sample02.parquet:41"
+    ],
+    "reasons": [
+      "explicit_radio_reference_indicator"
+    ]
+  },
+  {
+    "pcm_sha256": "3f6e88c4f2d6b274c346074986a6b6233599665ac22327ca8ead55c946ec495a",
+    "rows": [
+      "CombinedSamples_01_03_04_05_06_07.parquet:133",
+      "Sample05.parquet:37"
+    ],
+    "reasons": [
+      "explicit_radio_reference_indicator"
+    ]
+  },
+  {
+    "pcm_sha256": "3fdde4c3f12f08b369b1a87fcb2d4b202adf94430a3b36746d9726eb0b0b3ce4",
+    "rows": [
+      "CombinedSamples_01_03_04_05_06_07.parquet:181",
+      "Sample06.parquet:24"
+    ],
+    "reasons": [
+      "explicit_radio_reference_indicator"
+    ]
+  },
+  {
+    "pcm_sha256": "536b03dcd82c5debf15b1052d4f4c6a6d76b4668a9135169ea17b188fb12ede4",
+    "rows": [
+      "CombinedSamples_01_03_04_05_06_07.parquet:5",
+      "Sample01(1).parquet:5",
+      "Sample01.parquet:5"
+    ],
+    "reasons": [
+      "explicit_radio_reference_indicator"
+    ]
+  },
+  {
+    "pcm_sha256": "61e3fc053679a0b6c13553ed5ccd8de781de21d16a0d619272a9a80b7cef709a",
+    "rows": [
+      "CombinedSamples_01_03_04_05_06_07.parquet:76",
+      "Sample04.parquet:24"
+    ],
+    "reasons": [
+      "explicit_radio_reference_indicator"
+    ]
+  },
+  {
+    "pcm_sha256": "71286ee5c9c8c8714b263a837923fd16784bb9e79c5804db848fa90c32240c97",
+    "rows": [
+      "CombinedSamples_01_03_04_05_06_07.parquet:238",
+      "Sample07.parquet:33"
+    ],
+    "reasons": [
+      "explicit_radio_reference_indicator"
+    ]
+  },
+  {
+    "pcm_sha256": "797edb8cb89e261a4b6a5d10e2d0a443008dedd9bbc1e1f78a7262f00080e9db",
+    "rows": [
+      "CombinedSamples_01_03_04_05_06_07.parquet:51",
+      "Sample03.parquet:35"
+    ],
+    "reasons": [
+      "conflicting_source_references"
+    ]
+  },
+  {
+    "pcm_sha256": "801f27db8e75ae3ff52ea3e3c6d717927a21717bf6ef227bd584ca3ea42e09fa",
+    "rows": [
+      "CombinedSamples_01_03_04_05_06_07.parquet:213",
+      "Sample07.parquet:8"
+    ],
+    "reasons": [
+      "explicit_radio_reference_indicator"
+    ]
+  },
+  {
+    "pcm_sha256": "85fabe59c4717c08b54c148eb280d8b162fab086e3f0be86e4910fd6606b5add",
+    "rows": [
+      "CombinedSamples_01_03_04_05_06_07.parquet:54",
+      "Sample04.parquet:2"
+    ],
+    "reasons": [
+      "explicit_radio_reference_indicator"
+    ]
+  },
+  {
+    "pcm_sha256": "88282dfed87dcdf3f4d02cbcab7eed667564778925a005cdf97e24bbe2aec893",
+    "rows": [
+      "CombinedSamples_01_03_04_05_06_07.parquet:88",
+      "Sample04.parquet:36"
+    ],
+    "reasons": [
+      "explicit_radio_reference_indicator"
+    ]
+  },
+  {
+    "pcm_sha256": "8fb503ef371d2d8f97c001a68c060ed0b6694dec1f2dfd15a74c766aeed4d4d0",
+    "rows": [
+      "Sample02(1).parquet:48",
+      "Sample02.parquet:48"
+    ],
+    "reasons": [
+      "conflicting_source_references"
+    ]
+  },
+  {
+    "pcm_sha256": "927f51527ce6ce520aac18334f25bc5f42438ead6594150344214b5d2e5f1f7a",
+    "rows": [
+      "CombinedSamples_01_03_04_05_06_07.parquet:104",
+      "Sample05.parquet:8"
+    ],
+    "reasons": [
+      "explicit_radio_reference_indicator"
+    ]
+  },
+  {
+    "pcm_sha256": "9a82daa68cee325b06d8ad5d05136ce13680fc284ffc44b85eccd6c9a496be2a",
+    "rows": [
+      "CombinedSamples_01_03_04_05_06_07.parquet:28",
+      "Sample03.parquet:12"
+    ],
+    "reasons": [
+      "explicit_radio_reference_indicator"
+    ]
+  },
+  {
+    "pcm_sha256": "9ba395cb80cc59ca18bdab8b0b97639730e8413f7896d6ccb417433e8927b2c4",
+    "rows": [
+      "Sample02(1).parquet:25",
+      "Sample02.parquet:25"
+    ],
+    "reasons": [
+      "conflicting_source_references",
+      "explicit_radio_reference_indicator"
+    ]
+  },
+  {
+    "pcm_sha256": "a17b0f38df81ede1069af75550ca0c85b445874c158a169965ecc4b516a568d8",
+    "rows": [
+      "CombinedSamples_01_03_04_05_06_07.parquet:212",
+      "Sample07.parquet:7"
+    ],
+    "reasons": [
+      "explicit_radio_reference_indicator"
+    ]
+  },
+  {
+    "pcm_sha256": "a5ebadd93c4da57252aed19416631a7a8a84cca9b0dc42e7c94dac1a278efae8",
+    "rows": [
+      "CombinedSamples_01_03_04_05_06_07.parquet:93",
+      "Sample04.parquet:41"
+    ],
+    "reasons": [
+      "conflicting_source_references"
+    ]
+  },
+  {
+    "pcm_sha256": "a994942130cb23f1bff53d9b5a0455a55b30e068a12209bcdfeb7b272c7b4624",
+    "rows": [
+      "CombinedSamples_01_03_04_05_06_07.parquet:13",
+      "Sample01(1).parquet:13",
+      "Sample01.parquet:13"
+    ],
+    "reasons": [
+      "explicit_radio_reference_indicator"
+    ]
+  },
+  {
+    "pcm_sha256": "ae622f93a0000df7783f4fb28b6d09c02239805954070a054e7a296af20d0e36",
+    "rows": [
+      "CombinedSamples_01_03_04_05_06_07.parquet:161",
+      "Sample06.parquet:4"
+    ],
+    "reasons": [
+      "explicit_radio_reference_indicator"
+    ]
+  },
+  {
+    "pcm_sha256": "b63e9c6a6d9c52e1cd1d3c8341f0c60b4ade15be572e75f2b699ee371c218827",
+    "rows": [
+      "CombinedSamples_01_03_04_05_06_07.parquet:36",
+      "Sample03.parquet:20"
+    ],
+    "reasons": [
+      "explicit_radio_reference_indicator"
+    ]
+  },
+  {
+    "pcm_sha256": "baf14f960b3711dd055d8e362dd6f736b5a3f126308efd3f665eed90ed726bf0",
+    "rows": [
+      "CombinedSamples_01_03_04_05_06_07.parquet:77",
+      "Sample04.parquet:25"
+    ],
+    "reasons": [
+      "explicit_radio_reference_indicator"
+    ]
+  },
+  {
+    "pcm_sha256": "c59513089991a0614fae917ebea0a4c4de5958e7434b3c4ff2ce54e07f1c1604",
+    "rows": [
+      "CombinedSamples_01_03_04_05_06_07.parquet:103",
+      "Sample05.parquet:7"
+    ],
+    "reasons": [
+      "explicit_radio_reference_indicator"
+    ]
+  },
+  {
+    "pcm_sha256": "c7b28b5f44ebf78e8b327a4d6b5b784624b7880dc335265b26d3b428d7c3f115",
+    "rows": [
+      "CombinedSamples_01_03_04_05_06_07.parquet:254",
+      "Sample07.parquet:49"
+    ],
+    "reasons": [
+      "explicit_radio_reference_indicator"
+    ]
+  },
+  {
+    "pcm_sha256": "c9e121635b3abbbc124a42310efc68414485435bb3b6596983103caec1557f46",
+    "rows": [
+      "Sample02(1).parquet:5",
+      "Sample02.parquet:5"
+    ],
+    "reasons": [
+      "conflicting_source_references",
+      "explicit_radio_reference_indicator"
+    ]
+  },
+  {
+    "pcm_sha256": "e51d491c35598fd376c1df3befbd51131de95f62ba9c9d0597b8a87d19d31075",
+    "rows": [
+      "CombinedSamples_01_03_04_05_06_07.parquet:94",
+      "Sample04.parquet:42"
+    ],
+    "reasons": [
+      "conflicting_source_references"
+    ]
+  },
+  {
+    "pcm_sha256": "e9a0b1c234dedded07d05b93e95d3fa5fb5c3c5c6bbeb410a1fcd35436921559",
+    "rows": [
+      "Sample02(1).parquet:0",
+      "Sample02.parquet:0"
+    ],
+    "reasons": [
+      "conflicting_source_references"
+    ]
+  },
+  {
+    "pcm_sha256": "ff769047edff9eae600ede8f31da977e0b0fdaa585fdcc56cca5c3afaa9a9ad8",
+    "rows": [
+      "Sample02(1).parquet:1",
+      "Sample02.parquet:1"
+    ],
+    "reasons": [
+      "conflicting_source_references"
+    ]
+  }
+]

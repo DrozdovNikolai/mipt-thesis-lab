@@ -1,0 +1,76 @@
+{
+  "language_effect": {
+    "point_target": "PASS",
+    "relative_reduction": 0.5294117647058824,
+    "human_dev_bootstrap": {
+      "lower": -0.2826086956521739,
+      "upper": -0.06521739130434782,
+      "method": "paired_cluster_bootstrap",
+      "seed": 55,
+      "resamples": 2000,
+      "confidence_level": 0.95,
+      "independent_groups": 3,
+      "delta_definition": "candidate - baseline",
+      "valid_resamples": 2000,
+      "system_intervals": {
+        "baseline": {
+          "lower": 0.15217391304347827,
+          "upper": 0.43478260869565216
+        },
+        "candidate": {
+          "lower": 0.08695652173913043,
+          "upper": 0.34782608695652173
+        }
+      }
+    },
+    "quality_gate": "NEEDS_MORE_DATA",
+    "same_information_and_checkpoint_pipeline_evidence": false
+  },
+  "model_effect": {
+    "point_target": "FAIL",
+    "relative_reduction": -0.24999999999999994,
+    "human_dev_bootstrap": {
+      "lower": 0.0,
+      "upper": 0.08695652173913043,
+      "method": "paired_cluster_bootstrap",
+      "seed": 55,
+      "resamples": 2000,
+      "confidence_level": 0.95,
+      "independent_groups": 3,
+      "delta_definition": "candidate - baseline",
+      "valid_resamples": 2000,
+      "system_intervals": {
+        "baseline": {
+          "lower": 0.08695652173913043,
+          "upper": 0.34782608695652173
+        },
+        "candidate": {
+          "lower": 0.08695652173913043,
+          "upper": 0.43478260869565216
+        }
+      }
+    },
+    "quality_gate": "NEEDS_MORE_DATA",
+    "same_information_and_checkpoint_pipeline_evidence": false
+  },
+  "model_controls": {
+    "general_clean": {
+      "wer_delta": 0.02471169686985173,
+      "point_guardrail": "FAIL"
+    },
+    "general_ru": {
+      "wer_delta": -0.04343105320304017,
+      "point_guardrail": "PASS"
+    },
+    "noise_only": {
+      "word_rate_delta": 35.4212161350501,
+      "point_guardrail": "FAIL",
+      "reference_status": "publisher description, no independent listening audit"
+    },
+    "bleriot_b_noise": {
+      "word_rate_delta": 12.002968301620538,
+      "point_guardrail": "FAIL",
+      "reference_status": "publisher description, no independent listening audit"
+    }
+  }
+}

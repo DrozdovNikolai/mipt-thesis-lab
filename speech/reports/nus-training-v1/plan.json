@@ -1,0 +1,151 @@
+{
+  "driver_sha256": "a65d9d119f5c918ce32124b03bfaa2a79f16f63f241eb918e68d15364d493662",
+  "code_sha256": "bcada67fe2cfe40514eee9e1d144e30d042bf1bbcb43b9068ec24d410a4a9655",
+  "scorer_sha256": "12d299fc3407caf6f82a2e4c3c3e0d1443b5d065a95ffbf0b5fcc01731421084",
+  "vad_weights_sha256": "4cbf549b8326f60f80f2536d9eefeb450a9abe83365a098031c89719f1be17d2",
+  "acceptance_sha256": "32d35b1e80b64f38e6adcc9895515b37f224a9e51dcf5ff95389e1f9ecc45071",
+  "baseline_sha256": "419accafb0874a51c11bd4865117a4daf761345a48242e36269c71e88a73e1d1",
+  "uv_lock_sha256": "55a8e553c1ae4894347e17a16957bc5a7ea7bbcd06f33e0bd74fa85a440e062b",
+  "protocol_sha256": "12f3aa3fafb6f70a0fcd2ac5c78c7df63c602e31fe311538a886203509ab8ee3",
+  "experiment_driver_sha256": "586e71fb11a75902dbe3781679fbb0d6770c4b40c3b91c0210dcd20f33560df5",
+  "training_implementation_sha256": "76f267b6a1d90a316dedb5a264c72792d1f9ac3a9bf88819ae9e422160a89a28",
+  "frozen_at": "2026-09-14T14:19:19.254909+00:00",
+  "config": {
+    "train_manifest": "/dataset/train.jsonl",
+    "dev_manifest": "/dataset/dev.jsonl",
+    "base_model": "whisper-small-transformers",
+    "output": "whisper-small-nus-v1",
+    "reference_policy": "nus_sources_exploratory_v1",
+    "quality_evidence": false,
+    "selection_allowed": false,
+    "rank": 8,
+    "max_steps": 240,
+    "eval_steps": 240,
+    "learning_rate": 5e-05,
+    "permission_evidence_sha256": "fd3610beeb9ef40acdd3089bcccdfdb42216a6e21b4c78e38673dec8a7d9e7e9"
+  },
+  "train_sha256": "00268dfb9bf0367e283e49acb089b9c9ae1c34342fc8f863d7721ede61b9072f",
+  "dev_sha256": "76fbf9ba6c29f31aeeff27d0cf0013638a76ab95e3d6a21b2d62f88a4e5384f6",
+  "inputs_sha256": "81336ad032a25eb85071f712f1b44f6260f709b4061b80cb9f59198539a70877",
+  "references_sha256": "804a18e60747e3e9b6620f8e03fd95214a70eef95dd826c28e29f883a342fa12",
+  "base_manifest": {
+    "repo": "openai/whisper-small",
+    "revision": "973afd24965f72e36ca33b3055d56a652f456b4d",
+    "license": "apache-2.0",
+    "files": {
+      "README.md": "967fa44eefe5d3436e040b0f171fc54da67aad96923bae10af37dac9be5bb6b0",
+      "added_tokens.json": "9715fd2243b6f06a5858b5e32950d2853f73dd5bc201aafcf76f5082a2d8acd1",
+      "config.json": "e6a2b489da1b5aed65a8eb8d1e7466fa867ad5643a8bc138ba708bd56b2875c4",
+      "generation_config.json": "71565b8ef50d0bf7a1193ed4bbed195b94e70c18894d81bba2f1233dcec3ab53",
+      "merges.txt": "2df2990a395e35e8dfbc7511e08c12d56018d8d04691e0133e5d63b21e154dc6",
+      "model.safetensors": "1d7734884874f1a1513ed9aa760a4f8e97aaa02fd6d93a3a85d27b2ae9ca596b",
+      "normalizer.json": "bf1c507dc8724ca9cf9903640dacfb69dae2f00edee4f21ceba106a7392f26dd",
+      "preprocessor_config.json": "9b5cd03a36fbb8a627c64d98a5b5b126ead95a77720723944487311f0110b666",
+      "special_tokens_map.json": "e67ae3a0aaa99abcd9f187138e12db1f65c16a14761c50ef10eef2c174a7a691",
+      "tokenizer.json": "27fc476bfe7f17299480be2273fc0608e4d5a99aba2ab5dec5374b4482d1a566",
+      "tokenizer_config.json": "2a4c4281cf9f51ac6ccc406fdc711a087afe6530f671fa7b80953edc498275ce",
+      "vocab.json": "8f680bba319e01a653d2e8a5dbc17a9157179e0576e6ce74ce0c06356c6e24f9"
+    },
+    "purpose": "optional supervised ASR LoRA after verified training annotations",
+    "excluded_formats": [
+      "pytorch_model.bin",
+      "flax_model.msgpack",
+      "tf_model.h5"
+    ],
+    "training_executed": false
+  },
+  "inference_template": {
+    "schema_version": "1.0",
+    "name": "baseline",
+    "model": "whisper-small-publisher-base-ct2",
+    "compute_type": "float16",
+    "device": "cuda",
+    "task": "transcribe",
+    "beam_size": 5,
+    "temperature": 0.0,
+    "best_of": 5,
+    "patience": 1.0,
+    "length_penalty": 1.0,
+    "repetition_penalty": 1.0,
+    "no_repeat_ngram_size": 0,
+    "condition_on_previous_text": true,
+    "compression_ratio_threshold": 2.4,
+    "log_prob_threshold": -1.0,
+    "no_speech_threshold": 0.6,
+    "suppress_blank": true,
+    "suppress_tokens": [
+      -1
+    ],
+    "max_initial_timestamp": 1.0,
+    "word_timestamps": true,
+    "language_detection_threshold": 0.5,
+    "language_detection_segments": 1,
+    "vad": {
+      "enabled": false,
+      "threshold": 0.5,
+      "min_speech_duration_ms": 100,
+      "min_silence_duration_ms": 400,
+      "speech_pad_ms": 200,
+      "max_speech_duration_s": 30.0
+    },
+    "denoise": {
+      "enabled": false,
+      "strength": 0.5,
+      "floor": 0.3,
+      "noise_percentile": 10.0
+    },
+    "hotwords": null,
+    "glossary_version": null,
+    "redecode": false,
+    "max_redecode_passes": 1,
+    "redecode_logprob_threshold": -0.8,
+    "episode_gap_sec": 2.0,
+    "episode_max_sec": 30.0,
+    "episode_max_tokens": 100,
+    "classifier": "rules_v1",
+    "classifier_artifact": null
+  },
+  "preparation_sha256": "e3de14a53724c26da7bd9d6e2ed3fb0fed465cc6862e5972cbd3f60a5d9cc4a3",
+  "data": {
+    "NUS_unique_before_filter": 313,
+    "NUS_selected": 275,
+    "NUS_minutes": 13.85166666666667,
+    "excluded_unique": 38,
+    "exclusion_reason_counts": {
+      "explicit_radio_reference_indicator": 29,
+      "conflicting_source_references": 11
+    },
+    "pairs": 675,
+    "minutes": 94.35099374999996,
+    "general_EN": 200,
+    "general_RU": 200,
+    "prior_weak_train_removed": 33,
+    "known_EN_support_speakers": 19,
+    "NUS_conservative_groups": 1,
+    "NUS_human_verified": 0,
+    "dev_count": 35,
+    "groups": {
+      "independent_groups": 23,
+      "split_groups": {
+        "train": 21,
+        "dev": 2,
+        "test": 0
+      },
+      "unknown_speakers": 475,
+      "script_overlap": {},
+      "claim_limitation": "unknown speakers cannot establish speaker-disjoint generalization"
+    },
+    "test_accessed": false,
+    "audio_scope_verified": false
+  },
+  "permission_sha256": "fd3610beeb9ef40acdd3089bcccdfdb42216a6e21b4c78e38673dec8a7d9e7e9",
+  "previous_training_plan_sha256": "130cdcb88ccc7613366629cbd7a41e833cccbd3d6b3636e5bfd5caa6c57aeb89",
+  "budget": {
+    "new_training_arms": 1,
+    "steps": 240,
+    "seed": 55
+  },
+  "selection_allowed": false,
+  "quality_evidence": false,
+  "release_promoted": false
+}

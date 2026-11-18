@@ -1,0 +1,65 @@
+{
+  "plan_sha256": "f6c4d946d7dd695e0aec97fc8642f810d49a4c71f1c0be14bef1d2bd14b93308",
+  "sources": [
+    {
+      "key": "Crew_01/DVR/DVR10_Case_6_SOTERIA_20220503-144012Z_S1R1.mp4",
+      "size": 1167281759,
+      "etag": "\"45397fd15311679e56a437b618c3c575-140\"",
+      "last_modified": "2025-03-06T15:28:57.000Z",
+      "crew": "Crew_01",
+      "split": "train",
+      "case": 6,
+      "filename": "Crew_01-DVR10_Case_6_SOTERIA_20220503-144012Z_S1R1.mp4",
+      "url": "https://nasa-soteria-data.s3.us-west-2.amazonaws.com/Crew_01/DVR/DVR10_Case_6_SOTERIA_20220503-144012Z_S1R1.mp4",
+      "sha256": "4452311af22177cd0b27d86d5710cd3987cf507a5f257525c99f961b7f10c60c",
+      "multipart_etag_verified": true,
+      "seconds": 227.218,
+      "local_path": "data/input/soteria-v14/Crew_01-DVR10_Case_6_SOTERIA_20220503-144012Z_S1R1.mp4"
+    },
+    {
+      "key": "Crew_02/DVR/DVR10_Case_5_SOTERIA_20220504-145153Z_S1R1.mp4",
+      "size": 1552291031,
+      "etag": "\"d4cfc6bb215c2652b41f2c98ee7f0680-186\"",
+      "last_modified": "2025-03-06T15:31:03.000Z",
+      "crew": "Crew_02",
+      "split": "dev",
+      "case": 5,
+      "filename": "Crew_02-DVR10_Case_5_SOTERIA_20220504-145153Z_S1R1.mp4",
+      "url": "https://nasa-soteria-data.s3.us-west-2.amazonaws.com/Crew_02/DVR/DVR10_Case_5_SOTERIA_20220504-145153Z_S1R1.mp4",
+      "sha256": "22b2d178d90bfccf1645835ea45002b39df07409a312129ac438baa89e7bf24e",
+      "multipart_etag_verified": true,
+      "seconds": 381.718,
+      "local_path": "data/input/soteria-v14/Crew_02-DVR10_Case_5_SOTERIA_20220504-145153Z_S1R1.mp4"
+    },
+    {
+      "key": "Crew_03/DVR/DVR10_Case_6_SOTERIA_20220509-171908Z_S1R1.mp4",
+      "size": 1175817964,
+      "etag": "\"f231cb63efbe721458c49f70d7f2fd1f-141\"",
+      "last_modified": "2025-03-06T15:34:42.000Z",
+      "crew": "Crew_03",
+      "split": "train",
+      "case": 6,
+      "filename": "Crew_03-DVR10_Case_6_SOTERIA_20220509-171908Z_S1R1.mp4",
+      "url": "https://nasa-soteria-data.s3.us-west-2.amazonaws.com/Crew_03/DVR/DVR10_Case_6_SOTERIA_20220509-171908Z_S1R1.mp4",
+      "sha256": "b994a0f998b304e487378f159345bb01eddce06f50c0db853bbb3b4c1deaaf53",
+      "multipart_etag_verified": true,
+      "seconds": 257.766,
+      "local_path": "data/input/soteria-v14/Crew_03-DVR10_Case_6_SOTERIA_20220509-171908Z_S1R1.mp4"
+    },
+    {
+      "key": "Crew_04/DVR/DVR10_Case_6_SOTERIA_20220510-170118Z_S1R1.mp4",
+      "size": 1020728069,
+      "etag": "\"820b8dd1e9b239063d95850b1c618e2e-122\"",
+      "last_modified": "2025-03-06T15:41:59.000Z",
+      "crew": "Crew_04",
+      "split": "dev",
+      "case": 6,
+      "filename": "Crew_04-DVR10_Case_6_SOTERIA_20220510-170118Z_S1R1.mp4",
+      "url": "https://nasa-soteria-data.s3.us-west-2.amazonaws.com/Crew_04/DVR/DVR10_Case_6_SOTERIA_20220510-170118Z_S1R1.mp4",
+      "sha256": "99b7e7902627699cae416bfc8199f7d8bd6f539c084d0da665dc7ea79567ef21",
+      "multipart_etag_verified": true,
+      "seconds": 446.266,
+      "local_path": "data/input/soteria-v14/Crew_04-DVR10_Case_6_SOTERIA_20220510-170118Z_S1R1.mp4"
+    }
+  ]
+}

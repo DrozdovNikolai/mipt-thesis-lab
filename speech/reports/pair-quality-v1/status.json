@@ -1,0 +1,35 @@
+{
+  "data_preparation": {
+    "implemented": true,
+    "executed": true,
+    "verified": true,
+    "general_pairs": 400,
+    "minutes": 82.09333541666669
+  },
+  "bleriot_filter": {
+    "implemented": true,
+    "executed": true,
+    "verified_execution": true,
+    "status": "NEEDS_MORE_DATA",
+    "accepted_pairs": 0,
+    "ASR_calls": 1350,
+    "ASR_failures": 0
+  },
+  "training_comparison": {
+    "executed": false,
+    "status": "BLOCKED",
+    "reason": "Existing dev-search budget 16/16 exhausted; new strict BLeRIOT train is also empty"
+  },
+  "primary_ASR_quality": {
+    "status": "NEEDS_MORE_DATA",
+    "effect_measured_this_stage": false
+  },
+  "tests": {
+    "passed": 38
+  },
+  "artifact_checks": {
+    "passed": 35
+  },
+  "release_promoted": false,
+  "old_data_modified": false
+}

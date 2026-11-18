@@ -1,0 +1,33 @@
+{
+  "hard_candidates": 377,
+  "accepted_hard": 25,
+  "hard_minutes": 4.142533333333334,
+  "retained_old": 206,
+  "replaced_old_overlaps": 15,
+  "clean_pairs": 231,
+  "noisy_pairs": 16,
+  "noisy_minutes": 1.4556666666666664,
+  "train_pairs": 247,
+  "train_minutes": 29.05753229166667,
+  "unique_clean_minutes": 27.601865625000002,
+  "train_speakers": 9,
+  "review_train": 60,
+  "review_dev": 42,
+  "review_dev_recordings": 7,
+  "review_dev_speakers": 3,
+  "review_minutes": 15.9968,
+  "teacher_rejection_reasons": {
+    "teacher_disagreement": 312,
+    "publisher_support": 335,
+    "state_or_negation_disagreement": 56,
+    "medium_confidence": 27,
+    "numeric_disagreement": 53,
+    "large_confidence": 10,
+    "length": 2
+  },
+  "train_sha256": "1be9a9a5a8e4f8cd591c0333f70163c82d6cd953c3533b5967976caaa76eab88",
+  "dev_sha256": "76fbf9ba6c29f31aeeff27d0cf0013638a76ab95e3d6a21b2d62f88a4e5384f6",
+  "human_verified_added": 0,
+  "quality_evidence": false,
+  "test_accessed": false
+}

@@ -1,0 +1,30 @@
+{
+  "seed": 55,
+  "updates": 160,
+  "accumulation": 4,
+  "learning_rate": 2e-05,
+  "rank": 8,
+  "alpha": 16,
+  "dropout": 0.05,
+  "kl_weight": 0.5,
+  "arms": [
+    "replay_control",
+    "soteria_mix"
+  ],
+  "candidate": "soteria_mix",
+  "checkpoint_selection": "fixed_final_only",
+  "encoder_frozen": true,
+  "new_examples_per_update": 2,
+  "max_disagreement": 0.4,
+  "min_length_ratio": 0.55,
+  "max_length_ratio": 1.8,
+  "min_teacher_avg_logprob": -0.8,
+  "min_teacher_word_probability": 0.65,
+  "max_words_per_second": 5.5,
+  "max_repeated_trigram": 3,
+  "numeric_check": "reject conflicting explicit digit sequences when both ASRs use digits; spoken forms unresolved",
+  "weak_targets": true,
+  "human_verified": false,
+  "test_accessed": false,
+  "release_promoted": false
+}

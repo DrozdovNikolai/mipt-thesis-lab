@@ -1,0 +1,40 @@
+name: north55-recovery-audit
+services:
+  audit:
+    image: north55-speech-gpu:0.1.0
+    network_mode: none
+    entrypoint: [python, -u, /audit/probe.py]
+    environment:
+      PYTHONPATH: /source
+      HF_HUB_OFFLINE: "1"
+      TRANSFORMERS_OFFLINE: "1"
+      CUDA_VISIBLE_DEVICES: "0"
+    volumes:
+      - .:/audit
+      - ../../src:/source:ro
+      - audio:/audio:ro
+      - models:/models:ro
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ["0"]
+              capabilities: [gpu]
+  score:
+    image: north55-speech-gpu:0.1.0
+    network_mode: none
+    entrypoint: [python, -u, /audit/probe.py]
+    environment:
+      PYTHONPATH: /source
+    volumes:
+      - .:/audit
+      - ../../src:/source:ro
+      - ../additional-sources-v1/asr/references.json:/references.json:ro
+volumes:
+  audio:
+    external: true
+    name: north55-speech_audio_data
+  models:
+    external: true
+    name: north55-speech_model_cache

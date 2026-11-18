@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "new_GPU_ASR": 6,
+  "files": 4,
+  "comparisons": [
+    {
+      "file": "clean.wav",
+      "same_waveform": true,
+      "same_route": true,
+      "same_output_text": true,
+      "ASR_responses_matched": [
+        "whisper",
+        "parakeet"
+      ]
+    },
+    {
+      "file": "noisy.wav",
+      "same_waveform": true,
+      "same_route": true,
+      "same_output_text": true,
+      "ASR_responses_matched": [
+        "parakeet"
+      ]
+    },
+    {
+      "file": "empty.wav",
+      "same_waveform": true,
+      "same_route": true,
+      "same_output_text": true,
+      "ASR_responses_matched": [
+        "parakeet"
+      ]
+    },
+    {
+      "file": "quiet.wav",
+      "same_waveform": true,
+      "same_route": true,
+      "same_output_text": true,
+      "ASR_responses_matched": [
+        "whisper",
+        "parakeet"
+      ]
+    }
+  ],
+  "runtime_sha256": "3110b95f554cf492ac4b41bd8384e81e93a6861f893b50e7c8bd261c2c7f36a3",
+  "output_sha256": "6d562afb9514bf6c7a139c2568e64cbb933c301935a4a8415f54a41b8a4e050e",
+  "interpretation": "Fresh pipeline execution, not independent accuracy evidence"
+}

@@ -1,0 +1,16 @@
+{
+  "plan_sha256": "95baf3d19575aacabe03a83486b87419b6282ee05b8051619fec0eb4057519ad",
+  "training_sha256": "6c645f891a177255602dcca040416cfb30512d0cf8b30ba4def1c2ad24e8ef0a",
+  "records": 541,
+  "decisions_sha256": "13e127d1e508c7ba9a289e0e5040e4278ea8ded03a73413398d64747e4a83b0d",
+  "threshold": 0.8,
+  "reasons": {
+    "keep_whisper": 374,
+    "non_english_passthrough": 50,
+    "parakeet_empty": 61,
+    "predicted_severe_noise": 56
+  },
+  "new_ASR_calls": 0,
+  "device": "cpu",
+  "runtime_failures": []
+}

@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-09-14T13:00:21.112320+00:00",
+  "status": "PASS",
+  "scope": "source retrieval and artifact integrity, not ML acceptance",
+  "checks": {
+    "unchanged:SPEC.md": true,
+    "unchanged:SOURCES.md": true,
+    "unchanged:ACCEPTANCE.yaml": true,
+    "unchanged:configs/baseline.yaml": true,
+    "response_hashes:discovery": true,
+    "response_hashes:followup": true,
+    "response_hashes:boeing-metadata": true,
+    "response_hashes:nasa-metadata": true,
+    "s3_listing_page_hashes": true,
+    "s3_listing_complete": true,
+    "s3_unique_objects": true,
+    "download_hash:soteria-acquisition.json": true,
+    "download_hash:boeing-acquisition.json": true,
+    "windows_linux_pcm_agree": true,
+    "no_invented_asr_or_gold": true,
+    "boeing_native_structure": true,
+    "boeing_test_not_downloaded": true
+  },
+  "asr_quality_status": "NEEDS_MORE_DATA",
+  "new_training_executed": false,
+  "promotion_executed": false
+}

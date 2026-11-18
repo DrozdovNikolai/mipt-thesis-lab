@@ -1,0 +1,59 @@
+{
+  "checked_at": "2026-09-14T12:49:22.569810+00:00",
+  "purpose": "metadata_discovery",
+  "audio_imported": false,
+  "messages_sent": false,
+  "purchases_made": false,
+  "records": [
+    {
+      "id": "boeing-dataset-tree",
+      "url": "https://huggingface.co/api/datasets/boeing/aviation-ner-BIO/tree/36832b83a85b15936b6f2dd15c7cd886194a9535?recursive=true",
+      "checked_at": "2026-09-14T12:49:21.727415+00:00",
+      "status": 200,
+      "bytes": 413,
+      "final_url": "https://huggingface.co/api/datasets/boeing/aviation-ner-BIO/tree/36832b83a85b15936b6f2dd15c7cd886194a9535?recursive=true",
+      "content_type": "application/json; charset=utf-8",
+      "sha256": "d80aa899f03e616ccd84c05c3fd685d24e280ca48a54ebd1f6ae23287a12ac6e"
+    },
+    {
+      "id": "boeing-model-card",
+      "url": "https://huggingface.co/boeing/aviation-ner/raw/main/README.md",
+      "checked_at": "2026-09-14T12:49:21.727984+00:00",
+      "status": 200,
+      "bytes": 9090,
+      "final_url": "https://huggingface.co/boeing/aviation-ner/raw/main/README.md",
+      "content_type": "text/plain; charset=utf-8",
+      "sha256": "061ab195bbaed82e0ac0e354dc85614473fa315c135f11a13514ef80d53b93e1"
+    },
+    {
+      "id": "boeing-code-repo",
+      "url": "https://api.github.com/repos/Boeing/aviation_ner_sdr",
+      "checked_at": "2026-09-14T12:49:21.728322+00:00",
+      "status": 200,
+      "bytes": 6469,
+      "final_url": "https://api.github.com/repos/Boeing/aviation_ner_sdr",
+      "content_type": "application/json; charset=utf-8",
+      "sha256": "f334f0b213e8d22d348ed3b1447585651638fbc2a42a85b5b6bfafe6cb57ddab"
+    },
+    {
+      "id": "boeing-code-readme",
+      "url": "https://raw.githubusercontent.com/Boeing/aviation_ner_sdr/main/README.md",
+      "checked_at": "2026-09-14T12:49:21.728621+00:00",
+      "status": 200,
+      "bytes": 4275,
+      "final_url": "https://raw.githubusercontent.com/Boeing/aviation_ner_sdr/main/README.md",
+      "content_type": "text/plain; charset=utf-8",
+      "sha256": "7f0856b8e49becfcd4dc9e6d5760c8d95afe20be11174ef359e22c2d10ba556f"
+    },
+    {
+      "id": "boeing-code-license",
+      "url": "https://raw.githubusercontent.com/Boeing/aviation_ner_sdr/main/LICENSE",
+      "checked_at": "2026-09-14T12:49:22.167413+00:00",
+      "status": 200,
+      "bytes": 1063,
+      "final_url": "https://raw.githubusercontent.com/Boeing/aviation_ner_sdr/main/LICENSE",
+      "content_type": "text/plain; charset=utf-8",
+      "sha256": "1add483b96bb12dc9f47835c94e76cc002a49eb1b7e077485a13cbd77edb9bff"
+    }
+  ]
+}

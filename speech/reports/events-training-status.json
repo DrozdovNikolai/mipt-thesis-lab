@@ -1,0 +1,9 @@
+{
+  "status": "BLOCKED",
+  "error": {
+    "code": "MISSING_EVENT_LABELS",
+    "message": "Supply lawful train/dev human event and salience annotations",
+    "retryable": false
+  },
+  "executed": false
+}

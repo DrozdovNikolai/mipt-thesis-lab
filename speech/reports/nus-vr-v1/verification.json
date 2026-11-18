@@ -1,0 +1,137 @@
+{
+  "checked_at": "2026-09-14T14:09:27.311885+00:00",
+  "checks": [
+    {
+      "name": "all_ten_files_acquired",
+      "status": "PASS"
+    },
+    {
+      "name": "payload_integrity:CombinedSamples_01_03_04_05_06_07.parquet",
+      "status": "PASS"
+    },
+    {
+      "name": "payload_integrity:Sample01(1).parquet",
+      "status": "PASS"
+    },
+    {
+      "name": "payload_integrity:Sample01.parquet",
+      "status": "PASS"
+    },
+    {
+      "name": "payload_integrity:Sample02(1).parquet",
+      "status": "PASS"
+    },
+    {
+      "name": "payload_integrity:Sample02.parquet",
+      "status": "PASS"
+    },
+    {
+      "name": "payload_integrity:Sample03.parquet",
+      "status": "PASS"
+    },
+    {
+      "name": "payload_integrity:Sample04.parquet",
+      "status": "PASS"
+    },
+    {
+      "name": "payload_integrity:Sample05.parquet",
+      "status": "PASS"
+    },
+    {
+      "name": "payload_integrity:Sample06.parquet",
+      "status": "PASS"
+    },
+    {
+      "name": "payload_integrity:Sample07.parquet",
+      "status": "PASS"
+    },
+    {
+      "name": "metadata_integrity:metadata",
+      "status": "PASS"
+    },
+    {
+      "name": "metadata_integrity:preparation-metadata",
+      "status": "PASS"
+    },
+    {
+      "name": "all_642_rows_decoded",
+      "status": "PASS"
+    },
+    {
+      "name": "313_unique_audio_clips",
+      "status": "PASS"
+    },
+    {
+      "name": "eleven_reference_conflicts_preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "missing_origin_times_not_fabricated",
+      "status": "PASS"
+    },
+    {
+      "name": "actual_clip_duration_matches_source",
+      "status": "PASS"
+    },
+    {
+      "name": "one_conservative_group_no_fake_holdout",
+      "status": "PASS"
+    },
+    {
+      "name": "no_unlicensed_training_or_promotion",
+      "status": "PASS"
+    },
+    {
+      "name": "no_invented_quality_metrics",
+      "status": "PASS"
+    },
+    {
+      "name": "final_script_matches_executed_hash",
+      "status": "PASS"
+    },
+    {
+      "name": "source_acquisition_audit_matches",
+      "status": "PASS"
+    },
+    {
+      "name": "private_index_integrity",
+      "status": "PASS"
+    },
+    {
+      "name": "powershell_linux_replay_same_measurements",
+      "status": "PASS"
+    },
+    {
+      "name": "replay_same_library_versions",
+      "status": "PASS"
+    },
+    {
+      "name": "protected_unchanged:SPEC.md",
+      "status": "PASS"
+    },
+    {
+      "name": "protected_unchanged:SOURCES.md",
+      "status": "PASS"
+    },
+    {
+      "name": "protected_unchanged:ACCEPTANCE.yaml",
+      "status": "PASS"
+    },
+    {
+      "name": "protected_unchanged:configs/baseline.yaml",
+      "status": "PASS"
+    },
+    {
+      "name": "seven_unit_tests_passed",
+      "status": "PASS"
+    },
+    {
+      "name": "payload_and_references_excluded_from_git",
+      "status": "PASS"
+    }
+  ],
+  "verification_status": "PASS",
+  "verified_scope": "acquisition_and_offline_inspection_only",
+  "training_admission": "BLOCKED",
+  "project_quality_gate": "NEEDS_MORE_DATA"
+}

@@ -1,0 +1,168 @@
+{
+  "created_at": "2026-09-13 20:17:38.577625+00:00",
+  "status": "NEEDS_MORE_DATA",
+  "core_code_hash": "3ebe06c6b5e3d924e96623be9a6829076844c701b9692cb02eed154824ea749f",
+  "source_and_inference_verification": "PASS",
+  "checks": {
+    "all_unique_sources_retained": true,
+    "existing_source_groups_preserved": true,
+    "reference_free_partition_proof_valid": true,
+    "annotation_packet_train_dev_only": true,
+    "live_audio_ranges_exports": true,
+    "focused_tests": true,
+    "full_transformers_offline_real_asr": true,
+    "ablation_plan_unchanged": true,
+    "ablation_current_core_code": true,
+    "all_frozen_inference_items": true,
+    "zero_runtime_failures": true,
+    "same_model_precision": true,
+    "original_timestamps": true,
+    "offline_dev_only": true,
+    "no_promotion_or_fabricated_scores": true
+  },
+  "scope": {
+    "technical_modes": [
+      "en",
+      "ru",
+      "mixed",
+      "auto"
+    ],
+    "quality_validated_languages": []
+  },
+  "sources": {
+    "unique_recordings": 67,
+    "split_groups": {
+      "train": 12,
+      "dev": 3,
+      "test": 3
+    },
+    "exact_duplicates_excluded": 1,
+    "pending_acoustic_links": [
+      "CVR_BEA_cvr_sp07.wav",
+      "CVR_DGA_CVR4_track1_sp103.wav"
+    ]
+  },
+  "annotation": {
+    "clips": 18,
+    "minutes": 6,
+    "human_verified": 0,
+    "ui_browser": "Login visually inspected; embedded viewer sends Origin:null and is correctly refused. Authenticated contract verified through HTTP; use a normal browser.",
+    "automated_human_labels_created": 0
+  },
+  "ablation": {
+    "implemented": true,
+    "executed": true,
+    "verified": true,
+    "configurations": 8,
+    "runs": 64,
+    "failures": 0,
+    "timings": {
+      "A0": {
+        "runs": 8,
+        "elapsed_sec": 34.20094493399665,
+        "audio_sec": 160.0,
+        "end_to_end_rtf": 0.21375590583747908,
+        "cache_hits": 0
+      },
+      "A1": {
+        "runs": 8,
+        "elapsed_sec": 100.88302871500491,
+        "audio_sec": 160.0,
+        "end_to_end_rtf": 0.6305189294687807,
+        "cache_hits": 0
+      },
+      "A2": {
+        "runs": 8,
+        "elapsed_sec": 99.79869363499893,
+        "audio_sec": 160.0,
+        "end_to_end_rtf": 0.6237418352187433,
+        "cache_hits": 0
+      },
+      "A3": {
+        "runs": 8,
+        "elapsed_sec": 117.01031577999674,
+        "audio_sec": 160.0,
+        "end_to_end_rtf": 0.7313144736249797,
+        "cache_hits": 0
+      },
+      "A4": {
+        "runs": 8,
+        "elapsed_sec": 139.50076751300003,
+        "audio_sec": 160.0,
+        "end_to_end_rtf": 0.8718797969562502,
+        "cache_hits": 0
+      },
+      "VAD_SHORT": {
+        "runs": 8,
+        "elapsed_sec": 133.99357673800114,
+        "audio_sec": 160.0,
+        "end_to_end_rtf": 0.8374598546125072,
+        "cache_hits": 0
+      },
+      "HINTS_ONLY": {
+        "runs": 8,
+        "elapsed_sec": 31.02797271399686,
+        "audio_sec": 160.0,
+        "end_to_end_rtf": 0.19392482946248038,
+        "cache_hits": 0
+      },
+      "DENOISE_ONLY": {
+        "runs": 8,
+        "elapsed_sec": 32.93253840399848,
+        "audio_sec": 160.0,
+        "end_to_end_rtf": 0.2058283650249905,
+        "cache_hits": 0
+      }
+    },
+    "scored_search": "NOT_RUN",
+    "candidate_selected": false
+  },
+  "training": {
+    "asr": "NEEDS_MORE_DATA",
+    "events": "NEEDS_MORE_DATA",
+    "lora_weights_and_supported_gpu": "VERIFIED",
+    "real_adaptation_executed": false
+  },
+  "quality": {
+    "asr": "NEEDS_MORE_DATA",
+    "nlp": "NEEDS_MORE_DATA",
+    "temporal": "NEEDS_MORE_DATA",
+    "lexical_wer_reduction": null,
+    "paired_cluster_ci": null,
+    "critical_entity_delta": null,
+    "clean_control_delta": null,
+    "nlp_rules_f1": null,
+    "nlp_trained_f1": null,
+    "release_promoted": false
+  },
+  "next_required_evidence": [
+    "Human transcript/scope/entity/event/salience review of train/dev audio",
+    "At least 20 independent qualifying final-test groups; only 3 source groups currently reserved",
+    "Verified final-test utterance, word, entity, clean-control and non-speech support per unchanged ACCEPTANCE",
+    "Separate continuous temporal-event annotations and lawful recorded-human RU/mixed data before those claims"
+  ],
+  "evidence_sha256": {
+    "bleriot-acquisition.json": "500992aea86d0aa0e62949312d6ee1c5d9e4e1e3eae46bc5973f2aa17bbf764f",
+    "voici-acquisition.json": "b8054558c0e33488d969619bd5701660953da80abb8bcbbd984ae0021b2a3b38",
+    "bleriot-linkage-v2.json": "76d5806cce2541d5390e84eff795be3bb7a0eb1e5a9bbfd436d7e563bfe9e6d8",
+    "bleriot-preparation-v2.json": "a75b9719d2614af345d3272b7a6cc65babfecd51a994887f7f1b3bf6c5b11861",
+    "bleriot-scope-screening.json": "725319648429f26735e75174e2d2d7523bdeb3d9d8732fe398295a551e2d57a7",
+    "annotation-packet-v1.json": "c9226199ceb296d6b81717d4634f8c807e76a3414526f15c658959626935cba3",
+    "annotation-script-context.json": "6ec020393978dcc9b9cc1da6ca2cd239e343accf1caa03addaba4f536815c28e",
+    "annotation-service.json": "c65cf8eebb6be68181fed1f03f11077cc416a4e2157132d80155843157fbc80f",
+    "annotation-sidecar-tests.xml": "49f523c4a8e18aa73275a2a093a4496e3ee3a1ea7305e3b99f448ff7db6c0236",
+    "transformers-small-acquisition.json": "b92a7c691f46da8afd9b3d4ec859e7941584784dac32d1e1f4fe78d27279a83a",
+    "transformers-offline-real-asr.json": "010cbae6694c5cb4065ddef04b9d261bd97c61c94c0392705991a925d807deb5",
+    "pending-dev-ablation-plan.json": "a5578a68240118b8b44cabf35b4b6ed52de28634a06e5bc70a5e5ff9bdf8874a",
+    "pending-dev-ablation.json": "1ecbeb83bc22ebfa7c128ee717df16ca82d6236cb4ac76c7f5be3179fef43a40",
+    "reviewed-asr-readiness.json": "02b5af7e82245c35b24c17042c36c5fc03dc3fe969afb8b5024462235ec59769",
+    "reviewed-events-readiness.json": "077315350d2fbbe6ee9d8ed44243d5ce9d03ba3345058860a93ee8c5f64509e0",
+    "packet-asr-training-attempt.json": "69e45b1d8eed185e8e0408f7ce5e0c357567e2a708f5e5fe5e1361f7339a8a08",
+    "packet-events-training-attempt.json": "e64e598f51a03b9e21713199b157d00793d9e7422a4051d933e8d88e6125c887"
+  },
+  "historical_evidence": [
+    "delivery.json (core engineering)",
+    "data-resumption.json (initial preparation v1)",
+    "blocker-audit.json (historical premature stop, superseded for acquisition/preparation)"
+  ]
+}

@@ -1,0 +1,307 @@
+[
+  {
+    "name": "north55-improvement-v1-small",
+    "image": "sha256:b5d7218f10baaa6b4bda2ac5da03462d4029f6249f2a93168e4352c47ebb2285",
+    "exit_code": 0,
+    "started_at": "2026-09-14T18:48:58.145068815Z",
+    "finished_at": "2026-09-14T18:54:13.934960059Z",
+    "network": "none",
+    "mounts": [
+      {
+        "Source": "/var/lib/docker/volumes/north55-speech_audio_data/_data",
+        "Destination": "/audio",
+        "RW": false
+      },
+      {
+        "Source": "/var/lib/docker/volumes/north55-speech_model_cache/_data",
+        "Destination": "/models",
+        "RW": false
+      },
+      {
+        "Source": "/run/desktop/mnt/host/c/DEV/MIPT/Diploma/Speech/reports/improvement-v1/inference",
+        "Destination": "/study",
+        "RW": false
+      },
+      {
+        "Source": "/run/desktop/mnt/host/c/DEV/MIPT/Diploma/Speech/data/curated/improvement-v1/audio",
+        "Destination": "/new-audio",
+        "RW": false
+      },
+      {
+        "Source": "/run/desktop/mnt/host/c/DEV/MIPT/Diploma/Speech/reports/improvement-v1/predictions",
+        "Destination": "/predictions",
+        "RW": true
+      },
+      {
+        "Source": "C:\\DEV\\MIPT\\Diploma\\Speech\\src",
+        "Destination": "/code/src",
+        "RW": false
+      },
+      {
+        "Source": "C:\\DEV\\MIPT\\Diploma\\Speech\\scripts\\improvement_experiment.py",
+        "Destination": "/code/scripts/improvement_experiment.py",
+        "RW": false
+      }
+    ],
+    "gpu_requests": [
+      {
+        "Driver": "nvidia",
+        "Count": 0,
+        "DeviceIDs": [
+          "0"
+        ],
+        "Capabilities": [
+          [
+            "gpu"
+          ]
+        ],
+        "Options": null
+      }
+    ]
+  },
+  {
+    "name": "north55-improvement-v1-small_glossary",
+    "image": "sha256:b5d7218f10baaa6b4bda2ac5da03462d4029f6249f2a93168e4352c47ebb2285",
+    "exit_code": 0,
+    "started_at": "2026-09-14T18:54:14.827017663Z",
+    "finished_at": "2026-09-14T18:55:08.105147813Z",
+    "network": "none",
+    "mounts": [
+      {
+        "Source": "C:\\DEV\\MIPT\\Diploma\\Speech\\reports\\improvement-v1\\frozen\\src",
+        "Destination": "/code/src",
+        "RW": false
+      },
+      {
+        "Source": "C:\\DEV\\MIPT\\Diploma\\Speech\\reports\\improvement-v1\\frozen\\scripts\\improvement_experiment.py",
+        "Destination": "/code/scripts/improvement_experiment.py",
+        "RW": false
+      },
+      {
+        "Source": "/var/lib/docker/volumes/north55-speech_audio_data/_data",
+        "Destination": "/audio",
+        "RW": false
+      },
+      {
+        "Source": "/var/lib/docker/volumes/north55-speech_model_cache/_data",
+        "Destination": "/models",
+        "RW": false
+      },
+      {
+        "Source": "/run/desktop/mnt/host/c/DEV/MIPT/Diploma/Speech/reports/improvement-v1/inference",
+        "Destination": "/study",
+        "RW": false
+      },
+      {
+        "Source": "/run/desktop/mnt/host/c/DEV/MIPT/Diploma/Speech/data/curated/improvement-v1/audio",
+        "Destination": "/new-audio",
+        "RW": false
+      },
+      {
+        "Source": "/run/desktop/mnt/host/c/DEV/MIPT/Diploma/Speech/reports/improvement-v1/predictions",
+        "Destination": "/predictions",
+        "RW": true
+      }
+    ],
+    "gpu_requests": [
+      {
+        "Driver": "nvidia",
+        "Count": 0,
+        "DeviceIDs": [
+          "0"
+        ],
+        "Capabilities": [
+          [
+            "gpu"
+          ]
+        ],
+        "Options": null
+      }
+    ]
+  },
+  {
+    "name": "north55-improvement-v1-large",
+    "image": "sha256:b5d7218f10baaa6b4bda2ac5da03462d4029f6249f2a93168e4352c47ebb2285",
+    "exit_code": 0,
+    "started_at": "2026-09-14T18:55:09.070787796Z",
+    "finished_at": "2026-09-14T19:08:24.696214215Z",
+    "network": "none",
+    "mounts": [
+      {
+        "Source": "/var/lib/docker/volumes/north55-speech_model_cache/_data",
+        "Destination": "/models",
+        "RW": false
+      },
+      {
+        "Source": "/run/desktop/mnt/host/c/DEV/MIPT/Diploma/Speech/reports/improvement-v1/inference",
+        "Destination": "/study",
+        "RW": false
+      },
+      {
+        "Source": "C:\\DEV\\MIPT\\Diploma\\Speech\\data\\curated\\improvement-v1\\audio",
+        "Destination": "/new-audio",
+        "RW": false
+      },
+      {
+        "Source": "C:\\DEV\\MIPT\\Diploma\\Speech\\reports\\improvement-v1\\predictions",
+        "Destination": "/predictions",
+        "RW": true
+      },
+      {
+        "Source": "C:\\DEV\\MIPT\\Diploma\\Speech\\reports\\improvement-v1\\frozen\\src",
+        "Destination": "/code/src",
+        "RW": false
+      },
+      {
+        "Source": "C:\\DEV\\MIPT\\Diploma\\Speech\\reports\\improvement-v1\\frozen\\scripts\\improvement_experiment.py",
+        "Destination": "/code/scripts/improvement_experiment.py",
+        "RW": false
+      },
+      {
+        "Source": "/var/lib/docker/volumes/north55-speech_audio_data/_data",
+        "Destination": "/audio",
+        "RW": false
+      }
+    ],
+    "gpu_requests": [
+      {
+        "Driver": "nvidia",
+        "Count": 0,
+        "DeviceIDs": [
+          "0"
+        ],
+        "Capabilities": [
+          [
+            "gpu"
+          ]
+        ],
+        "Options": null
+      }
+    ]
+  },
+  {
+    "name": "north55-improvement-v1-large_glossary",
+    "image": "sha256:b5d7218f10baaa6b4bda2ac5da03462d4029f6249f2a93168e4352c47ebb2285",
+    "exit_code": 0,
+    "started_at": "2026-09-14T19:08:25.89418672Z",
+    "finished_at": "2026-09-14T19:10:03.615588801Z",
+    "network": "none",
+    "mounts": [
+      {
+        "Source": "/run/desktop/mnt/host/c/DEV/MIPT/Diploma/Speech/reports/improvement-v1/frozen/src",
+        "Destination": "/code/src",
+        "RW": false
+      },
+      {
+        "Source": "/run/desktop/mnt/host/c/DEV/MIPT/Diploma/Speech/reports/improvement-v1/frozen/scripts/improvement_experiment.py",
+        "Destination": "/code/scripts/improvement_experiment.py",
+        "RW": false
+      },
+      {
+        "Source": "/var/lib/docker/volumes/north55-speech_audio_data/_data",
+        "Destination": "/audio",
+        "RW": false
+      },
+      {
+        "Source": "/var/lib/docker/volumes/north55-speech_model_cache/_data",
+        "Destination": "/models",
+        "RW": false
+      },
+      {
+        "Source": "/run/desktop/mnt/host/c/DEV/MIPT/Diploma/Speech/reports/improvement-v1/inference",
+        "Destination": "/study",
+        "RW": false
+      },
+      {
+        "Source": "/run/desktop/mnt/host/c/DEV/MIPT/Diploma/Speech/data/curated/improvement-v1/audio",
+        "Destination": "/new-audio",
+        "RW": false
+      },
+      {
+        "Source": "/run/desktop/mnt/host/c/DEV/MIPT/Diploma/Speech/reports/improvement-v1/predictions",
+        "Destination": "/predictions",
+        "RW": true
+      }
+    ],
+    "gpu_requests": [
+      {
+        "Driver": "nvidia",
+        "Count": 0,
+        "DeviceIDs": [
+          "0"
+        ],
+        "Capabilities": [
+          [
+            "gpu"
+          ]
+        ],
+        "Options": null
+      }
+    ]
+  },
+  {
+    "name": "north55-improved-local-smoke",
+    "image": "sha256:b5d7218f10baaa6b4bda2ac5da03462d4029f6249f2a93168e4352c47ebb2285",
+    "exit_code": 0,
+    "started_at": "2026-09-14T19:12:18.177410668Z",
+    "finished_at": "2026-09-14T19:12:48.402951576Z",
+    "network": "none",
+    "mounts": [
+      {
+        "Source": "/var/lib/docker/volumes/north55-speech_audio_data/_data",
+        "Destination": "/audio",
+        "RW": false
+      },
+      {
+        "Source": "/var/lib/docker/volumes/north55-speech_model_cache/_data",
+        "Destination": "/models",
+        "RW": false
+      },
+      {
+        "Source": "C:\\DEV\\MIPT\\Diploma\\Speech/data/curated/improvement-v1/audio",
+        "Destination": "/new-audio",
+        "RW": false
+      },
+      {
+        "Source": "C:\\DEV\\MIPT\\Diploma\\Speech/reports/improvement-v1/smoke-plan.json",
+        "Destination": "/smoke-plan.json",
+        "RW": false
+      },
+      {
+        "Source": "C:\\DEV\\MIPT\\Diploma\\Speech\\src",
+        "Destination": "/code/src",
+        "RW": false
+      },
+      {
+        "Source": "C:\\DEV\\MIPT\\Diploma\\Speech\\reports\\improvement-v1\\recipe",
+        "Destination": "/recipe",
+        "RW": false
+      },
+      {
+        "Source": "C:\\DEV\\MIPT\\Diploma\\Speech\\data\\local-audio",
+        "Destination": "/input",
+        "RW": false
+      },
+      {
+        "Source": "C:\\DEV\\MIPT\\Diploma\\Speech\\reports\\local-transcriptions",
+        "Destination": "/output",
+        "RW": true
+      }
+    ],
+    "gpu_requests": [
+      {
+        "Driver": "nvidia",
+        "Count": 0,
+        "DeviceIDs": [
+          "0"
+        ],
+        "Capabilities": [
+          [
+            "gpu"
+          ]
+        ],
+        "Options": null
+      }
+    ]
+  }
+]

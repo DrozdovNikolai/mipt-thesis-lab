@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="74" skipped="0" tests="96" time="3.895" timestamp="2026-09-13T20:23:03.964963+00:00" hostname="9d40057bccd9"><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[baseline_wer-nan]" time="0.025"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[baseline_wer-inf]" time="0.017"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[baseline_wer--inf]" time="0.018"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[baseline_wer-True]" time="0.018"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[baseline_wer-0.25]" time="0.016"><failure message="TypeError: unsupported operand type(s) for -: 'str' and 'float'">E   TypeError: unsupported operand type(s) for -: 'str' and 'float'</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[candidate_wer-nan]" time="0.018"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[candidate_wer-inf]" time="0.018" /><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[candidate_wer--inf]" time="0.019"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[candidate_wer-True]" time="0.018" /><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[candidate_wer-0.25]" time="0.017"><failure message="TypeError: unsupported operand type(s) for -: 'float' and 'str'">E   TypeError: unsupported operand type(s) for -: 'float' and 'str'</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[clean_wer_increase-nan]" time="0.019"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[clean_wer_increase-inf]" time="0.017" /><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[clean_wer_increase--inf]" time="0.017"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[clean_wer_increase-True]" time="0.018" /><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[clean_wer_increase-0.25]" time="0.017"><failure message="TypeError: '&gt;' not supported between instances of 'str' and 'float'">E   TypeError: '&gt;' not supported between instances of 'str' and 'float'</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[critical_entity_f1_delta-nan]" time="0.018"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[critical_entity_f1_delta-inf]" time="0.018"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[critical_entity_f1_delta--inf]" time="0.018" /><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[critical_entity_f1_delta-True]" time="0.020"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[critical_entity_f1_delta-0.25]" time="0.043"><failure message="TypeError: '&lt;' not supported between instances of 'str' and 'float'">E   TypeError: '&lt;' not supported between instances of 'str' and 'float'</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[critical_entity_error_rate_delta-nan]" time="0.017"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[critical_entity_error_rate_delta-inf]" time="0.017" /><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[critical_entity_error_rate_delta--inf]" time="0.017"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[critical_entity_error_rate_delta-True]" time="0.017" /><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[critical_entity_error_rate_delta-0.25]" time="0.018"><failure message="TypeError: '&gt;' not supported between instances of 'str' and 'float'">E   TypeError: '&gt;' not supported between instances of 'str' and 'float'</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[language_en_wer_increase-nan]" time="0.018"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[language_en_wer_increase-inf]" time="0.018" /><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[language_en_wer_increase--inf]" time="0.018"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[language_en_wer_increase-True]" time="0.017" /><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[language_en_wer_increase-0.25]" time="0.020"><failure message="TypeError: '&gt;' not supported between instances of 'str' and 'float'">E   TypeError: '&gt;' not supported between instances of 'str' and 'float'</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[non_speech_inserted_words_per_minute_delta-nan]" time="0.018"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[non_speech_inserted_words_per_minute_delta-inf]" time="0.016" /><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[non_speech_inserted_words_per_minute_delta--inf]" time="0.019"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[non_speech_inserted_words_per_minute_delta-True]" time="0.018" /><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[non_speech_inserted_words_per_minute_delta-0.25]" time="0.017"><failure message="TypeError: '&gt;' not supported between instances of 'str' and 'float'">E   TypeError: '&gt;' not supported between instances of 'str' and 'float'</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[unhandled_runtime_failures-nan]" time="0.020"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[unhandled_runtime_failures-inf]" time="0.017" /><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[unhandled_runtime_failures--inf]" time="0.020"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[unhandled_runtime_failures-True]" time="0.018" /><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_invalid_numeric_metrics[unhandled_runtime_failures-0.25]" time="0.018"><failure message="TypeError: '&gt;' not supported between instances of 'str' and 'int'">E   TypeError: '&gt;' not supported between instances of 'str' and 'int'</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_nlp_gate_rejects_invalid_scores[nan-candidate_macro_f1]" time="0.019"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_nlp_gate_rejects_invalid_scores[nan-rules_macro_f1]" time="0.018"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_nlp_gate_rejects_invalid_scores[nan-precision]" time="0.018"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_nlp_gate_rejects_invalid_scores[nan-recall]" time="0.019"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_nlp_gate_rejects_invalid_scores[inf-candidate_macro_f1]" time="0.017"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_nlp_gate_rejects_invalid_scores[inf-rules_macro_f1]" time="0.017" /><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_nlp_gate_rejects_invalid_scores[inf-precision]" time="0.019"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_nlp_gate_rejects_invalid_scores[inf-recall]" time="0.025"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_nlp_gate_rejects_invalid_scores[-0.1-candidate_macro_f1]" time="0.019" /><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_nlp_gate_rejects_invalid_scores[-0.1-rules_macro_f1]" time="0.023"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_nlp_gate_rejects_invalid_scores[-0.1-precision]" time="0.018" /><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_nlp_gate_rejects_invalid_scores[-0.1-recall]" time="0.020" /><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_nlp_gate_rejects_invalid_scores[1.1-candidate_macro_f1]" time="0.020"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_nlp_gate_rejects_invalid_scores[1.1-rules_macro_f1]" time="0.020" /><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_nlp_gate_rejects_invalid_scores[1.1-precision]" time="0.017"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_nlp_gate_rejects_invalid_scores[1.1-recall]" time="0.019"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_nlp_gate_rejects_invalid_scores[True-candidate_macro_f1]" time="0.019"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_nlp_gate_rejects_invalid_scores[True-rules_macro_f1]" time="0.017" /><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_nlp_gate_rejects_invalid_scores[True-precision]" time="0.019"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_nlp_gate_rejects_invalid_scores[True-recall]" time="0.019"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_nlp_gate_rejects_invalid_scores[0.9-candidate_macro_f1]" time="0.019"><failure message="TypeError: '&lt;' not supported between instances of 'str' and 'float'">E   TypeError: '&lt;' not supported between instances of 'str' and 'float'</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_nlp_gate_rejects_invalid_scores[0.9-rules_macro_f1]" time="0.053"><failure message="TypeError: unsupported operand type(s) for -: 'float' and 'str'">E   TypeError: unsupported operand type(s) for -: 'float' and 'str'</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_nlp_gate_rejects_invalid_scores[0.9-precision]" time="0.019"><failure message="TypeError: '&lt;' not supported between instances of 'str' and 'float'">E   TypeError: '&lt;' not supported between instances of 'str' and 'float'</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_nlp_gate_rejects_invalid_scores[0.9-recall]" time="0.018"><failure message="TypeError: '&lt;' not supported between instances of 'str' and 'float'">E   TypeError: '&lt;' not supported between instances of 'str' and 'float'</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_temporal_gate_rejects_invalid_scores[precision-nan]" time="0.022"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_temporal_gate_rejects_invalid_scores[precision-inf]" time="0.021"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_temporal_gate_rejects_invalid_scores[precision--0.1]" time="0.019" /><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_temporal_gate_rejects_invalid_scores[precision-1.1]" time="0.024"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_temporal_gate_rejects_invalid_scores[precision-True]" time="0.019"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_temporal_gate_rejects_invalid_scores[recall-nan]" time="0.021"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_temporal_gate_rejects_invalid_scores[recall-inf]" time="0.020"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_temporal_gate_rejects_invalid_scores[recall--0.1]" time="0.023" /><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_temporal_gate_rejects_invalid_scores[recall-1.1]" time="0.022"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_temporal_gate_rejects_invalid_scores[recall-True]" time="0.023"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_invalid_evidence_counts_are_not_support[nan-asr_gate-passing_fixture-independent_groups]" time="0.023"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_invalid_evidence_counts_are_not_support[nan-nlp_gate-nlp_fixture-salience_positives]" time="0.022"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_invalid_evidence_counts_are_not_support[inf-asr_gate-passing_fixture-independent_groups]" time="0.024"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_invalid_evidence_counts_are_not_support[inf-nlp_gate-nlp_fixture-salience_positives]" time="0.020"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_invalid_evidence_counts_are_not_support[-1-asr_gate-passing_fixture-independent_groups]" time="0.019"><failure message="AssertionError: assert 'NEEDS_MORE_DATA' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + NEEDS_MORE_DATA">E   AssertionError: assert 'NEEDS_MORE_DATA' == 'FAIL'
+      
+      - FAIL
+      + NEEDS_MORE_DATA</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_invalid_evidence_counts_are_not_support[-1-nlp_gate-nlp_fixture-salience_positives]" time="0.019"><failure message="AssertionError: assert 'NEEDS_MORE_DATA' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + NEEDS_MORE_DATA">E   AssertionError: assert 'NEEDS_MORE_DATA' == 'FAIL'
+      
+      - FAIL
+      + NEEDS_MORE_DATA</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_invalid_evidence_counts_are_not_support[20.5-asr_gate-passing_fixture-independent_groups]" time="0.019"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_invalid_evidence_counts_are_not_support[20.5-nlp_gate-nlp_fixture-salience_positives]" time="0.019"><failure message="AssertionError: assert 'NEEDS_MORE_DATA' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + NEEDS_MORE_DATA">E   AssertionError: assert 'NEEDS_MORE_DATA' == 'FAIL'
+      
+      - FAIL
+      + NEEDS_MORE_DATA</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_invalid_evidence_counts_are_not_support[True-asr_gate-passing_fixture-independent_groups]" time="0.019"><failure message="AssertionError: assert 'NEEDS_MORE_DATA' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + NEEDS_MORE_DATA">E   AssertionError: assert 'NEEDS_MORE_DATA' == 'FAIL'
+      
+      - FAIL
+      + NEEDS_MORE_DATA</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_invalid_evidence_counts_are_not_support[True-nlp_gate-nlp_fixture-salience_positives]" time="0.019"><failure message="AssertionError: assert 'NEEDS_MORE_DATA' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + NEEDS_MORE_DATA">E   AssertionError: assert 'NEEDS_MORE_DATA' == 'FAIL'
+      
+      - FAIL
+      + NEEDS_MORE_DATA</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_wrong_or_corrupt_ci_protocol[change0]" time="0.019"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_wrong_or_corrupt_ci_protocol[change1]" time="0.018"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_wrong_or_corrupt_ci_protocol[change2]" time="0.018"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_wrong_or_corrupt_ci_protocol[change3]" time="0.017"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_wrong_or_corrupt_ci_protocol[change4]" time="0.020"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_wrong_or_corrupt_ci_protocol[change5]" time="0.017"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_wrong_or_corrupt_ci_protocol[change6]" time="0.018"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_wrong_or_corrupt_ci_protocol[change7]" time="0.020"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_asr_gate_rejects_wrong_or_corrupt_ci_protocol[change8]" time="0.020"><failure message="AssertionError: assert 'PASS' == 'FAIL'&#10;  &#10;  - FAIL&#10;  + PASS">E   AssertionError: assert 'PASS' == 'FAIL'
+      
+      - FAIL
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_missing_and_incomplete_ci_cannot_pass" time="0.022"><failure message="AssertionError: assert 'PASS' == 'INCONCLUSIVE'&#10;  &#10;  - INCONCLUSIVE&#10;  + PASS">E   AssertionError: assert 'PASS' == 'INCONCLUSIVE'
+      
+      - INCONCLUSIVE
+      + PASS</failure></testcase><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_valid_scores_and_wer_above_one_remain_legal" time="0.023" /><testcase classname="tests.unit.test_gate_numeric_integrity" name="test_missing_metrics_remain_missing_instead_of_zero" time="0.027"><failure message="TypeError: '&lt;' not supported between instances of 'NoneType' and 'float'">E   TypeError: '&lt;' not supported between instances of 'NoneType' and 'float'</failure></testcase></testsuite></testsuites>

@@ -1,0 +1,7 @@
+{
+  "reason": "Serialize NeMo config enums and import the frozen entry point by absolute path, avoiding the unrelated installed scripts package. No ASR outputs existed before this amendment.",
+  "runner_sha256": "51a1b71d5b9660d09f4116eae7d90d39a202ccf524fbd4a9ce9dd6640d4ae3ce",
+  "plan_sha256": "9de4a69dc93f01285d77e6494ddc3eed10b40de20d3557fc8f26f27e466c7282",
+  "decoding_changed": false,
+  "preflight_prediction_count": 0
+}

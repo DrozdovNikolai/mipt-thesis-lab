@@ -1,0 +1,1089 @@
+{
+  "$defs": {
+    "Acceptance_asr_quality_gate": {
+      "additionalProperties": false,
+      "properties": {
+        "minimum_evidence": {
+          "$ref": "#/$defs/Acceptance_asr_quality_gate_minimum_evidence"
+        },
+        "primary_metric": {
+          "const": "wer_lexical_corpus",
+          "title": "Primary Metric",
+          "type": "string"
+        },
+        "normalizer": {
+          "const": "lexical_normalizer_v1",
+          "title": "Normalizer",
+          "type": "string"
+        },
+        "minimum_relative_wer_reduction": {
+          "const": 0.1,
+          "title": "Minimum Relative Wer Reduction",
+          "type": "number"
+        },
+        "relative_wer_reduction_formula": {
+          "const": "(baseline - candidate) / baseline",
+          "title": "Relative Wer Reduction Formula",
+          "type": "string"
+        },
+        "baseline_zero_wer_status": {
+          "const": "INCONCLUSIVE",
+          "title": "Baseline Zero Wer Status",
+          "type": "string"
+        },
+        "uncertainty": {
+          "$ref": "#/$defs/Acceptance_asr_quality_gate_uncertainty"
+        },
+        "guardrails": {
+          "$ref": "#/$defs/Acceptance_asr_quality_gate_guardrails"
+        },
+        "evaluation_includes_all_frozen_samples": {
+          "const": true,
+          "title": "Evaluation Includes All Frozen Samples",
+          "type": "boolean"
+        },
+        "failures_count_as_empty_hypotheses_and_operational_failures": {
+          "const": true,
+          "title": "Failures Count As Empty Hypotheses And Operational Failures",
+          "type": "boolean"
+        },
+        "missing_required_evidence_status": {
+          "const": "NEEDS_MORE_DATA",
+          "title": "Missing Required Evidence Status",
+          "type": "string"
+        },
+        "point_target_not_met_status": {
+          "const": "FAIL",
+          "title": "Point Target Not Met Status",
+          "type": "string"
+        },
+        "target_met_but_ci_not_confirmed_status": {
+          "const": "INCONCLUSIVE",
+          "title": "Target Met But Ci Not Confirmed Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "minimum_evidence",
+        "primary_metric",
+        "normalizer",
+        "minimum_relative_wer_reduction",
+        "relative_wer_reduction_formula",
+        "baseline_zero_wer_status",
+        "uncertainty",
+        "guardrails",
+        "evaluation_includes_all_frozen_samples",
+        "failures_count_as_empty_hypotheses_and_operational_failures",
+        "missing_required_evidence_status",
+        "point_target_not_met_status",
+        "target_met_but_ci_not_confirmed_status"
+      ],
+      "title": "Acceptance_asr_quality_gate",
+      "type": "object"
+    },
+    "Acceptance_asr_quality_gate_guardrails": {
+      "additionalProperties": false,
+      "properties": {
+        "minimum_critical_entity_f1_delta": {
+          "const": 0.0,
+          "title": "Minimum Critical Entity F1 Delta",
+          "type": "number"
+        },
+        "maximum_critical_entity_error_rate_delta": {
+          "const": 0.0,
+          "title": "Maximum Critical Entity Error Rate Delta",
+          "type": "number"
+        },
+        "maximum_clean_wer_absolute_increase": {
+          "const": 0.01,
+          "title": "Maximum Clean Wer Absolute Increase",
+          "type": "number"
+        },
+        "maximum_validated_language_wer_absolute_increase": {
+          "const": 0.01,
+          "title": "Maximum Validated Language Wer Absolute Increase",
+          "type": "number"
+        },
+        "maximum_non_speech_inserted_words_per_minute_delta": {
+          "const": 0.0,
+          "title": "Maximum Non Speech Inserted Words Per Minute Delta",
+          "type": "number"
+        },
+        "maximum_unhandled_runtime_failures": {
+          "const": 0,
+          "title": "Maximum Unhandled Runtime Failures",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "minimum_critical_entity_f1_delta",
+        "maximum_critical_entity_error_rate_delta",
+        "maximum_clean_wer_absolute_increase",
+        "maximum_validated_language_wer_absolute_increase",
+        "maximum_non_speech_inserted_words_per_minute_delta",
+        "maximum_unhandled_runtime_failures"
+      ],
+      "title": "Acceptance_asr_quality_gate_guardrails",
+      "type": "object"
+    },
+    "Acceptance_asr_quality_gate_minimum_evidence": {
+      "additionalProperties": false,
+      "properties": {
+        "independent_groups": {
+          "const": 20,
+          "title": "Independent Groups",
+          "type": "integer"
+        },
+        "distinct_original_human_utterances": {
+          "const": 300,
+          "title": "Distinct Original Human Utterances",
+          "type": "integer"
+        },
+        "reference_words": {
+          "const": 3000,
+          "title": "Reference Words",
+          "type": "integer"
+        },
+        "human_verified_critical_entity_occurrences": {
+          "const": 100,
+          "title": "Human Verified Critical Entity Occurrences",
+          "type": "integer"
+        },
+        "clean_control_utterances": {
+          "const": 50,
+          "title": "Clean Control Utterances",
+          "type": "integer"
+        },
+        "non_speech_control_minutes": {
+          "const": 5,
+          "title": "Non Speech Control Minutes",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "independent_groups",
+        "distinct_original_human_utterances",
+        "reference_words",
+        "human_verified_critical_entity_occurrences",
+        "clean_control_utterances",
+        "non_speech_control_minutes"
+      ],
+      "title": "Acceptance_asr_quality_gate_minimum_evidence",
+      "type": "object"
+    },
+    "Acceptance_asr_quality_gate_uncertainty": {
+      "additionalProperties": false,
+      "properties": {
+        "method": {
+          "const": "paired_cluster_bootstrap",
+          "title": "Method",
+          "type": "string"
+        },
+        "cluster": {
+          "const": "frozen_group_id",
+          "title": "Cluster",
+          "type": "string"
+        },
+        "resamples": {
+          "const": 2000,
+          "title": "Resamples",
+          "type": "integer"
+        },
+        "seed": {
+          "const": 55,
+          "title": "Seed",
+          "type": "integer"
+        },
+        "confidence_level": {
+          "const": 0.95,
+          "title": "Confidence Level",
+          "type": "number"
+        },
+        "interval": {
+          "const": "percentile",
+          "title": "Interval",
+          "type": "string"
+        },
+        "delta_definition": {
+          "const": "candidate - baseline",
+          "title": "Delta Definition",
+          "type": "string"
+        },
+        "required_delta_ci_upper_strictly_less_than": {
+          "const": 0.0,
+          "title": "Required Delta Ci Upper Strictly Less Than",
+          "type": "number"
+        }
+      },
+      "required": [
+        "method",
+        "cluster",
+        "resamples",
+        "seed",
+        "confidence_level",
+        "interval",
+        "delta_definition",
+        "required_delta_ci_upper_strictly_less_than"
+      ],
+      "title": "Acceptance_asr_quality_gate_uncertainty",
+      "type": "object"
+    },
+    "Acceptance_baseline": {
+      "additionalProperties": false,
+      "properties": {
+        "backend": {
+          "const": "faster_whisper",
+          "title": "Backend",
+          "type": "string"
+        },
+        "task": {
+          "const": "transcribe",
+          "title": "Task",
+          "type": "string"
+        },
+        "beam_size": {
+          "const": 5,
+          "title": "Beam Size",
+          "type": "integer"
+        },
+        "temperature": {
+          "const": 0.0,
+          "title": "Temperature",
+          "type": "number"
+        },
+        "domain_hints": {
+          "const": false,
+          "title": "Domain Hints",
+          "type": "boolean"
+        },
+        "denoise": {
+          "const": false,
+          "title": "Denoise",
+          "type": "boolean"
+        },
+        "external_vad": {
+          "const": false,
+          "title": "External Vad",
+          "type": "boolean"
+        },
+        "checkpoint_must_match_candidate": {
+          "const": true,
+          "title": "Checkpoint Must Match Candidate",
+          "type": "boolean"
+        },
+        "precision_must_match_candidate": {
+          "const": true,
+          "title": "Precision Must Match Candidate",
+          "type": "boolean"
+        },
+        "require_explicit_effective_parameters": {
+          "const": true,
+          "title": "Require Explicit Effective Parameters",
+          "type": "boolean"
+        },
+        "common_audio_preparation_must_match": {
+          "const": true,
+          "title": "Common Audio Preparation Must Match",
+          "type": "boolean"
+        },
+        "input_language_information_must_match": {
+          "const": true,
+          "title": "Input Language Information Must Match",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "backend",
+        "task",
+        "beam_size",
+        "temperature",
+        "domain_hints",
+        "denoise",
+        "external_vad",
+        "checkpoint_must_match_candidate",
+        "precision_must_match_candidate",
+        "require_explicit_effective_parameters",
+        "common_audio_preparation_must_match",
+        "input_language_information_must_match"
+      ],
+      "title": "Acceptance_baseline",
+      "type": "object"
+    },
+    "Acceptance_engineering_gate": {
+      "additionalProperties": false,
+      "properties": {
+        "require_valid_cpu_compose": {
+          "const": true,
+          "title": "Require Valid Cpu Compose",
+          "type": "boolean"
+        },
+        "require_gpu_override_config_validation": {
+          "const": true,
+          "title": "Require Gpu Override Config Validation",
+          "type": "boolean"
+        },
+        "require_cpu_integration_execution": {
+          "const": true,
+          "title": "Require Cpu Integration Execution",
+          "type": "boolean"
+        },
+        "require_real_asr_smoke_execution": {
+          "const": true,
+          "title": "Require Real Asr Smoke Execution",
+          "type": "boolean"
+        },
+        "require_migrations_and_queue_recovery_tests": {
+          "const": true,
+          "title": "Require Migrations And Queue Recovery Tests",
+          "type": "boolean"
+        },
+        "require_review_audit_and_original_audio_preservation": {
+          "const": true,
+          "title": "Require Review Audit And Original Audio Preservation",
+          "type": "boolean"
+        },
+        "require_privacy_and_unsafe_correction_tests": {
+          "const": true,
+          "title": "Require Privacy And Unsafe Correction Tests",
+          "type": "boolean"
+        },
+        "require_offline_inference_after_prefetch": {
+          "const": true,
+          "title": "Require Offline Inference After Prefetch",
+          "type": "boolean"
+        },
+        "optional_gpu_and_pyannote_execution_must_report_actual_status": {
+          "const": true,
+          "title": "Optional Gpu And Pyannote Execution Must Report Actual Status",
+          "type": "boolean"
+        },
+        "skipped_is_not_passed": {
+          "const": true,
+          "title": "Skipped Is Not Passed",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "require_valid_cpu_compose",
+        "require_gpu_override_config_validation",
+        "require_cpu_integration_execution",
+        "require_real_asr_smoke_execution",
+        "require_migrations_and_queue_recovery_tests",
+        "require_review_audit_and_original_audio_preservation",
+        "require_privacy_and_unsafe_correction_tests",
+        "require_offline_inference_after_prefetch",
+        "optional_gpu_and_pyannote_execution_must_report_actual_status",
+        "skipped_is_not_passed"
+      ],
+      "title": "Acceptance_engineering_gate",
+      "type": "object"
+    },
+    "Acceptance_integrity": {
+      "additionalProperties": false,
+      "properties": {
+        "require_audio_checksums": {
+          "const": true,
+          "title": "Require Audio Checksums",
+          "type": "boolean"
+        },
+        "require_license_and_provenance": {
+          "const": true,
+          "title": "Require License And Provenance",
+          "type": "boolean"
+        },
+        "require_human_verified_test_transcripts": {
+          "const": true,
+          "title": "Require Human Verified Test Transcripts",
+          "type": "boolean"
+        },
+        "require_human_verified_critical_entities": {
+          "const": true,
+          "title": "Require Human Verified Critical Entities",
+          "type": "boolean"
+        },
+        "require_human_verified_event_labels_for_nlp_gate": {
+          "const": true,
+          "title": "Require Human Verified Event Labels For Nlp Gate",
+          "type": "boolean"
+        },
+        "require_frozen_baseline": {
+          "const": true,
+          "title": "Require Frozen Baseline",
+          "type": "boolean"
+        },
+        "require_frozen_selection": {
+          "const": true,
+          "title": "Require Frozen Selection",
+          "type": "boolean"
+        },
+        "require_frozen_scorer": {
+          "const": true,
+          "title": "Require Frozen Scorer",
+          "type": "boolean"
+        },
+        "require_acceptance_hash_in_run": {
+          "const": true,
+          "title": "Require Acceptance Hash In Run",
+          "type": "boolean"
+        },
+        "require_same_checkpoint_and_precision_for_pipeline_comparison": {
+          "const": true,
+          "title": "Require Same Checkpoint And Precision For Pipeline Comparison",
+          "type": "boolean"
+        },
+        "forbid_test_reference_access_by_inference": {
+          "const": true,
+          "title": "Forbid Test Reference Access By Inference",
+          "type": "boolean"
+        },
+        "forbid_test_access_by_training_or_dev_search": {
+          "const": true,
+          "title": "Forbid Test Access By Training Or Dev Search",
+          "type": "boolean"
+        },
+        "forbid_sample_specific_gold_prompts": {
+          "const": true,
+          "title": "Forbid Sample Specific Gold Prompts",
+          "type": "boolean"
+        },
+        "forbid_runtime_failure_exclusion": {
+          "const": true,
+          "title": "Forbid Runtime Failure Exclusion",
+          "type": "boolean"
+        },
+        "forbid_needs_review_exclusion": {
+          "const": true,
+          "title": "Forbid Needs Review Exclusion",
+          "type": "boolean"
+        },
+        "forbid_silent_value_correction": {
+          "const": true,
+          "title": "Forbid Silent Value Correction",
+          "type": "boolean"
+        },
+        "forbid_role_inference_from_voice_only": {
+          "const": true,
+          "title": "Forbid Role Inference From Voice Only",
+          "type": "boolean"
+        },
+        "forbid_telemetry_claims_from_speech_only": {
+          "const": true,
+          "title": "Forbid Telemetry Claims From Speech Only",
+          "type": "boolean"
+        },
+        "required_group_constraints": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Required Group Constraints",
+          "type": "array"
+        },
+        "check_decoded_audio_duplicates": {
+          "const": true,
+          "title": "Check Decoded Audio Duplicates",
+          "type": "boolean"
+        },
+        "report_script_overlap": {
+          "const": true,
+          "title": "Report Script Overlap",
+          "type": "boolean"
+        },
+        "unknown_speaker_ids_limit_claim": {
+          "const": true,
+          "title": "Unknown Speaker Ids Limit Claim",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "require_audio_checksums",
+        "require_license_and_provenance",
+        "require_human_verified_test_transcripts",
+        "require_human_verified_critical_entities",
+        "require_human_verified_event_labels_for_nlp_gate",
+        "require_frozen_baseline",
+        "require_frozen_selection",
+        "require_frozen_scorer",
+        "require_acceptance_hash_in_run",
+        "require_same_checkpoint_and_precision_for_pipeline_comparison",
+        "forbid_test_reference_access_by_inference",
+        "forbid_test_access_by_training_or_dev_search",
+        "forbid_sample_specific_gold_prompts",
+        "forbid_runtime_failure_exclusion",
+        "forbid_needs_review_exclusion",
+        "forbid_silent_value_correction",
+        "forbid_role_inference_from_voice_only",
+        "forbid_telemetry_claims_from_speech_only",
+        "required_group_constraints",
+        "check_decoded_audio_duplicates",
+        "report_script_overlap",
+        "unknown_speaker_ids_limit_claim"
+      ],
+      "title": "Acceptance_integrity",
+      "type": "object"
+    },
+    "Acceptance_nlp_quality_gate": {
+      "additionalProperties": false,
+      "properties": {
+        "claimed_labels": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Claimed Labels",
+          "type": "array"
+        },
+        "additional_schema_labels": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Additional Schema Labels",
+          "type": "array"
+        },
+        "minimum_evidence": {
+          "$ref": "#/$defs/Acceptance_nlp_quality_gate_minimum_evidence"
+        },
+        "text_level_comparison": {
+          "$ref": "#/$defs/Acceptance_nlp_quality_gate_text_level_comparison"
+        },
+        "end_to_end_salience": {
+          "$ref": "#/$defs/Acceptance_nlp_quality_gate_end_to_end_salience"
+        },
+        "require_separate_nlp_only_and_end_to_end_reports": {
+          "const": true,
+          "title": "Require Separate Nlp Only And End To End Reports",
+          "type": "boolean"
+        },
+        "weak_or_synthetic_test_labels_allowed": {
+          "const": false,
+          "title": "Weak Or Synthetic Test Labels Allowed",
+          "type": "boolean"
+        },
+        "absent_class_support_status": {
+          "const": "NEEDS_MORE_DATA",
+          "title": "Absent Class Support Status",
+          "type": "string"
+        },
+        "missing_event_annotation_status": {
+          "const": "NEEDS_MORE_DATA",
+          "title": "Missing Event Annotation Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "claimed_labels",
+        "additional_schema_labels",
+        "minimum_evidence",
+        "text_level_comparison",
+        "end_to_end_salience",
+        "require_separate_nlp_only_and_end_to_end_reports",
+        "weak_or_synthetic_test_labels_allowed",
+        "absent_class_support_status",
+        "missing_event_annotation_status"
+      ],
+      "title": "Acceptance_nlp_quality_gate",
+      "type": "object"
+    },
+    "Acceptance_nlp_quality_gate_end_to_end_salience": {
+      "additionalProperties": false,
+      "properties": {
+        "input": {
+          "const": "candidate_asr_predictions",
+          "title": "Input",
+          "type": "string"
+        },
+        "minimum_precision": {
+          "const": 0.8,
+          "title": "Minimum Precision",
+          "type": "number"
+        },
+        "minimum_recall": {
+          "const": 0.85,
+          "title": "Minimum Recall",
+          "type": "number"
+        },
+        "unknown_predictions_are_not_true_negatives": {
+          "const": true,
+          "title": "Unknown Predictions Are Not True Negatives",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "input",
+        "minimum_precision",
+        "minimum_recall",
+        "unknown_predictions_are_not_true_negatives"
+      ],
+      "title": "Acceptance_nlp_quality_gate_end_to_end_salience",
+      "type": "object"
+    },
+    "Acceptance_nlp_quality_gate_minimum_evidence": {
+      "additionalProperties": false,
+      "properties": {
+        "independent_groups": {
+          "const": 20,
+          "title": "Independent Groups",
+          "type": "integer"
+        },
+        "human_verified_episodes_or_utterances": {
+          "const": 300,
+          "title": "Human Verified Episodes Or Utterances",
+          "type": "integer"
+        },
+        "positives_per_claimed_label": {
+          "const": 30,
+          "title": "Positives Per Claimed Label",
+          "type": "integer"
+        },
+        "salience_positives": {
+          "const": 50,
+          "title": "Salience Positives",
+          "type": "integer"
+        },
+        "salience_negatives": {
+          "const": 50,
+          "title": "Salience Negatives",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "independent_groups",
+        "human_verified_episodes_or_utterances",
+        "positives_per_claimed_label",
+        "salience_positives",
+        "salience_negatives"
+      ],
+      "title": "Acceptance_nlp_quality_gate_minimum_evidence",
+      "type": "object"
+    },
+    "Acceptance_nlp_quality_gate_text_level_comparison": {
+      "additionalProperties": false,
+      "properties": {
+        "input": {
+          "const": "same_human_verified_transcripts",
+          "title": "Input",
+          "type": "string"
+        },
+        "baseline": {
+          "const": "rules_v1",
+          "title": "Baseline",
+          "type": "string"
+        },
+        "candidate": {
+          "const": "trained_event_classifier",
+          "title": "Candidate",
+          "type": "string"
+        },
+        "minimum_macro_f1": {
+          "const": 0.8,
+          "title": "Minimum Macro F1",
+          "type": "number"
+        },
+        "minimum_macro_f1_absolute_gain": {
+          "const": 0.03,
+          "title": "Minimum Macro F1 Absolute Gain",
+          "type": "number"
+        }
+      },
+      "required": [
+        "input",
+        "baseline",
+        "candidate",
+        "minimum_macro_f1",
+        "minimum_macro_f1_absolute_gain"
+      ],
+      "title": "Acceptance_nlp_quality_gate_text_level_comparison",
+      "type": "object"
+    },
+    "Acceptance_promotion": {
+      "additionalProperties": false,
+      "properties": {
+        "automatic_promotion_without_explicit_command": {
+          "const": false,
+          "title": "Automatic Promotion Without Explicit Command",
+          "type": "boolean"
+        },
+        "require_matching_code_data_config_model_and_scorer_hashes": {
+          "const": true,
+          "title": "Require Matching Code Data Config Model And Scorer Hashes",
+          "type": "boolean"
+        },
+        "release_scope_requires": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Release Scope Requires",
+          "type": "array"
+        },
+        "temporal_detection_claim_requires": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Temporal Detection Claim Requires",
+          "type": "array"
+        },
+        "until_pass": {
+          "const": "baseline_or_explicitly_marked_research_preview",
+          "title": "Until Pass",
+          "type": "string"
+        },
+        "partial_scope_claims_must_be_explicit": {
+          "const": true,
+          "title": "Partial Scope Claims Must Be Explicit",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "automatic_promotion_without_explicit_command",
+        "require_matching_code_data_config_model_and_scorer_hashes",
+        "release_scope_requires",
+        "temporal_detection_claim_requires",
+        "until_pass",
+        "partial_scope_claims_must_be_explicit"
+      ],
+      "title": "Acceptance_promotion",
+      "type": "object"
+    },
+    "Acceptance_reporting": {
+      "additionalProperties": false,
+      "properties": {
+        "include_raw_per_sample_predictions": {
+          "const": true,
+          "title": "Include Raw Per Sample Predictions",
+          "type": "boolean"
+        },
+        "include_raw_edit_counts": {
+          "const": true,
+          "title": "Include Raw Edit Counts",
+          "type": "boolean"
+        },
+        "include_all_dev_trials": {
+          "const": true,
+          "title": "Include All Dev Trials",
+          "type": "boolean"
+        },
+        "include_negative_and_inconclusive_results": {
+          "const": true,
+          "title": "Include Negative And Inconclusive Results",
+          "type": "boolean"
+        },
+        "include_per_language_condition_and_label_support": {
+          "const": true,
+          "title": "Include Per Language Condition And Label Support",
+          "type": "boolean"
+        },
+        "include_real_hardware_and_effective_config": {
+          "const": true,
+          "title": "Include Real Hardware And Effective Config",
+          "type": "boolean"
+        },
+        "include_implementation_execution_and_verification_separately": {
+          "const": true,
+          "title": "Include Implementation Execution And Verification Separately",
+          "type": "boolean"
+        },
+        "fabricated_or_demo_metrics_in_benchmark_report": {
+          "const": "forbidden",
+          "title": "Fabricated Or Demo Metrics In Benchmark Report",
+          "type": "string"
+        }
+      },
+      "required": [
+        "include_raw_per_sample_predictions",
+        "include_raw_edit_counts",
+        "include_all_dev_trials",
+        "include_negative_and_inconclusive_results",
+        "include_per_language_condition_and_label_support",
+        "include_real_hardware_and_effective_config",
+        "include_implementation_execution_and_verification_separately",
+        "fabricated_or_demo_metrics_in_benchmark_report"
+      ],
+      "title": "Acceptance_reporting",
+      "type": "object"
+    },
+    "Acceptance_scope": {
+      "additionalProperties": false,
+      "properties": {
+        "task": {
+          "const": "cockpit_simulator_crew_speech",
+          "title": "Task",
+          "type": "string"
+        },
+        "primary_language_scope": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Primary Language Scope",
+          "type": "array"
+        },
+        "supported_input_modes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Supported Input Modes",
+          "type": "array"
+        },
+        "report_unvalidated_languages": {
+          "const": true,
+          "title": "Report Unvalidated Languages",
+          "type": "boolean"
+        },
+        "permitted_primary_scopes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Permitted Primary Scopes",
+          "type": "array"
+        },
+        "forbidden_primary_scopes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Forbidden Primary Scopes",
+          "type": "array"
+        },
+        "permitted_primary_speech_origin": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Permitted Primary Speech Origin",
+          "type": "array"
+        },
+        "report_original_and_augmented_conditions_separately": {
+          "const": true,
+          "title": "Report Original And Augmented Conditions Separately",
+          "type": "boolean"
+        },
+        "no_generalization_claim_from_read_to_spontaneous_speech": {
+          "const": true,
+          "title": "No Generalization Claim From Read To Spontaneous Speech",
+          "type": "boolean"
+        },
+        "no_generalization_claim_from_synthetic_noise_to_real_flight": {
+          "const": true,
+          "title": "No Generalization Claim From Synthetic Noise To Real Flight",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "task",
+        "primary_language_scope",
+        "supported_input_modes",
+        "report_unvalidated_languages",
+        "permitted_primary_scopes",
+        "forbidden_primary_scopes",
+        "permitted_primary_speech_origin",
+        "report_original_and_augmented_conditions_separately",
+        "no_generalization_claim_from_read_to_spontaneous_speech",
+        "no_generalization_claim_from_synthetic_noise_to_real_flight"
+      ],
+      "title": "Acceptance_scope",
+      "type": "object"
+    },
+    "Acceptance_search": {
+      "additionalProperties": false,
+      "properties": {
+        "dataset_partition": {
+          "const": "dev",
+          "title": "Dataset Partition",
+          "type": "string"
+        },
+        "max_configurations": {
+          "const": 16,
+          "title": "Max Configurations",
+          "type": "integer"
+        },
+        "max_additional_asr_passes_per_segment": {
+          "const": 1,
+          "title": "Max Additional Asr Passes Per Segment",
+          "type": "integer"
+        },
+        "keep_all_trials": {
+          "const": true,
+          "title": "Keep All Trials",
+          "type": "boolean"
+        },
+        "test_based_candidate_selection": {
+          "const": false,
+          "title": "Test Based Candidate Selection",
+          "type": "boolean"
+        },
+        "tie_break_order": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Tie Break Order",
+          "type": "array"
+        },
+        "stop_on_budget_exhaustion_with_honest_status": {
+          "const": true,
+          "title": "Stop On Budget Exhaustion With Honest Status",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "dataset_partition",
+        "max_configurations",
+        "max_additional_asr_passes_per_segment",
+        "keep_all_trials",
+        "test_based_candidate_selection",
+        "tie_break_order",
+        "stop_on_budget_exhaustion_with_honest_status"
+      ],
+      "title": "Acceptance_search",
+      "type": "object"
+    },
+    "Acceptance_temporal_event_gate": {
+      "additionalProperties": false,
+      "properties": {
+        "require_human_verified_time_intervals": {
+          "const": true,
+          "title": "Require Human Verified Time Intervals",
+          "type": "boolean"
+        },
+        "require_continuous_recordings_not_only_pregrouped_utterances": {
+          "const": true,
+          "title": "Require Continuous Recordings Not Only Pregrouped Utterances",
+          "type": "boolean"
+        },
+        "matching": {
+          "const": "one_to_one_class_compatible_maximum_matching",
+          "title": "Matching",
+          "type": "string"
+        },
+        "minimum_temporal_iou": {
+          "const": 0.5,
+          "title": "Minimum Temporal Iou",
+          "type": "number"
+        },
+        "duplicate_predictions_are_false_positives": {
+          "const": true,
+          "title": "Duplicate Predictions Are False Positives",
+          "type": "boolean"
+        },
+        "minimum_salient_event_precision": {
+          "const": 0.8,
+          "title": "Minimum Salient Event Precision",
+          "type": "number"
+        },
+        "minimum_salient_event_recall": {
+          "const": 0.85,
+          "title": "Minimum Salient Event Recall",
+          "type": "number"
+        },
+        "report_false_positives_per_audio_hour": {
+          "const": true,
+          "title": "Report False Positives Per Audio Hour",
+          "type": "boolean"
+        },
+        "missing_temporal_annotation_status": {
+          "const": "NEEDS_MORE_DATA",
+          "title": "Missing Temporal Annotation Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "require_human_verified_time_intervals",
+        "require_continuous_recordings_not_only_pregrouped_utterances",
+        "matching",
+        "minimum_temporal_iou",
+        "duplicate_predictions_are_false_positives",
+        "minimum_salient_event_precision",
+        "minimum_salient_event_recall",
+        "report_false_positives_per_audio_hour",
+        "missing_temporal_annotation_status"
+      ],
+      "title": "Acceptance_temporal_event_gate",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "project": {
+      "const": "north55_speech",
+      "title": "Project",
+      "type": "string"
+    },
+    "created_at": {
+      "const": "2026-09-13",
+      "title": "Created At",
+      "type": "string"
+    },
+    "protocol_id": {
+      "const": "cockpit_quality_v1",
+      "title": "Protocol Id",
+      "type": "string"
+    },
+    "freeze_before_final_test": {
+      "const": true,
+      "title": "Freeze Before Final Test",
+      "type": "boolean"
+    },
+    "allow_post_test_threshold_relaxation": {
+      "const": false,
+      "title": "Allow Post Test Threshold Relaxation",
+      "type": "boolean"
+    },
+    "statuses": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Statuses",
+      "type": "array"
+    },
+    "scope": {
+      "$ref": "#/$defs/Acceptance_scope"
+    },
+    "integrity": {
+      "$ref": "#/$defs/Acceptance_integrity"
+    },
+    "baseline": {
+      "$ref": "#/$defs/Acceptance_baseline"
+    },
+    "search": {
+      "$ref": "#/$defs/Acceptance_search"
+    },
+    "asr_quality_gate": {
+      "$ref": "#/$defs/Acceptance_asr_quality_gate"
+    },
+    "nlp_quality_gate": {
+      "$ref": "#/$defs/Acceptance_nlp_quality_gate"
+    },
+    "temporal_event_gate": {
+      "$ref": "#/$defs/Acceptance_temporal_event_gate"
+    },
+    "engineering_gate": {
+      "$ref": "#/$defs/Acceptance_engineering_gate"
+    },
+    "promotion": {
+      "$ref": "#/$defs/Acceptance_promotion"
+    },
+    "reporting": {
+      "$ref": "#/$defs/Acceptance_reporting"
+    }
+  },
+  "required": [
+    "schema_version",
+    "project",
+    "created_at",
+    "protocol_id",
+    "freeze_before_final_test",
+    "allow_post_test_threshold_relaxation",
+    "statuses",
+    "scope",
+    "integrity",
+    "baseline",
+    "search",
+    "asr_quality_gate",
+    "nlp_quality_gate",
+    "temporal_event_gate",
+    "engineering_gate",
+    "promotion",
+    "reporting"
+  ],
+  "title": "Acceptance",
+  "type": "object"
+}

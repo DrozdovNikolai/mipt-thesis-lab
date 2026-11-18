@@ -1,0 +1,14 @@
+{
+  "plan_sha256": "0c28ce0c765699f26414c8ea3ffed62eb475b4c84ce7c60f06d7cb9081dee908",
+  "step": 1,
+  "records": 2,
+  "runtime_failures": [],
+  "prediction_sha256": {
+    "nus-clip01_0002.json": "32a1f663b636dd1854250c0750bc2cc85dfc7d7488727adfaea69cbec9b5cdfc",
+    "fleurs-ru-1651.json": "8059f21aaa692e805f0067eb7eeab3dd0def4d380675f45a71b482cffae992c6"
+  },
+  "actual_device": "cpu",
+  "actual_precision": "int8_float32",
+  "new_ASR_calls": 2,
+  "resumed": 0
+}

@@ -1,0 +1,58 @@
+name: north55-cockpit-noise-router-v9
+x-common: &common
+  image: north55-speech-train:publisher-v2
+  network_mode: none
+  entrypoint: [python, -u, -m, scripts.cockpit_noise_router_v9]
+  working_dir: /app
+  environment:
+    PYTHONPATH: /app:/app/src
+    OMP_NUM_THREADS: '4'
+    OPENBLAS_NUM_THREADS: '4'
+services:
+  prepare:
+    <<: *common
+    command: [prepare]
+    user: '0:0'
+    volumes:
+      - .:/app:ro
+      - ./reports/cockpit-noise-router-v9:/study
+  train:
+    <<: *common
+    command: [train]
+    volumes:
+      - ./reports/cockpit-noise-router-v9/frozen:/app:ro
+      - ./reports/cockpit-noise-router-v9/plan.json:/study/plan.json:ro
+      - ./reports/cockpit-noise-router-v9/train-inputs.json:/study/train-inputs.json:ro
+      - ./reports/cockpit-noise-router-v9/io-train:/output
+      - audio:/audio:ro
+  infer:
+    <<: *common
+    command: [infer]
+    volumes:
+      - ./reports/cockpit-noise-router-v9/frozen:/app:ro
+      - ./reports/cockpit-noise-router-v9/plan.json:/study/plan.json:ro
+      - ./reports/cockpit-noise-router-v9/inputs.json:/study/inputs.json:ro
+      - ./reports/cockpit-noise-router-v9/io-train:/trained:ro
+      - ./reports/cockpit-noise-router-v9/io-infer:/output
+      - cross:/cross:ro
+  score:
+    <<: *common
+    command: [score]
+    volumes:
+      - ./reports/cockpit-noise-router-v9/frozen:/app:ro
+      - ./reports/cockpit-noise-router-v9:/study
+  checks:
+    <<: *common
+    command: [verify]
+    volumes:
+      - ./reports/cockpit-noise-router-v9/frozen:/app:ro
+      - ./reports/cockpit-noise-router-v9:/study
+      - audio:/audio:ro
+      - cross:/cross:ro
+volumes:
+  audio:
+    external: true
+    name: north55-speech_audio_data
+  cross:
+    external: true
+    name: north55-speech_cockpit_cross_asr_v6

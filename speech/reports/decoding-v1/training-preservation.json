@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "checks": {
+    "control_train_sha256": true,
+    "control_dev_sha256": true,
+    "augmented_train_sha256": true,
+    "augmented_dev_sha256": true
+  }
+}

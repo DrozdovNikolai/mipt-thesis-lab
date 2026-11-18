@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "runtime_sha256": "776b3cf5bda17f43de7c5254e5ccc3413808689d4ea9f1b580e38bae20d82431",
+  "output_sha256": "8f2a6cff11eff199233c802bfe022993265c2329ebac8cf908d75b23dd263088",
+  "new_GPU_ASR_calls": 14,
+  "cases": [
+    {
+      "file": "clean.wav",
+      "same_final_text_and_edits": true,
+      "fresh_canary_tokens_checked": true
+    },
+    {
+      "file": "noisy.wav",
+      "same_final_text_and_edits": true,
+      "fresh_canary_tokens_checked": false
+    },
+    {
+      "file": "empty.wav",
+      "same_final_text_and_edits": true,
+      "fresh_canary_tokens_checked": false
+    },
+    {
+      "file": "quiet.wav",
+      "same_final_text_and_edits": true,
+      "fresh_canary_tokens_checked": true
+    },
+    {
+      "file": "empty-decoder-speech.wav",
+      "same_final_text_and_edits": true,
+      "fresh_canary_tokens_checked": true
+    },
+    {
+      "file": "consensus-edit.wav",
+      "same_final_text_and_edits": true,
+      "fresh_canary_tokens_checked": true
+    }
+  ],
+  "historical_parakeet_difference": "See v10 local verification; all English inputs receive a separate batch-one audit",
+  "independent_accuracy_evidence": false
+}

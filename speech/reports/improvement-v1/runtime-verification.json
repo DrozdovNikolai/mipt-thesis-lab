@@ -1,0 +1,22 @@
+[
+  {
+    "language": "en",
+    "selected_model": "whisper-small-publisher-base-ct2",
+    "same_normalized_whitespace_text": true,
+    "segments": 3,
+    "events": 2,
+    "recipe_sha256": "4b3be64a94645dc947f1777a0801e04f38b006f499fb4a06e30ce2dd07b1eb57",
+    "result_sha256": "5f16b31c113631a925deb56a966bb2c3b11692c3a5e7040d5ce5b06d53ab29d0",
+    "result_path": "C:\\DEV\\MIPT\\Diploma\\Speech\\reports\\local-transcriptions\\improvement-v1-smoke\\88db31de64ee41adb50a257f65e9b594\\result.json"
+  },
+  {
+    "language": "ru",
+    "selected_model": "whisper-large-v3-systran-ct2",
+    "same_normalized_whitespace_text": true,
+    "segments": 2,
+    "events": 1,
+    "recipe_sha256": "4b3be64a94645dc947f1777a0801e04f38b006f499fb4a06e30ce2dd07b1eb57",
+    "result_sha256": "9911f678a48357ef11e7793be2d0162fc270af25baa3939723dcbce4806c01f0",
+    "result_path": "C:\\DEV\\MIPT\\Diploma\\Speech\\reports\\local-transcriptions\\improvement-v1-smoke\\c227c61d09a54e14b2b2cc4fb14d43cc\\result.json"
+  }
+]

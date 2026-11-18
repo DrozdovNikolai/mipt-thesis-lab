@@ -1,0 +1,68 @@
+{
+  "ruff_mypy": {
+    "command": [
+      "docker",
+      "run",
+      "--rm",
+      "--network",
+      "none",
+      "--entrypoint",
+      "sh",
+      "-v",
+      "C:\\DEV\\MIPT\\Diploma\\Speech\\src:/app/src:ro",
+      "-v",
+      "C:\\DEV\\MIPT\\Diploma\\Speech\\scripts:/app/scripts:ro",
+      "north55-speech-train:publisher-v1",
+      "-c",
+      "ruff check src tests && mypy src/north55_speech"
+    ],
+    "exit_code": 0
+  },
+  "compose": {
+    "command": [
+      "docker",
+      "compose",
+      "-f",
+      "compose.yaml",
+      "-f",
+      "compose.gpu.yaml",
+      "-f",
+      "compose.publisher-training.yaml",
+      "--profile",
+      "training",
+      "config",
+      "--quiet"
+    ],
+    "exit_code": 0
+  },
+  "annotation_javascript": {
+    "command": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "--check",
+      "scripts/annotation_web/annotation.js"
+    ],
+    "exit_code": 0
+  },
+  "packaged_cli": {
+    "command": [
+      "docker",
+      "compose",
+      "-f",
+      "compose.yaml",
+      "-f",
+      "compose.gpu.yaml",
+      "-f",
+      "compose.publisher-training.yaml",
+      "--profile",
+      "training",
+      "run",
+      "--rm",
+      "--no-deps",
+      "trainer",
+      "train",
+      "asr",
+      "--help"
+    ],
+    "exit_code": 0
+  }
+}

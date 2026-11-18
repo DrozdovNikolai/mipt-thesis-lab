@@ -1,0 +1,63 @@
+name: north55-cockpit-candidates-v10
+x-base: &base
+  image: north55-speech-canary:v10
+  network_mode: none
+  entrypoint: [python, -u, /app/scripts/cockpit_candidates_v10.py]
+  working_dir: /app
+  environment:
+    PYTHONPATH: /app:/app/src
+    CUDA_VISIBLE_DEVICES: '0'
+    HF_HUB_OFFLINE: '1'
+    TRANSFORMERS_OFFLINE: '1'
+    HF_HUB_CACHE: /models/hf
+  deploy:
+    resources:
+      reservations:
+        devices:
+          - driver: nvidia
+            device_ids: ['0']
+            capabilities: [gpu]
+services:
+  canary:
+    <<: *base
+    command: [canary]
+    volumes:
+      - ./reports/cockpit-candidates-v10/frozen:/app:ro
+      - ./reports/cockpit-candidates-v10/plan.json:/study/plan.json:ro
+      - ./reports/cockpit-candidates-v10/protocol.md:/study/protocol.md:ro
+      - ./reports/cockpit-candidates-v10/inputs.json:/study/inputs.json:ro
+      - ./reports/cockpit-candidates-v10/prior-decisions.json:/study/prior-decisions.json:ro
+      - ./reports/cockpit-candidates-v10/model-manifest.json:/study/model-manifest.json:ro
+      - ./reports/cockpit-candidates-v10/io-canary:/output
+      - cross:/cross:ro
+      - candidates:/models:ro
+  dfn:
+    <<: *base
+    image: north55-speech-parakeet:v6
+    command: [dfn_parakeet]
+    volumes:
+      - ./reports/cockpit-candidates-v10/frozen:/app:ro
+      - ./reports/cockpit-candidates-v10/plan.json:/study/plan.json:ro
+      - ./reports/cockpit-candidates-v10/protocol.md:/study/protocol.md:ro
+      - ./reports/cockpit-candidates-v10/inputs.json:/study/inputs.json:ro
+      - ./reports/cockpit-candidates-v10/prior-decisions.json:/study/prior-decisions.json:ro
+      - ./reports/cockpit-candidates-v10/model-manifest.json:/study/model-manifest.json:ro
+      - ./reports/cockpit-candidates-v10/io-dfn:/output
+      - cross:/cross:ro
+      - candidates:/models:ro
+  report:
+    <<: *base
+    image: north55-speech-train:publisher-v2
+    command: [score]
+    volumes:
+      - ./reports/cockpit-candidates-v10/frozen:/app:ro
+      - ./reports/cockpit-candidates-v10:/study
+      - cross:/cross:ro
+      - candidates:/models:ro
+volumes:
+  cross:
+    external: true
+    name: north55-speech_cockpit_cross_asr_v6
+  candidates:
+    external: true
+    name: north55-speech_cockpit_models_v10

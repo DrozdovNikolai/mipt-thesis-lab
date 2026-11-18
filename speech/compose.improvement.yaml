@@ -1,0 +1,73 @@
+name: north55-improvement-v1
+x-common: &common
+  image: north55-speech-gpu:0.1.0
+  entrypoint: [python, -u, /code/scripts/improvement_experiment.py]
+  network_mode: none
+  environment:
+    PYTHONPATH: /code/src:/code
+    HF_HUB_OFFLINE: '1'
+    TRANSFORMERS_OFFLINE: '1'
+    CUDA_VISIBLE_DEVICES: '0'
+  volumes:
+    - ./reports/improvement-v1/frozen/src:/code/src:ro
+    - ./reports/improvement-v1/frozen/scripts/improvement_experiment.py:/code/scripts/improvement_experiment.py:ro
+    - audio:/audio:ro
+    - models:/models:ro
+    - ./reports/improvement-v1/inference:/study:ro
+    - ./data/curated/improvement-v1/audio:/new-audio:ro
+services:
+  prepare:
+    <<: *common
+    command: [prepare]
+    volumes:
+      - ./reports/improvement-v1/frozen/src:/code/src:ro
+      - ./reports/improvement-v1/frozen/scripts/improvement_experiment.py:/code/scripts/improvement_experiment.py:ro
+      - .:/workspace:ro
+      - audio:/audio:ro
+      - models:/models:ro
+      - ./reports/improvement-v1:/output
+      - ./data/curated/improvement-v1/audio:/new-audio
+  infer:
+    <<: *common
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['0']
+              capabilities: [gpu]
+    volumes:
+      - ./reports/improvement-v1/frozen/src:/code/src:ro
+      - ./reports/improvement-v1/frozen/scripts/improvement_experiment.py:/code/scripts/improvement_experiment.py:ro
+      - audio:/audio:ro
+      - models:/models:ro
+      - ./reports/improvement-v1/inference:/study:ro
+      - ./data/curated/improvement-v1/audio:/new-audio:ro
+      - ./reports/improvement-v1/predictions:/predictions
+  score:
+    <<: *common
+    command: [score]
+    volumes:
+      - ./reports/improvement-v1/frozen/src:/code/src:ro
+      - ./reports/improvement-v1/frozen/scripts/improvement_experiment.py:/code/scripts/improvement_experiment.py:ro
+      - ./reports/improvement-v1:/output
+  checks:
+    <<: *common
+    image: north55-speech-train:publisher-v2
+    working_dir: /code
+    entrypoint: [python, -m, pytest]
+    command: [-q, /code/tests/test_improvement_experiment.py]
+    volumes:
+      - ./src:/code/src:ro
+      - ./scripts:/code/scripts:ro
+      - ./tests:/code/tests:ro
+      - ./pyproject.toml:/code/pyproject.toml:ro
+      - ./configs:/code/configs:ro
+      - ./ACCEPTANCE.yaml:/code/ACCEPTANCE.yaml:ro
+volumes:
+  audio:
+    external: true
+    name: north55-speech_audio_data
+  models:
+    external: true
+    name: north55-speech_model_cache

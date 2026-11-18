@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "audio_files_verified": 843,
+  "ASR_records_verified": 843,
+  "independent_levenshtein_totals_verified": 2455,
+  "supplemental_weak_rows": 18,
+  "old_train_rows_preserved": 247,
+  "prior_frozen_code_unchanged": true,
+  "plan_sha256": "9de4a69dc93f01285d77e6494ddc3eed10b40de20d3557fc8f26f27e466c7282",
+  "verifier_sha256": "77ea3d65c729897c18ff86ae3c976146f4537280891fb6c446efd228dc4a1867"
+}

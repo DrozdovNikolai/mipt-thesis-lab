@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "scope": "source-native JSON token/span structure only",
+  "rows": 894,
+  "tokens": 66507,
+  "label_counts": {
+    "B-prod": 4179,
+    "B-loc": 1680,
+    "I-loc": 1035,
+    "B-pcon": 2551,
+    "I-pcon": 2525,
+    "B-flt": 991,
+    "I-prod": 3920,
+    "B-sit": 880,
+    "I-sit": 961,
+    "B-act": 424,
+    "I-act": 954,
+    "I-flt": 232,
+    "B-bird": 165,
+    "I-bird": 164
+  },
+  "invalid_records": [],
+  "human_provenance_verified": false,
+  "source_session_ids_present": false,
+  "training_or_evaluation_executed": false
+}

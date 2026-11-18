@@ -1,0 +1,17 @@
+{
+  "command": [
+    "docker",
+    "run",
+    "--rm",
+    "--network",
+    "none",
+    "--entrypoint",
+    "sh",
+    "north55-speech:0.1.0",
+    "-c",
+    "ruff check src tests && mypy src/north55_speech"
+  ],
+  "exit_code": 0,
+  "stdout": "All checks passed!\nSuccess: no issues found in 23 source files\n",
+  "stderr": ""
+}

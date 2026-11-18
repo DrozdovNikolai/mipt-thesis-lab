@@ -1,0 +1,13 @@
+{
+  "status": "INCONCLUSIVE",
+  "scope": "authenticated_browser_workflow",
+  "fixture": "isolated_synthetic_silence_no_real_annotation_mount",
+  "login_page_visually_verified": true,
+  "authenticated_HTTP_service_verified": true,
+  "observed_origin": "null",
+  "server_login_status": 403,
+  "reason": "Embedded viewer supplies opaque Origin; local same-origin check correctly refuses. No security relaxation. Use a normal browser.",
+  "real_human_annotations_created": 0,
+  "synthetic_human_annotations_created": 0,
+  "full_authenticated_browser_save": "NOT_RUN"
+}

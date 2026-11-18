@@ -1,0 +1,83 @@
+{
+  "policy": {
+    "version": "cockpit_hard_v4",
+    "student_minimum_errors": 2,
+    "student_disagreement": 0.12,
+    "teacher_disagreement": 0.08,
+    "short_exact_below_words": 8,
+    "minimum_words": 4,
+    "minimum_seconds": 3.0,
+    "maximum_seconds": 25.0,
+    "publisher_coverage": 0.9,
+    "median_word_probability": 0.65,
+    "max_zero_duration_fraction": 0.25,
+    "human_verified": false,
+    "dev_used_for_selection": false,
+    "test_accessed": false
+  },
+  "code_sha256": {
+    "scripts/cockpit_hard_v4.py": "2bcb1adbcf0413a4a05bf21b956cf93a64e9bf00a5bf2bd4bed30b2e35f79bb8",
+    "scripts/publisher_recovery_rules_v3.py": "4063d4ea1b8fa0fc8e32c1c343fa6f4ede08b79bcb52f7c09134428735516d5a",
+    "scripts/publisher_phrase_support.py": "c0a42ac34651bd553a3ee969b45e6c6b3c98a0847b0d1e340e5f9a94cd77e720",
+    "scripts/publisher_alignment.py": "f866ff85fe9e7634594370d90243509de1100b7a219a8469a945e21eb89fa614",
+    "scripts/audit_bleriot_remaining.py": "9b4066b0f9938d5498a440659e3773a35ddf846a16f732568e56567a25847dfd",
+    "src/north55_speech/asr.py": "028dcdab204ea383d4dd423e4f3707e02f6c5788dcb27dc51689d7d50a585f3b",
+    "src/north55_speech/schemas.py": "0745770b96bfbc34e2bff6395d2d390ffd3440eb899188743681eca0367f3fa0",
+    "src/north55_speech/metrics.py": "03876483b34afa31243136a5a3f9b52b17d2a2c15e8435fccfbf23986344792a"
+  },
+  "model": "whisper-large-v3-systran-ct2",
+  "model_manifest": {
+    "model": "whisper-large-v3-systran-ct2",
+    "repo": "Systran/faster-whisper-large-v3",
+    "revision": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "license": "MIT",
+    "upstream": "openai/whisper-large-v3",
+    "format": "CTranslate2 FP16 conversion by SYSTRAN",
+    "files": {
+      "README.md": "39e96252229f5a3d0141dc81afb65a36fd205461ac21e5b70f2cd1248ef0082c",
+      "config.json": "a9306624f5ec14270a014b647e5c316b6e03a662c369758d1b90697a7b0655b9",
+      "model.bin": "69f74147e3334731bc3a76048724833325d2ec74642fb52620eda87352e3d4f1",
+      "preprocessor_config.json": "7ccc62c6f2765af1f3b46c00c9b5894426835a05021c8b9c01eecb6dfb542711",
+      "tokenizer.json": "6d8cbd7cd0d8d5815e478dac67b85a26bbe77c1f5e0c6d76d1ce2abc0e5f21ca",
+      "vocabulary.json": "c69260f2ab26d659b7c398f9a2b2b48ed0df16c3b47d7326782fd9cba71690c1"
+    },
+    "acquired_at": "2026-09-14T07:32:40.284608+00:00",
+    "source_metadata_sha256": "28260f2c86f4f87a7534a48d4e255bffbf18aa0f2aee2c64980a29c2876c49c3"
+  },
+  "inputs_sha256": "0ce9a2f45b08a70f9040b662d1fcd84e55b67aab5339c37efd02361be9faa48f",
+  "scoring_sha256": {
+    "cached.json": "a0a35e8394ac35e816d4c9c052353aa5b908d67d81267ce9f91c404aafc56209",
+    "documents.json": "ff4bd0370569da478da41824a6276833d8a4cb982d98aa61801c2ab0dbc73bd8",
+    "sources.json": "52db952fd4aeb2cad103d6b8bcaf29a20b43c36d4e7cbec01e744ee2071c0e03"
+  },
+  "old_train_sha256": "21f28a23ba7f8ef66afaa03e2dc472d7b25aa31c635e53458f161b1104135d0e",
+  "old_dev_sha256": "76fbf9ba6c29f31aeeff27d0cf0013638a76ab95e3d6a21b2d62f88a4e5384f6",
+  "raw_train_sha256": "7de1dc33070754c37e46a80b2be93b6267443be48590f83d08043724dadbba0c",
+  "raw_dev_sha256": "32451d3f48de1d448f24d22d27667227d699ff09c58195859b41a952799613e8",
+  "medium_model_manifest": {
+    "model": "whisper-medium-en-ct2",
+    "repo": "Systran/faster-whisper-medium.en",
+    "revision": "a29b04bd15381511a9af671baec01072039215e3",
+    "license": "MIT",
+    "selected_files": [
+      "README.md",
+      "config.json",
+      "model.bin",
+      "tokenizer.json",
+      "vocabulary.txt"
+    ],
+    "declared_bytes": 1530459085,
+    "acquired_at": "2026-09-14T19:28:36.011576+00:00",
+    "files": {
+      "README.md": "ab3ddd3b6af4ea0ef353cb80004f26613ba33217f81652fc13738d3b098c7675",
+      "config.json": "4a1848ebabe7938d9797c15a2e8e4ce1d36e6fd4a43d096ae5955257c67c7962",
+      "model.bin": "11b220779aea4c6f3ce9d2549c8a95ea869ed84066864b999531ef53e594fe5b",
+      "tokenizer.json": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df",
+      "vocabulary.txt": "ff77588746d3a2595d32ab5b69ffd7b95ce2441ac57533cb66fc3eb575a115cf"
+    }
+  },
+  "source_plan_sha256": "8ddc80ed93f2a7be0a399737dcfb0f8a85aa613110f9b06546a19ebeade3a3b5",
+  "planned_large_EN_calls": 377,
+  "quality_evidence": false,
+  "test_accessed": false
+}

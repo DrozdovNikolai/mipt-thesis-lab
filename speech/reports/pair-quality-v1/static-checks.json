@@ -1,0 +1,12 @@
+{
+  "ruff": "PASS",
+  "git_head": "b22c91c9291edfbbc714cf6d54e51056d2186ceb",
+  "requirements_sha256": {
+    "SPEC.md": "9191d785add8109b4a3edd75171fab81987aac5df34036cb34daecbbe4de644f",
+    "SOURCES.md": "74e70ac86c48d423f9a3da3d3d6bd8a13ee32cab6e537502ba0f12c3a939f114",
+    "ACCEPTANCE.yaml": "32d35b1e80b64f38e6adcc9895515b37f224a9e51dcf5ff95389e1f9ecc45071",
+    "configs/baseline.yaml": "419accafb0874a51c11bd4865117a4daf761345a48242e36269c71e88a73e1d1"
+  },
+  "no_local_env_values_in_new_git_candidates": true,
+  "data_audio_raw_archives_and_logs_ignored": true
+}

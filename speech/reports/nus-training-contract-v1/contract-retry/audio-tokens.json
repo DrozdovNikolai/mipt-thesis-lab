@@ -1,0 +1,8777 @@
+[
+  {
+    "id": "fleurs-ru-train-1000",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 33,
+    "samples": 133440,
+    "mel_max_abs_difference": 4.76837158203125e-06
+  },
+  {
+    "id": "fleurs-ru-train-101",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 59,
+    "samples": 240000,
+    "mel_max_abs_difference": 1.1920928955078125e-05
+  },
+  {
+    "id": "fleurs-ru-train-1019",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 45,
+    "samples": 156480,
+    "mel_max_abs_difference": 7.62939453125e-06
+  },
+  {
+    "id": "fleurs-ru-train-1027",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 36,
+    "samples": 144000,
+    "mel_max_abs_difference": 8.58306884765625e-06
+  },
+  {
+    "id": "fleurs-ru-train-1030",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 40,
+    "samples": 138240,
+    "mel_max_abs_difference": 8.106231689453125e-06
+  },
+  {
+    "id": "fleurs-ru-train-1032",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 40,
+    "samples": 138240,
+    "mel_max_abs_difference": 1.6570091247558594e-05
+  },
+  {
+    "id": "fleurs-ru-train-1044",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 26,
+    "samples": 96000,
+    "mel_max_abs_difference": 5.364418029785156e-06
+  },
+  {
+    "id": "fleurs-ru-train-1047",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 91,
+    "samples": 312960,
+    "mel_max_abs_difference": 1.9311904907226562e-05
+  },
+  {
+    "id": "fleurs-ru-train-1063",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 25,
+    "samples": 118080,
+    "mel_max_abs_difference": 1.7762184143066406e-05
+  },
+  {
+    "id": "fleurs-ru-train-1065",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 65,
+    "samples": 250560,
+    "mel_max_abs_difference": 7.987022399902344e-06
+  },
+  {
+    "id": "fleurs-ru-train-1071",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 29,
+    "samples": 165120,
+    "mel_max_abs_difference": 1.5020370483398438e-05
+  },
+  {
+    "id": "fleurs-ru-train-108",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 78,
+    "samples": 304320,
+    "mel_max_abs_difference": 1.0967254638671875e-05
+  },
+  {
+    "id": "fleurs-ru-train-1098",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 68,
+    "samples": 216960,
+    "mel_max_abs_difference": 2.3603439331054688e-05
+  },
+  {
+    "id": "fleurs-ru-train-1106",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 36,
+    "samples": 128640,
+    "mel_max_abs_difference": 5.9604644775390625e-06
+  },
+  {
+    "id": "fleurs-ru-train-1114",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 54,
+    "samples": 170880,
+    "mel_max_abs_difference": 1.0132789611816406e-05
+  },
+  {
+    "id": "fleurs-ru-train-1117",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 45,
+    "samples": 175680,
+    "mel_max_abs_difference": 2.491474151611328e-05
+  },
+  {
+    "id": "fleurs-ru-train-1120",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 79,
+    "samples": 219840,
+    "mel_max_abs_difference": 6.67572021484375e-06
+  },
+  {
+    "id": "fleurs-ru-train-1121",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 60,
+    "samples": 165120,
+    "mel_max_abs_difference": 1.0251998901367188e-05
+  },
+  {
+    "id": "fleurs-ru-train-1122",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 42,
+    "samples": 164160,
+    "mel_max_abs_difference": 1.3947486877441406e-05
+  },
+  {
+    "id": "fleurs-ru-train-1128",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 48,
+    "samples": 158400,
+    "mel_max_abs_difference": 7.3909759521484375e-06
+  },
+  {
+    "id": "fleurs-ru-train-1131",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 39,
+    "samples": 142080,
+    "mel_max_abs_difference": 1.2636184692382812e-05
+  },
+  {
+    "id": "fleurs-ru-train-1132",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 36,
+    "samples": 176640,
+    "mel_max_abs_difference": 1.3947486877441406e-05
+  },
+  {
+    "id": "fleurs-ru-train-1141",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 56,
+    "samples": 230400,
+    "mel_max_abs_difference": 9.298324584960938e-06
+  },
+  {
+    "id": "fleurs-ru-train-1148",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 48,
+    "samples": 165120,
+    "mel_max_abs_difference": 7.3909759521484375e-06
+  },
+  {
+    "id": "fleurs-ru-train-1156",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 38,
+    "samples": 158400,
+    "mel_max_abs_difference": 1.8477439880371094e-05
+  },
+  {
+    "id": "fleurs-ru-train-1157",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 43,
+    "samples": 154560,
+    "mel_max_abs_difference": 7.271766662597656e-06
+  },
+  {
+    "id": "fleurs-ru-train-1167",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 28,
+    "samples": 97920,
+    "mel_max_abs_difference": 9.298324584960938e-06
+  },
+  {
+    "id": "fleurs-ru-train-1190",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 33,
+    "samples": 120960,
+    "mel_max_abs_difference": 1.0251998901367188e-05
+  },
+  {
+    "id": "fleurs-ru-train-1192",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 57,
+    "samples": 153600,
+    "mel_max_abs_difference": 3.2186508178710938e-06
+  },
+  {
+    "id": "fleurs-ru-train-1201",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 44,
+    "samples": 177600,
+    "mel_max_abs_difference": 1.3589859008789062e-05
+  },
+  {
+    "id": "fleurs-ru-train-1203",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 52,
+    "samples": 280320,
+    "mel_max_abs_difference": 1.3470649719238281e-05
+  },
+  {
+    "id": "fleurs-ru-train-1204",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 37,
+    "samples": 120960,
+    "mel_max_abs_difference": 5.364418029785156e-06
+  },
+  {
+    "id": "fleurs-ru-train-1209",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 65,
+    "samples": 245760,
+    "mel_max_abs_difference": 1.3232231140136719e-05
+  },
+  {
+    "id": "fleurs-ru-train-1211",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 33,
+    "samples": 135360,
+    "mel_max_abs_difference": 1.1205673217773438e-05
+  },
+  {
+    "id": "fleurs-ru-train-1218",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 45,
+    "samples": 188160,
+    "mel_max_abs_difference": 3.5762786865234375e-06
+  },
+  {
+    "id": "fleurs-ru-train-1224",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 38,
+    "samples": 132480,
+    "mel_max_abs_difference": 1.2636184692382812e-05
+  },
+  {
+    "id": "fleurs-ru-train-1234",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 27,
+    "samples": 82560,
+    "mel_max_abs_difference": 1.621246337890625e-05
+  },
+  {
+    "id": "fleurs-ru-train-1236",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 50,
+    "samples": 167040,
+    "mel_max_abs_difference": 8.225440979003906e-06
+  },
+  {
+    "id": "fleurs-ru-train-125",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 80,
+    "samples": 386880,
+    "mel_max_abs_difference": 1.1563301086425781e-05
+  },
+  {
+    "id": "fleurs-ru-train-1254",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 47,
+    "samples": 191040,
+    "mel_max_abs_difference": 1.8835067749023438e-05
+  },
+  {
+    "id": "fleurs-ru-train-1257",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 29,
+    "samples": 138240,
+    "mel_max_abs_difference": 1.7762184143066406e-05
+  },
+  {
+    "id": "fleurs-ru-train-1259",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 46,
+    "samples": 147840,
+    "mel_max_abs_difference": 9.417533874511719e-06
+  },
+  {
+    "id": "fleurs-ru-train-1264",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 65,
+    "samples": 296640,
+    "mel_max_abs_difference": 1.0371208190917969e-05
+  },
+  {
+    "id": "fleurs-ru-train-1268",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 69,
+    "samples": 377280,
+    "mel_max_abs_difference": 1.2993812561035156e-05
+  },
+  {
+    "id": "fleurs-ru-train-1273",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 44,
+    "samples": 159360,
+    "mel_max_abs_difference": 7.3909759521484375e-06
+  },
+  {
+    "id": "fleurs-ru-train-1275",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 63,
+    "samples": 305280,
+    "mel_max_abs_difference": 1.0013580322265625e-05
+  },
+  {
+    "id": "fleurs-ru-train-1281",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 63,
+    "samples": 263040,
+    "mel_max_abs_difference": 1.0967254638671875e-05
+  },
+  {
+    "id": "fleurs-ru-train-1287",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 57,
+    "samples": 157440,
+    "mel_max_abs_difference": 1.3113021850585938e-05
+  },
+  {
+    "id": "fleurs-ru-train-1303",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 46,
+    "samples": 130560,
+    "mel_max_abs_difference": 1.1682510375976562e-05
+  },
+  {
+    "id": "fleurs-ru-train-1307",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 56,
+    "samples": 184320,
+    "mel_max_abs_difference": 4.0531158447265625e-06
+  },
+  {
+    "id": "fleurs-ru-train-1311",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 60,
+    "samples": 212160,
+    "mel_max_abs_difference": 4.410743713378906e-06
+  },
+  {
+    "id": "fleurs-ru-train-1321",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 31,
+    "samples": 166080,
+    "mel_max_abs_difference": 8.58306884765625e-06
+  },
+  {
+    "id": "fleurs-ru-train-133",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 73,
+    "samples": 224640,
+    "mel_max_abs_difference": 1.3589859008789062e-05
+  },
+  {
+    "id": "fleurs-ru-train-134",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 47,
+    "samples": 228480,
+    "mel_max_abs_difference": 6.67572021484375e-06
+  },
+  {
+    "id": "fleurs-ru-train-1347",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 40,
+    "samples": 127680,
+    "mel_max_abs_difference": 2.300739288330078e-05
+  },
+  {
+    "id": "fleurs-ru-train-1354",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 50,
+    "samples": 272640,
+    "mel_max_abs_difference": 1.3709068298339844e-05
+  },
+  {
+    "id": "fleurs-ru-train-1360",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 43,
+    "samples": 151680,
+    "mel_max_abs_difference": 1.5854835510253906e-05
+  },
+  {
+    "id": "fleurs-ru-train-1371",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 34,
+    "samples": 119040,
+    "mel_max_abs_difference": 1.2636184692382812e-05
+  },
+  {
+    "id": "fleurs-ru-train-1377",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 55,
+    "samples": 276480,
+    "mel_max_abs_difference": 1.2040138244628906e-05
+  },
+  {
+    "id": "fleurs-ru-train-1378",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 49,
+    "samples": 213120,
+    "mel_max_abs_difference": 5.245208740234375e-06
+  },
+  {
+    "id": "fleurs-ru-train-1388",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 65,
+    "samples": 301440,
+    "mel_max_abs_difference": 1.5854835510253906e-05
+  },
+  {
+    "id": "fleurs-ru-train-1391",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 120,
+    "samples": 379200,
+    "mel_max_abs_difference": 2.574920654296875e-05
+  },
+  {
+    "id": "fleurs-ru-train-1401",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 46,
+    "samples": 218880,
+    "mel_max_abs_difference": 2.0503997802734375e-05
+  },
+  {
+    "id": "fleurs-ru-train-1403",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 41,
+    "samples": 148800,
+    "mel_max_abs_difference": 1.049041748046875e-05
+  },
+  {
+    "id": "fleurs-ru-train-1405",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 56,
+    "samples": 195840,
+    "mel_max_abs_difference": 3.933906555175781e-06
+  },
+  {
+    "id": "fleurs-ru-train-1407",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 38,
+    "samples": 158400,
+    "mel_max_abs_difference": 1.800060272216797e-05
+  },
+  {
+    "id": "fleurs-ru-train-1435",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 37,
+    "samples": 115200,
+    "mel_max_abs_difference": 7.271766662597656e-06
+  },
+  {
+    "id": "fleurs-ru-train-1444",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 38,
+    "samples": 182400,
+    "mel_max_abs_difference": 1.621246337890625e-05
+  },
+  {
+    "id": "fleurs-ru-train-1446",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 56,
+    "samples": 445440,
+    "mel_max_abs_difference": 1.633167266845703e-05
+  },
+  {
+    "id": "fleurs-ru-train-1456",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 87,
+    "samples": 428160,
+    "mel_max_abs_difference": 1.0132789611816406e-05
+  },
+  {
+    "id": "fleurs-ru-train-1473",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 20,
+    "samples": 71040,
+    "mel_max_abs_difference": 2.765655517578125e-05
+  },
+  {
+    "id": "fleurs-ru-train-148",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 37,
+    "samples": 142080,
+    "mel_max_abs_difference": 5.841255187988281e-06
+  },
+  {
+    "id": "fleurs-ru-train-1483",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 44,
+    "samples": 172800,
+    "mel_max_abs_difference": 1.1682510375976562e-05
+  },
+  {
+    "id": "fleurs-ru-train-1488",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 51,
+    "samples": 211200,
+    "mel_max_abs_difference": 5.4836273193359375e-06
+  },
+  {
+    "id": "fleurs-ru-train-1489",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 32,
+    "samples": 175680,
+    "mel_max_abs_difference": 8.940696716308594e-06
+  },
+  {
+    "id": "fleurs-ru-train-1494",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 51,
+    "samples": 159360,
+    "mel_max_abs_difference": 1.621246337890625e-05
+  },
+  {
+    "id": "fleurs-ru-train-1500",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 55,
+    "samples": 184320,
+    "mel_max_abs_difference": 7.152557373046875e-06
+  },
+  {
+    "id": "fleurs-ru-train-1503",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 52,
+    "samples": 160320,
+    "mel_max_abs_difference": 1.5974044799804688e-05
+  },
+  {
+    "id": "fleurs-ru-train-160",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 65,
+    "samples": 241920,
+    "mel_max_abs_difference": 1.704692840576172e-05
+  },
+  {
+    "id": "fleurs-ru-train-165",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 45,
+    "samples": 157440,
+    "mel_max_abs_difference": 8.106231689453125e-06
+  },
+  {
+    "id": "fleurs-ru-train-169",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 42,
+    "samples": 130560,
+    "mel_max_abs_difference": 1.1324882507324219e-05
+  },
+  {
+    "id": "fleurs-ru-train-170",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 29,
+    "samples": 157440,
+    "mel_max_abs_difference": 8.106231689453125e-06
+  },
+  {
+    "id": "fleurs-ru-train-173",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 33,
+    "samples": 178560,
+    "mel_max_abs_difference": 1.4543533325195312e-05
+  },
+  {
+    "id": "fleurs-ru-train-189",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 42,
+    "samples": 192960,
+    "mel_max_abs_difference": 6.198883056640625e-06
+  },
+  {
+    "id": "fleurs-ru-train-195",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 36,
+    "samples": 109440,
+    "mel_max_abs_difference": 3.6954879760742188e-06
+  },
+  {
+    "id": "fleurs-ru-train-206",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 30,
+    "samples": 90240,
+    "mel_max_abs_difference": 1.5020370483398438e-05
+  },
+  {
+    "id": "fleurs-ru-train-207",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 58,
+    "samples": 246720,
+    "mel_max_abs_difference": 4.291534423828125e-06
+  },
+  {
+    "id": "fleurs-ru-train-23",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 36,
+    "samples": 128640,
+    "mel_max_abs_difference": 5.364418029785156e-06
+  },
+  {
+    "id": "fleurs-ru-train-235",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 17,
+    "samples": 105600,
+    "mel_max_abs_difference": 7.62939453125e-06
+  },
+  {
+    "id": "fleurs-ru-train-241",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 76,
+    "samples": 282240,
+    "mel_max_abs_difference": 5.1856040954589844e-05
+  },
+  {
+    "id": "fleurs-ru-train-248",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 44,
+    "samples": 141120,
+    "mel_max_abs_difference": 7.867813110351562e-06
+  },
+  {
+    "id": "fleurs-ru-train-254",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 39,
+    "samples": 276480,
+    "mel_max_abs_difference": 1.1324882507324219e-05
+  },
+  {
+    "id": "fleurs-ru-train-286",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 41,
+    "samples": 127680,
+    "mel_max_abs_difference": 1.430511474609375e-05
+  },
+  {
+    "id": "fleurs-ru-train-304",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 15,
+    "samples": 115200,
+    "mel_max_abs_difference": 1.5974044799804688e-05
+  },
+  {
+    "id": "fleurs-ru-train-309",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 66,
+    "samples": 199680,
+    "mel_max_abs_difference": 1.1324882507324219e-05
+  },
+  {
+    "id": "fleurs-ru-train-324",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 59,
+    "samples": 267840,
+    "mel_max_abs_difference": 1.1801719665527344e-05
+  },
+  {
+    "id": "fleurs-ru-train-33",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 38,
+    "samples": 186240,
+    "mel_max_abs_difference": 9.059906005859375e-06
+  },
+  {
+    "id": "fleurs-ru-train-331",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 27,
+    "samples": 84480,
+    "mel_max_abs_difference": 1.5735626220703125e-05
+  },
+  {
+    "id": "fleurs-ru-train-340",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 46,
+    "samples": 153600,
+    "mel_max_abs_difference": 1.1444091796875e-05
+  },
+  {
+    "id": "fleurs-ru-train-343",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 50,
+    "samples": 174720,
+    "mel_max_abs_difference": 3.826618194580078e-05
+  },
+  {
+    "id": "fleurs-ru-train-347",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 26,
+    "samples": 115200,
+    "mel_max_abs_difference": 1.0371208190917969e-05
+  },
+  {
+    "id": "fleurs-ru-train-352",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 24,
+    "samples": 93120,
+    "mel_max_abs_difference": 1.1801719665527344e-05
+  },
+  {
+    "id": "fleurs-ru-train-357",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 69,
+    "samples": 190080,
+    "mel_max_abs_difference": 1.0967254638671875e-05
+  },
+  {
+    "id": "fleurs-ru-train-359",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 24,
+    "samples": 97920,
+    "mel_max_abs_difference": 5.245208740234375e-06
+  },
+  {
+    "id": "fleurs-ru-train-363",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 36,
+    "samples": 114240,
+    "mel_max_abs_difference": 7.748603820800781e-06
+  },
+  {
+    "id": "fleurs-ru-train-385",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 60,
+    "samples": 199680,
+    "mel_max_abs_difference": 1.2874603271484375e-05
+  },
+  {
+    "id": "fleurs-ru-train-386",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 67,
+    "samples": 380160,
+    "mel_max_abs_difference": 1.9073486328125e-05
+  },
+  {
+    "id": "fleurs-ru-train-391",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 55,
+    "samples": 193920,
+    "mel_max_abs_difference": 8.106231689453125e-06
+  },
+  {
+    "id": "fleurs-ru-train-40",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 41,
+    "samples": 130560,
+    "mel_max_abs_difference": 1.7762184143066406e-05
+  },
+  {
+    "id": "fleurs-ru-train-405",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 40,
+    "samples": 154560,
+    "mel_max_abs_difference": 1.1682510375976562e-05
+  },
+  {
+    "id": "fleurs-ru-train-41",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 64,
+    "samples": 345600,
+    "mel_max_abs_difference": 1.4662742614746094e-05
+  },
+  {
+    "id": "fleurs-ru-train-414",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 72,
+    "samples": 311040,
+    "mel_max_abs_difference": 1.5974044799804688e-05
+  },
+  {
+    "id": "fleurs-ru-train-433",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 28,
+    "samples": 120960,
+    "mel_max_abs_difference": 6.198883056640625e-06
+  },
+  {
+    "id": "fleurs-ru-train-434",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 54,
+    "samples": 276480,
+    "mel_max_abs_difference": 6.4373016357421875e-06
+  },
+  {
+    "id": "fleurs-ru-train-444",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 43,
+    "samples": 182400,
+    "mel_max_abs_difference": 7.3909759521484375e-06
+  },
+  {
+    "id": "fleurs-ru-train-452",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 66,
+    "samples": 251520,
+    "mel_max_abs_difference": 1.537799835205078e-05
+  },
+  {
+    "id": "fleurs-ru-train-456",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 41,
+    "samples": 144000,
+    "mel_max_abs_difference": 9.894371032714844e-06
+  },
+  {
+    "id": "fleurs-ru-train-469",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 33,
+    "samples": 132480,
+    "mel_max_abs_difference": 1.2278556823730469e-05
+  },
+  {
+    "id": "fleurs-ru-train-476",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 44,
+    "samples": 172800,
+    "mel_max_abs_difference": 9.775161743164062e-06
+  },
+  {
+    "id": "fleurs-ru-train-479",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 51,
+    "samples": 290880,
+    "mel_max_abs_difference": 7.3909759521484375e-06
+  },
+  {
+    "id": "fleurs-ru-train-480",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 41,
+    "samples": 130560,
+    "mel_max_abs_difference": 5.125999450683594e-06
+  },
+  {
+    "id": "fleurs-ru-train-491",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 66,
+    "samples": 256320,
+    "mel_max_abs_difference": 5.841255187988281e-06
+  },
+  {
+    "id": "fleurs-ru-train-495",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 27,
+    "samples": 76800,
+    "mel_max_abs_difference": 3.6954879760742188e-06
+  },
+  {
+    "id": "fleurs-ru-train-502",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 45,
+    "samples": 152640,
+    "mel_max_abs_difference": 1.239776611328125e-05
+  },
+  {
+    "id": "fleurs-ru-train-506",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 44,
+    "samples": 155520,
+    "mel_max_abs_difference": 6.67572021484375e-06
+  },
+  {
+    "id": "fleurs-ru-train-510",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 47,
+    "samples": 216960,
+    "mel_max_abs_difference": 1.7881393432617188e-05
+  },
+  {
+    "id": "fleurs-ru-train-512",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 83,
+    "samples": 278400,
+    "mel_max_abs_difference": 2.8848648071289062e-05
+  },
+  {
+    "id": "fleurs-ru-train-514",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 31,
+    "samples": 113280,
+    "mel_max_abs_difference": 1.5497207641601562e-05
+  },
+  {
+    "id": "fleurs-ru-train-519",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 26,
+    "samples": 119040,
+    "mel_max_abs_difference": 1.8835067749023438e-05
+  },
+  {
+    "id": "fleurs-ru-train-520",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 47,
+    "samples": 245760,
+    "mel_max_abs_difference": 1.7642974853515625e-05
+  },
+  {
+    "id": "fleurs-ru-train-523",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 56,
+    "samples": 272640,
+    "mel_max_abs_difference": 9.5367431640625e-06
+  },
+  {
+    "id": "fleurs-ru-train-529",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 49,
+    "samples": 175680,
+    "mel_max_abs_difference": 1.4901161193847656e-05
+  },
+  {
+    "id": "fleurs-ru-train-532",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 47,
+    "samples": 137280,
+    "mel_max_abs_difference": 1.8358230590820312e-05
+  },
+  {
+    "id": "fleurs-ru-train-540",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 25,
+    "samples": 130560,
+    "mel_max_abs_difference": 1.0013580322265625e-05
+  },
+  {
+    "id": "fleurs-ru-train-548",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 80,
+    "samples": 293760,
+    "mel_max_abs_difference": 2.586841583251953e-05
+  },
+  {
+    "id": "fleurs-ru-train-562",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 50,
+    "samples": 167040,
+    "mel_max_abs_difference": 5.7220458984375e-06
+  },
+  {
+    "id": "fleurs-ru-train-573",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 35,
+    "samples": 96000,
+    "mel_max_abs_difference": 1.2755393981933594e-05
+  },
+  {
+    "id": "fleurs-ru-train-582",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 45,
+    "samples": 134400,
+    "mel_max_abs_difference": 1.5616416931152344e-05
+  },
+  {
+    "id": "fleurs-ru-train-583",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 60,
+    "samples": 264960,
+    "mel_max_abs_difference": 9.298324584960938e-06
+  },
+  {
+    "id": "fleurs-ru-train-586",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 29,
+    "samples": 137280,
+    "mel_max_abs_difference": 7.867813110351562e-06
+  },
+  {
+    "id": "fleurs-ru-train-608",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 25,
+    "samples": 160320,
+    "mel_max_abs_difference": 1.1920928955078125e-05
+  },
+  {
+    "id": "fleurs-ru-train-610",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 47,
+    "samples": 195840,
+    "mel_max_abs_difference": 9.5367431640625e-06
+  },
+  {
+    "id": "fleurs-ru-train-613",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 32,
+    "samples": 134400,
+    "mel_max_abs_difference": 1.3828277587890625e-05
+  },
+  {
+    "id": "fleurs-ru-train-62",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 36,
+    "samples": 185280,
+    "mel_max_abs_difference": 8.106231689453125e-06
+  },
+  {
+    "id": "fleurs-ru-train-622",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 50,
+    "samples": 138240,
+    "mel_max_abs_difference": 1.52587890625e-05
+  },
+  {
+    "id": "fleurs-ru-train-624",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 41,
+    "samples": 154560,
+    "mel_max_abs_difference": 8.821487426757812e-06
+  },
+  {
+    "id": "fleurs-ru-train-627",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 52,
+    "samples": 230400,
+    "mel_max_abs_difference": 1.5974044799804688e-05
+  },
+  {
+    "id": "fleurs-ru-train-638",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 33,
+    "samples": 105600,
+    "mel_max_abs_difference": 1.633167266845703e-05
+  },
+  {
+    "id": "fleurs-ru-train-641",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 35,
+    "samples": 122880,
+    "mel_max_abs_difference": 8.225440979003906e-06
+  },
+  {
+    "id": "fleurs-ru-train-645",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 40,
+    "samples": 192000,
+    "mel_max_abs_difference": 1.919269561767578e-05
+  },
+  {
+    "id": "fleurs-ru-train-646",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 46,
+    "samples": 261120,
+    "mel_max_abs_difference": 1.704692840576172e-05
+  },
+  {
+    "id": "fleurs-ru-train-66",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 42,
+    "samples": 136320,
+    "mel_max_abs_difference": 1.33514404296875e-05
+  },
+  {
+    "id": "fleurs-ru-train-663",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 51,
+    "samples": 218880,
+    "mel_max_abs_difference": 1.2040138244628906e-05
+  },
+  {
+    "id": "fleurs-ru-train-665",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 35,
+    "samples": 140160,
+    "mel_max_abs_difference": 2.1696090698242188e-05
+  },
+  {
+    "id": "fleurs-ru-train-668",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 61,
+    "samples": 317760,
+    "mel_max_abs_difference": 1.609325408935547e-05
+  },
+  {
+    "id": "fleurs-ru-train-674",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 41,
+    "samples": 163200,
+    "mel_max_abs_difference": 1.811981201171875e-05
+  },
+  {
+    "id": "fleurs-ru-train-683",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 38,
+    "samples": 129600,
+    "mel_max_abs_difference": 1.3113021850585938e-05
+  },
+  {
+    "id": "fleurs-ru-train-685",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 71,
+    "samples": 255360,
+    "mel_max_abs_difference": 1.4781951904296875e-05
+  },
+  {
+    "id": "fleurs-ru-train-700",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 40,
+    "samples": 142080,
+    "mel_max_abs_difference": 2.0265579223632812e-05
+  },
+  {
+    "id": "fleurs-ru-train-707",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 45,
+    "samples": 174720,
+    "mel_max_abs_difference": 2.6464462280273438e-05
+  },
+  {
+    "id": "fleurs-ru-train-712",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 52,
+    "samples": 245760,
+    "mel_max_abs_difference": 1.3947486877441406e-05
+  },
+  {
+    "id": "fleurs-ru-train-729",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 20,
+    "samples": 84480,
+    "mel_max_abs_difference": 7.271766662597656e-06
+  },
+  {
+    "id": "fleurs-ru-train-731",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 70,
+    "samples": 203520,
+    "mel_max_abs_difference": 2.2292137145996094e-05
+  },
+  {
+    "id": "fleurs-ru-train-734",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 48,
+    "samples": 210240,
+    "mel_max_abs_difference": 9.5367431640625e-06
+  },
+  {
+    "id": "fleurs-ru-train-746",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 49,
+    "samples": 186240,
+    "mel_max_abs_difference": 1.2159347534179688e-05
+  },
+  {
+    "id": "fleurs-ru-train-758",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 34,
+    "samples": 143040,
+    "mel_max_abs_difference": 1.3232231140136719e-05
+  },
+  {
+    "id": "fleurs-ru-train-771",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 55,
+    "samples": 192000,
+    "mel_max_abs_difference": 1.1444091796875e-05
+  },
+  {
+    "id": "fleurs-ru-train-772",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 53,
+    "samples": 180480,
+    "mel_max_abs_difference": 2.1457672119140625e-06
+  },
+  {
+    "id": "fleurs-ru-train-776",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 34,
+    "samples": 168960,
+    "mel_max_abs_difference": 1.2278556823730469e-05
+  },
+  {
+    "id": "fleurs-ru-train-790",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 45,
+    "samples": 163200,
+    "mel_max_abs_difference": 1.2040138244628906e-05
+  },
+  {
+    "id": "fleurs-ru-train-800",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 33,
+    "samples": 99840,
+    "mel_max_abs_difference": 1.430511474609375e-05
+  },
+  {
+    "id": "fleurs-ru-train-805",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 34,
+    "samples": 127680,
+    "mel_max_abs_difference": 1.1205673217773438e-05
+  },
+  {
+    "id": "fleurs-ru-train-810",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 40,
+    "samples": 148800,
+    "mel_max_abs_difference": 7.867813110351562e-06
+  },
+  {
+    "id": "fleurs-ru-train-817",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 49,
+    "samples": 173760,
+    "mel_max_abs_difference": 1.4066696166992188e-05
+  },
+  {
+    "id": "fleurs-ru-train-827",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 49,
+    "samples": 170880,
+    "mel_max_abs_difference": 1.2278556823730469e-05
+  },
+  {
+    "id": "fleurs-ru-train-828",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 51,
+    "samples": 176640,
+    "mel_max_abs_difference": 7.748603820800781e-06
+  },
+  {
+    "id": "fleurs-ru-train-830",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 47,
+    "samples": 160320,
+    "mel_max_abs_difference": 8.702278137207031e-06
+  },
+  {
+    "id": "fleurs-ru-train-834",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 34,
+    "samples": 108480,
+    "mel_max_abs_difference": 1.1444091796875e-05
+  },
+  {
+    "id": "fleurs-ru-train-84",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 33,
+    "samples": 132480,
+    "mel_max_abs_difference": 1.1086463928222656e-05
+  },
+  {
+    "id": "fleurs-ru-train-843",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 57,
+    "samples": 205440,
+    "mel_max_abs_difference": 9.298324584960938e-06
+  },
+  {
+    "id": "fleurs-ru-train-844",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 29,
+    "samples": 119040,
+    "mel_max_abs_difference": 2.2649765014648438e-05
+  },
+  {
+    "id": "fleurs-ru-train-850",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 24,
+    "samples": 69120,
+    "mel_max_abs_difference": 1.1920928955078125e-05
+  },
+  {
+    "id": "fleurs-ru-train-856",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 46,
+    "samples": 161280,
+    "mel_max_abs_difference": 6.198883056640625e-06
+  },
+  {
+    "id": "fleurs-ru-train-858",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 36,
+    "samples": 127680,
+    "mel_max_abs_difference": 8.821487426757812e-06
+  },
+  {
+    "id": "fleurs-ru-train-86",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 31,
+    "samples": 105600,
+    "mel_max_abs_difference": 1.3113021850585938e-05
+  },
+  {
+    "id": "fleurs-ru-train-861",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 46,
+    "samples": 178560,
+    "mel_max_abs_difference": 3.5762786865234375e-06
+  },
+  {
+    "id": "fleurs-ru-train-869",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 55,
+    "samples": 180480,
+    "mel_max_abs_difference": 1.049041748046875e-05
+  },
+  {
+    "id": "fleurs-ru-train-895",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 38,
+    "samples": 133440,
+    "mel_max_abs_difference": 3.337860107421875e-06
+  },
+  {
+    "id": "fleurs-ru-train-902",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 45,
+    "samples": 238080,
+    "mel_max_abs_difference": 1.5020370483398438e-05
+  },
+  {
+    "id": "fleurs-ru-train-904",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 54,
+    "samples": 172800,
+    "mel_max_abs_difference": 7.152557373046875e-06
+  },
+  {
+    "id": "fleurs-ru-train-905",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 38,
+    "samples": 123840,
+    "mel_max_abs_difference": 1.3589859008789062e-05
+  },
+  {
+    "id": "fleurs-ru-train-912",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 36,
+    "samples": 141120,
+    "mel_max_abs_difference": 6.198883056640625e-06
+  },
+  {
+    "id": "fleurs-ru-train-919",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 55,
+    "samples": 181440,
+    "mel_max_abs_difference": 7.033348083496094e-06
+  },
+  {
+    "id": "fleurs-ru-train-938",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 62,
+    "samples": 214080,
+    "mel_max_abs_difference": 1.2755393981933594e-05
+  },
+  {
+    "id": "fleurs-ru-train-956",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 57,
+    "samples": 184320,
+    "mel_max_abs_difference": 1.8835067749023438e-05
+  },
+  {
+    "id": "fleurs-ru-train-958",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 54,
+    "samples": 262080,
+    "mel_max_abs_difference": 1.71661376953125e-05
+  },
+  {
+    "id": "fleurs-ru-train-962",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 42,
+    "samples": 163200,
+    "mel_max_abs_difference": 1.4781951904296875e-05
+  },
+  {
+    "id": "fleurs-ru-train-984",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 41,
+    "samples": 142080,
+    "mel_max_abs_difference": 1.7881393432617188e-05
+  },
+  {
+    "id": "fleurs-ru-train-989",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 41,
+    "samples": 136320,
+    "mel_max_abs_difference": 1.0251998901367188e-05
+  },
+  {
+    "id": "fleurs-ru-train-997",
+    "language": "ru",
+    "prefix_tokens": [
+      50258,
+      50263,
+      50359,
+      50363
+    ],
+    "label_length": 32,
+    "samples": 100800,
+    "mel_max_abs_difference": 1.2278556823730469e-05
+  },
+  {
+    "id": "libri-train-1088-129236-0015",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 84,
+    "samples": 215840,
+    "mel_max_abs_difference": 1.704692840576172e-05
+  },
+  {
+    "id": "libri-train-1088-129236-0029",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 49,
+    "samples": 134800,
+    "mel_max_abs_difference": 9.655952453613281e-06
+  },
+  {
+    "id": "libri-train-1088-134315-0015",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 84,
+    "samples": 236160,
+    "mel_max_abs_difference": 2.288818359375e-05
+  },
+  {
+    "id": "libri-train-1088-134315-0017",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 86,
+    "samples": 242240,
+    "mel_max_abs_difference": 3.266334533691406e-05
+  },
+  {
+    "id": "libri-train-1088-134315-0020",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 44,
+    "samples": 97440,
+    "mel_max_abs_difference": 1.8596649169921875e-05
+  },
+  {
+    "id": "libri-train-1088-134315-0023",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 26,
+    "samples": 51840,
+    "mel_max_abs_difference": 1.0251998901367188e-05
+  },
+  {
+    "id": "libri-train-1088-134315-0033",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 73,
+    "samples": 203200,
+    "mel_max_abs_difference": 1.4781951904296875e-05
+  },
+  {
+    "id": "libri-train-1088-134315-0034",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 107,
+    "samples": 253840,
+    "mel_max_abs_difference": 9.059906005859375e-06
+  },
+  {
+    "id": "libri-train-1088-134315-0035",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 87,
+    "samples": 228080,
+    "mel_max_abs_difference": 1.728534698486328e-05
+  },
+  {
+    "id": "libri-train-1088-134315-0048",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 89,
+    "samples": 220080,
+    "mel_max_abs_difference": 1.6808509826660156e-05
+  },
+  {
+    "id": "libri-train-1088-134318-0019",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 91,
+    "samples": 232800,
+    "mel_max_abs_difference": 1.6808509826660156e-05
+  },
+  {
+    "id": "libri-train-1246-124548-0030",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 94,
+    "samples": 231921,
+    "mel_max_abs_difference": 1.9073486328125e-05
+  },
+  {
+    "id": "libri-train-1246-124548-0032",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 74,
+    "samples": 227200,
+    "mel_max_abs_difference": 7.033348083496094e-06
+  },
+  {
+    "id": "libri-train-1246-124548-0033",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 90,
+    "samples": 227200,
+    "mel_max_abs_difference": 2.4199485778808594e-05
+  },
+  {
+    "id": "libri-train-1246-124548-0044",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 94,
+    "samples": 237920,
+    "mel_max_abs_difference": 1.239776611328125e-05
+  },
+  {
+    "id": "libri-train-1246-124548-0050",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 69,
+    "samples": 214400,
+    "mel_max_abs_difference": 5.841255187988281e-06
+  },
+  {
+    "id": "libri-train-1246-124550-0000",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 101,
+    "samples": 233360,
+    "mel_max_abs_difference": 1.2755393981933594e-05
+  },
+  {
+    "id": "libri-train-1246-124550-0002",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 76,
+    "samples": 215840,
+    "mel_max_abs_difference": 8.106231689453125e-06
+  },
+  {
+    "id": "libri-train-1246-124550-0005",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 100,
+    "samples": 267280,
+    "mel_max_abs_difference": 7.62939453125e-06
+  },
+  {
+    "id": "libri-train-1246-124550-0006",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 83,
+    "samples": 243920,
+    "mel_max_abs_difference": 7.3909759521484375e-06
+  },
+  {
+    "id": "libri-train-1246-124550-0011",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 97,
+    "samples": 256160,
+    "mel_max_abs_difference": 8.463859558105469e-06
+  },
+  {
+    "id": "libri-train-1246-124550-0030",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 91,
+    "samples": 243920,
+    "mel_max_abs_difference": 9.417533874511719e-06
+  },
+  {
+    "id": "libri-train-1263-138246-0005",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 83,
+    "samples": 229280,
+    "mel_max_abs_difference": 9.059906005859375e-06
+  },
+  {
+    "id": "libri-train-1263-138246-0023",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 55,
+    "samples": 242639,
+    "mel_max_abs_difference": 1.33514404296875e-05
+  },
+  {
+    "id": "libri-train-1263-139804-0001",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 78,
+    "samples": 208960,
+    "mel_max_abs_difference": 1.0848045349121094e-05
+  },
+  {
+    "id": "libri-train-1263-139804-0013",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 94,
+    "samples": 247520,
+    "mel_max_abs_difference": 7.510185241699219e-06
+  },
+  {
+    "id": "libri-train-1263-139804-0028",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 79,
+    "samples": 213200,
+    "mel_max_abs_difference": 7.152557373046875e-06
+  },
+  {
+    "id": "libri-train-1263-141777-0009",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 70,
+    "samples": 173680,
+    "mel_max_abs_difference": 6.556510925292969e-06
+  },
+  {
+    "id": "libri-train-1263-141777-0018",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 80,
+    "samples": 220240,
+    "mel_max_abs_difference": 9.059906005859375e-06
+  },
+  {
+    "id": "libri-train-1263-141777-0022",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 96,
+    "samples": 248560,
+    "mel_max_abs_difference": 8.225440979003906e-06
+  },
+  {
+    "id": "libri-train-1263-141777-0037",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 97,
+    "samples": 247600,
+    "mel_max_abs_difference": 1.2278556823730469e-05
+  },
+  {
+    "id": "libri-train-1263-141777-0038",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 65,
+    "samples": 177120,
+    "mel_max_abs_difference": 1.049041748046875e-05
+  },
+  {
+    "id": "libri-train-1743-142912-0000",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 75,
+    "samples": 215600,
+    "mel_max_abs_difference": 2.372264862060547e-05
+  },
+  {
+    "id": "libri-train-1743-142912-0010",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 82,
+    "samples": 194800,
+    "mel_max_abs_difference": 1.2636184692382812e-05
+  },
+  {
+    "id": "libri-train-1743-142912-0020",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 64,
+    "samples": 168000,
+    "mel_max_abs_difference": 1.2040138244628906e-05
+  },
+  {
+    "id": "libri-train-1743-142912-0026",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 69,
+    "samples": 195680,
+    "mel_max_abs_difference": 8.58306884765625e-06
+  },
+  {
+    "id": "libri-train-1743-142913-0000",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 89,
+    "samples": 242320,
+    "mel_max_abs_difference": 9.775161743164062e-06
+  },
+  {
+    "id": "libri-train-1743-142913-0010",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 98,
+    "samples": 244560,
+    "mel_max_abs_difference": 1.5735626220703125e-05
+  },
+  {
+    "id": "libri-train-1743-142914-0002",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 86,
+    "samples": 241760,
+    "mel_max_abs_difference": 1.621246337890625e-05
+  },
+  {
+    "id": "libri-train-1743-142914-0007",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 44,
+    "samples": 116640,
+    "mel_max_abs_difference": 2.1338462829589844e-05
+  },
+  {
+    "id": "libri-train-1743-142914-0023",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 86,
+    "samples": 233920,
+    "mel_max_abs_difference": 8.940696716308594e-06
+  },
+  {
+    "id": "libri-train-1743-142914-0033",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 38,
+    "samples": 84879,
+    "mel_max_abs_difference": 9.298324584960938e-06
+  },
+  {
+    "id": "libri-train-1743-142914-0034",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 76,
+    "samples": 171840,
+    "mel_max_abs_difference": 1.2516975402832031e-05
+  },
+  {
+    "id": "libri-train-226-122538-0024",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 97,
+    "samples": 263280,
+    "mel_max_abs_difference": 6.67572021484375e-06
+  },
+  {
+    "id": "libri-train-226-122538-0033",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 52,
+    "samples": 200560,
+    "mel_max_abs_difference": 3.5762786865234375e-06
+  },
+  {
+    "id": "libri-train-226-131532-0021",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 74,
+    "samples": 253600,
+    "mel_max_abs_difference": 2.7418136596679688e-06
+  },
+  {
+    "id": "libri-train-226-131532-0022",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 71,
+    "samples": 237920,
+    "mel_max_abs_difference": 1.2159347534179688e-05
+  },
+  {
+    "id": "libri-train-226-131533-0001",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 67,
+    "samples": 194800,
+    "mel_max_abs_difference": 1.3113021850585938e-05
+  },
+  {
+    "id": "libri-train-226-131533-0012",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 42,
+    "samples": 131760,
+    "mel_max_abs_difference": 8.106231689453125e-06
+  },
+  {
+    "id": "libri-train-226-131533-0026",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 80,
+    "samples": 218000,
+    "mel_max_abs_difference": 4.649162292480469e-06
+  },
+  {
+    "id": "libri-train-226-131533-0027",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 53,
+    "samples": 187760,
+    "mel_max_abs_difference": 4.5299530029296875e-06
+  },
+  {
+    "id": "libri-train-226-131533-0032",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 76,
+    "samples": 216560,
+    "mel_max_abs_difference": 1.0848045349121094e-05
+  },
+  {
+    "id": "libri-train-226-131533-0036",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 40,
+    "samples": 138240,
+    "mel_max_abs_difference": 2.1219253540039062e-05
+  },
+  {
+    "id": "libri-train-2514-149482-0007",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 81,
+    "samples": 223280,
+    "mel_max_abs_difference": 1.895427703857422e-05
+  },
+  {
+    "id": "libri-train-2514-149482-0008",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 83,
+    "samples": 251680,
+    "mel_max_abs_difference": 1.4066696166992188e-05
+  },
+  {
+    "id": "libri-train-2514-149482-0044",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 98,
+    "samples": 232080,
+    "mel_max_abs_difference": 1.728534698486328e-05
+  },
+  {
+    "id": "libri-train-2514-149482-0053",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 45,
+    "samples": 120720,
+    "mel_max_abs_difference": 1.2636184692382812e-05
+  },
+  {
+    "id": "libri-train-2514-149482-0054",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 35,
+    "samples": 80880,
+    "mel_max_abs_difference": 3.516674041748047e-05
+  },
+  {
+    "id": "libri-train-2514-149482-0066",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 84,
+    "samples": 227040,
+    "mel_max_abs_difference": 2.0384788513183594e-05
+  },
+  {
+    "id": "libri-train-2514-149482-0085",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 44,
+    "samples": 110320,
+    "mel_max_abs_difference": 1.728534698486328e-05
+  },
+  {
+    "id": "libri-train-2514-149482-0095",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 93,
+    "samples": 227360,
+    "mel_max_abs_difference": 1.3828277587890625e-05
+  },
+  {
+    "id": "libri-train-2514-149482-0098",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 93,
+    "samples": 234320,
+    "mel_max_abs_difference": 1.895427703857422e-05
+  },
+  {
+    "id": "libri-train-2514-149482-0104",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 70,
+    "samples": 198880,
+    "mel_max_abs_difference": 1.3470649719238281e-05
+  },
+  {
+    "id": "libri-train-2514-149482-0105",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 81,
+    "samples": 226880,
+    "mel_max_abs_difference": 1.1205673217773438e-05
+  },
+  {
+    "id": "libri-train-307-127535-0000",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 92,
+    "samples": 259280,
+    "mel_max_abs_difference": 8.58306884765625e-06
+  },
+  {
+    "id": "libri-train-307-127535-0001",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 89,
+    "samples": 261840,
+    "mel_max_abs_difference": 7.62939453125e-06
+  },
+  {
+    "id": "libri-train-307-127535-0002",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 89,
+    "samples": 255360,
+    "mel_max_abs_difference": 9.417533874511719e-06
+  },
+  {
+    "id": "libri-train-307-127535-0003",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 61,
+    "samples": 195280,
+    "mel_max_abs_difference": 1.6570091247558594e-05
+  },
+  {
+    "id": "libri-train-307-127535-0004",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 81,
+    "samples": 214640,
+    "mel_max_abs_difference": 8.225440979003906e-06
+  },
+  {
+    "id": "libri-train-307-127535-0005",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 83,
+    "samples": 270560,
+    "mel_max_abs_difference": 5.841255187988281e-06
+  },
+  {
+    "id": "libri-train-307-127535-0006",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 88,
+    "samples": 254000,
+    "mel_max_abs_difference": 8.58306884765625e-06
+  },
+  {
+    "id": "libri-train-307-127535-0007",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 55,
+    "samples": 173440,
+    "mel_max_abs_difference": 8.106231689453125e-06
+  },
+  {
+    "id": "libri-train-3240-131231-0006",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 27,
+    "samples": 56960,
+    "mel_max_abs_difference": 1.0132789611816406e-05
+  },
+  {
+    "id": "libri-train-3240-131231-0023",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 97,
+    "samples": 257760,
+    "mel_max_abs_difference": 8.225440979003906e-06
+  },
+  {
+    "id": "libri-train-3240-131231-0025",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 34,
+    "samples": 86960,
+    "mel_max_abs_difference": 9.059906005859375e-06
+  },
+  {
+    "id": "libri-train-3240-131231-0031",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 50,
+    "samples": 153840,
+    "mel_max_abs_difference": 1.0251998901367188e-05
+  },
+  {
+    "id": "libri-train-3240-131231-0035",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 94,
+    "samples": 248400,
+    "mel_max_abs_difference": 9.655952453613281e-06
+  },
+  {
+    "id": "libri-train-3240-131231-0068",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 95,
+    "samples": 231520,
+    "mel_max_abs_difference": 1.4662742614746094e-05
+  },
+  {
+    "id": "libri-train-3240-131231-0070",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 77,
+    "samples": 192560,
+    "mel_max_abs_difference": 1.430511474609375e-05
+  },
+  {
+    "id": "libri-train-3240-131232-0007",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 100,
+    "samples": 252800,
+    "mel_max_abs_difference": 1.7404556274414062e-05
+  },
+  {
+    "id": "libri-train-3240-131232-0008",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 69,
+    "samples": 199200,
+    "mel_max_abs_difference": 1.2278556823730469e-05
+  },
+  {
+    "id": "libri-train-3240-131232-0016",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 91,
+    "samples": 224720,
+    "mel_max_abs_difference": 1.7642974853515625e-05
+  },
+  {
+    "id": "libri-train-374-180298-0008",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 73,
+    "samples": 219520,
+    "mel_max_abs_difference": 9.059906005859375e-06
+  },
+  {
+    "id": "libri-train-374-180298-0025",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 76,
+    "samples": 226960,
+    "mel_max_abs_difference": 1.3709068298339844e-05
+  },
+  {
+    "id": "libri-train-374-180298-0032",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 77,
+    "samples": 220640,
+    "mel_max_abs_difference": 2.3126602172851562e-05
+  },
+  {
+    "id": "libri-train-374-180298-0045",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 56,
+    "samples": 179680,
+    "mel_max_abs_difference": 2.6106834411621094e-05
+  },
+  {
+    "id": "libri-train-374-180298-0057",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 83,
+    "samples": 237680,
+    "mel_max_abs_difference": 1.6689300537109375e-05
+  },
+  {
+    "id": "libri-train-374-180299-0001",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 21,
+    "samples": 52640,
+    "mel_max_abs_difference": 9.775161743164062e-06
+  },
+  {
+    "id": "libri-train-374-180299-0008",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 67,
+    "samples": 210720,
+    "mel_max_abs_difference": 2.562999725341797e-05
+  },
+  {
+    "id": "libri-train-374-180299-0032",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 74,
+    "samples": 244480,
+    "mel_max_abs_difference": 1.5974044799804688e-05
+  },
+  {
+    "id": "libri-train-374-180299-0033",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 68,
+    "samples": 235760,
+    "mel_max_abs_difference": 1.7762184143066406e-05
+  },
+  {
+    "id": "libri-train-374-180299-0042",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 90,
+    "samples": 239520,
+    "mel_max_abs_difference": 2.193450927734375e-05
+  },
+  {
+    "id": "libri-train-374-180299-0046",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 78,
+    "samples": 255680,
+    "mel_max_abs_difference": 1.7404556274414062e-05
+  },
+  {
+    "id": "libri-train-4214-7146-0006",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 54,
+    "samples": 113600,
+    "mel_max_abs_difference": 1.1086463928222656e-05
+  },
+  {
+    "id": "libri-train-4214-7146-0012",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 95,
+    "samples": 215520,
+    "mel_max_abs_difference": 1.4901161193847656e-05
+  },
+  {
+    "id": "libri-train-4214-7146-0017",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 65,
+    "samples": 166080,
+    "mel_max_abs_difference": 1.2516975402832031e-05
+  },
+  {
+    "id": "libri-train-4214-7146-0040",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 30,
+    "samples": 68480,
+    "mel_max_abs_difference": 1.52587890625e-05
+  },
+  {
+    "id": "libri-train-4214-7146-0042",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 78,
+    "samples": 202000,
+    "mel_max_abs_difference": 1.2278556823730469e-05
+  },
+  {
+    "id": "libri-train-4214-7146-0054",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 72,
+    "samples": 174000,
+    "mel_max_abs_difference": 1.1801719665527344e-05
+  },
+  {
+    "id": "libri-train-4214-7146-0062",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 100,
+    "samples": 256320,
+    "mel_max_abs_difference": 1.430511474609375e-05
+  },
+  {
+    "id": "libri-train-4214-7146-0064",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 93,
+    "samples": 265040,
+    "mel_max_abs_difference": 1.71661376953125e-05
+  },
+  {
+    "id": "libri-train-4214-7146-0073",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 79,
+    "samples": 212080,
+    "mel_max_abs_difference": 1.609325408935547e-05
+  },
+  {
+    "id": "libri-train-4214-7146-0079",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 100,
+    "samples": 259440,
+    "mel_max_abs_difference": 1.5497207641601562e-05
+  },
+  {
+    "id": "libri-train-5390-24512-0006",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 40,
+    "samples": 118320,
+    "mel_max_abs_difference": 3.8623809814453125e-05
+  },
+  {
+    "id": "libri-train-5390-24512-0008",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 83,
+    "samples": 236240,
+    "mel_max_abs_difference": 1.8715858459472656e-05
+  },
+  {
+    "id": "libri-train-5390-24512-0025",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 99,
+    "samples": 265520,
+    "mel_max_abs_difference": 1.6570091247558594e-05
+  },
+  {
+    "id": "libri-train-5390-24512-0028",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 68,
+    "samples": 220960,
+    "mel_max_abs_difference": 2.1219253540039062e-05
+  },
+  {
+    "id": "libri-train-5390-24512-0033",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 76,
+    "samples": 226560,
+    "mel_max_abs_difference": 2.1457672119140625e-05
+  },
+  {
+    "id": "libri-train-5390-24512-0039",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 80,
+    "samples": 242640,
+    "mel_max_abs_difference": 1.4424324035644531e-05
+  },
+  {
+    "id": "libri-train-5390-30096-0001",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 93,
+    "samples": 246880,
+    "mel_max_abs_difference": 1.2516975402832031e-05
+  },
+  {
+    "id": "libri-train-5390-30096-0031",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 82,
+    "samples": 232240,
+    "mel_max_abs_difference": 1.1324882507324219e-05
+  },
+  {
+    "id": "libri-train-5390-30096-0032",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 59,
+    "samples": 162960,
+    "mel_max_abs_difference": 1.2516975402832031e-05
+  },
+  {
+    "id": "libri-train-5390-30102-0017",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 82,
+    "samples": 236000,
+    "mel_max_abs_difference": 1.6450881958007812e-05
+  },
+  {
+    "id": "libri-train-5456-24741-0009",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 67,
+    "samples": 151920,
+    "mel_max_abs_difference": 1.9431114196777344e-05
+  },
+  {
+    "id": "libri-train-5456-24741-0015",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 29,
+    "samples": 64080,
+    "mel_max_abs_difference": 1.6689300537109375e-05
+  },
+  {
+    "id": "libri-train-5456-58161-0000",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 74,
+    "samples": 228960,
+    "mel_max_abs_difference": 1.71661376953125e-05
+  },
+  {
+    "id": "libri-train-5456-62014-0002",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 48,
+    "samples": 104320,
+    "mel_max_abs_difference": 2.2530555725097656e-05
+  },
+  {
+    "id": "libri-train-5456-62014-0018",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 14,
+    "samples": 31200,
+    "mel_max_abs_difference": 1.1324882507324219e-05
+  },
+  {
+    "id": "libri-train-5456-62043-0009",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 88,
+    "samples": 226080,
+    "mel_max_abs_difference": 9.417533874511719e-06
+  },
+  {
+    "id": "libri-train-5456-62043-0012",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 88,
+    "samples": 223760,
+    "mel_max_abs_difference": 1.0848045349121094e-05
+  },
+  {
+    "id": "libri-train-5456-62043-0013",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 34,
+    "samples": 91200,
+    "mel_max_abs_difference": 9.775161743164062e-06
+  },
+  {
+    "id": "libri-train-5456-62043-0016",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 58,
+    "samples": 149120,
+    "mel_max_abs_difference": 1.3947486877441406e-05
+  },
+  {
+    "id": "libri-train-5456-62043-0021",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 87,
+    "samples": 213440,
+    "mel_max_abs_difference": 1.1086463928222656e-05
+  },
+  {
+    "id": "libri-train-5750-100289-0005",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 68,
+    "samples": 210240,
+    "mel_max_abs_difference": 1.1563301086425781e-05
+  },
+  {
+    "id": "libri-train-5750-100289-0008",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 89,
+    "samples": 254320,
+    "mel_max_abs_difference": 1.049041748046875e-05
+  },
+  {
+    "id": "libri-train-5750-100289-0019",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 79,
+    "samples": 242160,
+    "mel_max_abs_difference": 3.2901763916015625e-05
+  },
+  {
+    "id": "libri-train-5750-100289-0047",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 19,
+    "samples": 43520,
+    "mel_max_abs_difference": 1.9788742065429688e-05
+  },
+  {
+    "id": "libri-train-5750-100289-0049",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 78,
+    "samples": 197760,
+    "mel_max_abs_difference": 1.2159347534179688e-05
+  },
+  {
+    "id": "libri-train-5750-100289-0073",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 101,
+    "samples": 255200,
+    "mel_max_abs_difference": 1.6808509826660156e-05
+  },
+  {
+    "id": "libri-train-5750-100289-0083",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 96,
+    "samples": 259120,
+    "mel_max_abs_difference": 1.4066696166992188e-05
+  },
+  {
+    "id": "libri-train-5750-100289-0085",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 74,
+    "samples": 200560,
+    "mel_max_abs_difference": 1.239776611328125e-05
+  },
+  {
+    "id": "libri-train-5750-100289-0086",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 80,
+    "samples": 246640,
+    "mel_max_abs_difference": 1.6570091247558594e-05
+  },
+  {
+    "id": "libri-train-5750-35690-0001",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 89,
+    "samples": 223040,
+    "mel_max_abs_difference": 9.655952453613281e-06
+  },
+  {
+    "id": "libri-train-5750-35690-0026",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 19,
+    "samples": 49040,
+    "mel_max_abs_difference": 1.0848045349121094e-05
+  },
+  {
+    "id": "libri-train-5789-57158-0002",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 42,
+    "samples": 115840,
+    "mel_max_abs_difference": 1.1324882507324219e-05
+  },
+  {
+    "id": "libri-train-5789-57158-0018",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 74,
+    "samples": 243200,
+    "mel_max_abs_difference": 1.0848045349121094e-05
+  },
+  {
+    "id": "libri-train-5789-57158-0032",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 39,
+    "samples": 174160,
+    "mel_max_abs_difference": 7.987022399902344e-06
+  },
+  {
+    "id": "libri-train-5789-57158-0036",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 85,
+    "samples": 242640,
+    "mel_max_abs_difference": 1.2278556823730469e-05
+  },
+  {
+    "id": "libri-train-5789-57195-0012",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 45,
+    "samples": 125520,
+    "mel_max_abs_difference": 1.9669532775878906e-05
+  },
+  {
+    "id": "libri-train-5789-57195-0019",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 92,
+    "samples": 252320,
+    "mel_max_abs_difference": 1.0132789611816406e-05
+  },
+  {
+    "id": "libri-train-5789-57195-0036",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 69,
+    "samples": 230240,
+    "mel_max_abs_difference": 1.0609626770019531e-05
+  },
+  {
+    "id": "libri-train-5789-70653-0022",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 65,
+    "samples": 221040,
+    "mel_max_abs_difference": 9.894371032714844e-06
+  },
+  {
+    "id": "libri-train-5789-70653-0024",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 79,
+    "samples": 237120,
+    "mel_max_abs_difference": 1.2278556823730469e-05
+  },
+  {
+    "id": "libri-train-5789-70653-0028",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 84,
+    "samples": 246560,
+    "mel_max_abs_difference": 9.5367431640625e-06
+  },
+  {
+    "id": "libri-train-5789-70653-0032",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 76,
+    "samples": 232080,
+    "mel_max_abs_difference": 9.894371032714844e-06
+  },
+  {
+    "id": "libri-train-587-41611-0001",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 97,
+    "samples": 228320,
+    "mel_max_abs_difference": 5.9604644775390625e-06
+  },
+  {
+    "id": "libri-train-587-41611-0024",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 106,
+    "samples": 239200,
+    "mel_max_abs_difference": 1.1444091796875e-05
+  },
+  {
+    "id": "libri-train-587-41619-0001",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 100,
+    "samples": 266080,
+    "mel_max_abs_difference": 6.198883056640625e-06
+  },
+  {
+    "id": "libri-train-587-41619-0004",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 85,
+    "samples": 239360,
+    "mel_max_abs_difference": 7.271766662597656e-06
+  },
+  {
+    "id": "libri-train-587-54108-0002",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 87,
+    "samples": 231120,
+    "mel_max_abs_difference": 1.1324882507324219e-05
+  },
+  {
+    "id": "libri-train-587-54108-0005",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 91,
+    "samples": 245440,
+    "mel_max_abs_difference": 1.1324882507324219e-05
+  },
+  {
+    "id": "libri-train-587-54108-0015",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 58,
+    "samples": 153920,
+    "mel_max_abs_difference": 6.198883056640625e-06
+  },
+  {
+    "id": "libri-train-587-54108-0020",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 91,
+    "samples": 242000,
+    "mel_max_abs_difference": 1.4543533325195312e-05
+  },
+  {
+    "id": "libri-train-587-54108-0029",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 36,
+    "samples": 80000,
+    "mel_max_abs_difference": 8.702278137207031e-06
+  },
+  {
+    "id": "libri-train-587-54108-0032",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 93,
+    "samples": 248880,
+    "mel_max_abs_difference": 1.1801719665527344e-05
+  },
+  {
+    "id": "libri-train-587-54108-0033",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 86,
+    "samples": 250159,
+    "mel_max_abs_difference": 1.2874603271484375e-05
+  },
+  {
+    "id": "libri-train-7505-258958-0007",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 71,
+    "samples": 231280,
+    "mel_max_abs_difference": 8.702278137207031e-06
+  },
+  {
+    "id": "libri-train-7505-258958-0012",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 57,
+    "samples": 176480,
+    "mel_max_abs_difference": 8.821487426757812e-06
+  },
+  {
+    "id": "libri-train-7505-258958-0021",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 68,
+    "samples": 247280,
+    "mel_max_abs_difference": 1.1444091796875e-05
+  },
+  {
+    "id": "libri-train-7505-258958-0024",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 71,
+    "samples": 209600,
+    "mel_max_abs_difference": 1.4543533325195312e-05
+  },
+  {
+    "id": "libri-train-7505-258958-0035",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 81,
+    "samples": 259040,
+    "mel_max_abs_difference": 8.344650268554688e-06
+  },
+  {
+    "id": "libri-train-7505-258964-0003",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 92,
+    "samples": 267280,
+    "mel_max_abs_difference": 1.049041748046875e-05
+  },
+  {
+    "id": "libri-train-7505-258964-0023",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 53,
+    "samples": 162320,
+    "mel_max_abs_difference": 9.059906005859375e-06
+  },
+  {
+    "id": "libri-train-7505-258964-0042",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 62,
+    "samples": 196480,
+    "mel_max_abs_difference": 1.0967254638671875e-05
+  },
+  {
+    "id": "libri-train-7505-83618-0007",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 78,
+    "samples": 235600,
+    "mel_max_abs_difference": 1.8715858459472656e-05
+  },
+  {
+    "id": "libri-train-7505-83618-0012",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 86,
+    "samples": 256560,
+    "mel_max_abs_difference": 1.1682510375976562e-05
+  },
+  {
+    "id": "libri-train-7505-83618-0015",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 81,
+    "samples": 225840,
+    "mel_max_abs_difference": 1.537799835205078e-05
+  },
+  {
+    "id": "libri-train-7635-105409-0011",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 99,
+    "samples": 255040,
+    "mel_max_abs_difference": 1.0967254638671875e-05
+  },
+  {
+    "id": "libri-train-7635-105409-0013",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 91,
+    "samples": 209119,
+    "mel_max_abs_difference": 6.079673767089844e-06
+  },
+  {
+    "id": "libri-train-7635-105409-0031",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 90,
+    "samples": 203120,
+    "mel_max_abs_difference": 1.2993812561035156e-05
+  },
+  {
+    "id": "libri-train-7635-105409-0036",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 104,
+    "samples": 245040,
+    "mel_max_abs_difference": 1.0371208190917969e-05
+  },
+  {
+    "id": "libri-train-7635-105409-0041",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 25,
+    "samples": 54320,
+    "mel_max_abs_difference": 7.033348083496094e-06
+  },
+  {
+    "id": "libri-train-7635-105409-0061",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 106,
+    "samples": 262880,
+    "mel_max_abs_difference": 9.298324584960938e-06
+  },
+  {
+    "id": "libri-train-7635-105661-0002",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 103,
+    "samples": 248560,
+    "mel_max_abs_difference": 1.1563301086425781e-05
+  },
+  {
+    "id": "libri-train-7635-105661-0005",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 91,
+    "samples": 217120,
+    "mel_max_abs_difference": 1.1086463928222656e-05
+  },
+  {
+    "id": "libri-train-7635-105661-0016",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 89,
+    "samples": 210640,
+    "mel_max_abs_difference": 9.179115295410156e-06
+  },
+  {
+    "id": "libri-train-7635-105661-0020",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 84,
+    "samples": 193840,
+    "mel_max_abs_difference": 8.344650268554688e-06
+  },
+  {
+    "id": "libri-train-7635-105661-0033",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 94,
+    "samples": 254480,
+    "mel_max_abs_difference": 7.3909759521484375e-06
+  },
+  {
+    "id": "libri-train-7800-283478-0017",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 117,
+    "samples": 239440,
+    "mel_max_abs_difference": 1.4543533325195312e-05
+  },
+  {
+    "id": "libri-train-7800-283492-0002",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 91,
+    "samples": 233999,
+    "mel_max_abs_difference": 2.3484230041503906e-05
+  },
+  {
+    "id": "libri-train-7800-283492-0015",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 40,
+    "samples": 100560,
+    "mel_max_abs_difference": 1.0967254638671875e-05
+  },
+  {
+    "id": "libri-train-7800-283492-0037",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 85,
+    "samples": 230560,
+    "mel_max_abs_difference": 2.193450927734375e-05
+  },
+  {
+    "id": "libri-train-7800-283493-0000",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 82,
+    "samples": 233360,
+    "mel_max_abs_difference": 1.9550323486328125e-05
+  },
+  {
+    "id": "libri-train-7800-283493-0009",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 46,
+    "samples": 119920,
+    "mel_max_abs_difference": 1.239776611328125e-05
+  },
+  {
+    "id": "libri-train-7800-283493-0010",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 73,
+    "samples": 205920,
+    "mel_max_abs_difference": 1.3470649719238281e-05
+  },
+  {
+    "id": "libri-train-7800-283493-0013",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 105,
+    "samples": 258879,
+    "mel_max_abs_difference": 2.3126602172851562e-05
+  },
+  {
+    "id": "libri-train-7800-283493-0023",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 78,
+    "samples": 206800,
+    "mel_max_abs_difference": 1.5020370483398438e-05
+  },
+  {
+    "id": "libri-train-7800-283493-0031",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 89,
+    "samples": 227920,
+    "mel_max_abs_difference": 1.6450881958007812e-05
+  },
+  {
+    "id": "libri-train-7800-283493-0032",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 91,
+    "samples": 239120,
+    "mel_max_abs_difference": 2.872943878173828e-05
+  },
+  {
+    "id": "libri-train-8238-274553-0006",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 80,
+    "samples": 250240,
+    "mel_max_abs_difference": 1.2159347534179688e-05
+  },
+  {
+    "id": "libri-train-8238-274553-0012",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 49,
+    "samples": 159600,
+    "mel_max_abs_difference": 7.867813110351562e-06
+  },
+  {
+    "id": "libri-train-8238-274553-0023",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 21,
+    "samples": 59040,
+    "mel_max_abs_difference": 8.940696716308594e-06
+  },
+  {
+    "id": "libri-train-8238-274553-0036",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 68,
+    "samples": 208000,
+    "mel_max_abs_difference": 1.0848045349121094e-05
+  },
+  {
+    "id": "libri-train-8238-274553-0052",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 36,
+    "samples": 100160,
+    "mel_max_abs_difference": 3.170967102050781e-05
+  },
+  {
+    "id": "libri-train-8238-274553-0057",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 98,
+    "samples": 269120,
+    "mel_max_abs_difference": 1.2874603271484375e-05
+  },
+  {
+    "id": "libri-train-8238-274553-0069",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 17,
+    "samples": 34240,
+    "mel_max_abs_difference": 8.463859558105469e-06
+  },
+  {
+    "id": "libri-train-8238-283452-0014",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 83,
+    "samples": 233760,
+    "mel_max_abs_difference": 2.372264862060547e-05
+  },
+  {
+    "id": "libri-train-8238-283452-0033",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 70,
+    "samples": 238400,
+    "mel_max_abs_difference": 1.4781951904296875e-05
+  },
+  {
+    "id": "libri-train-8238-283452-0034",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 79,
+    "samples": 251200,
+    "mel_max_abs_difference": 9.5367431640625e-06
+  },
+  {
+    "id": "libri-train-8238-283452-0045",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 68,
+    "samples": 217759,
+    "mel_max_abs_difference": 2.2649765014648438e-05
+  },
+  {
+    "id": "nus-clip05_0040",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 20,
+    "samples": 96000,
+    "mel_max_abs_difference": 1.1205673217773438e-05
+  },
+  {
+    "id": "nus-clip05_0005",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 20,
+    "samples": 96000,
+    "mel_max_abs_difference": 2.1457672119140625e-05
+  },
+  {
+    "id": "nus-clip03_0002",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 21,
+    "samples": 64000,
+    "mel_max_abs_difference": 1.6570091247558594e-05
+  },
+  {
+    "id": "nus-clip07_0052",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 12,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.800060272216797e-05
+  },
+  {
+    "id": "nus-clip03_0024",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.2159347534179688e-05
+  },
+  {
+    "id": "nus-clip05_0047",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 48000,
+    "mel_max_abs_difference": 8.702278137207031e-06
+  },
+  {
+    "id": "nus-clip03_0026",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 48000,
+    "mel_max_abs_difference": 8.702278137207031e-06
+  },
+  {
+    "id": "nus-clip05_0018",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 40000,
+    "mel_max_abs_difference": 7.987022399902344e-06
+  },
+  {
+    "id": "nus-clip03_0004",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 17,
+    "samples": 80000,
+    "mel_max_abs_difference": 1.0251998901367188e-05
+  },
+  {
+    "id": "nus-clip05_0051",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 14,
+    "samples": 60800,
+    "mel_max_abs_difference": 2.0265579223632812e-05
+  },
+  {
+    "id": "nus-clip07_0043",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 7,
+    "samples": 16000,
+    "mel_max_abs_difference": 8.58306884765625e-06
+  },
+  {
+    "id": "nus-clip06_0046",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 11,
+    "samples": 52800,
+    "mel_max_abs_difference": 1.4185905456542969e-05
+  },
+  {
+    "id": "nus-clip02_0031",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.33514404296875e-05
+  },
+  {
+    "id": "nus-clip07_0045",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 13,
+    "samples": 38400,
+    "mel_max_abs_difference": 2.6941299438476562e-05
+  },
+  {
+    "id": "nus-clip06_0031",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 7,
+    "samples": 28800,
+    "mel_max_abs_difference": 1.2993812561035156e-05
+  },
+  {
+    "id": "nus-clip07_0026",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 18,
+    "samples": 70400,
+    "mel_max_abs_difference": 1.1444091796875e-05
+  },
+  {
+    "id": "nus-clip04_0018",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 15,
+    "samples": 64000,
+    "mel_max_abs_difference": 1.9073486328125e-05
+  },
+  {
+    "id": "nus-clip06_0010",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 8,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.0609626770019531e-05
+  },
+  {
+    "id": "nus-clip05_0028",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 7,
+    "samples": 32000,
+    "mel_max_abs_difference": 2.0623207092285156e-05
+  },
+  {
+    "id": "nus-clip05_0014",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 11,
+    "samples": 48000,
+    "mel_max_abs_difference": 9.894371032714844e-06
+  },
+  {
+    "id": "nus-clip06_0047",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 24000,
+    "mel_max_abs_difference": 1.3828277587890625e-05
+  },
+  {
+    "id": "nus-clip04_0036",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 8,
+    "samples": 16000,
+    "mel_max_abs_difference": 9.059906005859375e-06
+  },
+  {
+    "id": "nus-clip02_0022",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 12,
+    "samples": 64000,
+    "mel_max_abs_difference": 1.4662742614746094e-05
+  },
+  {
+    "id": "nus-clip06_0018",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 23,
+    "samples": 64000,
+    "mel_max_abs_difference": 1.4185905456542969e-05
+  },
+  {
+    "id": "nus-clip05_0026",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 18,
+    "samples": 40000,
+    "mel_max_abs_difference": 1.919269561767578e-05
+  },
+  {
+    "id": "nus-clip02_0033",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.6570091247558594e-05
+  },
+  {
+    "id": "nus-clip02_0007",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 12,
+    "samples": 48000,
+    "mel_max_abs_difference": 7.510185241699219e-06
+  },
+  {
+    "id": "nus-clip01_0008",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 15,
+    "samples": 144000,
+    "mel_max_abs_difference": 1.1205673217773438e-05
+  },
+  {
+    "id": "nus-clip04_0038",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 16,
+    "samples": 56000,
+    "mel_max_abs_difference": 1.811981201171875e-05
+  },
+  {
+    "id": "nus-clip05_0022",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 13,
+    "samples": 48000,
+    "mel_max_abs_difference": 8.344650268554688e-06
+  },
+  {
+    "id": "nus-clip07_0011",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 13,
+    "samples": 64000,
+    "mel_max_abs_difference": 2.1219253540039062e-05
+  },
+  {
+    "id": "nus-clip04_0033",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 12,
+    "samples": 40000,
+    "mel_max_abs_difference": 3.743171691894531e-05
+  },
+  {
+    "id": "nus-clip03_0006",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 7,
+    "samples": 32000,
+    "mel_max_abs_difference": 8.58306884765625e-06
+  },
+  {
+    "id": "nus-clip02_0004",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.609325408935547e-05
+  },
+  {
+    "id": "nus-clip05_0043",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 8,
+    "samples": 24000,
+    "mel_max_abs_difference": 1.2755393981933594e-05
+  },
+  {
+    "id": "nus-clip05_0057",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 14,
+    "samples": 60800,
+    "mel_max_abs_difference": 2.1219253540039062e-05
+  },
+  {
+    "id": "nus-clip07_0004",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 32000,
+    "mel_max_abs_difference": 2.1338462829589844e-05
+  },
+  {
+    "id": "nus-clip06_0020",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 17,
+    "samples": 72000,
+    "mel_max_abs_difference": 1.8835067749023438e-05
+  },
+  {
+    "id": "nus-clip06_0014",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 8,
+    "samples": 32000,
+    "mel_max_abs_difference": 6.079673767089844e-06
+  },
+  {
+    "id": "nus-clip03_0011",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 14,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.9669532775878906e-05
+  },
+  {
+    "id": "nus-clip02_0009",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 12,
+    "samples": 64000,
+    "mel_max_abs_difference": 3.254413604736328e-05
+  },
+  {
+    "id": "nus-clip05_0020",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 13,
+    "samples": 44800,
+    "mel_max_abs_difference": 4.220008850097656e-05
+  },
+  {
+    "id": "nus-clip07_0014",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 8,
+    "samples": 32000,
+    "mel_max_abs_difference": 9.059906005859375e-06
+  },
+  {
+    "id": "nus-clip06_0035",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 22400,
+    "mel_max_abs_difference": 1.1444091796875e-05
+  },
+  {
+    "id": "nus-clip04_0020",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 32000,
+    "mel_max_abs_difference": 9.417533874511719e-06
+  },
+  {
+    "id": "nus-clip07_0044",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 48000,
+    "mel_max_abs_difference": 8.463859558105469e-06
+  },
+  {
+    "id": "nus-clip04_0009",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.4901161193847656e-05
+  },
+  {
+    "id": "nus-clip02_0013",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 16,
+    "samples": 80000,
+    "mel_max_abs_difference": 9.059906005859375e-06
+  },
+  {
+    "id": "nus-clip02_0021",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 11,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.0848045349121094e-05
+  },
+  {
+    "id": "nus-clip03_0031",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 8,
+    "samples": 32000,
+    "mel_max_abs_difference": 4.649162292480469e-06
+  },
+  {
+    "id": "nus-clip02_0024",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 15,
+    "samples": 176000,
+    "mel_max_abs_difference": 3.2782554626464844e-05
+  },
+  {
+    "id": "nus-clip05_0017",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 40000,
+    "mel_max_abs_difference": 1.1205673217773438e-05
+  },
+  {
+    "id": "nus-clip06_0022",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 27200,
+    "mel_max_abs_difference": 9.298324584960938e-06
+  },
+  {
+    "id": "nus-clip07_0019",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 15,
+    "samples": 80000,
+    "mel_max_abs_difference": 2.1219253540039062e-05
+  },
+  {
+    "id": "nus-clip05_0033",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 8,
+    "samples": 20800,
+    "mel_max_abs_difference": 2.2292137145996094e-05
+  },
+  {
+    "id": "nus-clip05_0050",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 18,
+    "samples": 83200,
+    "mel_max_abs_difference": 1.3828277587890625e-05
+  },
+  {
+    "id": "nus-clip03_0016",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.71661376953125e-05
+  },
+  {
+    "id": "nus-clip04_0023",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 12,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.4662742614746094e-05
+  },
+  {
+    "id": "nus-clip03_0017",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.8835067749023438e-05
+  },
+  {
+    "id": "nus-clip02_0016",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 16,
+    "samples": 80000,
+    "mel_max_abs_difference": 1.0848045349121094e-05
+  },
+  {
+    "id": "nus-clip05_0061",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 8,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.049041748046875e-05
+  },
+  {
+    "id": "nus-clip07_0012",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 48000,
+    "mel_max_abs_difference": 2.0742416381835938e-05
+  },
+  {
+    "id": "nus-clip05_0034",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 11,
+    "samples": 48000,
+    "mel_max_abs_difference": 2.3603439331054688e-05
+  },
+  {
+    "id": "nus-clip04_0012",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 40000,
+    "mel_max_abs_difference": 8.463859558105469e-06
+  },
+  {
+    "id": "nus-clip06_0034",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 11,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.430511474609375e-05
+  },
+  {
+    "id": "nus-clip02_0046",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 7,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.1205673217773438e-05
+  },
+  {
+    "id": "nus-clip04_0030",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 8,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.0251998901367188e-05
+  },
+  {
+    "id": "nus-clip04_0035",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 15,
+    "samples": 56000,
+    "mel_max_abs_difference": 4.0650367736816406e-05
+  },
+  {
+    "id": "nus-clip07_0032",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 11,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.1563301086425781e-05
+  },
+  {
+    "id": "nus-clip04_0015",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.2755393981933594e-05
+  },
+  {
+    "id": "nus-clip01_0004",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 13,
+    "samples": 128000,
+    "mel_max_abs_difference": 1.4424324035644531e-05
+  },
+  {
+    "id": "nus-clip07_0016",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.4185905456542969e-05
+  },
+  {
+    "id": "nus-clip05_0015",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 8,
+    "samples": 32000,
+    "mel_max_abs_difference": 2.5033950805664062e-06
+  },
+  {
+    "id": "nus-clip02_0005",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 8,
+    "samples": 80000,
+    "mel_max_abs_difference": 1.7762184143066406e-05
+  },
+  {
+    "id": "nus-clip01_0010",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 12,
+    "samples": 64000,
+    "mel_max_abs_difference": 1.5735626220703125e-05
+  },
+  {
+    "id": "nus-clip07_0035",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 13,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.0371208190917969e-05
+  },
+  {
+    "id": "nus-clip01_0012",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 13,
+    "samples": 80000,
+    "mel_max_abs_difference": 1.9788742065429688e-05
+  },
+  {
+    "id": "nus-clip06_0030",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 17,
+    "samples": 59200,
+    "mel_max_abs_difference": 7.987022399902344e-06
+  },
+  {
+    "id": "nus-clip04_0014",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.3589859008789062e-05
+  },
+  {
+    "id": "nus-clip03_0003",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 19,
+    "samples": 80000,
+    "mel_max_abs_difference": 2.110004425048828e-05
+  },
+  {
+    "id": "nus-clip06_0006",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 11,
+    "samples": 40000,
+    "mel_max_abs_difference": 8.344650268554688e-06
+  },
+  {
+    "id": "nus-clip06_0009",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 11,
+    "samples": 48000,
+    "mel_max_abs_difference": 3.6954879760742188e-06
+  },
+  {
+    "id": "nus-clip06_0026",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 32000,
+    "mel_max_abs_difference": 8.821487426757812e-06
+  },
+  {
+    "id": "nus-clip05_0052",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 8,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.1682510375976562e-05
+  },
+  {
+    "id": "nus-clip07_0037",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 8,
+    "samples": 25600,
+    "mel_max_abs_difference": 2.9802322387695312e-06
+  },
+  {
+    "id": "nus-clip05_0031",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 6,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.2636184692382812e-05
+  },
+  {
+    "id": "nus-clip03_0012",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.3113021850585938e-05
+  },
+  {
+    "id": "nus-clip04_0010",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 32000,
+    "mel_max_abs_difference": 9.417533874511719e-06
+  },
+  {
+    "id": "nus-clip06_0001",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 14,
+    "samples": 56000,
+    "mel_max_abs_difference": 2.0623207092285156e-05
+  },
+  {
+    "id": "nus-clip04_0016",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 8,
+    "samples": 32000,
+    "mel_max_abs_difference": 7.62939453125e-06
+  },
+  {
+    "id": "nus-clip05_0023",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 12,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.2040138244628906e-05
+  },
+  {
+    "id": "nus-clip05_0011",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 13,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.2278556823730469e-05
+  },
+  {
+    "id": "nus-clip07_0018",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 48000,
+    "mel_max_abs_difference": 6.67572021484375e-06
+  },
+  {
+    "id": "nus-clip05_0045",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 44800,
+    "mel_max_abs_difference": 1.5616416931152344e-05
+  },
+  {
+    "id": "nus-clip03_0025",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 13,
+    "samples": 64000,
+    "mel_max_abs_difference": 1.4901161193847656e-05
+  },
+  {
+    "id": "nus-clip03_0014",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 16,
+    "samples": 64000,
+    "mel_max_abs_difference": 1.52587890625e-05
+  },
+  {
+    "id": "nus-clip05_0021",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.0251998901367188e-05
+  },
+  {
+    "id": "nus-clip01_0007",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 16,
+    "samples": 80000,
+    "mel_max_abs_difference": 3.0040740966796875e-05
+  },
+  {
+    "id": "nus-clip05_0046",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 32000,
+    "mel_max_abs_difference": 8.106231689453125e-06
+  },
+  {
+    "id": "nus-clip02_0028",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.1801719665527344e-05
+  },
+  {
+    "id": "nus-clip05_0044",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 11,
+    "samples": 35200,
+    "mel_max_abs_difference": 9.179115295410156e-06
+  },
+  {
+    "id": "nus-clip05_0025",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.3589859008789062e-05
+  },
+  {
+    "id": "nus-clip03_0008",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 13,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.1563301086425781e-05
+  },
+  {
+    "id": "nus-clip06_0012",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.537799835205078e-05
+  },
+  {
+    "id": "nus-clip06_0007",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 32000,
+    "mel_max_abs_difference": 9.298324584960938e-06
+  },
+  {
+    "id": "nus-clip03_0010",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 12,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.6927719116210938e-05
+  },
+  {
+    "id": "nus-clip02_0014",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 14,
+    "samples": 96000,
+    "mel_max_abs_difference": 2.658367156982422e-05
+  },
+  {
+    "id": "nus-clip03_0029",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.6808509826660156e-05
+  },
+  {
+    "id": "nus-clip04_0017",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 14,
+    "samples": 72000,
+    "mel_max_abs_difference": 2.086162567138672e-05
+  },
+  {
+    "id": "nus-clip01_0016",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 13,
+    "samples": 64000,
+    "mel_max_abs_difference": 1.6927719116210938e-05
+  },
+  {
+    "id": "nus-clip07_0039",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.609325408935547e-05
+  },
+  {
+    "id": "nus-clip06_0017",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 8,
+    "samples": 40000,
+    "mel_max_abs_difference": 1.8835067749023438e-05
+  },
+  {
+    "id": "nus-clip03_0022",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 7,
+    "samples": 32000,
+    "mel_max_abs_difference": 2.47955322265625e-05
+  },
+  {
+    "id": "nus-clip07_0047",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 11,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.728534698486328e-05
+  },
+  {
+    "id": "nus-clip07_0024",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.430511474609375e-05
+  },
+  {
+    "id": "nus-clip07_0007",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 14,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.9431114196777344e-05
+  },
+  {
+    "id": "nus-clip07_0029",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 12,
+    "samples": 44800,
+    "mel_max_abs_difference": 1.3113021850585938e-05
+  },
+  {
+    "id": "nus-clip07_0048",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 8,
+    "samples": 32000,
+    "mel_max_abs_difference": 2.4199485778808594e-05
+  },
+  {
+    "id": "nus-clip07_0038",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 32000,
+    "mel_max_abs_difference": 7.3909759521484375e-06
+  },
+  {
+    "id": "nus-clip02_0044",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 12,
+    "samples": 48000,
+    "mel_max_abs_difference": 2.193450927734375e-05
+  },
+  {
+    "id": "nus-clip06_0029",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 40000,
+    "mel_max_abs_difference": 1.4066696166992188e-05
+  },
+  {
+    "id": "nus-clip04_0040",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 12,
+    "samples": 40000,
+    "mel_max_abs_difference": 1.5139579772949219e-05
+  },
+  {
+    "id": "nus-clip05_0039",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 40000,
+    "mel_max_abs_difference": 1.4543533325195312e-05
+  },
+  {
+    "id": "nus-clip06_0036",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 32000,
+    "mel_max_abs_difference": 2.3126602172851562e-05
+  },
+  {
+    "id": "nus-clip02_0045",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 11,
+    "samples": 64000,
+    "mel_max_abs_difference": 1.3709068298339844e-05
+  },
+  {
+    "id": "nus-clip05_0048",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 15,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.7404556274414062e-05
+  },
+  {
+    "id": "nus-clip05_0002",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 12,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.6927719116210938e-05
+  },
+  {
+    "id": "nus-clip04_0027",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.9788742065429688e-05
+  },
+  {
+    "id": "nus-clip06_0023",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 35200,
+    "mel_max_abs_difference": 1.5497207641601562e-05
+  },
+  {
+    "id": "nus-clip02_0012",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 28,
+    "samples": 208000,
+    "mel_max_abs_difference": 1.1563301086425781e-05
+  },
+  {
+    "id": "nus-clip06_0019",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 14,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.621246337890625e-05
+  },
+  {
+    "id": "nus-clip05_0003",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 11,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.8358230590820312e-05
+  },
+  {
+    "id": "nus-clip07_0027",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 19,
+    "samples": 48000,
+    "mel_max_abs_difference": 2.2530555725097656e-05
+  },
+  {
+    "id": "nus-clip06_0044",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 14,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.2278556823730469e-05
+  },
+  {
+    "id": "nus-clip04_0032",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 13,
+    "samples": 48000,
+    "mel_max_abs_difference": 9.059906005859375e-06
+  },
+  {
+    "id": "nus-clip06_0048",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 15,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.2993812561035156e-05
+  },
+  {
+    "id": "nus-clip02_0041",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.1205673217773438e-05
+  },
+  {
+    "id": "nus-clip05_0053",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 15,
+    "samples": 99200,
+    "mel_max_abs_difference": 1.239776611328125e-05
+  },
+  {
+    "id": "nus-clip01_0015",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 16,
+    "samples": 80000,
+    "mel_max_abs_difference": 3.0517578125e-05
+  },
+  {
+    "id": "nus-clip05_0019",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 11,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.4901161193847656e-05
+  },
+  {
+    "id": "nus-clip07_0046",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 15,
+    "samples": 52800,
+    "mel_max_abs_difference": 2.384185791015625e-05
+  },
+  {
+    "id": "nus-clip02_0023",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 12,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.1920928955078125e-05
+  },
+  {
+    "id": "nus-clip04_0008",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 11,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.5497207641601562e-05
+  },
+  {
+    "id": "nus-clip05_0001",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 12,
+    "samples": 32000,
+    "mel_max_abs_difference": 2.4080276489257812e-05
+  },
+  {
+    "id": "nus-clip02_0019",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 11,
+    "samples": 48000,
+    "mel_max_abs_difference": 8.463859558105469e-06
+  },
+  {
+    "id": "nus-clip02_0047",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 11,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.8835067749023438e-05
+  },
+  {
+    "id": "nus-clip05_0029",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.2278556823730469e-05
+  },
+  {
+    "id": "nus-clip04_0034",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 20800,
+    "mel_max_abs_difference": 2.2649765014648438e-05
+  },
+  {
+    "id": "nus-clip05_0041",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 32000,
+    "mel_max_abs_difference": 9.655952453613281e-06
+  },
+  {
+    "id": "nus-clip02_0017",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 12,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.9311904907226562e-05
+  },
+  {
+    "id": "nus-clip07_0042",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 11,
+    "samples": 40000,
+    "mel_max_abs_difference": 1.7881393432617188e-05
+  },
+  {
+    "id": "nus-clip06_0003",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 8,
+    "samples": 22400,
+    "mel_max_abs_difference": 1.049041748046875e-05
+  },
+  {
+    "id": "nus-clip05_0010",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 20,
+    "samples": 75200,
+    "mel_max_abs_difference": 1.71661376953125e-05
+  },
+  {
+    "id": "nus-clip07_0010",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.5497207641601562e-05
+  },
+  {
+    "id": "nus-clip02_0020",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 11,
+    "samples": 48000,
+    "mel_max_abs_difference": 8.940696716308594e-06
+  },
+  {
+    "id": "nus-clip01_0011",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 20,
+    "samples": 192000,
+    "mel_max_abs_difference": 1.5020370483398438e-05
+  },
+  {
+    "id": "nus-clip05_0058",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 36800,
+    "mel_max_abs_difference": 1.4662742614746094e-05
+  },
+  {
+    "id": "nus-clip06_0015",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 14,
+    "samples": 43200,
+    "mel_max_abs_difference": 1.633167266845703e-05
+  },
+  {
+    "id": "nus-clip03_0027",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 14,
+    "samples": 64000,
+    "mel_max_abs_difference": 2.2172927856445312e-05
+  },
+  {
+    "id": "nus-clip03_0018",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 15,
+    "samples": 80000,
+    "mel_max_abs_difference": 2.7060508728027344e-05
+  },
+  {
+    "id": "nus-clip07_0054",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 17,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.8477439880371094e-05
+  },
+  {
+    "id": "nus-clip02_0050",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 7,
+    "samples": 48000,
+    "mel_max_abs_difference": 6.556510925292969e-06
+  },
+  {
+    "id": "nus-clip07_0030",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 12,
+    "samples": 44800,
+    "mel_max_abs_difference": 1.1682510375976562e-05
+  },
+  {
+    "id": "nus-clip05_0024",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 8,
+    "samples": 32000,
+    "mel_max_abs_difference": 8.940696716308594e-06
+  },
+  {
+    "id": "nus-clip02_0038",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.633167266845703e-05
+  },
+  {
+    "id": "nus-clip06_0013",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.1086463928222656e-05
+  },
+  {
+    "id": "nus-clip02_0027",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 12,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.1324882507324219e-05
+  },
+  {
+    "id": "nus-clip04_0006",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 24000,
+    "mel_max_abs_difference": 1.2755393981933594e-05
+  },
+  {
+    "id": "nus-clip07_0013",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 14,
+    "samples": 64000,
+    "mel_max_abs_difference": 2.47955322265625e-05
+  },
+  {
+    "id": "nus-clip04_0028",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 8,
+    "samples": 24000,
+    "mel_max_abs_difference": 1.7762184143066406e-05
+  },
+  {
+    "id": "nus-clip06_0027",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 35200,
+    "mel_max_abs_difference": 1.049041748046875e-05
+  },
+  {
+    "id": "nus-clip04_0011",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 13,
+    "samples": 64000,
+    "mel_max_abs_difference": 2.002716064453125e-05
+  },
+  {
+    "id": "nus-clip02_0040",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 48000,
+    "mel_max_abs_difference": 9.298324584960938e-06
+  },
+  {
+    "id": "nus-clip04_0005",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 32000,
+    "mel_max_abs_difference": 7.152557373046875e-06
+  },
+  {
+    "id": "nus-clip05_0049",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 28800,
+    "mel_max_abs_difference": 2.467632293701172e-05
+  },
+  {
+    "id": "nus-clip07_0025",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 18,
+    "samples": 51200,
+    "mel_max_abs_difference": 1.1324882507324219e-05
+  },
+  {
+    "id": "nus-clip05_0035",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 13,
+    "samples": 40000,
+    "mel_max_abs_difference": 1.2755393981933594e-05
+  },
+  {
+    "id": "nus-clip07_0053",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 20,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.8358230590820312e-05
+  },
+  {
+    "id": "nus-clip02_0037",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 8,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.609325408935547e-05
+  },
+  {
+    "id": "nus-clip05_0059",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 18,
+    "samples": 44800,
+    "mel_max_abs_difference": 1.8715858459472656e-05
+  },
+  {
+    "id": "nus-clip02_0018",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 11,
+    "samples": 64000,
+    "mel_max_abs_difference": 7.033348083496094e-06
+  },
+  {
+    "id": "nus-clip02_0003",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 11,
+    "samples": 96000,
+    "mel_max_abs_difference": 1.8715858459472656e-05
+  },
+  {
+    "id": "nus-clip05_0030",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 8,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.6927719116210938e-05
+  },
+  {
+    "id": "nus-clip02_0032",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 64000,
+    "mel_max_abs_difference": 1.0371208190917969e-05
+  },
+  {
+    "id": "nus-clip06_0008",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 14,
+    "samples": 64000,
+    "mel_max_abs_difference": 1.4185905456542969e-05
+  },
+  {
+    "id": "nus-clip07_0001",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 20,
+    "samples": 80000,
+    "mel_max_abs_difference": 1.2636184692382812e-05
+  },
+  {
+    "id": "nus-clip06_0021",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 12,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.8596649169921875e-05
+  },
+  {
+    "id": "nus-clip03_0032",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 8,
+    "samples": 32000,
+    "mel_max_abs_difference": 9.655952453613281e-06
+  },
+  {
+    "id": "nus-clip04_0044",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 8,
+    "samples": 32000,
+    "mel_max_abs_difference": 3.361701965332031e-05
+  },
+  {
+    "id": "nus-clip02_0025",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.0371208190917969e-05
+  },
+  {
+    "id": "nus-clip07_0055",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 27200,
+    "mel_max_abs_difference": 2.2530555725097656e-05
+  },
+  {
+    "id": "nus-clip04_0013",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 16,
+    "samples": 64000,
+    "mel_max_abs_difference": 2.7418136596679688e-05
+  },
+  {
+    "id": "nus-clip07_0017",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 13,
+    "samples": 48000,
+    "mel_max_abs_difference": 2.0623207092285156e-05
+  },
+  {
+    "id": "nus-clip05_0012",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 14,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.9669532775878906e-05
+  },
+  {
+    "id": "nus-clip04_0002",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.8358230590820312e-05
+  },
+  {
+    "id": "nus-clip06_0028",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 13,
+    "samples": 32000,
+    "mel_max_abs_difference": 7.867813110351562e-06
+  },
+  {
+    "id": "nus-clip04_0021",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 8,
+    "samples": 33600,
+    "mel_max_abs_difference": 1.71661376953125e-05
+  },
+  {
+    "id": "nus-clip02_0035",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 11,
+    "samples": 48000,
+    "mel_max_abs_difference": 9.775161743164062e-06
+  },
+  {
+    "id": "nus-clip07_0003",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 12,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.2636184692382812e-05
+  },
+  {
+    "id": "nus-clip06_0045",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 15,
+    "samples": 52800,
+    "mel_max_abs_difference": 2.2649765014648438e-05
+  },
+  {
+    "id": "nus-clip04_0001",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 32000,
+    "mel_max_abs_difference": 2.0265579223632812e-05
+  },
+  {
+    "id": "nus-clip05_0042",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 28800,
+    "mel_max_abs_difference": 1.1563301086425781e-05
+  },
+  {
+    "id": "nus-clip03_0019",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 18,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.537799835205078e-05
+  },
+  {
+    "id": "nus-clip07_0056",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 15,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.0967254638671875e-05
+  },
+  {
+    "id": "nus-clip05_0056",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 12,
+    "samples": 51200,
+    "mel_max_abs_difference": 1.800060272216797e-05
+  },
+  {
+    "id": "nus-clip04_0041",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 24000,
+    "mel_max_abs_difference": 1.5974044799804688e-05
+  },
+  {
+    "id": "nus-clip07_0028",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 24000,
+    "mel_max_abs_difference": 8.821487426757812e-06
+  },
+  {
+    "id": "nus-clip06_0032",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 13,
+    "samples": 44800,
+    "mel_max_abs_difference": 1.33514404296875e-05
+  },
+  {
+    "id": "nus-clip03_0009",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 11,
+    "samples": 56000,
+    "mel_max_abs_difference": 1.9073486328125e-05
+  },
+  {
+    "id": "nus-clip05_0006",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.9550323486328125e-05
+  },
+  {
+    "id": "nus-clip06_0043",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 8,
+    "samples": 17600,
+    "mel_max_abs_difference": 1.728534698486328e-05
+  },
+  {
+    "id": "nus-clip03_0028",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 12,
+    "samples": 64000,
+    "mel_max_abs_difference": 1.71661376953125e-05
+  },
+  {
+    "id": "nus-clip05_0004",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 32000,
+    "mel_max_abs_difference": 2.0742416381835938e-05
+  },
+  {
+    "id": "nus-clip03_0023",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 32000,
+    "mel_max_abs_difference": 2.2411346435546875e-05
+  },
+  {
+    "id": "nus-clip07_0040",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 12,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.8477439880371094e-05
+  },
+  {
+    "id": "nus-clip07_0036",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.1324882507324219e-05
+  },
+  {
+    "id": "nus-clip02_0034",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.2040138244628906e-05
+  },
+  {
+    "id": "nus-clip07_0006",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 15,
+    "samples": 64000,
+    "mel_max_abs_difference": 2.193450927734375e-05
+  },
+  {
+    "id": "nus-clip04_0029",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 11,
+    "samples": 48000,
+    "mel_max_abs_difference": 3.933906555175781e-06
+  },
+  {
+    "id": "nus-clip02_0036",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 8,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.728534698486328e-05
+  },
+  {
+    "id": "nus-clip06_0037",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 40000,
+    "mel_max_abs_difference": 1.049041748046875e-05
+  },
+  {
+    "id": "nus-clip01_0002",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 12,
+    "samples": 48000,
+    "mel_max_abs_difference": 2.0384788513183594e-05
+  },
+  {
+    "id": "nus-clip06_0033",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 11,
+    "samples": 36800,
+    "mel_max_abs_difference": 1.0848045349121094e-05
+  },
+  {
+    "id": "nus-clip03_0033",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 7,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.823902130126953e-05
+  },
+  {
+    "id": "nus-clip05_0013",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 38400,
+    "mel_max_abs_difference": 9.298324584960938e-06
+  },
+  {
+    "id": "nus-clip04_0019",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 8,
+    "samples": 48000,
+    "mel_max_abs_difference": 2.5272369384765625e-05
+  },
+  {
+    "id": "nus-clip05_0027",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 6,
+    "samples": 24000,
+    "mel_max_abs_difference": 7.152557373046875e-06
+  },
+  {
+    "id": "nus-clip06_0042",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 7,
+    "samples": 32000,
+    "mel_max_abs_difference": 8.821487426757812e-06
+  },
+  {
+    "id": "nus-clip02_0030",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 13,
+    "samples": 80000,
+    "mel_max_abs_difference": 1.3113021850585938e-05
+  },
+  {
+    "id": "nus-clip05_0032",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 13,
+    "samples": 25600,
+    "mel_max_abs_difference": 2.1338462829589844e-05
+  },
+  {
+    "id": "nus-clip05_0036",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.71661376953125e-05
+  },
+  {
+    "id": "nus-clip02_0048",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 16,
+    "samples": 80000,
+    "mel_max_abs_difference": 8.463859558105469e-06
+  },
+  {
+    "id": "nus-clip05_0055",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 35200,
+    "mel_max_abs_difference": 2.5033950805664062e-05
+  },
+  {
+    "id": "nus-clip05_0037",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.811981201171875e-05
+  },
+  {
+    "id": "nus-clip05_0016",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.2874603271484375e-05
+  },
+  {
+    "id": "nus-clip06_0004",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.6570091247558594e-05
+  },
+  {
+    "id": "nus-clip07_0041",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 8,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.0848045349121094e-05
+  },
+  {
+    "id": "nus-clip06_0040",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 14,
+    "samples": 43200,
+    "mel_max_abs_difference": 1.239776611328125e-05
+  },
+  {
+    "id": "nus-clip03_0007",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 22,
+    "samples": 64000,
+    "mel_max_abs_difference": 1.6570091247558594e-05
+  },
+  {
+    "id": "nus-clip03_0005",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 7,
+    "samples": 16000,
+    "mel_max_abs_difference": 1.8358230590820312e-05
+  },
+  {
+    "id": "nus-clip05_0060",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 16,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.9311904907226562e-05
+  },
+  {
+    "id": "nus-clip06_0039",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 7,
+    "samples": 24000,
+    "mel_max_abs_difference": 4.649162292480469e-06
+  },
+  {
+    "id": "nus-clip07_0002",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 12,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.3589859008789062e-05
+  },
+  {
+    "id": "nus-clip07_0023",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 43200,
+    "mel_max_abs_difference": 1.52587890625e-05
+  },
+  {
+    "id": "nus-clip04_0024",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.8358230590820312e-05
+  },
+  {
+    "id": "nus-clip01_0013",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 20,
+    "samples": 192000,
+    "mel_max_abs_difference": 1.704692840576172e-05
+  },
+  {
+    "id": "nus-clip06_0038",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 13,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.1324882507324219e-05
+  },
+  {
+    "id": "nus-clip02_0039",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 17,
+    "samples": 96000,
+    "mel_max_abs_difference": 1.537799835205078e-05
+  },
+  {
+    "id": "nus-clip06_0016",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 16,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.4185905456542969e-05
+  },
+  {
+    "id": "nus-clip05_0054",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 16,
+    "samples": 76800,
+    "mel_max_abs_difference": 1.823902130126953e-05
+  },
+  {
+    "id": "nus-clip07_0057",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 12,
+    "samples": 35200,
+    "mel_max_abs_difference": 2.086162567138672e-05
+  },
+  {
+    "id": "nus-clip06_0002",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 12,
+    "samples": 32000,
+    "mel_max_abs_difference": 2.9087066650390625e-05
+  },
+  {
+    "id": "nus-clip02_0029",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.5974044799804688e-05
+  },
+  {
+    "id": "nus-clip04_0031",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.1682510375976562e-05
+  },
+  {
+    "id": "nus-clip03_0030",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 10,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.71661376953125e-05
+  },
+  {
+    "id": "nus-clip02_0011",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 48000,
+    "mel_max_abs_difference": 9.775161743164062e-06
+  },
+  {
+    "id": "nus-clip06_0041",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 18,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.919269561767578e-05
+  },
+  {
+    "id": "nus-clip07_0058",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 8,
+    "samples": 32000,
+    "mel_max_abs_difference": 2.6106834411621094e-05
+  },
+  {
+    "id": "nus-clip03_0001",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 20,
+    "samples": 80000,
+    "mel_max_abs_difference": 1.800060272216797e-05
+  },
+  {
+    "id": "nus-clip04_0039",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 7,
+    "samples": 32000,
+    "mel_max_abs_difference": 2.086162567138672e-05
+  },
+  {
+    "id": "nus-clip02_0008",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 15,
+    "samples": 144000,
+    "mel_max_abs_difference": 1.2159347534179688e-05
+  },
+  {
+    "id": "nus-clip07_0051",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 28800,
+    "mel_max_abs_difference": 9.775161743164062e-06
+  },
+  {
+    "id": "nus-clip04_0004",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 11,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.5616416931152344e-05
+  },
+  {
+    "id": "nus-clip07_0015",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 8,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.239776611328125e-05
+  },
+  {
+    "id": "nus-clip07_0021",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 12,
+    "samples": 48000,
+    "mel_max_abs_difference": 2.3484230041503906e-05
+  },
+  {
+    "id": "nus-clip04_0022",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 12,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.4066696166992188e-05
+  },
+  {
+    "id": "nus-clip07_0031",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 19200,
+    "mel_max_abs_difference": 1.1920928955078125e-05
+  },
+  {
+    "id": "nus-clip07_0020",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 11,
+    "samples": 41600,
+    "mel_max_abs_difference": 1.811981201171875e-05
+  },
+  {
+    "id": "nus-clip07_0049",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 11,
+    "samples": 35200,
+    "mel_max_abs_difference": 1.5616416931152344e-05
+  },
+  {
+    "id": "nus-clip04_0007",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.1324882507324219e-05
+  },
+  {
+    "id": "nus-clip07_0005",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 13,
+    "samples": 48000,
+    "mel_max_abs_difference": 1.2874603271484375e-05
+  },
+  {
+    "id": "nus-clip02_0010",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 14,
+    "samples": 128000,
+    "mel_max_abs_difference": 1.4185905456542969e-05
+  },
+  {
+    "id": "nus-clip06_0011",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 9,
+    "samples": 32000,
+    "mel_max_abs_difference": 1.6450881958007812e-05
+  },
+  {
+    "id": "nus-clip02_0043",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 16,
+    "samples": 64000,
+    "mel_max_abs_difference": 9.655952453613281e-06
+  },
+  {
+    "id": "nus-clip03_0015",
+    "language": "en",
+    "prefix_tokens": [
+      50258,
+      50259,
+      50359,
+      50363
+    ],
+    "label_length": 11,
+    "samples": 48000,
+    "mel_max_abs_difference": 3.0517578125e-05
+  }
+]

@@ -1,0 +1,21 @@
+.git
+.env
+.env.*
+!.env.example
+!.env.*.example
+!.env.template
+.venv
+venv
+models
+data
+.data
+runtime
+# Reports are bind-mounted at runtime; no Dockerfile copies them into an image.
+reports
+__pycache__
+.pytest_cache
+.ruff_cache
+.mypy_cache
+.idea
+.vscode
+*.log

@@ -1,0 +1,66 @@
+{
+  "status": "PREPARED_FOR_REVIEW",
+  "verification": "PASS",
+  "checks": {
+    "publisher_checksums": true,
+    "frozen_partition_proof": true,
+    "current_code": true,
+    "offline_cpu": true,
+    "four_runs": true,
+    "dev_only": true,
+    "all_real_nonempty_uncached": true,
+    "same_model_precision": true,
+    "valid_source_timestamps": true,
+    "no_quality_claim_or_promotion": true
+  },
+  "source_code_hash": "3ebe06c6b5e3d924e96623be9a6829076844c701b9692cb02eed154824ea749f",
+  "supersedes": "The earlier blocker audit's claim that no independent data work remained",
+  "sources": {
+    "BLeRIOT-A": {
+      "wav_files": 40,
+      "script_documents": 15,
+      "downloaded": true,
+      "minutes": 260.43532237339383
+    },
+    "BLeRIOT-C": {
+      "wav_files": 28,
+      "downloaded": true,
+      "minutes": 80.83727673611111,
+      "linked_for_initial_review": 15,
+      "quarantined": 13
+    },
+    "VOICI": {
+      "downloaded": true,
+      "role": "noise_only",
+      "minutes": 50.28059965277778
+    }
+  },
+  "split_groups": {
+    "train": 12,
+    "dev": 3,
+    "test": 3
+  },
+  "imported_recordings": 55,
+  "asr_runs": 4,
+  "asr_model": "small",
+  "precision": "int8",
+  "device": "cpu",
+  "human_verified_annotations": 0,
+  "research_gate": "NEEDS_MORE_DATA",
+  "wer_improvement": null,
+  "event_f1": null,
+  "release_promoted": false,
+  "remaining": [
+    "Review segment scope/language and align publisher scripts to actual audio",
+    "Resolve 13 C files' parent linkage without excluding difficult noise from the benchmark",
+    "Obtain independent human entity/event/salience/temporal labels",
+    "Acquire sufficient independent final-test groups; reserved BLeRIOT test has only 3",
+    "Verify lawful recorded-human RU/mixed sources before claiming those languages' quality"
+  ],
+  "evidence_sha256": {
+    "bleriot-acquisition.json": "500992aea86d0aa0e62949312d6ee1c5d9e4e1e3eae46bc5973f2aa17bbf764f",
+    "bleriot-preparation.json": "980ed449676590d636f09cd3c6be2aba224fa7e5c1e9239db93c9f9995237777",
+    "bleriot-asr-smoke.json": "5dc50e083aa71f5f8354700c064ddc677059557e0d39048c6352aa36b198c565",
+    "voici-acquisition.json": "b8054558c0e33488d969619bd5701660953da80abb8bcbbd984ae0021b2a3b38"
+  }
+}

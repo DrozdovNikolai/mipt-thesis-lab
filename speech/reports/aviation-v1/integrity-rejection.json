@@ -1,0 +1,7 @@
+{
+  "test": "modified hypothesis in isolated copy",
+  "exit_code": 1,
+  "expected_error": "Prediction hash or identity mismatch",
+  "original_unchanged": true,
+  "new_asr_calls": 0
+}

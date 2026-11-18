@@ -1,0 +1,71 @@
+{
+  "image_id": "sha256:b5d7218f10baaa6b4bda2ac5da03462d4029f6249f2a93168e4352c47ebb2285",
+  "network_mode": "none",
+  "state": {
+    "Status": "exited",
+    "Running": false,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 0,
+    "ExitCode": 1,
+    "Error": "",
+    "StartedAt": "2026-09-14T10:39:56.021942391Z",
+    "FinishedAt": "2026-09-14T10:40:07.851488335Z"
+  },
+  "command": [
+    "/app/audit_decoder_tail.py"
+  ],
+  "mounts": [
+    {
+      "Type": "bind",
+      "Source": "C:/DEV/MIPT/Diploma/Speech/reports/decoding-v1/inputs.json",
+      "Destination": "/study/inputs.json",
+      "RW": false
+    },
+    {
+      "Type": "volume",
+      "Source": "/var/lib/docker/volumes/north55-speech_audio_data/_data",
+      "Destination": "/audio",
+      "RW": false
+    },
+    {
+      "Type": "volume",
+      "Source": "/var/lib/docker/volumes/north55-speech_model_cache/_data",
+      "Destination": "/models",
+      "RW": false
+    },
+    {
+      "Type": "bind",
+      "Source": "C:/DEV/MIPT/Diploma/Speech/reports/decoder-tail-audit-v1",
+      "Destination": "/output",
+      "RW": true
+    },
+    {
+      "Type": "bind",
+      "Source": "C:/DEV/MIPT/Diploma/Speech/reports/decoding-v1/frozen/scripts",
+      "Destination": "/app/scripts",
+      "RW": false
+    },
+    {
+      "Type": "bind",
+      "Source": "C:/DEV/MIPT/Diploma/Speech/reports/decoding-v1/frozen/src",
+      "Destination": "/app/src",
+      "RW": false
+    },
+    {
+      "Type": "bind",
+      "Source": "C:/DEV/MIPT/Diploma/Speech/scripts/audit_decoder_tail.py",
+      "Destination": "/app/audit_decoder_tail.py",
+      "RW": false
+    },
+    {
+      "Type": "bind",
+      "Source": "C:/DEV/MIPT/Diploma/Speech/reports/decoding-v1/plan.json",
+      "Destination": "/study/plan.json",
+      "RW": false
+    }
+  ],
+  "script_sha256": "c2a67d3e7db6c60ddb16bd0ec1b9409577e2f7cdc88a378fffe7574b3fa7f598"
+}

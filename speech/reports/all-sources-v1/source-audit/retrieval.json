@@ -1,0 +1,96 @@
+{
+  "status": "SOURCE_RECHECK_EXECUTED",
+  "audio_downloaded": false,
+  "messages_sent": false,
+  "purchases_made": false,
+  "records": [
+    {
+      "id": "ru-api",
+      "url": "https://huggingface.co/api/datasets/NLPVladimir/aviation-command-dataset-ru",
+      "checked_at": "2026-09-14T00:22:46.020885+00:00",
+      "http_status": 200,
+      "final_url": "https://huggingface.co/api/datasets/NLPVladimir/aviation-command-dataset-ru",
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 1168,
+      "sha256": "0097dc851998852fd9902fd0eff23f1b18a72b839a808479bf26a3147ad7398f"
+    },
+    {
+      "id": "ru-card",
+      "url": "https://huggingface.co/datasets/NLPVladimir/aviation-command-dataset-ru/raw/main/README.md",
+      "checked_at": "2026-09-14T00:22:46.021917+00:00",
+      "http_status": 200,
+      "final_url": "https://huggingface.co/datasets/NLPVladimir/aviation-command-dataset-ru/raw/main/README.md",
+      "content_type": "text/plain; charset=utf-8",
+      "bytes": 545,
+      "sha256": "5a70f61f37030ed764ce318c8c3fd1da4a425bced918fea6679bbf367ed85c67"
+    },
+    {
+      "id": "ru-discussions",
+      "url": "https://huggingface.co/api/datasets/NLPVladimir/aviation-command-dataset-ru/discussions",
+      "checked_at": "2026-09-14T00:22:46.022393+00:00",
+      "http_status": 200,
+      "final_url": "https://huggingface.co/api/datasets/NLPVladimir/aviation-command-dataset-ru/discussions",
+      "content_type": "application/json; charset=utf-8",
+      "bytes": 771,
+      "sha256": "e5ffcd38ed9088e65c6f88f292c11ca759faefddcef875207ac301bd56879250"
+    },
+    {
+      "id": "hiwire-catalog-search",
+      "url": "https://catalog.elda.org/en-us/repository/search/?q=HIWIRE",
+      "checked_at": "2026-09-14T00:22:46.022871+00:00",
+      "error_type": "TimeoutError",
+      "error": "The read operation timed out",
+      "http_status": null
+    },
+    {
+      "id": "hiwire-elg",
+      "url": "https://live.european-language-grid.eu/catalogue/corpus/2059",
+      "checked_at": "2026-09-14T00:22:46.480596+00:00",
+      "http_status": 200,
+      "final_url": "https://live.european-language-grid.eu/catalogue/corpus/2059",
+      "content_type": "text/html",
+      "bytes": 617,
+      "sha256": "0b002a27b4550868e694c64c43a5afca28d73016da456459a232f5885f0d92e3"
+    },
+    {
+      "id": "voici-api",
+      "url": "https://zenodo.org/api/records/2660112",
+      "checked_at": "2026-09-14T00:22:46.577908+00:00",
+      "http_status": 200,
+      "final_url": "https://zenodo.org/api/records/2660112",
+      "content_type": "application/json",
+      "bytes": 6708,
+      "sha256": "2a52fe8aeb706b65c28fef5245dc2a46aa04d21b3ae2b02308a8666a7b15bbfe"
+    },
+    {
+      "id": "iem-report",
+      "url": "https://iem.kug.ac.at/fileadmin/03_Microsites/01_Kuenstlerisch_wissenschaftliche_Einheiten/01_Institute/Institut_17_Elektronische_Musik_und_Akustik/Projekte/2011/report45_11.pdf",
+      "checked_at": "2026-09-14T00:22:46.719604+00:00",
+      "http_status": 200,
+      "final_url": "https://iem.kug.ac.at/fileadmin/03_Microsites/01_Kuenstlerisch_wissenschaftliche_Einheiten/01_Institute/Institut_17_Elektronische_Musik_und_Akustik/Projekte/2011/report45_11.pdf",
+      "content_type": "application/pdf",
+      "bytes": 3202406,
+      "sha256": "b92210aada51a044fd1a84b4a258282f7a54c6b6abedaa36d8051027ca9aa9c4"
+    },
+    {
+      "id": "dlr-page",
+      "url": "https://elib.dlr.de/214890/",
+      "checked_at": "2026-09-14T00:22:46.871023+00:00",
+      "http_status": 200,
+      "final_url": "https://elib.dlr.de/214890/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 36612,
+      "sha256": "e2f7e485677deece90457fdf87dff88ce4460adfdc00d0aa2c2d99f986923a91"
+    },
+    {
+      "id": "dlr-paper",
+      "url": "https://arxiv.org/html/2506.21990v1",
+      "checked_at": "2026-09-14T00:22:47.074652+00:00",
+      "http_status": 200,
+      "final_url": "https://arxiv.org/html/2506.21990v1",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 165872,
+      "sha256": "b0a967cd15d6ab0953c598c72971e0f29c51173b088822fa78b9c43b96daea1b"
+    }
+  ]
+}

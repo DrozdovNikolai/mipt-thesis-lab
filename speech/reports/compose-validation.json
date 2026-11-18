@@ -1,0 +1,6 @@
+{
+  "compose_version": "Docker Compose version v2.39.2-desktop.1",
+  "gpu_exit_code": 0,
+  "cpu_exit_code": 0,
+  "docker_version": "Docker version 28.3.3, build 980b856"
+}

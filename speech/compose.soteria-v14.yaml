@@ -1,0 +1,56 @@
+name: north55-soteria-v14
+x-processing: &processing
+  image: north55-speech-train:publisher-v2
+  network_mode: none
+  entrypoint: [python, -u, -m, scripts.soteria_v14]
+  working_dir: /app
+  environment: &environment
+    PYTHONPATH: /app/src:/app
+    HF_HUB_OFFLINE: '1'
+    TRANSFORMERS_OFFLINE: '1'
+    CUDA_VISIBLE_DEVICES: '0'
+    LD_LIBRARY_PATH: /opt/venv/lib/python3.11/site-packages/nvidia/cublas/lib:/opt/venv/lib/python3.11/site-packages/nvidia/cudnn/lib
+  volumes:
+    - ./reports/soteria-v14/frozen:/app:ro
+    - ./reports/soteria-v14:/study
+    - ./data/input/soteria-v14:/raw:ro
+    - ./data/curated/soteria-v14/audio:/audio
+    - ./data/curated/soteria-v14/packet:/packet
+    - models:/models:ro
+services:
+  prepare:
+    <<: *processing
+    command: [prepare]
+  infer:
+    <<: *processing
+    command: [large]
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ['0']
+              capabilities: [gpu]
+  review:
+    image: north55-annotation-tools:0.1.0
+    init: true
+    command: [uvicorn, scripts.review_dataset:factory, --factory, --host, '0.0.0.0', --port, '8010', --workers, '1', --no-access-log]
+    environment:
+      PYTHONPATH: /app/src:/app
+      NORTH55_API_KEY: ${NORTH55_API_KEY:?Run bootstrap}
+      NORTH55_SESSION_SECRET: ${NORTH55_SESSION_SECRET:?Run bootstrap}
+      NORTH55_ANNOTATION_ROOT: /packet
+      NORTH55_PREFER_ENGLISH_DRAFTS: '1'
+    ports: ['127.0.0.1:8013:8010']
+    volumes:
+      - ./reports/soteria-v14/frozen/scripts:/app/scripts:ro
+      - ./reports/soteria-v14/frozen/src:/app/src:ro
+      - ./data/curated/soteria-v14/packet:/packet
+      - ./data/curated/soteria-v14/audio:/audio:ro
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+    restart: unless-stopped
+volumes:
+  models:
+    external: true
+    name: north55-speech_model_cache

@@ -1,0 +1,12 @@
+{
+  "v7_control_initial_equals_v5_balanced": true,
+  "v7_control_final_equals_v5_balanced": false,
+  "updates": {
+    "control": 240,
+    "expanded": 240
+  },
+  "coverage": {
+    "control": 247,
+    "expanded": 259
+  }
+}

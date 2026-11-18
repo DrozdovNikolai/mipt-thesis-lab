@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "plan_sha256": "dc229a8fd3cc0de1786c33df02b1e2c0c80f61cb9afb0f88e266ea7eabcbdebd",
+  "frozen_code_unchanged": true,
+  "executions": {
+    "baseline": {
+      "records": 541,
+      "new_ASR_calls": 100,
+      "resumed": 441,
+      "actual_device": "cuda",
+      "actual_precision": "float16"
+    },
+    "uniform": {
+      "records": 541,
+      "new_ASR_calls": 541,
+      "resumed": 0,
+      "actual_device": "cuda",
+      "actual_precision": "float16"
+    },
+    "balanced": {
+      "records": 541,
+      "new_ASR_calls": 541,
+      "resumed": 0,
+      "actual_device": "cuda",
+      "actual_precision": "float16"
+    },
+    "balanced-silence": {
+      "records": 541,
+      "new_ASR_calls": 541,
+      "resumed": 0,
+      "actual_device": "cuda",
+      "actual_precision": "float16"
+    },
+    "cpu-uniform": {
+      "records": 2,
+      "new_ASR_calls": 2,
+      "resumed": 0,
+      "actual_device": "cpu",
+      "actual_precision": "int8_float32"
+    },
+    "cpu-balanced": {
+      "records": 2,
+      "new_ASR_calls": 2,
+      "resumed": 0,
+      "actual_device": "cpu",
+      "actual_precision": "int8_float32"
+    },
+    "cpu-balanced-silence": {
+      "records": 2,
+      "new_ASR_calls": 2,
+      "resumed": 0,
+      "actual_device": "cpu",
+      "actual_precision": "int8_float32"
+    }
+  },
+  "models_and_data_verified": true,
+  "new_human_labels": 0,
+  "serving_promoted": false
+}

@@ -1,0 +1,8 @@
+{
+  "status": "FAILED_BEFORE_WRITE",
+  "action": "Reproduce existing split metadata with a portable helper",
+  "reason": "The initial Windows files used CRLF; the first helper expected LF bytes.",
+  "source_data_changed": false,
+  "training_changed": false,
+  "resolution": "Preserve the original CRLF explicitly on both platforms; retain the original files."
+}

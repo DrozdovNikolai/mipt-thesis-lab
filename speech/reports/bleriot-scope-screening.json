@@ -1,0 +1,18 @@
+{
+  "status": "PUBLISHER_SCRIPT_SCREENING_COMPLETED_AUDIO_SCOPE_REVIEW_PENDING",
+  "method": "inspection of publisher transcript documents; no ASR performance used",
+  "human_annotation": false,
+  "test_reference_manifest_opened": false,
+  "rules": [
+    {"family": "DGA_CVR1", "scope": "atc", "basis": "embedded transcript identifies controller Finale and aircraft L24 radio exchange", "use_in_primary_training_or_evaluation": false},
+    {"family": "DGA_CVR2", "scope": "mixed_atc_controller_context", "basis": "radio frequencies, aircraft/approach/tower and controller telephone exchanges", "use_in_primary_training_or_evaluation": false, "requirement": "isolate verified in-cockpit spans first"},
+    {"family": "DGA_CVR4", "scope": "mixed_atc_with_short_cockpit_remarks", "basis": "document explicitly titled Communications radio between PIL APP TWR", "use_in_primary_training_or_evaluation": false, "requirement": "isolate verified in-cockpit spans first"},
+    {"family": "DGA_CVR5", "scope": "mixed_atc_with_short_cockpit_exchange", "basis": "TWR/CDA radio traffic plus two MECBP/Pilote cabin utterances", "use_in_primary_training_or_evaluation": false, "requirement": "isolate verified in-cockpit spans first"},
+    {"family": "BEA_CVR", "scope": "mixed_cockpit_atc", "basis": "crew checklists and briefings include explicit ATC and radio distress/takeoff calls", "use_in_primary_training_or_evaluation": false, "requirement": "segment-level scope/language annotation"},
+    {"family": "DGA_CVR3", "scope": "candidate_read_cockpit", "language_candidate": "fr", "basis": "crew discussion in publisher transcript", "use_in_primary_training_or_evaluation": false, "requirement": "audio alignment and language/scope verification; outside primary EN contract"},
+    {"family": "checklists", "scope": "candidate_read_cockpit", "basis": "publisher checklist documents", "use_in_primary_training_or_evaluation": false, "use_in_annotation_packet": true, "requirement": "audio listening, utterance language and transcript verification"},
+    {"family": "DGA_checklist-unknown", "scope": "unknown", "basis": "publisher transcript contains only Unknown", "use_in_primary_training_or_evaluation": false, "use_in_annotation_packet": false}
+  ],
+  "annotation_packet_policy": "Only documented checklists in train/dev. No CVR/radio family selected. These restrictions precede new packet ASR drafts and comparisons.",
+  "quality_gate": "NEEDS_MORE_DATA"
+}

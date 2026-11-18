@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "script_sha256": "844a7759f9f825801cef37f2ab968880c84d91f5f4f370425e260c8a7756f5c3",
+  "implementation_hashes_checked": 4,
+  "predictions_matched_combined": 491,
+  "fresh_local_pipeline_matches_full_batch_one_audit": 6,
+  "new_ASR_calls": 0
+}

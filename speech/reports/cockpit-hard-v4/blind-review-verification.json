@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "queue_rows": 102,
+  "dev_rows": 42,
+  "draft_response_status": 404,
+  "false_machine_exposure_created": false,
+  "annotation_rows_changed": 0,
+  "existing_revisions": 0,
+  "audio_bytes": 640080
+}

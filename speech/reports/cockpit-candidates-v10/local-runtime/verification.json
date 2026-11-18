@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "runtime_sha256": "9fe80d43f203f0d7a11adaec6fab8b6574b31acc6de18c4319b797368558d692",
+  "output_sha256": "e849bcfaa06b228f2979f890bd6853a2415c49acf235759b7adf395d74e18c72",
+  "files": [
+    {
+      "file": "clean.wav",
+      "same_input": true,
+      "same_output": true,
+      "reason": "keep_whisper"
+    },
+    {
+      "file": "noisy.wav",
+      "same_input": true,
+      "same_output": true,
+      "reason": "severe_noise"
+    },
+    {
+      "file": "empty.wav",
+      "same_input": true,
+      "same_output": true,
+      "reason": "empty_decoder_and_no_speech"
+    },
+    {
+      "file": "quiet.wav",
+      "same_input": true,
+      "same_output": true,
+      "reason": "keep_whisper"
+    },
+    {
+      "file": "empty-decoder-speech.wav",
+      "same_input": true,
+      "same_output": true,
+      "reason": "keep_whisper"
+    }
+  ],
+  "unselected_candidate_differences": [
+    {
+      "file": "empty-decoder-speech.wav",
+      "system": "parakeet",
+      "cached": "",
+      "fresh": "on flight director on emergency",
+      "final_text_unchanged": true
+    }
+  ],
+  "historical_empty_decoder_reproduced": false,
+  "new_GPU_ASR_calls": {
+    "whisper": 3,
+    "parakeet": 5,
+    "dfn_parakeet": 0
+  },
+  "independent_accuracy_evidence": false
+}

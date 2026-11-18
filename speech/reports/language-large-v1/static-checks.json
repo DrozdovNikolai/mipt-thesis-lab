@@ -1,0 +1,16 @@
+{
+  "command": [
+    "ruff",
+    "check",
+    "scripts/acquire_large_v3.py",
+    "scripts/language_large_experiment.py",
+    "scripts/report_language_large.py",
+    "scripts/verify_language_large.py",
+    "scripts/language_large_cpu_smoke.py",
+    "tests/test_language_large.py"
+  ],
+  "exit_code": 0,
+  "stdout": "All checks passed!\n",
+  "stderr": "",
+  "executed_at": "2026-09-14T07:42:10.845220+00:00"
+}

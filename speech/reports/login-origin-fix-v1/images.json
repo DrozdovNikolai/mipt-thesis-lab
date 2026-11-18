@@ -1,0 +1,6 @@
+{
+  "before": "sha256:fab68437b0489603780e05a1a84773dc7f11cddf271852e5636b3da1b9fdc2a5",
+  "after": "sha256:c8cd23b37ba06b2be11de789298bbed59c1b257f867ca11b3efd34b5176b5cd1",
+  "preserved_before_tag": "north55-speech:before-login-fix-v1",
+  "deployed_after_tag": "north55-speech:0.1.0"
+}

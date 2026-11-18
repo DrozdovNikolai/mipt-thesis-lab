@@ -1,0 +1,92 @@
+{
+  "noise_only": {
+    "inputs": 15,
+    "systems": {
+      "baseline": {
+        "raw_nonempty": 14,
+        "raw_characters": 1593,
+        "raw_whitespace_tokens": 200
+      },
+      "uniform": {
+        "raw_nonempty": 13,
+        "raw_characters": 444,
+        "raw_whitespace_tokens": 122
+      },
+      "balanced": {
+        "raw_nonempty": 14,
+        "raw_characters": 801,
+        "raw_whitespace_tokens": 320
+      },
+      "balanced-silence": {
+        "raw_nonempty": 12,
+        "raw_characters": 772,
+        "raw_whitespace_tokens": 314
+      },
+      "parakeet": {
+        "raw_nonempty": 0,
+        "raw_characters": 0,
+        "raw_whitespace_tokens": 0
+      }
+    }
+  },
+  "bleriot_b_noise": {
+    "inputs": 25,
+    "systems": {
+      "baseline": {
+        "raw_nonempty": 19,
+        "raw_characters": 1261,
+        "raw_whitespace_tokens": 23
+      },
+      "uniform": {
+        "raw_nonempty": 20,
+        "raw_characters": 787,
+        "raw_whitespace_tokens": 21
+      },
+      "balanced": {
+        "raw_nonempty": 18,
+        "raw_characters": 1303,
+        "raw_whitespace_tokens": 25
+      },
+      "balanced-silence": {
+        "raw_nonempty": 18,
+        "raw_characters": 1378,
+        "raw_whitespace_tokens": 26
+      },
+      "parakeet": {
+        "raw_nonempty": 0,
+        "raw_characters": 0,
+        "raw_whitespace_tokens": 0
+      }
+    }
+  },
+  "synthetic_nonspeech": {
+    "inputs": 20,
+    "systems": {
+      "baseline": {
+        "raw_nonempty": 20,
+        "raw_characters": 2484,
+        "raw_whitespace_tokens": 36
+      },
+      "uniform": {
+        "raw_nonempty": 18,
+        "raw_characters": 1008,
+        "raw_whitespace_tokens": 28
+      },
+      "balanced": {
+        "raw_nonempty": 16,
+        "raw_characters": 1513,
+        "raw_whitespace_tokens": 25
+      },
+      "balanced-silence": {
+        "raw_nonempty": 16,
+        "raw_characters": 1513,
+        "raw_whitespace_tokens": 25
+      },
+      "parakeet": {
+        "raw_nonempty": 0,
+        "raw_characters": 0,
+        "raw_whitespace_tokens": 0
+      }
+    }
+  }
+}

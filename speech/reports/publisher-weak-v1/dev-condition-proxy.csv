@@ -1,0 +1,5 @@
+condition,system,samples,S,D,I,N,wer_lexical_corpus
+original,parent,6,36,3,7,152,0.3026315789473684
+original,adapted,6,25,3,7,152,0.23026315789473684
+publisher_CVR_simulation_single_chain,parent,1,23,1,0,26,0.9230769230769231
+publisher_CVR_simulation_single_chain,adapted,1,9,13,0,26,0.8461538461538461

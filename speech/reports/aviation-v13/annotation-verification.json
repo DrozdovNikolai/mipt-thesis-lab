@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "new_clips": 84,
+  "new_minutes": 14.0,
+  "old_dev_clips": 42,
+  "combined_dev_clips": 126,
+  "old_snapshot_files_unchanged": 202,
+  "old_human_reviewed_clips_preserved": 16,
+  "machine_drafts": 84,
+  "machine_language_hints": {
+    "fr": 56,
+    "en": 28
+  },
+  "source_recordings": 7,
+  "speakers": 3,
+  "new_human_annotations_created_by_agent": 0,
+  "sealed_test_accessed": false,
+  "queue_url": "http://localhost:8012/?split=dev",
+  "ui_regression_tests_passed": 25
+}

@@ -1,0 +1,168 @@
+{
+  "status": "FAIL",
+  "checks": {
+    "original_decoded_once": true,
+    "repeated_decoded_once": true,
+    "empty_does_not_decode": true,
+    "both_utterances_retained": false,
+    "nonempty_original_alignment": true,
+    "translated_word_times_in_range": true
+  },
+  "results": {
+    "original": {
+      "decoder_calls": 1,
+      "duration_sec": 2.27,
+      "hypothesis": "And all work had ceased with him.",
+      "segments": [
+        {
+          "segment_id": "original-0",
+          "start_sec": 30.0,
+          "end_sec": 31.94,
+          "raw_asr_text": " And all work had ceased with him.",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "en",
+          "words": [
+            {
+              "word": " And",
+              "start_sec": 30.0,
+              "end_sec": 30.54,
+              "probability": 0.458984375
+            },
+            {
+              "word": " all",
+              "start_sec": 30.54,
+              "end_sec": 30.8,
+              "probability": 0.9912109375
+            },
+            {
+              "word": " work",
+              "start_sec": 30.8,
+              "end_sec": 31.06,
+              "probability": 0.99072265625
+            },
+            {
+              "word": " had",
+              "start_sec": 31.06,
+              "end_sec": 31.26,
+              "probability": 0.99365234375
+            },
+            {
+              "word": " ceased",
+              "start_sec": 31.26,
+              "end_sec": 31.5,
+              "probability": 0.99267578125
+            },
+            {
+              "word": " with",
+              "start_sec": 31.5,
+              "end_sec": 31.8,
+              "probability": 0.998046875
+            },
+            {
+              "word": " him.",
+              "start_sec": 31.8,
+              "end_sec": 31.94,
+              "probability": 0.99365234375
+            }
+          ],
+          "avg_logprob": -0.1392144097222222,
+          "no_speech_prob": 0.06451416015625,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        }
+      ]
+    },
+    "repeated": {
+      "decoder_calls": 1,
+      "duration_sec": 5.54,
+      "hypothesis": "And all work had ceased with him.",
+      "segments": [
+        {
+          "segment_id": "repeated-0",
+          "start_sec": 30.0,
+          "end_sec": 31.96,
+          "raw_asr_text": " And all work had ceased with him.",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "en",
+          "words": [
+            {
+              "word": " And",
+              "start_sec": 30.0,
+              "end_sec": 30.54,
+              "probability": 0.3564453125
+            },
+            {
+              "word": " all",
+              "start_sec": 30.54,
+              "end_sec": 30.8,
+              "probability": 0.9931640625
+            },
+            {
+              "word": " work",
+              "start_sec": 30.8,
+              "end_sec": 31.06,
+              "probability": 0.9892578125
+            },
+            {
+              "word": " had",
+              "start_sec": 31.06,
+              "end_sec": 31.28,
+              "probability": 0.98681640625
+            },
+            {
+              "word": " ceased",
+              "start_sec": 31.28,
+              "end_sec": 31.5,
+              "probability": 0.98486328125
+            },
+            {
+              "word": " with",
+              "start_sec": 31.5,
+              "end_sec": 31.8,
+              "probability": 0.998046875
+            },
+            {
+              "word": " him.",
+              "start_sec": 31.8,
+              "end_sec": 31.96,
+              "probability": 0.9580078125
+            }
+          ],
+          "avg_logprob": -0.2571614583333333,
+          "no_speech_prob": 0.221923828125,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        }
+      ]
+    },
+    "empty": {
+      "decoder_calls": 0,
+      "duration_sec": 0.0,
+      "hypothesis": "",
+      "segments": []
+    }
+  },
+  "plan_sha256": "7f9cf4d3734f72ee9eca426401c9cf6422153212d061edc1e76279289933a35a",
+  "source_audio_sha256": "060fefc08e80e21b91930d8238996f11ec5dacf3b1fc00bdf4e73653b712347d",
+  "actual_precision": "float16",
+  "quality_evidence": false,
+  "note": "Engineered audio repetition and coordinate regression; not independent speech or critical-command gold."
+}

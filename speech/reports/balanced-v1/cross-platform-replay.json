@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "checks": {
+    "report.md": true,
+    "verification.json": true,
+    "status.json": true,
+    "evaluation/comparison.json": true,
+    "evaluation/scored-counts.json": true,
+    "evaluation/human-error-counts.json": true
+  },
+  "scope": "PowerShell versus Ubuntu WSL scorer and reporter; byte-identical artifacts",
+  "resume": {
+    "status": "PASS",
+    "count": 675,
+    "all_predictions_byte_identical": true
+  }
+}

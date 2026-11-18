@@ -1,0 +1,53 @@
+{
+  "source": "Noort, Reader & Gillespie (2021), doi:10.1016/j.dib.2021.107602",
+  "license": "CC-BY-4.0",
+  "raw_rows": 21626,
+  "case_partition_sha256": "b43467e683a946cb24bd6cd928260f32fafd713755df8868bc2595237c262c08",
+  "script_sha256": "beb6fc111560641c1615f38799b4ef0e6c3e0af37e252261e8ddc472b31192ad",
+  "files": {
+    "train-dev/train.jsonl": "fafe8e12b17f6dd88adae2f41183ae8a0e0e66c413b0da3ce2435cb8d2425acf",
+    "train-dev/dev.jsonl": "cacaa0cb489c2085b2f51220121bc138b79fdeb2cc75fca2b79d0e293f14048b",
+    "sealed/test-inputs.jsonl": "754f11209c81bf2724b5812e254f595a3f25f24f8ce648fe80bf2b5d4b3941d6",
+    "sealed/test-references.jsonl": "ff055b65059edbb9cbbc9f0bd346880f1d3bff079bab2d03419fb448329e50ca"
+  },
+  "exclusions": {
+    "not_publisher_analysis_conversation": 7541,
+    "not_explicit_CVR_source": 6871,
+    "radio_or_unestablished_cabin_channel": 3824,
+    "not_explicit_core_flight_crew": 85,
+    "empty_text": 24
+  },
+  "splits": {
+    "train": {
+      "rows": 2838,
+      "cases": 24
+    },
+    "dev": {
+      "rows": 394,
+      "cases": 7
+    },
+    "test": {
+      "rows": 49,
+      "cases": 1
+    }
+  },
+  "train_dev_label_counts": {
+    "train": {
+      "0": 2535,
+      "1": 303
+    },
+    "dev": {
+      "0": 364,
+      "1": 30
+    }
+  },
+  "test_labels_inspected_by_model": false,
+  "asr_quality_evidence": false,
+  "project_event_quality_evidence": false,
+  "limitations": [
+    "Source-native human safety-voice labels are not project event or salience labels.",
+    "Accident-only, possibly translated transcripts; no paired source audio.",
+    "Case partition; known speaker identity cannot be linked across cases.",
+    "Channel-metadata screening is not independent human scope adjudication."
+  ]
+}

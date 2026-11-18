@@ -1,0 +1,10 @@
+{
+  "same_asr_inputs": 675,
+  "new_asr_calls": 0,
+  "before_supported": 126,
+  "after_supported": 129,
+  "newly_supported": 3,
+  "lost_support": 0,
+  "interpretation": "Publisher support of fixed machine text only; neither audio truth nor final pair acceptance",
+  "new_documents_sha256": "ff4bd0370569da478da41824a6276833d8a4cb982d98aa61801c2ab0dbc73bd8"
+}

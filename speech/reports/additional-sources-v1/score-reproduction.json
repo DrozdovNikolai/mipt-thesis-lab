@@ -1,0 +1,32 @@
+[
+  {
+    "environment": "powershell",
+    "command": [
+      "powershell",
+      "-NoProfile",
+      "-File",
+      "scripts/additional_sources_report.ps1",
+      "score"
+    ],
+    "exit_code": 0,
+    "before_sha256": "d58f04c50b07944035f517e27e232f8c1648150354541dac37368234ea2124f8",
+    "after_sha256": "d58f04c50b07944035f517e27e232f8c1648150354541dac37368234ea2124f8",
+    "identical": true
+  },
+  {
+    "environment": "linux_wsl_ubuntu",
+    "command": [
+      "wsl",
+      "-d",
+      "Ubuntu",
+      "--",
+      "sh",
+      "/mnt/c/DEV/MIPT/Diploma/Speech/scripts/additional_sources_report.sh",
+      "score"
+    ],
+    "exit_code": 0,
+    "before_sha256": "d58f04c50b07944035f517e27e232f8c1648150354541dac37368234ea2124f8",
+    "after_sha256": "d58f04c50b07944035f517e27e232f8c1648150354541dac37368234ea2124f8",
+    "identical": true
+  }
+]

@@ -1,0 +1,158 @@
+{
+  "status": "PASS",
+  "purpose": "engineering_smoke_only_not_quality_evidence",
+  "actual_device": "cpu",
+  "actual_compute_type": "int8_float32",
+  "rows": [
+    {
+      "id": "fleurs-ru-1651",
+      "cohort": "general_ru",
+      "audio_sha256": "18ddf3cabf0735c56c8e5e9beeea1658960d5ab63b2d12f63cd472bcd3a4b2b0",
+      "regions": [
+        [
+          0,
+          134400
+        ]
+      ],
+      "hypothesis": "Вариант, становящийся всё более популярным для тех, кто планирует взять академический год – это путешествовать и учиться.",
+      "segments": [
+        {
+          "segment_id": "cpu-smoke-0",
+          "start_sec": 0.0,
+          "end_sec": 7.32,
+          "raw_asr_text": " Вариант, становящийся всё более популярным для тех, кто планирует взять академический год – это путешествовать и учиться.",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "ru",
+          "words": [
+            {
+              "word": " Вариант,",
+              "start_sec": 0.0,
+              "end_sec": 1.06,
+              "probability": 0.895988404750824
+            },
+            {
+              "word": " становящийся",
+              "start_sec": 1.18,
+              "end_sec": 1.84,
+              "probability": 0.9750889539718628
+            },
+            {
+              "word": " всё",
+              "start_sec": 1.84,
+              "end_sec": 2.0,
+              "probability": 0.6645466089248657
+            },
+            {
+              "word": " более",
+              "start_sec": 2.0,
+              "end_sec": 2.3,
+              "probability": 0.9869759678840637
+            },
+            {
+              "word": " популярным",
+              "start_sec": 2.3,
+              "end_sec": 3.04,
+              "probability": 0.9646734297275543
+            },
+            {
+              "word": " для",
+              "start_sec": 3.04,
+              "end_sec": 3.18,
+              "probability": 0.9928937554359436
+            },
+            {
+              "word": " тех,",
+              "start_sec": 3.18,
+              "end_sec": 3.38,
+              "probability": 0.99820876121521
+            },
+            {
+              "word": " кто",
+              "start_sec": 3.52,
+              "end_sec": 3.6,
+              "probability": 0.9985872507095337
+            },
+            {
+              "word": " планирует",
+              "start_sec": 3.6,
+              "end_sec": 4.08,
+              "probability": 0.9630324840545654
+            },
+            {
+              "word": " взять",
+              "start_sec": 4.08,
+              "end_sec": 4.24,
+              "probability": 0.9728083610534668
+            },
+            {
+              "word": " академический",
+              "start_sec": 4.24,
+              "end_sec": 5.1,
+              "probability": 0.9552553594112396
+            },
+            {
+              "word": " год",
+              "start_sec": 5.1,
+              "end_sec": 5.36,
+              "probability": 0.9940536618232727
+            },
+            {
+              "word": " –",
+              "start_sec": 5.36,
+              "end_sec": 5.82,
+              "probability": 0.1601240336894989
+            },
+            {
+              "word": " это",
+              "start_sec": 5.82,
+              "end_sec": 5.9,
+              "probability": 0.9167221188545227
+            },
+            {
+              "word": " путешествовать",
+              "start_sec": 5.9,
+              "end_sec": 6.7,
+              "probability": 0.993377760052681
+            },
+            {
+              "word": " и",
+              "start_sec": 6.7,
+              "end_sec": 6.9,
+              "probability": 0.9861609935760498
+            },
+            {
+              "word": " учиться.",
+              "start_sec": 6.9,
+              "end_sec": 7.32,
+              "probability": 0.9868655204772949
+            }
+          ],
+          "avg_logprob": -0.19632502702566293,
+          "no_speech_prob": 0.05821938440203667,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bnoise-TBM940_E0_1_Pil-MeasMic-ch0",
+      "cohort": "bleriot_b_noise",
+      "audio_sha256": "f9397c8d45f3d3ebb715fb752ef7ac5528f1e510c62196f9ad4ccb839afc29bc",
+      "regions": [],
+      "hypothesis": "",
+      "segments": []
+    }
+  ],
+  "elapsed_sec": 3.6370757089998733,
+  "script_sha256": "e780da5788d6832877fd4c88ec832d174b9edb884145dc047e4dda15d630bfc7",
+  "model": "whisper-small-publisher-base-ct2"
+}

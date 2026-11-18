@@ -1,0 +1,6 @@
+baseline: configs/baseline.yaml
+development_selection: /reports/runs/REPLACE_WITH_ACTUAL_DEV_RUN/selection-dev.json
+test_inference_manifest: /data/test-inference/test.jsonl
+partition_proof: /data/protocol/partition-proof.json
+# Supply checksum from the curator without exposing reference contents to dev search.
+sealed_references_sha256: REPLACE_WITH_ACTUAL_SHA256

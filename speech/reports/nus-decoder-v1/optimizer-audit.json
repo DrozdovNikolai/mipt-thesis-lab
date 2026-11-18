@@ -1,0 +1,33 @@
+{
+  "historical_joint240": {
+    "trainer_steps": 240,
+    "actual_AdamW_updates": [
+      239.0
+    ],
+    "optimizer_states": 144,
+    "scaler": {
+      "scale": 32768.0,
+      "growth_factor": 2.0,
+      "backoff_factor": 0.5,
+      "growth_interval": 2000,
+      "_growth_tracker": 230
+    },
+    "optimizer_sha256": "630ae37d4ecb09eefffc974534cc2d15228622130afc95065ae705e86c5d7896"
+  },
+  "decoder240": {
+    "trainer_steps": 240,
+    "actual_AdamW_updates": [
+      239.0
+    ],
+    "optimizer_states": 96,
+    "scaler": {
+      "scale": 32768.0,
+      "growth_factor": 2.0,
+      "backoff_factor": 0.5,
+      "growth_interval": 2000,
+      "_growth_tracker": 230
+    },
+    "optimizer_sha256": "b55f1ce081448808a8f3e316e5831b1b35601396ffdac9c3e4f9733d12e16df9"
+  },
+  "historical_weights_or_predictions_modified": false
+}

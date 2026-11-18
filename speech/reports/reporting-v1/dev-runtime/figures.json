@@ -1,0 +1,114 @@
+[
+  {
+    "name": "wer-ci",
+    "title": "WER и доверительный интервал",
+    "status": "NOT_MEASURED",
+    "reason": "Нет проверенных измерений"
+  },
+  {
+    "name": "wer-language",
+    "title": "WER by language",
+    "status": "NOT_MEASURED",
+    "reason": "Нет проверенных измерений"
+  },
+  {
+    "name": "wer-condition",
+    "title": "WER by condition",
+    "status": "NOT_MEASURED",
+    "reason": "Нет проверенных измерений"
+  },
+  {
+    "name": "critical-entities",
+    "title": "Ошибки критических сущностей",
+    "status": "NOT_MEASURED",
+    "reason": "Нет проверенных измерений"
+  },
+  {
+    "name": "event-confusions",
+    "title": "Multi-label confusion matrices",
+    "status": "NOT_MEASURED",
+    "reason": "Нет человеческих event labels"
+  },
+  {
+    "name": "quality-runtime",
+    "title": "Качество / время",
+    "status": "NOT_MEASURED",
+    "reason": "Нужны WER и полные timing одного cohort"
+  },
+  {
+    "name": "dev-runtime",
+    "title": "Measured unscored dev runtime",
+    "status": "MEASURED",
+    "files": [
+      "figures/dev-runtime.png",
+      "figures/dev-runtime.svg"
+    ],
+    "data": [
+      {
+        "trial": "A0",
+        "runs": 8,
+        "audio_sec": 160.0,
+        "elapsed_sec": 34.20094493399665,
+        "rtf": 0.21375590583747908,
+        "failures": 0
+      },
+      {
+        "trial": "A1",
+        "runs": 8,
+        "audio_sec": 160.0,
+        "elapsed_sec": 100.88302871500491,
+        "rtf": 0.6305189294687807,
+        "failures": 0
+      },
+      {
+        "trial": "A2",
+        "runs": 8,
+        "audio_sec": 160.0,
+        "elapsed_sec": 99.79869363499893,
+        "rtf": 0.6237418352187433,
+        "failures": 0
+      },
+      {
+        "trial": "A3",
+        "runs": 8,
+        "audio_sec": 160.0,
+        "elapsed_sec": 117.01031577999674,
+        "rtf": 0.7313144736249797,
+        "failures": 0
+      },
+      {
+        "trial": "A4",
+        "runs": 8,
+        "audio_sec": 160.0,
+        "elapsed_sec": 139.50076751300003,
+        "rtf": 0.8718797969562502,
+        "failures": 0
+      },
+      {
+        "trial": "VAD_SHORT",
+        "runs": 8,
+        "audio_sec": 160.0,
+        "elapsed_sec": 133.99357673800114,
+        "rtf": 0.8374598546125072,
+        "failures": 0
+      },
+      {
+        "trial": "HINTS_ONLY",
+        "runs": 8,
+        "audio_sec": 160.0,
+        "elapsed_sec": 31.02797271399686,
+        "rtf": 0.19392482946248038,
+        "failures": 0
+      },
+      {
+        "trial": "DENOISE_ONLY",
+        "runs": 8,
+        "audio_sec": 160.0,
+        "elapsed_sec": 32.93253840399848,
+        "rtf": 0.2058283650249905,
+        "failures": 0
+      }
+    ],
+    "note": "Один проход каждой конфигурации. Это измерение скорости; WER/F1 не измерены, candidate не выбран."
+  }
+]

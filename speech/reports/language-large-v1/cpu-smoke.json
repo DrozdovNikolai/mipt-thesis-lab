@@ -1,0 +1,463 @@
+{
+  "status": "PASS",
+  "purpose": "offline_engineering_smoke_not_quality_comparison",
+  "actual_device": "cpu",
+  "actual_compute_type": "int8_float32",
+  "requested_compute_type": "int8",
+  "model_manifest": {
+    "model": "whisper-large-v3-systran-ct2",
+    "repo": "Systran/faster-whisper-large-v3",
+    "revision": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+    "license": "MIT",
+    "upstream": "openai/whisper-large-v3",
+    "format": "CTranslate2 FP16 conversion by SYSTRAN",
+    "files": {
+      "README.md": "39e96252229f5a3d0141dc81afb65a36fd205461ac21e5b70f2cd1248ef0082c",
+      "config.json": "a9306624f5ec14270a014b647e5c316b6e03a662c369758d1b90697a7b0655b9",
+      "model.bin": "69f74147e3334731bc3a76048724833325d2ec74642fb52620eda87352e3d4f1",
+      "preprocessor_config.json": "7ccc62c6f2765af1f3b46c00c9b5894426835a05021c8b9c01eecb6dfb542711",
+      "tokenizer.json": "6d8cbd7cd0d8d5815e478dac67b85a26bbe77c1f5e0c6d76d1ce2abc0e5f21ca",
+      "vocabulary.json": "c69260f2ab26d659b7c398f9a2b2b48ed0df16c3b47d7326782fd9cba71690c1"
+    },
+    "acquired_at": "2026-09-14T07:32:40.284608+00:00",
+    "source_metadata_sha256": "28260f2c86f4f87a7534a48d4e255bffbf18aa0f2aee2c64980a29c2876c49c3"
+  },
+  "plan_sha256": "d523caebd225b728985d1b15fd0d74e99156b7eac634412649fbd3eaff2c8b92",
+  "script_sha256": "7e4a6399da7b6c23dfd8d12e4bf452b2efa13d7ed9c02b358bdcaab6aafd95c0",
+  "completed_at": "2026-09-14T07:53:29.331658+00:00",
+  "total_sec": 29.64833752800041,
+  "initialization_sec": 5.625864775000082,
+  "rows": [
+    {
+      "id": "reviewed-dc84f2b77565d804f16ea31f42380abb",
+      "cohort": "partial_human_dev",
+      "audio_sha256": "b43f839d2a2e31ad85b9b26ea7c80d72b54a6baf1e2f1ca52a05204c51cfb3a8",
+      "effective_options": {
+        "task": "transcribe",
+        "beam_size": 5,
+        "temperature": 0.0,
+        "best_of": 5,
+        "patience": 1.0,
+        "length_penalty": 1.0,
+        "repetition_penalty": 1.0,
+        "no_repeat_ngram_size": 0,
+        "condition_on_previous_text": true,
+        "compression_ratio_threshold": 2.4,
+        "log_prob_threshold": -1.0,
+        "no_speech_threshold": 0.6,
+        "suppress_blank": true,
+        "suppress_tokens": [
+          -1
+        ],
+        "max_initial_timestamp": 1.0,
+        "word_timestamps": true,
+        "language_detection_threshold": 0.5,
+        "language_detection_segments": 1,
+        "language": "en",
+        "vad_filter": false,
+        "initial_prompt": null,
+        "hotwords": null,
+        "prompt_reset_on_temperature": 0.5,
+        "prefix": null,
+        "without_timestamps": false,
+        "prepend_punctuations": "\"'“¿([{-",
+        "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+        "max_new_tokens": null,
+        "chunk_length": null,
+        "clip_timestamps": "0",
+        "hallucination_silence_threshold": null,
+        "multilingual": false
+      },
+      "hypothesis": "gas. Cockpit preparation. Parking brake. Set. Chocks. Set. Engine masters. Off. Engine mode selector. Norm. Landing gear level. Check down. Flaps level.",
+      "segments": [
+        {
+          "segment_id": "reviewed-dc84f2b77565d804f16ea31f42380abb-0",
+          "start_sec": 0.0,
+          "end_sec": 13.04,
+          "raw_asr_text": " gas. Cockpit preparation. Parking brake. Set. Chocks. Set. Engine masters. Off. Engine mode",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "en",
+          "words": [
+            {
+              "word": " gas.",
+              "start_sec": 0.0,
+              "end_sec": 0.62,
+              "probability": 0.08343304693698883
+            },
+            {
+              "word": " Cockpit",
+              "start_sec": 2.96,
+              "end_sec": 3.8,
+              "probability": 0.8648539483547211
+            },
+            {
+              "word": " preparation.",
+              "start_sec": 3.8,
+              "end_sec": 4.3,
+              "probability": 0.9413424134254456
+            },
+            {
+              "word": " Parking",
+              "start_sec": 5.2,
+              "end_sec": 6.04,
+              "probability": 0.9773594737052917
+            },
+            {
+              "word": " brake.",
+              "start_sec": 6.04,
+              "end_sec": 6.24,
+              "probability": 0.8690442442893982
+            },
+            {
+              "word": " Set.",
+              "start_sec": 6.6,
+              "end_sec": 7.2,
+              "probability": 0.9142343997955322
+            },
+            {
+              "word": " Chocks.",
+              "start_sec": 7.52,
+              "end_sec": 8.36,
+              "probability": 0.6678950190544128
+            },
+            {
+              "word": " Set.",
+              "start_sec": 8.56,
+              "end_sec": 9.1,
+              "probability": 0.9940770864486694
+            },
+            {
+              "word": " Engine",
+              "start_sec": 9.5,
+              "end_sec": 10.34,
+              "probability": 0.9979729056358337
+            },
+            {
+              "word": " masters.",
+              "start_sec": 10.34,
+              "end_sec": 10.92,
+              "probability": 0.943268358707428
+            },
+            {
+              "word": " Off.",
+              "start_sec": 11.2,
+              "end_sec": 11.82,
+              "probability": 0.9836397767066956
+            },
+            {
+              "word": " Engine",
+              "start_sec": 12.08,
+              "end_sec": 12.76,
+              "probability": 0.9993345141410828
+            },
+            {
+              "word": " mode",
+              "start_sec": 12.76,
+              "end_sec": 13.04,
+              "probability": 0.9780922532081604
+            }
+          ],
+          "avg_logprob": -0.20659557183583577,
+          "no_speech_prob": 0.3330579400062561,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        },
+        {
+          "segment_id": "reviewed-dc84f2b77565d804f16ea31f42380abb-1",
+          "start_sec": 13.04,
+          "end_sec": 19.7,
+          "raw_asr_text": " selector. Norm. Landing gear level. Check down. Flaps level.",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "en",
+          "words": [
+            {
+              "word": " selector.",
+              "start_sec": 13.04,
+              "end_sec": 13.6,
+              "probability": 0.9994213879108429
+            },
+            {
+              "word": " Norm.",
+              "start_sec": 13.8,
+              "end_sec": 14.38,
+              "probability": 0.9850631952285767
+            },
+            {
+              "word": " Landing",
+              "start_sec": 14.9,
+              "end_sec": 15.74,
+              "probability": 0.981769859790802
+            },
+            {
+              "word": " gear",
+              "start_sec": 15.74,
+              "end_sec": 16.16,
+              "probability": 0.9999468326568604
+            },
+            {
+              "word": " level.",
+              "start_sec": 16.16,
+              "end_sec": 16.48,
+              "probability": 0.9950340986251831
+            },
+            {
+              "word": " Check",
+              "start_sec": 16.9,
+              "end_sec": 17.74,
+              "probability": 0.9980595707893372
+            },
+            {
+              "word": " down.",
+              "start_sec": 17.74,
+              "end_sec": 18.12,
+              "probability": 0.8005292415618896
+            },
+            {
+              "word": " Flaps",
+              "start_sec": 18.68,
+              "end_sec": 19.52,
+              "probability": 0.9958764612674713
+            },
+            {
+              "word": " level.",
+              "start_sec": 19.52,
+              "end_sec": 19.7,
+              "probability": 0.6603838801383972
+            }
+          ],
+          "avg_logprob": -0.20659557183583577,
+          "no_speech_prob": 0.3330579400062561,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        }
+      ],
+      "asr_elapsed_sec": 7.68729020399951
+    },
+    {
+      "id": "fleurs-ru-1651",
+      "cohort": "general_ru",
+      "audio_sha256": "18ddf3cabf0735c56c8e5e9beeea1658960d5ab63b2d12f63cd472bcd3a4b2b0",
+      "effective_options": {
+        "task": "transcribe",
+        "beam_size": 5,
+        "temperature": 0.0,
+        "best_of": 5,
+        "patience": 1.0,
+        "length_penalty": 1.0,
+        "repetition_penalty": 1.0,
+        "no_repeat_ngram_size": 0,
+        "condition_on_previous_text": true,
+        "compression_ratio_threshold": 2.4,
+        "log_prob_threshold": -1.0,
+        "no_speech_threshold": 0.6,
+        "suppress_blank": true,
+        "suppress_tokens": [
+          -1
+        ],
+        "max_initial_timestamp": 1.0,
+        "word_timestamps": true,
+        "language_detection_threshold": 0.5,
+        "language_detection_segments": 1,
+        "language": "ru",
+        "vad_filter": false,
+        "initial_prompt": null,
+        "hotwords": null,
+        "prompt_reset_on_temperature": 0.5,
+        "prefix": null,
+        "without_timestamps": false,
+        "prepend_punctuations": "\"'“¿([{-",
+        "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+        "max_new_tokens": null,
+        "chunk_length": null,
+        "clip_timestamps": "0",
+        "hallucination_silence_threshold": null,
+        "multilingual": false
+      },
+      "hypothesis": "Вариант, становящийся все более популярным для тех, кто планирует взять академический год, это путешествовать и учиться.",
+      "segments": [
+        {
+          "segment_id": "fleurs-ru-1651-0",
+          "start_sec": 0.8400000000000001,
+          "end_sec": 7.24,
+          "raw_asr_text": " Вариант, становящийся все более популярным для тех, кто планирует взять академический год, это путешествовать и учиться.",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "ru",
+          "words": [
+            {
+              "word": " Вариант,",
+              "start_sec": 0.8400000000000001,
+              "end_sec": 1.32,
+              "probability": 0.9976161321004232
+            },
+            {
+              "word": " становящийся",
+              "start_sec": 1.32,
+              "end_sec": 1.8,
+              "probability": 0.999778226017952
+            },
+            {
+              "word": " все",
+              "start_sec": 1.8,
+              "end_sec": 1.96,
+              "probability": 0.9363940954208374
+            },
+            {
+              "word": " более",
+              "start_sec": 1.96,
+              "end_sec": 2.22,
+              "probability": 0.9998164772987366
+            },
+            {
+              "word": " популярным",
+              "start_sec": 2.22,
+              "end_sec": 2.98,
+              "probability": 0.9998974800109863
+            },
+            {
+              "word": " для",
+              "start_sec": 2.98,
+              "end_sec": 3.12,
+              "probability": 0.9998401403427124
+            },
+            {
+              "word": " тех,",
+              "start_sec": 3.12,
+              "end_sec": 3.34,
+              "probability": 0.9998072981834412
+            },
+            {
+              "word": " кто",
+              "start_sec": 3.36,
+              "end_sec": 3.54,
+              "probability": 0.9999474287033081
+            },
+            {
+              "word": " планирует",
+              "start_sec": 3.54,
+              "end_sec": 4.0,
+              "probability": 0.9998940378427505
+            },
+            {
+              "word": " взять",
+              "start_sec": 4.0,
+              "end_sec": 4.14,
+              "probability": 0.998863697052002
+            },
+            {
+              "word": " академический",
+              "start_sec": 4.14,
+              "end_sec": 4.9,
+              "probability": 0.9963416159152985
+            },
+            {
+              "word": " год,",
+              "start_sec": 4.9,
+              "end_sec": 5.28,
+              "probability": 0.9997172951698303
+            },
+            {
+              "word": " это",
+              "start_sec": 5.4,
+              "end_sec": 5.8,
+              "probability": 0.9514611959457397
+            },
+            {
+              "word": " путешествовать",
+              "start_sec": 5.8,
+              "end_sec": 6.62,
+              "probability": 0.9878832250833511
+            },
+            {
+              "word": " и",
+              "start_sec": 6.62,
+              "end_sec": 6.84,
+              "probability": 0.999887228012085
+            },
+            {
+              "word": " учиться.",
+              "start_sec": 6.84,
+              "end_sec": 7.24,
+              "probability": 0.9999586343765259
+            }
+          ],
+          "avg_logprob": -0.10472740271152595,
+          "no_speech_prob": 0.016934454441070557,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        }
+      ],
+      "asr_elapsed_sec": 6.888133935000042
+    },
+    {
+      "id": "bnoise-TBM940_E0_1_Pil-MeasMic-ch0",
+      "cohort": "bleriot_b_noise",
+      "audio_sha256": "f9397c8d45f3d3ebb715fb752ef7ac5528f1e510c62196f9ad4ccb839afc29bc",
+      "effective_options": {
+        "task": "transcribe",
+        "beam_size": 5,
+        "temperature": 0.0,
+        "best_of": 5,
+        "patience": 1.0,
+        "length_penalty": 1.0,
+        "repetition_penalty": 1.0,
+        "no_repeat_ngram_size": 0,
+        "condition_on_previous_text": true,
+        "compression_ratio_threshold": 2.4,
+        "log_prob_threshold": -1.0,
+        "no_speech_threshold": 0.6,
+        "suppress_blank": true,
+        "suppress_tokens": [
+          -1
+        ],
+        "max_initial_timestamp": 1.0,
+        "word_timestamps": true,
+        "language_detection_threshold": 0.5,
+        "language_detection_segments": 1,
+        "language": null,
+        "vad_filter": false,
+        "initial_prompt": null,
+        "hotwords": null,
+        "prompt_reset_on_temperature": 0.5,
+        "prefix": null,
+        "without_timestamps": false,
+        "prepend_punctuations": "\"'“¿([{-",
+        "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+        "max_new_tokens": null,
+        "chunk_length": null,
+        "clip_timestamps": "0",
+        "hallucination_silence_threshold": null,
+        "multilingual": false
+      },
+      "hypothesis": "",
+      "segments": [],
+      "asr_elapsed_sec": 9.437218150000263
+    }
+  ]
+}

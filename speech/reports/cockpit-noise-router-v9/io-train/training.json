@@ -1,0 +1,168 @@
+{
+  "plan_sha256": "95baf3d19575aacabe03a83486b87419b6282ee05b8051619fec0eb4057519ad",
+  "train_parents": 231,
+  "observations": 3927,
+  "threshold": 0.8,
+  "folds": [
+    {
+      "held_reader": "bleriot:sp001",
+      "train_readers": [
+        "bleriot:sp004",
+        "bleriot:sp006",
+        "bleriot:sp008",
+        "bleriot:sp009",
+        "bleriot:sp010",
+        "bleriot:sp011",
+        "bleriot:sp101",
+        "bleriot:sp102"
+      ],
+      "train_rows": 3145,
+      "held_rows": 782
+    },
+    {
+      "held_reader": "bleriot:sp004",
+      "train_readers": [
+        "bleriot:sp001",
+        "bleriot:sp006",
+        "bleriot:sp008",
+        "bleriot:sp009",
+        "bleriot:sp010",
+        "bleriot:sp011",
+        "bleriot:sp101",
+        "bleriot:sp102"
+      ],
+      "train_rows": 3570,
+      "held_rows": 357
+    },
+    {
+      "held_reader": "bleriot:sp006",
+      "train_readers": [
+        "bleriot:sp001",
+        "bleriot:sp004",
+        "bleriot:sp008",
+        "bleriot:sp009",
+        "bleriot:sp010",
+        "bleriot:sp011",
+        "bleriot:sp101",
+        "bleriot:sp102"
+      ],
+      "train_rows": 3842,
+      "held_rows": 85
+    },
+    {
+      "held_reader": "bleriot:sp008",
+      "train_readers": [
+        "bleriot:sp001",
+        "bleriot:sp004",
+        "bleriot:sp006",
+        "bleriot:sp009",
+        "bleriot:sp010",
+        "bleriot:sp011",
+        "bleriot:sp101",
+        "bleriot:sp102"
+      ],
+      "train_rows": 3349,
+      "held_rows": 578
+    },
+    {
+      "held_reader": "bleriot:sp009",
+      "train_readers": [
+        "bleriot:sp001",
+        "bleriot:sp004",
+        "bleriot:sp006",
+        "bleriot:sp008",
+        "bleriot:sp010",
+        "bleriot:sp011",
+        "bleriot:sp101",
+        "bleriot:sp102"
+      ],
+      "train_rows": 3332,
+      "held_rows": 595
+    },
+    {
+      "held_reader": "bleriot:sp010",
+      "train_readers": [
+        "bleriot:sp001",
+        "bleriot:sp004",
+        "bleriot:sp006",
+        "bleriot:sp008",
+        "bleriot:sp009",
+        "bleriot:sp011",
+        "bleriot:sp101",
+        "bleriot:sp102"
+      ],
+      "train_rows": 3128,
+      "held_rows": 799
+    },
+    {
+      "held_reader": "bleriot:sp011",
+      "train_readers": [
+        "bleriot:sp001",
+        "bleriot:sp004",
+        "bleriot:sp006",
+        "bleriot:sp008",
+        "bleriot:sp009",
+        "bleriot:sp010",
+        "bleriot:sp101",
+        "bleriot:sp102"
+      ],
+      "train_rows": 3468,
+      "held_rows": 459
+    },
+    {
+      "held_reader": "bleriot:sp101",
+      "train_readers": [
+        "bleriot:sp001",
+        "bleriot:sp004",
+        "bleriot:sp006",
+        "bleriot:sp008",
+        "bleriot:sp009",
+        "bleriot:sp010",
+        "bleriot:sp011",
+        "bleriot:sp102"
+      ],
+      "train_rows": 3672,
+      "held_rows": 255
+    },
+    {
+      "held_reader": "bleriot:sp102",
+      "train_readers": [
+        "bleriot:sp001",
+        "bleriot:sp004",
+        "bleriot:sp006",
+        "bleriot:sp008",
+        "bleriot:sp009",
+        "bleriot:sp010",
+        "bleriot:sp011",
+        "bleriot:sp101"
+      ],
+      "train_rows": 3910,
+      "held_rows": 17
+    }
+  ],
+  "OOF": {
+    "clean": {
+      "rows": 231,
+      "selected_severe": 0
+    },
+    "severe": {
+      "rows": 1848,
+      "selected_severe": 1848
+    },
+    "mild": {
+      "rows": 1848,
+      "selected_severe": 0
+    }
+  },
+  "trees": 256,
+  "features": 62,
+  "files": {
+    "router.joblib": "287b0373eb258e18e9783843c5e9af65219a2e1307f1c383745f2103189dda1f",
+    "features.npz": "c45f3df3d604f4edfc52a64cca6f69e64500cbabb5295f455ff91016311c091c",
+    "feature-rows.json": "4f5ddf7ef2a4eb47d6a6290e5ba109822ef802502342b0133832bdfbbc0736ad"
+  },
+  "labels_are_synthetic_severity": true,
+  "ASR_texts_used_for_training": false,
+  "dev_used_for_training_or_threshold": false,
+  "sklearn": "1.7.2"
+}

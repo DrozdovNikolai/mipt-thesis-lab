@@ -1,0 +1,426 @@
+{
+  "source_report": "reports/reviewed-pilot-v1/comparison.json",
+  "source_sha256": "a68901d7a59105c1d8f79f69d4f60241df9472fe1fed4fb494d7ec8a0e31e1cc",
+  "omitted_payload_key": "records",
+  "omitted_record_count": 50,
+  "note": "Aggregate values copied unchanged; no evaluation or gate rerun.",
+  "metrics": {
+    "status": "EXECUTED_PARTIAL_HUMAN_REVIEW",
+    "plan_sha256": "45c9cdd3add04fe8845213ce83868902a177d826118bb01b6ecb001704fca3b1",
+    "results": {
+      "A0_A4_fixed_small_int8_cpu": {
+        "baseline": "A0",
+        "systems": {
+          "A0": {
+            "S": 16,
+            "D": 2,
+            "I": 1,
+            "N": 115,
+            "H": 97,
+            "character_errors": 48,
+            "reference_characters": 674,
+            "wer_lexical_corpus": 0.16521739130434782,
+            "cer": 0.0712166172106825,
+            "relative_error_reduction": 0.0,
+            "diagnostic_ci": {
+              "lower": 0.0,
+              "upper": 0.0,
+              "method": "paired_cluster_bootstrap",
+              "seed": 55,
+              "resamples": 2000,
+              "confidence_level": 0.95,
+              "independent_groups": 3,
+              "delta_definition": "candidate - baseline",
+              "valid_resamples": 2000,
+              "system_intervals": {
+                "baseline": {
+                  "lower": 0.0,
+                  "upper": 0.2608695652173913
+                },
+                "candidate": {
+                  "lower": 0.0,
+                  "upper": 0.2608695652173913
+                }
+              }
+            },
+            "ci_is_acceptance_evidence": false
+          },
+          "A1": {
+            "S": 52,
+            "D": 2,
+            "I": 29,
+            "N": 115,
+            "H": 61,
+            "character_errors": 258,
+            "reference_characters": 674,
+            "wer_lexical_corpus": 0.7217391304347827,
+            "cer": 0.3827893175074184,
+            "relative_error_reduction": -3.3684210526315788,
+            "diagnostic_ci": {
+              "lower": 0.1956521739130435,
+              "upper": 0.8695652173913043,
+              "method": "paired_cluster_bootstrap",
+              "seed": 55,
+              "resamples": 2000,
+              "confidence_level": 0.95,
+              "independent_groups": 3,
+              "delta_definition": "candidate - baseline",
+              "valid_resamples": 2000,
+              "system_intervals": {
+                "baseline": {
+                  "lower": 0.0,
+                  "upper": 0.2608695652173913
+                },
+                "candidate": {
+                  "lower": 0.34782608695652173,
+                  "upper": 1.1304347826086956
+                }
+              }
+            },
+            "ci_is_acceptance_evidence": false
+          },
+          "A2": {
+            "S": 38,
+            "D": 4,
+            "I": 16,
+            "N": 115,
+            "H": 73,
+            "character_errors": 215,
+            "reference_characters": 674,
+            "wer_lexical_corpus": 0.5043478260869565,
+            "cer": 0.3189910979228487,
+            "relative_error_reduction": -2.0526315789473686,
+            "diagnostic_ci": {
+              "lower": 0.10869565217391304,
+              "upper": 0.6086956521739131,
+              "method": "paired_cluster_bootstrap",
+              "seed": 55,
+              "resamples": 2000,
+              "confidence_level": 0.95,
+              "independent_groups": 3,
+              "delta_definition": "candidate - baseline",
+              "valid_resamples": 2000,
+              "system_intervals": {
+                "baseline": {
+                  "lower": 0.0,
+                  "upper": 0.2608695652173913
+                },
+                "candidate": {
+                  "lower": 0.2608695652173913,
+                  "upper": 0.6956521739130435
+                }
+              }
+            },
+            "ci_is_acceptance_evidence": false
+          },
+          "A3": {
+            "S": 34,
+            "D": 3,
+            "I": 87,
+            "N": 115,
+            "H": 78,
+            "character_errors": 829,
+            "reference_characters": 674,
+            "wer_lexical_corpus": 1.0782608695652174,
+            "cer": 1.2299703264094954,
+            "relative_error_reduction": -5.526315789473684,
+            "diagnostic_ci": {
+              "lower": 0.10869565217391304,
+              "upper": 1.891304347826087,
+              "method": "paired_cluster_bootstrap",
+              "seed": 55,
+              "resamples": 2000,
+              "confidence_level": 0.95,
+              "independent_groups": 3,
+              "delta_definition": "candidate - baseline",
+              "valid_resamples": 2000,
+              "system_intervals": {
+                "baseline": {
+                  "lower": 0.0,
+                  "upper": 0.2608695652173913
+                },
+                "candidate": {
+                  "lower": 0.2608695652173913,
+                  "upper": 2.152173913043478
+                }
+              }
+            },
+            "ci_is_acceptance_evidence": false
+          },
+          "A4": {
+            "S": 36,
+            "D": 2,
+            "I": 86,
+            "N": 115,
+            "H": 77,
+            "character_errors": 824,
+            "reference_characters": 674,
+            "wer_lexical_corpus": 1.0782608695652174,
+            "cer": 1.2225519287833828,
+            "relative_error_reduction": -5.526315789473684,
+            "diagnostic_ci": {
+              "lower": 0.10869565217391304,
+              "upper": 1.891304347826087,
+              "method": "paired_cluster_bootstrap",
+              "seed": 55,
+              "resamples": 2000,
+              "confidence_level": 0.95,
+              "independent_groups": 3,
+              "delta_definition": "candidate - baseline",
+              "valid_resamples": 2000,
+              "system_intervals": {
+                "baseline": {
+                  "lower": 0.0,
+                  "upper": 0.2608695652173913
+                },
+                "candidate": {
+                  "lower": 0.2608695652173913,
+                  "upper": 2.152173913043478
+                }
+              }
+            },
+            "ci_is_acceptance_evidence": false
+          },
+          "VAD_SHORT": {
+            "S": 48,
+            "D": 5,
+            "I": 26,
+            "N": 115,
+            "H": 62,
+            "character_errors": 265,
+            "reference_characters": 674,
+            "wer_lexical_corpus": 0.6869565217391305,
+            "cer": 0.39317507418397624,
+            "relative_error_reduction": -3.1578947368421053,
+            "diagnostic_ci": {
+              "lower": 0.15217391304347827,
+              "upper": 0.9565217391304348,
+              "method": "paired_cluster_bootstrap",
+              "seed": 55,
+              "resamples": 2000,
+              "confidence_level": 0.95,
+              "independent_groups": 3,
+              "delta_definition": "candidate - baseline",
+              "valid_resamples": 2000,
+              "system_intervals": {
+                "baseline": {
+                  "lower": 0.0,
+                  "upper": 0.2608695652173913
+                },
+                "candidate": {
+                  "lower": 0.30434782608695654,
+                  "upper": 0.9565217391304348
+                }
+              }
+            },
+            "ci_is_acceptance_evidence": false
+          },
+          "HINTS_ONLY": {
+            "S": 15,
+            "D": 1,
+            "I": 10,
+            "N": 115,
+            "H": 99,
+            "character_errors": 96,
+            "reference_characters": 674,
+            "wer_lexical_corpus": 0.22608695652173913,
+            "cer": 0.142433234421365,
+            "relative_error_reduction": -0.368421052631579,
+            "diagnostic_ci": {
+              "lower": -0.043478260869565216,
+              "upper": 0.43478260869565216,
+              "method": "paired_cluster_bootstrap",
+              "seed": 55,
+              "resamples": 2000,
+              "confidence_level": 0.95,
+              "independent_groups": 3,
+              "delta_definition": "candidate - baseline",
+              "valid_resamples": 2000,
+              "system_intervals": {
+                "baseline": {
+                  "lower": 0.0,
+                  "upper": 0.2608695652173913
+                },
+                "candidate": {
+                  "lower": 0.10869565217391304,
+                  "upper": 0.43478260869565216
+                }
+              }
+            },
+            "ci_is_acceptance_evidence": false
+          },
+          "DENOISE_ONLY": {
+            "S": 27,
+            "D": 1,
+            "I": 8,
+            "N": 115,
+            "H": 87,
+            "character_errors": 116,
+            "reference_characters": 674,
+            "wer_lexical_corpus": 0.3130434782608696,
+            "cer": 0.17210682492581603,
+            "relative_error_reduction": -0.894736842105263,
+            "diagnostic_ci": {
+              "lower": 0.021739130434782608,
+              "upper": 0.30434782608695654,
+              "method": "paired_cluster_bootstrap",
+              "seed": 55,
+              "resamples": 2000,
+              "confidence_level": 0.95,
+              "independent_groups": 3,
+              "delta_definition": "candidate - baseline",
+              "valid_resamples": 2000,
+              "system_intervals": {
+                "baseline": {
+                  "lower": 0.0,
+                  "upper": 0.2608695652173913
+                },
+                "candidate": {
+                  "lower": 0.17391304347826086,
+                  "upper": 0.45652173913043476
+                }
+              }
+            },
+            "ci_is_acceptance_evidence": false
+          }
+        },
+        "samples": 5,
+        "groups": 3
+      },
+      "A5_parent_vs_lora_float16_gpu": {
+        "baseline": "parent",
+        "systems": {
+          "parent": {
+            "S": 27,
+            "D": 1,
+            "I": 6,
+            "N": 115,
+            "H": 87,
+            "character_errors": 95,
+            "reference_characters": 674,
+            "wer_lexical_corpus": 0.2956521739130435,
+            "cer": 0.14094955489614244,
+            "relative_error_reduction": 0.0,
+            "diagnostic_ci": {
+              "lower": 0.0,
+              "upper": 0.0,
+              "method": "paired_cluster_bootstrap",
+              "seed": 55,
+              "resamples": 2000,
+              "confidence_level": 0.95,
+              "independent_groups": 3,
+              "delta_definition": "candidate - baseline",
+              "valid_resamples": 2000,
+              "system_intervals": {
+                "baseline": {
+                  "lower": 0.15217391304347827,
+                  "upper": 0.43478260869565216
+                },
+                "candidate": {
+                  "lower": 0.15217391304347827,
+                  "upper": 0.43478260869565216
+                }
+              }
+            },
+            "ci_is_acceptance_evidence": false
+          },
+          "adapted": {
+            "S": 21,
+            "D": 0,
+            "I": 9,
+            "N": 115,
+            "H": 94,
+            "character_errors": 108,
+            "reference_characters": 674,
+            "wer_lexical_corpus": 0.2608695652173913,
+            "cer": 0.16023738872403562,
+            "relative_error_reduction": 0.11764705882352944,
+            "diagnostic_ci": {
+              "lower": -0.06521739130434782,
+              "upper": 0.0,
+              "method": "paired_cluster_bootstrap",
+              "seed": 55,
+              "resamples": 2000,
+              "confidence_level": 0.95,
+              "independent_groups": 3,
+              "delta_definition": "candidate - baseline",
+              "valid_resamples": 2000,
+              "system_intervals": {
+                "baseline": {
+                  "lower": 0.15217391304347827,
+                  "upper": 0.43478260869565216
+                },
+                "candidate": {
+                  "lower": 0.08695652173913043,
+                  "upper": 0.43478260869565216
+                }
+              }
+            },
+            "ci_is_acceptance_evidence": false
+          }
+        },
+        "samples": 5,
+        "groups": 3
+      }
+    },
+    "audio_identity": {
+      "dc84f2b77565d804f16ea31f42380abb": {
+        "original_sha256": "019302a4a1314628717cdbeb9bc87246983bd9f43063b66b0329bda8c6134067",
+        "prediction_audio_sha256": "e8b31dcb291f7949c3b694a8c3860f973025d2a79c3d1e905ca84567fd39f440",
+        "resampled_array_equal": true
+      },
+      "767df23c7c14166f8579da284d5a4219": {
+        "original_sha256": "c0202870f8d337e8de62a5b9da4425eeab32656c17d85175a7b7c64b8bb3d0ec",
+        "prediction_audio_sha256": "43685fb86eb5e80327550c747cb340f6a26c1811f8178189d4336d36a112ab10",
+        "resampled_array_equal": true
+      },
+      "c55f9c7708704c548f503aa642c2288d": {
+        "original_sha256": "ad97415da72b0601584c4600e1f6d79036c8936c780b4c6515e862c38a48fde7",
+        "prediction_audio_sha256": "3819331eea0352f4493be2a5c423fa8fccfe639322909454342ae4c6e43a7f4b",
+        "resampled_array_equal": true
+      },
+      "291ebb141aa4e7a7ba94ccf8d18002fb": {
+        "original_sha256": "19cf831b907b81d4cf9e97e4bae778b13122ec0a9ec8f733bfe551a0adf07969",
+        "prediction_audio_sha256": "32fa039d5ba842ae5c5313e78016c660974bf474a26c5662fc6fa2db0ba1e914",
+        "resampled_array_equal": true
+      },
+      "b8d2fc3fc1893f19ae7fb8d7c2722a4d": {
+        "original_sha256": "1a778aea1cb48a986d9cbbf9b9fbfc3c92fa44e9e6244afbfa7014048b765953",
+        "prediction_audio_sha256": "f2a02257f3535c98e392a2379564fd770e11be241ce22d6e3aee01a669b20936",
+        "resampled_array_equal": true
+      }
+    },
+    "dev_planned": 8,
+    "dev_scored": 5,
+    "unreviewed_dev": [
+      "325b235ca91365d6e590ac76eb5acd40",
+      "58d136c00041f7a4ce599740ee1b5210",
+      "c656ad84b78a3f41dcc8ff4653393346"
+    ],
+    "reference_flags": {
+      "fe1d55a2dce836cd2011449c4a9cc580": [
+        "digit_notation_requires_lexical_convention_review"
+      ],
+      "f16346d35b6182acf7c409752b5b84d9": [
+        "digit_notation_requires_lexical_convention_review"
+      ],
+      "c55f9c7708704c548f503aa642c2288d": [
+        "digit_notation_requires_lexical_convention_review"
+      ]
+    },
+    "limitations": [
+      "Only the available human-reviewed dev subset is scored; hard unreviewed items remain pending.",
+      "One annotator could see publisher and model suggestions; not an independent blind test.",
+      "Literal human spelling is preserved, including digit notation; no numerical expansion is guessed.",
+      "No event, salience or critical-entity labels are inferred."
+    ],
+    "ASR_QUALITY_GATE": "NEEDS_MORE_DATA",
+    "NLP_QUALITY_GATE": "NEEDS_MORE_DATA",
+    "statistical_confirmation": "INCONCLUSIVE",
+    "critical_entity_quality": "NOT_MEASURED",
+    "candidate_selected": false,
+    "release_promoted": false,
+    "new_training_executed": false,
+    "test_accessed": false
+  }
+}

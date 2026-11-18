@@ -1,0 +1,19 @@
+{
+  "implementation": "v2",
+  "functional_regression": "FAIL",
+  "checks": {
+    "original_decoded_once": false,
+    "repeated_decodes_two_spoken_copies": false,
+    "empty_does_not_decode": true,
+    "both_utterances_retained": false,
+    "nonempty_original_alignment": true,
+    "translated_word_times_in_range": true
+  },
+  "quality_inference_executed": false,
+  "GPU_quality_predictions": 0,
+  "CPU_smokes": 0,
+  "quality_gates": "NOT_RUN",
+  "release_gate": "FAIL",
+  "release_promoted": false,
+  "reason": "Prototype failed the predeclared real-audio regression; retained for audit."
+}

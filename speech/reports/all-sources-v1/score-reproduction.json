@@ -1,0 +1,44 @@
+[
+  {
+    "environment": "powershell",
+    "command": [
+      "powershell",
+      "-NoProfile",
+      "-File",
+      "scripts/all_sources_report.ps1",
+      "score"
+    ],
+    "exit_code": 0,
+    "before_sha256": {
+      "comparison.json": "4247fe5e711819e44b8a1cfefe0a0e8b2622f29e22eeabd963f68ccfecb0a1b0",
+      "predictions.csv": "6765c546d8cd31b1a8165cea18fcac53dd87c5afff3d61f2e9a332c9ac9072e4"
+    },
+    "after_sha256": {
+      "comparison.json": "4247fe5e711819e44b8a1cfefe0a0e8b2622f29e22eeabd963f68ccfecb0a1b0",
+      "predictions.csv": "6765c546d8cd31b1a8165cea18fcac53dd87c5afff3d61f2e9a332c9ac9072e4"
+    },
+    "identical": true
+  },
+  {
+    "environment": "linux_wsl_ubuntu",
+    "command": [
+      "wsl",
+      "-d",
+      "Ubuntu",
+      "--",
+      "sh",
+      "/mnt/c/DEV/MIPT/Diploma/Speech/scripts/all_sources_report.sh",
+      "score"
+    ],
+    "exit_code": 0,
+    "before_sha256": {
+      "comparison.json": "4247fe5e711819e44b8a1cfefe0a0e8b2622f29e22eeabd963f68ccfecb0a1b0",
+      "predictions.csv": "6765c546d8cd31b1a8165cea18fcac53dd87c5afff3d61f2e9a332c9ac9072e4"
+    },
+    "after_sha256": {
+      "comparison.json": "4247fe5e711819e44b8a1cfefe0a0e8b2622f29e22eeabd963f68ccfecb0a1b0",
+      "predictions.csv": "6765c546d8cd31b1a8165cea18fcac53dd87c5afff3d61f2e9a332c9ac9072e4"
+    },
+    "identical": true
+  }
+]

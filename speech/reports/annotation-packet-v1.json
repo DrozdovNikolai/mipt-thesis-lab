@@ -1,0 +1,22 @@
+{
+  "items": 18,
+  "audio_minutes": 6.0,
+  "groups": {
+    "independent_groups": 6,
+    "split_groups": {
+      "train": 3,
+      "dev": 3,
+      "test": 0
+    },
+    "unknown_speakers": 0,
+    "script_overlap": {
+      "bleriot:BEA:Checklists": [
+        "dev",
+        "train"
+      ]
+    },
+    "claim_limitation": null
+  },
+  "human_verified": 0,
+  "status": "READY_FOR_HUMAN_REVIEW"
+}

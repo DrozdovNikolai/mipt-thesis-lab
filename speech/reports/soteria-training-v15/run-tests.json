@@ -1,0 +1,55 @@
+{
+  "exit_code": 0,
+  "image": "sha256:34ed3eca5f649c8d1b3fc1b021bae236a3030829d9c9347368a32ba4fa6b347c",
+  "state": {
+    "Status": "exited",
+    "Running": false,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 0,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-09-16T07:38:32.681460396Z",
+    "FinishedAt": "2026-09-16T07:38:35.993986041Z"
+  },
+  "network": "none",
+  "devices": null,
+  "mounts": [
+    {
+      "Type": "bind",
+      "Source": "C:/DEV/MIPT/Diploma/Speech/reports/soteria-training-v15/frozen",
+      "Destination": "/app",
+      "Mode": "",
+      "RW": false,
+      "Propagation": "rprivate"
+    },
+    {
+      "Type": "bind",
+      "Source": "C:/DEV/MIPT/Diploma/Speech/reports/soteria-training-v15",
+      "Destination": "/study",
+      "Mode": "",
+      "RW": true,
+      "Propagation": "rprivate"
+    },
+    {
+      "Type": "volume",
+      "Name": "north55-speech_model_cache",
+      "Source": "/var/lib/docker/volumes/north55-speech_model_cache/_data",
+      "Destination": "/models",
+      "Driver": "local",
+      "Mode": "z",
+      "RW": false,
+      "Propagation": ""
+    }
+  ],
+  "command": [
+    "-m",
+    "pytest",
+    "tests/test_soteria_training_v15.py",
+    "-q",
+    "-p",
+    "no:cacheprovider"
+  ]
+}

@@ -1,0 +1,836 @@
+{
+  "status": "PASS",
+  "analysis": "post_hoc_exact_waveform_gate_composition",
+  "controls": 194,
+  "model_prediction_checks": 776,
+  "new_ASR_calls": 0,
+  "new_VAD_calls": 0,
+  "new_training_updates": 0,
+  "new_human_labels": 0,
+  "blind_dev_accessed": false,
+  "test_accessed": false,
+  "release_promoted": false,
+  "independent_quality_confirmation": false,
+  "fixed_gate": {
+    "threshold": 0.5,
+    "min_speech_duration_ms": 100
+  },
+  "cohorts": {
+    "bleriot_b_noise": {
+      "samples": 25,
+      "scores": {
+        "baseline-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 23,
+          "N": 0,
+          "H": 0,
+          "character_errors": 1260,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null,
+          "inserted_words_per_minute": 4.5887823391733615
+        },
+        "baseline-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null,
+          "inserted_words_per_minute": 0.0
+        },
+        "decoder-kl-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 28,
+          "N": 0,
+          "H": 0,
+          "character_errors": 1455,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null,
+          "inserted_words_per_minute": 5.586343717254527
+        },
+        "decoder-kl-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null,
+          "inserted_words_per_minute": 0.0
+        },
+        "decoder-ce-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 21,
+          "N": 0,
+          "H": 0,
+          "character_errors": 786,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null,
+          "inserted_words_per_minute": 4.189757787940896
+        },
+        "decoder-ce-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null,
+          "inserted_words_per_minute": 0.0
+        },
+        "full-ce-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 21,
+          "N": 0,
+          "H": 0,
+          "character_errors": 786,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null,
+          "inserted_words_per_minute": 4.189757787940896
+        },
+        "full-ce-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null,
+          "inserted_words_per_minute": 0.0
+        }
+      },
+      "suppressed_inputs": 25
+    },
+    "general_clean": {
+      "samples": 50,
+      "scores": {
+        "baseline-raw": {
+          "S": 37,
+          "D": 2,
+          "I": 5,
+          "N": 1214,
+          "H": 1175,
+          "character_errors": 97,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.036243822075782535,
+          "cer": 0.014804639804639804,
+          "inserted_words_per_minute": 0.6797557411036967
+        },
+        "baseline-gate": {
+          "S": 37,
+          "D": 2,
+          "I": 5,
+          "N": 1214,
+          "H": 1175,
+          "character_errors": 97,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.036243822075782535,
+          "cer": 0.014804639804639804,
+          "inserted_words_per_minute": 0.6797557411036967
+        },
+        "decoder-kl-raw": {
+          "S": 35,
+          "D": 2,
+          "I": 5,
+          "N": 1214,
+          "H": 1177,
+          "character_errors": 92,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.03459637561779242,
+          "cer": 0.014041514041514042,
+          "inserted_words_per_minute": 0.6797557411036967
+        },
+        "decoder-kl-gate": {
+          "S": 35,
+          "D": 2,
+          "I": 5,
+          "N": 1214,
+          "H": 1177,
+          "character_errors": 92,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.03459637561779242,
+          "cer": 0.014041514041514042,
+          "inserted_words_per_minute": 0.6797557411036967
+        },
+        "decoder-ce-raw": {
+          "S": 35,
+          "D": 2,
+          "I": 4,
+          "N": 1214,
+          "H": 1177,
+          "character_errors": 92,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.03377265238879736,
+          "cer": 0.014041514041514042,
+          "inserted_words_per_minute": 0.5438045928829573
+        },
+        "decoder-ce-gate": {
+          "S": 35,
+          "D": 2,
+          "I": 4,
+          "N": 1214,
+          "H": 1177,
+          "character_errors": 92,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.03377265238879736,
+          "cer": 0.014041514041514042,
+          "inserted_words_per_minute": 0.5438045928829573
+        },
+        "full-ce-raw": {
+          "S": 35,
+          "D": 2,
+          "I": 4,
+          "N": 1214,
+          "H": 1177,
+          "character_errors": 92,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.03377265238879736,
+          "cer": 0.014041514041514042,
+          "inserted_words_per_minute": 0.5438045928829573
+        },
+        "full-ce-gate": {
+          "S": 35,
+          "D": 2,
+          "I": 4,
+          "N": 1214,
+          "H": 1177,
+          "character_errors": 92,
+          "reference_characters": 6552,
+          "wer_lexical_corpus": 0.03377265238879736,
+          "cer": 0.014041514041514042,
+          "inserted_words_per_minute": 0.5438045928829573
+        }
+      },
+      "suppressed_inputs": 0
+    },
+    "general_ru": {
+      "samples": 50,
+      "scores": {
+        "baseline-raw": {
+          "S": 75,
+          "D": 6,
+          "I": 7,
+          "N": 921,
+          "H": 840,
+          "character_errors": 166,
+          "reference_characters": 6406,
+          "wer_lexical_corpus": 0.09554831704668838,
+          "cer": 0.025913206369029034,
+          "inserted_words_per_minute": 0.7859869750729844
+        },
+        "baseline-gate": {
+          "S": 75,
+          "D": 6,
+          "I": 7,
+          "N": 921,
+          "H": 840,
+          "character_errors": 166,
+          "reference_characters": 6406,
+          "wer_lexical_corpus": 0.09554831704668838,
+          "cer": 0.025913206369029034,
+          "inserted_words_per_minute": 0.7859869750729844
+        },
+        "decoder-kl-raw": {
+          "S": 75,
+          "D": 6,
+          "I": 6,
+          "N": 921,
+          "H": 840,
+          "character_errors": 162,
+          "reference_characters": 6406,
+          "wer_lexical_corpus": 0.09446254071661238,
+          "cer": 0.025288791757727132,
+          "inserted_words_per_minute": 0.6737031214911295
+        },
+        "decoder-kl-gate": {
+          "S": 75,
+          "D": 6,
+          "I": 6,
+          "N": 921,
+          "H": 840,
+          "character_errors": 162,
+          "reference_characters": 6406,
+          "wer_lexical_corpus": 0.09446254071661238,
+          "cer": 0.025288791757727132,
+          "inserted_words_per_minute": 0.6737031214911295
+        },
+        "decoder-ce-raw": {
+          "S": 73,
+          "D": 5,
+          "I": 6,
+          "N": 921,
+          "H": 843,
+          "character_errors": 160,
+          "reference_characters": 6406,
+          "wer_lexical_corpus": 0.09120521172638436,
+          "cer": 0.024976584452076178,
+          "inserted_words_per_minute": 0.6737031214911295
+        },
+        "decoder-ce-gate": {
+          "S": 73,
+          "D": 5,
+          "I": 6,
+          "N": 921,
+          "H": 843,
+          "character_errors": 160,
+          "reference_characters": 6406,
+          "wer_lexical_corpus": 0.09120521172638436,
+          "cer": 0.024976584452076178,
+          "inserted_words_per_minute": 0.6737031214911295
+        },
+        "full-ce-raw": {
+          "S": 73,
+          "D": 6,
+          "I": 7,
+          "N": 921,
+          "H": 842,
+          "character_errors": 156,
+          "reference_characters": 6406,
+          "wer_lexical_corpus": 0.09337676438653637,
+          "cer": 0.024352169840774273,
+          "inserted_words_per_minute": 0.7859869750729844
+        },
+        "full-ce-gate": {
+          "S": 73,
+          "D": 6,
+          "I": 7,
+          "N": 921,
+          "H": 842,
+          "character_errors": 156,
+          "reference_characters": 6406,
+          "wer_lexical_corpus": 0.09337676438653637,
+          "cer": 0.024352169840774273,
+          "inserted_words_per_minute": 0.7859869750729844
+        }
+      },
+      "suppressed_inputs": 0
+    },
+    "noise_only": {
+      "samples": 15,
+      "scores": {
+        "baseline-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 34,
+          "N": 0,
+          "H": 0,
+          "character_errors": 1250,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null,
+          "inserted_words_per_minute": 6.8
+        },
+        "baseline-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null,
+          "inserted_words_per_minute": 0.0
+        },
+        "decoder-kl-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 184,
+          "N": 0,
+          "H": 0,
+          "character_errors": 977,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null,
+          "inserted_words_per_minute": 36.8
+        },
+        "decoder-kl-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null,
+          "inserted_words_per_minute": 0.0
+        },
+        "decoder-ce-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 120,
+          "N": 0,
+          "H": 0,
+          "character_errors": 428,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null,
+          "inserted_words_per_minute": 24.0
+        },
+        "decoder-ce-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null,
+          "inserted_words_per_minute": 0.0
+        },
+        "full-ce-raw": {
+          "S": 0,
+          "D": 0,
+          "I": 122,
+          "N": 0,
+          "H": 0,
+          "character_errors": 578,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null,
+          "inserted_words_per_minute": 24.4
+        },
+        "full-ce-gate": {
+          "S": 0,
+          "D": 0,
+          "I": 0,
+          "N": 0,
+          "H": 0,
+          "character_errors": 0,
+          "reference_characters": 0,
+          "wer_lexical_corpus": null,
+          "cer": null,
+          "inserted_words_per_minute": 0.0
+        }
+      },
+      "suppressed_inputs": 15
+    },
+    "partial_human_dev": {
+      "samples": 5,
+      "scores": {
+        "baseline-raw": {
+          "S": 10,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 104,
+          "character_errors": 50,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.1391304347826087,
+          "cer": 0.07418397626112759,
+          "inserted_words_per_minute": 3.0
+        },
+        "baseline-gate": {
+          "S": 10,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 104,
+          "character_errors": 50,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.1391304347826087,
+          "cer": 0.07418397626112759,
+          "inserted_words_per_minute": 3.0
+        },
+        "decoder-kl-raw": {
+          "S": 9,
+          "D": 1,
+          "I": 6,
+          "N": 115,
+          "H": 105,
+          "character_errors": 54,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.1391304347826087,
+          "cer": 0.08011869436201781,
+          "inserted_words_per_minute": 3.5999999999999996
+        },
+        "decoder-kl-gate": {
+          "S": 9,
+          "D": 1,
+          "I": 6,
+          "N": 115,
+          "H": 105,
+          "character_errors": 54,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.1391304347826087,
+          "cer": 0.08011869436201781,
+          "inserted_words_per_minute": 3.5999999999999996
+        },
+        "decoder-ce-raw": {
+          "S": 8,
+          "D": 1,
+          "I": 6,
+          "N": 115,
+          "H": 106,
+          "character_errors": 50,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.13043478260869565,
+          "cer": 0.07418397626112759,
+          "inserted_words_per_minute": 3.5999999999999996
+        },
+        "decoder-ce-gate": {
+          "S": 8,
+          "D": 1,
+          "I": 6,
+          "N": 115,
+          "H": 106,
+          "character_errors": 50,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.13043478260869565,
+          "cer": 0.07418397626112759,
+          "inserted_words_per_minute": 3.5999999999999996
+        },
+        "full-ce-raw": {
+          "S": 8,
+          "D": 1,
+          "I": 6,
+          "N": 115,
+          "H": 106,
+          "character_errors": 50,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.13043478260869565,
+          "cer": 0.07418397626112759,
+          "inserted_words_per_minute": 3.5999999999999996
+        },
+        "full-ce-gate": {
+          "S": 8,
+          "D": 1,
+          "I": 6,
+          "N": 115,
+          "H": 106,
+          "character_errors": 50,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.13043478260869565,
+          "cer": 0.07418397626112759,
+          "inserted_words_per_minute": 3.5999999999999996
+        }
+      },
+      "suppressed_inputs": 0
+    },
+    "publisher_weak_dev": {
+      "samples": 35,
+      "scores": {
+        "baseline-raw": {
+          "S": 149,
+          "D": 13,
+          "I": 39,
+          "N": 879,
+          "H": 717,
+          "character_errors": 593,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.22866894197952217,
+          "cer": 0.1152575315840622,
+          "inserted_words_per_minute": 3.342857142857143
+        },
+        "baseline-gate": {
+          "S": 149,
+          "D": 13,
+          "I": 39,
+          "N": 879,
+          "H": 717,
+          "character_errors": 593,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.22866894197952217,
+          "cer": 0.1152575315840622,
+          "inserted_words_per_minute": 3.342857142857143
+        },
+        "decoder-kl-raw": {
+          "S": 135,
+          "D": 16,
+          "I": 42,
+          "N": 879,
+          "H": 728,
+          "character_errors": 580,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.21956769055745165,
+          "cer": 0.11273080660835763,
+          "inserted_words_per_minute": 3.6
+        },
+        "decoder-kl-gate": {
+          "S": 135,
+          "D": 16,
+          "I": 42,
+          "N": 879,
+          "H": 728,
+          "character_errors": 580,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.21956769055745165,
+          "cer": 0.11273080660835763,
+          "inserted_words_per_minute": 3.6
+        },
+        "decoder-ce-raw": {
+          "S": 130,
+          "D": 13,
+          "I": 48,
+          "N": 879,
+          "H": 736,
+          "character_errors": 612,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.21729237770193402,
+          "cer": 0.11895043731778426,
+          "inserted_words_per_minute": 4.114285714285715
+        },
+        "decoder-ce-gate": {
+          "S": 130,
+          "D": 13,
+          "I": 48,
+          "N": 879,
+          "H": 736,
+          "character_errors": 612,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.21729237770193402,
+          "cer": 0.11895043731778426,
+          "inserted_words_per_minute": 4.114285714285715
+        },
+        "full-ce-raw": {
+          "S": 130,
+          "D": 13,
+          "I": 47,
+          "N": 879,
+          "H": 736,
+          "character_errors": 605,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.2161547212741752,
+          "cer": 0.11758989310009718,
+          "inserted_words_per_minute": 4.0285714285714285
+        },
+        "full-ce-gate": {
+          "S": 130,
+          "D": 13,
+          "I": 47,
+          "N": 879,
+          "H": 736,
+          "character_errors": 605,
+          "reference_characters": 5145,
+          "wer_lexical_corpus": 0.2161547212741752,
+          "cer": 0.11758989310009718,
+          "inserted_words_per_minute": 4.0285714285714285
+        }
+      },
+      "suppressed_inputs": 0
+    },
+    "quiet_general_clean": {
+      "samples": 9,
+      "scores": {
+        "baseline-raw": {
+          "S": 1,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 68,
+          "character_errors": 4,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.014492753623188406,
+          "cer": 0.011627906976744186,
+          "inserted_words_per_minute": 0.0
+        },
+        "baseline-gate": {
+          "S": 1,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 68,
+          "character_errors": 4,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.014492753623188406,
+          "cer": 0.011627906976744186,
+          "inserted_words_per_minute": 0.0
+        },
+        "decoder-kl-raw": {
+          "S": 1,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 68,
+          "character_errors": 4,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.014492753623188406,
+          "cer": 0.011627906976744186,
+          "inserted_words_per_minute": 0.0
+        },
+        "decoder-kl-gate": {
+          "S": 1,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 68,
+          "character_errors": 4,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.014492753623188406,
+          "cer": 0.011627906976744186,
+          "inserted_words_per_minute": 0.0
+        },
+        "decoder-ce-raw": {
+          "S": 1,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 68,
+          "character_errors": 4,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.014492753623188406,
+          "cer": 0.011627906976744186,
+          "inserted_words_per_minute": 0.0
+        },
+        "decoder-ce-gate": {
+          "S": 1,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 68,
+          "character_errors": 4,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.014492753623188406,
+          "cer": 0.011627906976744186,
+          "inserted_words_per_minute": 0.0
+        },
+        "full-ce-raw": {
+          "S": 1,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 68,
+          "character_errors": 4,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.014492753623188406,
+          "cer": 0.011627906976744186,
+          "inserted_words_per_minute": 0.0
+        },
+        "full-ce-gate": {
+          "S": 1,
+          "D": 0,
+          "I": 0,
+          "N": 69,
+          "H": 68,
+          "character_errors": 4,
+          "reference_characters": 344,
+          "wer_lexical_corpus": 0.014492753623188406,
+          "cer": 0.011627906976744186,
+          "inserted_words_per_minute": 0.0
+        }
+      },
+      "suppressed_inputs": 0
+    },
+    "quiet_partial_human_dev": {
+      "samples": 5,
+      "scores": {
+        "baseline-raw": {
+          "S": 11,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 103,
+          "character_errors": 56,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.14782608695652175,
+          "cer": 0.0830860534124629,
+          "inserted_words_per_minute": 3.0
+        },
+        "baseline-gate": {
+          "S": 11,
+          "D": 1,
+          "I": 5,
+          "N": 115,
+          "H": 103,
+          "character_errors": 56,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.14782608695652175,
+          "cer": 0.0830860534124629,
+          "inserted_words_per_minute": 3.0
+        },
+        "decoder-kl-raw": {
+          "S": 10,
+          "D": 2,
+          "I": 5,
+          "N": 115,
+          "H": 103,
+          "character_errors": 46,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.14782608695652175,
+          "cer": 0.06824925816023739,
+          "inserted_words_per_minute": 3.0
+        },
+        "decoder-kl-gate": {
+          "S": 10,
+          "D": 2,
+          "I": 5,
+          "N": 115,
+          "H": 103,
+          "character_errors": 46,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.14782608695652175,
+          "cer": 0.06824925816023739,
+          "inserted_words_per_minute": 3.0
+        },
+        "decoder-ce-raw": {
+          "S": 10,
+          "D": 2,
+          "I": 5,
+          "N": 115,
+          "H": 103,
+          "character_errors": 47,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.14782608695652175,
+          "cer": 0.06973293768545995,
+          "inserted_words_per_minute": 3.0
+        },
+        "decoder-ce-gate": {
+          "S": 10,
+          "D": 2,
+          "I": 5,
+          "N": 115,
+          "H": 103,
+          "character_errors": 47,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.14782608695652175,
+          "cer": 0.06973293768545995,
+          "inserted_words_per_minute": 3.0
+        },
+        "full-ce-raw": {
+          "S": 10,
+          "D": 1,
+          "I": 9,
+          "N": 115,
+          "H": 104,
+          "character_errors": 77,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.17391304347826086,
+          "cer": 0.1142433234421365,
+          "inserted_words_per_minute": 5.3999999999999995
+        },
+        "full-ce-gate": {
+          "S": 10,
+          "D": 1,
+          "I": 9,
+          "N": 115,
+          "H": 104,
+          "character_errors": 77,
+          "reference_characters": 674,
+          "wer_lexical_corpus": 0.17391304347826086,
+          "cer": 0.1142433234421365,
+          "inserted_words_per_minute": 5.3999999999999995
+        }
+      },
+      "suppressed_inputs": 0
+    }
+  }
+}

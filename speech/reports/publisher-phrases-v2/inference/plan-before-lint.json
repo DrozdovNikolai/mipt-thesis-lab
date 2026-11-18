@@ -1,0 +1,55 @@
+{
+  "policy": {
+    "version": "publisher_phrase_consensus_v2",
+    "minimum_words": 2,
+    "maximum_asr_disagreement": 0.15,
+    "exact_asr_below_words": 8,
+    "minimum_publisher_coverage": 0.9,
+    "minimum_median_word_probability": 0.6,
+    "maximum_zero_duration_fraction": 0.25,
+    "maximum_source_span_ratio": 3.0,
+    "human_verified": false,
+    "training_steps": 0
+  },
+  "model": "whisper-medium-en-ct2",
+  "model_manifest": {
+    "model": "whisper-medium-en-ct2",
+    "repo": "Systran/faster-whisper-medium.en",
+    "revision": "a29b04bd15381511a9af671baec01072039215e3",
+    "license": "MIT",
+    "selected_files": [
+      "README.md",
+      "config.json",
+      "model.bin",
+      "tokenizer.json",
+      "vocabulary.txt"
+    ],
+    "declared_bytes": 1530459085,
+    "acquired_at": "2026-09-14T19:28:36.011576+00:00",
+    "files": {
+      "README.md": "ab3ddd3b6af4ea0ef353cb80004f26613ba33217f81652fc13738d3b098c7675",
+      "config.json": "4a1848ebabe7938d9797c15a2e8e4ce1d36e6fd4a43d096ae5955257c67c7962",
+      "model.bin": "11b220779aea4c6f3ce9d2549c8a95ea869ed84066864b999531ef53e594fe5b",
+      "tokenizer.json": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df",
+      "vocabulary.txt": "ff77588746d3a2595d32ab5b69ffd7b95ce2441ac57533cb66fc3eb575a115cf"
+    }
+  },
+  "code_sha256": {
+    "scripts/publisher_phrases_v2.py": "227a45512451426f891ea9e80022f7d0b7638496516beecc9e8f08b56b3a685e",
+    "scripts/publisher_phrase_support.py": "8caf9be20ca601034429ed960cdf1336cb831343ee215e8eee901174c9c4f245",
+    "scripts/publisher_alignment.py": "f866ff85fe9e7634594370d90243509de1100b7a219a8469a945e21eb89fa614",
+    "src/north55_speech/asr.py": "028dcdab204ea383d4dd423e4f3707e02f6c5788dcb27dc51689d7d50a585f3b",
+    "src/north55_speech/metrics.py": "03876483b34afa31243136a5a3f9b52b17d2a2c15e8435fccfbf23986344792a",
+    "src/north55_speech/schemas.py": "0745770b96bfbc34e2bff6395d2d390ffd3440eb899188743681eca0367f3fa0"
+  },
+  "source_plan_sha256": "8ddc80ed93f2a7be0a399737dcfb0f8a85aa613110f9b06546a19ebeade3a3b5",
+  "source_rows_sha256": "52db952fd4aeb2cad103d6b8bcaf29a20b43c36d4e7cbec01e744ee2071c0e03",
+  "small_execution_sha256": "5689b52ff402324097b824168bf00cd8a250864a4d030350ca860d8dcb21fc96",
+  "old_train_sha256": "45956603b37c1edc2c8d881de69dee7fe8210842aba63af963387a027c3cebc3",
+  "dev_sha256": "76fbf9ba6c29f31aeeff27d0cf0013638a76ab95e3d6a21b2d62f88a4e5384f6",
+  "documents_sha256": "ff4bd0370569da478da41824a6276833d8a4cb982d98aa61801c2ab0dbc73bd8",
+  "inputs_sha256": "490712882f30a96411c40a6ddb7466fc6b7e7e3f212984087773310ec92971f9",
+  "asr_calls_planned": 675,
+  "test_accessed": false,
+  "dev_used_for_selection": false
+}

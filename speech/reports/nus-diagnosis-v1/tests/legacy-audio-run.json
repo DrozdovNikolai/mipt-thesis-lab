@@ -1,0 +1,30 @@
+{
+  "name": "/north55-nus-legacy-audio-tests-v1",
+  "image_id": "sha256:34ed3eca5f649c8d1b3fc1b021bae236a3030829d9c9347368a32ba4fa6b347c",
+  "state": {
+    "Status": "exited",
+    "Running": false,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 0,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-09-14T15:22:13.537414922Z",
+    "FinishedAt": "2026-09-14T15:22:19.520287032Z"
+  },
+  "network_mode": "none",
+  "command": [
+    "-m",
+    "pytest",
+    "tests/test_research_audio_evidence.py",
+    "-q",
+    "--junitxml=/results/legacy-audio.xml"
+  ],
+  "files": {
+    "scripts\\research_audio_evidence.py": "240ed7f079573a9b6c12edf3bd2f5211a8ef52707107b9095e98dbce1c2a870f",
+    "tests\\test_research_audio_evidence.py": "80718dd8a29c37b7bf08f21e1ac4bf890c425a94a811eabf8211df210ca729f1",
+    "reports\\nus-diagnosis-v1\\tests\\legacy-audio.xml": "857bb3ffbae0b47c7ab45245ebbfcaaf9c90b9f39c7dc3ee64e178fdbc42a698"
+  }
+}

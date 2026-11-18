@@ -1,0 +1,10 @@
+{
+  "compared": 661,
+  "mismatches": {
+    "hypothesis": [],
+    "audio_sha256": [],
+    "effective_options": []
+  },
+  "same_requests_and_baseline_outputs": true,
+  "no_reference_text_used": true
+}

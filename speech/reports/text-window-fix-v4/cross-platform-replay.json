@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "checks": {
+    "verification.json": true,
+    "status.json": true,
+    "report.md": true,
+    "comparison.json": true,
+    "scored-counts.json": true
+  },
+  "scope": "PowerShell versus Ubuntu WSL scorer and reporter, all five artifacts byte-identical",
+  "resume": {
+    "status": "PASS",
+    "checks": {
+      "all_predictions_unchanged": true,
+      "resumed264_without_ASR": true
+    }
+  }
+}

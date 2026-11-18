@@ -1,0 +1,32 @@
+{
+  "NUS_unique_before_filter": 313,
+  "NUS_selected": 275,
+  "NUS_minutes": 13.85166666666667,
+  "excluded_unique": 38,
+  "exclusion_reason_counts": {
+    "explicit_radio_reference_indicator": 29,
+    "conflicting_source_references": 11
+  },
+  "pairs": 675,
+  "minutes": 94.35099374999996,
+  "general_EN": 200,
+  "general_RU": 200,
+  "prior_weak_train_removed": 33,
+  "known_EN_support_speakers": 19,
+  "NUS_conservative_groups": 1,
+  "NUS_human_verified": 0,
+  "dev_count": 35,
+  "groups": {
+    "independent_groups": 23,
+    "split_groups": {
+      "train": 21,
+      "dev": 2,
+      "test": 0
+    },
+    "unknown_speakers": 475,
+    "script_overlap": {},
+    "claim_limitation": "unknown speakers cannot establish speaker-disjoint generalization"
+  },
+  "test_accessed": false,
+  "audio_scope_verified": false
+}

@@ -1,0 +1,86 @@
+<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>55 Север — отчёт измерений</title><style>body{font:16px system-ui,sans-serif;background:#eef1f4;color:#172d3c;margin:0}main{max-width:1100px;margin:auto;padding:28px}section,header{background:white;padding:24px;margin:18px 0;border-radius:10px}img{max-width:100%;height:auto}h1{font-size:28px}h2{font-size:20px}.missing{color:#815112;font-weight:bold}pre{white-space:pre-wrap;overflow-wrap:anywhere}a{color:#135c88}nav{line-height:2;overflow-wrap:anywhere}</style><main><header><h1>55 Север — отчёт измерений</h1><ul><li><strong>asr_quality_gate</strong>: NEEDS_MORE_DATA</li><li><strong>nlp_quality_gate</strong>: NEEDS_MORE_DATA</li><li><strong>temporal_event_gate</strong>: NEEDS_MORE_DATA</li><li><strong>selection</strong>: NOT_RUN</li></ul><p>Отсутствующие значения — не измерено, а не ноль. Графики не меняют quality gates. Качество ограничено зафиксированной выборкой.</p><p>Классификация фрагментов не доказывает temporal event detection.</p><nav><a href="metrics.json">metrics.json</a> · <a href="gate.json">gate.json</a> · <a href="figures.json">figures.json</a> · <a href="per-sample-predictions.json">per-sample-predictions.json</a> · <a href="per-sample.csv">per-sample.csv</a> · <a href="group-metrics.csv">group-metrics.csv</a> · <a href="entity-confusions.csv">entity-confusions.csv</a> · <a href="event-metrics.csv">event-metrics.csv</a> · <a href="timing.csv">timing.csv</a></nav></header><section><h2>WER и доверительный интервал</h2><p class="missing">не измерено</p><p>Нет проверенных измерений</p></section><section><h2>WER by language</h2><p class="missing">не измерено</p><p>Нет проверенных измерений</p></section><section><h2>WER by condition</h2><p class="missing">не измерено</p><p>Нет проверенных измерений</p></section><section><h2>Ошибки критических сущностей</h2><p class="missing">не измерено</p><p>Нет проверенных измерений</p></section><section><h2>Multi-label confusion matrices</h2><p class="missing">не измерено</p><p>Нет человеческих event labels</p></section><section><h2>Качество / время</h2><p class="missing">не измерено</p><p>Нужны WER и полные timing одного cohort</p></section><section><h2>Measured unscored dev runtime</h2><img src="figures/dev-runtime.png" alt="Measured unscored dev runtime"><p>Один проход каждой конфигурации. Это измерение скорости; WER/F1 не измерены, candidate не выбран.</p></section><details><summary>Исходные метрики</summary><pre>{
+  &quot;kind&quot;: &quot;historical_unscored_dev_runtime&quot;,
+  &quot;runtime_trials&quot;: [
+    {
+      &quot;trial&quot;: &quot;A0&quot;,
+      &quot;runs&quot;: 8,
+      &quot;audio_sec&quot;: 160.0,
+      &quot;elapsed_sec&quot;: 34.20094493399665,
+      &quot;rtf&quot;: 0.21375590583747908,
+      &quot;failures&quot;: 0
+    },
+    {
+      &quot;trial&quot;: &quot;A1&quot;,
+      &quot;runs&quot;: 8,
+      &quot;audio_sec&quot;: 160.0,
+      &quot;elapsed_sec&quot;: 100.88302871500491,
+      &quot;rtf&quot;: 0.6305189294687807,
+      &quot;failures&quot;: 0
+    },
+    {
+      &quot;trial&quot;: &quot;A2&quot;,
+      &quot;runs&quot;: 8,
+      &quot;audio_sec&quot;: 160.0,
+      &quot;elapsed_sec&quot;: 99.79869363499893,
+      &quot;rtf&quot;: 0.6237418352187433,
+      &quot;failures&quot;: 0
+    },
+    {
+      &quot;trial&quot;: &quot;A3&quot;,
+      &quot;runs&quot;: 8,
+      &quot;audio_sec&quot;: 160.0,
+      &quot;elapsed_sec&quot;: 117.01031577999674,
+      &quot;rtf&quot;: 0.7313144736249797,
+      &quot;failures&quot;: 0
+    },
+    {
+      &quot;trial&quot;: &quot;A4&quot;,
+      &quot;runs&quot;: 8,
+      &quot;audio_sec&quot;: 160.0,
+      &quot;elapsed_sec&quot;: 139.50076751300003,
+      &quot;rtf&quot;: 0.8718797969562502,
+      &quot;failures&quot;: 0
+    },
+    {
+      &quot;trial&quot;: &quot;VAD_SHORT&quot;,
+      &quot;runs&quot;: 8,
+      &quot;audio_sec&quot;: 160.0,
+      &quot;elapsed_sec&quot;: 133.99357673800114,
+      &quot;rtf&quot;: 0.8374598546125072,
+      &quot;failures&quot;: 0
+    },
+    {
+      &quot;trial&quot;: &quot;HINTS_ONLY&quot;,
+      &quot;runs&quot;: 8,
+      &quot;audio_sec&quot;: 160.0,
+      &quot;elapsed_sec&quot;: 31.02797271399686,
+      &quot;rtf&quot;: 0.19392482946248038,
+      &quot;failures&quot;: 0
+    },
+    {
+      &quot;trial&quot;: &quot;DENOISE_ONLY&quot;,
+      &quot;runs&quot;: 8,
+      &quot;audio_sec&quot;: 160.0,
+      &quot;elapsed_sec&quot;: 32.93253840399848,
+      &quot;rtf&quot;: 0.2058283650249905,
+      &quot;failures&quot;: 0
+    }
+  ],
+  &quot;baseline_wer&quot;: null,
+  &quot;candidate_wer&quot;: null,
+  &quot;nlp_f1&quot;: null,
+  &quot;source_report_sha256&quot;: &quot;1ecbeb83bc22ebfa7c128ee717df16ca82d6236cb4ac76c7f5be3179fef43a40&quot;,
+  &quot;source_plan_sha256&quot;: &quot;a5578a68240118b8b44cabf35b4b6ed52de28634a06e5bc70a5e5ff9bdf8874a&quot;,
+  &quot;inference_code_hash&quot;: &quot;3ebe06c6b5e3d924e96623be9a6829076844c701b9692cb02eed154824ea749f&quot;,
+  &quot;renderer_code_hash&quot;: &quot;4c6456fd47e6d271fa2dc7af5806aec9bf70a9aabaaf2fae81228f69533e7281&quot;,
+  &quot;model_device_precision&quot;: [
+    &quot;small&quot;,
+    &quot;cpu&quot;,
+    &quot;int8&quot;
+  ],
+  &quot;runs&quot;: 64,
+  &quot;quality_evidence&quot;: false,
+  &quot;test_accessed&quot;: false,
+  &quot;candidate_selected&quot;: false,
+  &quot;source_note&quot;: &quot;Historical timing retained under its original inference code; no new ASR or final test execution.&quot;
+}</pre></details></main></html>

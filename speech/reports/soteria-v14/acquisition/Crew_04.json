@@ -1,0 +1,15 @@
+{
+  "key": "Crew_04/DVR/DVR10_Case_6_SOTERIA_20220510-170118Z_S1R1.mp4",
+  "size": 1020728069,
+  "etag": "\"820b8dd1e9b239063d95850b1c618e2e-122\"",
+  "last_modified": "2025-03-06T15:41:59.000Z",
+  "crew": "Crew_04",
+  "split": "dev",
+  "case": 6,
+  "filename": "Crew_04-DVR10_Case_6_SOTERIA_20220510-170118Z_S1R1.mp4",
+  "url": "https://nasa-soteria-data.s3.us-west-2.amazonaws.com/Crew_04/DVR/DVR10_Case_6_SOTERIA_20220510-170118Z_S1R1.mp4",
+  "sha256": "99b7e7902627699cae416bfc8199f7d8bd6f539c084d0da665dc7ea79567ef21",
+  "multipart_etag_verified": true,
+  "seconds": 446.266,
+  "local_path": "data/input/soteria-v14/Crew_04-DVR10_Case_6_SOTERIA_20220510-170118Z_S1R1.mp4"
+}

@@ -1,0 +1,13 @@
+{
+  "plan_sha256": "79bbb799a17dced9d5aec245909835038e2989cc567a68480b6f38f566c03586",
+  "python": "3.11.14",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+  "packages": {
+    "faster-whisper": "1.2.1",
+    "ctranslate2": "4.8.2",
+    "numpy": "2.2.6",
+    "soundfile": "0.13.1",
+    "jiwer": "4.0.0"
+  },
+  "gpu": "0, NVIDIA GeForce RTX 5070 Ti, 581.80\n1, NVIDIA GeForce GTX 1080 Ti, 581.80\n"
+}

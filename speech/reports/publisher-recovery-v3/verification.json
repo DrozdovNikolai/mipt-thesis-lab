@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "verified_actual_pcm_crops": 514,
+  "verified_fresh_prediction_hashes": 1028,
+  "unchanged_medium_word_targets": true,
+  "prior_train_text_audio_and_provenance_preserved": true,
+  "prior_dev_byte_identical": true,
+  "no_train_audio_overlap": true,
+  "train_dev_disjoint": true,
+  "previous_49_and_96_unique_minutes": 26.277865625000018,
+  "new_train_unique_minutes": 25.435798958333343,
+  "new_audio_outside_all_prior_minutes": 9.048966666666665,
+  "whole_added_pairs_outside_all_prior": 103,
+  "whole_added_minutes_outside_all_prior": 8.494433333333328,
+  "new_known_speakers": 9,
+  "v3_numeric_slots_accepted": [
+    "d856826bcea866918207b6dab510cd1e",
+    "cf4430e73fcb855cbbb3d462e9ce9fc4"
+  ],
+  "new_asr_calls": 0,
+  "new_training_steps": 0,
+  "quality_verified": false
+}

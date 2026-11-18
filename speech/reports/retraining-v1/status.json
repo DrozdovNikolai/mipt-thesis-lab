@@ -1,0 +1,38 @@
+{
+  "implemented": true,
+  "training_executed": true,
+  "diagnostics_executed": true,
+  "artifact_verification": "PASS",
+  "ASR_quality_gate": "NEEDS_MORE_DATA",
+  "NLP_quality_gate": "NEEDS_MORE_DATA",
+  "temporal_gate": "NEEDS_MORE_DATA",
+  "release_promoted": false,
+  "diagnostics": {
+    "control": {
+      "cockpit_point_target": "FAIL",
+      "cockpit_statistical_confirmation": "INCONCLUSIVE",
+      "clean_EN_guardrail": "PASS",
+      "general_RU_regression_diagnostic": "PASS",
+      "noise_guardrail_diagnostic": "FAIL",
+      "noise_words_per_minute_deltas": {
+        "noise_only": 16.78579810105687,
+        "bleriot_b_noise": 3.622517460398991
+      },
+      "critical_entity_nonregression": "NEEDS_MORE_DATA",
+      "release_quality_gate": "NEEDS_MORE_DATA"
+    },
+    "augmented": {
+      "cockpit_point_target": "FAIL",
+      "cockpit_statistical_confirmation": "INCONCLUSIVE",
+      "clean_EN_guardrail": "PASS",
+      "general_RU_regression_diagnostic": "PASS",
+      "noise_guardrail_diagnostic": "FAIL",
+      "noise_words_per_minute_deltas": {
+        "noise_only": 31.841306587431333,
+        "bleriot_b_noise": 0.6488090973848939
+      },
+      "critical_entity_nonregression": "NEEDS_MORE_DATA",
+      "release_quality_gate": "NEEDS_MORE_DATA"
+    }
+  }
+}

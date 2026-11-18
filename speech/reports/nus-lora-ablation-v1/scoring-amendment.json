@@ -1,0 +1,16 @@
+{
+  "kind": "legacy_source_audio_identity_compatibility",
+  "reason": "Legacy parent records lack effective_waveform_sha256; they preserve source file hashes and declared zero-gain preprocessing.",
+  "original_scorer_sha256": "149b2300f0d2a3973bc69edcf5e3ac0fb8ff480e965e6fe666d0b0947e743c28",
+  "frozen_sources_modified": false,
+  "files": {
+    "nus_lora_ablation.py": "15694547a620df6e62c951befe886981705bd7612ecd2be71d450d1421db9ae3",
+    "research_audio_evidence.py": "240ed7f079573a9b6c12edf3bd2f5211a8ef52707107b9095e98dbce1c2a870f"
+  },
+  "entrypoint": "nus_lora_ablation.py",
+  "audio_volume_mounted_readonly_for_scoring": true,
+  "metrics_normalizer_thresholds_changed": false,
+  "predictions_modified": false,
+  "new_ASR_calls": 0,
+  "test_accessed": false
+}

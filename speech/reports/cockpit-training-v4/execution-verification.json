@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "executions": {
+    "baseline": {
+      "records": 441,
+      "new_ASR_calls": 441,
+      "actual_device": "cuda",
+      "actual_precision": "float16"
+    },
+    "decoder-kl": {
+      "records": 441,
+      "new_ASR_calls": 441,
+      "actual_device": "cuda",
+      "actual_precision": "float16"
+    },
+    "decoder-ce": {
+      "records": 441,
+      "new_ASR_calls": 441,
+      "actual_device": "cuda",
+      "actual_precision": "float16"
+    },
+    "full-ce": {
+      "records": 441,
+      "new_ASR_calls": 441,
+      "actual_device": "cuda",
+      "actual_precision": "float16"
+    },
+    "cpu-decoder-kl": {
+      "records": 2,
+      "new_ASR_calls": 2,
+      "actual_device": "cpu",
+      "actual_precision": "int8_float32"
+    },
+    "cpu-decoder-ce": {
+      "records": 2,
+      "new_ASR_calls": 2,
+      "actual_device": "cpu",
+      "actual_precision": "int8_float32"
+    },
+    "cpu-full-ce": {
+      "records": 2,
+      "new_ASR_calls": 2,
+      "actual_device": "cpu",
+      "actual_precision": "int8_float32"
+    }
+  },
+  "plan_sha256": "f3ca9c8e6da4362a6ea688367f43dad0d8b0ef6ff2324fb842819bd8f5a87c0a",
+  "human_verified_new_dev": false
+}

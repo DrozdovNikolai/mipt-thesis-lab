@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>55 Север · Речь экипажа</title><link rel="stylesheet" href="/static/style.css"></head>
+<body><header><h1>55 Север · Речь экипажа</h1><p>Черновик журнала тренировки. Упоминания в речи требуют проверки; состояние самолёта не подтверждается.</p></header>
+{% if not logged_in %}
+<main><h2>Локальный вход</h2><form action="/login" method="post"><label>API key из локального .env <input name="api_key" type="password" autocomplete="off" required></label><button>Войти</button></form></main>
+{% else %}
+<main><section><h2>Загрузить запись</h2><form id="upload"><label>Аудиофайл <input type="file" name="audio" accept="audio/*" required></label>
+<label>Язык <select name="language"><option value="auto">Авто</option><option value="en">English</option><option value="ru">Русский</option><option value="mixed">RU/EN mixed</option></select></label>
+<label>Каналы <select name="channel_mode"><option value="mixed">Общая дорожка</option><option value="separate_channels">Раздельные каналы</option><option value="explicit_mapping">Явное соответствие</option></select></label>
+<label>Соответствие каналов (JSON, только явные сведения) <textarea name="channel_mapping" placeholder='{"0":{"speaker_id":"crew-a","role":"unknown","provenance":"owner"}}'></textarea></label>
+<label>Диаризация <select name="diarization"><option value="off">Выключена</option><option value="channel_mapping">По сведениям о каналах</option><option value="pyannote_local">Локальная pyannote</option></select></label>
+<label>Происхождение / разрешение <input name="provenance" required></label><label><input type="checkbox" name="rights" required> У меня есть право обрабатывать эту запись</label><button>Загрузить</button></form></section>
+<section><h2>Задания</h2><div id="jobs"></div></section><section id="result" hidden><h2>Результат и проверка</h2>
+<p id="scope"></p><audio id="audio" controls preload="metadata"></audio><p><label><input type="checkbox" id="review-only"> Только требующие проверки</label></p>
+<div id="exports"></div><div id="segments"></div><h3>Эпизоды</h3><div id="events"></div><button id="delete">Удалить запись и правки</button></section>
+<p id="message" role="status"></p><button id="logout">Выйти</button></main><script src="/static/app.js" defer></script>
+{% endif %}</body></html>

@@ -1,0 +1,159 @@
+{
+  "kind": "exploratory_known_english_diagnostic",
+  "created_at": "2026-09-14T07:19:48.1769155Z",
+  "source_plan_sha256": "a38e832d59f57235a66fda3fb48cd3a651e2412f256caf9d5aed67016ccf2873",
+  "config": {
+    "schema_version": "1.0",
+    "name": "baseline",
+    "model": "whisper-small-publisher-base-ct2",
+    "compute_type": "float16",
+    "device": "cuda",
+    "task": "transcribe",
+    "beam_size": 5,
+    "temperature": 0.0,
+    "best_of": 5,
+    "patience": 1.0,
+    "length_penalty": 1.0,
+    "repetition_penalty": 1.0,
+    "no_repeat_ngram_size": 0,
+    "condition_on_previous_text": true,
+    "compression_ratio_threshold": 2.4,
+    "log_prob_threshold": -1.0,
+    "no_speech_threshold": 0.6,
+    "suppress_blank": true,
+    "suppress_tokens": [
+      -1
+    ],
+    "max_initial_timestamp": 1.0,
+    "word_timestamps": true,
+    "language_detection_threshold": 0.5,
+    "language_detection_segments": 1,
+    "vad": {
+      "enabled": false,
+      "threshold": 0.5,
+      "min_speech_duration_ms": 100,
+      "min_silence_duration_ms": 400,
+      "speech_pad_ms": 200,
+      "max_speech_duration_s": 30.0
+    },
+    "denoise": {
+      "enabled": false,
+      "strength": 0.5,
+      "floor": 0.3,
+      "noise_percentile": 10.0
+    },
+    "hotwords": null,
+    "glossary_version": null,
+    "redecode": false,
+    "max_redecode_passes": 1,
+    "redecode_logprob_threshold": -0.8,
+    "episode_gap_sec": 2.0,
+    "episode_max_sec": 30.0,
+    "episode_max_tokens": 100,
+    "classifier": "rules_v1",
+    "classifier_artifact": null
+  },
+  "model": {
+    "name": "whisper-small-publisher-base-ct2",
+    "manifest": {
+      "model": "whisper-small-publisher-base-ct2",
+      "repo": "local_unadapted_conversion",
+      "revision": "973afd24965f72e36ca33b3055d56a652f456b4d",
+      "source_manifest_sha256": "b92a7c691f46da8afd9b3d4ec859e7941584784dac32d1e1f4fe78d27279a83a",
+      "license": "apache-2.0",
+      "files": {
+        "model.bin": "eef2cbde70d256f29b6e3432c85b92becd26f804650e855cc4ff7e66f12122b0",
+        "tokenizer.json": "27fc476bfe7f17299480be2273fc0608e4d5a99aba2ab5dec5374b4482d1a566",
+        "vocabulary.json": "5ad28279db5e546349708b9a74736e2c018737ac5a600f1048f1f26c99b85b47",
+        "preprocessor_config.json": "9b5cd03a36fbb8a627c64d98a5b5b126ead95a77720723944487311f0110b666",
+        "config.json": "b55496ac7940a7ae47d2c01eab40edfd8701feec1229d9cce3b40014383fb828"
+      },
+      "purpose": "same source weights and CT2 float16 conversion control for A5"
+    },
+    "manifest_sha256": "51d9aee1e6faddc26a8fecf114e3d716dd7965e7169250dfd4f0d939657a4f90"
+  },
+  "items": [
+    {
+      "id": "reviewed-dc84f2b77565d804f16ea31f42380abb",
+      "audio_path": "expanded-evaluation-v1/reviewed-dc84f2b77565d804f16ea31f42380abb.wav",
+      "audio_sha256": "b43f839d2a2e31ad85b9b26ea7c80d72b54a6baf1e2f1ca52a05204c51cfb3a8",
+      "duration_sec": 20.0,
+      "group_id": "4db855a36a7bacee2960c6fd",
+      "input_language": "auto",
+      "cohort": "partial_human_dev",
+      "condition": "original",
+      "reference_kind": "saved_partial_human_review_with_suggestion_exposure",
+      "reference_eligible": true,
+      "primary": false
+    },
+    {
+      "id": "reviewed-767df23c7c14166f8579da284d5a4219",
+      "audio_path": "expanded-evaluation-v1/reviewed-767df23c7c14166f8579da284d5a4219.wav",
+      "audio_sha256": "0542bf9f778e9f474fa85412e2e45510c8cd0fa9eade7e09edbeeda23ec3b553",
+      "duration_sec": 20.0,
+      "group_id": "4db855a36a7bacee2960c6fd",
+      "input_language": "auto",
+      "cohort": "partial_human_dev",
+      "condition": "original",
+      "reference_kind": "saved_partial_human_review_with_suggestion_exposure",
+      "reference_eligible": true,
+      "primary": false
+    },
+    {
+      "id": "reviewed-c55f9c7708704c548f503aa642c2288d",
+      "audio_path": "expanded-evaluation-v1/reviewed-c55f9c7708704c548f503aa642c2288d.wav",
+      "audio_sha256": "49d542966770cb4895f838b46e23d124c8ff1c622b5a512e7f320f8f13f165ff",
+      "duration_sec": 20.0,
+      "group_id": "c9999f4c03403ed5886b9c86",
+      "input_language": "auto",
+      "cohort": "partial_human_dev",
+      "condition": "original",
+      "reference_kind": "saved_partial_human_review_with_suggestion_exposure",
+      "reference_eligible": true,
+      "primary": false
+    },
+    {
+      "id": "reviewed-291ebb141aa4e7a7ba94ccf8d18002fb",
+      "audio_path": "expanded-evaluation-v1/reviewed-291ebb141aa4e7a7ba94ccf8d18002fb.wav",
+      "audio_sha256": "8a7a9552c6e2dd231c47a401fa86ca8c24ac3f3c6f1044958791082a67c4d041",
+      "duration_sec": 20.0,
+      "group_id": "f4b1dfdde7e44044fdcd54d9",
+      "input_language": "auto",
+      "cohort": "partial_human_dev",
+      "condition": "original",
+      "reference_kind": "saved_partial_human_review_with_suggestion_exposure",
+      "reference_eligible": true,
+      "primary": false
+    },
+    {
+      "id": "reviewed-b8d2fc3fc1893f19ae7fb8d7c2722a4d",
+      "audio_path": "expanded-evaluation-v1/reviewed-b8d2fc3fc1893f19ae7fb8d7c2722a4d.wav",
+      "audio_sha256": "d625c3386567aceb1901b7ec91bbbd6bf99a1b45650d1bb2cfcbba48277a1d09",
+      "duration_sec": 20.0,
+      "group_id": "f4b1dfdde7e44044fdcd54d9",
+      "input_language": "auto",
+      "cohort": "partial_human_dev",
+      "condition": "original",
+      "reference_kind": "saved_partial_human_review_with_suggestion_exposure",
+      "reference_eligible": true,
+      "primary": false
+    }
+  ],
+  "trials": [
+    "auto",
+    "en"
+  ],
+  "language_basis": "Known-English operating-mode assumption from publisher checklist scope; no sample transcripts are used as decoder context. This is different input metadata from historical auto.",
+  "references_sha256": "804a18e60747e3e9b6620f8e03fd95214a70eef95dd826c28e29f883a342fa12",
+  "test_accessed": false,
+  "release_promoted": false,
+  "quality_evidence": false,
+  "selection_policy": "One diagnostic language contrast on five existing dev clips; no release selection, tuning or formal test claim.",
+  "limitations": [
+    "Five 20-second dev clips, 115 words, three groups; repeatedly inspected development set.",
+    "Existing human references had suggestion exposure and unresolved digit spelling convention.",
+    "English mode is an explicit experimental assumption, not newly verified human language annotation.",
+    "No independent test, new training, entity or event labels.",
+    "No predicted improvement or significance claimed before measurement."
+  ]
+}

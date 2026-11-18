@@ -1,0 +1,637 @@
+{
+  "kind": "instrumented replay of already executed configurations",
+  "new_configurations": 0,
+  "training_runs": 0,
+  "references_accessed": false,
+  "input_id": "3536-8226-0027",
+  "audio_sha256": "060fefc08e80e21b91930d8238996f11ec5dacf3b1fc00bdf4e73653b712347d",
+  "plan_sha256": "23095d0f5d7df2f448fae04f7d77b81a367af8d9fcdbee1deef04998e80df659",
+  "runs": {
+    "baseline": {
+      "effective_options": {
+        "task": "transcribe",
+        "beam_size": 5,
+        "temperature": 0.0,
+        "best_of": 5,
+        "patience": 1.0,
+        "length_penalty": 1.0,
+        "repetition_penalty": 1.0,
+        "no_repeat_ngram_size": 0,
+        "condition_on_previous_text": true,
+        "compression_ratio_threshold": 2.4,
+        "log_prob_threshold": -1.0,
+        "no_speech_threshold": 0.6,
+        "suppress_blank": true,
+        "suppress_tokens": [
+          -1
+        ],
+        "max_initial_timestamp": 1.0,
+        "word_timestamps": true,
+        "language_detection_threshold": 0.5,
+        "language_detection_segments": 1,
+        "language": "en",
+        "vad_filter": false,
+        "initial_prompt": null,
+        "hotwords": null,
+        "prompt_reset_on_temperature": 0.5,
+        "prefix": null,
+        "without_timestamps": false,
+        "prepend_punctuations": "\"'“¿([{-",
+        "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+        "max_new_tokens": null,
+        "chunk_length": null,
+        "clip_timestamps": "0",
+        "hallucination_silence_threshold": null,
+        "multilingual": false
+      },
+      "actual_precision": "float16",
+      "trace": [
+        {
+          "input_seek_frames": 0,
+          "time_offset_sec": 0.0,
+          "segment_duration_sec": 2.27,
+          "seek_after_token_split_frames": 227,
+          "single_timestamp_ending": true,
+          "decoded_text": " And all work had ceased with him.",
+          "last_aligned_word_end_sec": 1.94
+        }
+      ],
+      "segments": [
+        {
+          "segment_id": "3536-8226-0027-0",
+          "start_sec": 0.0,
+          "end_sec": 1.94,
+          "raw_asr_text": " And all work had ceased with him.",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "en",
+          "words": [
+            {
+              "word": " And",
+              "start_sec": 0.0,
+              "end_sec": 0.54,
+              "probability": 0.458984375
+            },
+            {
+              "word": " all",
+              "start_sec": 0.54,
+              "end_sec": 0.8,
+              "probability": 0.9912109375
+            },
+            {
+              "word": " work",
+              "start_sec": 0.8,
+              "end_sec": 1.06,
+              "probability": 0.99072265625
+            },
+            {
+              "word": " had",
+              "start_sec": 1.06,
+              "end_sec": 1.26,
+              "probability": 0.99365234375
+            },
+            {
+              "word": " ceased",
+              "start_sec": 1.26,
+              "end_sec": 1.5,
+              "probability": 0.99267578125
+            },
+            {
+              "word": " with",
+              "start_sec": 1.5,
+              "end_sec": 1.8,
+              "probability": 0.998046875
+            },
+            {
+              "word": " him.",
+              "start_sec": 1.8,
+              "end_sec": 1.94,
+              "probability": 0.99365234375
+            }
+          ],
+          "avg_logprob": -0.3343394940549677,
+          "no_speech_prob": 0.06451416015625,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        }
+      ],
+      "hypothesis": "And all work had ceased with him."
+    },
+    "text": {
+      "effective_options": {
+        "task": "transcribe",
+        "beam_size": 5,
+        "temperature": 0.0,
+        "best_of": 5,
+        "patience": 1.0,
+        "length_penalty": 1.0,
+        "repetition_penalty": 1.0,
+        "no_repeat_ngram_size": 0,
+        "condition_on_previous_text": true,
+        "compression_ratio_threshold": 2.4,
+        "log_prob_threshold": -1.0,
+        "no_speech_threshold": 0.6,
+        "suppress_blank": true,
+        "suppress_tokens": [
+          -1
+        ],
+        "max_initial_timestamp": 1.0,
+        "word_timestamps": true,
+        "language_detection_threshold": 0.5,
+        "language_detection_segments": 1,
+        "language": "en",
+        "vad_filter": false,
+        "initial_prompt": null,
+        "hotwords": null,
+        "prompt_reset_on_temperature": 0.5,
+        "prefix": null,
+        "without_timestamps": true,
+        "prepend_punctuations": "\"'“¿([{-",
+        "append_punctuations": "\"'.。,，!！?？:：”)]}、",
+        "max_new_tokens": null,
+        "chunk_length": null,
+        "clip_timestamps": "0",
+        "hallucination_silence_threshold": null,
+        "multilingual": false
+      },
+      "actual_precision": "float16",
+      "trace": [
+        {
+          "input_seek_frames": 0,
+          "time_offset_sec": 0.0,
+          "segment_duration_sec": 2.27,
+          "seek_after_token_split_frames": 227,
+          "single_timestamp_ending": false,
+          "decoded_text": " And all work had ceased with him.",
+          "last_aligned_word_end_sec": 1.94
+        },
+        {
+          "input_seek_frames": 194,
+          "time_offset_sec": 1.94,
+          "segment_duration_sec": 0.33,
+          "seek_after_token_split_frames": 227,
+          "single_timestamp_ending": false,
+          "decoded_text": " Thank you for watching.",
+          "last_aligned_word_end_sec": 1.98
+        },
+        {
+          "input_seek_frames": 198,
+          "time_offset_sec": 1.98,
+          "segment_duration_sec": 0.29,
+          "seek_after_token_split_frames": 227,
+          "single_timestamp_ending": false,
+          "decoded_text": " Thank you for watching.",
+          "last_aligned_word_end_sec": 2.06
+        },
+        {
+          "input_seek_frames": 206,
+          "time_offset_sec": 2.06,
+          "segment_duration_sec": 0.21,
+          "seek_after_token_split_frames": 227,
+          "single_timestamp_ending": false,
+          "decoded_text": " Thank you for watching.",
+          "last_aligned_word_end_sec": 2.1
+        },
+        {
+          "input_seek_frames": 210,
+          "time_offset_sec": 2.1,
+          "segment_duration_sec": 0.17,
+          "seek_after_token_split_frames": 227,
+          "single_timestamp_ending": false,
+          "decoded_text": " Thank you for watching.",
+          "last_aligned_word_end_sec": 2.16
+        },
+        {
+          "input_seek_frames": 216,
+          "time_offset_sec": 2.16,
+          "segment_duration_sec": 0.11,
+          "seek_after_token_split_frames": 227,
+          "single_timestamp_ending": false,
+          "decoded_text": " Thank you for watching.",
+          "last_aligned_word_end_sec": 2.2
+        },
+        {
+          "input_seek_frames": 220,
+          "time_offset_sec": 2.2,
+          "segment_duration_sec": 0.07,
+          "seek_after_token_split_frames": 227,
+          "single_timestamp_ending": false,
+          "decoded_text": " Thank you for watching.",
+          "last_aligned_word_end_sec": 2.22
+        },
+        {
+          "input_seek_frames": 222,
+          "time_offset_sec": 2.22,
+          "segment_duration_sec": 0.05,
+          "seek_after_token_split_frames": 227,
+          "single_timestamp_ending": false,
+          "decoded_text": " Thank you.",
+          "last_aligned_word_end_sec": 2.24
+        },
+        {
+          "input_seek_frames": 224,
+          "time_offset_sec": 2.24,
+          "segment_duration_sec": 0.03,
+          "seek_after_token_split_frames": 227,
+          "single_timestamp_ending": false,
+          "decoded_text": " Thank you.",
+          "last_aligned_word_end_sec": 2.22
+        }
+      ],
+      "segments": [
+        {
+          "segment_id": "3536-8226-0027-0",
+          "start_sec": 0.0,
+          "end_sec": 1.94,
+          "raw_asr_text": " And all work had ceased with him.",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "en",
+          "words": [
+            {
+              "word": " And",
+              "start_sec": 0.0,
+              "end_sec": 0.54,
+              "probability": 0.458984375
+            },
+            {
+              "word": " all",
+              "start_sec": 0.54,
+              "end_sec": 0.8,
+              "probability": 0.9912109375
+            },
+            {
+              "word": " work",
+              "start_sec": 0.8,
+              "end_sec": 1.06,
+              "probability": 0.99072265625
+            },
+            {
+              "word": " had",
+              "start_sec": 1.06,
+              "end_sec": 1.26,
+              "probability": 0.99365234375
+            },
+            {
+              "word": " ceased",
+              "start_sec": 1.26,
+              "end_sec": 1.5,
+              "probability": 0.99267578125
+            },
+            {
+              "word": " with",
+              "start_sec": 1.5,
+              "end_sec": 1.8,
+              "probability": 0.998046875
+            },
+            {
+              "word": " him.",
+              "start_sec": 1.8,
+              "end_sec": 1.94,
+              "probability": 0.99365234375
+            }
+          ],
+          "avg_logprob": -0.1392144097222222,
+          "no_speech_prob": 0.06451416015625,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        },
+        {
+          "segment_id": "3536-8226-0027-1",
+          "start_sec": 1.94,
+          "end_sec": 1.98,
+          "raw_asr_text": " Thank you for watching.",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "en",
+          "words": [
+            {
+              "word": " Thank",
+              "start_sec": 1.94,
+              "end_sec": 1.94,
+              "probability": 0.025115966796875
+            },
+            {
+              "word": " you",
+              "start_sec": 1.94,
+              "end_sec": 1.98,
+              "probability": 0.97607421875
+            },
+            {
+              "word": " for",
+              "start_sec": 1.98,
+              "end_sec": 1.98,
+              "probability": 0.3056640625
+            },
+            {
+              "word": " watching.",
+              "start_sec": 1.98,
+              "end_sec": 1.98,
+              "probability": 0.68994140625
+            }
+          ],
+          "avg_logprob": -0.9869792064030966,
+          "no_speech_prob": 0.439208984375,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        },
+        {
+          "segment_id": "3536-8226-0027-2",
+          "start_sec": 1.98,
+          "end_sec": 2.06,
+          "raw_asr_text": " Thank you for watching.",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "en",
+          "words": [
+            {
+              "word": " Thank",
+              "start_sec": 1.98,
+              "end_sec": 1.98,
+              "probability": 0.0291290283203125
+            },
+            {
+              "word": " you",
+              "start_sec": 1.98,
+              "end_sec": 2.0,
+              "probability": 0.97509765625
+            },
+            {
+              "word": " for",
+              "start_sec": 2.0,
+              "end_sec": 2.0,
+              "probability": 0.20068359375
+            },
+            {
+              "word": " watching.",
+              "start_sec": 2.0,
+              "end_sec": 2.06,
+              "probability": 0.576171875
+            }
+          ],
+          "avg_logprob": -0.583984355131785,
+          "no_speech_prob": 0.54541015625,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        },
+        {
+          "segment_id": "3536-8226-0027-3",
+          "start_sec": 2.06,
+          "end_sec": 2.1,
+          "raw_asr_text": " Thank you for watching.",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "en",
+          "words": [
+            {
+              "word": " Thank",
+              "start_sec": 2.06,
+              "end_sec": 2.1,
+              "probability": 0.007904052734375
+            },
+            {
+              "word": " you",
+              "start_sec": 2.1,
+              "end_sec": 2.1,
+              "probability": 0.95361328125
+            },
+            {
+              "word": " for",
+              "start_sec": 2.1,
+              "end_sec": 2.1,
+              "probability": 0.1551513671875
+            },
+            {
+              "word": " watching.",
+              "start_sec": 2.1,
+              "end_sec": 2.1,
+              "probability": 0.728515625
+            }
+          ],
+          "avg_logprob": -0.6731770932674408,
+          "no_speech_prob": 0.73291015625,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        },
+        {
+          "segment_id": "3536-8226-0027-4",
+          "start_sec": 2.1,
+          "end_sec": 2.16,
+          "raw_asr_text": " Thank you for watching.",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "en",
+          "words": [
+            {
+              "word": " Thank",
+              "start_sec": 2.1,
+              "end_sec": 2.14,
+              "probability": 0.00962066650390625
+            },
+            {
+              "word": " you",
+              "start_sec": 2.14,
+              "end_sec": 2.16,
+              "probability": 0.9501953125
+            },
+            {
+              "word": " for",
+              "start_sec": 2.16,
+              "end_sec": 2.16,
+              "probability": 0.1763916015625
+            },
+            {
+              "word": " watching.",
+              "start_sec": 2.16,
+              "end_sec": 2.16,
+              "probability": 0.720703125
+            }
+          ],
+          "avg_logprob": -0.4798176884651184,
+          "no_speech_prob": 0.75732421875,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        },
+        {
+          "segment_id": "3536-8226-0027-5",
+          "start_sec": 2.16,
+          "end_sec": 2.2,
+          "raw_asr_text": " Thank you for watching.",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "en",
+          "words": [
+            {
+              "word": " Thank",
+              "start_sec": 2.16,
+              "end_sec": 2.18,
+              "probability": 0.01059722900390625
+            },
+            {
+              "word": " you",
+              "start_sec": 2.18,
+              "end_sec": 2.18,
+              "probability": 0.95361328125
+            },
+            {
+              "word": " for",
+              "start_sec": 2.18,
+              "end_sec": 2.2,
+              "probability": 0.190185546875
+            },
+            {
+              "word": " watching.",
+              "start_sec": 2.2,
+              "end_sec": 2.2,
+              "probability": 0.73681640625
+            }
+          ],
+          "avg_logprob": -0.3362630307674408,
+          "no_speech_prob": 0.64697265625,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        },
+        {
+          "segment_id": "3536-8226-0027-6",
+          "start_sec": 2.2,
+          "end_sec": 2.22,
+          "raw_asr_text": " Thank you for watching.",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "en",
+          "words": [
+            {
+              "word": " Thank",
+              "start_sec": 2.2,
+              "end_sec": 2.22,
+              "probability": 0.0101318359375
+            },
+            {
+              "word": " you",
+              "start_sec": 2.22,
+              "end_sec": 2.22,
+              "probability": 0.95263671875
+            },
+            {
+              "word": " for",
+              "start_sec": 2.22,
+              "end_sec": 2.22,
+              "probability": 0.1959228515625
+            },
+            {
+              "word": " watching.",
+              "start_sec": 2.22,
+              "end_sec": 2.22,
+              "probability": 0.7197265625
+            }
+          ],
+          "avg_logprob": -0.2965494741996129,
+          "no_speech_prob": 0.6728515625,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        },
+        {
+          "segment_id": "3536-8226-0027-7",
+          "start_sec": 2.22,
+          "end_sec": 2.24,
+          "raw_asr_text": " Thank you.",
+          "display_text": "",
+          "reviewed_text": null,
+          "channel": null,
+          "speaker_id": null,
+          "role": "unknown",
+          "role_provenance": null,
+          "language": "en",
+          "words": [
+            {
+              "word": " Thank",
+              "start_sec": 2.22,
+              "end_sec": 2.22,
+              "probability": 0.01026153564453125
+            },
+            {
+              "word": " you.",
+              "start_sec": 2.22,
+              "end_sec": 2.24,
+              "probability": 0.9541015625
+            }
+          ],
+          "avg_logprob": -0.65478515625,
+          "no_speech_prob": 0.62841796875,
+          "alternatives": [],
+          "normalization_changes": [],
+          "risk_level": "unknown",
+          "risk_reasons": [
+            "uncalibrated_asr_confidence"
+          ]
+        }
+      ],
+      "hypothesis": "And all work had ceased with him. Thank you for watching. Thank you for watching. Thank you for watching. Thank you for watching. Thank you for watching. Thank you for watching. Thank you."
+    }
+  },
+  "backend_generate_segments_sha256": "d6594a8b7ab423353af9b464b5383f3d04e8e692d0c8cef89fe640b9123a6be9"
+}

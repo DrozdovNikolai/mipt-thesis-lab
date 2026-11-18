@@ -1,0 +1,945 @@
+{
+  "status": "PREPARED_FOR_REVIEW",
+  "archive_hashes": {
+    "a": "00fdf051aa4f8b5b80ed33db6ea76aa342fb13d2857cd85646d2f501a80d0579",
+    "c": "58bdd35cf72426571e44e3925f854952ca66d11ff65959189be5233a280ae620"
+  },
+  "raw_recordings": 40,
+  "paired_variants": 15,
+  "quarantined": [
+    {
+      "file": "CVR_BEA_cvr_sp02.wav",
+      "reason": "acoustic_parent_check_unconfirmed",
+      "proposed_parent": "BEA_cvr_sp002.wav",
+      "envelope_pearson_r": 0.47956727580244307
+    },
+    {
+      "file": "CVR_BEA_cvr_sp03.wav",
+      "reason": "acoustic_parent_check_unconfirmed",
+      "proposed_parent": "BEA_cvr_sp003.wav",
+      "envelope_pearson_r": 0.4186854919841128
+    },
+    {
+      "file": "CVR_BEA_cvr_sp03_.wav",
+      "reason": "unresolved_parent_or_duration",
+      "sha256": "4d9afc7476ef0bd519a7374c54332dcb313a94e69903ace3fa109b73ede6d9c5",
+      "duration_sec": 120.0
+    },
+    {
+      "file": "CVR_BEA_cvr_sp04.wav",
+      "reason": "acoustic_parent_check_unconfirmed",
+      "proposed_parent": "BEA_cvr_sp004.wav",
+      "envelope_pearson_r": 0.3924667191488144
+    },
+    {
+      "file": "CVR_BEA_cvr_sp07.wav",
+      "reason": "acoustic_parent_check_unconfirmed",
+      "proposed_parent": "BEA_cvr_sp007.wav",
+      "envelope_pearson_r": 0.22397424496640583
+    },
+    {
+      "file": "CVR_BEA_cvr_sp08.wav",
+      "reason": "acoustic_parent_check_unconfirmed",
+      "proposed_parent": "BEA_cvr_sp008.wav",
+      "envelope_pearson_r": 0.4635705019375903
+    },
+    {
+      "file": "CVR_BEA_cvr_sp09.wav",
+      "reason": "acoustic_parent_check_unconfirmed",
+      "proposed_parent": "BEA_cvr_sp009.wav",
+      "envelope_pearson_r": 0.35744361735134855
+    },
+    {
+      "file": "CVR_BEA_cvr_sp11.wav",
+      "reason": "acoustic_parent_check_unconfirmed",
+      "proposed_parent": "BEA_cvr_sp011.wav",
+      "envelope_pearson_r": 0.4592818916345823
+    },
+    {
+      "file": "CVR_BEA_cvr_sp12.wav",
+      "reason": "acoustic_parent_check_unconfirmed",
+      "proposed_parent": "BEA_cvr_sp012.wav",
+      "envelope_pearson_r": 0.49404747331584253
+    },
+    {
+      "file": "CVR_DGA_CVR1_track2_sp105.wav",
+      "reason": "acoustic_parent_check_unconfirmed",
+      "proposed_parent": "DGA_CVR1_track2_sp105.wav",
+      "envelope_pearson_r": 0.3130336258863274
+    },
+    {
+      "file": "CVR_DGA_CVR4_track1_sp103.wav",
+      "reason": "acoustic_parent_check_unconfirmed",
+      "proposed_parent": "DGA_CVR4_track1_sp103.wav",
+      "envelope_pearson_r": 0.28684540515432205
+    },
+    {
+      "file": "CVR_DGA_checklist-Beech_sp101.wav",
+      "reason": "acoustic_parent_check_unconfirmed",
+      "proposed_parent": "DGA_checklist-Beech_sp101.wav",
+      "envelope_pearson_r": 0.46627733953405187
+    },
+    {
+      "file": "CVR_DGA_checklist-Puma-2_sp103.wav",
+      "reason": "acoustic_parent_check_unconfirmed",
+      "proposed_parent": "DGA_checklist-Puma-2_sp103.wav",
+      "envelope_pearson_r": 0.4596150692151223
+    }
+  ],
+  "pairs": [
+    {
+      "a": "BEA_cvr_sp001.wav",
+      "c": "CVR_BEA_cvr_sp01.wav",
+      "duration_delta_sec": 8.786848098907285e-06,
+      "envelope_pearson_r": 0.51826355862976,
+      "speaker": [
+        "bleriot:sp001"
+      ],
+      "group_policy": "same original, session and speaker as parent"
+    },
+    {
+      "a": "BEA_cvr_sp006.wav",
+      "c": "CVR_BEA_cvr_sp06.wav",
+      "duration_delta_sec": 2.0266439918259493e-05,
+      "envelope_pearson_r": 0.5204261358836417,
+      "speaker": [
+        "bleriot:sp006"
+      ],
+      "group_policy": "same original, session and speaker as parent"
+    },
+    {
+      "a": "BEA_cvr_sp010.wav",
+      "c": "CVR_BEA_cvr_sp10.wav",
+      "duration_delta_sec": 1.6298185954610744e-05,
+      "envelope_pearson_r": 0.675102756150387,
+      "speaker": [
+        "bleriot:sp010"
+      ],
+      "group_policy": "same original, session and speaker as parent"
+    },
+    {
+      "a": "DGA_CVR1_track1_sp102.wav",
+      "c": "CVR_DGA_CVR1_track1_sp102.wav",
+      "duration_delta_sec": 0.0,
+      "envelope_pearson_r": 0.5990964891114392,
+      "speaker": [
+        "bleriot:sp102"
+      ],
+      "group_policy": "same original, session and speaker as parent"
+    },
+    {
+      "a": "DGA_CVR2_track1_sp103.wav",
+      "c": "CVR_DGA_CVR2_track1_sp103.wav",
+      "duration_delta_sec": 0.0,
+      "envelope_pearson_r": 0.5572822498926968,
+      "speaker": [
+        "bleriot:sp103"
+      ],
+      "group_policy": "same original, session and speaker as parent"
+    },
+    {
+      "a": "DGA_CVR2_track2_sp104.wav",
+      "c": "CVR_DGA_CVR2_track2_sp104.wav",
+      "duration_delta_sec": 0.0,
+      "envelope_pearson_r": 0.60781861283739,
+      "speaker": [
+        "bleriot:sp104"
+      ],
+      "group_policy": "same original, session and speaker as parent"
+    },
+    {
+      "a": "DGA_CVR3_track1_sp106.wav",
+      "c": "CVR_DGA_CVR3_track1_sp106.wav",
+      "duration_delta_sec": 9.637188206568226e-06,
+      "envelope_pearson_r": 0.6566013999177425,
+      "speaker": [
+        "bleriot:sp106"
+      ],
+      "group_policy": "same original, session and speaker as parent"
+    },
+    {
+      "a": "DGA_CVR3_track2_sp101.wav",
+      "c": "CVR_DGA_CVR3_track2_sp101.wav",
+      "duration_delta_sec": 0.0,
+      "envelope_pearson_r": 0.6210331014379842,
+      "speaker": [
+        "bleriot:sp101"
+      ],
+      "group_policy": "same original, session and speaker as parent"
+    },
+    {
+      "a": "DGA_CVR4_track2_sp104 .wav",
+      "c": "CVR_DGA_CVR4_track2_sp104 .wav",
+      "duration_delta_sec": 0.0,
+      "envelope_pearson_r": 0.5596021762138869,
+      "speaker": [
+        "bleriot:sp104"
+      ],
+      "group_policy": "same original, session and speaker as parent"
+    },
+    {
+      "a": "DGA_CVR5_track1_sp101.wav",
+      "c": "CVR_DGA_CVR5_track1_sp101.wav",
+      "duration_delta_sec": 1.4030612248916441e-05,
+      "envelope_pearson_r": 0.5058894066682964,
+      "speaker": [
+        "bleriot:sp101"
+      ],
+      "group_policy": "same original, session and speaker as parent"
+    },
+    {
+      "a": "DGA_CVR5_track2_sp102.wav",
+      "c": "CVR_DGA_CVR5_track2_sp102.wav",
+      "duration_delta_sec": 0.0,
+      "envelope_pearson_r": 0.5134225698833024,
+      "speaker": [
+        "bleriot:sp102"
+      ],
+      "group_policy": "same original, session and speaker as parent"
+    },
+    {
+      "a": "DGA_checklist-PC7_sp104 .wav",
+      "c": "CVR_DGA_checklist-PC7_sp104 .wav",
+      "duration_delta_sec": 7.653061231849279e-06,
+      "envelope_pearson_r": 0.5838590993316737,
+      "speaker": [
+        "bleriot:sp104"
+      ],
+      "group_policy": "same original, session and speaker as parent"
+    },
+    {
+      "a": "DGA_checklist-Puma-1_sp105.wav",
+      "c": "CVR_DGA_checklist-Puma-1_sp105.wav",
+      "duration_delta_sec": 8.361677998891537e-06,
+      "envelope_pearson_r": 0.6375788816267709,
+      "speaker": [
+        "bleriot:sp105"
+      ],
+      "group_policy": "same original, session and speaker as parent"
+    },
+    {
+      "a": "DGA_checklist-TBM940_sp102.wav",
+      "c": "CVR_DGA_checklist-TBM940_sp102.wav",
+      "duration_delta_sec": 1.8707482993818303e-05,
+      "envelope_pearson_r": 0.563581417723121,
+      "speaker": [
+        "bleriot:sp102"
+      ],
+      "group_policy": "same original, session and speaker as parent"
+    },
+    {
+      "a": "DGA_checklist-unknown_sp102.wav",
+      "c": "CVR_DGA_checklist-unknown_sp102.wav",
+      "duration_delta_sec": 2.5510204082479504e-06,
+      "envelope_pearson_r": 0.7051125344394247,
+      "speaker": [
+        "bleriot:sp102"
+      ],
+      "group_policy": "same original, session and speaker as parent"
+    }
+  ],
+  "audio_inventory": [
+    {
+      "file": "BEA_checklists_sp001.wav",
+      "corpus": "A",
+      "duration_sec": 1028.7380498866214,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "282c60faf5e481e9c812aad90f7fa9fbfc1ad682412dd5c1a4eada8234f2ed01"
+    },
+    {
+      "file": "BEA_checklists_sp002.wav",
+      "corpus": "A",
+      "duration_sec": 1121.9614739229025,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "fa4b40e04bc4210131540ff97d9429141796fea9cb531160e00a1fa20159c6c7"
+    },
+    {
+      "file": "BEA_checklists_sp003.wav",
+      "corpus": "A",
+      "duration_sec": 1228.27052154195,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "185376110806462e31faee69974a0c1c98eabdc9bf1c239a6f45d2c9688733d8"
+    },
+    {
+      "file": "BEA_checklists_sp004.wav",
+      "corpus": "A",
+      "duration_sec": 741.3519047619047,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "ea5744ddd9f4a0123e9c482e15f619e4e86d8c64c97ad417b6fb6cb361822452"
+    },
+    {
+      "file": "BEA_checklists_sp005.wav",
+      "corpus": "A",
+      "duration_sec": 1063.5038321995464,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "0576bcaf0f9d87b8c6b8f45960689f5e6511067cba6f9e60e6ff432c8e890e78"
+    },
+    {
+      "file": "BEA_checklists_sp006.wav",
+      "corpus": "A",
+      "duration_sec": 158.54090702947846,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "55a64f3bb9871baf692b6da6963b72be02e91e45ad6fd2680eb52dcf6da8bcf8"
+    },
+    {
+      "file": "BEA_checklists_sp007.wav",
+      "corpus": "A",
+      "duration_sec": 185.50843537414966,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "55ece28be67f7b083e56092bedfba113416ec696ad54a318f68392ee508f06e4"
+    },
+    {
+      "file": "BEA_checklists_sp008.wav",
+      "corpus": "A",
+      "duration_sec": 1415.5355102040817,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "09dfb2d46ca5cc4b183f78b64358c49083a9f461b1b9566ba499eb3e4b8a672c"
+    },
+    {
+      "file": "BEA_checklists_sp009.wav",
+      "corpus": "A",
+      "duration_sec": 1075.6136054421768,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "423c46300025f7970c1531e234b106ec0c43b56abb142d24cf0293a1b4c33b2f"
+    },
+    {
+      "file": "BEA_checklists_sp010.wav",
+      "corpus": "A",
+      "duration_sec": 981.6166666666667,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "9632895406e36cfb847dcf524cf38c682a3061db0ebcd871764e3602b6fc10f1"
+    },
+    {
+      "file": "BEA_checklists_sp011.wav",
+      "corpus": "A",
+      "duration_sec": 949.8131292517007,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "b53c335dfbf12fa8e01c3227641b518554bf17fa66f25ada84f887b6f846e316"
+    },
+    {
+      "file": "BEA_checklists_sp012.wav",
+      "corpus": "A",
+      "duration_sec": 689.2814285714286,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "8b47d0d9bf5dabc2642a6e04aa19cf995524e2bb43e7487ebcadb52278fff9e4"
+    },
+    {
+      "file": "BEA_cvr_sp001.wav",
+      "corpus": "A",
+      "duration_sec": 220.45219954648525,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "2e034fab913c6a601dcfb26b26920f093ebd6d3806705e53cc211b11cb0eacb4"
+    },
+    {
+      "file": "BEA_cvr_sp002.wav",
+      "corpus": "A",
+      "duration_sec": 236.330589569161,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "4a7413f6cd9386b3cd339edd74da55440fe9c6075343c2d3b5acb476f4b4a447"
+    },
+    {
+      "file": "BEA_cvr_sp003.wav",
+      "corpus": "A",
+      "duration_sec": 196.02814058956915,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "6eb3dc41134f11e9f0500bfd6a5a908c4b3cdbfd3b50d44d9e2737629c3537cc"
+    },
+    {
+      "file": "BEA_cvr_sp004.wav",
+      "corpus": "A",
+      "duration_sec": 182.575283446712,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "4c4ebe8332bfd60a555ca3cda35e32eb76c7d5c5fb3698d5937aecf516c832ee"
+    },
+    {
+      "file": "BEA_cvr_sp005.wav",
+      "corpus": "A",
+      "duration_sec": 256.1474829931973,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "53dfb567deedb1ad4a7593ca0223dcad58b5a49ace8c63d9ed4008747e794999"
+    },
+    {
+      "file": "BEA_cvr_sp006.wav",
+      "corpus": "A",
+      "duration_sec": 200.72308390022675,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "26f457f9b4dcaea2b2a18f561683ce40853d3e3d8066d246c4aec9ef72347952"
+    },
+    {
+      "file": "BEA_cvr_sp007.wav",
+      "corpus": "A",
+      "duration_sec": 220.55809523809523,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "f2fd4d937259b4dbb860b9bf0c1beaf5a73b26cad4fc054048b5746147dfc145"
+    },
+    {
+      "file": "BEA_cvr_sp008.wav",
+      "corpus": "A",
+      "duration_sec": 282.1684580498866,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "fddb86a9c66cf45ebab9e9e5fb6f7843cf470139bb15c5ac496c1aca58e554ff"
+    },
+    {
+      "file": "BEA_cvr_sp009.wav",
+      "corpus": "A",
+      "duration_sec": 220.8144217687075,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "210d627c103a9533a2664597b0b1279bf165fed2ee8cb9ffd4f2896d87a9d5e6"
+    },
+    {
+      "file": "BEA_cvr_sp010.wav",
+      "corpus": "A",
+      "duration_sec": 206.23467120181405,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "ef44d9143d459ec382b3431864428bd899a81b33441104fdbecd121c3df7c185"
+    },
+    {
+      "file": "BEA_cvr_sp011.wav",
+      "corpus": "A",
+      "duration_sec": 406.1225850340136,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "9715593d2fa138411237663aad1d91544b6b22e3a3c3b5d044f033444d3060cb"
+    },
+    {
+      "file": "BEA_cvr_sp012.wav",
+      "corpus": "A",
+      "duration_sec": 213.8905215419501,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "b627e6f96bc1510464b817fd920aae011ce4175fc06f2e126af14c2f7db23d31"
+    },
+    {
+      "file": "DGA_CVR1_track1_sp102.wav",
+      "corpus": "A",
+      "duration_sec": 60.0,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "PCM_16",
+      "sha256": "2932d822d46e2b28c775e81220a2fc0a511ed1a8dc9df80f6d7461ad59abfe6d"
+    },
+    {
+      "file": "DGA_CVR1_track2_sp105.wav",
+      "corpus": "A",
+      "duration_sec": 60.0,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "PCM_16",
+      "sha256": "53af291988c9cd8b13732d9192a64740e539cdfc984f985a8df8fd4e7ef65427"
+    },
+    {
+      "file": "DGA_CVR2_track1_sp103.wav",
+      "corpus": "A",
+      "duration_sec": 160.0,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "PCM_16",
+      "sha256": "5f6eb50213dd1238cbe8d85f3463f290ed48645512489f366c4e73a35d73ed85"
+    },
+    {
+      "file": "DGA_CVR2_track2_sp104.wav",
+      "corpus": "A",
+      "duration_sec": 160.0,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "PCM_16",
+      "sha256": "ff79b8a097a2cd195b21bf07dfe30482f5090b20b97783fdee8bc5b0f7743080"
+    },
+    {
+      "file": "DGA_CVR3_track1_sp106.wav",
+      "corpus": "A",
+      "duration_sec": 20.414240362811793,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "PCM_16",
+      "sha256": "002bc0c89587cbe298c5ab711f98d69212c8fc6992dfca360f597daa711202f5"
+    },
+    {
+      "file": "DGA_CVR3_track2_sp101.wav",
+      "corpus": "A",
+      "duration_sec": 21.0,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "PCM_16",
+      "sha256": "3052d8e8472ba531e5813a1dcbe6bacc12741b6c956200fe35593aabd2385ccb"
+    },
+    {
+      "file": "DGA_CVR4_track1_sp103.wav",
+      "corpus": "A",
+      "duration_sec": 120.0,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "PCM_16",
+      "sha256": "2f56607fb31e6f8a0e01f5d70c0de6ea8e5dc94f120895d9205fd5262f1a3693"
+    },
+    {
+      "file": "DGA_CVR4_track2_sp104 .wav",
+      "corpus": "A",
+      "duration_sec": 120.0,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "PCM_16",
+      "sha256": "35eb4cccf3ce07ac20a4ed700304e39f864779ddd1ad1bbc88ecc82e0547b411"
+    },
+    {
+      "file": "DGA_CVR5_track1_sp101.wav",
+      "corpus": "A",
+      "duration_sec": 87.01367346938775,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "PCM_16",
+      "sha256": "018a0bc5421dc1cb02f3a90332c5bf1cbdd2fd8e75dcb8bd281bf1e7e9220dbb"
+    },
+    {
+      "file": "DGA_CVR5_track2_sp102.wav",
+      "corpus": "A",
+      "duration_sec": 90.0,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "PCM_16",
+      "sha256": "1e89de1c9549dd459a59ddbd0850188e2a7205f226704a3b9af23e150da31946"
+    },
+    {
+      "file": "DGA_checklist-Beech_sp101.wav",
+      "corpus": "A",
+      "duration_sec": 399.71707482993196,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "PCM_16",
+      "sha256": "76adac7677468c613bf1389e7a995fb044a1841ffd518b23237ac329db8a802b"
+    },
+    {
+      "file": "DGA_checklist-PC7_sp104 .wav",
+      "corpus": "A",
+      "duration_sec": 246.0917006802721,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "PCM_16",
+      "sha256": "8cbc53ad4b79a93b69ba2397f38f1949a32b793a252dece6b308fbfe9fa198f6"
+    },
+    {
+      "file": "DGA_checklist-Puma-1_sp105.wav",
+      "corpus": "A",
+      "duration_sec": 334.32451247165534,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "PCM_16",
+      "sha256": "69d666adf47e69c39cfc855916209b4de11cba5fc8428a7ca8e3efe5e4f3844e"
+    },
+    {
+      "file": "DGA_checklist-Puma-2_sp103.wav",
+      "corpus": "A",
+      "duration_sec": 132.67612244897958,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "PCM_16",
+      "sha256": "67d1b5362c7e831faa03f71d3325748646f673e51be4a427d0471abfae3d45bb"
+    },
+    {
+      "file": "DGA_checklist-TBM940_sp102.wav",
+      "corpus": "A",
+      "duration_sec": 119.64156462585034,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "PCM_16",
+      "sha256": "d64b9e6163c293dd3bd0be59f9f76a8be8bf56b495aa11da69b9fbbe52475dfb"
+    },
+    {
+      "file": "DGA_checklist-unknown_sp102.wav",
+      "corpus": "A",
+      "duration_sec": 13.459455782312926,
+      "sample_rate": 44100,
+      "channels": 1,
+      "subtype": "PCM_16",
+      "sha256": "c80fb1c9b94160fb08eadf4e251109c49add74bcc6416c5fa1367fc0fd6e568f"
+    },
+    {
+      "file": "CVR_BEA_cvr_sp01.wav",
+      "corpus": "C",
+      "duration_sec": 220.45220833333335,
+      "sample_rate": 48000,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "9cfc140d338ba9f764d2ec01a60d466e65497bf5dc2ae8c9f10242f322e9ff18"
+    },
+    {
+      "file": "CVR_BEA_cvr_sp06.wav",
+      "corpus": "C",
+      "duration_sec": 200.72310416666667,
+      "sample_rate": 48000,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "e85e40ca830aaa7b677a93ac591dba7a2ff12729bdc7df46d2c5b565bf1bcb95"
+    },
+    {
+      "file": "CVR_BEA_cvr_sp10.wav",
+      "corpus": "C",
+      "duration_sec": 206.2346875,
+      "sample_rate": 48000,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "4d8240992a55c275fa5885c2bbd848a8cc355131c6777a91b2073bdc2d55fb9d"
+    },
+    {
+      "file": "CVR_DGA_CVR1_track1_sp102.wav",
+      "corpus": "C",
+      "duration_sec": 60.0,
+      "sample_rate": 48000,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "494009b615d9ac91f59d1c1a47a31f8d9d93f33835f06db5c36f0542e69334d6"
+    },
+    {
+      "file": "CVR_DGA_CVR2_track1_sp103.wav",
+      "corpus": "C",
+      "duration_sec": 160.0,
+      "sample_rate": 48000,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "09014bf46eb550c038d9f27b0d168aeada6bf6054f1907adb5442b07c2188a72"
+    },
+    {
+      "file": "CVR_DGA_CVR2_track2_sp104.wav",
+      "corpus": "C",
+      "duration_sec": 160.0,
+      "sample_rate": 48000,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "ba999e6fe9d22aa685fbb3470ba01fb55b92e260b429ef6c4dc38062f01d6990"
+    },
+    {
+      "file": "CVR_DGA_CVR3_track1_sp106.wav",
+      "corpus": "C",
+      "duration_sec": 20.41425,
+      "sample_rate": 48000,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "7e6f7e0e1cab78c2abe7760796e91c1843bfd9f80d1fd2ea71983ff9b097c579"
+    },
+    {
+      "file": "CVR_DGA_CVR3_track2_sp101.wav",
+      "corpus": "C",
+      "duration_sec": 21.0,
+      "sample_rate": 48000,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "d072c5e8fdef3b9e87c2342eb44555ccccb3386940a9b50b6c63fa4b671c2362"
+    },
+    {
+      "file": "CVR_DGA_CVR4_track2_sp104 .wav",
+      "corpus": "C",
+      "duration_sec": 120.0,
+      "sample_rate": 48000,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "4d9afc7476ef0bd519a7374c54332dcb313a94e69903ace3fa109b73ede6d9c5"
+    },
+    {
+      "file": "CVR_DGA_CVR5_track1_sp101.wav",
+      "corpus": "C",
+      "duration_sec": 87.0136875,
+      "sample_rate": 48000,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "d09eb30dfa708551c84b892bac1fbcd6d3a4b9028a67a96de23c9270c77e81ce"
+    },
+    {
+      "file": "CVR_DGA_CVR5_track2_sp102.wav",
+      "corpus": "C",
+      "duration_sec": 90.0,
+      "sample_rate": 48000,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "b4531d9c9684e9c5dbfa648e1b5d206361d97ebae8c8373fd18ca5f7beb90630"
+    },
+    {
+      "file": "CVR_DGA_checklist-PC7_sp104 .wav",
+      "corpus": "C",
+      "duration_sec": 246.09170833333334,
+      "sample_rate": 48000,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "1bb2703a821159b60a826d0d723578a978ac1c7ad2d40d61e7857c01790e6705"
+    },
+    {
+      "file": "CVR_DGA_checklist-Puma-1_sp105.wav",
+      "corpus": "C",
+      "duration_sec": 334.32452083333334,
+      "sample_rate": 48000,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "ebd081ed9664b0a84353e654b47cb860f136630e652dd72454647a864c58c620"
+    },
+    {
+      "file": "CVR_DGA_checklist-TBM940_sp102.wav",
+      "corpus": "C",
+      "duration_sec": 119.64158333333333,
+      "sample_rate": 48000,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "c4a2567d6bd1042753f8245464e34208b5ac2b467324c4149731a4f61d38520d"
+    },
+    {
+      "file": "CVR_DGA_checklist-unknown_sp102.wav",
+      "corpus": "C",
+      "duration_sec": 13.459458333333334,
+      "sample_rate": 48000,
+      "channels": 1,
+      "subtype": "FLOAT",
+      "sha256": "ddb67599b840e1ef3341cd781525b555ed2b0e4314a8d70681c7256081f3a672"
+    }
+  ],
+  "duration_metadata_discrepancies": [
+    {
+      "file": "BEA_checklists_sp001.wav",
+      "publisher_minutes": "17.2",
+      "decoded_header_sec": 1028.7380498866214
+    },
+    {
+      "file": "BEA_checklists_sp004.wav",
+      "publisher_minutes": "12.3",
+      "decoded_header_sec": 741.3519047619047
+    },
+    {
+      "file": "BEA_checklists_sp007.wav",
+      "publisher_minutes": "3",
+      "decoded_header_sec": 185.50843537414966
+    },
+    {
+      "file": "BEA_checklists_sp009.wav",
+      "publisher_minutes": "18",
+      "decoded_header_sec": 1075.6136054421768
+    },
+    {
+      "file": "BEA_checklists_sp010.wav",
+      "publisher_minutes": "16.3",
+      "decoded_header_sec": 981.6166666666667
+    },
+    {
+      "file": "BEA_cvr_sp002.wav",
+      "publisher_minutes": "4",
+      "decoded_header_sec": 236.330589569161
+    },
+    {
+      "file": "BEA_cvr_sp007.wav",
+      "publisher_minutes": "3.4",
+      "decoded_header_sec": 220.55809523809523
+    },
+    {
+      "file": "BEA_cvr_sp010.wav",
+      "publisher_minutes": "3.5",
+      "decoded_header_sec": 206.23467120181405
+    },
+    {
+      "file": "BEA_cvr_sp011.wav",
+      "publisher_minutes": "6.7",
+      "decoded_header_sec": 406.1225850340136
+    },
+    {
+      "file": "BEA_cvr_sp012.wav",
+      "publisher_minutes": "3.5",
+      "decoded_header_sec": 213.8905215419501
+    },
+    {
+      "file": "DGA_CVR2_track1_sp103.wav",
+      "publisher_minutes": "2.3",
+      "decoded_header_sec": 160.0
+    },
+    {
+      "file": "DGA_CVR2_track2_sp104.wav",
+      "publisher_minutes": "2.3",
+      "decoded_header_sec": 160.0
+    },
+    {
+      "file": "DGA_checklist-Beech_sp101.wav",
+      "publisher_minutes": "6.6",
+      "decoded_header_sec": 399.71707482993196
+    }
+  ],
+  "publisher_documents": [
+    {
+      "path": "raw-speech_transcript/BEA_checklist_A320_pilote.pdf",
+      "bytes": 318770,
+      "md5": "8c33ba2f40b57cd765adae8f9bfdd5d1",
+      "sha256": "4da2527a6ca0bc4a6804595c9fb572f24ba4f01f84bb3789e73a71d66243f068"
+    },
+    {
+      "path": "raw-speech_transcript/BEA_checklist_A320-NormalChecklist.pdf",
+      "bytes": 364246,
+      "md5": "9cc4062540aeeff44cd065880058bf57",
+      "sha256": "40305a88ce9112d09b06f8fcfd0a384f24ffbba7f3bf01ee14e1258567d3a330"
+    },
+    {
+      "path": "raw-speech_transcript/BEA_checklist_B737_NORMAL_CHECKLIST.pdf",
+      "bytes": 50200,
+      "md5": "dd2181f71f341ff3af31c0ce2c15ddef",
+      "sha256": "8e04541b36114487097a9b5ea7517ce35f9e697da72a70a426a5417130e8ddbe"
+    },
+    {
+      "path": "raw-speech_transcript/BEA_CVR.pdf",
+      "bytes": 140560,
+      "md5": "b6222ac09bc6b0d6f2eb6f3664422236",
+      "sha256": "2c20025e5f3d3cb0801b7ceee7dc72e8e0e01492c062b492dc53d086df5b33d8"
+    },
+    {
+      "path": "raw-speech_transcript/DGA_checklist-Beech.docx",
+      "bytes": 14944,
+      "md5": "68436a99dd8f14465bae44b71c441227",
+      "sha256": "af934e4cdef0aa856c60da6440d8ae477194147640f5a4408ae35902e956e831"
+    },
+    {
+      "path": "raw-speech_transcript/DGA_checklist-PC7.pdf",
+      "bytes": 250316,
+      "md5": "9123fc11bc6cd2d3771ca307fad41d61",
+      "sha256": "3d6938183f5f0891a1d74998d179a5935798748c939fa76b372ca589d61212ab"
+    },
+    {
+      "path": "raw-speech_transcript/DGA_checklist-Puma1.pdf",
+      "bytes": 2480101,
+      "md5": "ab4a7214425017d59957297f14674835",
+      "sha256": "24124e76a3ad5b00f0cdce430e21b1929c78369224b9dfee7d4e882d24e18776"
+    },
+    {
+      "path": "raw-speech_transcript/DGA_checklist-Puma2.txt",
+      "bytes": 7,
+      "md5": "88183b946cc5f0e8c96b2e66e1c74a7e",
+      "sha256": "b764cdc0eab7137467211272fa539f1260d1bf2e71bcf6ff3bdc960f5c16aa14"
+    },
+    {
+      "path": "raw-speech_transcript/DGA_checklist-TBM940.docx",
+      "bytes": 12865,
+      "md5": "262a3413c7624bbec5688ae7904e1119",
+      "sha256": "29267cb1a9b3a0ff380dd7717f5cf62e251feeeb457d01a0ddea1f6a8a478a5f"
+    },
+    {
+      "path": "raw-speech_transcript/DGA_checklist-unknown.txt",
+      "bytes": 7,
+      "md5": "88183b946cc5f0e8c96b2e66e1c74a7e",
+      "sha256": "b764cdc0eab7137467211272fa539f1260d1bf2e71bcf6ff3bdc960f5c16aa14"
+    },
+    {
+      "path": "raw-speech_transcript/DGA_CVR1.docx",
+      "bytes": 76674,
+      "md5": "9d69f55e7aa70efcd414574c9d6684d3",
+      "sha256": "00c40edbd5efd044615ae91594a2aa4fc1339c83f54d53f3230942e1dcc968de"
+    },
+    {
+      "path": "raw-speech_transcript/DGA_CVR2.docx",
+      "bytes": 15075,
+      "md5": "20dcf15ccb2e355cab25a6682e3c784c",
+      "sha256": "5bae568d97af4b2646d9e57d3e9ca3578c523a11165a2bb49dfccc20170862f6"
+    },
+    {
+      "path": "raw-speech_transcript/DGA_CVR3.docx",
+      "bytes": 12770,
+      "md5": "d69f2cbfe6525e1f69f81136e73bdd39",
+      "sha256": "f0291afd5e3e13b96c9ac2151f14cf88b181fc29193982043589c211914a9d60"
+    },
+    {
+      "path": "raw-speech_transcript/DGA_CVR4.docx",
+      "bytes": 16714,
+      "md5": "ba2753ba17de532c55f75505fb52cd97",
+      "sha256": "d79e53f3e7f05d8acc7c6bf9d6911c31302f0289918ef12b3a86519bb6876ccf"
+    },
+    {
+      "path": "raw-speech_transcript/DGA_CVR5.docx",
+      "bytes": 13627,
+      "md5": "185a9405164a6e385ca5dc63851c4bd3",
+      "sha256": "6d0ecd57e72d63b9f4959ed708a775c96264f85d3225e1fae8b3204c9591e7a6"
+    }
+  ],
+  "import_result": {
+    "independent_groups": 18,
+    "split_groups": {
+      "train": 0,
+      "dev": 0,
+      "test": 0
+    },
+    "unknown_speakers": 0,
+    "script_overlap": {},
+    "claim_limitation": null
+  },
+  "split_result": {
+    "independent_groups": 18,
+    "split_groups": {
+      "train": 12,
+      "dev": 3,
+      "test": 3
+    },
+    "unknown_speakers": 0,
+    "script_overlap": {
+      "bleriot:BEA:Checklists": [
+        "dev",
+        "test",
+        "train"
+      ],
+      "bleriot:BEA:CVR": [
+        "dev",
+        "test",
+        "train"
+      ],
+      "bleriot:DGA:CVR2": [
+        "dev",
+        "train"
+      ],
+      "bleriot:DGA:CVR4": [
+        "dev",
+        "train"
+      ]
+    },
+    "claim_limitation": null
+  },
+  "human_verified_annotations": 0,
+  "benchmark_admitted": false,
+  "asr_quality_gate": "NEEDS_MORE_DATA",
+  "nlp_quality_gate": "NEEDS_MORE_DATA",
+  "test_opened": false,
+  "candidate_selected": false,
+  "next_step": "review scope and align publisher scripts; annotate independent entities/events"
+}

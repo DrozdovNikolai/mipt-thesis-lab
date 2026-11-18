@@ -1,0 +1,121 @@
+{
+  "status": "PASS",
+  "checks": {
+    "frozen_source_files": true,
+    "original_acceptance_unchanged": true,
+    "original_baseline_unchanged": true,
+    "fresh_baseline_reproduces_all_previous_661_answers": true,
+    "original_spec_sources_unchanged": true,
+    "training_plan_link": true,
+    "frozen_protocol": true,
+    "unchanged_661_inputs": true,
+    "same_parent_weights": true,
+    "both_120_steps_and_complete_loader_coverage": true,
+    "both_single_final_checkpoint": true,
+    "GPU_converted_smokes_executed": true,
+    "finite_training_and_dev_losses": true,
+    "both_models_changed_from_parent": true,
+    "data_manifests_preserved": true,
+    "original_dev_preserved": true,
+    "original_support_preserved": true,
+    "original_weak_train_preserved": true,
+    "433_pairs_preserve_original_texts_and_provenance": true,
+    "reviewed_dev_metadata_disjoint_from_training": true,
+    "no_training_quality_or_release_claim": true,
+    "same_precision_and_options_except_checkpoint": true,
+    "all_1983_scored_rows": true,
+    "all_runtime_failures_retained": true,
+    "result_plan_link": true,
+    "no_test_or_promotion_claim": true,
+    "parent_661_prediction_hashes": true,
+    "parent_offline_exit_zero": true,
+    "parent_no_reference_mount": true,
+    "parent_actual_cuda_float16": true,
+    "parent_same_input_language_information": true,
+    "control_661_prediction_hashes": true,
+    "control_offline_exit_zero": true,
+    "control_no_reference_mount": true,
+    "control_actual_cuda_float16": true,
+    "control_same_input_language_information": true,
+    "augmented_661_prediction_hashes": true,
+    "augmented_offline_exit_zero": true,
+    "augmented_no_reference_mount": true,
+    "augmented_actual_cuda_float16": true,
+    "augmented_same_input_language_information": true,
+    "control_offline_training_exit_zero": true,
+    "control_training_no_evaluation_references": true,
+    "augmented_offline_training_exit_zero": true,
+    "augmented_training_no_evaluation_references": true,
+    "offline_CPU_smoke": true,
+    "application_keeps_baseline": true,
+    "38_contract_tests_passed": true,
+    "completed_inference_resume_661_reused_zero_calls": true
+  },
+  "test_runs": [
+    {
+      "path": "contracts.xml",
+      "name": "pytest",
+      "errors": "0",
+      "failures": "1",
+      "skipped": "0",
+      "tests": "38",
+      "time": "2.248",
+      "timestamp": "2026-09-14T09:23:25.101710+00:00",
+      "hostname": "1f355ad0fa29"
+    },
+    {
+      "path": "north55-retraining-v1-tests-20260914092346.xml",
+      "name": "pytest",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "tests": "38",
+      "time": "2.223",
+      "timestamp": "2026-09-14T09:23:47.922648+00:00",
+      "hostname": "a8896d2b6af2"
+    },
+    {
+      "path": "north55-retraining-v1-tests-20260914093046.xml",
+      "name": "pytest",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "tests": "38",
+      "time": "2.463",
+      "timestamp": "2026-09-14T09:30:48.262953+00:00",
+      "hostname": "d0f9f5cf0ca3"
+    }
+  ],
+  "reporter_sha256": "f9ad31fb84006dcdf7016da40ed1682a130a05f07c7b3248c3fb33f66c70bf05",
+  "diagnostics": {
+    "control": {
+      "cockpit_point_target": "FAIL",
+      "cockpit_statistical_confirmation": "INCONCLUSIVE",
+      "clean_EN_guardrail": "PASS",
+      "general_RU_regression_diagnostic": "PASS",
+      "noise_guardrail_diagnostic": "FAIL",
+      "noise_words_per_minute_deltas": {
+        "noise_only": 16.78579810105687,
+        "bleriot_b_noise": 3.622517460398991
+      },
+      "critical_entity_nonregression": "NEEDS_MORE_DATA",
+      "release_quality_gate": "NEEDS_MORE_DATA"
+    },
+    "augmented": {
+      "cockpit_point_target": "FAIL",
+      "cockpit_statistical_confirmation": "INCONCLUSIVE",
+      "clean_EN_guardrail": "PASS",
+      "general_RU_regression_diagnostic": "PASS",
+      "noise_guardrail_diagnostic": "FAIL",
+      "noise_words_per_minute_deltas": {
+        "noise_only": 31.841306587431333,
+        "bleriot_b_noise": 0.6488090973848939
+      },
+      "critical_entity_nonregression": "NEEDS_MORE_DATA",
+      "release_quality_gate": "NEEDS_MORE_DATA"
+    }
+  },
+  "CPU_non_speech_output_present": true,
+  "source": "actual persisted training/inference/scoring artifacts",
+  "release_promoted": false
+}

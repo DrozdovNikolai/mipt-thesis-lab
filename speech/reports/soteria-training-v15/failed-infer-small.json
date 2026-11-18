@@ -1,0 +1,85 @@
+{
+  "exit_code": 1,
+  "image": "sha256:34ed3eca5f649c8d1b3fc1b021bae236a3030829d9c9347368a32ba4fa6b347c",
+  "state": {
+    "Status": "exited",
+    "Running": false,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 0,
+    "ExitCode": 1,
+    "Error": "",
+    "StartedAt": "2026-09-16T07:44:51.977861461Z",
+    "FinishedAt": "2026-09-16T07:44:59.359170738Z"
+  },
+  "network": "none",
+  "devices": [
+    {
+      "Driver": "",
+      "Count": 0,
+      "DeviceIDs": [
+        "0"
+      ],
+      "Capabilities": [
+        [
+          "gpu"
+        ]
+      ],
+      "Options": {}
+    }
+  ],
+  "mounts": [
+    {
+      "Type": "bind",
+      "Source": "/run/desktop/mnt/host/c/DEV/MIPT/Diploma/Speech/data/curated/soteria-v14/audio",
+      "Destination": "/soteria",
+      "Mode": "",
+      "RW": false,
+      "Propagation": "rprivate"
+    },
+    {
+      "Type": "bind",
+      "Source": "C:/DEV/MIPT/Diploma/Speech/reports/soteria-training-v15/frozen",
+      "Destination": "/app",
+      "Mode": "",
+      "RW": false,
+      "Propagation": "rprivate"
+    },
+    {
+      "Type": "bind",
+      "Source": "C:/DEV/MIPT/Diploma/Speech/reports/soteria-training-v15",
+      "Destination": "/study",
+      "Mode": "",
+      "RW": true,
+      "Propagation": "rprivate"
+    },
+    {
+      "Type": "volume",
+      "Name": "north55-speech_model_cache",
+      "Source": "/var/lib/docker/volumes/north55-speech_model_cache/_data",
+      "Destination": "/models",
+      "Driver": "local",
+      "Mode": "z",
+      "RW": false,
+      "Propagation": ""
+    },
+    {
+      "Type": "bind",
+      "Source": "/run/desktop/mnt/host/c/DEV/MIPT/Diploma/Speech/reports/cockpit-reviewed-v12/audio",
+      "Destination": "/human",
+      "Mode": "",
+      "RW": false,
+      "Propagation": "rprivate"
+    }
+  ],
+  "command": [
+    "-u",
+    "-m",
+    "scripts.soteria_training_v15",
+    "infer",
+    "--arm",
+    "small"
+  ]
+}

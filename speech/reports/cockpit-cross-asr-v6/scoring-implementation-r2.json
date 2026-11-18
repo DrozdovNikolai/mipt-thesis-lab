@@ -1,0 +1,8 @@
+{
+  "files": {
+    "scripts/report_cockpit_cross_asr_v6.py": "070d356806128f0731a9d37ef44bf238859b171bc0a9999190443f7c9637d982",
+    "scripts/cockpit_cross_asr_rules_v6.py": "b7b4ed520a90e7732e7143d9a6c3c0b358d5c5fb0ea0a6b236031bd8f71621f5"
+  },
+  "reason": "Style-only lint corrections and explicit zip(strict=False); scoring rules unchanged.",
+  "before_scoring": true
+}

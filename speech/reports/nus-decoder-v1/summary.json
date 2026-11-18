@@ -1,0 +1,98 @@
+{
+  "implemented": true,
+  "executed": true,
+  "artifact_verification": "FAIL",
+  "artifact_integrity": "PASS",
+  "checks": {
+    "fixed_1200_steps": true,
+    "actual_optimizer_updates": false,
+    "full_675_train_pairs": true,
+    "language_prefixes_match_annotations": true,
+    "no_training_truncation": true,
+    "encoder_identical": true,
+    "both_milestones_encoder_identical": true,
+    "48_decoder_modules_96_tensors": true,
+    "589824_trainable_parameters": true,
+    "both_merged_encoders_identical": true,
+    "40_tests_passed": true,
+    "all_stages_recorded": true,
+    "exact_ASR_budget": true,
+    "zero_ASR_runtime_failures": true,
+    "GPU_float16": true,
+    "two_CPU_languages_each_checkpoint": true,
+    "offline_inference": true,
+    "references_absent_from_inference": true,
+    "old_models_audio_readonly": true,
+    "Linux_replay": true,
+    "no_promotion": true
+  },
+  "release": "FAIL",
+  "independent_quality": "NEEDS_MORE_DATA",
+  "test_accessed": false,
+  "release_promoted": false,
+  "tests": {
+    "results": {
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "backcompat": {
+      "tests": 32,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "new_GPU_ASR_calls": 868,
+  "new_CPU_ASR_calls": 4,
+  "training_loop_steps": 1200,
+  "actual_optimizer_updates": {
+    "240": [
+      239.0
+    ],
+    "1200": [
+      1199.0
+    ]
+  },
+  "historical_optimizer_audit": {
+    "historical_joint240": {
+      "trainer_steps": 240,
+      "actual_AdamW_updates": [
+        239.0
+      ],
+      "optimizer_states": 144,
+      "scaler": {
+        "scale": 32768.0,
+        "growth_factor": 2.0,
+        "backoff_factor": 0.5,
+        "growth_interval": 2000,
+        "_growth_tracker": 230
+      },
+      "optimizer_sha256": "630ae37d4ecb09eefffc974534cc2d15228622130afc95065ae705e86c5d7896"
+    },
+    "decoder240": {
+      "trainer_steps": 240,
+      "actual_AdamW_updates": [
+        239.0
+      ],
+      "optimizer_states": 96,
+      "scaler": {
+        "scale": 32768.0,
+        "growth_factor": 2.0,
+        "backoff_factor": 0.5,
+        "growth_interval": 2000,
+        "_growth_tracker": 230
+      },
+      "optimizer_sha256": "b55f1ce081448808a8f3e316e5831b1b35601396ffdac9c3e4f9733d12e16df9"
+    },
+    "historical_weights_or_predictions_modified": false
+  },
+  "protocol_execution": "FAIL",
+  "training_rows": 675,
+  "train_visits": 4794,
+  "comparison_sha256": "f55ebfa4ab33f6c541309815e810179fe22477e3d7b86ff906e4bee1e1022f51",
+  "plan_sha256": "4de99cc90355fb8abe62440e6a9b6a65ee4937fb37d08a2e984f7c9435d984b4",
+  "training_sha256": "c38cf4dac4d33835d216dfec57455bb59469b7f5d305e3fbfeaddc0e68ae3473",
+  "report_script_sha256": "199310e8d2676e3066e0732b1e25c619b56b06cb7b132123516bef9c52d32858"
+}

@@ -1,0 +1,6 @@
+{
+  "image": "north55-speech-train:publisher-v2",
+  "id": "sha256:34ed3eca5f649c8d1b3fc1b021bae236a3030829d9c9347368a32ba4fa6b347c",
+  "amendment": "Any type annotations only; exact transformation checked by verifier",
+  "no_retraining": true
+}

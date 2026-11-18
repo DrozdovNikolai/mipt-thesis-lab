@@ -1,0 +1,19 @@
+{
+  "boeing-aviation-ner-BIO-card": "https://huggingface.co/datasets/boeing/aviation-ner-BIO/raw/36832b83a85b15936b6f2dd15c7cd886194a9535/README.md",
+  "boeing-aviation-ner-BIO-api": "https://huggingface.co/api/datasets/boeing/aviation-ner-BIO/revision/36832b83a85b15936b6f2dd15c7cd886194a9535",
+  "aether-raid-sg-aviation-clean-card": "https://huggingface.co/datasets/aether-raid/sg-aviation-clean/raw/a8e821ec98df126bfba17906566e16a004af83e5/README.md",
+  "aether-raid-sg-aviation-clean-api": "https://huggingface.co/api/datasets/aether-raid/sg-aviation-clean/revision/a8e821ec98df126bfba17906566e16a004af83e5",
+  "aether-raid-sg-aviation-el-combined-card": "https://huggingface.co/datasets/aether-raid/sg-aviation-el-combined/raw/2bc4467911740e62e0950d168b8ed1d10b495a73/README.md",
+  "aether-raid-sg-aviation-el-combined-api": "https://huggingface.co/api/datasets/aether-raid/sg-aviation-el-combined/revision/2bc4467911740e62e0950d168b8ed1d10b495a73",
+  "meghtedari-AviationRadio-card": "https://huggingface.co/datasets/meghtedari/AviationRadio/raw/a95a25e979ec8dec41315d64182164a3f1639460/README.md",
+  "meghtedari-AviationRadio-api": "https://huggingface.co/api/datasets/meghtedari/AviationRadio/revision/a95a25e979ec8dec41315d64182164a3f1639460",
+  "sophiaechavez2247-cockpit-card": "https://huggingface.co/datasets/sophiaechavez2247/cockpit/raw/d489a0f316fad703da0bcb2c08148f4bb2612daa/README.md",
+  "sophiaechavez2247-cockpit-api": "https://huggingface.co/api/datasets/sophiaechavez2247/cockpit/revision/d489a0f316fad703da0bcb2c08148f4bb2612daa",
+  "Susasmx-Susas-card": "https://huggingface.co/datasets/Susasmx/Susas/raw/1270d8dafc8232a40bb382b5e4524eea58009cd3/README.md",
+  "Susasmx-Susas-api": "https://huggingface.co/api/datasets/Susasmx/Susas/revision/1270d8dafc8232a40bb382b5e4524eea58009cd3",
+  "vr-readme": "https://raw.githubusercontent.com/wangyubo013-blip/CDE4301-VR-401-Final-Report/0c520edbcd345cb9005cc77c3345eedbfef7147b/README.md",
+  "vr-recording-link": "https://raw.githubusercontent.com/wangyubo013-blip/CDE4301-VR-401-Final-Report/0c520edbcd345cb9005cc77c3345eedbfef7147b/Scripts/Workstream2_PhysiologicalSensors/real-world_VR_training_data/link_of_recording_for_VR_training",
+  "hf-asr-pilot": "https://huggingface.co/api/datasets?search=pilot&filter=task_categories%3Aautomatic-speech-recognition&limit=100&full=true",
+  "hf-asr-flight": "https://huggingface.co/api/datasets?search=flight&filter=task_categories%3Aautomatic-speech-recognition&limit=100&full=true",
+  "hf-asr-checklist": "https://huggingface.co/api/datasets?search=checklist&filter=task_categories%3Aautomatic-speech-recognition&limit=100&full=true"
+}
