@@ -12,11 +12,12 @@ void main() {
       final api = SessionApi(
         MockClient((r) async {
           paths.add(r.url.path.split('/').last);
-          if (r.url.path.endsWith('/login'))
+          if (r.url.path.endsWith('/login')) {
             return http.Response(
               '{"accessToken":"expired","refreshToken":"first"}',
               200,
             );
+          }
           if (r.url.path.endsWith('/refresh')) {
             expect(jsonDecode(r.body), {'refreshToken': 'first'});
             return http.Response(
