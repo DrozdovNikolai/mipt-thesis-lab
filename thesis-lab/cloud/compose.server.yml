@@ -1,0 +1,114 @@
+name: firefly-thesis-cloud-v1
+x-env: &env
+  ENV_FILE: /dev/null
+  ENVIRONMENT: test
+  PYTHONPATH: /app:/lab
+  PYTHONDONTWRITEBYTECODE: '1'
+  PYTHONUNBUFFERED: '1'
+  THESIS_OUTPUT: ${THESIS_OUTPUT:-/results/cloud-pilot}
+  DATABASE_URL: postgresql+asyncpg://thesis:${DB_PASSWORD:?set DB_PASSWORD}@db:5432/thesis_exp_seed
+  DATABASE_SYNC_URL: postgresql+psycopg://thesis:${DB_PASSWORD:?set DB_PASSWORD}@db:5432/thesis_exp_seed
+  REDIS_URL: redis://redis:6379/0
+  CELERY_BROKER_URL: redis://redis:6379/1
+  CELERY_RESULT_BACKEND: redis://redis:6379/2
+  ENABLE_METRICS: 'false'
+  ENABLE_RATE_LIMIT: 'false'
+  LOG_LEVEL: ERROR
+  ADMIN_LOGIN: admin
+  ADMIN_PASSWORD: ${ADMIN_PASSWORD:?set ADMIN_PASSWORD}
+  ADMIN_EMAIL: admin@example.com
+  JWT_SECRET_KEY: ${JWT_SECRET_KEY:?set JWT_SECRET_KEY}
+  JWT_REFRESH_SECRET_KEY: ${JWT_REFRESH_SECRET_KEY:?set JWT_REFRESH_SECRET_KEY}
+  ACCESS_TOKEN_EXP_MINUTES: '1440'
+  SPEECH_DATA_DIR: /tmp/speech
+  MEDIA_UPLOAD_DIR: /tmp/media
+  FEEDBACK_UPLOAD_DIR: /tmp/feedback
+  RUN_LIVE_AI: '0'
+  RUN_LIVE_AI_STABILITY: '0'
+x-python: &python
+  image: firefly-thesis/backend-runtime:20260916
+  pull_policy: never
+  working_dir: /app
+  environment: *env
+  volumes:
+    - ../backend:/app:ro
+    - ..:/lab:ro
+    - ../results:/results
+  cpus: 2
+  mem_limit: 3g
+  networks: [isolated]
+x-app: &app
+  <<: *python
+  networks: [isolated, access]
+  command: uvicorn expanded.server:app --host 0.0.0.0 --port 8000 --no-access-log
+  healthcheck:
+    test: [CMD, curl, -fsS, http://localhost:8000/]
+    interval: 2s
+    timeout: 3s
+    retries: 60
+services:
+  db:
+    image: firefly-thesis/postgres:18.1-frozen
+    pull_policy: never
+    environment:
+      POSTGRES_USER: thesis
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?set DB_PASSWORD}
+      POSTGRES_DB: postgres
+    volumes:
+      - cloud_db:/var/lib/postgresql
+      - ../expanded/init.sql:/docker-entrypoint-initdb.d/01-thesis.sql:ro
+    cpus: 2
+    mem_limit: 3g
+    command: postgres -c shared_preload_libraries=pg_stat_statements -c track_io_timing=on
+    healthcheck:
+      test: [CMD-SHELL, pg_isready -U thesis -d postgres]
+      interval: 2s
+      timeout: 3s
+      retries: 60
+    networks: [isolated]
+  redis:
+    image: firefly-thesis/redis:7-frozen
+    pull_policy: never
+    networks: [isolated]
+  seed:
+    <<: *app
+  runner:
+    <<: *python
+    command: python -m cloud.entry expanded.init_db
+  original:
+    <<: *app
+    ports: ['${SERVER_PRIVATE_IP:?set SERVER_PRIVATE_IP}:18000:8000']
+    environment:
+      <<: *env
+      DATABASE_URL: postgresql+asyncpg://thesis:${DB_PASSWORD}@db:5432/thesis_exp_original
+      DATABASE_SYNC_URL: postgresql+psycopg://thesis:${DB_PASSWORD}@db:5432/thesis_exp_original
+      THESIS_VARIANT: original
+  optimized:
+    <<: *app
+    ports: ['${SERVER_PRIVATE_IP:?set SERVER_PRIVATE_IP}:18001:8000']
+    environment:
+      <<: *env
+      DATABASE_URL: postgresql+asyncpg://thesis:${DB_PASSWORD}@db:5432/thesis_exp_optimized
+      DATABASE_SYNC_URL: postgresql+psycopg://thesis:${DB_PASSWORD}@db:5432/thesis_exp_optimized
+      THESIS_VARIANT: optimized
+  projection:
+    <<: *app
+    ports: ['${SERVER_PRIVATE_IP:?set SERVER_PRIVATE_IP}:18002:8000']
+    environment:
+      <<: *env
+      DATABASE_URL: postgresql+asyncpg://thesis:${DB_PASSWORD}@db:5432/thesis_exp_projection
+      DATABASE_SYNC_URL: postgresql+psycopg://thesis:${DB_PASSWORD}@db:5432/thesis_exp_projection
+      THESIS_VARIANT: projection
+  worker:
+    <<: *python
+    command: python -m expanded.worker
+    environment:
+      <<: *env
+      DATABASE_URL: postgresql+asyncpg://thesis:${DB_PASSWORD}@db:5432/thesis_exp_projection
+      DATABASE_SYNC_URL: postgresql+psycopg://thesis:${DB_PASSWORD}@db:5432/thesis_exp_projection
+volumes:
+  cloud_db:
+networks:
+  isolated:
+    internal: true
+  access: {}

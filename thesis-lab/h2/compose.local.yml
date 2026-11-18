@@ -1,0 +1,34 @@
+services:
+  coordinator:
+    image: firefly-thesis/h2-cpu:20261005-v1
+    command: ["uvicorn", "h2.coordinator:app", "--host", "0.0.0.0", "--port", "8080", "--log-level", "warning"]
+    cpus: 1
+    mem_limit: 1g
+    environment:
+      H2_API_TOKEN: ${H2_API_TOKEN:?}
+    ports:
+      - "127.0.0.1:18082:8080"
+    volumes:
+      - data:/data
+    networks: [bench, access]
+  worker:
+    image: firefly-thesis/h2-cpu:20261005-v1
+    cpus: 3
+    mem_limit: 5g
+    environment:
+      H2_API_TOKEN: ${H2_API_TOKEN:?}
+      H2_COORDINATOR: http://coordinator:8080
+    networks: [bench]
+    profiles: [worker]
+networks:
+  access:
+    ipam:
+      config:
+        - subnet: 10.253.221.0/24
+  bench:
+    internal: true
+    ipam:
+      config:
+        - subnet: 10.253.219.0/24
+volumes:
+  data:

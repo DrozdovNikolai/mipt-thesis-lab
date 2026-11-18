@@ -1,0 +1,38 @@
+{
+  "firefly-backend": {
+    "files_unchanged": true,
+    "head_unchanged": true,
+    "branch_unchanged": true,
+    "status_unchanged": true,
+    "changed_paths": [],
+    "head": "5924ad836455fe90f5fe9e34d4981c84f67ce1c8",
+    "branch": "ff-neg-ob"
+  },
+  "firefly-instructor": {
+    "files_unchanged": true,
+    "head_unchanged": true,
+    "branch_unchanged": true,
+    "status_unchanged": true,
+    "changed_paths": [],
+    "head": "3da730648d7d314d8d348cf01071691252b0662f",
+    "branch": "ff-neg-ob"
+  },
+  "firefly-commander": {
+    "files_unchanged": true,
+    "head_unchanged": true,
+    "branch_unchanged": true,
+    "status_unchanged": true,
+    "changed_paths": [],
+    "head": "e230b700b53820286bb923e3c968e86d5c61cbe4",
+    "branch": "ff-neg-ob"
+  },
+  "firefly-session": {
+    "files_unchanged": true,
+    "head_unchanged": true,
+    "branch_unchanged": true,
+    "status_unchanged": true,
+    "changed_paths": [],
+    "head": "ac6e386577b075081f8e92836ebc9a50deb53ea7",
+    "branch": "ff-neg-ob"
+  }
+}

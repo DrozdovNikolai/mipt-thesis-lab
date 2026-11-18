@@ -1,0 +1,301 @@
+diff --git a/lib/thesis_harness.dart b/lib/thesis_harness.dart
+new file mode 100644
+index 0000000..a28840c
+--- /dev/null
++++ b/lib/thesis_harness.dart
+@@ -0,0 +1,295 @@
++// Browser harness around real Instructor controllers and IndexedDB. No mocked HTTP or storage.
++import 'dart:async';
++import 'dart:convert';
++import 'dart:html' as html;
++import 'dart:js' as js;
++import 'package:flutter/material.dart';
++import 'package:http/http.dart' as http;
++import 'package:uuid/uuid.dart';
++import 'app_state.dart';
++import 'auth/backend_auth/backend_auth_models.dart';
++import 'auth/backend_auth/backend_auth_service.dart';
++import 'auth/backend_auth/backend_user_provider.dart';
++import 'custom_code/actions/background_work_coordinator.dart';
++import 'custom_code/actions/training_draft_controller.dart';
++import 'custom_code/actions/training_draft_sqlite_store.dart';
++import 'custom_code/actions/training_runtime_controller.dart';
++import 'custom_code/actions/training_runtime_canonical.dart';
++
++const proxy = 'http://127.0.0.1:14601';
++late SqliteTrainingDraftStore store;
++Map<String, dynamic> fixture = {};
++String owner = '';
++String training = '';
++final draftController = TrainingDraftController.instance;
++final runtimeController = TrainingRuntimeController.instance;
++final status = ValueNotifier<String>('Ready');
++
++Map<String, String> get headers => {
++      'Authorization': 'Bearer ${fixture['accessToken']}',
++      'Content-Type': 'application/json'
++    };
++
++void stopBackground() {
++  draftController.shutdownBackgroundProcessing();
++  runtimeController.shutdownBackgroundProcessing();
++  BackgroundWorkCoordinator.instance.stop();
++}
++
++Future<Map<String, dynamic>> wire(String method, String path,
++    [Map<String, dynamic>? body]) async {
++  final request = http.Request(method, Uri.parse('$proxy$path'))
++    ..headers.addAll(headers);
++  if (body != null) request.body = jsonEncode(body);
++  final response = await http.Response.fromStream(await request.send());
++  if (response.statusCode < 200 || response.statusCode >= 300) {
++    throw StateError('$method $path: ${response.statusCode} ${response.body}');
++  }
++  return Map<String, dynamic>.from(jsonDecode(response.body));
++}
++
++void authenticateLocal() {
++  final profile = BackendUserProfile.fromJson(
++      Map<String, dynamic>.from(fixture['profile']));
++  owner = profile.id;
++  training = (fixture['trainingId'] ?? '').toString();
++  currentUser = FireflyInstructorBackendUser(profile);
++  BackendAuthService.instance.configureForTesting(
++      tokens: BackendTokenPair(
++          accessToken: fixture['accessToken'],
++          refreshToken: fixture['refreshToken']),
++      profile: profile);
++  draftController.overrideStoreForTest(store);
++}
++
++Future<Map<String, dynamic>> localState() async {
++  if (training.isEmpty) return {'trainingId': ''};
++  final draft = await store.loadLocalDraftByTrainingId(
++      ownerUid: owner, trainingId: training);
++  final runtime =
++      await store.loadTrainingRuntime(ownerUid: owner, trainingId: training);
++  final pending =
++      await store.currentDraftSync(ownerUid: owner, trainingId: training);
++  final submit =
++      await store.loadSubmitIntent(ownerUid: owner, trainingId: training);
++  return {
++    'trainingId': training,
++    'writer': await store.getOrCreateWriterInstanceId(),
++    'participants': draft?['participants'],
++    'revision': draft?['draftRevision'],
++    'runtimeOutbox':
++        await store.countRuntimeOutbox(ownerUid: owner, trainingId: training),
++    'pendingDraft': pending != null,
++    'sequence': runtime?.lastLocalSequence,
++    'submitPending': submit?.deliveryPending,
++    'submitError': submit?.lastError,
++    'submitState': submit?.state,
++    'submitAttempts': submit?.attempts,
++    'receiptAccepted': submit?.receiptAccepted,
++    'runtimeError': runtimeController.lastError,
++  };
++}
++
++Future<Map<String, dynamic>> setup() async {
++  final auth = await http.post(Uri.parse('$proxy/api/auth/login'),
++      headers: {'Content-Type': 'application/json'},
++      body: jsonEncode({'login': 'admin', 'password': 'admin123'}));
++  if (auth.statusCode != 200) throw StateError(auth.body);
++  fixture = Map<String, dynamic>.from(jsonDecode(auth.body));
++  fixture['profile'] = await wire('GET', '/api/auth/me');
++  authenticateLocal();
++  final data = await wire('POST', '/_expanded/h1/fixture', {});
++  final writer = await store.getOrCreateWriterInstanceId();
++  final creationId = const Uuid().v7();
++  final request = <String, dynamic>{
++    'scenarioDayModuleId': data['scenarioDayModuleId'],
++    'cm1Id': data['cm1Id'],
++    'cm2Id': data['cm2Id'],
++    'clientCreationId': creationId,
++    'writerInstanceId': writer,
++    'runtimeClientCapabilities': {
++      'liveCrewSwapVersions': [1],
++      'quickCommentVersions': [1],
++      'transactionalStore': 'INDEXED_DB',
++      'offlineDurabilityReady': await store.isDurableRuntimeAvailable()
++    },
++  };
++  await store.prepareOrReuseCreationIntent(
++      ownerUid: owner,
++      request: request,
++      requestHash: canonicalRuntimeHash(request),
++      writerInstanceId: writer);
++  final response = await wire('POST', '/api/training/trainings', request);
++  training = response['trainingId'].toString();
++  fixture.addAll(data);
++  fixture['trainingId'] = training;
++  html.window.localStorage['firefly-thesis-fixture'] = jsonEncode(fixture);
++  await store.recordCreationResponse(
++      ownerUid: owner, clientCreationId: creationId, response: response);
++  final draft = <String, dynamic>{
++    'schemaVersion': 3,
++    'draftRevision': 1,
++    'trainingId': training,
++    'ownerUid': owner,
++    'submitted': false,
++    'trainingActivated': true,
++    'scenarioDayModuleId': data['scenarioDayModuleId'].toString(),
++    'scenarioName': 'Thesis browser training',
++    'cm1Id': data['cm1Id'].toString(),
++    'cm2Id': data['cm2Id'].toString(),
++    'cm1AssessmentId': response['cm1AssessmentId'].toString(),
++    'cm2AssessmentId': response['cm2AssessmentId'].toString(),
++    'commentContractVersion': 1,
++    'quickCommentsEntitled': true,
++    'competenciesIndicators': {
++      'items': [],
++      'evaluationCatalog': response['evaluationCatalog'],
++      'evaluationCatalogSha256': response['evaluationCatalogSha256']
++    },
++    'exercises': [],
++    'exerciseData': [],
++    'exerciseTimers': [],
++    'participants': [
++      for (final slot in ['CM1', 'CM2'])
++        {
++          'initialCrewSlot': slot,
++          'grades': <String, dynamic>{data['competenceId'].toString(): '4'},
++          'summary': 'Synthetic initial assessment for $slot',
++          'result': true,
++          'mistakeReports': <dynamic>[],
++          'quickComments': <dynamic>[],
++        }
++    ],
++  };
++  await store.linkCreatedTraining(
++      ownerUid: owner,
++      clientCreationId: creationId,
++      response: response,
++      draftPayload: draft);
++  await resume();
++  return localState();
++}
++
++Future<void> resume() async {
++  final local = await store.loadLocalDraftByTrainingId(
++      ownerUid: owner, trainingId: training);
++  if (local == null) throw StateError('Durable draft missing');
++  await draftController.restoreRecoverableDraft(
++      RecoverableTrainingDraft(snapshot: local, source: 'local'));
++  await runtimeController.initializeForTraining(
++      trainingId: training, force: true);
++  stopBackground();
++}
++
++Future<Map<String, dynamic>> dispatch(Map<String, dynamic> request) async {
++  switch (request['op']) {
++    case 'setup':
++      return setup();
++    case 'state':
++      return localState();
++    case 'resume':
++      await resume();
++      return localState();
++    case 'edit':
++      await draftController.updateParticipant(
++          initialSlot: 'CM1',
++          fields: {'summary': request['text'], 'result': true});
++      for (var i = 0; i < (request['swaps'] ?? 1); i++) {
++        await runtimeController.swapCrew();
++        stopBackground();
++      }
++      stopBackground();
++      return localState();
++    case 'trySync':
++      String error = '';
++      try {
++        await runtimeController.syncRuntimeOnce(trainingId: training);
++      } catch (e) {
++        error = e.toString();
++      }
++      stopBackground();
++      return {...await localState(), 'attemptError': error};
++    case 'flush':
++      final until = DateTime.now().add(const Duration(seconds: 45));
++      while (DateTime.now().isBefore(until)) {
++        try {
++          await runtimeController.syncRuntimeOnce(trainingId: training);
++          await runtimeController.processPendingRuntimeWork();
++        } catch (_) {}
++        final state = await localState();
++        if (state['runtimeOutbox'] == 0 &&
++            state['pendingDraft'] == false &&
++            state['submitPending'] != true) {
++          stopBackground();
++          return state;
++        }
++        await Future<void>.delayed(const Duration(milliseconds: 250));
++      }
++      stopBackground();
++      throw StateError(
++          'Queues did not drain: ${jsonEncode(await localState())}');
++    case 'finalize':
++      final local = (await store.loadLocalDraftByTrainingId(
++          ownerUid: owner, trainingId: training))!;
++      final blocks = <Map<String, dynamic>>[
++        for (final raw in local['participants'] as List)
++          {
++            'assessmentId': int.parse(raw['assessmentId'].toString()),
++            'grades': raw['grades'],
++            'mistakeReports': <dynamic>[],
++            'unresolvedQuickComments': <dynamic>[],
++            'summary': raw['summary'] ?? '',
++            'result': true,
++          }
++      ];
++      await runtimeController.freezeAndSubmit(assessments: blocks);
++      stopBackground();
++      return dispatch({'op': 'flush'});
++    default:
++      throw ArgumentError('Unknown command');
++  }
++}
++
++Future<void> main() async {
++  WidgetsFlutterBinding.ensureInitialized();
++  await FFAppState().initializePersistedState();
++  final key = Uri.base.queryParameters['case'] ?? 'default';
++  store = SqliteTrainingDraftStore(
++      databaseName: 'thesis-$key.db', transactionalStoreKind: 'INDEXED_DB');
++  final saved = html.window.localStorage['firefly-thesis-fixture'];
++  if (saved != null) {
++    fixture = Map<String, dynamic>.from(jsonDecode(saved));
++    authenticateLocal();
++  }
++  js.context['fireflyThesis'] =
++      js.allowInterop((String message) => js.JsObject(js.context['Promise'], [
++            js.allowInterop((js.JsFunction resolve, js.JsFunction reject) {
++              (() async {
++                try {
++                  final request =
++                      Map<String, dynamic>.from(jsonDecode(message));
++                  status.value = request['op'];
++                  final result = await dispatch(request);
++                  status.value = 'Ready';
++                  return jsonEncode({'ok': true, 'value': result});
++                } catch (e, st) {
++                  status.value = e.toString();
++                  return jsonEncode({
++                    'ok': false,
++                    'error': e.toString(),
++                    'stack': st.toString()
++                  });
++                }
++              })()
++                  .then((value) => resolve.apply([value]),
++                      onError: (Object e) => reject.apply([e.toString()]));
++            })
++          ]));
++  runApp(MaterialApp(
++      home: Scaffold(
++          body: Center(
++              child: ValueListenableBuilder<String>(
++                  valueListenable: status,
++                  builder: (context, value, child) =>
++                      Text('Instructor thesis harness: $value'))))));
++}

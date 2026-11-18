@@ -1,0 +1,10 @@
+{
+  "run": "main-20260916T130741Z-all",
+  "unchanged_since_start": true,
+  "candidate_commits": {
+    "firefly-backend": "27996899a5ede511247a1b3063dee393c9adcc23",
+    "firefly-instructor": "cd4b3fc788a8a084750131a62054eac45421dbc1",
+    "firefly-commander": "67abbb6b46b58087d7ca926ce02b90f6b46df2f1",
+    "firefly-session": "d411e6009aafa4bbd3e979877b0ec1f2b1d6c400"
+  }
+}

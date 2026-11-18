@@ -1,0 +1,543 @@
+diff --git a/app/modules/commander/analytics_projection.py b/app/modules/commander/analytics_projection.py
+new file mode 100644
+index 0000000..3e7960b
+--- /dev/null
++++ b/app/modules/commander/analytics_projection.py
+@@ -0,0 +1,238 @@
++"""Experimental read model for competency grade distribution.
++
++Opt-in installation only. Source writes and dirty-pilot publication share the
++PostgreSQL transaction. A worker rebuilds only affected pilots, retaining dated
++facts for as-of queries. Existing user/tenant filters remain authoritative.
++"""
++
++from __future__ import annotations
++
++from datetime import date, datetime, time, timedelta, UTC
++from sqlalchemy import (
++    BigInteger,
++    DateTime,
++    String,
++    Numeric,
++    MetaData,
++    Table,
++    Column,
++    select,
++    func,
++    literal,
++    text,
++)
++
++metadata = MetaData()
++facts = Table(
++    "commander_assessment_fact",
++    metadata,
++    Column("assessment_id", BigInteger, primary_key=True),
++    Column("user_id", BigInteger),
++    Column("training_id", BigInteger),
++    Column("effective_at", DateTime(timezone=True)),
++    Column("assessment_created_at", DateTime(timezone=True)),
++)
++latest = Table(
++    "commander_latest_assessment",
++    metadata,
++    Column("user_id", BigInteger, primary_key=True),
++    Column("assessment_id", BigInteger),
++)
++grades = Table(
++    "commander_grade_fact",
++    metadata,
++    Column("assessment_id", BigInteger, primary_key=True),
++    Column("competence_id", BigInteger, primary_key=True),
++    Column("grade_code", String),
++    Column("grade_label", String),
++    Column("grade_score_numeric", Numeric),
++    Column("grade_color_hex", String),
++)
++
++DDL = [
++    """CREATE TABLE IF NOT EXISTS commander_dirty_pilot (
++       user_id bigint PRIMARY KEY, changed_at timestamptz NOT NULL DEFAULT clock_timestamp())""",
++    """CREATE TABLE IF NOT EXISTS commander_assessment_fact (
++       assessment_id bigint PRIMARY KEY, user_id bigint NOT NULL, training_id bigint NOT NULL,
++       effective_at timestamptz NOT NULL, assessment_created_at timestamptz NOT NULL)""",
++    """CREATE INDEX IF NOT EXISTS commander_fact_user_date ON commander_assessment_fact
++       (user_id,effective_at DESC,assessment_created_at DESC,assessment_id DESC)""",
++    """CREATE TABLE IF NOT EXISTS commander_latest_assessment (user_id bigint PRIMARY KEY, assessment_id bigint NOT NULL)""",
++    """CREATE TABLE IF NOT EXISTS commander_grade_fact (
++       assessment_id bigint NOT NULL REFERENCES commander_assessment_fact(assessment_id) ON DELETE CASCADE,
++       competence_id bigint NOT NULL, grade_code text,grade_label text,grade_score_numeric numeric,
++       grade_color_hex text, PRIMARY KEY(assessment_id,competence_id))""",
++    """CREATE OR REPLACE FUNCTION commander_mark_dirty(pilot bigint) RETURNS void LANGUAGE plpgsql AS $$
++       BEGIN
++         IF pilot IS NOT NULL THEN
++           INSERT INTO commander_dirty_pilot(user_id) VALUES(pilot)
++           ON CONFLICT(user_id) DO UPDATE SET changed_at=LEAST(commander_dirty_pilot.changed_at,EXCLUDED.changed_at);
++         END IF;
++       END $$""",
++    """CREATE OR REPLACE FUNCTION commander_source_changed() RETURNS trigger LANGUAGE plpgsql AS $$
++       DECLARE pilot bigint;
++       BEGIN
++         IF TG_TABLE_NAME='crew_member_assessment' THEN
++           IF TG_OP <> 'INSERT' THEN PERFORM commander_mark_dirty(OLD.user_id); END IF;
++           IF TG_OP <> 'DELETE' THEN PERFORM commander_mark_dirty(NEW.user_id); END IF;
++         ELSIF TG_TABLE_NAME='final_report' THEN
++           IF TG_OP <> 'INSERT' THEN
++             SELECT user_id INTO pilot FROM crew_member_assessment WHERE id=OLD.assessment_id;
++             PERFORM commander_mark_dirty(pilot);
++           END IF;
++           IF TG_OP <> 'DELETE' THEN
++             SELECT user_id INTO pilot FROM crew_member_assessment WHERE id=NEW.assessment_id;
++             PERFORM commander_mark_dirty(pilot);
++           END IF;
++         ELSE
++           FOR pilot IN SELECT DISTINCT user_id FROM crew_member_assessment WHERE training_session_id=OLD.id LOOP
++             PERFORM commander_mark_dirty(pilot);
++           END LOOP;
++         END IF;
++         IF TG_OP='DELETE' THEN RETURN OLD; END IF;
++         RETURN NEW;
++       END $$""",
++]
++
++
++async def install(session):
++    for statement in DDL:
++        await session.execute(text(statement))
++    for table, events in [
++        ("crew_member_assessment", "INSERT OR UPDATE OR DELETE"),
++        ("final_report", "INSERT OR UPDATE OR DELETE"),
++        ("training_session", "UPDATE OR DELETE"),
++    ]:
++        await session.execute(text(f"DROP TRIGGER IF EXISTS commander_dirty ON {table}"))
++        await session.execute(
++            text(
++                f"CREATE TRIGGER commander_dirty BEFORE {events} ON {table} "
++                "FOR EACH ROW EXECUTE FUNCTION commander_source_changed()"
++            )
++        )
++    await session.commit()
++
++
++async def enqueue_rebuild(session):
++    # Also rebuild/remove pilots no longer present in source.
++    await session.execute(
++        text(
++            """INSERT INTO commander_dirty_pilot(user_id)
++        SELECT user_id FROM crew_member_assessment WHERE user_id IS NOT NULL
++        UNION SELECT user_id FROM commander_assessment_fact
++        ON CONFLICT(user_id) DO NOTHING"""
++        )
++    )
++    await session.commit()
++
++
++async def process_batch(session, limit=100):
++    """One atomic, restart-safe batch. Concurrent source writes re-enqueue pilots."""
++    rows = (
++        await session.execute(
++            text(
++                """SELECT user_id,changed_at FROM commander_dirty_pilot
++        ORDER BY user_id LIMIT :limit FOR UPDATE SKIP LOCKED"""
++            ),
++            {"limit": limit},
++        )
++    ).all()
++    if not rows:
++        await session.commit()
++        return []
++    ids = [r.user_id for r in rows]
++    params = {"ids": ids}
++    await session.execute(
++        text("DELETE FROM commander_assessment_fact WHERE user_id=ANY(:ids)"), params
++    )
++    await session.execute(
++        text("DELETE FROM commander_latest_assessment WHERE user_id=ANY(:ids)"), params
++    )
++    await session.execute(
++        text(
++            """INSERT INTO commander_assessment_fact
++        SELECT a.id,a.user_id,t.id,coalesce(t.completed_at,t.updated_at,t.created_at),a.created_at
++        FROM crew_member_assessment a JOIN training_session t ON t.id=a.training_session_id
++        WHERE a.user_id=ANY(:ids) AND t.status='COMPLETED' """
++        ),
++        params,
++    )
++    await session.execute(
++        text(
++            """INSERT INTO commander_latest_assessment
++        SELECT DISTINCT ON(user_id) user_id,assessment_id FROM commander_assessment_fact
++        WHERE user_id=ANY(:ids)
++        ORDER BY user_id,effective_at DESC,assessment_created_at DESC,assessment_id DESC"""
++        ),
++        params,
++    )
++    await session.execute(
++        text(
++            """INSERT INTO commander_grade_fact
++        SELECT DISTINCT ON(r.assessment_id,r.competence_id)
++          r.assessment_id,r.competence_id,coalesce(r.grade_code_snapshot,r.grade),
++          r.grade_label_snapshot,r.grade_score_snapshot,r.grade_color_hex_snapshot
++        FROM final_report r JOIN commander_assessment_fact a ON a.assessment_id=r.assessment_id
++        WHERE a.user_id=ANY(:ids)
++        ORDER BY r.assessment_id,r.competence_id,r.updated_at DESC,r.created_at DESC,r.id DESC"""
++        ),
++        params,
++    )
++    await session.execute(text("DELETE FROM commander_dirty_pilot WHERE user_id=ANY(:ids)"), params)
++    await session.commit()
++    # Both timestamps come from PostgreSQL; host/container clocks may differ.
++    now = await session.scalar(text("SELECT clock_timestamp()"))
++    await session.commit()
++    return [
++        {
++            "user_id": r.user_id,
++            "queue_age_ms": (now - r.changed_at).total_seconds() * 1000,
++        }
++        for r in rows
++    ]
++
++
++def latest_assessments(filtered_pilot_ids, as_of_date: date | None):
++    if as_of_date is None:
++        return (
++            select(latest.c.user_id.label("pilot_id"), latest.c.assessment_id)
++            .join(filtered_pilot_ids, filtered_pilot_ids.c.pilot_id == latest.c.user_id)
++            .subquery("latest_assessments")
++        )
++    boundary = datetime.combine(as_of_date + timedelta(days=1), time.min, tzinfo=UTC)
++    ranked = (
++        select(
++            facts.c.user_id.label("pilot_id"),
++            facts.c.assessment_id,
++            func.row_number()
++            .over(
++                partition_by=facts.c.user_id,
++                order_by=(
++                    facts.c.effective_at.desc(),
++                    facts.c.assessment_created_at.desc(),
++                    facts.c.assessment_id.desc(),
++                ),
++            )
++            .label("rn"),
++        )
++        .join(filtered_pilot_ids, filtered_pilot_ids.c.pilot_id == facts.c.user_id)
++        .where(facts.c.effective_at < boundary)
++        .subquery()
++    )
++    return (
++        select(ranked.c.pilot_id, ranked.c.assessment_id)
++        .where(ranked.c.rn == 1)
++        .subquery("latest_assessments")
++    )
++
++
++def latest_grades(assessments, airline_id):
++    from app.modules.training.models import Competence
++
++    return (
++        select(*grades.c, literal(1).label("rn"))
++        .join(assessments, assessments.c.assessment_id == grades.c.assessment_id)
++        .join(Competence, Competence.id == grades.c.competence_id)
++        .where(Competence.airline_id == airline_id)
++        .subquery("latest_final_reports_ranked")
++    )
+diff --git a/app/modules/commander/service.py b/app/modules/commander/service.py
+index c2f1fc7..5e0cfa6 100644
+--- a/app/modules/commander/service.py
++++ b/app/modules/commander/service.py
+@@ -2857,6 +2857,7 @@ async def get_airline_competency_grade_distribution(
+     age_to_years: int | None,
+     position_id: int | None,
+     as_of_date: date | None,
++    use_projection: bool = False,
+ ) -> dict[str, object]:
+     filtered_pilot_ids = _build_filtered_pilot_ids_subquery(
+         airline_id=airline_id,
+@@ -2869,10 +2870,13 @@ async def get_airline_competency_grade_distribution(
+ 
+     total_pilots = await session.scalar(select(func.count()).select_from(filtered_pilot_ids))
+ 
+-    latest_assessments = _build_latest_assessments_subquery(
+-        filtered_pilot_ids,
+-        as_of_date=as_of_date,
+-    )
++    if use_projection:
++        from app.modules.commander import analytics_projection
++        latest_assessments = analytics_projection.latest_assessments(filtered_pilot_ids, as_of_date)
++    else:
++        latest_assessments = _build_latest_assessments_subquery(
++            filtered_pilot_ids, as_of_date=as_of_date,
++        )
+ 
+     pilots_with_completed_training = await session.scalar(
+         select(func.count()).select_from(latest_assessments)
+@@ -2894,10 +2898,12 @@ async def get_airline_competency_grade_distribution(
+         session,
+         airline_id=airline_id,
+     )
+-    latest_final_reports_ranked = _build_latest_final_reports_ranked_subquery(
+-        latest_assessments=latest_assessments,
+-        airline_id=airline_id,
+-    )
++    if use_projection:
++        latest_final_reports_ranked = analytics_projection.latest_grades(latest_assessments, airline_id)
++    else:
++        latest_final_reports_ranked = _build_latest_final_reports_ranked_subquery(
++            latest_assessments=latest_assessments, airline_id=airline_id,
++        )
+ 
+     aggregated_rows = (
+         await session.execute(
+diff --git a/tests/test_commander_analytics_projection.py b/tests/test_commander_analytics_projection.py
+new file mode 100644
+index 0000000..349e15a
+--- /dev/null
++++ b/tests/test_commander_analytics_projection.py
+@@ -0,0 +1,246 @@
++from datetime import UTC, date, datetime, timedelta
++import asyncio
++
++import pytest
++from sqlalchemy import text
++from sqlalchemy.ext.asyncio import async_sessionmaker
++from app.modules.commander import analytics_projection as p
++from app.modules.commander.service import (
++    get_airline_competency_grade_distribution as distribution,
++)
++from app.modules.training import models as m
++from app.modules.training.assessment_models import (
++    TrainingSession,
++    CrewMemberAssessment,
++    FinalReport,
++)
++from app.modules.users.models import User, UserAircraft
++
++
++async def seed(s):
++    airline = m.Airline(code="TP", name="Projection test", active=True)
++    other = m.Airline(code="TP2", name="Other tenant", active=True)
++    s.add_all([airline, other])
++    await s.flush()
++    aircraft = m.AircraftAirline(airline_id=airline.id, code="A320")
++    scheme = m.GradingScheme(airline_id=airline.id, name="Test", version=1, is_active=True)
++    comp = m.Competence(airline_id=airline.id, code="TEST", name="Test competence")
++    users = [
++        User(
++            airline_id=a.id,
++            login=f"pilot{i}",
++            email=f"p{i}@example.com",
++            hashed_password="!",
++        )
++        for i, a in enumerate((airline, airline, other))
++    ]
++    s.add_all([aircraft, scheme, comp, *users])
++    await s.flush()
++    s.add_all([UserAircraft(user_id=u.id, aircraft_id=aircraft.id) for u in users])
++    trainings = []
++    assessments = []
++    for i in range(6):
++        ts = datetime(2020, 1, 1, tzinfo=UTC) + timedelta(days=i)
++        t = TrainingSession(
++            grading_scheme_id=scheme.id,
++            status="COMPLETED",
++            completed_at=ts,
++            created_at=ts,
++            updated_at=ts,
++        )
++        s.add(t)
++        await s.flush()
++        trainings.append(t)
++        a = CrewMemberAssessment(
++            training_session_id=t.id,
++            user_id=users[i % 3].id,
++            training_role="cm1",
++            created_at=ts,
++        )
++        s.add(a)
++        await s.flush()
++        assessments.append(a)
++        s.add(
++            FinalReport(
++                assessment_id=a.id,
++                competence_id=comp.id,
++                grade=str(i % 4 + 1),
++                grade_code_snapshot=str(i % 4 + 1),
++                created_at=ts,
++                updated_at=ts,
++            )
++        )
++    await s.commit()
++    await p.install(s)
++    await p.enqueue_rebuild(s)
++    while await p.process_batch(s):
++        pass
++    return airline, other, users, comp, trainings, assessments
++
++
++async def check(s, aid, **filters):
++    kwargs = dict(
++        airline_id=aid,
++        pilot_public_id=None,
++        aircraft_id=None,
++        age_from_years=None,
++        age_to_years=None,
++        position_id=None,
++        as_of_date=None,
++    )
++    kwargs.update(filters)
++    a = await distribution(s, **kwargs)
++    b = await distribution(s, **kwargs, use_projection=True)
++    assert a == b
++    return b
++
++
++@pytest.mark.asyncio
++async def test_projection_preserves_tenant_latest_and_asof(db_session):
++    aid, other, users, comp, ts, ass = await seed(db_session)
++    result = await check(db_session, aid.id)
++    assert result["total_pilots"] == 2
++    assert result["pilots_with_completed_training"] == 2
++    for cutoff in (date(2019, 12, 31), date(2020, 1, 2), date(2021, 1, 1)):
++        await check(db_session, aid.id, as_of_date=cutoff)
++    await check(db_session, other.id)
++
++
++@pytest.mark.asyncio
++async def test_projection_tracks_grade_correction_and_duplicate_delivery(db_session):
++    aid, other, users, comp, ts, ass = await seed(db_session)
++    s = db_session
++    await s.execute(
++        text("UPDATE final_report SET grade='4',grade_code_snapshot='4' WHERE assessment_id=:id"),
++        {"id": ass[4].id},
++    )
++    for _ in range(3):
++        await s.execute(text("SELECT commander_mark_dirty(:u)"), {"u": users[1].id})
++    await s.commit()
++    assert await s.scalar(text("SELECT count(*) FROM commander_dirty_pilot")) == 1
++    assert len(await p.process_batch(s)) == 1
++    assert await p.process_batch(s) == []
++    await check(s, aid.id)
++
++
++@pytest.mark.asyncio
++async def test_projection_retains_latest_report_tie_breaker(db_session):
++    aid, other, users, comp, ts, ass = await seed(db_session)
++    s = db_session
++    stamp = datetime(2020, 1, 10, tzinfo=UTC)
++    for grade in ("2", "3"):
++        s.add(
++            FinalReport(
++                assessment_id=ass[4].id,
++                competence_id=comp.id,
++                grade=grade,
++                created_at=stamp,
++                updated_at=stamp,
++            )
++        )
++    await s.commit()
++    await p.process_batch(s)
++    result = await check(s, aid.id)
++    assert any(
++        g["grade_code"] == "3" and g["pilot_count"] == 1 for g in result["items"][0]["grades"]
++    )
++
++
++@pytest.mark.asyncio
++async def test_projection_tracks_status_undo_and_cascade_deletion(db_session):
++    aid, other, users, comp, ts, ass = await seed(db_session)
++    s = db_session
++    await s.execute(
++        text("UPDATE training_session SET status='IN_PROGRESS' WHERE id=:id"),
++        {"id": ts[4].id},
++    )
++    await s.commit()
++    await p.process_batch(s)
++    await check(s, aid.id)
++    await s.execute(text("DELETE FROM training_session WHERE id=:id"), {"id": ts[3].id})
++    await s.commit()
++    await p.process_batch(s)
++    await check(s, aid.id)
++    await p.enqueue_rebuild(s)
++    while await p.process_batch(s):
++        pass
++    await check(s, aid.id)
++
++
++@pytest.mark.asyncio
++async def test_projection_source_rollback_publishes_no_work(db_session):
++    aid, other, users, comp, ts, ass = await seed(db_session)
++    s = db_session
++    a_id = aid.id
++    await s.execute(text("UPDATE final_report SET grade='4'"))
++    await s.rollback()
++    assert await s.scalar(text("SELECT count(*) FROM commander_dirty_pilot")) == 0
++    await check(s, a_id)
++
++
++@pytest.mark.asyncio
++async def test_projection_worker_failure_rolls_back_facts_and_retains_queue(
++    db_session, monkeypatch
++):
++    aid, other, users, comp, ts, ass = await seed(db_session)
++    s = db_session
++    a_id = aid.id
++    await s.execute(text("UPDATE final_report SET grade='4',grade_code_snapshot='4'"))
++    await s.commit()
++    old = await s.scalar(text("SELECT count(*) FROM commander_grade_fact"))
++
++    async def fail():
++        raise RuntimeError("Injected crash before commit")
++
++    with monkeypatch.context() as patch:
++        patch.setattr(s, "commit", fail)
++        with pytest.raises(RuntimeError, match="Injected crash"):
++            await p.process_batch(s)
++    await s.rollback()
++    assert await s.scalar(text("SELECT count(*) FROM commander_grade_fact")) == old
++    assert await s.scalar(text("SELECT count(*) FROM commander_dirty_pilot")) == 3
++    await p.process_batch(s)
++    await check(s, a_id)
++
++
++@pytest.mark.asyncio
++async def test_concurrent_source_write_is_not_erased_by_worker_ack(db_session):
++    aid, other, users, comp, ts, ass = await seed(db_session)
++    airline_id, assessment_id = aid.id, ass[4].id
++    await db_session.execute(
++        text("UPDATE final_report SET grade='2',grade_code_snapshot='2' WHERE assessment_id=:a"),
++        {'a': assessment_id},
++    )
++    await db_session.commit()
++    factory = async_sessionmaker(db_session.bind, expire_on_commit=False)
++    reached, release = asyncio.Event(), asyncio.Event()
++    async with factory() as worker:
++        commit = worker.commit
++
++        async def delayed_commit():
++            reached.set()
++            await release.wait()
++            await commit()
++
++        worker.commit = delayed_commit
++        task = asyncio.create_task(p.process_batch(worker))
++        await asyncio.wait_for(reached.wait(), 10)
++
++        async def later_write():
++            async with factory() as source:
++                await source.execute(
++                    text(
++                        "UPDATE final_report SET grade='3',grade_code_snapshot='3' WHERE assessment_id=:a"
++                    ),
++                    {'a': assessment_id},
++                )
++                await source.commit()
++
++        write_task = asyncio.create_task(later_write())
++        await asyncio.sleep(0.05)
++        release.set()
++        await asyncio.wait_for(task, 10)
++        await asyncio.wait_for(write_task, 10)
++    assert await db_session.scalar(text('SELECT count(*) FROM commander_dirty_pilot')) == 1
++    await p.process_batch(db_session)
++    await check(db_session, airline_id)

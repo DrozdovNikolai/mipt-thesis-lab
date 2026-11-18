@@ -1,0 +1,369 @@
+diff --git a/app/modules/commander/analytics_optimized.py b/app/modules/commander/analytics_optimized.py
+new file mode 100644
+index 0000000..4d09416
+--- /dev/null
++++ b/app/modules/commander/analytics_optimized.py
+@@ -0,0 +1,88 @@
++"""Opt-in source-table alternative: covering indexes and DISTINCT ON, no read model."""
++
++from sqlalchemy import select, func, literal, text
++from app.modules.training.assessment_models import (
++    TrainingSession,
++    CrewMemberAssessment,
++    FinalReport,
++)
++from app.modules.training.models import Competence
++
++
++INDEXES = [
++    "CREATE INDEX IF NOT EXISTS thesis_assessment_user_training ON crew_member_assessment(user_id,training_session_id,created_at DESC,id DESC)",
++    "CREATE INDEX IF NOT EXISTS thesis_completed_training ON training_session((coalesce(completed_at,updated_at,created_at)) DESC,id) WHERE status='COMPLETED'",
++    """CREATE INDEX IF NOT EXISTS thesis_latest_report ON final_report
++    (assessment_id,competence_id,updated_at DESC,created_at DESC,id DESC)
++    INCLUDE(grade,grade_code_snapshot,grade_label_snapshot,grade_score_snapshot,grade_color_hex_snapshot)""",
++]
++
++
++async def install(session):
++    for ddl in INDEXES:
++        await session.execute(text(ddl))
++    await session.execute(text("ANALYZE"))
++    await session.commit()
++
++
++def latest_assessments(filtered_pilot_ids, as_of_date=None):
++    from app.modules.commander.service import _as_of_date_exclusive_bound
++
++    effective = func.coalesce(
++        TrainingSession.completed_at,
++        TrainingSession.updated_at,
++        TrainingSession.created_at,
++    )
++    q = (
++        select(
++            CrewMemberAssessment.user_id.label("pilot_id"),
++            CrewMemberAssessment.id.label("assessment_id"),
++        )
++        .join(
++            TrainingSession,
++            TrainingSession.id == CrewMemberAssessment.training_session_id,
++        )
++        .join(
++            filtered_pilot_ids,
++            filtered_pilot_ids.c.pilot_id == CrewMemberAssessment.user_id,
++        )
++        .where(TrainingSession.status == "COMPLETED")
++        .distinct(CrewMemberAssessment.user_id)
++        .order_by(
++            CrewMemberAssessment.user_id,
++            effective.desc(),
++            CrewMemberAssessment.created_at.desc(),
++            CrewMemberAssessment.id.desc(),
++        )
++    )
++    if as_of_date is not None:
++        q = q.where(effective < _as_of_date_exclusive_bound(as_of_date))
++    return q.subquery("latest_assessments")
++
++
++def latest_grades(assessments, airline_id):
++    return (
++        select(
++            FinalReport.assessment_id,
++            FinalReport.competence_id,
++            func.coalesce(FinalReport.grade_code_snapshot, FinalReport.grade).label(
++                "grade_code"
++            ),
++            FinalReport.grade_label_snapshot.label("grade_label"),
++            FinalReport.grade_score_snapshot.label("grade_score_numeric"),
++            FinalReport.grade_color_hex_snapshot.label("grade_color_hex"),
++            literal(1).label("rn"),
++        )
++        .join(assessments, assessments.c.assessment_id == FinalReport.assessment_id)
++        .join(Competence, Competence.id == FinalReport.competence_id)
++        .where(Competence.airline_id == airline_id)
++        .distinct(FinalReport.assessment_id, FinalReport.competence_id)
++        .order_by(
++            FinalReport.assessment_id,
++            FinalReport.competence_id,
++            FinalReport.updated_at.desc(),
++            FinalReport.created_at.desc(),
++            FinalReport.id.desc(),
++        )
++        .subquery("latest_final_reports_ranked")
++    )
+diff --git a/app/modules/commander/service.py b/app/modules/commander/service.py
+index 5e0cfa6..71ef9c6 100644
+--- a/app/modules/commander/service.py
++++ b/app/modules/commander/service.py
+@@ -2858,6 +2858,7 @@ async def get_airline_competency_grade_distribution(
+     position_id: int | None,
+     as_of_date: date | None,
+     use_projection: bool = False,
++    use_optimized: bool = False,
+ ) -> dict[str, object]:
+     filtered_pilot_ids = _build_filtered_pilot_ids_subquery(
+         airline_id=airline_id,
+@@ -2873,6 +2874,9 @@ async def get_airline_competency_grade_distribution(
+     if use_projection:
+         from app.modules.commander import analytics_projection
+         latest_assessments = analytics_projection.latest_assessments(filtered_pilot_ids, as_of_date)
++    elif use_optimized:
++        from app.modules.commander import analytics_optimized
++        latest_assessments = analytics_optimized.latest_assessments(filtered_pilot_ids, as_of_date)
+     else:
+         latest_assessments = _build_latest_assessments_subquery(
+             filtered_pilot_ids, as_of_date=as_of_date,
+@@ -2900,6 +2904,8 @@ async def get_airline_competency_grade_distribution(
+     )
+     if use_projection:
+         latest_final_reports_ranked = analytics_projection.latest_grades(latest_assessments, airline_id)
++    elif use_optimized:
++        latest_final_reports_ranked = analytics_optimized.latest_grades(latest_assessments, airline_id)
+     else:
+         latest_final_reports_ranked = _build_latest_final_reports_ranked_subquery(
+             latest_assessments=latest_assessments, airline_id=airline_id,
+diff --git a/app/modules/training/services/exercises.py b/app/modules/training/services/exercises.py
+index 1da3921..9d382cb 100644
+--- a/app/modules/training/services/exercises.py
++++ b/app/modules/training/services/exercises.py
+@@ -578,7 +578,7 @@ async def create_exercise_service(
+     return serialize_exercise(exercise)
+ 
+ 
+-async def update_exercise_service(
++async def update_exercise_in_transaction(
+     exercise_id: int,
+     *,
+     payload: ExerciseUpdate,
+@@ -586,7 +586,8 @@ async def update_exercise_service(
+     client_session_id: str | None,
+     session: AsyncSession,
+     current_user: User,
+-) -> ExerciseRead:
++    apply_content_contract: bool = True,
++) -> int:
+     airline_id = ensure_airline(current_user)
+     aircraft_ids = resolve_aircraft_filter(current_user, None)
+     exercise = await session.get(
+@@ -639,13 +640,14 @@ async def update_exercise_service(
+         ):
+             raise ExerciseInvalidModuleError()
+ 
+-    await maybe_apply_legacy_content_mutation_contract(
+-        session,
+-        scenario_id=scenario_id,
+-        current_user=current_user,
+-        client_session_id=client_session_id,
+-        expected_version=expected_version,
+-    )
++    if apply_content_contract:
++        await maybe_apply_legacy_content_mutation_contract(
++            session,
++            scenario_id=scenario_id,
++            current_user=current_user,
++            client_session_id=client_session_id,
++            expected_version=expected_version,
++        )
+ 
+     if target_module_id is not None and target_module_id != exercise.module_id:
+         exercise.module_id = target_module_id
+@@ -675,7 +677,23 @@ async def update_exercise_service(
+         await replace_exercise_params(session, exercise, params_payload)
+     if exercise_kind_allows_competence_ids(target_kind) and competence_ids is not _UNSET:
+         await replace_exercise_competences(session, exercise, airline_id, competence_ids or [])
+-    exercise_id = exercise.id
++    await session.flush()
++    return int(exercise.id)
++
++
++async def update_exercise_service(
++    exercise_id: int,
++    *,
++    payload: ExerciseUpdate,
++    expected_version: int | None,
++    client_session_id: str | None,
++    session: AsyncSession,
++    current_user: User,
++) -> ExerciseRead:
++    exercise_id = await update_exercise_in_transaction(
++        exercise_id, payload=payload, expected_version=expected_version,
++        client_session_id=client_session_id, session=session, current_user=current_user,
++    )
+     await session.commit()
+     session.expire_all()
+     exercise = await get_exercise_for_read(session, exercise_id)
+diff --git a/app/modules/training/services/scenario_patch.py b/app/modules/training/services/scenario_patch.py
+new file mode 100644
+index 0000000..7cf38de
+--- /dev/null
++++ b/app/modules/training/services/scenario_patch.py
+@@ -0,0 +1,81 @@
++"""Experimental atomic exercise patch; same domain validation, lease and scenario CAS as snapshot."""
++
++from pydantic import Field
++from sqlalchemy import select
++from sqlalchemy.ext.asyncio import AsyncSession
++from app.schemas.api_model import ApiModel
++from app.modules.training import models
++from app.modules.training.access import ensure_airline, resolve_aircraft_filter
++from app.modules.training.errors import (
++    ExerciseInvalidModuleError,
++    ExerciseNotFoundError,
++)
++from app.modules.training.schemas import ExerciseUpdate
++from app.modules.training.services.content_mutations import (
++    maybe_apply_legacy_content_mutation_contract,
++)
++from app.modules.training.services.exercises import update_exercise_in_transaction
++from app.modules.training.services.scenarios import get_scenario
++from app.modules.users.models import User
++
++
++class ExercisePatch(ApiModel):
++    exercise_id: int
++    changes: ExerciseUpdate
++
++
++class ScenarioPatch(ApiModel):
++    expected_version: int = Field(ge=0)
++    edits: list[ExercisePatch] = Field(min_length=1, max_length=1000)
++
++
++async def apply_patch(
++    scenario_id: int,
++    payload: ScenarioPatch,
++    client_session_id: str,
++    session: AsyncSession,
++    user: User,
++):
++    await get_scenario(
++        session, scenario_id, ensure_airline(user), resolve_aircraft_filter(user, None)
++    )
++    ids = [e.exercise_id for e in payload.edits]
++    if len(ids) != len(set(ids)):
++        raise ExerciseInvalidModuleError()
++    actual = set(
++        (
++            await session.scalars(
++                select(models.Exercise.id)
++                .join(models.Module)
++                .where(
++                    models.Module.scenario_id == scenario_id,
++                    models.Exercise.id.in_(ids),
++                )
++            )
++        ).all()
++    )
++    if actual != set(ids):
++        raise ExerciseNotFoundError()
++    version = await maybe_apply_legacy_content_mutation_contract(
++        session,
++        scenario_id=scenario_id,
++        current_user=user,
++        client_session_id=client_session_id,
++        expected_version=payload.expected_version,
++    )
++    for edit in payload.edits:
++        await update_exercise_in_transaction(
++            edit.exercise_id,
++            payload=edit.changes,
++            expected_version=None,
++            client_session_id=None,
++            session=session,
++            current_user=user,
++            apply_content_contract=False,
++        )
++    await session.commit()
++    return {
++        "scenario_id": scenario_id,
++        "content_version": version,
++        "updated_exercise_ids": ids,
++    }
+diff --git a/tests/test_commander_analytics_optimized.py b/tests/test_commander_analytics_optimized.py
+new file mode 100644
+index 0000000..e6794d3
+--- /dev/null
++++ b/tests/test_commander_analytics_optimized.py
+@@ -0,0 +1,81 @@
++from datetime import date
++import pytest
++from sqlalchemy import text
++from app.modules.commander import analytics_optimized as opt
++from app.modules.commander.service import (
++    get_airline_competency_grade_distribution as distribution,
++)
++from tests.test_commander_analytics_projection import seed
++
++
++@pytest.mark.asyncio
++async def test_optimized_source_preserves_latest_asof_and_tenant(db_session):
++    aid, other, users, comp, ts, ass = await seed(db_session)
++    await opt.install(db_session)
++    for tenant in (aid.id, other.id):
++        for cutoff in (None, date(2019, 12, 31), date(2020, 1, 2), date(2021, 1, 1)):
++            kwargs = dict(
++                airline_id=tenant,
++                pilot_public_id=None,
++                aircraft_id=None,
++                age_from_years=None,
++                age_to_years=None,
++                position_id=None,
++                as_of_date=cutoff,
++            )
++            assert await distribution(db_session, **kwargs) == await distribution(
++                db_session, **kwargs, use_optimized=True
++            )
++    kwargs = dict(
++        airline_id=aid.id,
++        pilot_public_id=None,
++        aircraft_id=None,
++        age_from_years=None,
++        age_to_years=None,
++        position_id=None,
++        as_of_date=None,
++    )
++    result = await distribution(db_session, **kwargs, use_optimized=True)
++    assert result["pilots_with_completed_training"] == 2 and result["items"]
++    await db_session.execute(
++        text(
++            "UPDATE final_report SET grade='4',grade_code_snapshot='4' WHERE assessment_id=:a"
++        ),
++        {"a": ass[4].id},
++    )
++    await db_session.commit()
++    assert await distribution(db_session, **kwargs) == await distribution(
++        db_session, **kwargs, use_optimized=True
++    )
++
++
++@pytest.mark.asyncio
++async def test_optimized_source_handles_status_change_and_deletion_immediately(
++    db_session,
++):
++    aid, other, users, comp, ts, ass = await seed(db_session)
++    await opt.install(db_session)
++    kwargs = dict(
++        airline_id=aid.id,
++        pilot_public_id=None,
++        aircraft_id=None,
++        age_from_years=None,
++        age_to_years=None,
++        position_id=None,
++        as_of_date=None,
++    )
++    await db_session.execute(
++        text("UPDATE training_session SET status='IN_PROGRESS' WHERE id=:id"),
++        {"id": ts[4].id},
++    )
++    await db_session.commit()
++    assert await distribution(db_session, **kwargs) == await distribution(
++        db_session, **kwargs, use_optimized=True
++    )
++    await db_session.execute(
++        text("DELETE FROM training_session WHERE id=:id"), {"id": ts[3].id}
++    )
++    await db_session.commit()
++    assert await distribution(db_session, **kwargs) == await distribution(
++        db_session, **kwargs, use_optimized=True
++    )

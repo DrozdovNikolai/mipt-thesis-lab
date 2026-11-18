@@ -1,0 +1,24 @@
+diff --git a/test_driver/thesis_integration_test.dart b/test_driver/thesis_integration_test.dart
+new file mode 100644
+index 0000000..3fa17ae
+--- /dev/null
++++ b/test_driver/thesis_integration_test.dart
+@@ -0,0 +1,18 @@
++import 'dart:io';
++import 'package:flutter_driver/flutter_driver.dart';
++import 'package:integration_test/common.dart';
++
++Future<void> main() async {
++  final driver = await FlutterDriver.connect();
++  // ChromeDriver's default script deadline is shorter than the integration suite.
++  await driver.webDriver?.timeouts.setScriptTimeout(const Duration(minutes: 10));
++  final response = Response.fromJson(
++      await driver.requestData(null, timeout: const Duration(minutes: 10)));
++  await driver.close();
++  if (response.allTestsPassed) {
++    print('All browser integration tests passed.');
++  } else {
++    print(response.formattedFailureDetails);
++    exitCode = 1;
++  }
++}

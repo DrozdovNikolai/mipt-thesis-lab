@@ -1,0 +1,29 @@
+diff --git a/playwright.thesis.config.ts b/playwright.thesis.config.ts
+new file mode 100644
+index 0000000..67e6f3b
+--- /dev/null
++++ b/playwright.thesis.config.ts
+@@ -0,0 +1,23 @@
++import { defineConfig } from '@playwright/test'
++import base from './playwright.config'
++
++export default defineConfig({
++  ...base,
++  workers: 1,
++  retries: 0,
++  outputDir: '../../../results/commander-browser-artifacts',
++  use: {
++    ...base.use,
++    baseURL: 'http://127.0.0.1:14274',
++    launchOptions: {
++      executablePath: process.env.THESIS_CHROME,
++    },
++  },
++  webServer: {
++    command: 'npm run preview -- --host 127.0.0.1 --port 14274 --strictPort',
++    url: 'http://127.0.0.1:14274',
++    reuseExistingServer: false,
++    timeout: 180000,
++    env: { VITE_API_URL: '/api' },
++  },
++})

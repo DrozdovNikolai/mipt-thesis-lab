@@ -1,0 +1,124 @@
+name: firefly-thesis-20260916
+x-env: &env
+  ENV_FILE: /dev/null
+  ENVIRONMENT: test
+  PYTHONPATH: /app:/lab
+  PYTHONDONTWRITEBYTECODE: '1'
+  DATABASE_URL: postgresql+asyncpg://thesis:thesis@db:5432/thesis_bench
+  DATABASE_SYNC_URL: postgresql+psycopg://thesis:thesis@db:5432/thesis_bench
+  REDIS_URL: redis://redis:6379/0
+  CELERY_BROKER_URL: redis://redis:6379/1
+  CELERY_RESULT_BACKEND: redis://redis:6379/2
+  ENABLE_METRICS: 'false'
+  ENABLE_RATE_LIMIT: 'false'
+  LOG_LEVEL: ERROR
+  ADMIN_LOGIN: admin
+  ADMIN_PASSWORD: admin123
+  ADMIN_EMAIL: admin@example.com
+  JWT_SECRET_KEY: thesis-isolated-access-not-production
+  JWT_REFRESH_SECRET_KEY: thesis-isolated-refresh-not-production
+  ACCESS_TOKEN_EXP_MINUTES: '1440'
+  SPEECH_DATA_DIR: /tmp/speech
+  MEDIA_UPLOAD_DIR: /tmp/media
+  FEEDBACK_UPLOAD_DIR: /tmp/feedback
+  RUN_LIVE_AI: '0'
+  RUN_LIVE_AI_STABILITY: '0'
+x-python: &python
+  image: sha256:47bf950acece7b1a02f09c7d94f43fc6ac89dc3082e8844e2cac255db755413f
+  working_dir: /app
+  environment: *env
+  volumes:
+    - ./worktrees/candidate/firefly-backend:/app:ro
+    - .:/lab:ro
+    - ./results:/results
+  cpus: 2
+  mem_limit: 3g
+  networks: [isolated]
+services:
+  db:
+    image: postgres:18.1-alpine
+    environment:
+      POSTGRES_USER: thesis
+      POSTGRES_PASSWORD: thesis
+      POSTGRES_DB: thesis_bench
+    volumes: [bench_db:/var/lib/postgresql]
+    cpus: 2
+    mem_limit: 3g
+    healthcheck:
+      test: [CMD-SHELL, pg_isready -U thesis -d thesis_bench]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+    networks: [isolated]
+  test-db:
+    image: postgres:18.1-alpine
+    environment:
+      POSTGRES_USER: thesis
+      POSTGRES_PASSWORD: thesis
+      POSTGRES_DB: thesis_tests
+    volumes: [test_db:/var/lib/postgresql]
+    healthcheck:
+      test: [CMD-SHELL, pg_isready -U thesis -d thesis_tests]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+    networks: [isolated]
+  redis:
+    image: redis:7-alpine
+    networks: [isolated]
+  init:
+    <<: *python
+    command: python /lab/benchmarks/init_db.py
+    depends_on:
+      db: {condition: service_healthy}
+  app:
+    <<: *python
+    command: uvicorn benchmarks.server:app --host 0.0.0.0 --port 8000 --no-access-log
+    depends_on:
+      init: {condition: service_completed_successfully}
+      redis: {condition: service_started}
+    healthcheck:
+      test: [CMD, curl, -fsS, http://localhost:8000/]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+  runner:
+    <<: *python
+    command: python /lab/benchmarks/run.py
+    depends_on:
+      app: {condition: service_healthy}
+      baseline: {condition: service_healthy}
+  baseline:
+    <<: *python
+    volumes:
+      - ./worktrees/baseline/firefly-backend:/app:ro
+      - .:/lab:ro
+      - ./results:/results
+    command: uvicorn benchmarks.server:app --host 0.0.0.0 --port 8000 --no-access-log
+    depends_on:
+      init: {condition: service_completed_successfully}
+      redis: {condition: service_started}
+    healthcheck:
+      test: [CMD, curl, -fsS, http://localhost:8000/]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+  tests:
+    <<: *python
+    command: pytest -q -o addopts= -o cache_dir=/tmp/pytest-cache
+    environment:
+      <<: *env
+      DATABASE_URL: postgresql+asyncpg://thesis:thesis@test-db:5432/thesis_tests
+      DATABASE_SYNC_URL: postgresql+psycopg://thesis:thesis@test-db:5432/thesis_tests
+    depends_on:
+      test-db: {condition: service_healthy}
+      redis: {condition: service_started}
+volumes:
+  bench_db:
+  test_db:
+networks:
+  isolated:
+    internal: true
+    ipam:
+      config:
+        - subnet: 10.253.216.0/24

@@ -1,0 +1,133 @@
+name: firefly-thesis-expanded-20260916
+x-env: &env
+  ENV_FILE: /dev/null
+  ENVIRONMENT: test
+  PYTHONPATH: /app:/lab
+  PYTHONDONTWRITEBYTECODE: '1'
+  PYTHONUNBUFFERED: '1'
+  THESIS_OUTPUT: ${THESIS_OUTPUT:-/results/expanded-pilot}
+  DATABASE_URL: postgresql+asyncpg://thesis:thesis@db:5432/thesis_exp_functional
+  DATABASE_SYNC_URL: postgresql+psycopg://thesis:thesis@db:5432/thesis_exp_functional
+  REDIS_URL: redis://redis:6379/0
+  CELERY_BROKER_URL: redis://redis:6379/1
+  CELERY_RESULT_BACKEND: redis://redis:6379/2
+  ENABLE_METRICS: 'false'
+  ENABLE_RATE_LIMIT: 'false'
+  LOG_LEVEL: ERROR
+  ADMIN_LOGIN: admin
+  ADMIN_PASSWORD: admin123
+  ADMIN_EMAIL: admin@example.com
+  JWT_SECRET_KEY: thesis-expanded-access-not-production
+  JWT_REFRESH_SECRET_KEY: thesis-expanded-refresh-not-production
+  ACCESS_TOKEN_EXP_MINUTES: '1440'
+  SPEECH_DATA_DIR: /tmp/speech
+  MEDIA_UPLOAD_DIR: /tmp/media
+  FEEDBACK_UPLOAD_DIR: /tmp/feedback
+  RUN_LIVE_AI: '0'
+  RUN_LIVE_AI_STABILITY: '0'
+x-python: &python
+  image: sha256:47bf950acece7b1a02f09c7d94f43fc6ac89dc3082e8844e2cac255db755413f
+  working_dir: /app
+  environment: *env
+  volumes:
+    - ./worktrees/expanded/firefly-backend:/app:ro
+    - .:/lab:ro
+    - ./results:/results
+  cpus: 2
+  mem_limit: 3g
+  networks: [isolated]
+x-app: &app
+  <<: *python
+  command: uvicorn expanded.server:app --host 0.0.0.0 --port 8000 --no-access-log
+  healthcheck:
+    test: [CMD, curl, -fsS, http://localhost:8000/]
+    interval: 2s
+    timeout: 3s
+    retries: 60
+services:
+  db:
+    image: postgres:18.1-alpine
+    environment:
+      POSTGRES_USER: thesis
+      POSTGRES_PASSWORD: thesis
+      POSTGRES_DB: postgres
+    volumes:
+      - expanded_db:/var/lib/postgresql
+      - ./expanded/init.sql:/docker-entrypoint-initdb.d/01-thesis.sql:ro
+    cpus: 2
+    mem_limit: 3g
+    command: postgres -c shared_preload_libraries=pg_stat_statements -c track_io_timing=on
+    healthcheck:
+      test: [CMD-SHELL, pg_isready -U thesis -d postgres]
+      interval: 2s
+      timeout: 3s
+      retries: 60
+    networks: [isolated]
+  redis:
+    image: redis:7-alpine
+    networks: [isolated]
+  runner:
+    <<: *python
+    command: python -m expanded.h2
+  functional:
+    <<: *app
+    networks: [isolated, browser_access]
+    ports: ['127.0.0.1:14600:8000']
+  proxy:
+    <<: *python
+    networks: [isolated, browser_access]
+    command: python -m expanded.proxy
+    ports: ['127.0.0.1:14601:8001']
+  seed:
+    <<: *app
+    environment:
+      <<: *env
+      DATABASE_URL: postgresql+asyncpg://thesis:thesis@db:5432/thesis_exp_seed
+      DATABASE_SYNC_URL: postgresql+psycopg://thesis:thesis@db:5432/thesis_exp_seed
+  original:
+    <<: *app
+    environment:
+      <<: *env
+      DATABASE_URL: postgresql+asyncpg://thesis:thesis@db:5432/thesis_exp_original
+      DATABASE_SYNC_URL: postgresql+psycopg://thesis:thesis@db:5432/thesis_exp_original
+      THESIS_VARIANT: original
+  optimized:
+    <<: *app
+    environment:
+      <<: *env
+      DATABASE_URL: postgresql+asyncpg://thesis:thesis@db:5432/thesis_exp_optimized
+      DATABASE_SYNC_URL: postgresql+psycopg://thesis:thesis@db:5432/thesis_exp_optimized
+      THESIS_VARIANT: optimized
+  projection:
+    <<: *app
+    environment:
+      <<: *env
+      DATABASE_URL: postgresql+asyncpg://thesis:thesis@db:5432/thesis_exp_projection
+      DATABASE_SYNC_URL: postgresql+psycopg://thesis:thesis@db:5432/thesis_exp_projection
+      THESIS_VARIANT: projection
+  worker:
+    <<: *python
+    command: python -m expanded.worker
+    environment:
+      <<: *env
+      DATABASE_URL: postgresql+asyncpg://thesis:thesis@db:5432/thesis_exp_projection
+      DATABASE_SYNC_URL: postgresql+psycopg://thesis:thesis@db:5432/thesis_exp_projection
+  tests:
+    <<: *python
+    command: pytest -q -o addopts= -o cache_dir=/tmp/pytest-cache
+    environment:
+      <<: *env
+      DATABASE_URL: postgresql+asyncpg://thesis:thesis@db:5432/thesis_exp_tests
+      DATABASE_SYNC_URL: postgresql+psycopg://thesis:thesis@db:5432/thesis_exp_tests
+volumes:
+  expanded_db:
+networks:
+  browser_access:
+    ipam:
+      config:
+        - subnet: 10.253.218.0/24
+  isolated:
+    internal: true
+    ipam:
+      config:
+        - subnet: 10.253.217.0/24

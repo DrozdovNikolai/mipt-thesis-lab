@@ -1,0 +1,44 @@
+{
+  "run": "main-20260916T130741Z-all",
+  "complete": {
+    "completed_at": "2026-09-16T13:21:02.802331+00:00"
+  },
+  "verification": {
+    "passed": true,
+    "counts": {
+      "h1_trainings": 108,
+      "h2_operations": 216,
+      "h3_series": 144,
+      "h3_http_requests": 5760,
+      "h3_check_records": 27,
+      "h3_asserted_comparisons": 99
+    }
+  },
+  "final_analytics": {
+    "passed": true,
+    "tenants": [
+      {
+        "size": 1000,
+        "pilots": 100,
+        "competencies": 8,
+        "passed": true
+      },
+      {
+        "size": 10000,
+        "pilots": 1000,
+        "competencies": 8,
+        "passed": true
+      },
+      {
+        "size": 100000,
+        "pilots": 1000,
+        "competencies": 8,
+        "passed": true
+      }
+    ]
+  },
+  "report_sha256": "dc8cc2422093d0dd3d258b89cd7f788902cdb714c777340226ae5517a4388e8b",
+  "artifacts_sha256": "83e4c4f241ab7a2cdef54a5018aae5532469a2480b8c0fcb348198ce544fb680",
+  "original_sources_unchanged": true,
+  "experimental_services_stopped": true
+}

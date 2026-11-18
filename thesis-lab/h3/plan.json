@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "project": "firefly-thesis",
+  "profile": "firefly-thesis",
+  "cloud_id": "b1g3ffppjl8o7b1dim93",
+  "folder_id": "b1g5ld60ehc1avfv1j0m",
+  "billing_account_id": "dn2oyo4ojfl5ojjftz64",
+  "zone": "ru-central1-a",
+  "image_id": "fd84a0ma316h9ddtvdoi",
+  "image_name": "ubuntu-24-04-lts-v20260928",
+  "platform": "standard-v3",
+  "core_fraction": 100,
+  "preemptible": false,
+  "subnet_cidr": "10.77.0.0/24",
+  "machines": [
+    {
+      "role": "server",
+      "cores": 8,
+      "memory_gib": 16,
+      "ssd_gib": 128,
+      "private_ip": "10.77.0.10",
+      "public_ip": true
+    },
+    {
+      "role": "loadgen",
+      "cores": 2,
+      "memory_gib": 4,
+      "ssd_gib": 32,
+      "private_ip": "10.77.0.20",
+      "public_ip": true
+    }
+  ],
+  "rates_rub_per_hour": {
+    "vcpu": "1.24",
+    "ram_gib": "0.33",
+    "network_ssd_gib": "0.0199",
+    "active_public_ipv4": "0.26352"
+  },
+  "price_checked_on": "2026-10-03",
+  "price_sources": [
+    "https://yandex.cloud/ru/docs/compute/pricing",
+    "https://yandex.cloud/ru/docs/vpc/pricing"
+  ],
+  "first_window_hours": 6,
+  "proposed_phase_budget_rub": 1000,
+  "grant": {
+    "user_reported_rub": 4000,
+    "confirmed_remaining_rub": 3700,
+    "expires_at": "2026-11-25",
+    "confirmation": "User supplied Billing screenshot and authorized launch on 2026-10-03",
+    "screenshot_sha256": "827ffe9048db805081060557faa10b564c4a1b9eab57a9d4b57d6fc8716eeddd"
+  },
+  "scope": "H3 assessment-level implementation versus source SQL and pilot projection; second cloud window",
+  "provisioning_status": "not_started",
+  "approved_first_window_hours": 6,
+  "first_window_authorized_at": "2026-10-03",
+  "operator_ssh_cidrs": [
+    "178.155.24.105/32"
+  ],
+  "prior_run": "yc-h3-20261003-b",
+  "prior_cost_estimate_rub": 48.1492
+}

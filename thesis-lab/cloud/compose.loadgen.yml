@@ -1,0 +1,20 @@
+name: firefly-thesis-cloud-loadgen-v1
+services:
+  runner:
+    image: firefly-thesis/backend-runtime:20260916
+    pull_policy: never
+    working_dir: /lab
+    environment:
+      PYTHONPATH: /lab
+      PYTHONDONTWRITEBYTECODE: '1'
+      PYTHONUNBUFFERED: '1'
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:?set ADMIN_PASSWORD}
+      THESIS_OUTPUT: ${THESIS_OUTPUT:-/results/cloud-pilot}
+      THESIS_QUIET_GATE: '0'
+      THESIS_TARGET_URLS: '{"original":"http://${SERVER_PRIVATE_IP:?set SERVER_PRIVATE_IP}:18000","optimized":"http://${SERVER_PRIVATE_IP}:18001","projection":"http://${SERVER_PRIVATE_IP}:18002"}'
+    volumes:
+      - ..:/lab:ro
+      - ../results:/results
+    cpus: 2
+    mem_limit: 3g
+    command: python -m cloud.entry expanded.reads --check

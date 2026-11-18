@@ -1,0 +1,18 @@
+{
+  "firefly-backend": {
+    "base_commit": "27996899a5ede511247a1b3063dee393c9adcc23",
+    "worktree": "/mnt/c/DEV/startup/projects/firefly-thesis-lab/worktrees/expanded/firefly-backend"
+  },
+  "firefly-instructor": {
+    "base_commit": "cd4b3fc788a8a084750131a62054eac45421dbc1",
+    "worktree": "/mnt/c/DEV/startup/projects/firefly-thesis-lab/worktrees/expanded/firefly-instructor"
+  },
+  "firefly-session": {
+    "base_commit": "d411e6009aafa4bbd3e979877b0ec1f2b1d6c400",
+    "worktree": "/mnt/c/DEV/startup/projects/firefly-thesis-lab/worktrees/expanded/firefly-session"
+  },
+  "firefly-commander": {
+    "base_commit": "67abbb6b46b58087d7ca926ce02b90f6b46df2f1",
+    "worktree": "/mnt/c/DEV/startup/projects/firefly-thesis-lab/worktrees/expanded/firefly-commander"
+  }
+}

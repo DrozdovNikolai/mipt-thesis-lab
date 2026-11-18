@@ -1,0 +1,25 @@
+name: firefly-thesis-h1-loadgen-v1
+x-python: &python
+  image: firefly-thesis/backend-runtime:20260916
+  pull_policy: never
+  working_dir: /lab
+  environment:
+    PYTHONPATH: /lab
+    PYTHONDONTWRITEBYTECODE: '1'
+    PYTHONUNBUFFERED: '1'
+    ADMIN_PASSWORD: ${ADMIN_PASSWORD:?set ADMIN_PASSWORD}
+    THESIS_OUTPUT: ${THESIS_OUTPUT:-/results/cloud-pilot}
+    H1_BACKEND_URL: http://${SERVER_PRIVATE_IP:?set SERVER_PRIVATE_IP}:18000
+    H1_PROXY_URL: http://proxy:8001
+  volumes:
+    - ..:/lab:ro
+    - ../results:/results
+  cpus: 2
+  mem_limit: 3g
+services:
+  proxy:
+    <<: *python
+    command: python -m h1.proxy
+  runner:
+    <<: *python
+    command: python -m h1.run_cases
