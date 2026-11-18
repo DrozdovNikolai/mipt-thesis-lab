@@ -1,0 +1,76 @@
+
+> 55north-commander@0.1.0 test:e2e
+> playwright test chart-tooltip-edge.spec.ts adverse-states.spec.ts --workers=2
+
+
+Running 15 tests using 2 workers
+
+(node:95502) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:95501) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:95502) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:95501) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [chromium] › tests/e2e/adverse-states.spec.ts:11:3 › invalid back state falls back to training sessions: {"malformed":true} (815ms)
+  ✓   2 [chromium] › tests/e2e/adverse-states.spec.ts:11:3 › invalid back state falls back to training sessions: "https://untrusted.example/elsewhere" (785ms)
+  ✓   4 [chromium] › tests/e2e/adverse-states.spec.ts:67:3 › distinguishes legacy crew projection (759ms)
+  ✓   3 [chromium] › tests/e2e/adverse-states.spec.ts:28:1 › analytics lookup caches belong to the newly verified airline session (1.1s)
+  ✓   5 [chromium] › tests/e2e/adverse-states.spec.ts:67:3 › distinguishes absent crew projection (708ms)
+  ✓   6 [chromium] › tests/e2e/adverse-states.spec.ts:67:3 › distinguishes null crew projection (674ms)
+  ✓   8 [chromium] › tests/e2e/adverse-states.spec.ts:117:1 › keeps assessment-specific AI review and PDF IDs; failed PDF closes its pre-opened popup (1.1s)
+  ✓   9 [chromium] › tests/e2e/adverse-states.spec.ts:147:1 › changing only training day resets the selected assessment and tab; Back restores the route (711ms)
+  ✓  10 [chromium] › tests/e2e/adverse-states.spec.ts:174:1 › analytics applies the same valid filters to four endpoints and isolates a failed card (794ms)
+  ✓  11 [chromium] › tests/e2e/adverse-states.spec.ts:223:1 › changes trend competence and local ranking without fetching analytics again (746ms)
+  ✓  12 [chromium] › tests/e2e/adverse-states.spec.ts:281:3 › training detail 403 retains a usable return action (770ms)
+  ✓  13 [chromium] › tests/e2e/adverse-states.spec.ts:281:3 › training detail 404 retains a usable return action (677ms)
+  ✘   7 [chromium] › tests/e2e/adverse-states.spec.ts:95:1 › another user opening the same training ID cannot see the preceding assessment cache (5.6s)
+  ✓  14 [chromium] › tests/e2e/adverse-states.spec.ts:281:3 › training detail 503 retains a usable return action (697ms)
+(node:95846) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:95846) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  15 [chromium] › tests/e2e/chart-tooltip-edge.spec.ts:5:1 › a tooltip in a horizontally scrolled mobile chart stays inside the viewport and unmounts (969ms)
+
+
+  1) [chromium] › tests/e2e/adverse-states.spec.ts:95:1 › another user opening the same training ID cannot see the preceding assessment cache 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: getByText('Private assessment from user A', { exact: true })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for getByText('Private assessment from user A', { exact: true })[22m
+
+
+      105 |   await page.route('**/api/commander/training-sessions/102', (route) => json(route, detail))
+      106 |   await login(page, '/training-sessions/102')
+    > 107 |   await expect(page.getByText('Private assessment from user A', { exact: true })).toBeVisible()
+          |                                                                                   ^
+      108 |   await page.getByRole('button', { name: 'Logout', exact: true }).click()
+      109 |   await expect(page.getByText('Private assessment from user A', { exact: true })).toHaveCount(0)
+      110 |   state.currentUser = { ...state.currentUser, id: 'user-B', airlineId: 2 }
+        at /home/kolya/.cache/55north-commander-migration/acceptance/tests/e2e/adverse-states.spec.ts:107:83
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/chromium/adverse-states-another-use-2f8d2--preceding-assessment-cache-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/chromium/adverse-states-another-use-2f8d2--preceding-assessment-cache-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/chromium/adverse-states-another-use-2f8d2--preceding-assessment-cache-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/chromium/adverse-states-another-use-2f8d2--preceding-assessment-cache-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [chromium] › tests/e2e/adverse-states.spec.ts:95:1 › another user opening the same training ID cannot see the preceding assessment cache 
+  14 passed (10.7s)

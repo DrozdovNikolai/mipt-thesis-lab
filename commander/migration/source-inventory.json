@@ -1,0 +1,1326 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-10-08",
+  "source_relative_to_target": "../firefly-commander",
+  "source_head": "e230b700b53820286bb923e3c968e86d5c61cbe4",
+  "source_worktree_has_tracked_changes": true,
+  "source_worktree_changed_tracked_file_count": 109,
+  "snapshot_basis": "Working-tree bytes, not HEAD. SHA-256 includes line endings. No application source is copied into this planning repository.",
+  "limitations": [
+    "Static import graph includes type imports and is not a bundle reachability analysis.",
+    "Unreachable modules are omission candidates, not proof of unused individual exports.",
+    "No browser execution, API calls, build, or test run is implied by this inventory."
+  ],
+  "excluded": [
+    ".git",
+    "node_modules",
+    "dist",
+    "test-results",
+    ".env",
+    ".env.production",
+    "other non-example environment files",
+    ".eslintcache"
+  ],
+  "metrics": {
+    "src_files": 93,
+    "src_lines": 12381,
+    "src_extensions": {
+      ".tsx": 54,
+      ".ts": 38,
+      ".css": 1
+    },
+    "statically_reachable_src_files": 83,
+    "inventoried_files": 119,
+    "existing_e2e_files": 5,
+    "existing_e2e_cases": 5
+  },
+  "action_counts": {
+    "rewrite_as_vue_sfc": 46,
+    "replace_query_adapter": 1,
+    "rewrite_router": 1,
+    "merge_into_router_guards": 1,
+    "omit_unreachable_after_scope_check": 10,
+    "reuse_sdk_add_optional_abort_signal": 1,
+    "reuse_typescript_verify_behavior": 24,
+    "replace_zustand_with_pinia": 1,
+    "rewrite_bootstrap": 1,
+    "adapt_session_injection": 1,
+    "reuse_transport_add_session_race_guards": 1,
+    "replace_react_i18next_with_vue_i18n": 1,
+    "rewrite_as_composable_preserve_shared_lifecycle": 1,
+    "rewrite_as_composable": 1,
+    "replace_sentry_adapter": 1,
+    "reuse_css_adjust_mount_selector": 1,
+    "recreate_vue_tooling_config": 10,
+    "replace_documentation": 1,
+    "adapt_repository_config": 2,
+    "recreate_documented_public_env_keys": 1,
+    "port_browser_contract_test": 5,
+    "omit_unreferenced_asset_after_scope_check": 2,
+    "reuse_asset": 3,
+    "replace_with_gated_ci_and_release_deploy": 2
+  },
+  "files": [
+    {
+      "source_path": "src/App.tsx",
+      "target_path": "src/App.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 4439,
+      "sha256": "ec5056f5ccfc6b3ed34d8e73e404eeb236e1ba6ab0abb7dafda8574ee5c46707",
+      "lines": 136,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "@tanstack/react-query",
+        "react",
+        "react-i18next",
+        "react-router-dom"
+      ]
+    },
+    {
+      "source_path": "src/app/providers/queryClient.tsx",
+      "target_path": "src/app/providers/queryClient.ts",
+      "action": "replace_query_adapter",
+      "bytes": 662,
+      "sha256": "690f33ed56e72157c93983b808d13b8363327b5a9de72960c39d9aff510d031a",
+      "lines": 22,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "@tanstack/react-query",
+        "@tanstack/react-query-devtools",
+        "react"
+      ]
+    },
+    {
+      "source_path": "src/app/router.tsx",
+      "target_path": "src/app/router.ts",
+      "action": "rewrite_router",
+      "bytes": 3405,
+      "sha256": "0600359c1d5c064563208cad686959cd4aa50aab30a7288a0d278f65d417543e",
+      "lines": 95,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "react-router-dom"
+      ]
+    },
+    {
+      "source_path": "src/components/ProtectedRoute.tsx",
+      "target_path": "src/app/guards.ts",
+      "action": "merge_into_router_guards",
+      "bytes": 748,
+      "sha256": "251239a4ae286017fb5a83b5d71653be609e291857ed5e884adf5fe6d9beb339",
+      "lines": 27,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "react",
+        "react-router-dom"
+      ]
+    },
+    {
+      "source_path": "src/entities/ai/api.ts",
+      "target_path": null,
+      "action": "omit_unreachable_after_scope_check",
+      "bytes": 525,
+      "sha256": "5c448614a29f2aeaff27d38d8250f29f7554209fc82b4f62753bc46ac5b77496",
+      "lines": 13,
+      "reachable_from_main_including_type_imports": false,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/entities/ai/types.ts",
+      "target_path": null,
+      "action": "omit_unreachable_after_scope_check",
+      "bytes": 2699,
+      "sha256": "20484e47f602e101a323157fa0e3cfe7962b6300911405d2dedfc934c7a87664",
+      "lines": 113,
+      "reachable_from_main_including_type_imports": false,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/entities/commander/api.ts",
+      "target_path": "src/entities/commander/api.ts",
+      "action": "reuse_sdk_add_optional_abort_signal",
+      "bytes": 5230,
+      "sha256": "28b114464d8561f928946d31570358f521068af35f2f48b1f8eeb9da91928779",
+      "lines": 116,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/entities/commander/types.ts",
+      "target_path": "src/entities/commander/types.ts",
+      "action": "reuse_typescript_verify_behavior",
+      "bytes": 14482,
+      "sha256": "5cde7685de31a0aa4bf15888e4f12f9c42a742607a50808bc9796ea74045b5ee",
+      "lines": 549,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/entities/session/api.ts",
+      "target_path": "src/entities/session/api.ts",
+      "action": "reuse_typescript_verify_behavior",
+      "bytes": 895,
+      "sha256": "d4c21c4c2630c16eb62d745c3486e34ca8fe23c59d197be756bf6e648084cd68",
+      "lines": 20,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/entities/session/privileges.ts",
+      "target_path": "src/entities/session/privileges.ts",
+      "action": "reuse_typescript_verify_behavior",
+      "bytes": 280,
+      "sha256": "3ec1af5e6d77075e3ec734f6f5032acfe934a84adafaa6781b9e329f7df0a906",
+      "lines": 9,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/entities/session/store.ts",
+      "target_path": "src/entities/session/store.ts",
+      "action": "replace_zustand_with_pinia",
+      "bytes": 2490,
+      "sha256": "3364bf81cb6ddac039ac7742b5102ae9c7151dabb8cca458fb9dc481f59de248",
+      "lines": 71,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "zustand",
+        "zustand/middleware"
+      ]
+    },
+    {
+      "source_path": "src/entities/session/types.ts",
+      "target_path": "src/entities/session/types.ts",
+      "action": "reuse_typescript_verify_behavior",
+      "bytes": 939,
+      "sha256": "8e216f3b53409fd11d5142cb486a15879b42cd188aafb1291e5b6b75d52fa306",
+      "lines": 47,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/entities/session/utils.ts",
+      "target_path": "src/entities/session/utils.ts",
+      "action": "reuse_typescript_verify_behavior",
+      "bytes": 253,
+      "sha256": "36fc8e9aea543122c71a58a1dc8984354c9be56853d50ed4eee0d8033c623f2d",
+      "lines": 7,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/entities/support/api.ts",
+      "target_path": null,
+      "action": "omit_unreachable_after_scope_check",
+      "bytes": 3742,
+      "sha256": "8eecb7c95f37ff95605cc9b69f7f7f65de955b826b20d223d6b32b31fcc082a4",
+      "lines": 116,
+      "reachable_from_main_including_type_imports": false,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/entities/training/api.ts",
+      "target_path": "src/entities/training/api.ts",
+      "action": "reuse_typescript_verify_behavior",
+      "bytes": 25139,
+      "sha256": "831a437adb7aaaa8b620d8d749ee4a6a673927876c78be403964c51e49d85d7e",
+      "lines": 613,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/entities/training/constraints.ts",
+      "target_path": null,
+      "action": "omit_unreachable_after_scope_check",
+      "bytes": 625,
+      "sha256": "37fc9f1ae6fe9bf58ff5f0801cdad6c897114cf95a2b25a221ffef5858506e9e",
+      "lines": 8,
+      "reachable_from_main_including_type_imports": false,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/entities/training/scenarioRevisions.ts",
+      "target_path": "src/entities/training/scenarioRevisions.ts",
+      "action": "reuse_typescript_verify_behavior",
+      "bytes": 493,
+      "sha256": "72e96cd1e5f42af8d4cc1313ce16b25528b63eb98cd34e872883c052203f4e0c",
+      "lines": 19,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/entities/training/scenarioSnapshot.ts",
+      "target_path": "src/entities/training/scenarioSnapshot.ts",
+      "action": "reuse_typescript_verify_behavior",
+      "bytes": 1842,
+      "sha256": "34c8f86b9938de6aec06789716d4eceba5b9f701496eb2d60e0a399b943e8314",
+      "lines": 73,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/entities/training/types.generated.ts",
+      "target_path": "src/entities/training/types.generated.ts",
+      "action": "reuse_typescript_verify_behavior",
+      "bytes": 5308,
+      "sha256": "6aa88d08e6f0bc87e7b9acb08dc9d707d0451f8c2499d1d0e06802b08af3cd79",
+      "lines": 234,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/entities/training/types.ts",
+      "target_path": "src/entities/training/types.ts",
+      "action": "reuse_typescript_verify_behavior",
+      "bytes": 3416,
+      "sha256": "302fb742d3946240731a85923a6380e016b7f7f94d4cf05c84446aff109216e6",
+      "lines": 152,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/entities/users/api.ts",
+      "target_path": "src/entities/users/api.ts",
+      "action": "reuse_typescript_verify_behavior",
+      "bytes": 3478,
+      "sha256": "ccf5348c258715dff3b1e017d9033890ce2c70abeff3b483c0d312fdf5a2298e",
+      "lines": 98,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/entities/users/types.ts",
+      "target_path": "src/entities/users/types.ts",
+      "action": "reuse_typescript_verify_behavior",
+      "bytes": 115,
+      "sha256": "3bd81b3eb9efbef4b8cab370d52402e618a56897ee6eff633913377c72d290ee",
+      "lines": 6,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/features/analytics/lib/gradeDistribution.ts",
+      "target_path": "src/features/analytics/lib/gradeDistribution.ts",
+      "action": "reuse_typescript_verify_behavior",
+      "bytes": 23492,
+      "sha256": "1c05108b9cbdc6c499905d379d0b2f34e4124bb58b76aa5b5feb11e1b54d17c5",
+      "lines": 732,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "chart.js"
+      ]
+    },
+    {
+      "source_path": "src/features/analytics/ui/AnalyticsChartCard.tsx",
+      "target_path": "src/features/analytics/ui/AnalyticsChartCard.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 5391,
+      "sha256": "a3ff328a170b5b23f8d1b1a93d31b76ca12ae9e92a3aab2f1ba3ad600e4badc0",
+      "lines": 135,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "react"
+      ]
+    },
+    {
+      "source_path": "src/features/analytics/ui/AnalyticsFilters.tsx",
+      "target_path": "src/features/analytics/ui/AnalyticsFilters.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 7916,
+      "sha256": "c6ce823bfa21a2c5f30e7c79fe31b5618e24debc853e0e020eece6205fb90be3",
+      "lines": 217,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "react"
+      ]
+    },
+    {
+      "source_path": "src/features/analytics/ui/AnalyticsSummaryCards.tsx",
+      "target_path": null,
+      "action": "omit_unreachable_after_scope_check",
+      "bytes": 959,
+      "sha256": "911383ace55298d838e00411ff1b0d16b36517ff92dba32b77674504ff43f4b4",
+      "lines": 26,
+      "reachable_from_main_including_type_imports": false,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/features/analytics/ui/CompetencyTrendFilters.tsx",
+      "target_path": "src/features/analytics/ui/CompetencyTrendFilters.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 1540,
+      "sha256": "d282ad13cbe64b8e6cb056fc5c7a7f158742a16a787f408963d0fe43979dd741",
+      "lines": 45,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "react"
+      ]
+    },
+    {
+      "source_path": "src/features/analytics/ui/InstructorAssessmentFilters.tsx",
+      "target_path": "src/features/analytics/ui/InstructorAssessmentFilters.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 4766,
+      "sha256": "94a275f5cedf3f6a073eaced1892794ac1fbb95909e151fb0eb4d270e7984163",
+      "lines": 132,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "react"
+      ]
+    },
+    {
+      "source_path": "src/features/analytics/ui/PilotPerformanceFilters.tsx",
+      "target_path": "src/features/analytics/ui/PilotPerformanceFilters.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 2475,
+      "sha256": "6a4d308870590f951224c6a0254db67efe6dbafa7aa6bd07adbd04a58d08b64f",
+      "lines": 70,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "react"
+      ]
+    },
+    {
+      "source_path": "src/features/compatibility/ui/PilotCompatibilityPanel.tsx",
+      "target_path": "src/features/compatibility/ui/PilotCompatibilityPanel.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 19149,
+      "sha256": "0b0236b67d11d8683049d87d89234551b49ad225016c059c5285ada068a743bf",
+      "lines": 446,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "@tanstack/react-query",
+        "react"
+      ]
+    },
+    {
+      "source_path": "src/features/pilot-profile/lib/trainingDataCharts.ts",
+      "target_path": "src/features/pilot-profile/lib/trainingDataCharts.ts",
+      "action": "reuse_typescript_verify_behavior",
+      "bytes": 14196,
+      "sha256": "762eeab67f9f50c9f837e7b2b94eb6bdc593e27acb12734a9b4590a2173f8b69",
+      "lines": 405,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "chart.js"
+      ]
+    },
+    {
+      "source_path": "src/features/pilot-profile/ui/PilotTrainingSnapshot.tsx",
+      "target_path": "src/features/pilot-profile/ui/PilotTrainingSnapshot.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 12082,
+      "sha256": "72b0d6ee4ac104c25f47525efbac0e480241ed6f097e11d298ce9c5605655676",
+      "lines": 258,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "react"
+      ]
+    },
+    {
+      "source_path": "src/features/pilots/ui/PilotAvatar.tsx",
+      "target_path": "src/features/pilots/ui/PilotAvatar.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 2174,
+      "sha256": "84a82bcd0ba3c0b4896b4f4cd79eb2de0cd4fd7162028c5aba41bc5321f1a7a7",
+      "lines": 76,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "@tanstack/react-query"
+      ]
+    },
+    {
+      "source_path": "src/features/pilots/ui/PilotRatingBadge.tsx",
+      "target_path": "src/features/pilots/ui/PilotRatingBadge.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 839,
+      "sha256": "287c45008de421b4b661310a7f090fef2e1950741bfd8a5bd69f4bfb13dfbabd",
+      "lines": 27,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/features/pilots/ui/PilotsFilters.tsx",
+      "target_path": "src/features/pilots/ui/PilotsFilters.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 7060,
+      "sha256": "ae76b164e346bd0efe77e7ca691901968a6df70842bfc958cc36c6a43d3b1483",
+      "lines": 191,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "react"
+      ]
+    },
+    {
+      "source_path": "src/features/pilots/ui/PilotsList.tsx",
+      "target_path": "src/features/pilots/ui/PilotsList.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 9122,
+      "sha256": "464638152236eb93ea2b3c91d355572538ed353631081710b5e4b21bbc301343",
+      "lines": 216,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "react"
+      ]
+    },
+    {
+      "source_path": "src/features/pilots/ui/PilotsPagination.tsx",
+      "target_path": "src/features/pilots/ui/PilotsPagination.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 1423,
+      "sha256": "c5a7a03eeb6d3d525e8e10be886d3777120320ce15af0b731ebea9eb1f1bc7fe",
+      "lines": 34,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/features/settings/lib/flightTypeDrafts.ts",
+      "target_path": "src/features/settings/lib/flightTypeDrafts.ts",
+      "action": "reuse_typescript_verify_behavior",
+      "bytes": 4903,
+      "sha256": "aab4c286c2595590874c6ac149b8e24394827b0caf1e9aed5eb53e997bb08f93",
+      "lines": 150,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/features/settings/lib/settingsConstraints.ts",
+      "target_path": "src/features/settings/lib/settingsConstraints.ts",
+      "action": "reuse_typescript_verify_behavior",
+      "bytes": 1625,
+      "sha256": "5bab0ff46b6cbbf375b94966edcd4953bcf8221192877f106d9f4556c09d94a4",
+      "lines": 36,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/features/settings/ui/TrainingTypeDirectory.tsx",
+      "target_path": "src/features/settings/ui/TrainingTypeDirectory.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 6865,
+      "sha256": "92583e7e9de14af9401c779653eea00d3c7293a481b0ba0c7e68b890ad900e92",
+      "lines": 170,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/features/settings/ui/TrainingTypeEditor.tsx",
+      "target_path": "src/features/settings/ui/TrainingTypeEditor.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 13098,
+      "sha256": "f4939c8723e77f75093c407dff07a5acb2d027ba5291151dfde01b184f630f05",
+      "lines": 308,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/features/training-session-detail/lib/crewTimelinePresentation.ts",
+      "target_path": "src/features/training-session-detail/lib/crewTimelinePresentation.ts",
+      "action": "reuse_typescript_verify_behavior",
+      "bytes": 440,
+      "sha256": "34a993adf6f0602a9a2b0537f87a3b930ca33b872500fe667865519a98e45c24",
+      "lines": 8,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/features/training-session-detail/ui/TrainingSessionAiReviewPanel.tsx",
+      "target_path": "src/features/training-session-detail/ui/TrainingSessionAiReviewPanel.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 2210,
+      "sha256": "b5fef836e139049ad1a706ef127eea43e5507f660b973419f141c15395cfd9c4",
+      "lines": 50,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/features/training-session-detail/ui/TrainingSessionCrewSummary.tsx",
+      "target_path": "src/features/training-session-detail/ui/TrainingSessionCrewSummary.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 7462,
+      "sha256": "9f14e1e0f6aefca9e6b3b0927a47e3254c39d0db8503b30eb7afda6306eed218",
+      "lines": 167,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/features/training-session-detail/ui/TrainingSessionDayPlan.tsx",
+      "target_path": "src/features/training-session-detail/ui/TrainingSessionDayPlan.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 14335,
+      "sha256": "3b34216628b03a4b4c990e29ad0fe5d506b1c47d448c37707701d2303f38a060",
+      "lines": 345,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "react"
+      ]
+    },
+    {
+      "source_path": "src/features/training-session-detail/ui/TrainingSessionSelectedPilotCard.tsx",
+      "target_path": "src/features/training-session-detail/ui/TrainingSessionSelectedPilotCard.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 5162,
+      "sha256": "9790575e5a846465f1ef7d8e5d40c3582704b630001ac65e5ac049bfa61f89f1",
+      "lines": 126,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "react-router-dom"
+      ]
+    },
+    {
+      "source_path": "src/features/training-sessions/lib/trainingSessionPresentation.ts",
+      "target_path": "src/features/training-sessions/lib/trainingSessionPresentation.ts",
+      "action": "reuse_typescript_verify_behavior",
+      "bytes": 1282,
+      "sha256": "aaea60a5661e8acb6e45db4057f443fa86f718ba7960160ec959e16ca85e8198",
+      "lines": 40,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/features/training-sessions/ui/TrainingSessionsFilters.tsx",
+      "target_path": "src/features/training-sessions/ui/TrainingSessionsFilters.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 7399,
+      "sha256": "a8b7bea6da58ed7be482f77c34c2b1734736f181f3014288028b394fe00b3578",
+      "lines": 202,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "react"
+      ]
+    },
+    {
+      "source_path": "src/features/training-sessions/ui/TrainingSessionsList.tsx",
+      "target_path": "src/features/training-sessions/ui/TrainingSessionsList.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 12423,
+      "sha256": "6d4c81b0b0a2bf9440387dc42dde29abbcfcbd5b5d9a4d0bab3f3ed6caa7e9c7",
+      "lines": 253,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "react-router-dom"
+      ]
+    },
+    {
+      "source_path": "src/main.tsx",
+      "target_path": "src/main.ts",
+      "action": "rewrite_bootstrap",
+      "bytes": 775,
+      "sha256": "beec213294d428d710245ae720338f717a9e62b86d658e19e77972d9cc5b96a6",
+      "lines": 26,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "react",
+        "react-dom/client"
+      ]
+    },
+    {
+      "source_path": "src/shared/api/api.ts",
+      "target_path": "src/shared/api/api.ts",
+      "action": "adapt_session_injection",
+      "bytes": 491,
+      "sha256": "590a1f69613014345c06267cacfc76b391ba1010946a75e14fbc22d2cdf74d9c",
+      "lines": 12,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/shared/api/endpoints.ts",
+      "target_path": "src/shared/api/endpoints.ts",
+      "action": "reuse_typescript_verify_behavior",
+      "bytes": 1816,
+      "sha256": "a562f4ebb3a8fa1c52af48de31628f9cb06cf0e3b6cf9ef30b668eb58f048fd4",
+      "lines": 54,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/shared/api/requestExecutor.ts",
+      "target_path": "src/shared/api/requestExecutor.ts",
+      "action": "reuse_transport_add_session_race_guards",
+      "bytes": 8204,
+      "sha256": "0444d18f885f4368530f42c2ba9efb677d6c456bf6f03b0fdd7f27b52b7bb345",
+      "lines": 246,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/shared/branding/BrandLogo.tsx",
+      "target_path": "src/shared/branding/BrandLogo.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 775,
+      "sha256": "7921afa59f5528423e64f0e192047cf777b8a0adb23f9ba4609f9feb6534d0eb",
+      "lines": 22,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/shared/branding/brand.ts",
+      "target_path": "src/shared/branding/brand.ts",
+      "action": "reuse_typescript_verify_behavior",
+      "bytes": 1724,
+      "sha256": "227e6b78320ba7dd678ca6ddfdeeef1e176497a19ed74eb1c0df6e4e04a96c8a",
+      "lines": 64,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/shared/config/env.ts",
+      "target_path": "src/shared/config/env.ts",
+      "action": "reuse_typescript_verify_behavior",
+      "bytes": 185,
+      "sha256": "3502bb716ec83a027c3a7ef5a8d0fae1a00d79725ce160d34a83fa6ad19f4693",
+      "lines": 4,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/shared/forms/fieldConstraints.ts",
+      "target_path": null,
+      "action": "omit_unreachable_after_scope_check",
+      "bytes": 4356,
+      "sha256": "ec56144175864a386f332038435f639b3fb1791165813347b72d29e38a779924",
+      "lines": 128,
+      "reachable_from_main_including_type_imports": false,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/shared/i18n/index.ts",
+      "target_path": "src/shared/i18n/index.ts",
+      "action": "replace_react_i18next_with_vue_i18n",
+      "bytes": 2459,
+      "sha256": "47740a15b248e2321cc83375a4cadfe8f7ad289e30ffb4e25011a8895de2e827",
+      "lines": 94,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "i18next",
+        "react-i18next"
+      ]
+    },
+    {
+      "source_path": "src/shared/lib/media/resolveMediaRequestPath.ts",
+      "target_path": "src/shared/lib/media/resolveMediaRequestPath.ts",
+      "action": "reuse_typescript_verify_behavior",
+      "bytes": 1214,
+      "sha256": "5ac31288a5a80ec8d953aa32fbbac8f2fdba378113940ab5e16e379400127483",
+      "lines": 40,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/shared/lib/media/useObjectUrl.ts",
+      "target_path": "src/shared/lib/media/useObjectUrl.ts",
+      "action": "rewrite_as_composable_preserve_shared_lifecycle",
+      "bytes": 1648,
+      "sha256": "143ecdfc09be9252d1fd761c867a52f801e317936ef3114e748ead4452715c93",
+      "lines": 60,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "react"
+      ]
+    },
+    {
+      "source_path": "src/shared/lib/useDebouncedValue.ts",
+      "target_path": "src/shared/lib/useDebouncedValue.ts",
+      "action": "rewrite_as_composable",
+      "bytes": 404,
+      "sha256": "61f4e610d220f4e54b0c6ec37dc7af14bc1f6e59eb80cde5eee11780dfb05ef7",
+      "lines": 15,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "react"
+      ]
+    },
+    {
+      "source_path": "src/shared/monitoring/sentry.ts",
+      "target_path": "src/shared/monitoring/sentry.ts",
+      "action": "replace_sentry_adapter",
+      "bytes": 1292,
+      "sha256": "b316f864817ae5963c4bda994c2a136e6d75d1dd4fcdcda5d7e14d62b9d9f28e",
+      "lines": 41,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "@sentry/react"
+      ]
+    },
+    {
+      "source_path": "src/shared/ui/ErrorFallback.tsx",
+      "target_path": "src/shared/ui/ErrorFallback.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 955,
+      "sha256": "9233e35185185b495ccc52cc99535e833c603d4d814c6e027a15f6876ac2efa2",
+      "lines": 30,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "react-i18next"
+      ]
+    },
+    {
+      "source_path": "src/shared/ui/charts/BarChart.tsx",
+      "target_path": "src/shared/ui/charts/BarChart.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 8889,
+      "sha256": "dc1f76b03407bdc3e4cde31fb35d9df71f33519f55d831942cfec3b78d743f4b",
+      "lines": 248,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "chart.js",
+        "react"
+      ]
+    },
+    {
+      "source_path": "src/shared/ui/charts/ChartLegend.tsx",
+      "target_path": "src/shared/ui/charts/ChartLegend.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 631,
+      "sha256": "5acd73bea3dae675fb8f0c0057b5f4d7e82ccf7e2e0bcc937e7c02a8636f8501",
+      "lines": 23,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/shared/ui/charts/LineChart.tsx",
+      "target_path": "src/shared/ui/charts/LineChart.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 2113,
+      "sha256": "14c65b745111dad2e239544e09d6cb2cb8f480e86e938e1070fb776479d5514b",
+      "lines": 75,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "chart.js",
+        "react"
+      ]
+    },
+    {
+      "source_path": "src/shared/ui/charts/RadarChart.tsx",
+      "target_path": "src/shared/ui/charts/RadarChart.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 1684,
+      "sha256": "96f1b627ef86ebc2fea858f457aeff7b9de369d23c0ce37b663327c97ca8710c",
+      "lines": 56,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "chart.js",
+        "react"
+      ]
+    },
+    {
+      "source_path": "src/shared/ui/charts/chartExternalTooltip.ts",
+      "target_path": "src/shared/ui/charts/chartExternalTooltip.ts",
+      "action": "reuse_typescript_verify_behavior",
+      "bytes": 7547,
+      "sha256": "b98654d2fc345c69368853122921abfb06af963f9d081c32e7b5ad2ff6c7e7d2",
+      "lines": 218,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "chart.js"
+      ]
+    },
+    {
+      "source_path": "src/shared/ui/charts/chartRendering.ts",
+      "target_path": "src/shared/ui/charts/chartRendering.ts",
+      "action": "reuse_typescript_verify_behavior",
+      "bytes": 716,
+      "sha256": "f61e63017ec26f57ba2e1933bcec4854002366b5cb03af0406bdb39aefa757d0",
+      "lines": 22,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "chart.js"
+      ]
+    },
+    {
+      "source_path": "src/shared/ui/chips/aircraftChip.tsx",
+      "target_path": "src/shared/ui/chips/aircraftChip.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 1533,
+      "sha256": "3ce97a4c50f11f088a6f8eef90733a6bfe0c86cb84eb9ed8b7ecd20590eb7b44",
+      "lines": 38,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "react"
+      ]
+    },
+    {
+      "source_path": "src/shared/ui/icons/MailIcon.tsx",
+      "target_path": null,
+      "action": "omit_unreachable_after_scope_check",
+      "bytes": 595,
+      "sha256": "3ae4e8c604e058b68998460da77f48aed4b35e1bf113a273d88851efff5d1833",
+      "lines": 18,
+      "reachable_from_main_including_type_imports": false,
+      "external_imports": [
+        "react"
+      ]
+    },
+    {
+      "source_path": "src/shared/ui/icons/SuitcaseIcon.tsx",
+      "target_path": null,
+      "action": "omit_unreachable_after_scope_check",
+      "bytes": 779,
+      "sha256": "fa9cca6e7e1f27da013c903f9c80f69fb601bc66f8825067bfd25db4b90d3764",
+      "lines": 19,
+      "reachable_from_main_including_type_imports": false,
+      "external_imports": [
+        "react"
+      ]
+    },
+    {
+      "source_path": "src/shared/ui/icons/index.ts",
+      "target_path": null,
+      "action": "omit_unreachable_after_scope_check",
+      "bytes": 86,
+      "sha256": "80e31f85353df9e20175c9028655f891df1b47426f6eeed2db2e9563709630b1",
+      "lines": 2,
+      "reachable_from_main_including_type_imports": false,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/shared/ui/inputs/AutocompleteSelect.tsx",
+      "target_path": "src/shared/ui/inputs/AutocompleteSelect.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 8259,
+      "sha256": "f4df8154be0d30b5d50f136a0a2b32be1da32ad38f97d726424d5ea067b055a4",
+      "lines": 235,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "react"
+      ]
+    },
+    {
+      "source_path": "src/shared/ui/lists/ResultsPagination.tsx",
+      "target_path": "src/shared/ui/lists/ResultsPagination.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 1424,
+      "sha256": "4b3b0317433cbb49181f8353b6c5aec6887e4159020711276938e9029b8fe908",
+      "lines": 34,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/shared/ui/lists/StickyHorizontalScrollArea.tsx",
+      "target_path": "src/shared/ui/lists/StickyHorizontalScrollArea.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 4458,
+      "sha256": "2fdf9cc57db14a606e2c669f0b93417a2b4b0fe2e80bcfdca2a189b703da5355",
+      "lines": 112,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "react"
+      ]
+    },
+    {
+      "source_path": "src/styles.css",
+      "target_path": "src/styles.css",
+      "action": "reuse_css_adjust_mount_selector",
+      "bytes": 5610,
+      "sha256": "3a3ba7b0f5889b06227c09881112dbfcb3570534cb48e85f102ac137457c06e4",
+      "lines": 211,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "tailwindcss"
+      ]
+    },
+    {
+      "source_path": "src/views/AdminOnlyView.tsx",
+      "target_path": "src/views/AdminOnlyView.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 547,
+      "sha256": "ca8432ba2237841b3c20a694ea5bf3b278224a2ed199d7bba6cb6a49e8729c9c",
+      "lines": 16,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "react-i18next"
+      ]
+    },
+    {
+      "source_path": "src/views/AnalyticsView.tsx",
+      "target_path": "src/views/AnalyticsView.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 23505,
+      "sha256": "f39b86f50570792eb4f8b7c7e69de089f35cb8756c705ca90350fbd8de245a05",
+      "lines": 533,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "@tanstack/react-query",
+        "react"
+      ]
+    },
+    {
+      "source_path": "src/views/AuthView.tsx",
+      "target_path": "src/views/AuthView.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 3523,
+      "sha256": "3ba48e3eea5f7b8df7c16f67d5a587ce950736c09b300eb34ea3662bcd368639",
+      "lines": 94,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/views/CommanderHomeView.tsx",
+      "target_path": null,
+      "action": "omit_unreachable_after_scope_check",
+      "bytes": 448,
+      "sha256": "97263eaf81bda28900bc60b34f3a9cab1daedc8713057274bb0b415c3dfe4e67",
+      "lines": 15,
+      "reachable_from_main_including_type_imports": false,
+      "external_imports": [
+        "react-i18next"
+      ]
+    },
+    {
+      "source_path": "src/views/CompatibilityView.tsx",
+      "target_path": "src/views/CompatibilityView.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 3010,
+      "sha256": "ff0095415462c2475051cca517d91424b61f44415c68b87844c7bc1788008f47",
+      "lines": 65,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "react"
+      ]
+    },
+    {
+      "source_path": "src/views/ForbiddenView.tsx",
+      "target_path": "src/views/ForbiddenView.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 344,
+      "sha256": "06b290f2a2b1ab93d55f87854896ba0f4cf825a44931525e234b5a8d8ff4af06",
+      "lines": 6,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/views/PilotProfileInfoView.tsx",
+      "target_path": "src/views/PilotProfileInfoView.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 5255,
+      "sha256": "3c2b4e35d70753ec47e378682aa6a10c600abf7acaa3c87e9261fbd72a41b5a2",
+      "lines": 99,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "@tanstack/react-query",
+        "react-router-dom"
+      ]
+    },
+    {
+      "source_path": "src/views/PilotProfileTrainingDataView.tsx",
+      "target_path": "src/views/PilotProfileTrainingDataView.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 6470,
+      "sha256": "18eb9443e4e89224248fa039c1800f1b7ae2e1bf6fdc9e06d1e7b1b4f5f0fc05",
+      "lines": 157,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "@tanstack/react-query",
+        "react-router-dom"
+      ]
+    },
+    {
+      "source_path": "src/views/PilotProfileView.tsx",
+      "target_path": "src/views/PilotProfileView.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 8336,
+      "sha256": "0b2576e1a104043331613e6b64a9f99fa3c7cbfee8741b31da07ba566f0b3e56",
+      "lines": 191,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "@tanstack/react-query",
+        "react-router-dom"
+      ]
+    },
+    {
+      "source_path": "src/views/PilotsView.tsx",
+      "target_path": "src/views/PilotsView.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 6134,
+      "sha256": "57f0c551065b4acb9876d48c9157c886fa85125fa701d89451b56f1343607f7d",
+      "lines": 182,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "@tanstack/react-query",
+        "react"
+      ]
+    },
+    {
+      "source_path": "src/views/SettingsView.tsx",
+      "target_path": "src/views/SettingsView.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 17278,
+      "sha256": "c91268218dcbfbd5fd548ad1b88c56888ea5bb953fa45b5f9750333709f8c88a",
+      "lines": 446,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "@tanstack/react-query",
+        "react"
+      ]
+    },
+    {
+      "source_path": "src/views/TrainingSessionDetailView.tsx",
+      "target_path": "src/views/TrainingSessionDetailView.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 20272,
+      "sha256": "c30594ed5a5a393b4f843c37f992046b23453f6cbd876d6943f67ec682116e70",
+      "lines": 488,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "@tanstack/react-query",
+        "react",
+        "react-router-dom"
+      ]
+    },
+    {
+      "source_path": "src/views/TrainingSessionsView.tsx",
+      "target_path": "src/views/TrainingSessionsView.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 14811,
+      "sha256": "c00bbb8883b881ce2f1e27e55692c08e658e14f7a947427f1178cae0014f52a0",
+      "lines": 409,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "@tanstack/react-query",
+        "react"
+      ]
+    },
+    {
+      "source_path": "src/widgets/layout/AppShell.tsx",
+      "target_path": "src/widgets/layout/AppShell.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 2602,
+      "sha256": "c0e343ad521556d1154f952f62117256fc343d1ef5a7250cd664def88425642b",
+      "lines": 68,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "@tanstack/react-query",
+        "react",
+        "react-router-dom"
+      ]
+    },
+    {
+      "source_path": "src/widgets/layout/ui/AppHeader.tsx",
+      "target_path": "src/widgets/layout/ui/AppHeader.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 644,
+      "sha256": "172d5339086e525ef4cc0d250c1277b7f93491686c70f3f90147ea39da037409",
+      "lines": 19,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": []
+    },
+    {
+      "source_path": "src/widgets/layout/ui/AppSidebar.tsx",
+      "target_path": "src/widgets/layout/ui/AppSidebar.vue",
+      "action": "rewrite_as_vue_sfc",
+      "bytes": 1444,
+      "sha256": "cc8d06e903484a7409d6bc29151482bee157a0f8a7e15d8acb2b9ed3333b2c84",
+      "lines": 37,
+      "reachable_from_main_including_type_imports": true,
+      "external_imports": [
+        "react-router-dom"
+      ]
+    },
+    {
+      "source_path": "package.json",
+      "target_path": "package.json",
+      "action": "recreate_vue_tooling_config",
+      "bytes": 1548,
+      "sha256": "b60e7f8ee7d7c25b7777197ed3c0b46f7e8d312e4607d1576c9c85992f3ff731",
+      "lines": 49
+    },
+    {
+      "source_path": "package-lock.json",
+      "target_path": "package-lock.json",
+      "action": "recreate_vue_tooling_config",
+      "bytes": 162256,
+      "sha256": "f6cf2d6806b16c44a570d8fbf0a59c14febb732c8e5becae026ea98bff0782f8",
+      "lines": 4556
+    },
+    {
+      "source_path": "vite.config.ts",
+      "target_path": "vite.config.ts",
+      "action": "recreate_vue_tooling_config",
+      "bytes": 352,
+      "sha256": "1516d68a9c1661e40572a1463c368f4c3f6ae09a51a3bedbde3219017459c655",
+      "lines": 14
+    },
+    {
+      "source_path": "tsconfig.json",
+      "target_path": "tsconfig.json",
+      "action": "recreate_vue_tooling_config",
+      "bytes": 126,
+      "sha256": "ad28d132ee48d6e23917cf5827cace785d0fc01a44ca68b0dda51cc8c3fd3f52",
+      "lines": 7
+    },
+    {
+      "source_path": "tsconfig.app.json",
+      "target_path": "tsconfig.app.json",
+      "action": "recreate_vue_tooling_config",
+      "bytes": 831,
+      "sha256": "5a6f38d57ecf70e6423e9074cbc91bc51eab956f4aede59ca11b6c2cbcb6c818",
+      "lines": 32
+    },
+    {
+      "source_path": "tsconfig.node.json",
+      "target_path": "tsconfig.node.json",
+      "action": "recreate_vue_tooling_config",
+      "bytes": 679,
+      "sha256": "a6d49d645590cac21c235a0548605d867321b2e1750e99176d2153d702dfa842",
+      "lines": 26
+    },
+    {
+      "source_path": "eslint.config.js",
+      "target_path": "eslint.config.js",
+      "action": "recreate_vue_tooling_config",
+      "bytes": 1231,
+      "sha256": "bb18fb3e0133a23cc1ebb47912f61609898de7b5468a209e46f4de60ab823415",
+      "lines": 38
+    },
+    {
+      "source_path": "playwright.config.ts",
+      "target_path": "playwright.config.ts",
+      "action": "recreate_vue_tooling_config",
+      "bytes": 671,
+      "sha256": "3941b680eddfcd04c80e6f1013a9e0caf3ae88443465ba493939234414a6153b",
+      "lines": 29
+    },
+    {
+      "source_path": "index.html",
+      "target_path": "index.html",
+      "action": "recreate_vue_tooling_config",
+      "bytes": 1044,
+      "sha256": "43b21e765f4746e3c89d391256efe648a0b3f4758c2b69b5db70cd6e5197235b",
+      "lines": 31
+    },
+    {
+      "source_path": "README.md",
+      "target_path": "README.md",
+      "action": "replace_documentation",
+      "bytes": 1499,
+      "sha256": "edb13a3af8e5dece39abe3130b7e4ca7cb7524dbc8420441f4ebd825495ffd64",
+      "lines": 42
+    },
+    {
+      "source_path": ".editorconfig",
+      "target_path": ".editorconfig",
+      "action": "adapt_repository_config",
+      "bytes": 271,
+      "sha256": "90f9822b6d594d863bb95db07acff61cd97f04e9f7d2704d90015e6cd9424b30",
+      "lines": 15
+    },
+    {
+      "source_path": ".gitignore",
+      "target_path": ".gitignore",
+      "action": "adapt_repository_config",
+      "bytes": 330,
+      "sha256": "4117d501a86039865b95f7d9f9569bf163a8005bc98484113e1dae594b9b3f30",
+      "lines": 28
+    },
+    {
+      "source_path": ".pre-commit-config.yaml",
+      "target_path": ".pre-commit-config.yaml",
+      "action": "recreate_vue_tooling_config",
+      "bytes": 715,
+      "sha256": "8f4fc22fe53f929aae18b0642b2593d9a60668e050086bb5871d33282289bf07",
+      "lines": 21
+    },
+    {
+      "source_path": ".env.example",
+      "target_path": ".env.example",
+      "action": "recreate_documented_public_env_keys",
+      "bytes": 374,
+      "sha256": "0f58946d1002d0ea6a53ea6ac88b3b0f05a0acf45dd38517cdc602e0af19e3b0",
+      "lines": 15
+    },
+    {
+      "source_path": "tests/e2e/analytics-layout.spec.ts",
+      "target_path": "tests/e2e/analytics-layout.spec.ts",
+      "action": "port_browser_contract_test",
+      "bytes": 10686,
+      "sha256": "420e75c4a95951b9f8f5e7fc137ad3ffca4291707ccf10dfe276d3058d160b33",
+      "lines": 315
+    },
+    {
+      "source_path": "tests/e2e/pilot-profile-route.spec.ts",
+      "target_path": "tests/e2e/pilot-profile-route.spec.ts",
+      "action": "port_browser_contract_test",
+      "bytes": 15054,
+      "sha256": "be70bfa1a3a2cad843292dd9a6848cf02e77195328e4c2b46e4529b4b7c60845",
+      "lines": 438
+    },
+    {
+      "source_path": "tests/e2e/pilots-avatar-route.spec.ts",
+      "target_path": "tests/e2e/pilots-avatar-route.spec.ts",
+      "action": "port_browser_contract_test",
+      "bytes": 5317,
+      "sha256": "5feceab7b735b3707ca70460ba0f39d99b8c2278c9f7aa7cc12fd5a6db49ec15",
+      "lines": 180
+    },
+    {
+      "source_path": "tests/e2e/pilots-route.spec.ts",
+      "target_path": "tests/e2e/pilots-route.spec.ts",
+      "action": "port_browser_contract_test",
+      "bytes": 3431,
+      "sha256": "f6a8e58df887aece9b76df3590da5df187bb1af24df9c90d5e7a747ef37a3594",
+      "lines": 124
+    },
+    {
+      "source_path": "tests/e2e/training-sessions-route.spec.ts",
+      "target_path": "tests/e2e/training-sessions-route.spec.ts",
+      "action": "port_browser_contract_test",
+      "bytes": 19057,
+      "sha256": "89c5423dc1235bc4a099e1753ea3ae5ae29327220454768dcc1d716454f61524",
+      "lines": 572
+    },
+    {
+      "source_path": "public/.gitkeep",
+      "target_path": null,
+      "action": "omit_unreferenced_asset_after_scope_check",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "lines": 0
+    },
+    {
+      "source_path": "public/favicon.png",
+      "target_path": "public/favicon.png",
+      "action": "reuse_asset",
+      "bytes": 688,
+      "sha256": "ad890f896d142a465d2f346d5939386562038a73007a9d76b7685220ebba8e79"
+    },
+    {
+      "source_path": "public/favicon55nord.ico",
+      "target_path": "public/favicon55nord.ico",
+      "action": "reuse_asset",
+      "bytes": 2040,
+      "sha256": "141301d013489a3959167defde55ad6b787357e7bba7e9b69b6871e38a3b0637"
+    },
+    {
+      "source_path": "public/logo.png",
+      "target_path": null,
+      "action": "omit_unreferenced_asset_after_scope_check",
+      "bytes": 6030,
+      "sha256": "18433ddc008f1eca4c8f884f68d19f39c1b155b5aadd6df4f9749b14021a7e01"
+    },
+    {
+      "source_path": "public/logo.svg",
+      "target_path": "public/logo.svg",
+      "action": "reuse_asset",
+      "bytes": 28985,
+      "sha256": "0cbf47e3f2918c7e9cda06159df8717dfafbc7da56864cf2d13c8ab5ae3d6a97",
+      "lines": 3
+    },
+    {
+      "source_path": ".github/workflows/frontend-ci.yml",
+      "target_path": ".github/workflows/frontend-ci.yml",
+      "action": "replace_with_gated_ci_and_release_deploy",
+      "bytes": 2040,
+      "sha256": "84a059df8afb1fc294b430b29d07c059381b0ae35dc2c604a1deff9e9f9b3b4f",
+      "lines": 75
+    },
+    {
+      "source_path": ".github/workflows/frontend-ru-deploy.yml",
+      "target_path": ".github/workflows/frontend-ru-deploy.yml",
+      "action": "replace_with_gated_ci_and_release_deploy",
+      "bytes": 2254,
+      "sha256": "bae0212fe99ef8481baf78672cf5c5f97cef8f196718cd6deaa0033f3f1bab30",
+      "lines": 76
+    }
+  ]
+}

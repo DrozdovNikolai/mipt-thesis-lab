@@ -1,0 +1,52 @@
+
+> 55north-commander@0.1.0 test:e2e
+> playwright test --workers=4
+
+
+Running 27 tests using 4 workers
+
+(node:48570) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:48571) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:48577) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:48578) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:48571) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:48578) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:48577) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:48570) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   3 [chromium] › tests/e2e/adverse-states.spec.ts:11:3 › distinguishes null crew projection (1.3s)
+  ✓   1 [chromium] › tests/e2e/adverse-states.spec.ts:11:3 › distinguishes absent crew projection (1.3s)
+  ✓   4 [chromium] › tests/e2e/adverse-states.spec.ts:11:3 › distinguishes legacy crew projection (1.3s)
+  ✓   2 [chromium] › tests/e2e/adverse-states.spec.ts:39:1 › keeps assessment-specific AI review and PDF IDs; failed PDF closes its pre-opened popup (1.7s)
+  ✓   7 [chromium] › tests/e2e/adverse-states.spec.ts:146:3 › training detail 403 retains a usable return action (1.1s)
+  ✓   5 [chromium] › tests/e2e/adverse-states.spec.ts:69:1 › changing only training day resets the selected assessment and tab; Back restores the route (1.5s)
+  ✓   8 [chromium] › tests/e2e/adverse-states.spec.ts:146:3 › training detail 404 retains a usable return action (1.1s)
+  ✓   6 [chromium] › tests/e2e/adverse-states.spec.ts:96:1 › analytics applies the same valid filters to four endpoints and isolates a failed card (1.9s)
+  ✓   9 [chromium] › tests/e2e/adverse-states.spec.ts:146:3 › training detail 503 retains a usable return action (967ms)
+  ✓  13 [chromium] › tests/e2e/pilots-route.spec.ts:36:1 › uses last name ascending by default and restores its cached result after reset (1.1s)
+  ✓  12 [chromium] › tests/e2e/pilots-avatar-route.spec.ts:46:1 › keeps loaded avatar visible after route switches and does not re-fetch missing photos (1.3s)
+  ✓  11 [chromium] › tests/e2e/analytics-layout.spec.ts:63:1 › keeps filters on the right and lower distribution cards on one row at 1024px (1.7s)
+  ✓  10 [chromium] › tests/e2e/pilot-profile-route.spec.ts:24:1 › opens pilot profile route from pilots list and defaults to training data tab (2.2s)
+  ✓  14 [chromium] › tests/e2e/session-routes.spec.ts:4:1 › keeps the protected deep link through login and rejects invalid detail IDs without a request (790ms)
+  ✓  16 [chromium] › tests/e2e/session-routes.spec.ts:36:1 › revalidates persisted privileges before rendering protected content (711ms)
+  ✓  15 [chromium] › tests/e2e/session-routes.spec.ts:14:1 › login failure allows retry and double submission makes a single request (809ms)
+  ✓  17 [chromium] › tests/e2e/session-routes.spec.ts:47:1 › shows retry/logout after profile failure and never mounts domain requests before verification (803ms)
+  ✓  18 [chromium] › tests/e2e/session-routes.spec.ts:66:1 › clears rejected refresh and permits login on the original deep link (838ms)
+  ✓  20 [chromium] › tests/e2e/session-routes.spec.ts:101:3 › redirects / to pilots (984ms)
+  ✓  19 [chromium] › tests/e2e/session-routes.spec.ts:81:1 › broadcasts logout to another tab and removes both protected trees (1.5s)
+  ✓  21 [chromium] › tests/e2e/session-routes.spec.ts:101:3 › redirects /unknown-page to pilots (940ms)
+  ✓  24 [chromium] › tests/e2e/settings-compatibility.spec.ts:97:1 › read-only privileges allow settings inspection without write actions (823ms)
+  ✓  23 [chromium] › tests/e2e/settings-compatibility.spec.ts:64:1 › creates, makes the only main type, survives failed save, and confirms deletion (1.5s)
+  ✓  22 [chromium] › tests/e2e/settings-compatibility.spec.ts:4:1 › preserves independent name/threshold drafts and saves hidden fields in the replace payload (1.8s)
+  ✓  25 [chromium] › tests/e2e/settings-compatibility.spec.ts:120:1 › compares selected IDs, prevents duplicates, keeps date on reset, and removes invalidated result (1.3s)
+  ✓  26 [chromium] › tests/e2e/settings-compatibility.spec.ts:145:1 › uses updated thresholds after saving settings and returning to compatibility (1.4s)
+  ✓  27 [chromium] › tests/e2e/training-sessions-route.spec.ts:411:1 › renders training sessions route with commander lookups and client-side date validation (1.4s)
+
+  27 passed (10.8s)

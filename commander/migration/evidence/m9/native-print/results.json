@@ -1,0 +1,58 @@
+{
+  "checkedAt": "2026-10-08T08:49:26.197Z",
+  "browser": "Chrome/145.0.7632.6",
+  "origin": "http://127.0.0.1:8088",
+  "method": "Headed Chrome direct CDP, native popup blocking (script click without user activation) and permitted popup (trusted mouse click). Actual chrome://print/ must render PDF and enable Save. Cancel is clicked in the real UI. Real 60-second cleanup timer; URL methods only observed, original implementations called. No window.open/print stubs, Page.printToPDF, or fake timers. Virtual/physical printer job is not submitted.",
+  "results": [
+    {
+      "mode": "blocked-popup",
+      "previewState": "display-preview",
+      "saveEnabled": true,
+      "summary": "Print\n  \n  \n\n1 page",
+      "report": {
+        "url": "http://127.0.0.1:8088/api/commander/training-sessions/1/assessments/1/report.pdf",
+        "status": 200,
+        "mimeType": "application/pdf"
+      },
+      "pdf": {
+        "size": 46913,
+        "type": "application/pdf",
+        "magic": "%PDF-"
+      },
+      "iframeTitle": "training-report-1-cm1.pdf",
+      "iframeWidth": "0px",
+      "popupCount": 0,
+      "cancelClosesPreview": true,
+      "exportEnabledAfterPrint": true,
+      "cleanupDelayMs": 60010,
+      "revokedUrlFailsFetch": true,
+      "remainingMainIframes": 0,
+      "runtimeErrors": []
+    },
+    {
+      "mode": "allowed-popup",
+      "previewState": "display-preview",
+      "saveEnabled": true,
+      "summary": "Print\n  \n  \n\n1 page",
+      "report": {
+        "url": "http://127.0.0.1:8088/api/commander/training-sessions/1/assessments/1/report.pdf",
+        "status": 200,
+        "mimeType": "application/pdf"
+      },
+      "pdf": {
+        "size": 46913,
+        "type": "application/pdf",
+        "magic": "%PDF-"
+      },
+      "iframeTitle": "training-report-1-cm1.pdf",
+      "iframeWidth": "100vw",
+      "popupCount": 1,
+      "cancelClosesPreview": true,
+      "exportEnabledAfterPrint": true,
+      "cleanupDelayMs": 60002,
+      "revokedUrlFailsFetch": true,
+      "remainingMainIframes": 0,
+      "runtimeErrors": []
+    }
+  ]
+}

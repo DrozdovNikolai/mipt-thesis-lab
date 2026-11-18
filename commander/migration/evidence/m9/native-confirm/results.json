@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-10-08T08:21:55.154Z",
+  "browser": "Chrome/145.0.7632.6",
+  "origin": "http://127.0.0.1:8088",
+  "method": "Headed Chrome; trusted CDP mouse click opens actual window.confirm. xdotool Escape targets only the owned browser window. No Page.handleJavaScriptDialog or window.confirm stub. Isolated disposable flight type is removed in finally.",
+  "dialog": {
+    "type": "confirm",
+    "message": "Delete training type \"Native keyboard 1791447714424\"? This cannot be undone.",
+    "hasBrowserHandler": true
+  },
+  "escapeResult": false,
+  "focusedAfterCancel": {
+    "tag": "BUTTON",
+    "text": "Delete"
+  },
+  "recordPreservedAfterCancel": true,
+  "mutationsAfterCancel": []
+}

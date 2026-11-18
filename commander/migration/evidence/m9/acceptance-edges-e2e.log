@@ -1,0 +1,113 @@
+
+> 55north-commander@0.1.0 test:e2e
+> playwright test acceptance-edges.spec.ts adverse-states.spec.ts --workers=2
+
+
+Running 17 tests using 2 workers
+
+(node:68256) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:68257) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:68256) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:68257) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [chromium] › tests/e2e/acceptance-edges.spec.ts:16:3 › bootstrap network cannot expose cached privileges and supports retry (758ms)
+  ✓   2 [chromium] › tests/e2e/acceptance-edges.spec.ts:4:1 › login recovers from a network failure without losing the deep link (771ms)
+  ✓   3 [chromium] › tests/e2e/acceptance-edges.spec.ts:16:3 › bootstrap forbidden cannot expose cached privileges and supports retry (693ms)
+  ✓   4 [chromium] › tests/e2e/acceptance-edges.spec.ts:39:1 › pilot pagination, activity and filters reset offsets atomically; lookup failure leaves rows usable (1.3s)
+  ✓   6 [chromium] › tests/e2e/acceptance-edges.spec.ts:127:1 › settings retains drafts on 422, suppresses duplicate save, and deletes the final type (948ms)
+  ✓   5 [chromium] › tests/e2e/acceptance-edges.spec.ts:86:1 › media retry and a new airline session never reuse the previous Blob (2.8s)
+  ✓   8 [chromium] › tests/e2e/adverse-states.spec.ts:11:3 › distinguishes legacy crew projection (686ms)
+  ✓   9 [chromium] › tests/e2e/adverse-states.spec.ts:11:3 › distinguishes absent crew projection (706ms)
+  ✓  10 [chromium] › tests/e2e/adverse-states.spec.ts:11:3 › distinguishes null crew projection (719ms)
+  ✓  11 [chromium] › tests/e2e/adverse-states.spec.ts:39:1 › keeps assessment-specific AI review and PDF IDs; failed PDF closes its pre-opened popup (776ms)
+  ✓  12 [chromium] › tests/e2e/adverse-states.spec.ts:69:1 › changing only training day resets the selected assessment and tab; Back restores the route (761ms)
+  ✓  13 [chromium] › tests/e2e/adverse-states.spec.ts:96:1 › analytics applies the same valid filters to four endpoints and isolates a failed card (843ms)
+  ✘   7 [chromium] › tests/e2e/acceptance-edges.spec.ts:157:1 › autocomplete Escape and Tab leave focus usable without selecting a pilot (5.7s)
+(node:68586) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:68586) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  15 [chromium] › tests/e2e/adverse-states.spec.ts:203:3 › training detail 403 retains a usable return action (757ms)
+  ✓  16 [chromium] › tests/e2e/adverse-states.spec.ts:203:3 › training detail 404 retains a usable return action (675ms)
+  ✓  17 [chromium] › tests/e2e/adverse-states.spec.ts:203:3 › training detail 503 retains a usable return action (711ms)
+  ✘  14 [chromium] › tests/e2e/adverse-states.spec.ts:145:1 › changes trend competence and local ranking without fetching analytics again (30.3s)
+
+
+  1) [chromium] › tests/e2e/acceptance-edges.spec.ts:157:1 › autocomplete Escape and Tab leave focus usable without selecting a pilot 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoHaveCount[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Locator:  getByRole('option')
+    Expected: [32m0[39m
+    Received: [31m3[39m
+    Timeout:  5000ms
+
+    Call log:
+    [2m  - Expect "toHaveCount" with timeout 5000ms[22m
+    [2m  - waiting for getByRole('option')[22m
+    [2m    9 × locator resolved to 3 elements[22m
+    [2m      - unexpected value "3"[22m
+
+
+      165 |   await first.press('ArrowDown')
+      166 |   await first.press('Escape')
+    > 167 |   await expect(page.getByRole('option')).toHaveCount(0)
+          |                                          ^
+      168 |   await expect(first).toBeFocused()
+      169 |   await first.press('Tab')
+      170 |   await expect(first).not.toBeFocused()
+        at /home/kolya/.cache/55north-commander-migration/acceptance/tests/e2e/acceptance-edges.spec.ts:167:42
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/chromium/acceptance-edges-autocompl-3bc3e-e-without-selecting-a-pilot-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/chromium/acceptance-edges-autocompl-3bc3e-e-without-selecting-a-pilot-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/chromium/acceptance-edges-autocompl-3bc3e-e-without-selecting-a-pilot-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/chromium/acceptance-edges-autocompl-3bc3e-e-without-selecting-a-pilot-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [chromium] › tests/e2e/adverse-states.spec.ts:145:1 › changes trend competence and local ranking without fetching analytics again 
+
+    [31mTest timeout of 30000ms exceeded.[39m
+
+    Error: locator.fill: Test timeout of 30000ms exceeded.
+    Call log:
+    [2m  - waiting for getByLabel('Training concerns', { exact: true })[22m
+
+
+      195 |   ).toBeVisible()
+      196 |   await page.getByLabel('Top performers', { exact: true }).fill('1')
+    > 197 |   await page.getByLabel('Training concerns', { exact: true }).fill('1')
+          |                                                               ^
+      198 |   await expect(page.getByText('2 of 3 pilots', { exact: true })).toBeVisible()
+      199 |   expect(calls).toEqual(initialCalls)
+      200 | })
+        at /home/kolya/.cache/55north-commander-migration/acceptance/tests/e2e/adverse-states.spec.ts:197:63
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/chromium/adverse-states-changes-tre-7b02a-ut-fetching-analytics-again-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/chromium/adverse-states-changes-tre-7b02a-ut-fetching-analytics-again-chromium/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/chromium/adverse-states-changes-tre-7b02a-ut-fetching-analytics-again-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/chromium/adverse-states-changes-tre-7b02a-ut-fetching-analytics-again-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    [chromium] › tests/e2e/acceptance-edges.spec.ts:157:1 › autocomplete Escape and Tab leave focus usable without selecting a pilot 
+    [chromium] › tests/e2e/adverse-states.spec.ts:145:1 › changes trend competence and local ranking without fetching analytics again 
+  15 passed (40.4s)

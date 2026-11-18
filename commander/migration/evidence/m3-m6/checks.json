@@ -1,0 +1,15 @@
+{
+  "recorded_on": "2026-10-08",
+  "source_head": "e230b700b53820286bb923e3c968e86d5c61cbe4",
+  "node": "24.21.0",
+  "commands": [
+    {"command": "npm run build", "exit_code": 0, "notes": "vue-tsc + tsc + Vite 7.3.7, 1139 modules, 8.62s bundling; includes all routes through M8"},
+    {"command": "npm run test:unit", "exit_code": 0, "tests_passed": 20, "files_passed": 3, "notes": "HTTP races, session envelope, media URL/debounce lifecycle; before additional feature tests"},
+    {"command": "COMMANDER_TEST_PREVIEW=1 LD_LIBRARY_PATH=/tmp/55north-commander-browser-libs npm run test:e2e -- --workers=2 --retries=0", "exit_code": 0, "tests_passed": 5, "duration": "2.5m", "notes": "The five original unchanged browser contracts on the Vue production build: pilots, avatars, profile, training sessions, analytics layout. Mock API only."}
+  ],
+  "known_initial_failures": [
+    "Development-server initial route was not ready when the login form mounted. Bootstrap now awaits router.isReady(). Cold file reads through the Windows mount made the failure visible.",
+    "A unit fixture reused a consumed Response body; changed fixture to return a new Response per fetch.",
+    "Moving node_modules through the Windows mount was too slow; dependency installation was recreated from the lockfile in a task-owned Linux temporary directory, symlinked locally. This symlink is ignored by git."
+  ]
+}

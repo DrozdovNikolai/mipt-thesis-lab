@@ -1,0 +1,46 @@
+name: Commander checks
+on:
+  push:
+  pull_request:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      matrix:
+        brand: [55nord, firefly]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run format:check
+      - run: npm run lint
+      - run: npm run test:unit
+      - run: npm run build:${{ matrix.brand }}
+        env:
+          VITE_APP_VERSION: ${{ github.sha }}
+          VITE_APP_ENV: production
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e -- --workers=2
+        env:
+          COMMANDER_TEST_PREVIEW: '1'
+      - run: npx playwright install --with-deps firefox webkit
+        if: matrix.brand == '55nord'
+      - run: npm run test:browsers
+        if: matrix.brand == '55nord'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: commander-${{ matrix.brand }}-${{ github.sha }}
+          path: dist/
+          retention-days: 30
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: commander-checks-${{ matrix.brand }}
+          path: |
+            playwright-report/
+            test-results/
+          retention-days: 14

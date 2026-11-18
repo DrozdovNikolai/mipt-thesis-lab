@@ -1,0 +1,164 @@
+{
+  "checkedAt": "2026-10-08T08:14:52.152Z",
+  "browser": "Chrome/145.0.7632.6",
+  "origin": "http://127.0.0.1:8088",
+  "originalSize": {
+    "width": 1440,
+    "dpr": 1
+  },
+  "method": "Headed Chrome; xdotool sends five Ctrl+Plus shortcuts exclusively to the owned browser PID/window. No emulated viewport, page scale, or CSS zoom. DPR 1 → 2, width 1440 → 720, visualViewport.scale remains 1. Each enabled visible main control is focused and scrolled into view; its center must pass browser hit testing. Real synthetic API.",
+  "results": [
+    {
+      "name": "pilots",
+      "path": "/pilots",
+      "checked": [
+        "text",
+        "AllActiveInactive",
+        "Newest firstOldest firstLogin A-ZLogin Z-AEmail A-ZEmail Z-ALast name A-ZLast na",
+        "All aircraftA320",
+        "2050100",
+        "Reset filters"
+      ],
+      "failures": [],
+      "width": 720,
+      "dpr": 2,
+      "scale": 1,
+      "documentOverflow": false
+    },
+    {
+      "name": "profile",
+      "path": "/pilots/070b1918-b54f-4861-aa85-6712f300da5f/profile",
+      "checked": [
+        "Back to pilots",
+        "Training data",
+        "Profile"
+      ],
+      "failures": [],
+      "width": 720,
+      "dpr": 2,
+      "scale": 1,
+      "documentOverflow": false
+    },
+    {
+      "name": "training-data",
+      "path": "/pilots/070b1918-b54f-4861-aa85-6712f300da5f/training-data",
+      "checked": [
+        "Back to pilots",
+        "Training data",
+        "Profile",
+        "FPM5",
+        "COM4",
+        "Details",
+        "Day 1"
+      ],
+      "failures": [],
+      "width": 720,
+      "dpr": 2,
+      "scale": 1,
+      "documentOverflow": false
+    },
+    {
+      "name": "training-sessions",
+      "path": "/training-sessions",
+      "checked": [
+        "Details",
+        "Day 1",
+        "date",
+        "date",
+        "All aircraftA320",
+        "text",
+        "text",
+        "text",
+        "2050100",
+        "Reset filters"
+      ],
+      "failures": [],
+      "width": 720,
+      "dpr": 2,
+      "scale": 1,
+      "documentOverflow": false
+    },
+    {
+      "name": "detail",
+      "path": "/training-sessions/1",
+      "checked": [
+        "Back to training sessions",
+        "Participant · current CM1Alice Alpha",
+        "BBParticipant · current CM2Bob Bravo",
+        "Profile",
+        "Export PDF",
+        "Scenario",
+        "Comments",
+        "AI review"
+      ],
+      "failures": [],
+      "width": 720,
+      "dpr": 2,
+      "scale": 1,
+      "documentOverflow": false
+    },
+    {
+      "name": "analytics",
+      "path": "/analytics",
+      "checked": [
+        "number",
+        "number",
+        "FPM - Flight Path ManagementCOM - Communication",
+        "Score spread",
+        "number",
+        "number",
+        "number",
+        "number",
+        "number",
+        "All aircraftA320",
+        "All positions",
+        "text",
+        "number",
+        "number",
+        "date",
+        "Reset filters"
+      ],
+      "failures": [],
+      "width": 720,
+      "dpr": 2,
+      "scale": 1,
+      "documentOverflow": false
+    },
+    {
+      "name": "settings",
+      "path": "/settings",
+      "checked": [
+        "text",
+        "Migration recurrentMain Updated Oct 8, 2026, 10:41 AM2/2 thresholds",
+        "text",
+        "Delete",
+        "text",
+        "text",
+        "Clear",
+        "text",
+        "Clear"
+      ],
+      "failures": [],
+      "width": 720,
+      "dpr": 2,
+      "scale": 1,
+      "documentOverflow": false
+    },
+    {
+      "name": "compatibility",
+      "path": "/compatibility",
+      "checked": [
+        "date",
+        "text",
+        "text",
+        "Select typeMigration recurrent",
+        "Reset"
+      ],
+      "failures": [],
+      "width": 720,
+      "dpr": 2,
+      "scale": 1,
+      "documentOverflow": false
+    }
+  ]
+}

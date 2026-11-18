@@ -1,0 +1,7 @@
+
+> 55north-commander@0.1.0 test:native-confirm
+> node tests/native/browser-checks.mjs --confirm
+
+analytics: hidden → visible, native resize and exact restored canvas pixels passed
+profile: hidden → visible, native resize and exact restored canvas pixels passed
+native confirm: correct message, Escape cancels, focus returns to Delete, record preserved

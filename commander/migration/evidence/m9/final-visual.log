@@ -1,0 +1,61 @@
+
+> 55north-commander@0.1.0 test:visual
+> playwright test -c playwright.visual.config.ts --grep compatibility|ranked separator
+
+
+Running 36 tests using 4 workers
+
+(node:93334) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:93339) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:93333) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:93341) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:93339) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:93334) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:93333) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:93341) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   2 tests/visual/chart-edges.spec.ts:7:3 › vue ranked separator and single-point trend with long label (1.0s)
+  ✓   3 tests/visual/chart-edges.spec.ts:7:3 › react ranked separator and single-point trend with long label (1.2s)
+  ✓   4 tests/visual/routes.spec.ts:8:7 › react compatibility 768 (1.2s)
+  ✓   1 tests/visual/routes.spec.ts:8:7 › react compatibility 390 (1.3s)
+  ✓   5 tests/visual/routes.spec.ts:8:7 › react compatibility 1024 (1.2s)
+  ✓   6 tests/visual/routes.spec.ts:8:7 › react compatibility 1440 (1.2s)
+  ✓   7 tests/visual/routes.spec.ts:8:7 › react compatibility 1920 (1.2s)
+  ✓   8 tests/visual/routes.spec.ts:8:7 › vue compatibility 390 (1.2s)
+  ✓   9 tests/visual/routes.spec.ts:8:7 › vue compatibility 768 (1.2s)
+  ✓  10 tests/visual/routes.spec.ts:8:7 › vue compatibility 1024 (1.2s)
+  ✓  11 tests/visual/routes.spec.ts:8:7 › vue compatibility 1440 (1.2s)
+  ✓  12 tests/visual/routes.spec.ts:8:7 › vue compatibility 1920 (1.2s)
+  ✓  13 tests/visual/states.spec.ts:10:9 › react compatibility loading 390 (725ms)
+  ✓  16 tests/visual/states.spec.ts:10:9 › react compatibility loading 768 (698ms)
+  ✓  14 tests/visual/states.spec.ts:10:9 › react compatibility empty 390 (1.2s)
+  ✓  15 tests/visual/states.spec.ts:10:9 › react compatibility error 390 (1.3s)
+  ✓  17 tests/visual/states.spec.ts:10:9 › react compatibility empty 768 (1.2s)
+  ✓  19 tests/visual/states.spec.ts:10:9 › react compatibility loading 1024 (690ms)
+  ✓  18 tests/visual/states.spec.ts:10:9 › react compatibility error 768 (1.2s)
+  ✓  20 tests/visual/states.spec.ts:10:9 › react compatibility empty 1024 (1.2s)
+  ✓  22 tests/visual/states.spec.ts:10:9 › react compatibility loading 1440 (675ms)
+  ✓  21 tests/visual/states.spec.ts:10:9 › react compatibility error 1024 (1.2s)
+  ✓  23 tests/visual/states.spec.ts:10:9 › react compatibility empty 1440 (1.2s)
+  ✓  25 tests/visual/states.spec.ts:10:9 › vue compatibility loading 390 (705ms)
+  ✓  24 tests/visual/states.spec.ts:10:9 › react compatibility error 1440 (1.2s)
+  ✓  28 tests/visual/states.spec.ts:10:9 › vue compatibility loading 768 (696ms)
+  ✓  26 tests/visual/states.spec.ts:10:9 › vue compatibility empty 390 (1.3s)
+  ✓  27 tests/visual/states.spec.ts:10:9 › vue compatibility error 390 (1.3s)
+  ✓  31 tests/visual/states.spec.ts:10:9 › vue compatibility loading 1024 (652ms)
+  ✓  29 tests/visual/states.spec.ts:10:9 › vue compatibility empty 768 (1.2s)
+  ✓  30 tests/visual/states.spec.ts:10:9 › vue compatibility error 768 (1.2s)
+  ✓  34 tests/visual/states.spec.ts:10:9 › vue compatibility loading 1440 (640ms)
+  ✓  32 tests/visual/states.spec.ts:10:9 › vue compatibility empty 1024 (1.2s)
+  ✓  33 tests/visual/states.spec.ts:10:9 › vue compatibility error 1024 (1.2s)
+  ✓  35 tests/visual/states.spec.ts:10:9 › vue compatibility empty 1440 (1.2s)
+  ✓  36 tests/visual/states.spec.ts:10:9 › vue compatibility error 1440 (1.2s)
+
+  36 passed (11.7s)

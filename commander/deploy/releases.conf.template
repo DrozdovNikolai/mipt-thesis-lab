@@ -1,0 +1,23 @@
+# Use with an existing Nginx server or mount as its Sites config. The entire
+# release root must be mounted, so current symlink changes remain visible.
+server {
+  listen 8080;
+  root /srv/commander/current;
+  index index.html;
+  location = /healthz { default_type text/plain; return 200 'ok'; }
+  location = /api { proxy_pass ${COMMANDER_API_ORIGIN}; proxy_set_header Host $proxy_host; }
+  location ^~ /api/ {
+    proxy_pass ${COMMANDER_API_ORIGIN};
+    proxy_set_header Host $proxy_host;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_read_timeout 120s;
+  }
+  location ^~ /assets/ {
+    alias /srv/commander/assets/;
+    add_header Cache-Control 'public, max-age=31536000, immutable';
+  }
+  location = /index.html { add_header Cache-Control 'no-store'; }
+  location ~* \.(?:js|mjs|css|map|ico|png|svg|jpg|jpeg|webp|woff2?)$ { try_files $uri =404; }
+  location / { try_files $uri $uri/ /index.html; }
+}

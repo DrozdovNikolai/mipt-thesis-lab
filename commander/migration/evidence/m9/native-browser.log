@@ -1,0 +1,19 @@
+
+> 55north-commander@0.1.0 test:native-zoom
+> node tests/native/browser-checks.mjs --zoom
+
+analytics: hidden → visible, native resize and exact restored canvas pixels passed
+profile: hidden → visible, native resize and exact restored canvas pixels passed
+Native zoom step 1 { width: 1309, dpr: 1.100000023841858, focus: false }
+Native zoom step 2 { width: 1152, dpr: 1.25, focus: false }
+Native zoom step 3 { width: 960, dpr: 1.5, focus: false }
+Native zoom step 4 { width: 823, dpr: 1.75, focus: false }
+Native zoom step 5 { width: 720, dpr: 2, focus: false }
+pilots: native 200% zoom, 6 reachable controls, no overflow
+profile: native 200% zoom, 3 reachable controls, no overflow
+training-data: native 200% zoom, 7 reachable controls, no overflow
+training-sessions: native 200% zoom, 10 reachable controls, no overflow
+detail: native 200% zoom, 8 reachable controls, no overflow
+analytics: native 200% zoom, 16 reachable controls, no overflow
+settings: native 200% zoom, 9 reachable controls, no overflow
+compatibility: native 200% zoom, 5 reachable controls, no overflow

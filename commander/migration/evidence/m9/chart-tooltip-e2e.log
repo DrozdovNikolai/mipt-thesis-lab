@@ -1,0 +1,14 @@
+
+> 55north-commander@0.1.0 test:e2e
+> playwright test chart-tooltip-edge.spec.ts --workers=1
+
+
+Running 1 test using 1 worker
+
+(node:4847) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:4847) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [chromium] › tests/e2e/chart-tooltip-edge.spec.ts:5:1 › a tooltip in a horizontally scrolled mobile chart stays inside the viewport and unmounts (889ms)
+
+  1 passed (1.7s)

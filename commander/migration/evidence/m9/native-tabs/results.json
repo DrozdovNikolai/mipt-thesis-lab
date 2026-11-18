@@ -1,0 +1,148 @@
+{
+  "checkedAt": "2026-10-08T08:21:54.420Z",
+  "browser": "Chrome/145.0.7632.6",
+  "origin": "http://127.0.0.1:8088",
+  "method": "Headed Chrome over direct CDP, no Playwright focus emulation, no visibility override. Native tabs in one window; real synthetic API. Resize while hidden, return, restore size, compare stable canvas pixels.",
+  "results": [
+    {
+      "name": "analytics",
+      "path": "/analytics",
+      "hiddenForAtLeastMs": 1200,
+      "visibilityEvents": [
+        "hidden",
+        "visible"
+      ],
+      "originalWidth": 1440,
+      "before": [
+        {
+          "label": "Competency grade distribution chart",
+          "width": 419,
+          "height": 376,
+          "cssWidth": 419,
+          "cssHeight": 376,
+          "dpr": 1,
+          "painted": 7813
+        },
+        {
+          "label": "Pilot grade distribution chart",
+          "width": 419,
+          "height": 302,
+          "cssWidth": 419,
+          "cssHeight": 302,
+          "dpr": 1,
+          "painted": 7976
+        },
+        {
+          "label": "Competency half-year average trend chart",
+          "width": 838,
+          "height": 884,
+          "cssWidth": 419,
+          "cssHeight": 442,
+          "dpr": 1,
+          "painted": 20431
+        },
+        {
+          "label": "Instructor grade distribution chart",
+          "width": 419,
+          "height": 354,
+          "cssWidth": 419,
+          "cssHeight": 354,
+          "dpr": 1,
+          "painted": 5914
+        }
+      ],
+      "resized": [
+        {
+          "label": "Competency grade distribution chart",
+          "width": 580,
+          "height": 376,
+          "cssWidth": 580,
+          "cssHeight": 376,
+          "dpr": 1,
+          "painted": 8294
+        },
+        {
+          "label": "Pilot grade distribution chart",
+          "width": 580,
+          "height": 302,
+          "cssWidth": 580,
+          "cssHeight": 302,
+          "dpr": 1,
+          "painted": 10638
+        },
+        {
+          "label": "Competency half-year average trend chart",
+          "width": 1160,
+          "height": 884,
+          "cssWidth": 580,
+          "cssHeight": 442,
+          "dpr": 1,
+          "painted": 27515
+        },
+        {
+          "label": "Instructor grade distribution chart",
+          "width": 580,
+          "height": 354,
+          "cssWidth": 580,
+          "cssHeight": 354,
+          "dpr": 1,
+          "painted": 7530
+        }
+      ],
+      "restoredPixelsEqual": true,
+      "runtimeErrors": []
+    },
+    {
+      "name": "profile",
+      "path": "/pilots/070b1918-b54f-4861-aa85-6712f300da5f/training-data",
+      "hiddenForAtLeastMs": 1200,
+      "visibilityEvents": [
+        "hidden",
+        "visible"
+      ],
+      "originalWidth": 1440,
+      "before": [
+        {
+          "label": "Latest pilot competence radar chart",
+          "width": 500,
+          "height": 500,
+          "cssWidth": 250,
+          "cssHeight": 250,
+          "dpr": 1,
+          "painted": 3533
+        },
+        {
+          "label": "Flight Path Management score history chart",
+          "width": 914,
+          "height": 640,
+          "cssWidth": 457,
+          "cssHeight": 320,
+          "dpr": 1,
+          "painted": 14464
+        }
+      ],
+      "resized": [
+        {
+          "label": "Latest pilot competence radar chart",
+          "width": 500,
+          "height": 500,
+          "cssWidth": 250,
+          "cssHeight": 250,
+          "dpr": 1,
+          "painted": 3533
+        },
+        {
+          "label": "Flight Path Management score history chart",
+          "width": 1112,
+          "height": 640,
+          "cssWidth": 556,
+          "cssHeight": 320,
+          "dpr": 1,
+          "painted": 17236
+        }
+      ],
+      "restoredPixelsEqual": true,
+      "runtimeErrors": []
+    }
+  ]
+}

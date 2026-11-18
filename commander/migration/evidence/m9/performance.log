@@ -1,0 +1,14 @@
+
+> 55north-commander@0.1.0 test:performance
+> playwright test -c playwright.performance.config.ts
+
+
+Running 1 test using 1 worker
+
+(node:18714) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:18714) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/performance/comparison.spec.ts:7:1 › measures React and Vue with identical fixtures and cold browser contexts (12.3s)
+
+  1 passed (13.3s)

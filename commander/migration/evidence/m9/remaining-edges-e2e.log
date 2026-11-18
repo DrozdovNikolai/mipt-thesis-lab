@@ -1,0 +1,40 @@
+
+> 55north-commander@0.1.0 test:e2e
+> playwright test acceptance-edges.spec.ts adverse-states.spec.ts --workers=2
+
+
+Running 23 tests using 2 workers
+
+(node:90938) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:90939) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:90938) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:90939) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [chromium] › tests/e2e/acceptance-edges.spec.ts:16:3 › bootstrap network cannot expose cached privileges and supports retry (715ms)
+  ✓   2 [chromium] › tests/e2e/acceptance-edges.spec.ts:4:1 › login recovers from a network failure without losing the deep link (740ms)
+  ✓   3 [chromium] › tests/e2e/acceptance-edges.spec.ts:16:3 › bootstrap forbidden cannot expose cached privileges and supports retry (675ms)
+  ✓   4 [chromium] › tests/e2e/acceptance-edges.spec.ts:39:1 › pilot pagination, activity and filters reset offsets atomically; lookup failure leaves rows usable (1.4s)
+  ✓   6 [chromium] › tests/e2e/acceptance-edges.spec.ts:155:1 › settings retains drafts on 422, suppresses duplicate save, and deletes the final type (777ms)
+  ✓   7 [chromium] › tests/e2e/acceptance-edges.spec.ts:185:1 › autocomplete Escape and Tab leave focus usable without selecting a pilot (681ms)
+  ✓   5 [chromium] › tests/e2e/acceptance-edges.spec.ts:90:1 › media retry and a new airline session never reuse the previous Blob (2.8s)
+  ✓   8 [chromium] › tests/e2e/acceptance-edges.spec.ts:203:1 › a late response for the previous search cannot replace the current pilot list (1.3s)
+  ✓   9 [chromium] › tests/e2e/acceptance-edges.spec.ts:241:1 › 403 save and rejected deletion retain the selected settings draft (772ms)
+  ✓  10 [chromium] › tests/e2e/acceptance-edges.spec.ts:258:1 › autocomplete exposes loading and empty results and closes with Escape (694ms)
+  ✓  11 [chromium] › tests/e2e/adverse-states.spec.ts:11:3 › invalid back state falls back to training sessions: "https://untrusted.example/elsewhere" (693ms)
+  ✓  12 [chromium] › tests/e2e/adverse-states.spec.ts:11:3 › invalid back state falls back to training sessions: {"malformed":true} (686ms)
+  ✓  13 [chromium] › tests/e2e/adverse-states.spec.ts:28:1 › analytics lookup caches belong to the newly verified airline session (965ms)
+  ✓  14 [chromium] › tests/e2e/adverse-states.spec.ts:67:3 › distinguishes legacy crew projection (672ms)
+  ✓  15 [chromium] › tests/e2e/adverse-states.spec.ts:67:3 › distinguishes absent crew projection (676ms)
+  ✓  16 [chromium] › tests/e2e/adverse-states.spec.ts:67:3 › distinguishes null crew projection (686ms)
+  ✓  17 [chromium] › tests/e2e/adverse-states.spec.ts:95:1 › keeps assessment-specific AI review and PDF IDs; failed PDF closes its pre-opened popup (870ms)
+  ✓  18 [chromium] › tests/e2e/adverse-states.spec.ts:125:1 › changing only training day resets the selected assessment and tab; Back restores the route (978ms)
+  ✓  19 [chromium] › tests/e2e/adverse-states.spec.ts:152:1 › analytics applies the same valid filters to four endpoints and isolates a failed card (903ms)
+  ✓  20 [chromium] › tests/e2e/adverse-states.spec.ts:201:1 › changes trend competence and local ranking without fetching analytics again (749ms)
+  ✓  21 [chromium] › tests/e2e/adverse-states.spec.ts:259:3 › training detail 403 retains a usable return action (661ms)
+  ✓  22 [chromium] › tests/e2e/adverse-states.spec.ts:259:3 › training detail 404 retains a usable return action (680ms)
+  ✓  23 [chromium] › tests/e2e/adverse-states.spec.ts:259:3 › training detail 503 retains a usable return action (692ms)
+
+  23 passed (11.5s)

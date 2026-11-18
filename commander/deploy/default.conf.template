@@ -1,0 +1,34 @@
+server {
+  listen 8080;
+  root /usr/share/nginx/html;
+  index index.html;
+
+  location = /healthz { access_log off; default_type text/plain; return 200 'ok'; }
+  location = /api {
+    proxy_pass ${COMMANDER_API_ORIGIN};
+    proxy_set_header Host $proxy_host;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+  }
+  location ^~ /api/ {
+    proxy_pass ${COMMANDER_API_ORIGIN};
+    proxy_set_header Host $proxy_host;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_read_timeout 120s;
+  }
+  location ^~ /assets/ {
+    try_files $uri =404;
+    add_header Cache-Control 'public, max-age=31536000, immutable';
+  }
+  location = /index.html {
+    add_header Cache-Control 'no-store';
+  }
+  location ~* \.(?:js|mjs|css|map|ico|png|svg|jpg|jpeg|webp|woff2?)$ {
+    try_files $uri =404;
+    add_header Cache-Control 'public, max-age=3600';
+  }
+  location / {
+    try_files $uri $uri/ /index.html;
+  }
+}

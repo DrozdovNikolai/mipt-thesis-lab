@@ -1,0 +1,307 @@
+{
+  "browser": "145.0.7632.6",
+  "repeats": 5,
+  "method": "Same machine, alternating builds, new browser context, no network throttling, /me revalidation, two paint frames after loaded list or four canvas nodes. Gzip computed identically with Node zlib. Timing includes browser and local server overhead.",
+  "summary": [
+    {
+      "route": "pilots",
+      "implementation": "react",
+      "medianReadyMs": 460,
+      "medianApiRequests": 3,
+      "medianJavascriptGzipBytes": 266885
+    },
+    {
+      "route": "pilots",
+      "implementation": "vue",
+      "medianReadyMs": 614,
+      "medianApiRequests": 3,
+      "medianJavascriptGzipBytes": 90911
+    },
+    {
+      "route": "analytics",
+      "implementation": "react",
+      "medianReadyMs": 487,
+      "medianApiRequests": 8,
+      "medianJavascriptGzipBytes": 266885
+    },
+    {
+      "route": "analytics",
+      "implementation": "vue",
+      "medianReadyMs": 616,
+      "medianApiRequests": 8,
+      "medianJavascriptGzipBytes": 188946
+    }
+  ],
+  "samples": [
+    {
+      "implementation": "react",
+      "route": "pilots",
+      "readyMs": 569,
+      "requests": 3,
+      "javascriptGzipBytes": 266885,
+      "javascriptFiles": [
+        "/assets/index-D5jdnGsP.js"
+      ]
+    },
+    {
+      "implementation": "react",
+      "route": "analytics",
+      "readyMs": 559,
+      "requests": 8,
+      "javascriptGzipBytes": 266885,
+      "javascriptFiles": [
+        "/assets/index-D5jdnGsP.js"
+      ]
+    },
+    {
+      "implementation": "vue",
+      "route": "pilots",
+      "readyMs": 614,
+      "requests": 3,
+      "javascriptGzipBytes": 90911,
+      "javascriptFiles": [
+        "/assets/index-BTvwGXkS.js",
+        "/assets/PilotsView-BK4G31Ia.js",
+        "/assets/useSessionScope-Cueo9xHk.js",
+        "/assets/useDebouncedValue-CfccBqd6.js",
+        "/assets/errorMessage-DxWIkevE.js",
+        "/assets/AircraftChip.vue_vue_type_script_setup_true_lang-_ajNFKXO.js",
+        "/assets/PilotAvatar.vue_vue_type_script_setup_true_lang-CSD-xjGa.js",
+        "/assets/StickyHorizontalScrollArea.vue_vue_type_script_setup_true_lang-C5iTQVBQ.js",
+        "/assets/ResultsPagination.vue_vue_type_script_setup_true_lang-BHE0J9tA.js"
+      ]
+    },
+    {
+      "implementation": "vue",
+      "route": "analytics",
+      "readyMs": 614,
+      "requests": 8,
+      "javascriptGzipBytes": 188946,
+      "javascriptFiles": [
+        "/assets/index-BTvwGXkS.js",
+        "/assets/AnalyticsView-tEah8-pX.js",
+        "/assets/useSessionScope-Cueo9xHk.js",
+        "/assets/errorMessage-DxWIkevE.js",
+        "/assets/useDebouncedValue-CfccBqd6.js",
+        "/assets/LineChart.vue_vue_type_script_setup_true_lang-BPvWgjVO.js",
+        "/assets/AutocompleteSelect.vue_vue_type_script_setup_true_lang-lkM8udyv.js"
+      ]
+    },
+    {
+      "implementation": "react",
+      "route": "pilots",
+      "readyMs": 471,
+      "requests": 3,
+      "javascriptGzipBytes": 266885,
+      "javascriptFiles": [
+        "/assets/index-D5jdnGsP.js"
+      ]
+    },
+    {
+      "implementation": "react",
+      "route": "analytics",
+      "readyMs": 535,
+      "requests": 8,
+      "javascriptGzipBytes": 266885,
+      "javascriptFiles": [
+        "/assets/index-D5jdnGsP.js"
+      ]
+    },
+    {
+      "implementation": "vue",
+      "route": "pilots",
+      "readyMs": 614,
+      "requests": 3,
+      "javascriptGzipBytes": 90911,
+      "javascriptFiles": [
+        "/assets/index-BTvwGXkS.js",
+        "/assets/PilotsView-BK4G31Ia.js",
+        "/assets/useDebouncedValue-CfccBqd6.js",
+        "/assets/errorMessage-DxWIkevE.js",
+        "/assets/useSessionScope-Cueo9xHk.js",
+        "/assets/PilotAvatar.vue_vue_type_script_setup_true_lang-CSD-xjGa.js",
+        "/assets/AircraftChip.vue_vue_type_script_setup_true_lang-_ajNFKXO.js",
+        "/assets/StickyHorizontalScrollArea.vue_vue_type_script_setup_true_lang-C5iTQVBQ.js",
+        "/assets/ResultsPagination.vue_vue_type_script_setup_true_lang-BHE0J9tA.js"
+      ]
+    },
+    {
+      "implementation": "vue",
+      "route": "analytics",
+      "readyMs": 618,
+      "requests": 8,
+      "javascriptGzipBytes": 188946,
+      "javascriptFiles": [
+        "/assets/index-BTvwGXkS.js",
+        "/assets/AnalyticsView-tEah8-pX.js",
+        "/assets/useSessionScope-Cueo9xHk.js",
+        "/assets/errorMessage-DxWIkevE.js",
+        "/assets/useDebouncedValue-CfccBqd6.js",
+        "/assets/LineChart.vue_vue_type_script_setup_true_lang-BPvWgjVO.js",
+        "/assets/AutocompleteSelect.vue_vue_type_script_setup_true_lang-lkM8udyv.js"
+      ]
+    },
+    {
+      "implementation": "react",
+      "route": "pilots",
+      "readyMs": 460,
+      "requests": 3,
+      "javascriptGzipBytes": 266885,
+      "javascriptFiles": [
+        "/assets/index-D5jdnGsP.js"
+      ]
+    },
+    {
+      "implementation": "react",
+      "route": "analytics",
+      "readyMs": 447,
+      "requests": 8,
+      "javascriptGzipBytes": 266885,
+      "javascriptFiles": [
+        "/assets/index-D5jdnGsP.js"
+      ]
+    },
+    {
+      "implementation": "vue",
+      "route": "pilots",
+      "readyMs": 604,
+      "requests": 3,
+      "javascriptGzipBytes": 90911,
+      "javascriptFiles": [
+        "/assets/index-BTvwGXkS.js",
+        "/assets/PilotsView-BK4G31Ia.js",
+        "/assets/useDebouncedValue-CfccBqd6.js",
+        "/assets/useSessionScope-Cueo9xHk.js",
+        "/assets/errorMessage-DxWIkevE.js",
+        "/assets/PilotAvatar.vue_vue_type_script_setup_true_lang-CSD-xjGa.js",
+        "/assets/AircraftChip.vue_vue_type_script_setup_true_lang-_ajNFKXO.js",
+        "/assets/StickyHorizontalScrollArea.vue_vue_type_script_setup_true_lang-C5iTQVBQ.js",
+        "/assets/ResultsPagination.vue_vue_type_script_setup_true_lang-BHE0J9tA.js"
+      ]
+    },
+    {
+      "implementation": "vue",
+      "route": "analytics",
+      "readyMs": 616,
+      "requests": 8,
+      "javascriptGzipBytes": 188946,
+      "javascriptFiles": [
+        "/assets/index-BTvwGXkS.js",
+        "/assets/AnalyticsView-tEah8-pX.js",
+        "/assets/useSessionScope-Cueo9xHk.js",
+        "/assets/errorMessage-DxWIkevE.js",
+        "/assets/useDebouncedValue-CfccBqd6.js",
+        "/assets/LineChart.vue_vue_type_script_setup_true_lang-BPvWgjVO.js",
+        "/assets/AutocompleteSelect.vue_vue_type_script_setup_true_lang-lkM8udyv.js"
+      ]
+    },
+    {
+      "implementation": "react",
+      "route": "pilots",
+      "readyMs": 413,
+      "requests": 3,
+      "javascriptGzipBytes": 266885,
+      "javascriptFiles": [
+        "/assets/index-D5jdnGsP.js"
+      ]
+    },
+    {
+      "implementation": "react",
+      "route": "analytics",
+      "readyMs": 487,
+      "requests": 8,
+      "javascriptGzipBytes": 266885,
+      "javascriptFiles": [
+        "/assets/index-D5jdnGsP.js"
+      ]
+    },
+    {
+      "implementation": "vue",
+      "route": "pilots",
+      "readyMs": 619,
+      "requests": 3,
+      "javascriptGzipBytes": 90911,
+      "javascriptFiles": [
+        "/assets/index-BTvwGXkS.js",
+        "/assets/PilotsView-BK4G31Ia.js",
+        "/assets/useSessionScope-Cueo9xHk.js",
+        "/assets/useDebouncedValue-CfccBqd6.js",
+        "/assets/errorMessage-DxWIkevE.js",
+        "/assets/PilotAvatar.vue_vue_type_script_setup_true_lang-CSD-xjGa.js",
+        "/assets/AircraftChip.vue_vue_type_script_setup_true_lang-_ajNFKXO.js",
+        "/assets/StickyHorizontalScrollArea.vue_vue_type_script_setup_true_lang-C5iTQVBQ.js",
+        "/assets/ResultsPagination.vue_vue_type_script_setup_true_lang-BHE0J9tA.js"
+      ]
+    },
+    {
+      "implementation": "vue",
+      "route": "analytics",
+      "readyMs": 622,
+      "requests": 8,
+      "javascriptGzipBytes": 188946,
+      "javascriptFiles": [
+        "/assets/index-BTvwGXkS.js",
+        "/assets/AnalyticsView-tEah8-pX.js",
+        "/assets/useSessionScope-Cueo9xHk.js",
+        "/assets/errorMessage-DxWIkevE.js",
+        "/assets/useDebouncedValue-CfccBqd6.js",
+        "/assets/LineChart.vue_vue_type_script_setup_true_lang-BPvWgjVO.js",
+        "/assets/AutocompleteSelect.vue_vue_type_script_setup_true_lang-lkM8udyv.js"
+      ]
+    },
+    {
+      "implementation": "react",
+      "route": "pilots",
+      "readyMs": 440,
+      "requests": 3,
+      "javascriptGzipBytes": 266885,
+      "javascriptFiles": [
+        "/assets/index-D5jdnGsP.js"
+      ]
+    },
+    {
+      "implementation": "react",
+      "route": "analytics",
+      "readyMs": 485,
+      "requests": 8,
+      "javascriptGzipBytes": 266885,
+      "javascriptFiles": [
+        "/assets/index-D5jdnGsP.js"
+      ]
+    },
+    {
+      "implementation": "vue",
+      "route": "pilots",
+      "readyMs": 619,
+      "requests": 3,
+      "javascriptGzipBytes": 90911,
+      "javascriptFiles": [
+        "/assets/index-BTvwGXkS.js",
+        "/assets/PilotsView-BK4G31Ia.js",
+        "/assets/useSessionScope-Cueo9xHk.js",
+        "/assets/useDebouncedValue-CfccBqd6.js",
+        "/assets/errorMessage-DxWIkevE.js",
+        "/assets/PilotAvatar.vue_vue_type_script_setup_true_lang-CSD-xjGa.js",
+        "/assets/AircraftChip.vue_vue_type_script_setup_true_lang-_ajNFKXO.js",
+        "/assets/StickyHorizontalScrollArea.vue_vue_type_script_setup_true_lang-C5iTQVBQ.js",
+        "/assets/ResultsPagination.vue_vue_type_script_setup_true_lang-BHE0J9tA.js"
+      ]
+    },
+    {
+      "implementation": "vue",
+      "route": "analytics",
+      "readyMs": 612,
+      "requests": 8,
+      "javascriptGzipBytes": 188946,
+      "javascriptFiles": [
+        "/assets/index-BTvwGXkS.js",
+        "/assets/AnalyticsView-tEah8-pX.js",
+        "/assets/useSessionScope-Cueo9xHk.js",
+        "/assets/errorMessage-DxWIkevE.js",
+        "/assets/useDebouncedValue-CfccBqd6.js",
+        "/assets/AutocompleteSelect.vue_vue_type_script_setup_true_lang-lkM8udyv.js",
+        "/assets/LineChart.vue_vue_type_script_setup_true_lang-BPvWgjVO.js"
+      ]
+    }
+  ]
+}

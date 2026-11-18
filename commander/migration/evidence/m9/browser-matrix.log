@@ -1,0 +1,55 @@
+
+> 55north-commander@0.1.0 test:browsers
+> playwright test -c playwright.browsers.config.ts
+
+
+Running 30 tests using 2 workers
+
+(node:89171) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:89170) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:89170) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:89171) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [firefox] › tests/e2e/pilots-avatar-route.spec.ts:46:1 › keeps loaded avatar visible after route switches and does not re-fetch missing photos (8.7s)
+  ✓   3 [firefox] › tests/e2e/session-routes.spec.ts:4:1 › keeps the protected deep link through login and rejects invalid detail IDs without a request (2.8s)
+  ✓   2 [firefox] › tests/e2e/analytics-layout.spec.ts:63:1 › keeps filters on the right and lower distribution cards on one row at 1024px (10.4s)
+  ✓   4 [firefox] › tests/e2e/session-routes.spec.ts:14:1 › login failure allows retry and double submission makes a single request (3.7s)
+  ✓   5 [firefox] › tests/e2e/settings-compatibility.spec.ts:4:1 › preserves independent name/threshold drafts and saves hidden fields in the replace payload (6.0s)
+  ✓   6 [firefox] › tests/e2e/session-routes.spec.ts:36:1 › revalidates persisted privileges before rendering protected content (2.8s)
+  ✓   8 [firefox] › tests/e2e/session-routes.spec.ts:47:1 › shows retry/logout after profile failure and never mounts domain requests before verification (2.7s)
+  ✓   9 [firefox] › tests/e2e/session-routes.spec.ts:66:1 › clears rejected refresh and permits login on the original deep link (2.2s)
+  ✓   7 [firefox] › tests/e2e/settings-compatibility.spec.ts:64:1 › creates, makes the only main type, survives failed save, and confirms deletion (6.0s)
+  ✓  11 [firefox] › tests/e2e/settings-compatibility.spec.ts:97:1 › read-only privileges allow settings inspection without write actions (3.2s)
+  ✓  10 [firefox] › tests/e2e/session-routes.spec.ts:81:1 › broadcasts logout to another tab and removes both protected trees (4.6s)
+  ✓  13 [firefox] › tests/e2e/session-routes.spec.ts:101:3 › redirects / to pilots (1.9s)
+  ✓  12 [firefox] › tests/e2e/settings-compatibility.spec.ts:120:1 › compares selected IDs, prevents duplicates, keeps date on reset, and removes invalidated result (3.5s)
+  ✓  14 [firefox] › tests/e2e/session-routes.spec.ts:101:3 › redirects /unknown-page to pilots (3.2s)
+(node:91376) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  15 [firefox] › tests/e2e/settings-compatibility.spec.ts:145:1 › uses updated thresholds after saving settings and returning to compatibility (5.0s)
+(node:91376) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:91564) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:91564) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  16 [webkit] › tests/e2e/analytics-layout.spec.ts:63:1 › keeps filters on the right and lower distribution cards on one row at 1024px (8.3s)
+  ✓  17 [webkit] › tests/e2e/pilots-avatar-route.spec.ts:46:1 › keeps loaded avatar visible after route switches and does not re-fetch missing photos (5.1s)
+  ✓  18 [webkit] › tests/e2e/session-routes.spec.ts:4:1 › keeps the protected deep link through login and rejects invalid detail IDs without a request (1.7s)
+  ✓  20 [webkit] › tests/e2e/session-routes.spec.ts:14:1 › login failure allows retry and double submission makes a single request (2.0s)
+  ✓  21 [webkit] › tests/e2e/session-routes.spec.ts:36:1 › revalidates persisted privileges before rendering protected content (1.5s)
+  ✓  19 [webkit] › tests/e2e/settings-compatibility.spec.ts:4:1 › preserves independent name/threshold drafts and saves hidden fields in the replace payload (6.2s)
+  ✓  22 [webkit] › tests/e2e/session-routes.spec.ts:47:1 › shows retry/logout after profile failure and never mounts domain requests before verification (1.5s)
+  ✓  24 [webkit] › tests/e2e/session-routes.spec.ts:66:1 › clears rejected refresh and permits login on the original deep link (967ms)
+  ✓  25 [webkit] › tests/e2e/session-routes.spec.ts:81:1 › broadcasts logout to another tab and removes both protected trees (4.0s)
+  ✓  26 [webkit] › tests/e2e/session-routes.spec.ts:101:3 › redirects / to pilots (1.5s)
+  ✓  27 [webkit] › tests/e2e/session-routes.spec.ts:101:3 › redirects /unknown-page to pilots (2.1s)
+  ✓  23 [webkit] › tests/e2e/settings-compatibility.spec.ts:64:1 › creates, makes the only main type, survives failed save, and confirms deletion (9.9s)
+  ✓  28 [webkit] › tests/e2e/settings-compatibility.spec.ts:97:1 › read-only privileges allow settings inspection without write actions (1.2s)
+  ✓  29 [webkit] › tests/e2e/settings-compatibility.spec.ts:120:1 › compares selected IDs, prevents duplicates, keeps date on reset, and removes invalidated result (2.9s)
+  ✓  30 [webkit] › tests/e2e/settings-compatibility.spec.ts:145:1 › uses updated thresholds after saving settings and returning to compatibility (3.9s)
+
+  30 passed (1.2m)

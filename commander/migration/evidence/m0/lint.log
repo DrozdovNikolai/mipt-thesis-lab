@@ -1,0 +1,4 @@
+
+> firefly-commander@0.1.0 lint
+> eslint . --cache --cache-location .eslintcache --max-warnings=0 --report-unused-disable-directives-severity error
+
